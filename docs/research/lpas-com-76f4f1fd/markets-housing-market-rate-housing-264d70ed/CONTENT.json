@@ -1,0 +1,634 @@
+{
+  "path": "/markets/housing/market-rate-housing/",
+  "title": "Market Rate Housing - LPAS Architecture",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/housing/market-rate-housing/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/12/08_Block-52_Madison-by-Lennar.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Back to Housing\nMarket-smart residential design\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nMarket Rate Housing",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Market Rate Housing"
+        }
+      ],
+      "paragraphs": [
+        "Affordable Housing",
+        "Affordable Housing",
+        "Student Housing",
+        "Student Housing",
+        "Market Rate Housing",
+        "Market Rate Housing",
+        "Senior Housing",
+        "Senior Housing"
+      ],
+      "links": [
+        {
+          "text": "Back to Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Affordable Housing",
+          "href": "https://lpas.com/markets/housing/affordable-housing/"
+        },
+        {
+          "text": "Student Housing",
+          "href": "https://lpas.com/markets/housing/student-housing/"
+        },
+        {
+          "text": "Market Rate Housing",
+          "href": "https://lpas.com/markets/housing/market-rate-housing/"
+        },
+        {
+          "text": "Senior Housing",
+          "href": "https://lpas.com/markets/housing/senior-housing/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/08_Block-52_Madison-by-Lennar-1440x696-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/08_Block-52_Madison-by-Lennar-1440x696-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 696
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Market-smart residential design\nLPAS designs housing that balances design excellence with development realities, and performs across time and market conditions. With over 20,000 units completed across 25+ jurisdictions, we understand that successful projects require more than attractive renderings. They demand a partner who thinks in yield, unit mix, and absorption rates from day one.\n\nWe work closely with developers to identify opportunity, streamline approvals, and bring clarity to complex projects. Our process is strategic and adaptable, aligning every design decision with your pro forma while navigating entitlements, community engagement, and construction logistics. From initial feasibility through certificate of occupancy, LPAS delivers predictable outcomes that maximize your return.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS designs housing that balances design excellence with development realities, and performs across time and market conditions. With over 20,000 units completed across 25+ jurisdictions, we understand that successful projects require more than attractive renderings. They demand a partner who thinks in yield, unit mix, and absorption rates from day one."
+        }
+      ],
+      "paragraphs": [
+        "We work closely with developers to identify opportunity, streamline approvals, and bring clarity to complex projects. Our process is strategic and adaptable, aligning every design decision with your pro forma while navigating entitlements, community engagement, and construction logistics. From initial feasibility through certificate of occupancy, LPAS delivers predictable outcomes that maximize your return."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS Market Rate Housing Design Process\nOur Process\n\nPhases\n\n01\nSite + Feasibility\n02\nVision + Alignment\n03\nCommunity + Stakeholder Engagement\n04\nDesign Development + Optimization\n05\nDelivery + Evolution\n01\nFeasibility with foresight\nSite + Feasibility\n\nEvery successful housing project begins with a deep understanding of the site and its potential. LPAS explores how context, zoning, and financial goals intersect to create value. By analyzing physical and regulatory constraints early, we help clients make informed decisions about density, yield, and construction type. Our feasibility process connects design insight to development strategy, ensuring that every move is purposeful.\n\n02\nPurposeful community vision\nVision + Alignment\n\nA housing project succeeds when design, market, and purpose align. LPAS facilitates conversations that uncover what makes each community distinct: its brand, target audience, and sense of place. We translate those goals into a design narrative that guides architectural character, amenity programming, and livability from concept through completion.\n\n03\nClear communication, smoother approvals\nCommunity + Stakeholder Engagement\n\nHousing projects often shape more than a site; they shape neighborhoods. LPAS engages city officials, community groups, and local stakeholders through a transparent process that focuses on communication and collaboration. By creating clear visuals and responsive solutions, we help developers earn support and move efficiently through approvals.\n\n04\nDistinctive, buildable solutions\nDesign Development + Optimization\n\nLPAS refines every project through a process that connects design ambition to development efficiency. We collaborate with consultants and builders early to ensure quality, maintain budgets, and streamline delivery. Through our Integrated Design Studio approach and LEAN coordination, we keep creativity aligned with constructability, producing designs that are both distinctive and practical.\n\n05\nPerformance beyond completion\nDelivery + Evolution\n\nOur partnership continues through construction and beyond. Through our TAPS methodology (Transparent, Accountable, Predictable, Successful), LPAS provides hands-on support during implementation, ensuring design integrity and responsiveness in the field. We also study completed projects to understand how they perform, using that insight to continually refine how we design for livability, efficiency, and community impact.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS Market Rate Housing Design Process",
+        "Phases",
+        "01\n                        Site + Feasibility",
+        "Site + Feasibility",
+        "02\n                        Vision + Alignment",
+        "Vision + Alignment",
+        "03\n                        Community + Stakeholder Engagement",
+        "Community + Stakeholder Engagement",
+        "04\n                        Design Development + Optimization",
+        "Design Development + Optimization",
+        "05\n                        Delivery + Evolution",
+        "Delivery + Evolution",
+        "Site + Feasibility",
+        "Every successful housing project begins with a deep understanding of the site and its potential. LPAS explores how context, zoning, and financial goals intersect to create value. By analyzing physical and regulatory constraints early, we help clients make informed decisions about density, yield, and construction type. Our feasibility process connects design insight to development strategy, ensuring that every move is purposeful.",
+        "Vision + Alignment",
+        "A housing project succeeds when design, market, and purpose align. LPAS facilitates conversations that uncover what makes each community distinct: its brand, target audience, and sense of place. We translate those goals into a design narrative that guides architectural character, amenity programming, and livability from concept through completion.",
+        "Community + Stakeholder Engagement",
+        "Housing projects often shape more than a site; they shape neighborhoods. LPAS engages city officials, community groups, and local stakeholders through a transparent process that focuses on communication and collaboration. By creating clear visuals and responsive solutions, we help developers earn support and move efficiently through approvals.",
+        "Design Development + Optimization",
+        "LPAS refines every project through a process that connects design ambition to development efficiency. We collaborate with consultants and builders early to ensure quality, maintain budgets, and streamline delivery. Through our Integrated Design Studio approach and LEAN coordination, we keep creativity aligned with constructability, producing designs that are both distinctive and practical.",
+        "Delivery + Evolution",
+        "Our partnership continues through construction and beyond. Through our TAPS methodology (Transparent, Accountable, Predictable, Successful), LPAS provides hands-on support during implementation, ensuring design integrity and responsiveness in the field. We also study completed projects to understand how they perform, using that insight to continually refine how we design for livability, efficiency, and community impact."
+      ],
+      "links": [
+        {
+          "text": "01 Feasibility with foresight Site + Feasibility Every successful housing project begins with a deep understanding of th",
+          "href": "https://lpas.com/processes/site-feasibility/?ids=1333%2C1334%2C1335%2C1336%2C1337"
+        },
+        {
+          "text": "02 Purposeful community vision Vision + Alignment A housing project succeeds when design, market, and purpose align. LPA",
+          "href": "https://lpas.com/processes/vision-alignment/?ids=1333%2C1334%2C1335%2C1336%2C1337"
+        },
+        {
+          "text": "03 Clear communication, smoother approvals Community + Stakeholder Engagement Housing projects often shape more than a s",
+          "href": "https://lpas.com/processes/community-stakeholder-engagement/?ids=1333%2C1334%2C1335%2C1336%2C1337"
+        },
+        {
+          "text": "04 Distinctive, buildable solutions Design Development + Optimization LPAS refines every project through a process that ",
+          "href": "https://lpas.com/processes/design-development-optimization-2/?ids=1333%2C1334%2C1335%2C1336%2C1337"
+        },
+        {
+          "text": "05 Performance beyond completion Delivery + Evolution Our partnership continues through construction and beyond. Through",
+          "href": "https://lpas.com/processes/delivery-evolution-2/?ids=1333%2C1334%2C1335%2C1336%2C1337"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/image-02-blue-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/image-02-blue-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/Frame-4470-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/Frame-4474-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/Frame-4456-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/Frame-4477-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Designed for performance\nWhy Developers Choose LPAS\n\nPurpose-Built for Your Success:\nOur people, processes, and technology are designed specifically for multi-family development. We think in yield, FAR, and unit mix, not just aesthetics.\n\nSpeed + Predictability:\nWe reduce risk from day one and maintain momentum through delivery. Our TAPS process ensures predictable outcomes that maximize your return.\n\nDeveloper-Aligned Partnership:\n90% of our clients are repeat clients because we partner around investment goals, not just design preferences. We make your goals our goals.\n\nProven Track Record:\nOver 20,000 units designed, entitled, and built across California. From walk-ups to high-rises, market-rate to affordable, we deliver projects that balance complex requirements with financial realities.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Developers Choose LPAS"
+        }
+      ],
+      "paragraphs": [
+        "Purpose-Built for Your Success:\nOur people, processes, and technology are designed specifically for multi-family development. We think in yield, FAR, and unit mix, not just aesthetics.",
+        "Speed + Predictability:\nWe reduce risk from day one and maintain momentum through delivery. Our TAPS process ensures predictable outcomes that maximize your return.",
+        "Developer-Aligned Partnership:\n90% of our clients are repeat clients because we partner around investment goals, not just design preferences. We make your goals our goals.",
+        "Proven Track Record:\nOver 20,000 units designed, entitled, and built across California. From walk-ups to high-rises, market-rate to affordable, we deliver projects that balance complex requirements with financial realities."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted projects\nAll Market Rate Housing\n980 Central\nWest Sacramento, CA\nChroma at Innovation Condominiums\nFremont, CA\nThe Emery\nEmeryville, CA\nMurphy Station Apartments\nSunnyvale, CA\nThe 1960\nWalnut Creek, CA\nParker\nBerkeley, CA",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted projects"
+        }
+      ],
+      "paragraphs": [
+        "The Emery"
+      ],
+      "links": [
+        {
+          "text": "All Market Rate Housing",
+          "href": "https://lpas.com/portfolio/?market=market-rate-housing"
+        },
+        {
+          "text": "980 Central West Sacramento, CA",
+          "href": "https://lpas.com/portfolio/980-central/"
+        },
+        {
+          "text": "Chroma at Innovation Condominiums Fremont, CA",
+          "href": "https://lpas.com/portfolio/chroma-at-innovation-condominiums/"
+        },
+        {
+          "text": "The Emery Emeryville, CA",
+          "href": "https://lpas.com/portfolio/the-emery/"
+        },
+        {
+          "text": "Murphy Station Apartments Sunnyvale, CA",
+          "href": "https://lpas.com/portfolio/murphy-station-apartments/"
+        },
+        {
+          "text": "The 1960 Walnut Creek, CA",
+          "href": "https://lpas.com/portfolio/the-1960/"
+        },
+        {
+          "text": "Parker Berkeley, CA",
+          "href": "https://lpas.com/portfolio/parker/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/04_980-Central-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/11_Chroma_Warm-Springs-Condos-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/11_Chroma_Warm-Springs-Condos-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-1440x993-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/11_The-Emery-1440x993-c-default.webp",
+          "alt": "",
+          "w": 1340,
+          "h": 924
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/25_Murphy-Station_Daniel-Gaines-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/25_Murphy-Station_Daniel-Gaines-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/01_AVE-Walnut-Creek-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/01_AVE-Walnut-Creek-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/03_Parker-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/03_Parker-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-market-rate-housing-264d70ed/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

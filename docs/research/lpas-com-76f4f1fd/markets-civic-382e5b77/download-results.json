@@ -1,0 +1,75 @@
+{
+  "ok": [
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4456-1000x1156-c-default.webp",
+      "bytes": 13818
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4474-1000x1156-c-default.webp",
+      "bytes": 16134
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4516-1000x1156-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4516-1000x1156-c-default.webp",
+      "bytes": 10444
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/16_316-Vernon-1440x960-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/16_316-Vernon-1440x960-c-default.webp",
+      "bytes": 134494
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4477-1000x1156-c-default.webp",
+      "bytes": 14064
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4468-1000x1156-c-default.webp",
+      "bytes": 23258
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/07_STA-HQ-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/07_STA-HQ-1280x800-c-default.webp",
+      "bytes": 66428
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/20_Tehama-County-Courthouse-edited-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/20_Tehama-County-Courthouse-edited-1280x800-c-default.webp",
+      "bytes": 68228
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/02_CHP-Truckee-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/02_CHP-Truckee-1280x800-c-default.webp",
+      "bytes": 90922
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+      "bytes": 183638
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/10_CHP-Headquarters-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/10_CHP-Headquarters-1280x800-c-default.webp",
+      "bytes": 49518
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/19_316-Vernon-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/19_316-Vernon-1280x800-c-default.webp",
+      "bytes": 105952
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/videos/LPAS-office-thumbnail.jpg",
+      "bytes": 157248
+    },
+    {
+      "url": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/videos/file.mp4-1080p-.mp4",
+      "bytes": 33204843
+    }
+  ],
+  "failed": []
+}

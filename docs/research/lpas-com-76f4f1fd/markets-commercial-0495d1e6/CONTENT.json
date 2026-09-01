@@ -1,0 +1,621 @@
+{
+  "path": "/markets/commercial/",
+  "title": "LPAS — Commercial",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/commercial/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2026/01/20_UCDH_Folsom-MOB_FULLSIZE.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Our focus on\nDesign for business value\nCommercial",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Commercial"
+        }
+      ],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/20_UCDH_Folsom-MOB_FULLSIZE-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/20_UCDH_Folsom-MOB_FULLSIZE-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Design for business value\nLPAS designs commercial environments that balance brand identity, performance, and long-term value. From workplace campuses and tenant improvements to retail and mixed-use developments, our process connects business goals to design outcomes.\n\nWe understand that commercial spaces must deliver on multiple levels: supporting productivity, reflecting brand identity, attracting and retaining talent or customers, and providing measurable return on investment. Our integrated approach combines architecture, interior design, and technical expertise to create environments that respond to evolving workplace trends, changing retail models, and the increasing importance of employee wellbeing and customer experience. We focus on efficiency, adaptability, and experience, creating spaces that reflect each client's culture and enhance the way people work, shop, and connect.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS designs commercial environments that balance brand identity, performance, and long-term value. From workplace campuses and tenant improvements to retail and mixed-use developments, our process connects business goals to design outcomes."
+        }
+      ],
+      "paragraphs": [
+        "We understand that commercial spaces must deliver on multiple levels: supporting productivity, reflecting brand identity, attracting and retaining talent or customers, and providing measurable return on investment. Our integrated approach combines architecture, interior design, and technical expertise to create environments that respond to evolving workplace trends, changing retail models, and the increasing importance of employee wellbeing and customer experience. We focus on efficiency, adaptability, and experience, creating spaces that reflect each client's culture and enhance the way people work, shop, and connect."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS Commercial Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Brand Alignment\n02\nVisioning + Concept Development\n03\nPlanning + Performance\n04\nDetailing + Technical Coordination\n05\nDelivery + Evolution\n01\nPurpose-led clarity\nDiscovery + Brand Alignment\n\nEvery successful commercial project starts with clarity. LPAS begins by understanding our client's goals, brand identity, and operational model. We don't apply cookie-cutter solutions; we discover what makes your business unique. We study how people use space and how design can improve their experience. This early discovery phase establishes a strategic foundation that connects business needs with creative direction.\n\n02\nExpressing identity through space\nVisioning + Concept Development\n\nLPAS develops a clear and cohesive design concept that communicates brand story and purpose. We explore how materials, light, and proportion define experience, whether it's a vibrant retail environment or an efficient workplace. Commercial spaces are brand experiences, and we translate brand identity into spatial experiences from grand lobbies to employee break rooms. The concept becomes the project's foundation, aligning stakeholders and guiding future decisions.\n\n03\nEfficiency meets experience\nPlanning + Performance\n\nWe transform the design vision into an efficient and functional plan that supports daily operations. Commercial real estate represents significant investment, and smart space planning maximizes usable space, supports efficient workflows, and creates flexibility for future needs. LPAS creates layouts that promote collaboration, flexibility, and comfort while maintaining clarity of circulation and purpose. Each plan is shaped by how people interact with the space.\n\n04\nExecution with precision\nDetailing + Technical Coordination\n\nLPAS bridges creativity and constructability by detailing each element with care and precision. Modern workplace design recognizes that employee wellbeing directly impacts productivity, creativity, and retention. We integrate wellness principles, natural light maximization, acoustic design, and technology to create spaces where people do their best work while coordinating across disciplines to maintain design quality.\n\n05\nEnduring commercial performance\nDelivery + Evolution\n\nFrom construction to occupancy, LPAS remains closely involved to ensure the design is delivered as intended. Commercial projects require sophisticated coordination within tight schedules driven by lease obligations. Our integrated technical approach and flexible design thinking ensure everything works together and adapts to future needs. We work with contractors to maintain quality, solve challenges efficiently, and support smooth project completion.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS Commercial Design Process",
+        "Phases",
+        "01\n                        Discovery + Brand Alignment",
+        "Discovery + Brand Alignment",
+        "02\n                        Visioning + Concept Development",
+        "Visioning + Concept Development",
+        "03\n                        Planning + Performance",
+        "Planning + Performance",
+        "04\n                        Detailing + Technical Coordination",
+        "Detailing + Technical Coordination",
+        "05\n                        Delivery + Evolution",
+        "Delivery + Evolution",
+        "Discovery + Brand Alignment",
+        "Every successful commercial project starts with clarity. LPAS begins by understanding our client's goals, brand identity, and operational model. We don't apply cookie-cutter solutions; we discover what makes your business unique. We study how people use space and how design can improve their experience. This early discovery phase establishes a strategic foundation that connects business needs with creative direction.",
+        "Visioning + Concept Development",
+        "LPAS develops a clear and cohesive design concept that communicates brand story and purpose. We explore how materials, light, and proportion define experience, whether it's a vibrant retail environment or an efficient workplace. Commercial spaces are brand experiences, and we translate brand identity into spatial experiences from grand lobbies to employee break rooms. The concept becomes the project's foundation, aligning stakeholders and guiding future decisions.",
+        "Planning + Performance",
+        "We transform the design vision into an efficient and functional plan that supports daily operations. Commercial real estate represents significant investment, and smart space planning maximizes usable space, supports efficient workflows, and creates flexibility for future needs. LPAS creates layouts that promote collaboration, flexibility, and comfort while maintaining clarity of circulation and purpose. Each plan is shaped by how people interact with the space.",
+        "Detailing + Technical Coordination",
+        "LPAS bridges creativity and constructability by detailing each element with care and precision. Modern workplace design recognizes that employee wellbeing directly impacts productivity, creativity, and retention. We integrate wellness principles, natural light maximization, acoustic design, and technology to create spaces where people do their best work while coordinating across disciplines to maintain design quality.",
+        "Delivery + Evolution",
+        "From construction to occupancy, LPAS remains closely involved to ensure the design is delivered as intended. Commercial projects require sophisticated coordination within tight schedules driven by lease obligations. Our integrated technical approach and flexible design thinking ensure everything works together and adapts to future needs. We work with contractors to maintain quality, solve challenges efficiently, and support smooth project completion."
+      ],
+      "links": [
+        {
+          "text": "01 Purpose-led clarity Discovery + Brand Alignment Every successful commercial project starts with clarity. LPAS begins ",
+          "href": "https://lpas.com/processes/discovery-brand-alignment/?ids=1100%2C1101%2C1102%2C1103%2C1104"
+        },
+        {
+          "text": "02 Expressing identity through space Visioning + Concept Development LPAS develops a clear and cohesive design concept t",
+          "href": "https://lpas.com/processes/visioning-concept-development/?ids=1100%2C1101%2C1102%2C1103%2C1104"
+        },
+        {
+          "text": "03 Efficiency meets experience Planning + Performance We transform the design vision into an efficient and functional pl",
+          "href": "https://lpas.com/processes/planning-performance/?ids=1100%2C1101%2C1102%2C1103%2C1104"
+        },
+        {
+          "text": "04 Execution with precision Detailing + Technical Coordination LPAS bridges creativity and constructability by detailing",
+          "href": "https://lpas.com/processes/detailing-technical-coordination/?ids=1100%2C1101%2C1102%2C1103%2C1104"
+        },
+        {
+          "text": "05 Enduring commercial performance Delivery + Evolution From construction to occupancy, LPAS remains closely involved to",
+          "href": "https://lpas.com/processes/delivery-evolution/?ids=1100%2C1101%2C1102%2C1103%2C1104"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/Frame-4483-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/Frame-4470-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/Process-slider-04-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/Frame-4477-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/Frame-4468-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Integrated Commercial Expertise\nLPAS Commercial Services\n\nIntegrated Architecture + Interior Design:\nFull-service design with architecture and interior design teams collaborating in the same BIM model.\n\nWorkplace Strategy Expertise:\nActivity-based working, hybrid work support, and evidence-based design for productivity and wellbeing.\n\nWELL Building Leadership:\nWELL AP expertise bringing healthy building principles to commercial projects.\n\nSustainable Design:\nLEED experience and sustainable strategies reducing operating costs and supporting corporate responsibility.\n\nFast-Track Delivery:\nDisciplined project management supporting compressed schedules and lease obligations.\n\nReal Estate Intelligence:\nTest fits and feasibility studies supporting site selection and lease negotiations.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS Commercial Services"
+        }
+      ],
+      "paragraphs": [
+        "Integrated Architecture + Interior Design:\nFull-service design with architecture and interior design teams collaborating in the same BIM model.",
+        "Workplace Strategy Expertise:\nActivity-based working, hybrid work support, and evidence-based design for productivity and wellbeing.",
+        "WELL Building Leadership:\nWELL AP expertise bringing healthy building principles to commercial projects.",
+        "Sustainable Design:\nLEED experience and sustainable strategies reducing operating costs and supporting corporate responsibility.",
+        "Fast-Track Delivery:\nDisciplined project management supporting compressed schedules and lease obligations.",
+        "Real Estate Intelligence:\nTest fits and feasibility studies supporting site selection and lease negotiations."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Built for business success\nWhy Choose LPAS for Commercial Projects?\n\nBusiness-First Approach:\nWe design around how you work, not architectural trends. Your success is our measure.\n\nIntegrated Services:\nArchitecture and interior design under one roof, working in the same model from day one.\n\nWellness Expertise:\nWELL AP leadership bringing healthy building principles to support employee wellbeing.\n\nTechnical Excellence:\nSophisticated coordination of complex systems within commercial construction timelines.\n\nFlexible Design:\nBuilding adaptability into spaces to protect long-term investment value.\n\nProven Delivery:\nDisciplined process supporting compressed schedules and lease commencement dates.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Choose LPAS for Commercial Projects?"
+        }
+      ],
+      "paragraphs": [
+        "Business-First Approach:\nWe design around how you work, not architectural trends. Your success is our measure.",
+        "Integrated Services:\nArchitecture and interior design under one roof, working in the same model from day one.",
+        "Wellness Expertise:\nWELL AP leadership bringing healthy building principles to support employee wellbeing.",
+        "Technical Excellence:\nSophisticated coordination of complex systems within commercial construction timelines.",
+        "Flexible Design:\nBuilding adaptability into spaces to protect long-term investment value.",
+        "Proven Delivery:\nDisciplined process supporting compressed schedules and lease commencement dates."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted projects\nAll Commercial\nUC Davis Health Folsom Medical Care Clinic\nFolsom, CA\nCalifornia Lottery Headquarters\nSacramento, CA\n100 Howe Tenant Improvement\nSacramento, CA\nMarket West\nSacramento, CA\n2020 Gateway\nSacramento, CA\nView all Commercial\nPortfolio",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted projects"
+        }
+      ],
+      "paragraphs": [
+        "View all Commercial"
+      ],
+      "links": [
+        {
+          "text": "All Commercial",
+          "href": "https://lpas.com/portfolio/?market=commercial"
+        },
+        {
+          "text": "UC Davis Health Folsom Medical Care Clinic Folsom, CA",
+          "href": "https://lpas.com/portfolio/uc-davis-health-folsom-medical-care-clinic/"
+        },
+        {
+          "text": "California Lottery Headquarters Sacramento, CA",
+          "href": "https://lpas.com/portfolio/california-lottery-headquarters/"
+        },
+        {
+          "text": "100 Howe Tenant Improvement Sacramento, CA",
+          "href": "https://lpas.com/portfolio/100-howe-tenant-improvement/"
+        },
+        {
+          "text": "Market West Sacramento, CA",
+          "href": "https://lpas.com/portfolio/market-west/"
+        },
+        {
+          "text": "2020 Gateway Sacramento, CA",
+          "href": "https://lpas.com/portfolio/2020-gateway/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/?market=commercial"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/08_CA-Lottery-Headquarter_bldg-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/08_CA-Lottery-Headquarter_bldg-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/02_100-HOWE-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/02_100-HOWE-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/MG_0672-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/MG_0672-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/30_2020-Gateway_Exterior-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/30_2020-Gateway_Exterior-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-commercial-0495d1e6/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

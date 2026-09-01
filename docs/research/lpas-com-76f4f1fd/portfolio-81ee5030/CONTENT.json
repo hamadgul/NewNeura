@@ -1,0 +1,594 @@
+{
+  "path": "/portfolio/",
+  "title": "LPAS — Portfolio",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/portfolio/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2026/01/25_UCD-Pitzer-Center.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Menu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderPortfolio",
+      "classes": "blockHeaderPortfolio",
+      "innerText": "Our Work\nOverview\nPortfolio\n",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Portfolio"
+        }
+      ],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/25_UCD-Pitzer-Center-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/25_UCD-Pitzer-Center-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "CollectionProjects",
+      "classes": "collectionProjects",
+      "innerText": "All\nHousing\n27\nInteriors\n13\nHigher Education\n12\nCivic\n6\nCommercial\n14\nThe Frederic\nSacramento, CA\nIron Point\nFolsom, CA\nThe Emery\nEmeryville, CA\nElegance Hamilton Hill\nNovato, CA\nUC Berkeley Wu Performance Hall Renovation\nBerkeley, CA\nUC Davis Ann E. Pitzer Center Classroom & Recital Hall\nDavis, CA\nProspera at Fiddyment Ranch\nRoseville, CA\nTower 222\nSan Pedro, CA\nGio Apartments\nSacramento, CA\nUC Davis Health Folsom Medical Care Clinic\nFolsom, CA\nThe Ohlone College Building 5 Renovation\nFremont, CA\n730 I Street\nSacramento, CA\nAmerican River College Student Center & Cafeteria\nSacramento, CA\nAlwell Pleasant Hill\nPleasant Hill, CA\nReyes Coca-Cola\nFresno, CA\nThe A.J.\nSacramento, CA\n1\n2\n3",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Prospera at Fiddyment Ranch"
+        },
+        {
+          "tag": "H2",
+          "text": "American River College Student Center & Cafeteria"
+        }
+      ],
+      "paragraphs": [
+        "The Frederic",
+        "Iron Point",
+        "The Emery",
+        "Elegance Hamilton Hill",
+        "UC Berkeley Wu Performance Hall Renovation",
+        "UC Davis Ann E. Pitzer Center Classroom & Recital Hall",
+        "Tower 222",
+        "Gio Apartments",
+        "UC Davis Health Folsom Medical Care Clinic",
+        "The Ohlone College Building 5 Renovation",
+        "730 I Street",
+        "Alwell Pleasant Hill",
+        "Reyes Coca-Cola",
+        "The A.J."
+      ],
+      "links": [
+        {
+          "text": "The FredericSacramento, CA",
+          "href": "https://lpas.com/portfolio/the-frederic/"
+        },
+        {
+          "text": "Iron PointFolsom, CA",
+          "href": "https://lpas.com/portfolio/iron-point/"
+        },
+        {
+          "text": "The EmeryEmeryville, CA",
+          "href": "https://lpas.com/portfolio/the-emery/"
+        },
+        {
+          "text": "Elegance Hamilton HillNovato, CA",
+          "href": "https://lpas.com/portfolio/elegance-hamilton-hill/"
+        },
+        {
+          "text": "UC Berkeley Wu Performance Hall RenovationBerkeley, CA",
+          "href": "https://lpas.com/portfolio/uc-berkeley-wu-performance-hall-renovation/"
+        },
+        {
+          "text": "UC Davis Ann E. Pitzer Center Classroom & Recital HallDavis, CA",
+          "href": "https://lpas.com/portfolio/uc-davis-ann-e-pitzer-center-classroom-recital-hall/"
+        },
+        {
+          "text": "Prospera at Fiddyment Ranch Roseville, CA",
+          "href": "https://lpas.com/portfolio/prospera-at-fiddyment-ranch/"
+        },
+        {
+          "text": "Tower 222San Pedro, CA",
+          "href": "https://lpas.com/portfolio/tower-222/"
+        },
+        {
+          "text": "Gio ApartmentsSacramento, CA",
+          "href": "https://lpas.com/portfolio/gio-apartments/"
+        },
+        {
+          "text": "UC Davis Health Folsom Medical Care ClinicFolsom, CA",
+          "href": "https://lpas.com/portfolio/uc-davis-health-folsom-medical-care-clinic/"
+        },
+        {
+          "text": "The Ohlone College Building 5 RenovationFremont, CA",
+          "href": "https://lpas.com/portfolio/the-ohlone-college-building-5-renovation/"
+        },
+        {
+          "text": "730 I StreetSacramento, CA",
+          "href": "https://lpas.com/portfolio/730-i-street/"
+        },
+        {
+          "text": "American River College Student Center & Cafeteria Sacramento, CA",
+          "href": "https://lpas.com/portfolio/american-river-college-student-center-cafeteria/"
+        },
+        {
+          "text": "Alwell Pleasant HillPleasant Hill, CA",
+          "href": "https://lpas.com/portfolio/alwell-pleasant-hill/"
+        },
+        {
+          "text": "Reyes Coca-ColaFresno, CA",
+          "href": "https://lpas.com/portfolio/reyes-coca-cola/"
+        },
+        {
+          "text": "The A.J.Sacramento, CA",
+          "href": "https://lpas.com/portfolio/the-a-j/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/05_FREDERIC_Storefront-1280x800-c-default.jpg",
+          "alt": "The Frederic",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/LeasingView_REVISEDAUG24-1280x800-c-default.jpg",
+          "alt": "Iron Point",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/11_The-Emery-1280x800-c-default.jpg",
+          "alt": "The Emery",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.jpg",
+          "alt": "Elegance Hamilton Hill",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/01_UCB_Wu-Performance-Hall-1280x800-c-default.jpg",
+          "alt": "UC Berkeley Wu Performance Hall Renovation",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/22_UCD-Pitzer-Center-1280x800-c-default.jpg",
+          "alt": "UC Davis Ann E. Pitzer Center Classroom &#038; Recital Hall",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/DJI_0490_1-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/Lobby-1-copy-1280x800-c-default.jpg",
+          "alt": "Tower 222",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/06_Gio-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/06_Gio-1280x800-c-default.jpg",
+          "alt": "Gio Apartments",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.jpg",
+          "alt": "UC Davis Health Folsom Medical Care Clinic",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.jpg",
+          "alt": "The Ohlone College Building 5 Renovation",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/12_CapRadio-730-I-Street-1280x800-c-default.jpg",
+          "alt": "730 I Street",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/02_ARC-Student-Center_Extr-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/02_ARC-Student-Center_Extr-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/08_Alwell_FULLSIZE-1280x800-c-default.jpg",
+          "alt": "Alwell Pleasant Hill",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/BOARDROOM-1280x800-c-default.jpg",
+          "alt": "Reyes Coca-Cola",
+          "w": 1440,
+          "h": 900
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/02_The-AJ_FULLSIZE-1280x800-c-default.jpg",
+          "alt": "The A.J.",
+          "w": 1440,
+          "h": 900
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/portfolio-81ee5030/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

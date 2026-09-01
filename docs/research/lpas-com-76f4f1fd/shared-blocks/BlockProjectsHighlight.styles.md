@@ -1,0 +1,296 @@
+# BlockProjectsHighlight — extracted computed styles
+
+Auto-generated from `getComputedStyle()` at 1440px via the block extraction
+pass. Every value below is measured, not estimated. Where more than one
+instance is listed, diff them to see which values are content-driven props
+and which are fixed to the block.
+
+---
+
+# Instance on `https://lpas.com/markets/housing/`
+
+## BlockProjectsHighlight
+
+- **`<section.blockProjectsHighlight>`** — 1440×2101
+  - `fontSize: 16px; fontWeight: 400; lineHeight: 21.6px; color: rgb(17, 17, 17); margin: 100px 0px; width: 1440px; height: 2101.36px; display: grid; gap: 0px 10px; columnGap: 10px; gridTemplateColumns: [full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]; gridTemplateRows: 85.2969px 521.016px 974.031px 521.016px; textAlign: start; flex: 0 1 auto`
+  - **`<header.blockProjectsHighlight__header>`** — 1340×60
+    - `padding: 0px 0px 17.5px; margin: 0px 0px 25px; width: 1340px; height: 41.7969px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 41.7969px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2; borderBottom: 1px solid rgb(214, 214, 214)`
+    - **`<h2.blockProjectsHighlight__headerTitle.font-L>`** — 1138×42
+      - text: `"Highlighted projects"`
+      - `fontSize: 38px; lineHeight: 41.8px; width: 1137.5px; height: 41.7969px; display: block; gridColumn: 1 / -4; gridRow: 1; gridArea: 1 / 1 / auto / -4`
+    - **`<div.highlightedButton>`** — 116×37
+      - `margin: 5px 0px 0px; width: 115.953px; height: 36.7969px; display: block; gridColumn: -5 / -1; gridRow: 1; gridArea: 1 / -5 / auto / -1; zIndex: 50`
+      - **`<a.buttonArrow.buttonArrow--icon>`** — 116×27 · href `https://lpas.com/portfolio/?market=housing`
+        - `color: rgb(38, 38, 38); width: 115.953px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10; cursor: pointer`
+        - **`<span.button__title>`** — 80×27
+          - text: `"All Housing"`
+          - `padding: 0px 0px 5px; margin: 0px 0px -10px; width: 79.9531px; height: 21.5938px; display: block; whiteSpace: nowrap`
+        - **`<span.button__arrow>`** — 29×28
+          - `backgroundColor: rgb(214, 214, 214); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; borderTop: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -9.5, -9.5)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -33.25, -9.5)`
+  - **`<div.blockProjectsHighlight__layout.blockProjectsHighlight__layoutOne>`** — 1340×521
+    - `padding: 0px 0px 50px; width: 1340px; height: 471.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+    - **`<a.imageCard>`** — 665×471 · href `https://lpas.com/portfolio/madison-by-lennar-condominiums/`
+      - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; position: relative; cursor: pointer`
+      - **`<div.imageCard__imageWrapper>`** — 665×416
+        - `width: 665px; height: 415.625px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden; clipPath: polygon(60px 0px, 100% 0px, 100% 100%, 0px 100%, 0px 60px)`
+        - **`<picture>`** — 665×416
+          - `width: 665px; height: 415.625px; display: block`
+          - **`<source>`** — 0×0
+            - `display: inline`
+          - **`<img.image.imageCard__image.lazyautosizes.ls-is-cached.lazyloaded>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/resized/2025/12/09_Block-52_Madison-by-Lennar-1280x800-c-default.webp` (natural 665×415, alt ``)
+            - `width: 665px; height: 415.625px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: 1.2s cubic-bezier(0.14, 0.83, 0.4, 1); clipPath: inset(0% 0px 0px); objectFit: cover`
+      - **`<div.imageCard__textWrap>`** — 665×40
+        - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+        - **`<span.imageCard__title>`** — 665×22
+          - text: `"Madison by Lennar Condominiums"`
+          - `width: 665px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+        - **`<span.imageCard__location.font-XS>`** — 665×17
+          - text: `"San Francisco, CA"`
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+    - **`<div.blockProjectsHighlight__smallImagesWrapper>`** — 665×471
+      - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+      - **`<a.imageCard>`** — 328×260 · href `https://lpas.com/portfolio/the-frederic/`
+        - `width: 327.5px; height: 260px; display: block; gridColumn: span 1; gridArea: auto / span 1; position: sticky; top: 505px; inset: 505px auto auto; cursor: pointer`
+        - **`<div.imageCard__imageWrapper>`** — 328×205
+          - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden`
+          - **`<picture>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: block`
+        - **`<div.imageCard__textWrap>`** — 328×40
+          - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+          - **`<span.imageCard__title>`** — 328×22
+            - text: `"The Frederic"`
+            - `width: 327.5px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+          - **`<span.imageCard__location.font-XS>`** — 328×17
+            - text: `"Sacramento, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 327.5px; height: 16.7969px; display: block`
+      - **`<a.imageCard>`** — 328×260 · href `https://lpas.com/portfolio/alwell-pleasant-hill/`
+        - `width: 327.5px; height: 260px; display: block; gridColumn: span 1; gridArea: auto / span 1; position: sticky; top: 505px; inset: 505px auto auto; cursor: pointer`
+        - **`<div.imageCard__imageWrapper>`** — 328×205
+          - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden`
+          - **`<picture>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: block`
+        - **`<div.imageCard__textWrap>`** — 328×40
+          - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+          - **`<span.imageCard__title>`** — 328×22
+            - text: `"Alwell Pleasant Hill"`
+            - `width: 327.5px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+          - **`<span.imageCard__location.font-XS>`** — 328×17
+            - text: `"Pleasant Hill, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 327.5px; height: 16.7969px; display: block`
+  - **`<a.blockProjectsHighlight__layoutFive>`** — 1340×974 · href `https://lpas.com/portfolio/the-emery/`
+    - `padding: 0px 0px 50px; width: 1340px; height: 924.031px; maxHeight: 1000px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 924.031px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2; overflow: hidden; overflowX: hidden; overflowY: hidden; cursor: pointer`
+    - **`<div.blockProjectsHighlight__layoutFiveImage>`** — 1340×924
+      - `width: 1340px; height: 924.031px; display: block; gridColumn: 1 / -1; gridRow: 1; gridArea: 1 / 1 / auto / -1`
+      - **`<picture>`** — 1340×924
+        - `display: inline`
+        - **`<source>`** — 0×0
+          - `display: inline`
+        - **`<img.image.lazyautosizes.ls-is-cached.lazyloaded>`** — 1340×924
+          - img: `https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-1440x993-c-default.webp` (natural 1340×924, alt ``)
+          - `width: 1340px; height: 924.031px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transition: opacity 0.3s; objectFit: cover`
+    - **`<div.blockProjectsHighlight__layoutFiveContent>`** — 278×137
+      - `color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 20px; margin: 50px 0px 0px 50px; width: 277.5px; height: 137.391px; display: flex; flexDirection: column; gridColumn: 1 / 6; gridRow: 1; gridArea: 1 / 1 / auto / 6; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0px 100%); backdropFilter: blur(20px)`
+      - **`<div.blockProjectsHighlight__layoutFiveButton>`** — 29×27
+        - `width: 29px; height: 27px; display: flex`
+        - **`<div.buttonArrow.buttonArrow--icon.buttonArrow--no-title>`** — 29×27
+          - `color: rgb(38, 38, 38); width: 29px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10`
+          - **`<span.button__arrow>`** — 29×29
+            - `color: rgb(255, 255, 255); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; border: 1px solid rgb(255, 255, 255); borderTop: 1px solid rgb(255, 255, 255); borderBottom: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+      - **`<span.blockProjectsHighlight__layoutFiveTitle>`** — 238×22
+        - text: `"The Emery"`
+        - `margin: 30px 0px 2px; width: 237.5px; height: 21.5938px; display: block`
+      - **`<span.blockProjectsHighlight__layoutFiveLocation.font-XS>`** — 238×17
+        - text: `"Emeryville, CA"`
+        - `fontSize: 12px; lineHeight: 16.8px; width: 237.5px; height: 16.7969px; display: block`
+  - **`<div.blockProjectsHighlight__layout.blockProjectsHighlight__layoutThree>`** — 1340×521
+    - `width: 1340px; height: 521.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px 50px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+    - **`<div.blockProjectsHighlight__smallImagesWrapper>`** — 665×471
+      - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+      - **`<a.imageCard>`** — 328×260 · href `https://lpas.com/portfolio/the-a-j/`
+        - `width: 327.5px; height: 260px; display: block; gridColumn: span 1; gridArea: auto / span 1; position: relative; cursor: pointer`
+        - **`<div.imageCard__imageWrapper>`** — 328×205
+          - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden`
+          - **`<picture>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: block`
+        - **`<div.imageCard__textWrap>`** — 328×40
+          - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+          - **`<span.imageCard__title>`** — 328×22
+            - text: `"The A.J."`
+            - `width: 327.5px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+          - **`<span.imageCard__location.font-XS>`** — 328×17
+            - text: `"Sacramento, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 327.5px; height: 16.7969px; display: block`
+      - **`<a.imageCard>`** — 328×260 · href `https://lpas.com/portfolio/980-central/`
+        - `width: 327.5px; height: 260px; display: block; gridColumn: span 1; gridArea: auto / span 1; position: relative; cursor: pointer`
+        - **`<div.imageCard__imageWrapper>`** — 328×205
+          - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden`
+          - **`<picture>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: block`
+        - **`<div.imageCard__textWrap>`** — 328×40
+          - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+          - **`<span.imageCard__title>`** — 328×22
+            - text: `"980 Central"`
+            - `width: 327.5px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+          - **`<span.imageCard__location.font-XS>`** — 328×17
+            - text: `"West Sacramento, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 327.5px; height: 16.7969px; display: block`
+    - **`<a.imageCard>`** — 665×471 · href `https://lpas.com/portfolio/prospera-at-fiddyment-ranch/`
+      - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; position: relative; cursor: pointer`
+      - **`<div.imageCard__imageWrapper>`** — 665×416
+        - `width: 665px; height: 415.625px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0px 100%)`
+        - **`<picture>`** — 665×416
+          - `width: 665px; height: 415.625px; display: block`
+          - **`<source>`** — 0×0
+            - `display: inline`
+          - **`<img.image.imageCard__image.lazyautosizes.ls-is-cached.lazyloaded>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1280x800-c-default.webp` (natural 665×415, alt ``)
+            - `width: 665px; height: 415.625px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: 1.2s cubic-bezier(0.14, 0.83, 0.4, 1); clipPath: inset(0% 0px 0px); objectFit: cover`
+      - **`<div.imageCard__textWrap>`** — 665×40
+        - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+        - **`<span.imageCard__title>`** — 665×22
+          - text: `"Prospera at Fiddyment Ranch"`
+          - `width: 665px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+        - **`<span.imageCard__location.font-XS>`** — 665×17
+          - text: `"Roseville, CA"`
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+    - **`<div.blockProjectsHighlight__layoutThreeContent>`** — 260×141
+      - `width: 260px; height: 140.594px; display: flex; flexDirection: column; gap: 30px; rowGap: 30px; columnGap: 30px; gridColumn: 1 / 5; gridRow: 2 / 3; gridArea: 2 / 1 / 3 / 5`
+      - **`<span.blockProjectsHighlight__layoutThreeTitle.font-L>`** — 260×84
+        - text: `"View all Housing"`
+        - `fontSize: 38px; lineHeight: 41.8px; width: 260px; height: 83.5938px; display: block`
+      - **`<a.buttonArrow.buttonArrow--icon>`** — 96×27 · href `https://lpas.com/portfolio/?market=housing`
+        - `color: rgb(38, 38, 38); width: 95.8594px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10; cursor: pointer`
+        - **`<span.button__title>`** — 60×28
+          - text: `"Portfolio"`
+          - `padding: 0px 0px 5px; margin: 0px 0px -10px; width: 59.8594px; height: 21.5938px; display: block; borderBottom: 1px solid rgb(214, 214, 214); whiteSpace: nowrap`
+        - **`<span.button__arrow>`** — 29×29
+          - `backgroundColor: rgb(214, 214, 214); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; border: 1px solid rgb(255, 255, 255); borderTop: 1px solid rgb(255, 255, 255); borderBottom: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -9.5, -9.5)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -33.25, -9.5)`
+
+
+---
+
+# Instance on `https://lpas.com/markets/housing/affordable-housing/`
+
+## BlockProjectsHighlight
+
+- **`<section.blockProjectsHighlight>`** — 1440×1550
+  - `fontSize: 16px; fontWeight: 400; lineHeight: 21.6px; color: rgb(17, 17, 17); margin: 100px 0px; width: 1440px; height: 1549.64px; display: grid; gap: 0px 10px; columnGap: 10px; gridTemplateColumns: [full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]; gridTemplateRows: 85.2969px 943.328px 521.016px; textAlign: start; flex: 0 1 auto`
+  - **`<header.blockProjectsHighlight__header>`** — 1340×60
+    - `padding: 0px 0px 17.5px; margin: 0px 0px 25px; width: 1340px; height: 41.7969px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 41.7969px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2; borderBottom: 1px solid rgb(214, 214, 214)`
+    - **`<h2.blockProjectsHighlight__headerTitle.font-L>`** — 1138×42
+      - text: `"Highlighted Projects"`
+      - `fontSize: 38px; lineHeight: 41.8px; width: 1137.5px; height: 41.7969px; display: block; gridColumn: 1 / -4; gridRow: 1; gridArea: 1 / 1 / auto / -4`
+    - **`<div.highlightedButton>`** — 194×37
+      - `margin: 5px 0px 0px; width: 194.25px; height: 36.7969px; display: block; gridColumn: -5 / -1; gridRow: 1; gridArea: 1 / -5 / auto / -1; zIndex: 50`
+      - **`<a.buttonArrow.buttonArrow--icon>`** — 194×27 · href `https://lpas.com/portfolio/?market=affordable-housing`
+        - `color: rgb(38, 38, 38); width: 194.25px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10; cursor: pointer`
+        - **`<span.button__title>`** — 158×27
+          - text: `"All Affordable Housing"`
+          - `padding: 0px 0px 5px; margin: 0px 0px -10px; width: 158.25px; height: 21.5938px; display: block; whiteSpace: nowrap`
+        - **`<span.button__arrow>`** — 29×28
+          - `backgroundColor: rgb(214, 214, 214); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; borderTop: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -9.5, -9.5)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -33.25, -9.5)`
+  - **`<a.blockProjectsHighlight__layoutFive>`** — 1340×943 · href `https://lpas.com/portfolio/prospera-at-fiddyment-ranch/`
+    - `padding: 0px 0px 50px; width: 1340px; height: 893.328px; maxHeight: 1000px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 893.328px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2; overflow: hidden; overflowX: hidden; overflowY: hidden; cursor: pointer`
+    - **`<div.blockProjectsHighlight__layoutFiveImage>`** — 1340×893
+      - `width: 1340px; height: 893.328px; display: block; gridColumn: 1 / -1; gridRow: 1; gridArea: 1 / 1 / auto / -1`
+      - **`<picture>`** — 1340×893
+        - `display: inline`
+        - **`<source>`** — 0×0
+          - `display: inline`
+        - **`<img.image.lazyautosizes.ls-is-cached.lazyloaded>`** — 1340×893
+          - img: `https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1440x960-c-default.webp` (natural 1340×893, alt ``)
+          - `width: 1340px; height: 893.328px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transition: opacity 0.3s; objectFit: cover`
+    - **`<div.blockProjectsHighlight__layoutFiveContent>`** — 278×137
+      - `color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 20px; margin: 50px 0px 0px 50px; width: 277.5px; height: 137.391px; display: flex; flexDirection: column; gridColumn: 1 / 6; gridRow: 1; gridArea: 1 / 1 / auto / 6; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0px 100%); backdropFilter: blur(20px)`
+      - **`<div.blockProjectsHighlight__layoutFiveButton>`** — 29×27
+        - `width: 29px; height: 27px; display: flex`
+        - **`<div.buttonArrow.buttonArrow--icon.buttonArrow--no-title>`** — 29×27
+          - `color: rgb(38, 38, 38); width: 29px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10`
+          - **`<span.button__arrow>`** — 29×29
+            - `color: rgb(255, 255, 255); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; border: 1px solid rgb(255, 255, 255); borderTop: 1px solid rgb(255, 255, 255); borderBottom: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+      - **`<span.blockProjectsHighlight__layoutFiveTitle>`** — 238×22
+        - text: `"Prospera at Fiddyment Ranch"`
+        - `margin: 30px 0px 2px; width: 237.5px; height: 21.5938px; display: block`
+      - **`<span.blockProjectsHighlight__layoutFiveLocation.font-XS>`** — 238×17
+        - text: `"Roseville, CA"`
+        - `fontSize: 12px; lineHeight: 16.8px; width: 237.5px; height: 16.7969px; display: block`
+  - **`<div.blockProjectsHighlight__layout.blockProjectsHighlight__layoutThree>`** — 1340×521
+    - `width: 1340px; height: 521.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px 50px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+    - **`<div.blockProjectsHighlight__smallImagesWrapper>`** — 665×471
+      - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+      - **`<a.imageCard>`** — 328×260 · href `https://lpas.com/portfolio/nellie-hannon-gateway-affordable-housing/`
+        - `width: 327.5px; height: 260px; display: block; gridColumn: span 1; gridArea: auto / span 1; position: relative; cursor: pointer`
+        - **`<div.imageCard__imageWrapper>`** — 328×205
+          - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden`
+          - **`<picture>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: block`
+        - **`<div.imageCard__textWrap>`** — 328×40
+          - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+          - **`<span.imageCard__title>`** — 328×22
+            - text: `"Nellie Hannon Gateway"`
+            - `width: 327.5px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+          - **`<span.imageCard__location.font-XS>`** — 328×17
+            - text: `"Emeryville, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 327.5px; height: 16.7969px; display: block`
+      - **`<a.imageCard>`** — 328×260 · href `https://lpas.com/portfolio/on-broadway/`
+        - `width: 327.5px; height: 260px; display: block; gridColumn: span 1; gridArea: auto / span 1; position: relative; cursor: pointer`
+        - **`<div.imageCard__imageWrapper>`** — 328×205
+          - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden`
+          - **`<picture>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: block`
+        - **`<div.imageCard__textWrap>`** — 328×40
+          - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+          - **`<span.imageCard__title>`** — 328×22
+            - text: `"On Broadway"`
+            - `width: 327.5px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+          - **`<span.imageCard__location.font-XS>`** — 328×17
+            - text: `"Sacramento, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 327.5px; height: 16.7969px; display: block`
+    - **`<a.imageCard>`** — 665×471 · href `https://lpas.com/portfolio/sunrise-pointe/`
+      - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; position: relative; cursor: pointer`
+      - **`<div.imageCard__imageWrapper>`** — 665×416
+        - `width: 665px; height: 415.625px; display: flex; justifyContent: center; overflow: hidden; overflowX: hidden; overflowY: hidden; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0px 100%)`
+        - **`<picture>`** — 665×416
+          - `width: 665px; height: 415.625px; display: block`
+          - **`<source>`** — 0×0
+            - `display: inline`
+          - **`<img.image.imageCard__image.lazyautosizes.ls-is-cached.lazyloaded>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/resized/2026/02/Sunrise-Pointe_25-1280x800-c-default.webp` (natural 665×415, alt ``)
+            - `width: 665px; height: 415.625px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: 1.2s cubic-bezier(0.14, 0.83, 0.4, 1); clipPath: inset(0% 0px 0px); objectFit: cover`
+      - **`<div.imageCard__textWrap>`** — 665×40
+        - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px`
+        - **`<span.imageCard__title>`** — 665×22
+          - text: `"Sunrise Pointe"`
+          - `width: 665px; height: 21.5938px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+        - **`<span.imageCard__location.font-XS>`** — 665×17
+          - text: `"Citrus Heights, CA"`
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+    - **`<div.blockProjectsHighlight__layoutThreeContent>`** — 260×182
+      - `width: 260px; height: 182.391px; display: flex; flexDirection: column; gap: 30px; rowGap: 30px; columnGap: 30px; gridColumn: 1 / 5; gridRow: 2 / 3; gridArea: 2 / 1 / 3 / 5`
+      - **`<span.blockProjectsHighlight__layoutThreeTitle.font-L>`** — 260×125
+        - text: `"See all Affordable Housing"`
+        - `fontSize: 38px; lineHeight: 41.8px; width: 260px; height: 125.391px; display: block`
+      - **`<a.buttonArrow.buttonArrow--icon>`** — 96×27 · href `https://lpas.com/portfolio/?market=affordable-housing`
+        - `color: rgb(38, 38, 38); width: 95.8594px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10; cursor: pointer`
+        - **`<span.button__title>`** — 60×28
+          - text: `"Portfolio"`
+          - `padding: 0px 0px 5px; margin: 0px 0px -10px; width: 59.8594px; height: 21.5938px; display: block; borderBottom: 1px solid rgb(214, 214, 214); whiteSpace: nowrap`
+        - **`<span.button__arrow>`** — 29×29
+          - `backgroundColor: rgb(214, 214, 214); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; border: 1px solid rgb(255, 255, 255); borderTop: 1px solid rgb(255, 255, 255); borderBottom: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -9.5, -9.5)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; position: absolute; top: 13.5px; right: -5.5px; bottom: -5.5px; left: 13.5px; inset: 13.5px -5.5px -5.5px 13.5px; transform: matrix(1, 0, 0, 1, -33.25, -9.5)`

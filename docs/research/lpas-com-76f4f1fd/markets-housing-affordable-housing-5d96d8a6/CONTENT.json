@@ -1,0 +1,638 @@
+{
+  "path": "/markets/housing/affordable-housing/",
+  "title": "Affordable Housing - LPAS Architecture",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/housing/affordable-housing/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/12/DJI_0485_1.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Back to Housing\nBuilding stability, building pride\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nAffordable Housing",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Affordable Housing"
+        }
+      ],
+      "paragraphs": [
+        "Affordable Housing",
+        "Affordable Housing",
+        "Student Housing",
+        "Student Housing",
+        "Market Rate Housing",
+        "Market Rate Housing",
+        "Senior Housing",
+        "Senior Housing"
+      ],
+      "links": [
+        {
+          "text": "Back to Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Affordable Housing",
+          "href": "https://lpas.com/markets/housing/affordable-housing/"
+        },
+        {
+          "text": "Student Housing",
+          "href": "https://lpas.com/markets/housing/student-housing/"
+        },
+        {
+          "text": "Market Rate Housing",
+          "href": "https://lpas.com/markets/housing/market-rate-housing/"
+        },
+        {
+          "text": "Senior Housing",
+          "href": "https://lpas.com/markets/housing/senior-housing/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0485_1-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/DJI_0485_1-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Building stability, building pride\nLPAS believes that everyone deserves access to well-designed, dignified housing. Our affordable housing work focuses on creating places that foster stability, connection, and pride for residents and the surrounding community.\n\nWith extensive experience designing affordable, permanent supportive, and mixed-income housing across California, we bring both technical expertise and deep empathy to every project. We collaborate with developers, housing authorities, and local agencies to bring clarity to complex processes and deliver design excellence within real-world constraints. We navigate TCAC requirements, leverage state incentives like SB 35, and work within the realities of public funding. Every project reflects our commitment to efficiency, equity, and the people who call these communities home.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS believes that everyone deserves access to well-designed, dignified housing. Our affordable housing work focuses on creating places that foster stability, connection, and pride for residents and the surrounding community."
+        }
+      ],
+      "paragraphs": [
+        "With extensive experience designing affordable, permanent supportive, and mixed-income housing across California, we bring both technical expertise and deep empathy to every project. We collaborate with developers, housing authorities, and local agencies to bring clarity to complex processes and deliver design excellence within real-world constraints. We navigate TCAC requirements, leverage state incentives like SB 35, and work within the realities of public funding. Every project reflects our commitment to efficiency, equity, and the people who call these communities home."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS affordable housing design process\nOur Process\n\nPhases\n\n01\nDiscovery + Feasibility\n02\nCommunity Engagement + Visioning\n03\nDesign Development + Optimization\n04\nApprovals + Delivery\n05\nOccupancy + Community Evolution\n01\nShaping opportunity together\nDiscovery + Feasibility\n\nEvery project begins with understanding. LPAS examines the site, its context, and its potential to create a clear picture of what can be achieved within funding and entitlement frameworks. We begin by aligning around your mission, the population you serve, and the complex funding mechanisms making these projects possible. We connect the physical opportunities of the land with the financial realities of affordable housing, helping our clients make informed decisions early in the process.\n\n02\nTrust Through Transparency\nCommunity Engagement + Visioning\n\nAffordable housing succeeds when residents, neighbors, and agencies feel heard. LPAS leads transparent and collaborative engagement efforts that bring diverse voices into the process. Thoughtful engagement, transparent communication, and responsive design can transform skeptics into advocates. We translate feedback into clear design priorities that balance community character, livability, and long-term sustainability.\n\n03\nQuality without compromise\nDesign Development + Optimization\n\nLPAS refines each project to deliver high-quality design within budget and schedule goals. Many affordable housing residents have experienced trauma or housing instability, and we employ trauma-informed design principles creating spaces that promote healing, dignity, and joy. We coordinate closely with consultants and contractors to ensure materials, systems, and layouts maximize efficiency and durability. Our process emphasizes creative problem-solving and technical precision to make every dollar count without compromising design integrity.\n\n04\nFocused Project Delivery\nApprovals + Delivery\n\nAffordable housing projects require alignment between multiple partners and agencies. Affordable housing faces compressed schedules driven by funding deadlines and tax credit timelines. LPAS manages that coordination with clarity, ensuring design quality remains consistent as the project moves through approvals, funding milestones, and construction. Our collaborative process helps clients stay on schedule and on budget while maintaining momentum.\n\n05\nPerformance over time\nOccupancy + Community Evolution\n\nOur commitment to affordable housing extends beyond completion. LPAS studies how spaces perform over time, how they support residents, simplify maintenance, and strengthen neighborhoods. We apply lessons learned from each project to continually improve design outcomes across our portfolio.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS affordable housing design process",
+        "Phases",
+        "01\n                        Discovery + Feasibility",
+        "Discovery + Feasibility",
+        "02\n                        Community Engagement + Visioning",
+        "Community Engagement + Visioning",
+        "03\n                        Design Development + Optimization",
+        "Design Development + Optimization",
+        "04\n                        Approvals + Delivery",
+        "Approvals + Delivery",
+        "05\n                        Occupancy + Community Evolution",
+        "Occupancy + Community Evolution",
+        "Discovery + Feasibility",
+        "Every project begins with understanding. LPAS examines the site, its context, and its potential to create a clear picture of what can be achieved within funding and entitlement frameworks. We begin by aligning around your mission, the population you serve, and the complex funding mechanisms making these projects possible. We connect the physical opportunities of the land with the financial realities of affordable housing, helping our clients make informed decisions early in the process.",
+        "Community Engagement + Visioning",
+        "Affordable housing succeeds when residents, neighbors, and agencies feel heard. LPAS leads transparent and collaborative engagement efforts that bring diverse voices into the process. Thoughtful engagement, transparent communication, and responsive design can transform skeptics into advocates. We translate feedback into clear design priorities that balance community character, livability, and long-term sustainability.",
+        "Design Development + Optimization",
+        "LPAS refines each project to deliver high-quality design within budget and schedule goals. Many affordable housing residents have experienced trauma or housing instability, and we employ trauma-informed design principles creating spaces that promote healing, dignity, and joy. We coordinate closely with consultants and contractors to ensure materials, systems, and layouts maximize efficiency and durability. Our process emphasizes creative problem-solving and technical precision to make every dollar count without compromising design integrity.",
+        "Approvals + Delivery",
+        "Affordable housing projects require alignment between multiple partners and agencies. Affordable housing faces compressed schedules driven by funding deadlines and tax credit timelines. LPAS manages that coordination with clarity, ensuring design quality remains consistent as the project moves through approvals, funding milestones, and construction. Our collaborative process helps clients stay on schedule and on budget while maintaining momentum.",
+        "Occupancy + Community Evolution",
+        "Our commitment to affordable housing extends beyond completion. LPAS studies how spaces perform over time, how they support residents, simplify maintenance, and strengthen neighborhoods. We apply lessons learned from each project to continually improve design outcomes across our portfolio."
+      ],
+      "links": [
+        {
+          "text": "01 Shaping opportunity together Discovery + Feasibility Every project begins with understanding. LPAS examines the site,",
+          "href": "https://lpas.com/processes/discovery-feasibility/?ids=914%2C925%2C927%2C933%2C936"
+        },
+        {
+          "text": "02 Trust Through Transparency Community Engagement + Visioning Affordable housing succeeds when residents, neighbors, an",
+          "href": "https://lpas.com/processes/community-engagement-visioning/?ids=914%2C925%2C927%2C933%2C936"
+        },
+        {
+          "text": "03 Quality without compromise Design Development + Optimization LPAS refines each project to deliver high-quality design",
+          "href": "https://lpas.com/processes/design-development-optimization/?ids=914%2C925%2C927%2C933%2C936"
+        },
+        {
+          "text": "04 Focused Project Delivery Approvals + Delivery Affordable housing projects require alignment between multiple partners",
+          "href": "https://lpas.com/processes/approvals-delivery/?ids=914%2C925%2C927%2C933%2C936"
+        },
+        {
+          "text": "05 Performance over time Occupancy + Community Evolution Our commitment to affordable housing extends beyond completion.",
+          "href": "https://lpas.com/processes/occupancy-community-evolution/?ids=914%2C925%2C927%2C933%2C936"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/Frame-4460-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/Frame-4474-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/Frame-4473-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/Frame-4478-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/Frame-4462-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Design for Diverse Needs\nSpecialized Affordable Housing Expertise\n\nPermanent Supportive Housing:\nTrauma-informed environments for formerly unhoused individuals and families with integrated service spaces.\n\nFamily Housing:\nDesigning for multigenerational families with play areas, community spaces, and family-sized units.\n\nSenior Affordable Housing:\nAge-appropriate design with accessibility, community spaces, and consideration for aging in place.\n\nMixed-Income Communities:\nIntegrating affordable and market-rate units to create economically diverse, thriving communities.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Specialized Affordable Housing Expertise"
+        }
+      ],
+      "paragraphs": [
+        "Permanent Supportive Housing:\nTrauma-informed environments for formerly unhoused individuals and families with integrated service spaces.",
+        "Family Housing:\nDesigning for multigenerational families with play areas, community spaces, and family-sized units.",
+        "Senior Affordable Housing:\nAge-appropriate design with accessibility, community spaces, and consideration for aging in place.",
+        "Mixed-Income Communities:\nIntegrating affordable and market-rate units to create economically diverse, thriving communities."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Proven Partners in Housing\nWhy Affordable Housing Developers Choose LPAS\n\nMission-Driven Partnership:\nWe understand affordable housing transforms lives. Our designs reflect the dignity and respect your residents deserve.\n\nRegulatory Expertise:\nDeep experience with TCAC, LIHTC, SB 35, density bonuses, and complex compliance requirements.\n\nFiscal Responsibility:\nWe make every dollar count, delivering quality housing within public funding and tax credit financing constraints.\n\nTrauma-Informed Design:\nCreating environments that promote healing, safety, and wellbeing for vulnerable populations.\n\nProven Track Record:\nFrom permanent supportive to family developments, we’ve delivered affordable housing that communities celebrate.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Affordable Housing Developers Choose LPAS"
+        }
+      ],
+      "paragraphs": [
+        "Mission-Driven Partnership:\nWe understand affordable housing transforms lives. Our designs reflect the dignity and respect your residents deserve.",
+        "Regulatory Expertise:\nDeep experience with TCAC, LIHTC, SB 35, density bonuses, and complex compliance requirements.",
+        "Fiscal Responsibility:\nWe make every dollar count, delivering quality housing within public funding and tax credit financing constraints.",
+        "Trauma-Informed Design:\nCreating environments that promote healing, safety, and wellbeing for vulnerable populations.",
+        "Proven Track Record:\nFrom permanent supportive to family developments, we’ve delivered affordable housing that communities celebrate."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted Projects\nAll Affordable Housing\nProspera at Fiddyment Ranch\nRoseville, CA\nNellie Hannon Gateway\nEmeryville, CA\nOn Broadway\nSacramento, CA\nSunrise Pointe\nCitrus Heights, CA\nSee all Affordable Housing\nPortfolio",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted Projects"
+        }
+      ],
+      "paragraphs": [
+        "Prospera at Fiddyment Ranch",
+        "See all Affordable Housing"
+      ],
+      "links": [
+        {
+          "text": "All Affordable Housing",
+          "href": "https://lpas.com/portfolio/?market=affordable-housing"
+        },
+        {
+          "text": "Prospera at Fiddyment Ranch Roseville, CA",
+          "href": "https://lpas.com/portfolio/prospera-at-fiddyment-ranch/"
+        },
+        {
+          "text": "Nellie Hannon Gateway Emeryville, CA",
+          "href": "https://lpas.com/portfolio/nellie-hannon-gateway-affordable-housing/"
+        },
+        {
+          "text": "On Broadway Sacramento, CA",
+          "href": "https://lpas.com/portfolio/on-broadway/"
+        },
+        {
+          "text": "Sunrise Pointe Citrus Heights, CA",
+          "href": "https://lpas.com/portfolio/sunrise-pointe/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/?market=affordable-housing"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/DJI_0490_1-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1340,
+          "h": 893
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/37th-San-Pabo-corner_night_2-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/37th-San-Pabo-corner_night_2-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/Night_01-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/Night_01-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/02/Sunrise-Pointe_25-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/Sunrise-Pointe_25-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-affordable-housing-5d96d8a6/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

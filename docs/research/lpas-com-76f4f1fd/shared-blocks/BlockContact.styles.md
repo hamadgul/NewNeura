@@ -1,0 +1,141 @@
+# BlockContact — extracted computed styles
+
+Auto-generated from `getComputedStyle()` at 1440px via the block extraction
+pass. Every value below is measured, not estimated. Where more than one
+instance is listed, diff them to see which values are content-driven props
+and which are fixed to the block.
+
+---
+
+# Instance on `https://lpas.com/contact/`
+
+## BlockContact
+
+- **`<section.blockContact>`** — 1440×806
+  - `fontSize: 16px; fontWeight: 400; lineHeight: 21.6px; color: rgb(255, 255, 255); backgroundColor: rgb(38, 38, 38); padding: 120px 0px 0px; width: 1440px; height: 806px; minHeight: fit-content; display: grid; gap: 0px 10px; columnGap: 10px; gridTemplateColumns: [full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]; gridTemplateRows: 158.906px 91px 139.812px 296.281px; textAlign: start; flex: 0 1 auto`
+  - **`<div.blockContact__title>`** — 395×159
+    - `width: 395px; height: 158.906px; display: flex; flexDirection: column; gap: 10px; rowGap: 10px; gridColumn: 2 / 8; gridRow: 1; gridArea: 1 / 2 / auto / 8`
+    - **`<span.font-S.blockContact__tagline>`** — 395×0
+      - `fontSize: 14px; lineHeight: 18.9px; width: 395px; display: block`
+    - **`<h1.font-3XL>`** — 395×75
+      - text: `"Contact"`
+      - `fontSize: 75px; lineHeight: 75px; width: 395px; height: 75px; display: block`
+  - **`<div.blockContact__contactOne>`** — 173×159
+    - `width: 173.25px; height: 158.906px; display: block; gridColumn: right / -9; gridArea: auto / right / auto / -9`
+    - **`<div.contactInfo>`** — 173×159
+      - `padding: 25px 0px 0px; width: 173.25px; height: 133.906px; display: flex; flexDirection: column; gap: 10px; rowGap: 10px; gridColumn: -2 / -2; gridRow: 1; gridArea: 1 / -2 / auto / -2`
+      - **`<h2.font-S--SemiBold.contactInfo__Label>`** — 173×22
+        - text: `"Sacramento"`
+        - `margin: 0px 0px 5px; width: 173.25px; height: 21.5938px; display: block`
+      - **`<a.font-S>`** — 173×38 · href `https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A`
+        - `fontSize: 14px; lineHeight: 18.9px; width: 173.25px; height: 37.8125px; display: block; cursor: pointer`
+        - **`<p>`** — 173×38
+          - `width: 173.25px; height: 37.8125px; display: block`
+          - **`<br>`** — 0×16
+            - `display: inline`
+      - **`<a.font-S>`** — 173×19 · href `tel:916-443-0335`
+        - text: `"916 443 0335"`
+        - `fontSize: 14px; lineHeight: 18.9px; width: 173.25px; height: 18.9062px; display: block; cursor: pointer`
+      - **`<a.buttonLine>`** — 45×26 · href `mailto:ContactUs@lpas.com`
+        - `margin: -5px 0px 0px; width: 44.8125px; height: 25.5938px; display: flex; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer`
+        - **`<span.font-s>`** — 45×22
+          - text: `"E-mail"`
+          - `width: 44.8125px; height: 21.5938px; display: block`
+        - **`<span.buttonLine__line>`** — 45×1
+          - `margin: 3px 0px 0px; width: 44.8125px; height: 1px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+          - **`<span.buttonLine__line--one>`** — 45×1
+            - `backgroundColor: rgb(255, 255, 255); width: 44.8125px; height: 1px; display: block; position: absolute`
+          - **`<span.buttonLine__line--two>`** — 45×1
+            - `backgroundColor: rgb(255, 255, 255); width: 44.8125px; height: 1px; display: block; position: absolute; transform: matrix(1, 0, 0, 1, -47.0531, 0)`
+  - **`<div.blockContact__contactTwo>`** — 193×159
+    - `width: 192.5px; height: 158.906px; display: block; gridColumn: -7 / -4; gridArea: auto / -7 / auto / -4`
+    - **`<div.contactInfo>`** — 193×159
+      - `padding: 25px 0px 0px; width: 192.5px; height: 133.906px; display: flex; flexDirection: column; gap: 10px; rowGap: 10px; gridColumn: -2 / -2; gridRow: 1; gridArea: 1 / -2 / auto / -2`
+      - **`<h2.font-S--SemiBold.contactInfo__Label>`** — 193×22
+        - text: `"Oakland"`
+        - `margin: 0px 0px 5px; width: 192.5px; height: 21.5938px; display: block`
+      - **`<a.font-S>`** — 193×38 · href `https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A`
+        - `fontSize: 14px; lineHeight: 18.9px; width: 192.5px; height: 37.8125px; display: block; cursor: pointer`
+        - **`<p>`** — 193×38
+          - `width: 192.5px; height: 37.8125px; display: block`
+          - **`<br>`** — 0×16
+            - `display: inline`
+      - **`<a.font-S>`** — 193×19 · href `tel:415-213-0335`
+        - text: `"415 213 0335"`
+        - `fontSize: 14px; lineHeight: 18.9px; width: 192.5px; height: 18.9062px; display: block; cursor: pointer`
+      - **`<a.buttonLine>`** — 45×26 · href `mailto:ContactUs@lpas.com`
+        - `margin: -5px 0px 0px; width: 44.8125px; height: 25.5938px; display: flex; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer`
+        - **`<span.font-s>`** — 45×22
+          - text: `"E-mail"`
+          - `width: 44.8125px; height: 21.5938px; display: block`
+        - **`<span.buttonLine__line>`** — 45×1
+          - `margin: 3px 0px 0px; width: 44.8125px; height: 1px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+          - **`<span.buttonLine__line--one>`** — 45×1
+            - `backgroundColor: rgb(255, 255, 255); width: 44.8125px; height: 1px; display: block; position: absolute`
+          - **`<span.buttonLine__line--two>`** — 45×1
+            - `backgroundColor: rgb(255, 255, 255); width: 44.8125px; height: 1px; display: block; position: absolute; transform: matrix(1, 0, 0, 1, -47.0531, 0)`
+  - **`<div.blockContact__line>`** — 1340×1
+    - `backgroundColor: rgb(163, 163, 163); margin: 30px 0px 60px; width: 1340px; height: 1px; display: block; gridColumn: 2 / -2; gridRow: 2; gridArea: 2 / 2 / auto / -2`
+  - **`<div.blockContact__social>`** — 665×50
+    - `color: rgb(163, 163, 163); margin: 0px 0px 60px; width: 665px; height: 49.5px; display: flex; flexWrap: wrap; gap: 5px 20px; rowGap: 5px; columnGap: 20px; gridColumn: left; gridRow: 3; gridArea: 3 / left`
+    - **`<span.blockContact__socialLabel.font-S>`** — 665×19
+      - text: `"Follow us on our socials"`
+      - `fontSize: 14px; lineHeight: 18.9px; width: 665px; height: 18.9062px; display: block`
+    - **`<a.buttonLine>`** — 72×26 · href `https://www.instagram.com/lpas.design`
+      - `color: rgb(255, 255, 255); width: 71.9375px; height: 25.5938px; display: flex; flexDirection: column; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer`
+      - **`<span.font-s>`** — 72×22
+        - text: `"Instagram"`
+        - `width: 71.9375px; height: 21.5938px; display: block`
+      - **`<span.buttonLine__line>`** — 72×1
+        - `margin: 3px 0px 0px; width: 71.9375px; height: 1px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+        - **`<span.buttonLine__line--one>`** — 72×1
+          - `backgroundColor: rgb(255, 255, 255); width: 71.9375px; height: 1px; display: block; position: absolute`
+        - **`<span.buttonLine__line--two>`** — 72×1
+          - `backgroundColor: rgb(255, 255, 255); width: 71.9375px; height: 1px; display: block; position: absolute; transform: matrix(1, 0, 0, 1, -75.5344, 0)`
+    - **`<a.buttonLine>`** — 59×26 · href `https://www.linkedin.com/company/lpas-architecture-and-design`
+      - `color: rgb(255, 255, 255); width: 58.9375px; height: 25.5938px; display: flex; flexDirection: column; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer`
+      - **`<span.font-s>`** — 59×22
+        - text: `"Linkedin"`
+        - `width: 58.9375px; height: 21.5938px; display: block`
+      - **`<span.buttonLine__line>`** — 59×1
+        - `margin: 3px 0px 0px; width: 58.9375px; height: 1px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+        - **`<span.buttonLine__line--one>`** — 59×1
+          - `backgroundColor: rgb(255, 255, 255); width: 58.9375px; height: 1px; display: block; position: absolute`
+        - **`<span.buttonLine__line--two>`** — 59×1
+          - `backgroundColor: rgb(255, 255, 255); width: 58.9375px; height: 1px; display: block; position: absolute; transform: matrix(1, 0, 0, 1, -61.8844, 0)`
+    - **`<a.buttonLine>`** — 70×26 · href `https://www.facebook.com/LPAS-Architecture-Design-200127570010089`
+      - `color: rgb(255, 255, 255); width: 70.4219px; height: 25.5938px; display: flex; flexDirection: column; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer`
+      - **`<span.font-s>`** — 70×22
+        - text: `"Facebook"`
+        - `width: 70.4219px; height: 21.5938px; display: block`
+      - **`<span.buttonLine__line>`** — 70×1
+        - `margin: 3px 0px 0px; width: 70.4219px; height: 1px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+        - **`<span.buttonLine__line--one>`** — 70×1
+          - `backgroundColor: rgb(255, 255, 255); width: 70.4219px; height: 1px; display: block; position: absolute`
+        - **`<span.buttonLine__line--two>`** — 70×1
+          - `backgroundColor: rgb(255, 255, 255); width: 70.4219px; height: 1px; display: block; position: absolute; transform: matrix(1, 0, 0, 1, -73.943, 0)`
+  - **`<div.blockContact__textField>`** — 395×65
+    - `color: rgb(163, 163, 163); margin: 0px 0px 75px; width: 395px; height: 64.8125px; display: block; gridColumn: right / -6; gridRow: 3; gridArea: 3 / right / auto / -6`
+    - **`<a.blockContact__textWrapper>`** — 387×51 · href `https://lpas.com/careers/`
+      - `width: fit-content; height: fit-content; display: inline; cursor: pointer`
+      - **`<span.font-SM>`** — 387×60
+        - text: `"We’re always on the lookout for new talent."`
+        - `fontSize: 24px; lineHeight: 32.4px; display: inline`
+      - **`<span.font-SM.blockContact__textFieldHighlight>`** — 253×28
+        - text: `"See our open positions."`
+        - `fontSize: 24px; lineHeight: 32.4px; color: rgb(255, 255, 255); display: inline`
+      - **`<div.font-SM.blockContact__textFieldButton>`** — 50×20
+        - `fontSize: 24px; lineHeight: 32.4px; width: 50px; height: 20px; display: inline-block; position: relative`
+        - **`<div.buttonArrow.buttonArrow--no-title>`** — 29×27
+          - `color: rgb(255, 255, 255); width: 29px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; position: absolute; top: -2px; right: 16px; bottom: -5px; left: 5px; zIndex: 10; inset: -2px 16px -5px 5px`
+          - **`<span.button__arrow>`** — 29×29
+            - `margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; border: 1px solid rgb(255, 255, 255); borderTop: 1px solid rgb(255, 255, 255); borderBottom: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+  - **`<div.blockContact__imageWrapper>`** — 1340×296
+    - `width: 1340px; height: 296.281px; minHeight: 250px; display: block; gridColumn: 2 / -2; gridRow: 4; gridArea: 4 / 2 / auto / -2; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; zIndex: 1`
+    - **`<picture>`** — 1340×296
+      - `display: inline`
+      - **`<source>`** — 0×0
+        - `display: inline`
+      - **`<img.image.blockContact__image>`** — 1340×296
+        - img: `https://lpas.com/wp-content/uploads/resized/2026/01/Contact-LPAS-1440x567-c-default.webp` (natural 1440×567, alt ``)
+        - `width: 1340px; height: 296.281px; minHeight: 150px; display: block; gridColumn: 1 / -1; gridRow: 6; gridArea: 6 / 1 / auto / -1; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`

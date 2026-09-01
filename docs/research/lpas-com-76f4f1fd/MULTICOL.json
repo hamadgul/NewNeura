@@ -1,0 +1,101 @@
+{
+  "/culture/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/portfolio/las-positas-college-academic-support-building/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/housing/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/housing/affordable-housing/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/housing/market-rate-housing/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/housing/student-housing/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/housing/senior-housing/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/civic/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/commercial/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/interiors/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ],
+  "/markets/higher-education/": [
+    {
+      "block": "BlockIntroDouble",
+      "cls": "blockIntroDouble__textMain",
+      "columnCount": "2",
+      "columnWidth": "auto",
+      "columnGap": "20px"
+    }
+  ]
+}

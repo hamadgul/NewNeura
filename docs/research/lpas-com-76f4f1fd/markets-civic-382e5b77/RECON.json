@@ -1,0 +1,359 @@
+{
+  "path": "/markets/civic/",
+  "key": "markets-civic-382e5b77",
+  "url": "https://lpas.com/markets/civic/",
+  "desktop": {
+    "title": "LPAS — Civic",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 7,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(112, 117, 105)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Civic"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Our focus on\nArchitecture in service\nCivic"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 463,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: LPAS designs civic spaces that embody trust, connection, and service. We understand that public buildings represent more"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Architecture in service\nLPAS designs civic spaces that embody trust, connection, and service. We understand that public buildings represent more than function; they reflect the values of the communities they serve and carry symbolic weight as landmarks of democratic ideals and public service.\n\nWith extensive experience designing civic and public agency buildings across California, we understand the unique challenges these projects face: constricted budgets, complex stakeholder groups, rigorous approval processes, and the need to serve diverse populations with dignity and transparency. Our approach emphasizes collaboration, transparency, and design excellence, ensuring every project delivers long-term value for users, agencies, and the public. From visioning through occupancy, LPAS helps civic clients achieve clarity, efficiency, and enduring impact."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS Civic Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Mission Alignment\n02\nCommunity Engagement\n03\nConcept + Design Development\n04\nTechnical + Cost Integration\n05\nImplementation + Legacy\n01\nShared purpose, clear direction\nDiscovery + Mission Alignment\n\nLPAS begins by listening to understand the mission and priorities of each agency and community. Civic buildings serve entire communities, and successful projects require meaningful engagement with diverse stakeholders. We analyze operational requirements, user needs, and site context to define a clear framework for decision-making. This early clarity helps establish a shared understanding of purpose and performance before design begins.\n\n02\nOpen dialogue for better design\nCommunity Engagement\n\nPublic projects thrive when the community has a voice in the process. Civic buildings must be physically and psychologically a"
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 397,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Specialized Civic Expertise"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Purpose-Built Civic Design\nSpecialized Civic Expertise\n\nPublic Safety Facilities:\nPolice and fire stations balancing security needs with community connection and transparency.\n\nCourthouses & Justice Centers:\nDignified environments serving judicial functions with appropriate security and public accessibility.\n\nCity Halls & Municipal Buildings:\nMulti-department civic centers with public meeting spaces and efficient staff work areas.\n\nCommunity Centers:\nFlexible gathering spaces serving diverse programs and strengthening community connections.\n\nLibraries & Cultural Buildings:\nPublic buildings supporting education, culture, and community gathering.\n\nPublic Agency & Government Offices:\nState and federal facilities serving public needs with appropriate security and functionality."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 397,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Why Municipalities & Agencies Choose LPAS"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Trusted Civic Design Partner\nWhy Municipalities & Agencies Choose LPAS\n\nPublic Sector Experience:\nDeep understanding of public funding constraints, approval processes, and stakeholder complexity.\n\nCommunity Engagement Expertise:\nProven approaches to meaningful public input that shapes better outcomes.\n\nFiscal Responsibility:\nMaximizing civic presence and functionality within public budgets through creative value engineering.\n\nDSA & Regulatory Navigation:\nExpert navigation of Division of State Architect and public agency requirements.\n\nAccessible Design Commitment:\nUniversal design that genuinely welcomes all community members.\n\nLong-Term Thinking:\nDesigning for durability, adaptability, and multiple generations of service."
+      },
+      {
+        "i": 5,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 1177,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Highlighted projects"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 4,
+        "linkCount": 7,
+        "text": "Highlighted projects\nAll Civic\nSolano Transportation Authority\nSuisun City, CA\nTehama County Courthouse\nRed Bluff, CA\nCalifornia Highway Patrol Truckee Field Office\nTruckee, CA\nCalifornia Highway Patrol Headquarters\nSacramento, CA\n316 Vernon Street Office\nRoseville, CA\nView all Civic\nPortfolio"
+      },
+      {
+        "i": 6,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/16_316-Vernon-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/16_316-Vernon-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/16_316-Vernon-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/16_316-Vernon-992x661-c",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4516-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4516-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4516-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4516-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/07_STA-HQ-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/07_STA-HQ-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/07_STA-HQ-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/07_STA-HQ-992x620-c-default.jpg",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/20_Tehama-County-Courthouse-edited-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/20_Tehama-County-Courthouse-edited-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/20_Tehama-County-Courthouse-edited-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploa",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/02_CHP-Truckee-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_CHP-Truckee-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_CHP-Truckee-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_CHP-Truckee-992x62",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/10_CHP-Headquarters-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/10_CHP-Headquarters-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/10_CHP-Headquarters-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/10_CHP-Head",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/19_316-Vernon-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/19_316-Vernon-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/19_316-Vernon-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/19_316-Vernon-992x620-c",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/16_316-Vernon.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 765,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1143,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 672,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 682,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "h": 2053,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:11:45.577Z"
+}

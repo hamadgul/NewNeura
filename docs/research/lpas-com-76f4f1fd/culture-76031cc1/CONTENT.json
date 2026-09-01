@@ -1,0 +1,678 @@
+{
+  "path": "/culture/",
+  "title": "Culture - LPAS Architecture",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/culture/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/12/HW23_LPAS_web-res_34.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/culture-76031cc1/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Menu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderGeneral",
+      "classes": "blockHeaderGeneral",
+      "innerText": "Great people, great projects.\nCulture",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Culture"
+        }
+      ],
+      "paragraphs": [
+        "Great people, great projects."
+      ],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-1440x900-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/DSC9347-1440x900-c-default.webp",
+          "alt": "",
+          "w": 193,
+          "h": 120
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_34-1440x2188-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/HW23_LPAS_web-res_34-1440x2188-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 2188
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Designing Boldly. Growing People.\nAt LPAS, we are powered by curious minds and genuinely kind people. We believe the best ideas happen when hierarchy fades, curiosity leads, and every voice has a seat at the table.\n\nFrom our open studio in the heart of downtown Sacramento, creativity flows freely, fueled by collaboration, mentorship, and a shared commitment to design that shapes communities. Questions are encouraged. Collaboration is expected. Innovation is part of our identity. Our culture blends rigorous design thinking with authentic connection. You might find us sketching bold new concepts over coffee, hosting a lunch-and-learn to explore emerging technologies, or celebrating the week together at a Thirsty Thursday or karaoke night. We work hard, stay curious, and make space for fun along the way. Learning never stops here. With expertise across architecture and interior design, mentorship happens organically across disciplines, markets, generations, and project teams. Growth is built through shared knowledge, thoughtful feedback, and meaningful responsibility from day one. We foster an environment where people feel supported, inspired, and connected. Collaboration is embedded in how we work. Design excellence and genuine care for one another go hand in hand. Designing spaces people love starts with creating a workplace people love too. We foster an environment where people feel supported, inspired, and connected. Collaboration is embedded in how we work. Design excellence and genuine care for one another go hand in hand. Designing spaces people love starts with creating a workplace people love too.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "At LPAS, we are powered by curious minds and genuinely kind people. We believe the best ideas happen when hierarchy fades, curiosity leads, and every voice has a seat at the table."
+        }
+      ],
+      "paragraphs": [
+        "From our open studio in the heart of downtown Sacramento, creativity flows freely, fueled by collaboration, mentorship, and a shared commitment to design that shapes communities. Questions are encouraged. Collaboration is expected. Innovation is part of our identity.\n\nOur culture blends rigorous design thinking with authentic connection. You might find us sketching bold new concepts over coffee, hosting a lunch-and-learn to explore emerging technologies, or celebrating the week together at a Thirsty Thursday or karaoke night. We work hard, stay curious, and make space for fun along the way.\n\nLearning never stops here. With expertise across architecture and interior design, mentorship happens organically across disciplines, markets, generations, and project teams. Growth is built through shared knowledge, thoughtful feedback, and meaningful responsibility from day one.\n\nWe foster an environment where people feel supported, inspired, and connected. Collaboration is embedded in how we work. Design excellence and genuine care for one another go hand in hand.\n\nDesigning spaces people love starts with creating a workplace people love too.\n\nWe foster an environment where people feel supported, inspired, and connected. Collaboration is embedded in how we work. Design excellence and genuine care for one another go hand in hand.\n\nDesigning spaces people love starts with creating a workplace people love too."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockImageSlider",
+      "classes": "blockImageSlider",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/20231116_172026-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 630
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_130220-1440x1440-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/20240725_130220-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_162707-1440x1440-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/20240725_162707-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_163242-1440x1440-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/20240725_163242-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/20240920_093221-1440x1440-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/20240920_093221-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Brock-Pic-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/Brock-Pic-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Craps-1-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/Craps-1-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Document1-1440x1864-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/Document1-1440x1864-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1864
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/HABITAT_2-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/HABITAT_2-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_2381-1440x1440-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_2381-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_2966-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_2966-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4102-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_4102-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4115-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_4115-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4118-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_4118-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4134-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_4134-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_6101-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_6101-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_6104-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/IMG_6104-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/lunch-pic-1440x672-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/lunch-pic-1440x672-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 672
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20241214_051409559-1440x1084-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/PXL_20241214_051409559-1440x1084-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1084
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20250809_013545380-1440x1084-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/PXL_20250809_013545380-1440x1084-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1084
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20250809_023225272-1440x1913-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/PXL_20250809_023225272-1440x1913-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1913
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Team-3-Photo-3-RETRO-TOWER-THEATRE-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/Team-3-Photo-3-RETRO-TOWER-THEATRE-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Team-3-Photo-5-TOMATO-ALLEY-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/Team-3-Photo-5-TOMATO-ALLEY-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC8867-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/DSC8867-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC8967-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/DSC8967-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9264-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/DSC9264-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/DSC9347-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/3-1440x945-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/3-1440x945-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 945
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/6-1440x1860-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/6-1440x1860-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1860
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/11-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/11-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/17-1440x1080-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/17-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/2024-Kareoke-2024-1440x1920-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/2024-Kareoke-2024-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockImageFull",
+      "classes": "blockImageFull",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/20221007_145237-1600x748-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/20221007_145237-1600x748-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 673
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "GeneralCta",
+      "classes": "generalCta",
+      "innerText": "Explore our job opportunities Careers\n\nCareers",
+      "headings": [],
+      "paragraphs": [
+        "Explore our job opportunities Careers"
+      ],
+      "links": [
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/culture-76031cc1/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

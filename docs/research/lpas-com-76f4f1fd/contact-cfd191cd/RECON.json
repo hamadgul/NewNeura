@@ -1,0 +1,124 @@
+{
+  "path": "/contact/",
+  "key": "contact-cfd191cd",
+  "url": "https://lpas.com/contact/",
+  "desktop": {
+    "title": "Contact - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 2,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "section",
+        "id": null,
+        "classes": "blockContact",
+        "dataAttrs": {
+          "watchheader": "",
+          "grid": "grid-template",
+          "control": "BlockContact"
+        },
+        "height": 806,
+        "width": 1440,
+        "bg": "rgb(38, 38, 38)",
+        "color": "rgb(255, 255, 255)",
+        "position": "static",
+        "childCount": 7,
+        "headings": [
+          "H1: Contact",
+          "H2: Sacramento",
+          "H2: Oakland"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 2,
+        "linkCount": 10,
+        "text": "Contact\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\nFollow us on our socials\nInstagram\nLinkedin\nFacebook\nWe’re always on the lookout for new talent. See our open positions."
+      },
+      {
+        "i": 1,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Contact-LPAS-1440x567-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Contact-LPAS-375x148-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Contact-LPAS-678x267-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Contact-LPAS-992x391-c-de",
+        "alt": "",
+        "w": 1440,
+        "h": 567,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNDAwJyBoZWlnaHQ9JzI3MycgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2026/01/Contact-LPAS.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "section",
+      "h": 842,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:02:52.733Z"
+}

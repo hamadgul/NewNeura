@@ -1,0 +1,183 @@
+# BlockImageSlider — extracted computed styles
+
+Auto-generated from `getComputedStyle()` at 1440px via the block extraction
+pass. Every value below is measured, not estimated. Where more than one
+instance is listed, diff them to see which values are content-driven props
+and which are fixed to the block.
+
+---
+
+# Instance on `https://lpas.com/culture/`
+
+## BlockImageSlider
+
+- **`<div.blockImageSlider>`** — 1440×631
+  - `fontSize: 16px; fontWeight: 400; lineHeight: 21.6px; color: rgb(17, 17, 17); margin: 120px 0px; width: 1440px; height: 631.094px; display: grid; gap: 0px 10px; columnGap: 10px; gridTemplateColumns: [full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]; gridTemplateRows: 631.094px; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; textAlign: start; flex: 0 1 auto`
+  - **`<div.swiper.blockImageSlider__slider.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-watch-progress>`** — 1440×631
+    - `width: 1440px; height: 631.094px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; zIndex: 1`
+    - **`<div.blockImageSlider__navigation>`** — 0×0
+      - `margin: 0px 0px 20px; height: fit-content; gap: 20px; rowGap: 20px; columnGap: 20px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+      - **`<div.swiper-progressbar.blockImageSlider__progressbar.swiper-pagination-progressbar.swiper-pagination-horizontal>`** — 0×0
+        - `backgroundColor: rgb(214, 214, 214); width: 100%; height: 1px; display: block; borderRadius: 2px; zIndex: 10`
+        - **`<span.swiper-pagination-progressbar-fill>`** — 0×0
+          - `backgroundColor: rgb(17, 17, 17); width: 100%; height: 100%; display: block; position: absolute; inset: 0px auto auto 0px`
+      - **`<div.blockImageSlider__navigation--buttonContainer>`** — 0×0
+        - `display: flex; gap: 10px; rowGap: 10px; columnGap: 10px`
+        - **`<button.buttonCircle.buttonCircle--swiper-button-prev.buttonCircle--blockImageSlider__arrow--prev.buttonCircle--icon.buttonCircle--no-title.swiper-button-disabled>`** — 0×0
+          - `color: rgb(38, 38, 38); padding: 12px; width: fit-content; height: fit-content; display: flex; alignItems: center; borderRadius: 50%; border: 1px solid rgb(214, 214, 214); borderTop: 1px solid rgb(214, 214, 214); borderBottom: 1px solid rgb(214, 214, 214); borderLeft: 1px solid rgb(214, 214, 214); borderRight: 1px solid rgb(214, 214, 214); overflow: hidden; overflowX: hidden; overflowY: hidden; transition: color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+          - **`<svg.[object.SVGAnimatedString]>`** — 0×0
+            - `width: 19px; height: 19px; display: block; zIndex: 2`
+          - **`<span.buttonCircle__background>`** — 0×0
+            - `backgroundColor: rgb(38, 38, 38); display: block; borderRadius: 100%; position: absolute; top: 100%; inset: 100% 0px 0px; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+        - **`<button.buttonCircle.buttonCircle--swiper-button-next.buttonCircle--blockImageSlider__arrow--next.buttonCircle--icon.buttonCircle--no-title>`** — 0×0
+          - `color: rgb(38, 38, 38); backgroundColor: rgb(214, 214, 214); padding: 12px; width: fit-content; height: fit-content; display: flex; alignItems: center; borderRadius: 50%; border: 1px solid rgb(214, 214, 214); borderTop: 1px solid rgb(214, 214, 214); borderBottom: 1px solid rgb(214, 214, 214); borderLeft: 1px solid rgb(214, 214, 214); borderRight: 1px solid rgb(214, 214, 214); overflow: hidden; overflowX: hidden; overflowY: hidden; transition: color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+          - **`<svg.[object.SVGAnimatedString]>`** — 0×0
+            - `width: 19px; height: 19px; display: block; zIndex: 2`
+          - **`<span.buttonCircle__background>`** — 0×0
+            - `backgroundColor: rgb(38, 38, 38); display: block; borderRadius: 100%; position: absolute; top: 100%; inset: 100% 0px 0px; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<div.swiper-wrapper>`** — 1×631
+      - `width: 1px; height: 631.094px; display: flex; alignItems: flex-start; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; transform: matrix(1, 0, 0, 1, 0, 0); transition: transform`
+      - **`<div.swiper-slide.blockImageSlider__slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×631
+          - `width: 473.328px; height: 631.094px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×631
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-next>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×473
+          - `width: 473.328px; height: 473.328px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×473
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide.swiper-slide-visible>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×473
+          - `width: 473.328px; height: 473.328px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×473
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×473
+          - `width: 473.328px; height: 473.328px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×473
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×473
+          - `width: 473.328px; height: 473.328px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×473
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×631
+          - `width: 473.328px; height: 631.094px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×631
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×355
+          - `width: 473.328px; height: 354.984px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×355
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×613
+          - `width: 473.328px; height: 612.688px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×613
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×355
+          - `width: 473.328px; height: 354.984px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×355
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×473
+          - `width: 473.328px; height: 473.328px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×473
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×355
+          - `width: 473.328px; height: 354.984px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×355
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×355
+          - `width: 473.328px; height: 354.984px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×355
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×355
+          - `width: 473.328px; height: 354.984px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×355
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×631
+          - `width: 473.328px; height: 631.094px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×631
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×355
+          - `width: 473.328px; height: 354.984px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×355
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×631
+          - `width: 473.328px; height: 631.094px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×631
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×631
+          - `width: 473.328px; height: 631.094px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×631
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×221
+          - `width: 473.328px; height: 220.875px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×221
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×356
+          - `width: 473.328px; height: 356.297px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×356
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×356
+          - `width: 473.328px; height: 356.297px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×356
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×629
+          - `width: 473.328px; height: 628.797px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×629
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×631
+          - `width: 473.328px; height: 631.094px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×631
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×631
+          - `width: 473.328px; height: 631.094px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×631
+            - `display: inline`
+      - **`<div.swiper-slide.blockImageSlider__slide>`** — 473×631
+        - `margin: 0px 10px 0px 0px; width: 473.328px; height: 631.094px; display: block; flex: 0 0 auto`
+        - **`<figure.blockImageSlider__imageContainer>`** — 473×316
+          - `width: 473.328px; height: 315.547px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; flex: 0 1 auto`
+          - **`<picture>`** — 473×316
+            - `display: inline`

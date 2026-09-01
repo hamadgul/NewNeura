@@ -1,0 +1,463 @@
+{
+  "initialCards": 14,
+  "paginationDom": {
+    "childClasses": [
+      "filterApi ",
+      "collectionProjects__target collectionProjects__targetOne",
+      "projectHighlight",
+      "collectionProjects__target collectionProjects__targetTwo",
+      "projectHighlight",
+      "collectionProjects__target collectionProjects__targetThree",
+      "pagination"
+    ],
+    "anyButtons": [
+      {
+        "cls": "filterApi__item",
+        "text": "All"
+      },
+      {
+        "cls": "filterApi__item",
+        "text": "Housing\n                        \n       "
+      },
+      {
+        "cls": "filterApi__item",
+        "text": "Interiors\n                        \n     "
+      },
+      {
+        "cls": "filterApi__item",
+        "text": "Higher Education\n                       "
+      },
+      {
+        "cls": "filterApi__item",
+        "text": "Civic\n                        \n         "
+      },
+      {
+        "cls": "filterApi__item",
+        "text": "Commercial\n                        \n    "
+      },
+      {
+        "cls": "filterApi__item filterApi__item--bottom",
+        "text": "All"
+      },
+      {
+        "cls": "filterApi__item filterApi__item--bottom",
+        "text": "Affordable Housing\n                     "
+      },
+      {
+        "cls": "filterApi__item filterApi__item--bottom",
+        "text": "Student Housing\n                        "
+      },
+      {
+        "cls": "filterApi__item filterApi__item--bottom",
+        "text": "Market Rate Housing\n                    "
+      },
+      {
+        "cls": "filterApi__item filterApi__item--bottom",
+        "text": "Senior Housing\n                         "
+      },
+      {
+        "cls": "pagination__button  pagination__button--back",
+        "text": ""
+      },
+      {
+        "cls": "pagination__page font-XS pagination__page--current",
+        "text": "1"
+      },
+      {
+        "cls": "pagination__page font-XS",
+        "text": "2"
+      },
+      {
+        "cls": "pagination__page font-XS",
+        "text": "3"
+      },
+      {
+        "cls": "pagination__button pagination__button--forward",
+        "text": ""
+      }
+    ],
+    "dataAttrs": {
+      "grid": "grid-template",
+      "control": "CollectionProjects",
+      "nofilter": "true"
+    }
+  },
+  "scrollSequence": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "afterHousing": {
+    "url": "https://lpas.com/portfolio/?market=housing",
+    "cards": 14,
+    "xhr": [
+      {
+        "method": "GET",
+        "url": "https://lpas.com/wp-json/filter/projects?per_page=14&page=1&taxonomy=markets&term=housing&exclude="
+      }
+    ]
+  },
+  "afterHousingScroll": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "allXhr": [
+    {
+      "method": "GET",
+      "url": "https://lpas.com/wp-json/filter/projects?per_page=14&page=1&taxonomy=markets&term=housing&exclude="
+    }
+  ],
+  "housingCards": [
+    {
+      "href": "https://lpas.com/portfolio/the-frederic/",
+      "title": "The FredericSacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-1280x800-c-default.jpg 1280w",
+        "alt": "The Frederic",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/the-emery/",
+      "title": "The EmeryEmeryville, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-1280x800-c-default.jpg 1280w",
+        "alt": "The Emery",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/elegance-hamilton-hill/",
+      "title": "Elegance Hamilton HillNovato, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800",
+        "alt": "Elegance Hamilton Hill",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/the-a-j/",
+      "title": "The A.J.Sacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.jpg 1280w",
+        "alt": "The A.J.",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/gio-apartments/",
+      "title": "Gio ApartmentsSacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/06_Gio-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/06_Gio-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-1280x800-c-default.jpg 1280w",
+        "alt": "Gio Apartments",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/alwell-pleasant-hill/",
+      "title": "Alwell Pleasant HillPleasant Hill, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.jpg 1280w",
+        "alt": "Alwell Pleasant Hill",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/sonrisa-senior-living/",
+      "title": "Sonrisa Senior LivingRoseville, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/04_SONRISA-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/04_SONRISA-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/04_SONRISA-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/04_SONRISA-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/04_SONRISA-1280x800-c-default.jpg 1280w",
+        "alt": "Sonrisa Senior Living",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/csu-stanislaus-residences-village-4/",
+      "title": "CSU Stanislaus Residences Village 4Turlock, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/03/CSU-Stanislaus-ASH-Residence_05-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/03/CSU-Stanislaus-ASH-Residence_05-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/03/CSU-Stanislaus-ASH-Residence_05-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/03/CSU-Stanislaus-ASH-Residence_05-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/03/CSU-Stanislaus-ASH-Residence_05-1280x800-c-d",
+        "alt": "CSU Stanislaus Residences Village 4",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/west-valley-mission-community-college-district-housing-initiative/",
+      "title": "West Valley-Mission Community College District Housing InitiativeSanta Clara, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/03/WVM-Student-Housing_01-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/03/WVM-Student-Housing_01-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/03/WVM-Student-Housing_01-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/03/WVM-Student-Housing_01-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/03/WVM-Student-Housing_01-1280x800-c-default.jpg 1280w",
+        "alt": "West Valley-Mission Community College District Housing Initiative",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/madison-by-lennar-condominiums/",
+      "title": "Madison by Lennar CondominiumsSan Francisco, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/09_Block-52_Madison-by-Lennar-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/09_Block-52_Madison-by-Lennar-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/09_Block-52_Madison-by-Lennar-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/09_Block-52_Madison-by-Lennar-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/09_Block-52_Madison-by-Lennar-1280x800-c-default.j",
+        "alt": "Madison by Lennar Condominiums",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/chroma-at-innovation-condominiums/",
+      "title": "Chroma at Innovation CondominiumsFremont, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/11_Chroma_Warm-Springs-Condos-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/11_Chroma_Warm-Springs-Condos-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/11_Chroma_Warm-Springs-Condos-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/11_Chroma_Warm-Springs-Condos-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/11_Chroma_Warm-Springs-Condos-1280x800-c-default.j",
+        "alt": "Chroma at Innovation Condominiums",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/sacramento-state-faculty-staff-housing/",
+      "title": "Sacramento State Faculty & Staff HousingSacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/03/04_CSUS-Faculty-Housing-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/03/04_CSUS-Faculty-Housing-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/03/04_CSUS-Faculty-Housing-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/03/04_CSUS-Faculty-Housing-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/03/04_CSUS-Faculty-Housing-1280x800-c-default.jpg 1280w",
+        "alt": "Sacramento State Faculty &#038; Staff Housing",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/sunrise-pointe/",
+      "title": "Sunrise PointeCitrus Heights, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/Sunrise-Pointe_25-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/Sunrise-Pointe_25-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/Sunrise-Pointe_25-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/Sunrise-Pointe_25-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/02/Sunrise-Pointe_25-1280x800-c-default.jpg 1280w",
+        "alt": "Sunrise Pointe",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/19th-harrison-apartments/",
+      "title": "19th & Harrison ApartmentsOakland, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/07_19th-Harrison_Jason-ORear-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/07_19th-Harrison_Jason-ORear-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/07_19th-Harrison_Jason-ORear-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/07_19th-Harrison_Jason-ORear-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/07_19th-Harrison_Jason-ORear-1280x800-c-default.jpg 1",
+        "alt": "19th &#038; Harrison Apartments",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    }
+  ],
+  "allCards": [
+    {
+      "href": "https://lpas.com/portfolio/the-frederic/",
+      "title": "The FredericSacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-1280x800-c-default.jpg 1280w",
+        "alt": "The Frederic",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/iron-point/",
+      "title": "Iron PointFolsom, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-1280x800-c-default.jpg 1280w",
+        "alt": "Iron Point",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/the-emery/",
+      "title": "The EmeryEmeryville, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-1280x800-c-default.jpg 1280w",
+        "alt": "The Emery",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/elegance-hamilton-hill/",
+      "title": "Elegance Hamilton HillNovato, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800",
+        "alt": "Elegance Hamilton Hill",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/uc-berkeley-wu-performance-hall-renovation/",
+      "title": "UC Berkeley Wu Performance Hall RenovationBerkeley, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-1280x800-c-default.jpg 1280w",
+        "alt": "UC Berkeley Wu Performance Hall Renovation",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/uc-davis-ann-e-pitzer-center-classroom-recital-hall/",
+      "title": "UC Davis Ann E. Pitzer Center Classroom & Recital HallDavis, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-1280x800-c-default.jpg 1280w",
+        "alt": "UC Davis Ann E. Pitzer Center Classroom &#038; Recital Hall",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/tower-222/",
+      "title": "Tower 222San Pedro, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-1280x800-c-default.jpg 1280w",
+        "alt": "Tower 222",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/gio-apartments/",
+      "title": "Gio ApartmentsSacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/06_Gio-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/06_Gio-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-1280x800-c-default.jpg 1280w",
+        "alt": "Gio Apartments",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/uc-davis-health-folsom-medical-care-clinic/",
+      "title": "UC Davis Health Folsom Medical Care ClinicFolsom, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.jpg 1280w",
+        "alt": "UC Davis Health Folsom Medical Care Clinic",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/the-ohlone-college-building-5-renovation/",
+      "title": "The Ohlone College Building 5 RenovationFremont, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Bu",
+        "alt": "The Ohlone College Building 5 Renovation",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/730-i-street/",
+      "title": "730 I StreetSacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-1280x800-c-default.jpg 1280w",
+        "alt": "730 I Street",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/alwell-pleasant-hill/",
+      "title": "Alwell Pleasant HillPleasant Hill, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.jpg 1280w",
+        "alt": "Alwell Pleasant Hill",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/reyes-coca-cola/",
+      "title": "Reyes Coca-ColaFresno, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-1280x800-c-default.jpg 1280w",
+        "alt": "Reyes Coca-Cola",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    },
+    {
+      "href": "https://lpas.com/portfolio/the-a-j/",
+      "title": "The A.J.Sacramento, CA",
+      "img": {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.jpg 1280w",
+        "alt": "The A.J.",
+        "w": 1440,
+        "h": 900
+      },
+      "cls": "collectionProjects__card"
+    }
+  ]
+}

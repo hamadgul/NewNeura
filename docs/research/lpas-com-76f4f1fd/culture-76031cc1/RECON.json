@@ -1,0 +1,541 @@
+{
+  "path": "/culture/",
+  "key": "culture-76031cc1",
+  "url": "https://lpas.com/culture/",
+  "desktop": {
+    "title": "Culture - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 6,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderGeneral",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockHeaderGeneral"
+        },
+        "height": 720,
+        "width": 1440,
+        "bg": "rgb(236, 236, 236)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Culture"
+        ],
+        "imgCount": 2,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Great people, great projects.\nCulture"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 594,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: At LPAS, we are powered by curious minds and genuinely kind people. We believe the best ideas happen when hierarchy fade"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Designing Boldly. Growing People.\nAt LPAS, we are powered by curious minds and genuinely kind people. We believe the best ideas happen when hierarchy fades, curiosity leads, and every voice has a seat at the table.\n\nFrom our open studio in the heart of downtown Sacramento, creativity flows freely, fueled by collaboration, mentorship, and a shared commitment to design that shapes communities. Questions are encouraged. Collaboration is expected. Innovation is part of our identity. Our culture blends rigorous design thinking with authentic connection. You might find us sketching bold new concepts over coffee, hosting a lunch-and-learn to explore emerging technologies, or celebrating the week together at a Thirsty Thursday or karaoke night. We work hard, stay curious, and make space for fun along the way. Learning never stops here. With expertise across architecture and interior design, ment"
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "blockImageSlider",
+        "dataAttrs": {
+          "control": "BlockImageSlider",
+          "grid": "grid-template"
+        },
+        "height": 631,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [],
+        "imgCount": 32,
+        "videoCount": 0,
+        "svgCount": 2,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 3,
+        "tag": "div",
+        "id": null,
+        "classes": "blockImageFull",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockImageFull"
+        },
+        "height": 673,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "generalCta",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "GeneralCta"
+        },
+        "height": 182,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 2,
+        "linkCount": 1,
+        "text": "Explore our job opportunities Careers\n\nCareers"
+      },
+      {
+        "i": 5,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-1440x900-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-992x620-c-default.jpg 992w,",
+        "alt": "",
+        "w": 193,
+        "h": 120,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_34-1440x2188-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_34-375x570-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_34-678x1030-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPA",
+        "alt": "",
+        "w": 1440,
+        "h": 2188,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-1440x1920-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-375x500-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-678x904-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-992",
+        "alt": "",
+        "w": 473,
+        "h": 630,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_130220-1440x1440-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_130220-375x375-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_130220-678x678-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_130220-992",
+        "alt": "",
+        "w": 473,
+        "h": 473,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_162707-1440x1440-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_162707-375x375-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_162707-678x678-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_162707-992",
+        "alt": "",
+        "w": 473,
+        "h": 473,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_163242-1440x1440-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_163242-375x375-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_163242-678x678-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240725_163242-992",
+        "alt": "",
+        "w": 473,
+        "h": 473,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240920_093221-1440x1440-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240920_093221-375x375-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240920_093221-678x678-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20240920_093221-992",
+        "alt": "",
+        "w": 473,
+        "h": 473,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Brock-Pic-1440x1920-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzUwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1920,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Craps-1-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Document1-1440x1864-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzQ4NScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1864,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/HABITAT_2-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_2381-1440x1440-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzM3NScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1440,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_2966-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4102-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4115-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4118-1440x1920-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzUwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1920,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4134-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_6101-1440x1920-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzUwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1920,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_6104-1440x1920-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzUwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1920,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/lunch-pic-1440x672-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzE3NScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 672,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20241214_051409559-1440x1084-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1084,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20250809_013545380-1440x1084-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1084,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20250809_023225272-1440x1913-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzQ5OCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1913,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Team-3-Photo-3-RETRO-TOWER-THEATRE-1440x1920-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzUwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1920,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Team-3-Photo-5-TOMATO-ALLEY-1440x1920-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzUwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1920,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC8867-1440x960-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI1MCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC8967-1440x960-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI1MCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9264-1440x960-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI1MCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-1440x960-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI1MCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/3-1440x945-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI0NicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 945,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/6-1440x1860-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzQ4NCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1860,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/11-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/17-1440x1080-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzI4MScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1080,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/2024-Kareoke-2024-1440x1920-c-default.webp",
+        "srcset": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzc1JyBoZWlnaHQ9JzUwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48L3N2Zz4=",
+        "alt": "",
+        "w": 1440,
+        "h": 1920,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20221007_145237-1600x748-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/20221007_145237-2560x1196-c-default.jpg 2560w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20221007_145237-1920x897-c-default.jpg 1920w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20221007_14523",
+        "alt": "",
+        "w": 1440,
+        "h": 673,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/HW23_LPAS_web-res_34.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1013,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 1074,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "div",
+      "h": 496,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "div",
+      "h": 182,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 134,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:01:57.475Z"
+}

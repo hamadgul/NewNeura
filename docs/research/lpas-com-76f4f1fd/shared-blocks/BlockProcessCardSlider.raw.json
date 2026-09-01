@@ -1,0 +1,4448 @@
+{
+  "url": "https://lpas.com/markets/housing/affordable-housing/",
+  "pinGeometry": {
+    "pinSpacer": {
+      "h": 2445,
+      "top": 1731.65625
+    },
+    "block": {
+      "h": 1140,
+      "styles": {
+        "position": "static",
+        "top": "0px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    },
+    "docHeight": 8435
+  },
+  "structure": {
+    "tag": "section",
+    "classes": "blockProcessCardSlider",
+    "data": {
+      "control": "BlockProcessCardSlider",
+      "grid": "grid-template",
+      "index": "2"
+    },
+    "box": {
+      "w": 1440,
+      "h": 1140,
+      "top": 50
+    },
+    "text": null,
+    "styles": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "21.6px",
+      "color": "rgb(17, 17, 17)",
+      "width": "1440px",
+      "height": "1139.91px",
+      "maxWidth": "1440px",
+      "display": "grid",
+      "flexDirection": "row",
+      "gap": "0px 10px",
+      "gridTemplateColumns": "[full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]",
+      "gridTemplateRows": "389.906px 550px 200px",
+      "gridTemplateAreas": "\". left left left left left left left left left left right right right right right right right right right right .\"",
+      "border": "0px none rgb(17, 17, 17)",
+      "borderTop": "0px none rgb(17, 17, 17)",
+      "overflow": "clip visible",
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "all",
+      "objectFit": "fill",
+      "textAlign": "start"
+    },
+    "childCount": 3,
+    "children": [
+      {
+        "tag": "div",
+        "classes": "blockProcessCardSlider__header",
+        "data": {},
+        "box": {
+          "w": 1390,
+          "h": 390,
+          "top": 50
+        },
+        "text": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "21.6px",
+          "color": "rgb(17, 17, 17)",
+          "backgroundColor": "rgb(248, 248, 248)",
+          "padding": "70px 0px 0px 40px",
+          "width": "1350px",
+          "height": "319.906px",
+          "display": "grid",
+          "flexDirection": "row",
+          "gridTemplateColumns": "subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []",
+          "gridTemplateRows": "64.9062px 255px 0px",
+          "gridColumn": "2 / -1",
+          "gridRow": "1",
+          "gridArea": "1 / 2 / auto / -1",
+          "border": "0px none rgb(17, 17, 17)",
+          "borderTop": "0px none rgb(17, 17, 17)",
+          "position": "relative",
+          "opacity": "1",
+          "transition": "all",
+          "objectFit": "fill",
+          "textAlign": "start"
+        },
+        "childCount": 4,
+        "children": [
+          {
+            "tag": "p",
+            "classes": "font-S blockProcessCardSlider__headerTagline",
+            "data": {},
+            "box": {
+              "w": 1300,
+              "h": 35,
+              "top": 120
+            },
+            "text": "Workflow",
+            "styles": {
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "18.9px",
+              "color": "rgb(89, 86, 86)",
+              "padding": "0px 0px 15px",
+              "margin": "0px 0px 30px",
+              "width": "1300px",
+              "height": "18.9062px",
+              "display": "block",
+              "flexDirection": "row",
+              "gridColumn": "1 / -2",
+              "gridRow": "1",
+              "gridArea": "1 / 1 / auto / -2",
+              "borderTop": "0px none rgb(89, 86, 86)",
+              "opacity": "1",
+              "transition": "all",
+              "objectFit": "fill",
+              "textAlign": "start"
+            },
+            "childCount": 0,
+            "children": []
+          },
+          {
+            "tag": "span",
+            "classes": "font-M blockProcessCardSlider__headerText",
+            "data": {},
+            "box": {
+              "w": 355,
+              "h": 225,
+              "top": 185
+            },
+            "text": "The LPAS affordable housing design process",
+            "styles": {
+              "fontSize": "28px",
+              "fontWeight": "400",
+              "lineHeight": "36.4px",
+              "color": "rgb(17, 17, 17)",
+              "margin": "0px 0px 30px",
+              "width": "355px",
+              "height": "225px",
+              "display": "block",
+              "flexDirection": "row",
+              "gridColumn": "1 / 7",
+              "gridRow": "2",
+              "gridArea": "2 / 1 / auto / 7",
+              "border": "0px none rgb(17, 17, 17)",
+              "borderTop": "0px none rgb(17, 17, 17)",
+              "opacity": "1",
+              "transition": "all",
+              "objectFit": "fill",
+              "textAlign": "start"
+            },
+            "childCount": 0,
+            "children": []
+          },
+          {
+            "tag": "h2",
+            "classes": "font-3XL blockProcessCardSlider__headerTitle",
+            "data": {},
+            "box": {
+              "w": 935,
+              "h": 75,
+              "top": 365
+            },
+            "text": "Our Process",
+            "styles": {
+              "fontSize": "75px",
+              "fontWeight": "400",
+              "lineHeight": "75px",
+              "color": "rgb(116, 116, 116)",
+              "margin": "180px 0px 0px",
+              "width": "935px",
+              "height": "75px",
+              "display": "block",
+              "flexDirection": "row",
+              "gridColumn": "7 / -2",
+              "gridRow": "2",
+              "gridArea": "2 / 7 / auto / -2",
+              "border": "0px none rgb(116, 116, 116)",
+              "borderTop": "0px none rgb(116, 116, 116)",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "transition": "all",
+              "objectFit": "fill",
+              "textAlign": "start"
+            },
+            "childCount": 0,
+            "children": []
+          },
+          {
+            "tag": "div",
+            "classes": "blockProcessCardSlider__sliderButtons",
+            "data": {},
+            "box": {
+              "w": 0,
+              "h": 0,
+              "top": 0
+            },
+            "text": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "21.6px",
+              "color": "rgb(38, 38, 38)",
+              "margin": "50px 0px 0px",
+              "flexDirection": "row",
+              "justifyContent": "flex-end",
+              "gap": "10px",
+              "gridColumn": "-4 / -2",
+              "gridRow": "3",
+              "gridArea": "3 / -4 / auto / -2",
+              "border": "0px none rgb(38, 38, 38)",
+              "borderTop": "0px none rgb(38, 38, 38)",
+              "opacity": "1",
+              "transition": "all",
+              "objectFit": "fill",
+              "textAlign": "start"
+            },
+            "childCount": 2,
+            "children": [
+              {
+                "tag": "button",
+                "classes": "buttonCircle buttonCircle--back buttonCircle--icon buttonCircle--no-title",
+                "data": {
+                  "color": "slate",
+                  "open": "",
+                  "direction": "left"
+                },
+                "box": {
+                  "w": 0,
+                  "h": 0,
+                  "top": 0
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(38, 38, 38)",
+                  "padding": "12px",
+                  "width": "fit-content",
+                  "height": "fit-content",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "borderRadius": "50%",
+                  "border": "1px solid rgb(38, 38, 38)",
+                  "borderTop": "1px solid rgb(38, 38, 38)",
+                  "overflow": "hidden",
+                  "position": "relative",
+                  "opacity": "1",
+                  "transition": "color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                  "objectFit": "fill",
+                  "textAlign": "center"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "svg",
+                    "classes": "[object SVGAnimatedString]",
+                    "data": {},
+                    "box": {
+                      "w": 0,
+                      "h": 0,
+                      "top": 0
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "width": "19px",
+                      "height": "19px",
+                      "display": "block",
+                      "flexDirection": "row",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "overflow": "hidden",
+                      "zIndex": "2",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "center"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "use",
+                        "classes": "[object SVGAnimatedString]",
+                        "data": {},
+                        "box": {
+                          "w": 0,
+                          "h": 0,
+                          "top": 0
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(38, 38, 38)",
+                          "display": "inline",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(38, 38, 38)",
+                          "borderTop": "0px none rgb(38, 38, 38)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "center"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "span",
+                    "classes": "buttonCircle__background",
+                    "data": {},
+                    "box": {
+                      "w": 0,
+                      "h": 0,
+                      "top": 0
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "backgroundColor": "rgb(38, 38, 38)",
+                      "display": "block",
+                      "flexDirection": "row",
+                      "borderRadius": "100%",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "position": "absolute",
+                      "top": "100%",
+                      "zIndex": "1",
+                      "opacity": "1",
+                      "transition": "0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                      "objectFit": "fill",
+                      "textAlign": "center"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "button",
+                "classes": "buttonCircle buttonCircle--forward buttonCircle--icon buttonCircle--no-title",
+                "data": {
+                  "color": "slate",
+                  "open": ""
+                },
+                "box": {
+                  "w": 0,
+                  "h": 0,
+                  "top": 0
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(38, 38, 38)",
+                  "padding": "12px",
+                  "width": "fit-content",
+                  "height": "fit-content",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "borderRadius": "50%",
+                  "border": "1px solid rgb(38, 38, 38)",
+                  "borderTop": "1px solid rgb(38, 38, 38)",
+                  "overflow": "hidden",
+                  "position": "relative",
+                  "opacity": "1",
+                  "transition": "color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                  "objectFit": "fill",
+                  "textAlign": "center"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "svg",
+                    "classes": "[object SVGAnimatedString]",
+                    "data": {},
+                    "box": {
+                      "w": 0,
+                      "h": 0,
+                      "top": 0
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "width": "19px",
+                      "height": "19px",
+                      "display": "block",
+                      "flexDirection": "row",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "overflow": "hidden",
+                      "zIndex": "2",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "center"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "use",
+                        "classes": "[object SVGAnimatedString]",
+                        "data": {},
+                        "box": {
+                          "w": 0,
+                          "h": 0,
+                          "top": 0
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(38, 38, 38)",
+                          "display": "inline",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(38, 38, 38)",
+                          "borderTop": "0px none rgb(38, 38, 38)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "center"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "span",
+                    "classes": "buttonCircle__background",
+                    "data": {},
+                    "box": {
+                      "w": 0,
+                      "h": 0,
+                      "top": 0
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "backgroundColor": "rgb(38, 38, 38)",
+                      "display": "block",
+                      "flexDirection": "row",
+                      "borderRadius": "100%",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "position": "absolute",
+                      "top": "100%",
+                      "zIndex": "1",
+                      "opacity": "1",
+                      "transition": "0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                      "objectFit": "fill",
+                      "textAlign": "center"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "classes": "blockProcessCardSlider__main",
+        "data": {},
+        "box": {
+          "w": 1390,
+          "h": 550,
+          "top": 440
+        },
+        "text": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "21.6px",
+          "color": "rgb(17, 17, 17)",
+          "backgroundColor": "rgb(248, 248, 248)",
+          "padding": "50px 0px",
+          "width": "1390px",
+          "height": "550px",
+          "display": "grid",
+          "flexDirection": "row",
+          "gridTemplateColumns": "subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []",
+          "gridTemplateRows": "subgrid [] []",
+          "gridColumn": "2 / -1",
+          "gridRow": "2",
+          "gridArea": "2 / 2 / auto / -1",
+          "border": "0px none rgb(17, 17, 17)",
+          "borderTop": "0px none rgb(17, 17, 17)",
+          "opacity": "1",
+          "transition": "all",
+          "objectFit": "fill",
+          "textAlign": "start"
+        },
+        "childCount": 1,
+        "children": [
+          {
+            "tag": "div",
+            "classes": "blockProcessCardSlider__listWrapper",
+            "data": {},
+            "box": {
+              "w": 288,
+              "h": 450,
+              "top": 490
+            },
+            "text": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "21.6px",
+              "color": "rgb(17, 17, 17)",
+              "margin": "0px 0px 50px 40px",
+              "width": "287.5px",
+              "height": "450px",
+              "display": "flex",
+              "flexDirection": "column",
+              "justifyContent": "flex-end",
+              "gap": "10px",
+              "gridColumn": "1 / 6",
+              "gridRow": "1",
+              "gridArea": "1 / 1 / auto / 6",
+              "border": "0px none rgb(17, 17, 17)",
+              "borderTop": "0px none rgb(17, 17, 17)",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "transition": "all",
+              "objectFit": "fill",
+              "textAlign": "start"
+            },
+            "childCount": 2,
+            "children": [
+              {
+                "tag": "p",
+                "classes": "font-S blockProcessCardSlider__listLabel",
+                "data": {},
+                "box": {
+                  "w": 288,
+                  "h": 19,
+                  "top": 714
+                },
+                "text": "Phases",
+                "styles": {
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "18.9px",
+                  "color": "rgb(89, 86, 86)",
+                  "width": "287.5px",
+                  "height": "18.9062px",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "border": "0px none rgb(89, 86, 86)",
+                  "borderTop": "0px none rgb(89, 86, 86)",
+                  "opacity": "1",
+                  "transition": "all",
+                  "objectFit": "fill",
+                  "textAlign": "start"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "ul",
+                "classes": "blockProcessCardSlider__list",
+                "data": {},
+                "box": {
+                  "w": 288,
+                  "h": 182,
+                  "top": 758
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(17, 17, 17)",
+                  "margin": "15px 0px 0px",
+                  "width": "287.5px",
+                  "height": "182.031px",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "gap": "5px",
+                  "gridColumn": "2 / 6",
+                  "gridRow": "2",
+                  "gridArea": "2 / 2 / auto / 6",
+                  "border": "0px none rgb(17, 17, 17)",
+                  "borderTop": "0px none rgb(17, 17, 17)",
+                  "opacity": "1",
+                  "transition": "all",
+                  "objectFit": "fill",
+                  "textAlign": "start"
+                },
+                "childCount": 5,
+                "children": [
+                  {
+                    "tag": "li",
+                    "classes": "blockProcessCardSlider__listItem",
+                    "data": {
+                      "cardindex": "0"
+                    },
+                    "box": {
+                      "w": 288,
+                      "h": 32,
+                      "top": 758
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "width": "287.5px",
+                      "height": "32.4062px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "35px 252.5px",
+                      "gridTemplateRows": "32.4062px",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-S blockProcessCardSlider__listItemNumber",
+                        "data": {},
+                        "box": {
+                          "w": 35,
+                          "h": 19,
+                          "top": 764
+                        },
+                        "text": "01",
+                        "styles": {
+                          "fontSize": "14px",
+                          "fontWeight": "400",
+                          "lineHeight": "18.9px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "35px",
+                          "height": "18.9062px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "classes": "font-SM blockProcessCardSlider__listItemTitle",
+                        "data": {},
+                        "box": {
+                          "w": 233,
+                          "h": 32,
+                          "top": 758
+                        },
+                        "text": "Discovery + Feasibility",
+                        "styles": {
+                          "fontSize": "24px",
+                          "fontWeight": "400",
+                          "lineHeight": "32.4px",
+                          "color": "rgb(38, 38, 38)",
+                          "width": "232.5px",
+                          "height": "32.4062px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(38, 38, 38)",
+                          "borderTop": "0px none rgb(38, 38, 38)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "classes": "blockProcessCardSlider__listItem",
+                    "data": {
+                      "cardindex": "1"
+                    },
+                    "box": {
+                      "w": 288,
+                      "h": 32,
+                      "top": 795
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "width": "287.5px",
+                      "height": "32.4062px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "35px 252.5px",
+                      "gridTemplateRows": "32.4062px",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-S blockProcessCardSlider__listItemNumber",
+                        "data": {},
+                        "box": {
+                          "w": 35,
+                          "h": 19,
+                          "top": 802
+                        },
+                        "text": "02",
+                        "styles": {
+                          "fontSize": "14px",
+                          "fontWeight": "400",
+                          "lineHeight": "18.9px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "35px",
+                          "height": "18.9062px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "classes": "font-SM blockProcessCardSlider__listItemTitle",
+                        "data": {},
+                        "box": {
+                          "w": 233,
+                          "h": 32,
+                          "top": 795
+                        },
+                        "text": "Community Engagement + Visioning",
+                        "styles": {
+                          "fontSize": "24px",
+                          "fontWeight": "400",
+                          "lineHeight": "32.4px",
+                          "color": "rgb(38, 38, 38)",
+                          "width": "232.5px",
+                          "height": "32.4062px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(38, 38, 38)",
+                          "borderTop": "0px none rgb(38, 38, 38)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "classes": "blockProcessCardSlider__listItem",
+                    "data": {
+                      "cardindex": "2"
+                    },
+                    "box": {
+                      "w": 288,
+                      "h": 32,
+                      "top": 832
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "width": "287.5px",
+                      "height": "32.4062px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "35px 252.5px",
+                      "gridTemplateRows": "32.4062px",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-S blockProcessCardSlider__listItemNumber",
+                        "data": {},
+                        "box": {
+                          "w": 35,
+                          "h": 19,
+                          "top": 839
+                        },
+                        "text": "03",
+                        "styles": {
+                          "fontSize": "14px",
+                          "fontWeight": "400",
+                          "lineHeight": "18.9px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "35px",
+                          "height": "18.9062px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "classes": "font-SM blockProcessCardSlider__listItemTitle",
+                        "data": {},
+                        "box": {
+                          "w": 233,
+                          "h": 32,
+                          "top": 832
+                        },
+                        "text": "Design Development + Optimization",
+                        "styles": {
+                          "fontSize": "24px",
+                          "fontWeight": "400",
+                          "lineHeight": "32.4px",
+                          "color": "rgb(38, 38, 38)",
+                          "width": "232.5px",
+                          "height": "32.4062px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(38, 38, 38)",
+                          "borderTop": "0px none rgb(38, 38, 38)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "classes": "blockProcessCardSlider__listItem",
+                    "data": {
+                      "cardindex": "3"
+                    },
+                    "box": {
+                      "w": 288,
+                      "h": 32,
+                      "top": 870
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "width": "287.5px",
+                      "height": "32.4062px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "35px 252.5px",
+                      "gridTemplateRows": "32.4062px",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-S blockProcessCardSlider__listItemNumber",
+                        "data": {},
+                        "box": {
+                          "w": 35,
+                          "h": 19,
+                          "top": 877
+                        },
+                        "text": "04",
+                        "styles": {
+                          "fontSize": "14px",
+                          "fontWeight": "400",
+                          "lineHeight": "18.9px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "35px",
+                          "height": "18.9062px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "classes": "font-SM blockProcessCardSlider__listItemTitle",
+                        "data": {},
+                        "box": {
+                          "w": 233,
+                          "h": 32,
+                          "top": 870
+                        },
+                        "text": "Approvals + Delivery",
+                        "styles": {
+                          "fontSize": "24px",
+                          "fontWeight": "400",
+                          "lineHeight": "32.4px",
+                          "color": "rgb(38, 38, 38)",
+                          "width": "232.5px",
+                          "height": "32.4062px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(38, 38, 38)",
+                          "borderTop": "0px none rgb(38, 38, 38)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "classes": "blockProcessCardSlider__listItem",
+                    "data": {
+                      "cardindex": "4"
+                    },
+                    "box": {
+                      "w": 288,
+                      "h": 32,
+                      "top": 907
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(38, 38, 38)",
+                      "width": "287.5px",
+                      "height": "32.4062px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "35px 252.5px",
+                      "gridTemplateRows": "32.4062px",
+                      "border": "0px none rgb(38, 38, 38)",
+                      "borderTop": "0px none rgb(38, 38, 38)",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-S blockProcessCardSlider__listItemNumber",
+                        "data": {},
+                        "box": {
+                          "w": 35,
+                          "h": 19,
+                          "top": 914
+                        },
+                        "text": "05",
+                        "styles": {
+                          "fontSize": "14px",
+                          "fontWeight": "400",
+                          "lineHeight": "18.9px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "35px",
+                          "height": "18.9062px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "span",
+                        "classes": "font-SM blockProcessCardSlider__listItemTitle",
+                        "data": {},
+                        "box": {
+                          "w": 233,
+                          "h": 32,
+                          "top": 907
+                        },
+                        "text": "Occupancy + Community Evolution",
+                        "styles": {
+                          "fontSize": "24px",
+                          "fontWeight": "400",
+                          "lineHeight": "32.4px",
+                          "color": "rgb(38, 38, 38)",
+                          "width": "232.5px",
+                          "height": "32.4062px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(38, 38, 38)",
+                          "borderTop": "0px none rgb(38, 38, 38)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "nav",
+        "classes": "blockProcessCardSlider__contentSection swiper-container",
+        "data": {},
+        "box": {
+          "w": 935,
+          "h": 750,
+          "top": 440
+        },
+        "text": null,
+        "styles": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "21.6px",
+          "color": "rgb(17, 17, 17)",
+          "padding": "50px 0px 0px",
+          "width": "935px",
+          "height": "700px",
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": "10px",
+          "gridColumn": "8 / -2",
+          "gridRow": "2 / 4",
+          "gridArea": "2 / 8 / 4 / -2",
+          "border": "0px none rgb(17, 17, 17)",
+          "borderTop": "0px none rgb(17, 17, 17)",
+          "opacity": "1",
+          "transition": "all",
+          "objectFit": "fill",
+          "textAlign": "start"
+        },
+        "childCount": 1,
+        "children": [
+          {
+            "tag": "div",
+            "classes": "blockProcessCardSlider__contentSectionWrapper swiper-wrapper",
+            "data": {},
+            "box": {
+              "w": 935,
+              "h": 700,
+              "top": 490
+            },
+            "text": null,
+            "styles": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "21.6px",
+              "color": "rgb(17, 17, 17)",
+              "width": "935px",
+              "height": "700px",
+              "display": "flex",
+              "flexDirection": "row",
+              "gap": "10px",
+              "border": "0px none rgb(17, 17, 17)",
+              "borderTop": "0px none rgb(17, 17, 17)",
+              "position": "relative",
+              "zIndex": "1",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "transition": "transform",
+              "objectFit": "fill",
+              "textAlign": "start"
+            },
+            "childCount": 5,
+            "children": [
+              {
+                "tag": "a",
+                "classes": "cardItem swiper-slide",
+                "data": {
+                  "swupPreload": "",
+                  "swupAnimation": "overlay",
+                  "btnhover": "white"
+                },
+                "box": {
+                  "w": 353,
+                  "h": 700,
+                  "top": 490
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(255, 255, 255)",
+                  "width": "353px",
+                  "height": "700px",
+                  "maxWidth": "353px",
+                  "minHeight": "400px",
+                  "display": "grid",
+                  "flexDirection": "row",
+                  "gridTemplateColumns": "353px",
+                  "gridTemplateRows": "399px 301px",
+                  "border": "0px none rgb(255, 255, 255)",
+                  "borderTop": "0px none rgb(255, 255, 255)",
+                  "position": "relative",
+                  "opacity": "1",
+                  "transition": "transform",
+                  "objectFit": "fill",
+                  "textAlign": "start"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__headerWrapper cardItem__headerWrapper--dark",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 399,
+                      "top": 490
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(89, 86, 86)",
+                      "backgroundColor": "rgb(201, 211, 223)",
+                      "width": "353px",
+                      "height": "399px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "353px",
+                      "gridTemplateRows": "399px 0px",
+                      "gridColumn": "1",
+                      "gridRow": "1 / 2",
+                      "gridArea": "1 / 1 / 2",
+                      "border": "0px none rgb(89, 86, 86)",
+                      "borderTop": "0px none rgb(89, 86, 86)",
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": "cardItem__header",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 95,
+                          "top": 490
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(89, 86, 86)",
+                          "padding": "0px 35px 0px 25px",
+                          "width": "353px",
+                          "height": "95px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "gap": "15px",
+                          "gridColumn": "1",
+                          "gridRow": "1",
+                          "gridArea": "1 / 1",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "zIndex": "2",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "picture",
+                        "classes": "",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 0,
+                          "top": 889
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "353px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__content",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 301,
+                      "top": 889
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgb(38, 38, 38)",
+                      "padding": "25px",
+                      "width": "353px",
+                      "height": "301px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "258px 45px",
+                      "gridTemplateRows": "175.688px 75.2969px",
+                      "gridColumn": "1 / -1",
+                      "gridRow": "2",
+                      "gridArea": "2 / 1 / auto / -1",
+                      "border": "0px none rgb(255, 255, 255)",
+                      "borderTop": "0px none rgb(255, 255, 255)",
+                      "zIndex": "9999",
+                      "opacity": "1",
+                      "transition": "all",
+                      "clipPath": "polygon(0px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%)",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 3,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-L cardItem__contentTitle",
+                        "data": {},
+                        "box": {
+                          "w": 251,
+                          "h": 84,
+                          "top": 914
+                        },
+                        "text": "Discovery + Feasibility",
+                        "styles": {
+                          "fontSize": "38px",
+                          "fontWeight": "400",
+                          "lineHeight": "41.8px",
+                          "color": "rgb(255, 255, 255)",
+                          "width": "251px",
+                          "height": "83.5938px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(255, 255, 255)",
+                          "borderTop": "0px none rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "classes": "buttonCircle buttonCircle--swiper-slide buttonCircle--icon buttonCircle--no-title",
+                        "data": {
+                          "button": "",
+                          "color": "white",
+                          "open": ""
+                        },
+                        "box": {
+                          "w": 45,
+                          "h": 45,
+                          "top": 914
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(255, 255, 255)",
+                          "padding": "12px",
+                          "width": "19px",
+                          "height": "19px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "alignItems": "center",
+                          "borderRadius": "50%",
+                          "border": "1px solid rgb(255, 255, 255)",
+                          "borderTop": "1px solid rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "opacity": "1",
+                          "transition": "color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "classes": "cardItem__contentText",
+                        "data": {},
+                        "box": {
+                          "w": 303,
+                          "h": 65,
+                          "top": 1095
+                        },
+                        "text": "Every project begins with understanding. LPAS examines the site, its context, and its potential to create a clear picture of what can be achieved within funding and entitlement frameworks. We begin by aligning around your mission, the population you serve, and the complex funding mechanisms making these projects possible. We connect the physical opportunities of the land with the financial realities of affordable housing, helping our clients make informed decisions early in the process.",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(214, 214, 214)",
+                          "margin": "0px 5px 5px 0px",
+                          "width": "303px",
+                          "height": "64.7812px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "gridColumn": "1 / -1",
+                          "gridRow": "2",
+                          "gridArea": "2 / 1 / auto / -1",
+                          "border": "0px none rgb(214, 214, 214)",
+                          "borderTop": "0px none rgb(214, 214, 214)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "classes": "cardItem swiper-slide",
+                "data": {
+                  "swupPreload": "",
+                  "swupAnimation": "overlay",
+                  "btnhover": "white"
+                },
+                "box": {
+                  "w": 353,
+                  "h": 700,
+                  "top": 490
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(255, 255, 255)",
+                  "width": "353px",
+                  "height": "700px",
+                  "maxWidth": "353px",
+                  "minHeight": "400px",
+                  "display": "grid",
+                  "flexDirection": "row",
+                  "gridTemplateColumns": "353px",
+                  "gridTemplateRows": "399px 301px",
+                  "border": "0px none rgb(255, 255, 255)",
+                  "borderTop": "0px none rgb(255, 255, 255)",
+                  "position": "relative",
+                  "opacity": "1",
+                  "transition": "transform",
+                  "objectFit": "fill",
+                  "textAlign": "start"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__headerWrapper",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 399,
+                      "top": 490
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(236, 236, 236)",
+                      "backgroundColor": "rgb(201, 211, 223)",
+                      "width": "353px",
+                      "height": "399px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "353px",
+                      "gridTemplateRows": "399px 0px",
+                      "gridColumn": "1",
+                      "gridRow": "1 / 2",
+                      "gridArea": "1 / 1 / 2",
+                      "border": "0px none rgb(236, 236, 236)",
+                      "borderTop": "0px none rgb(236, 236, 236)",
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "opacity": "1",
+                      "transition": "all",
+                      "clipPath": "polygon(0px 0px, calc(100% - 40px) 0px, 100% 40px, 100% 100%, 0px 100%)",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": "cardItem__header",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 95,
+                          "top": 490
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(236, 236, 236)",
+                          "padding": "0px 35px 0px 25px",
+                          "width": "353px",
+                          "height": "95px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "gap": "15px",
+                          "gridColumn": "1",
+                          "gridRow": "1",
+                          "gridArea": "1 / 1",
+                          "border": "0px none rgb(236, 236, 236)",
+                          "borderTop": "0px none rgb(236, 236, 236)",
+                          "zIndex": "2",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "picture",
+                        "classes": "",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 0,
+                          "top": 889
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(236, 236, 236)",
+                          "width": "353px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(236, 236, 236)",
+                          "borderTop": "0px none rgb(236, 236, 236)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__content",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 301,
+                      "top": 889
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgb(38, 38, 38)",
+                      "padding": "25px",
+                      "width": "353px",
+                      "height": "301px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "258px 45px",
+                      "gridTemplateRows": "175.688px 75.2969px",
+                      "gridColumn": "1 / -1",
+                      "gridRow": "2",
+                      "gridArea": "2 / 1 / auto / -1",
+                      "border": "0px none rgb(255, 255, 255)",
+                      "borderTop": "0px none rgb(255, 255, 255)",
+                      "zIndex": "9999",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 3,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-L cardItem__contentTitle",
+                        "data": {},
+                        "box": {
+                          "w": 251,
+                          "h": 125,
+                          "top": 914
+                        },
+                        "text": "Community Engagement + Visioning",
+                        "styles": {
+                          "fontSize": "38px",
+                          "fontWeight": "400",
+                          "lineHeight": "41.8px",
+                          "color": "rgb(255, 255, 255)",
+                          "width": "251px",
+                          "height": "125.391px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(255, 255, 255)",
+                          "borderTop": "0px none rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "classes": "buttonCircle buttonCircle--swiper-slide buttonCircle--icon buttonCircle--no-title",
+                        "data": {
+                          "button": "",
+                          "color": "white",
+                          "open": ""
+                        },
+                        "box": {
+                          "w": 45,
+                          "h": 45,
+                          "top": 914
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(255, 255, 255)",
+                          "padding": "12px",
+                          "width": "19px",
+                          "height": "19px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "alignItems": "center",
+                          "borderRadius": "50%",
+                          "border": "1px solid rgb(255, 255, 255)",
+                          "borderTop": "1px solid rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "opacity": "1",
+                          "transition": "color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "classes": "cardItem__contentText",
+                        "data": {},
+                        "box": {
+                          "w": 303,
+                          "h": 65,
+                          "top": 1095
+                        },
+                        "text": "Affordable housing succeeds when residents, neighbors, and agencies feel heard. LPAS leads transparent and collaborative engagement efforts that bring diverse voices into the process. Thoughtful engagement, transparent communication, and responsive design can transform skeptics into advocates. We translate feedback into clear design priorities that balance community character, livability, and long-term sustainability.",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(214, 214, 214)",
+                          "margin": "0px 5px 5px 0px",
+                          "width": "303px",
+                          "height": "64.7812px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "gridColumn": "1 / -1",
+                          "gridRow": "2",
+                          "gridArea": "2 / 1 / auto / -1",
+                          "border": "0px none rgb(214, 214, 214)",
+                          "borderTop": "0px none rgb(214, 214, 214)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "classes": "cardItem swiper-slide",
+                "data": {
+                  "swupPreload": "",
+                  "swupAnimation": "overlay",
+                  "btnhover": "white"
+                },
+                "box": {
+                  "w": 353,
+                  "h": 700,
+                  "top": 490
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(255, 255, 255)",
+                  "width": "353px",
+                  "height": "700px",
+                  "maxWidth": "353px",
+                  "minHeight": "400px",
+                  "display": "grid",
+                  "flexDirection": "row",
+                  "gridTemplateColumns": "353px",
+                  "gridTemplateRows": "399px 301px",
+                  "border": "0px none rgb(255, 255, 255)",
+                  "borderTop": "0px none rgb(255, 255, 255)",
+                  "position": "relative",
+                  "opacity": "1",
+                  "transition": "transform",
+                  "objectFit": "fill",
+                  "textAlign": "start"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__headerWrapper cardItem__headerWrapper--dark",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 399,
+                      "top": 490
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(89, 86, 86)",
+                      "backgroundColor": "rgb(201, 211, 223)",
+                      "width": "353px",
+                      "height": "399px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "353px",
+                      "gridTemplateRows": "399px 0px",
+                      "gridColumn": "1",
+                      "gridRow": "1 / 2",
+                      "gridArea": "1 / 1 / 2",
+                      "border": "0px none rgb(89, 86, 86)",
+                      "borderTop": "0px none rgb(89, 86, 86)",
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": "cardItem__header",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 95,
+                          "top": 490
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(89, 86, 86)",
+                          "padding": "0px 35px 0px 25px",
+                          "width": "353px",
+                          "height": "95px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "gap": "15px",
+                          "gridColumn": "1",
+                          "gridRow": "1",
+                          "gridArea": "1 / 1",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "zIndex": "2",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "picture",
+                        "classes": "",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 0,
+                          "top": 889
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "353px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__content",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 301,
+                      "top": 889
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgb(38, 38, 38)",
+                      "padding": "25px",
+                      "width": "353px",
+                      "height": "301px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "258px 45px",
+                      "gridTemplateRows": "175.688px 75.2969px",
+                      "gridColumn": "1 / -1",
+                      "gridRow": "2",
+                      "gridArea": "2 / 1 / auto / -1",
+                      "border": "0px none rgb(255, 255, 255)",
+                      "borderTop": "0px none rgb(255, 255, 255)",
+                      "zIndex": "9999",
+                      "opacity": "1",
+                      "transition": "all",
+                      "clipPath": "polygon(0px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%)",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 3,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-L cardItem__contentTitle",
+                        "data": {},
+                        "box": {
+                          "w": 251,
+                          "h": 125,
+                          "top": 914
+                        },
+                        "text": "Design Development + Optimization",
+                        "styles": {
+                          "fontSize": "38px",
+                          "fontWeight": "400",
+                          "lineHeight": "41.8px",
+                          "color": "rgb(255, 255, 255)",
+                          "width": "251px",
+                          "height": "125.391px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(255, 255, 255)",
+                          "borderTop": "0px none rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "classes": "buttonCircle buttonCircle--swiper-slide buttonCircle--icon buttonCircle--no-title",
+                        "data": {
+                          "button": "",
+                          "color": "white",
+                          "open": ""
+                        },
+                        "box": {
+                          "w": 45,
+                          "h": 45,
+                          "top": 914
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(255, 255, 255)",
+                          "padding": "12px",
+                          "width": "19px",
+                          "height": "19px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "alignItems": "center",
+                          "borderRadius": "50%",
+                          "border": "1px solid rgb(255, 255, 255)",
+                          "borderTop": "1px solid rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "opacity": "1",
+                          "transition": "color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "classes": "cardItem__contentText",
+                        "data": {},
+                        "box": {
+                          "w": 303,
+                          "h": 65,
+                          "top": 1095
+                        },
+                        "text": "LPAS refines each project to deliver high-quality design within budget and schedule goals. Many affordable housing residents have experienced trauma or housing instability, and we employ trauma-informed design principles creating spaces that promote healing, dignity, and joy. We coordinate closely with consultants and contractors to ensure materials, systems, and layouts maximize efficiency and durability. Our process emphasizes creative problem-solving and technical precision to make every doll",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(214, 214, 214)",
+                          "margin": "0px 5px 5px 0px",
+                          "width": "303px",
+                          "height": "64.7812px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "gridColumn": "1 / -1",
+                          "gridRow": "2",
+                          "gridArea": "2 / 1 / auto / -1",
+                          "border": "0px none rgb(214, 214, 214)",
+                          "borderTop": "0px none rgb(214, 214, 214)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "classes": "cardItem swiper-slide",
+                "data": {
+                  "swupPreload": "",
+                  "swupAnimation": "overlay",
+                  "btnhover": "white"
+                },
+                "box": {
+                  "w": 353,
+                  "h": 700,
+                  "top": 490
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(255, 255, 255)",
+                  "width": "353px",
+                  "height": "700px",
+                  "maxWidth": "353px",
+                  "minHeight": "400px",
+                  "display": "grid",
+                  "flexDirection": "row",
+                  "gridTemplateColumns": "353px",
+                  "gridTemplateRows": "399px 301px",
+                  "border": "0px none rgb(255, 255, 255)",
+                  "borderTop": "0px none rgb(255, 255, 255)",
+                  "position": "relative",
+                  "opacity": "1",
+                  "transition": "transform",
+                  "objectFit": "fill",
+                  "textAlign": "start"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__headerWrapper",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 399,
+                      "top": 490
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(236, 236, 236)",
+                      "backgroundColor": "rgb(201, 211, 223)",
+                      "width": "353px",
+                      "height": "399px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "353px",
+                      "gridTemplateRows": "399px 0px",
+                      "gridColumn": "1",
+                      "gridRow": "1 / 2",
+                      "gridArea": "1 / 1 / 2",
+                      "border": "0px none rgb(236, 236, 236)",
+                      "borderTop": "0px none rgb(236, 236, 236)",
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "opacity": "1",
+                      "transition": "all",
+                      "clipPath": "polygon(0px 0px, calc(100% - 40px) 0px, 100% 40px, 100% 100%, 0px 100%)",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": "cardItem__header",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 95,
+                          "top": 490
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(236, 236, 236)",
+                          "padding": "0px 35px 0px 25px",
+                          "width": "353px",
+                          "height": "95px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "gap": "15px",
+                          "gridColumn": "1",
+                          "gridRow": "1",
+                          "gridArea": "1 / 1",
+                          "border": "0px none rgb(236, 236, 236)",
+                          "borderTop": "0px none rgb(236, 236, 236)",
+                          "zIndex": "2",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "picture",
+                        "classes": "",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 0,
+                          "top": 889
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(236, 236, 236)",
+                          "width": "353px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(236, 236, 236)",
+                          "borderTop": "0px none rgb(236, 236, 236)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__content",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 301,
+                      "top": 889
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgb(38, 38, 38)",
+                      "padding": "25px",
+                      "width": "353px",
+                      "height": "301px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "258px 45px",
+                      "gridTemplateRows": "175.688px 75.2969px",
+                      "gridColumn": "1 / -1",
+                      "gridRow": "2",
+                      "gridArea": "2 / 1 / auto / -1",
+                      "border": "0px none rgb(255, 255, 255)",
+                      "borderTop": "0px none rgb(255, 255, 255)",
+                      "zIndex": "9999",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 3,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-L cardItem__contentTitle",
+                        "data": {},
+                        "box": {
+                          "w": 251,
+                          "h": 84,
+                          "top": 914
+                        },
+                        "text": "Approvals + Delivery",
+                        "styles": {
+                          "fontSize": "38px",
+                          "fontWeight": "400",
+                          "lineHeight": "41.8px",
+                          "color": "rgb(255, 255, 255)",
+                          "width": "251px",
+                          "height": "83.5938px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(255, 255, 255)",
+                          "borderTop": "0px none rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "classes": "buttonCircle buttonCircle--swiper-slide buttonCircle--icon buttonCircle--no-title",
+                        "data": {
+                          "button": "",
+                          "color": "white",
+                          "open": ""
+                        },
+                        "box": {
+                          "w": 45,
+                          "h": 45,
+                          "top": 914
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(255, 255, 255)",
+                          "padding": "12px",
+                          "width": "19px",
+                          "height": "19px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "alignItems": "center",
+                          "borderRadius": "50%",
+                          "border": "1px solid rgb(255, 255, 255)",
+                          "borderTop": "1px solid rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "opacity": "1",
+                          "transition": "color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "classes": "cardItem__contentText",
+                        "data": {},
+                        "box": {
+                          "w": 303,
+                          "h": 65,
+                          "top": 1095
+                        },
+                        "text": "Affordable housing projects require alignment between multiple partners and agencies. Affordable housing faces compressed schedules driven by funding deadlines and tax credit timelines. LPAS manages that coordination with clarity, ensuring design quality remains consistent as the project moves through approvals, funding milestones, and construction. Our collaborative process helps clients stay on schedule and on budget while maintaining momentum.",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(214, 214, 214)",
+                          "margin": "0px 5px 5px 0px",
+                          "width": "303px",
+                          "height": "64.7812px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "gridColumn": "1 / -1",
+                          "gridRow": "2",
+                          "gridArea": "2 / 1 / auto / -1",
+                          "border": "0px none rgb(214, 214, 214)",
+                          "borderTop": "0px none rgb(214, 214, 214)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "classes": "cardItem swiper-slide",
+                "data": {
+                  "swupPreload": "",
+                  "swupAnimation": "overlay",
+                  "btnhover": "white"
+                },
+                "box": {
+                  "w": 353,
+                  "h": 700,
+                  "top": 490
+                },
+                "text": null,
+                "styles": {
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "21.6px",
+                  "color": "rgb(255, 255, 255)",
+                  "width": "353px",
+                  "height": "700px",
+                  "maxWidth": "353px",
+                  "minHeight": "400px",
+                  "display": "grid",
+                  "flexDirection": "row",
+                  "gridTemplateColumns": "353px",
+                  "gridTemplateRows": "399px 301px",
+                  "border": "0px none rgb(255, 255, 255)",
+                  "borderTop": "0px none rgb(255, 255, 255)",
+                  "position": "relative",
+                  "opacity": "1",
+                  "transition": "transform",
+                  "objectFit": "fill",
+                  "textAlign": "start"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__headerWrapper cardItem__headerWrapper--dark",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 399,
+                      "top": 490
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(89, 86, 86)",
+                      "backgroundColor": "rgb(201, 211, 223)",
+                      "width": "353px",
+                      "height": "399px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "353px",
+                      "gridTemplateRows": "399px 0px",
+                      "gridColumn": "1",
+                      "gridRow": "1 / 2",
+                      "gridArea": "1 / 1 / 2",
+                      "border": "0px none rgb(89, 86, 86)",
+                      "borderTop": "0px none rgb(89, 86, 86)",
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "opacity": "1",
+                      "transition": "all",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": "cardItem__header",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 95,
+                          "top": 490
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(89, 86, 86)",
+                          "padding": "0px 35px 0px 25px",
+                          "width": "353px",
+                          "height": "95px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "gap": "15px",
+                          "gridColumn": "1",
+                          "gridRow": "1",
+                          "gridArea": "1 / 1",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "zIndex": "2",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "picture",
+                        "classes": "",
+                        "data": {},
+                        "box": {
+                          "w": 353,
+                          "h": 0,
+                          "top": 889
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(89, 86, 86)",
+                          "width": "353px",
+                          "display": "block",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(89, 86, 86)",
+                          "borderTop": "0px none rgb(89, 86, 86)",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": "cardItem__content",
+                    "data": {},
+                    "box": {
+                      "w": 353,
+                      "h": 301,
+                      "top": 889
+                    },
+                    "text": null,
+                    "styles": {
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "21.6px",
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgb(38, 38, 38)",
+                      "padding": "25px",
+                      "width": "353px",
+                      "height": "301px",
+                      "display": "grid",
+                      "flexDirection": "row",
+                      "gridTemplateColumns": "258px 45px",
+                      "gridTemplateRows": "175.688px 75.2969px",
+                      "gridColumn": "1 / -1",
+                      "gridRow": "2",
+                      "gridArea": "2 / 1 / auto / -1",
+                      "border": "0px none rgb(255, 255, 255)",
+                      "borderTop": "0px none rgb(255, 255, 255)",
+                      "zIndex": "9999",
+                      "opacity": "1",
+                      "transition": "all",
+                      "clipPath": "polygon(0px 0px, 100% 0px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%)",
+                      "objectFit": "fill",
+                      "textAlign": "start"
+                    },
+                    "childCount": 3,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": "font-L cardItem__contentTitle",
+                        "data": {},
+                        "box": {
+                          "w": 251,
+                          "h": 125,
+                          "top": 914
+                        },
+                        "text": "Occupancy + Community Evolution",
+                        "styles": {
+                          "fontSize": "38px",
+                          "fontWeight": "400",
+                          "lineHeight": "41.8px",
+                          "color": "rgb(255, 255, 255)",
+                          "width": "251px",
+                          "height": "125.391px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "border": "0px none rgb(255, 255, 255)",
+                          "borderTop": "0px none rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "classes": "buttonCircle buttonCircle--swiper-slide buttonCircle--icon buttonCircle--no-title",
+                        "data": {
+                          "button": "",
+                          "color": "white",
+                          "open": ""
+                        },
+                        "box": {
+                          "w": 45,
+                          "h": 45,
+                          "top": 914
+                        },
+                        "text": null,
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(255, 255, 255)",
+                          "padding": "12px",
+                          "width": "19px",
+                          "height": "19px",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "alignItems": "center",
+                          "borderRadius": "50%",
+                          "border": "1px solid rgb(255, 255, 255)",
+                          "borderTop": "1px solid rgb(255, 255, 255)",
+                          "overflow": "hidden",
+                          "position": "relative",
+                          "opacity": "1",
+                          "transition": "color 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-color 0.3s cubic-bezier(0, 0, 0.13, 0.99)",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 2,
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "classes": "cardItem__contentText",
+                        "data": {},
+                        "box": {
+                          "w": 303,
+                          "h": 65,
+                          "top": 1095
+                        },
+                        "text": "Our commitment to affordable housing extends beyond completion. LPAS studies how spaces perform over time, how they support residents, simplify maintenance, and strengthen neighborhoods. We apply lessons learned from each project to continually improve design outcomes across our portfolio.",
+                        "styles": {
+                          "fontSize": "16px",
+                          "fontWeight": "400",
+                          "lineHeight": "21.6px",
+                          "color": "rgb(214, 214, 214)",
+                          "margin": "0px 5px 5px 0px",
+                          "width": "303px",
+                          "height": "64.7812px",
+                          "display": "flow-root",
+                          "flexDirection": "row",
+                          "gridColumn": "1 / -1",
+                          "gridRow": "2",
+                          "gridArea": "2 / 1 / auto / -1",
+                          "border": "0px none rgb(214, 214, 214)",
+                          "borderTop": "0px none rgb(214, 214, 214)",
+                          "overflow": "hidden",
+                          "opacity": "1",
+                          "transition": "all",
+                          "objectFit": "fill",
+                          "textAlign": "start"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "scrollSamples": [
+    {
+      "scrollY": 1632,
+      "blockTop": 100,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": 100,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": 170,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": 235,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": 415,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": 490,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": 540,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": 764,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": 808,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 808,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 814,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": 808,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 845,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 852,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "scrollY": 1981,
+      "blockTop": -249,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": -249,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": -179,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": -114,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": 66,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": 141,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": 191,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": 415,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": 459,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 459,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 465,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": 459,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 496,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 503,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "scrollY": 2330,
+      "blockTop": -340,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": -340,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": -270,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": -205,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": -25,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": 50,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": 100,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": 324,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": 368,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 368,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 374,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": 368,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 405,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 412,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "scrollY": 2680,
+      "blockTop": -340,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": -340,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": -270,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": -205,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": -25,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": 50,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": 100,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": 324,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": 368,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 368,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 374,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": 368,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 405,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 412,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "scrollY": 3029,
+      "blockTop": -340,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": -340,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": -270,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": -205,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": -25,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": 50,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": 100,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": 324,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": 368,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 368,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 374,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": 368,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 405,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 412,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "scrollY": 3378,
+      "blockTop": -341,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 1305)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": -341,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": -271,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": -206,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": -26,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": 49,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": 99,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": 323,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": 367,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 367,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 373,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": 367,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 404,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 411,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "scrollY": 3727,
+      "blockTop": -690,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 1305)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": -690,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": -620,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": -555,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": -375,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": -300,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": -250,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": -26,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": 18,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 18,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 24,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": 18,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": 55,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": 62,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "scrollY": 4077,
+      "blockTop": -1040,
+      "blockTransform": "matrix(1, 0, 0, 1, 0, 1305)",
+      "cards": [
+        {
+          "cls": "blockProcessCardSlider__header",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 390,
+            "top": -1040,
+            "left": 50
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__headerTagline",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1300,
+            "h": 35,
+            "top": -970,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-M blockProcessCardSlider__headerText",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 355,
+            "h": 225,
+            "top": -905,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-3XL blockProcessCardSlider__headerTitle",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 935,
+            "h": 75,
+            "top": -725,
+            "left": 455
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__sliderButtons",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 0,
+            "h": 0,
+            "top": 0,
+            "left": 0
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__main",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 1390,
+            "h": 550,
+            "top": -650,
+            "left": 50
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listWrapper",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "translate": "none",
+          "opacity": "0",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 450,
+            "top": -600,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listLabel",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 19,
+            "top": -376,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__list",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 182,
+            "top": -332,
+            "left": 90
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": -332,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": -326,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-SM blockProcessCardSlider__listItemTitle",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 233,
+            "h": 32,
+            "top": -332,
+            "left": 125
+          }
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 288,
+            "h": 32,
+            "top": -295,
+            "left": 90
+          }
+        },
+        {
+          "cls": "font-S blockProcessCardSlider__listItemNumber",
+          "transform": "none",
+          "translate": "none",
+          "opacity": "1",
+          "zIndex": "auto",
+          "visibility": "visible",
+          "box": {
+            "w": 35,
+            "h": 19,
+            "top": -288,
+            "left": 90
+          }
+        }
+      ],
+      "phases": [
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "01 Discovery + Feasibility",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "02 Community Engagement + Visioning",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "03 Design Development + Optimization",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "04 Approvals + Delivery",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        },
+        {
+          "cls": "blockProcessCardSlider__listItem",
+          "text": "05 Occupancy + Community Evolution",
+          "color": "rgb(38, 38, 38)",
+          "opacity": "1"
+        }
+      ]
+    }
+  ]
+}

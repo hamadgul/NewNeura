@@ -1,0 +1,344 @@
+{
+  "portfolio": {
+    "url": "https://lpas.com/portfolio/",
+    "initial": {
+      "cards": 16,
+      "allLinks": 16,
+      "filterHTML": "\n        <div class=\"filterApi \" data-control=\"filter\">\n        <div class=\"filterApi__filterWrapper\" id=\"filterHeader\">\n        <div class=\"filterApi__Overflow filterApi__Overflow--one\">\n            <div class=\"filterApi__Wrapper\">\n                <button class=\"filterApi__item\" data-filtertarget=\"\" data-filter=\"true\">\n                    <span>All</span>\n                </button>\n                                    <button class=\"filterApi__item\" data-taxid=\"185\" data-filtertarget=\"housing\">\n                        <span>Housing</span>\n                        <span class=\"font-XS\">\n                                                                                                                                                                                                                                                                                                                                                                                                                                            27\n                                                    </span>\n                    </button>\n                                    <button class=\"filterApi__item\" data-taxid=\"234\" data-filtertarget=\"interiors\">\n                        <span>Interiors</span>\n                        <span class=\"font-XS\">\n                                                            13\n                                                    </span>\n                    </button>\n                         "
+    },
+    "scrollCounts": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "loadMore": [],
+    "filters": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "href": null,
+        "cls": "filterApi__item"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Housing 27",
+        "href": null,
+        "cls": "filterApi__item"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Interiors 13",
+        "href": null,
+        "cls": "filterApi__item"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Higher Education 12",
+        "href": null,
+        "cls": "filterApi__item"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Civic 6",
+        "href": null,
+        "cls": "filterApi__item"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Commercial 14",
+        "href": null,
+        "cls": "filterApi__item"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "href": null,
+        "cls": "filterApi__item filterApi__item--bottom"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Affordable Housing 6",
+        "href": null,
+        "cls": "filterApi__item filterApi__item--bottom"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Student Housing 3",
+        "href": null,
+        "cls": "filterApi__item filterApi__item--bottom"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Market Rate Housing 13",
+        "href": null,
+        "cls": "filterApi__item filterApi__item--bottom"
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Senior Housing 5",
+        "href": null,
+        "cls": "filterApi__item filterApi__item--bottom"
+      },
+      {
+        "tag": "A",
+        "text": "UC Berkeley Wu Performance Hall RenovationBerkeley",
+        "href": "https://lpas.com/portfolio/uc-berkeley-wu-performance-hall-renovation/",
+        "cls": "collectionProjects__card"
+      }
+    ],
+    "afterHousingClick": {
+      "url": "https://lpas.com/portfolio/?market=housing",
+      "cards": 16
+    }
+  },
+  "culture": {
+    "slider": {
+      "outerHTML": "<div class=\"blockImageSlider\" data-control=\"BlockImageSlider\" data-grid=\"grid-template\">\n    <!-- Slider container -->\n    <div class=\"swiper blockImageSlider__slider swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress\" data-showblob=\"Drag\">\n        <!-- Navigation arrows -->\n        <div class=\"blockImageSlider__navigation\">\n            <div class=\"swiper-progressbar blockImageSlider__progressbar swiper-pagination-progressbar swiper-pagination-horizontal\"><span class=\"swiper-pagination-progressbar-fill\" style=\"transform: translate3d(0px, 0px, 0px) scaleX(0.0333333) scaleY(1); transition-duration: 0ms;\"></span></div>\n            <div class=\"blockImageSlider__navigation--buttonContainer\">\n                \n<button type=\"button\" data-color=\"slate\" data-open=\"\" class=\"buttonCircle buttonCircle--swiper-button-prev buttonCircle--blockImageSlider__arrow--prev buttonCircle--icon buttonCircle--no-title swiper-button-disabled\" data-direction=\"left\" aria-label=\"Previous image\" disabled=\"\">\n        <svg class=\"icon icon-Arrow\n icon--swiper-button-prev  icon--blockImageSlider__arrow--prev \" aria-hidden=\"true\" focusable=\"false\">\n    <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-Arrow\"></use>\n</svg>\n    <span class=\"buttonCircle__background\"></span>\n</button>\n\n                \n<button type=\"button\" data-color=\"slate\" data-open=\"\" class=\"buttonCircle buttonCircle--swiper-button-next buttonCircle--blockImageSlider__arrow--next buttonCircle--icon buttonCircle--no-title\" data-direction=\"right\" aria-label=\"Next image\">\n        <svg class=\"icon icon-Arrow\n icon--swiper-button-next  icon--blockImageSlider__arrow--next \" aria-hidden=\"true\" focusable=\"false\">\n    <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-Arrow\"></use>\n</svg>\n    <span class=\"buttonCircle__background\"></span>\n</button>\n            </div>\n        </div>\n        <div class=\"swiper-wrapper\">\n                            <div class=\"swiper-slide blockImageSlider__slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active\" style=\"width: 473.333px; margin-right: 10px;\">\n                    <figure class=\"blockImageSlider__imageContainer\">\n                                \n        \n<picture>\n  <source srcset=\"https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-375x500-c-default.webp 375w,https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-678x904-c-default.webp 678w,https://lpas.com/wp-content/uploads/resized/",
+      "trackClasses": "swiper blockImageSlider__slider swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress",
+      "trackTransform": "none",
+      "trackAnimation": "none",
+      "slideCount": 32,
+      "imgs": [
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20231116_172026-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 630
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_130220-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_162707-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240725_163242-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20240920_093221-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 473,
+          "h": 473
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Brock-Pic-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Craps-1-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Document1-1440x1864-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1864
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/HABITAT_2-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_2381-1440x1440-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_2966-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4102-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4115-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4118-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_4134-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_6101-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/IMG_6104-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/lunch-pic-1440x672-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 672
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20241214_051409559-1440x1084-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1084
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20250809_013545380-1440x1084-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1084
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/PXL_20250809_023225272-1440x1913-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1913
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Team-3-Photo-3-RETRO-TOWER-THEATRE-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Team-3-Photo-5-TOMATO-ALLEY-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC8867-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC8967-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9264-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/DSC9347-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/3-1440x945-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 945
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/6-1440x1860-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1860
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/11-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/17-1440x1080-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1080
+        },
+        {
+          "src": "https://lpas.com/wp-content/uploads/resized/2026/01/2024-Kareoke-2024-1440x1920-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 1920
+        }
+      ]
+    },
+    "sliderOverTime": [
+      {
+        "transform": "none",
+        "scrollLeft": 0
+      },
+      {
+        "transform": "none",
+        "scrollLeft": 0
+      },
+      {
+        "transform": "none",
+        "scrollLeft": 0
+      },
+      {
+        "transform": "none",
+        "scrollLeft": 0
+      }
+    ]
+  },
+  "marketsHousing": {
+    "controls": [
+      "BlockHeaderMarkets",
+      "BlockIntroDouble",
+      "BlockProjectsHighlight"
+    ],
+    "subnav": [
+      {
+        "text": "Affordable Housing",
+        "href": "https://lpas.com/markets/housing/affordable-housing/"
+      },
+      {
+        "text": "Student Housing",
+        "href": "https://lpas.com/markets/housing/student-housing/"
+      },
+      {
+        "text": "Market Rate Housing",
+        "href": "https://lpas.com/markets/housing/market-rate-housing/"
+      },
+      {
+        "text": "Senior Housing",
+        "href": "https://lpas.com/markets/housing/senior-housing/"
+      }
+    ],
+    "projectLinks": 9
+  }
+}

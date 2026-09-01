@@ -1,0 +1,368 @@
+{
+  "path": "/markets/interiors/",
+  "key": "markets-interiors-6cba84fd",
+  "url": "https://lpas.com/markets/interiors/",
+  "desktop": {
+    "title": "LPAS — Interiors",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 7,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(146, 84, 52)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Interiors"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Our focus on\nDesign for everyday life\nInteriors"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 401,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: LPAS Interior Design connects people, purpose, and place. We create spaces that reflect identity, support well-being, an"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Design for everyday life\nLPAS Interior Design connects people, purpose, and place. We create spaces that reflect identity, support well-being, and perform beautifully in everyday use.\n\nWith over 30 years of experience across mixed-use developments, multifamily housing, higher education, and commercial projects, we bring strategy and creativity to every environment we design. What sets us apart is our fully integrated approach. Our interior designers work side-by-side with architects in the same BIM model from project inception, eliminating the disconnect between exterior and interior design. This integration reduces rework and ensures full coordination at every milestone. Whether designing a workplace, learning environment, or public space, we focus on clarity, collaboration, and meaning at every step."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS Interior Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Immersion\n02\nVisioning + Concept Development\n03\nProgramming + Space Planning\n04\nDetailing + Materiality\n05\nImplementation + Activation\n01\nInsight shapes direction\nDiscovery + Immersion\n\nLPAS begins every interior project by learning about the organization, its culture, and how people use space. We immerse ourselves in your project's market context, target demographic, and competitive landscape. We ask questions, observe patterns, and listen closely to uncover the needs and opportunities that define the project. This discovery process shapes a clear direction that connects aesthetic goals to human experience and operational priorities.\n\n02\nStory translated into space\nVisioning + Concept Development\n\nFrom early insights, LPAS develops a design concept that captures the essence of the organization. We explore how"
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 462,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Specialized Interior Design Expertise"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Specialized interiors, real impact\nSpecialized Interior Design Expertise\n\nMultifamily Housing Interiors:\nUnit design, amenity spaces, and common areas tailored to target demographics with market-aligned design that drives leasing.\n\nHigher Education Interiors:\nLearning spaces, residence halls, student centers, and administrative areas that support student success and campus life.\n\nSenior Living Interiors:\nAge-appropriate design with residential aesthetics and environments supporting dignity.\n\nAffordable Housing Interiors:\nCreating quality, dignified interiors within constrained budgets.\n\nCommercial Office Interiors:\nProductive work environments, collaborative spaces, and branded experiences that attract and retain talent.\n\nHospitality & Amenity Spaces:\nClubrooms, fitness centers, co-working spaces, and community areas designed to enhance resident experience and retention."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 462,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: The LPAS Interior Design Advantage"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Integrated. Transparent. Strategic.\nThe LPAS Interior Design Advantage\n\nFully Integrated with Architecture:\nOur interior designers work in the same BIM model as architects from day one, eliminating conflicts and ensuring coordination.\n\nNo Furniture Markups:\nWe don’t profit from product sales. Our design fees are separate, ensuring transparent costs and unbiased specifications.\n\nSustainable Design Commitment:\nWELL AP leadership brings expertise in healthy buildings, low-VOC products, and occupant wellbeing.\n\nMarket-Driven Design Intelligence:\nOur research-based approach ensures interiors align with target demographics and competitive positioning.\n\nSchedule Alignment:\nWe meet architectural milestones rather than creating separate interior packages, ensuring GMP sets are complete.\n\nFull-Service Capabilities:\nFrom concept through FF&E installation under one roof."
+      },
+      {
+        "i": 5,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 1127,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Highlighted projects"
+        ],
+        "imgCount": 6,
+        "videoCount": 0,
+        "svgCount": 4,
+        "linkCount": 8,
+        "text": "Highlighted projects\nAll Interiors\n17th & Broadway Interiors\nOakland, CA\nCapitol 650 Interiors\nMilpitas, CA\nAya Interiors\nFremont, CA\nMcClellan Jet Services FBO\nMcClellan Park, CA\n800J Lofts Lobby Renovation\nSacramento, CA\nNovo Interiors\nMountain View, CA\nView all Interiors\nAll Interiors"
+      },
+      {
+        "i": 6,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/12_Block-52_Madison-by-Lennar-1440x982-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/12_Block-52_Madison-by-Lennar-375x256-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/12_Block-52_Madison-by-Lennar-678x462-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 982,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4504-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4504-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4504-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4504-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/68_17th-Broadway-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/68_17th-Broadway-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/68_17th-Broadway-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/68_17th-Broadway-",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/13b_Capitol-650-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/13b_Capitol-650-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/13b_Capitol-650-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/13b_Capitol-650-992",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/04_AYA-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_AYA-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_AYA-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_AYA-992x620-c-default.jpg 992w,\n  ",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/08_McClellan-Jet-Services-FBO_FULLSIZE-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_McClellan-Jet-Services-FBO_FULLSIZE-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_McClellan-Jet-Services-FBO_FULLSIZE-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-conte",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/02_800J-Lobby-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_800J-Lobby-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_800J-Lobby-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_800J-Lobby-992x620-c",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/01_NOVO-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_NOVO-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_NOVO-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_NOVO-992x620-c-default.jpg 992w,",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/12_Block-52_Madison-by-Lennar.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 654,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1175,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 747,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 747,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "h": 2102,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:13:46.565Z"
+}

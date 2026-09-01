@@ -1,0 +1,235 @@
+{
+  "ok": [
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_37-1440x900-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/HW23_LPAS_web-res_37-1440x900-c-default.webp",
+      "bytes": 98230
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/02_LPAS-723-S-Street-Headquarters-1440x2160-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/02_LPAS-723-S-Street-Headquarters-1440x2160-c-default.webp",
+      "bytes": 365114
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Tom-Hall_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Tom-Hall_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 229940
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_41-1600x1068-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/HW23_LPAS_web-res_41-1600x1068-c-default.webp",
+      "bytes": 232538
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Melissa-Sabala_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Melissa-Sabala_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 209248
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Michael-Rhoades_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Michael-Rhoades_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 272983
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Ron-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ron-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 258338
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Bryan-Harry_LPAS_SMALL-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Bryan-Harry_LPAS_SMALL-1280x1600-c-default.jpg",
+      "bytes": 301859
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Briana-Cepeda_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Briana-Cepeda_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 157757
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/04/Glenn_Full-Res-copy-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Glenn_Full-Res-copy-1280x1600-c-default.jpg",
+      "bytes": 277113
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Ray-Welter_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ray-Welter_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 219088
+    },
+    {
+      "url": "https://lpas.com/about/",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/asset",
+      "bytes": 58569
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Craig-Speck_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Craig-Speck_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 248640
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Yovani-Trujillo_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Yovani-Trujillo_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 168208
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Morgan-Tauzer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Morgan-Tauzer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 231203
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Heidi-Roseler-Kerby_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Heidi-Roseler-Kerby_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 300775
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/02/Ryan-Townsend_LPAS.jpg-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ryan-Townsend_LPAS.jpg-1280x1600-c-default.jpg",
+      "bytes": 225587
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Mervin-Villar_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Mervin-Villar_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 200754
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Sophie-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Sophie-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 298067
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Christian-Montanez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Christian-Montanez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 217136
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Nick-Shanks_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Nick-Shanks_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 225271
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Angelique-Dionisio_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Angelique-Dionisio_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 235799
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Pat-Walton_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Pat-Walton_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 383205
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Shaahin-Davami_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Shaahin-Davami_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 207509
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/David-Oliveira_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/David-Oliveira_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 190887
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Krista-McCord_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Krista-McCord_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 199602
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Kyle-Lamb_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kyle-Lamb_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 170020
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Ky-Huynh_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ky-Huynh_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 167736
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2025/12/Chris-Kelly_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Chris-Kelly_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 156827
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Matt-Dalforno_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Matt-Dalforno_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 256080
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2025/12/Brady-Smith_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Brady-Smith_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 275612
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2025/12/Becky-McCormick_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Becky-McCormick_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 305867
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Lacey-Oxford_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Lacey-Oxford_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 239569
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Lori-Winsor_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Lori-Winsor_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 291054
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Kristina-Gwinn_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kristina-Gwinn_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 197703
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Laurel-Chavez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Laurel-Chavez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 263452
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Kim-Moore_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kim-Moore_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 201628
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2025/12/Bethanie-Taylor_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Bethanie-Taylor_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 311777
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Karina-Welch_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Karina-Welch_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 294101
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Ken-Bauer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ken-Bauer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 291606
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Kristopher-Maddox_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kristopher-Maddox_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 224434
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2026/01/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+      "bytes": 132809
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+      "bytes": 183638
+    },
+    {
+      "url": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/videos/file.mp4-1080p-.mp4",
+      "bytes": 33204843
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/videos/LPAS-office-thumbnail.jpg",
+      "bytes": 157248
+    },
+    {
+      "url": "https://lpas.com/about/",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/about-4f10f17b/videos/asset",
+      "bytes": 58569
+    }
+  ],
+  "failed": []
+}

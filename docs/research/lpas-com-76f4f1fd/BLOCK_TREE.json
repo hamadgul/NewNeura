@@ -1,0 +1,1553 @@
+{
+  "about-4f10f17b": {
+    "path": "/about/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderGeneral",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderGeneral",
+        "h": 720,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 232,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockMediaDoubleQuote",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockMediaDoubleQuote",
+        "h": 645,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockWysiwyg",
+        "h": 108,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "CollectionTeam",
+        "depth": 1,
+        "tag": "section",
+        "classes": "collectionTeam",
+        "h": 2590,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "filter",
+        "depth": 2,
+        "tag": "div",
+        "classes": "filterApi",
+        "h": 258,
+        "parentControl": "CollectionTeam",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1525,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "culture-76031cc1": {
+    "path": "/culture/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderGeneral",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderGeneral",
+        "h": 720,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 594,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockImageSlider",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockImageSlider",
+        "h": 631,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockImageFull",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockImageFull",
+        "h": 673,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "GeneralCta",
+        "depth": 1,
+        "tag": "section",
+        "classes": "generalCta",
+        "h": 182,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "contact-cfd191cd": {
+    "path": "/contact/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockContact",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockContact",
+        "h": 806,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 94,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "latest-f798beeb": {
+    "path": "/latest/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderPortfolio",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderPortfolio",
+        "h": 450,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "CollectionPost",
+        "depth": 1,
+        "tag": "section",
+        "classes": "collectionPost",
+        "h": 2832,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "filter",
+        "depth": 2,
+        "tag": "div",
+        "classes": "filterApi",
+        "h": 258,
+        "parentControl": "CollectionPost",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "portfolio-81ee5030": {
+    "path": "/portfolio/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderPortfolio",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderPortfolio",
+        "h": 450,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "CollectionProjects",
+        "depth": 1,
+        "tag": "section",
+        "classes": "collectionProjects",
+        "h": 4949,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "filter",
+        "depth": 2,
+        "tag": "div",
+        "classes": "filterApi",
+        "h": 94,
+        "parentControl": "CollectionProjects",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "portfolio-las-positas-college-academic-support-building-e0ff48e8": {
+    "path": "/portfolio/las-positas-college-academic-support-building/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderProjects",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderProjects",
+        "h": 1170,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 487,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectDetails",
+        "depth": 3,
+        "tag": "section",
+        "classes": "blockProjectDetails",
+        "h": 0,
+        "parentControl": "BlockIntroDouble",
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockMediaDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockMediaDouble",
+        "h": 657,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockImageFull",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockImageFull",
+        "h": 809,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockMediaDoubleQuote",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockMediaDoubleQuote",
+        "h": 1359,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockImageFull",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockImageFull",
+        "h": 1003,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockWysiwyg",
+        "h": 166,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockMediaDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockMediaDouble",
+        "h": 657,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockMediaDoubleQuote",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockMediaDoubleQuote",
+        "h": 854,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockImageFull",
+        "depth": 1,
+        "tag": "div",
+        "classes": "blockImageFull",
+        "h": 960,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectDetails",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectDetails",
+        "h": 289,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-housing-588433c5": {
+    "path": "/markets/housing/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 509,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 2101,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutOne",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutOne",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutFive",
+        "depth": 2,
+        "tag": "a",
+        "classes": "blockProjectsHighlight__layoutFive",
+        "h": 974,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutThree",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutThree",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-housing-affordable-housing-5d96d8a6": {
+    "path": "/markets/housing/affordable-housing/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 422,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 281,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 404,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 1550,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutFive",
+        "depth": 2,
+        "tag": "a",
+        "classes": "blockProjectsHighlight__layoutFive",
+        "h": 943,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutThree",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutThree",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-housing-market-rate-housing-264d70ed": {
+    "path": "/markets/housing/market-rate-housing/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 525,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 367,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 2101,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutFour",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutFour",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutFive",
+        "depth": 2,
+        "tag": "a",
+        "classes": "blockProjectsHighlight__layoutFive",
+        "h": 974,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutTwo",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutTwo",
+        "h": 471,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-housing-student-housing-72e66e7d": {
+    "path": "/markets/housing/student-housing/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 400,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 449,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 522,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 556,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutTwo",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutTwo",
+        "h": 471,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-housing-senior-housing-c6469d9f": {
+    "path": "/markets/housing/senior-housing/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 462,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 339,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 382,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 556,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutTwo",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutTwo",
+        "h": 471,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-civic-382e5b77": {
+    "path": "/markets/civic/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 463,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 397,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 397,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 1177,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutFour",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutFour",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutThree",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutThree",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-commercial-0495d1e6": {
+    "path": "/markets/commercial/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 485,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 397,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 397,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 1177,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutFour",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutFour",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutThree",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutThree",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-interiors-6cba84fd": {
+    "path": "/markets/interiors/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 401,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 462,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 462,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 1127,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutOne",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutOne",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutThree",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutThree",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  },
+  "markets-higher-education-95395586": {
+    "path": "/markets/higher-education/",
+    "controls": [
+      {
+        "name": "Preloader",
+        "depth": 3,
+        "tag": "div",
+        "classes": "preloader",
+        "h": 900,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationMain",
+        "depth": 4,
+        "tag": "div",
+        "classes": "navigationMain",
+        "h": 100,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockHeaderMarkets",
+        "depth": 1,
+        "tag": "header",
+        "classes": "blockHeaderMarkets",
+        "h": 1130,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockIntroDouble",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockIntroDouble",
+        "h": 400,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProcessCardSlider",
+        "depth": 2,
+        "tag": "section",
+        "classes": "blockProcessCardSlider",
+        "h": 1140,
+        "parentControl": null,
+        "inPinSpacer": true
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 427,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockWysiwyg",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockWysiwyg",
+        "h": 689,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "BlockProjectsHighlight",
+        "depth": 1,
+        "tag": "section",
+        "classes": "blockProjectsHighlight",
+        "h": 1077,
+        "parentControl": null,
+        "inPinSpacer": false
+      },
+      {
+        "name": "HighlightedButton",
+        "depth": 3,
+        "tag": "div",
+        "classes": "highlightedButton",
+        "h": 37,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutOne",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutOne",
+        "h": 521,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "LayoutTwo",
+        "depth": 2,
+        "tag": "div",
+        "classes": "blockProjectsHighlight__layout blockProjectsHighlight__layoutTwo",
+        "h": 471,
+        "parentControl": "BlockProjectsHighlight",
+        "inPinSpacer": false
+      },
+      {
+        "name": "NavigationFooter",
+        "depth": 3,
+        "tag": "footer",
+        "classes": "navigationFooter",
+        "h": 1645,
+        "parentControl": null,
+        "inPinSpacer": false
+      }
+    ],
+    "pinSpacers": [
+      {
+        "h": 2445,
+        "child": "blockProcessCardSlider",
+        "childControl": "BlockProcessCardSlider"
+      }
+    ],
+    "gsap": false,
+    "scrollTrigger": false,
+    "swup": true
+  }
+}

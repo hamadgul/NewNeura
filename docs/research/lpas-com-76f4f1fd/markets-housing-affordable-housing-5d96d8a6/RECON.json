@@ -1,0 +1,350 @@
+{
+  "path": "/markets/housing/affordable-housing/",
+  "key": "markets-housing-affordable-housing-5d96d8a6",
+  "url": "https://lpas.com/markets/housing/affordable-housing/",
+  "desktop": {
+    "title": "Affordable Housing - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 7,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(98, 86, 83)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Affordable Housing"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 6,
+        "linkCount": 5,
+        "text": "Back to Housing\nBuilding stability, building pride\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nAffordable Housing"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 422,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: LPAS believes that everyone deserves access to well-designed, dignified housing. Our affordable housing work focuses on "
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Building stability, building pride\nLPAS believes that everyone deserves access to well-designed, dignified housing. Our affordable housing work focuses on creating places that foster stability, connection, and pride for residents and the surrounding community.\n\nWith extensive experience designing affordable, permanent supportive, and mixed-income housing across California, we bring both technical expertise and deep empathy to every project. We collaborate with developers, housing authorities, and local agencies to bring clarity to complex processes and deliver design excellence within real-world constraints. We navigate TCAC requirements, leverage state incentives like SB 35, and work within the realities of public funding. Every project reflects our commitment to efficiency, equity, and the people who call these communities home."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS affordable housing design process\nOur Process\n\nPhases\n\n01\nDiscovery + Feasibility\n02\nCommunity Engagement + Visioning\n03\nDesign Development + Optimization\n04\nApprovals + Delivery\n05\nOccupancy + Community Evolution\n01\nShaping opportunity together\nDiscovery + Feasibility\n\nEvery project begins with understanding. LPAS examines the site, its context, and its potential to create a clear picture of what can be achieved within funding and entitlement frameworks. We begin by aligning around your mission, the population you serve, and the complex funding mechanisms making these projects possible. We connect the physical opportunities of the land with the financial realities of affordable housing, helping our clients make informed decisions early in the process.\n\n02\nTrust Through Transparency\nCommunity Engagement + Visioning\n\nAffordable housing succeeds when residents, neighbors"
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 281,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Specialized Affordable Housing Expertise"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Design for Diverse Needs\nSpecialized Affordable Housing Expertise\n\nPermanent Supportive Housing:\nTrauma-informed environments for formerly unhoused individuals and families with integrated service spaces.\n\nFamily Housing:\nDesigning for multigenerational families with play areas, community spaces, and family-sized units.\n\nSenior Affordable Housing:\nAge-appropriate design with accessibility, community spaces, and consideration for aging in place.\n\nMixed-Income Communities:\nIntegrating affordable and market-rate units to create economically diverse, thriving communities."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 404,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Why Affordable Housing Developers Choose LPAS"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Proven Partners in Housing\nWhy Affordable Housing Developers Choose LPAS\n\nMission-Driven Partnership:\nWe understand affordable housing transforms lives. Our designs reflect the dignity and respect your residents deserve.\n\nRegulatory Expertise:\nDeep experience with TCAC, LIHTC, SB 35, density bonuses, and complex compliance requirements.\n\nFiscal Responsibility:\nWe make every dollar count, delivering quality housing within public funding and tax credit financing constraints.\n\nTrauma-Informed Design:\nCreating environments that promote healing, safety, and wellbeing for vulnerable populations.\n\nProven Track Record:\nFrom permanent supportive to family developments, we’ve delivered affordable housing that communities celebrate."
+      },
+      {
+        "i": 5,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 1550,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Highlighted Projects"
+        ],
+        "imgCount": 4,
+        "videoCount": 0,
+        "svgCount": 6,
+        "linkCount": 6,
+        "text": "Highlighted Projects\nAll Affordable Housing\nProspera at Fiddyment Ranch\nRoseville, CA\nNellie Hannon Gateway\nEmeryville, CA\nOn Broadway\nSacramento, CA\nSunrise Pointe\nCitrus Heights, CA\nSee all Affordable Housing\nPortfolio"
+      },
+      {
+        "i": 6,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0485_1-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0485_1-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0485_1-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0485_1-992x661-c-default.",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-992x661-c-default.",
+        "alt": "",
+        "w": 1340,
+        "h": 893,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/37th-San-Pabo-corner_night_2-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/37th-San-Pabo-corner_night_2-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/37th-San-Pabo-corner_night_2-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/Night_01-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/Night_01-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/Night_01-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/Night_01-992x620-c-default.jpg 99",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/02/Sunrise-Pointe_25-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/02/Sunrise-Pointe_25-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/02/Sunrise-Pointe_25-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/02/Sunrise-Pointe_",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/DJI_0485_1.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 673,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1175,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 566,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 667,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "h": 1490,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:07:42.130Z"
+}

@@ -1,0 +1,273 @@
+# CollectionProjects — extracted computed styles
+
+Auto-generated from `getComputedStyle()` at 1440px via the block extraction
+pass. Every value below is measured, not estimated. Where more than one
+instance is listed, diff them to see which values are content-driven props
+and which are fixed to the block.
+
+---
+
+# Instance on `https://lpas.com/portfolio/`
+
+## CollectionProjects
+
+- **`<section.collectionProjects>`** — 1440×4949
+  - `fontSize: 16px; fontWeight: 400; lineHeight: 21.6px; color: rgb(17, 17, 17); width: 1440px; height: 4948.67px; minHeight: 900px; display: grid; gap: 0px 10px; columnGap: 10px; gridTemplateColumns: [full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]; gridTemplateRows: 243.594px 1042.03px 1010px 1042.03px 1010px 521.016px 80px; textAlign: start; flex: 0 1 auto`
+  - **`<div.filterApi>`** — 1340×94
+    - `margin: 150px 0px 0px; width: 1340px; height: 93.5938px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 0px 93.5938px; gridColumn: 2 / -2; gridRow: 1; gridArea: 1 / 2 / auto / -2`
+    - **`<div.filterApi__filterWrapper>`** — 1340×94
+      - `width: 1340px; height: 93.5938px; display: grid; gridTemplateRows: 37.5938px 1px 55px; gridColumn: 1 / -1; gridRow: 2; gridArea: 2 / 1 / auto / -1`
+      - **`<div.filterApi__Overflow.filterApi__Overflow--one>`** — 1340×38
+        - `width: 1340px; height: 37.5938px; display: block; gridColumn: 1 / -1; gridRow: 1; gridArea: 1 / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+        - **`<div.filterApi__Wrapper>`** — 1340×38
+          - `width: 1340px; height: 37.5938px; display: flex; gap: 30px; rowGap: 30px; columnGap: 30px; overflow: scroll auto; overflowX: scroll; whiteSpace: nowrap`
+          - **`<button.filterApi__item>`** — 17×38
+            - `color: rgb(38, 38, 38); padding: 0px 0px 15px; width: 17.0312px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(38, 38, 38); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 74×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 73.5938px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 71×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 70.5312px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 135×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 134.672px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 44×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 43.5px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 99×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 99.375px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+      - **`<div.filterApi__Line>`** — 1340×1
+        - `backgroundColor: rgb(214, 214, 214); margin: -1px 0px 0px; width: 1340px; height: 1px; display: block; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; zIndex: 2`
+      - **`<div.filterApi__Overflow>`** — 1340×55
+        - `width: 1340px; height: 55px; display: block; gridColumn: 1 / -1; gridRow: 3; gridArea: 3 / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+        - **`<div.filterApi__Wrapper>`** — 1340×55
+          - `width: 1340px; height: 55px; display: flex; gap: 30px; rowGap: 30px; columnGap: 30px; overflow: scroll auto; overflowX: scroll; whiteSpace: nowrap`
+          - **`<div.filterApi__itemWrapper>`** — 0×55
+            - `height: 55px; display: flex; alignItems: start`
+  - **`<div.collectionProjects__target.collectionProjects__targetOne>`** — 1440×1042
+    - `width: 1440px; height: 1042.03px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 521.016px 521.016px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+    - **`<div.collectionProjects__layout.collectionProjects__layout1>`** — 1340×521
+      - `padding: 0px 0px 50px; width: 1340px; height: 471.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+      - **`<a.collectionProjects__card>`** — 665×471 · href `https://lpas.com/portfolio/the-frederic/`
+        - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+        - **`<div.collectionProjects__cardWrapper>`** — 665×416
+          - `width: 665px; height: 415.625px; display: flex; justifyContent: center; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0px 100%)`
+          - **`<img.collectionProjects__cardImage>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-1280x800-c-default.jpg` (natural 1440×900, alt `The Frederic`)
+            - `width: 665px; height: 415.625px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s ease-in-out; objectFit: cover`
+        - **`<div.collectionProjects__cardText>`** — 665×40
+          - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+          - **`<span.collectionProjects__cardTitle>`** — 665×22
+            - text: `"The Frederic"`
+            - `width: 665px; height: 21.5938px; display: block`
+          - **`<span.collectionProjects__cardLocation.font-XS>`** — 665×17
+            - text: `"Sacramento, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+      - **`<div.collectionProjects__smallImagesWrapper>`** — 665×471
+        - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/iron-point/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×40
+            - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/the-emery/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×40
+            - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+    - **`<div.collectionProjects__layout.collectionProjects__layout2>`** — 1340×521
+      - `padding: 0px 0px 50px; width: 1340px; height: 471.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+      - **`<a.collectionProjects__card>`** — 665×471 · href `https://lpas.com/portfolio/elegance-hamilton-hill/`
+        - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+        - **`<div.collectionProjects__cardWrapper>`** — 665×416
+          - `width: 665px; height: 415.625px; display: flex; justifyContent: center; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0px 100%)`
+          - **`<img.collectionProjects__cardImage>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.jpg` (natural 1440×900, alt `Elegance Hamilton Hill`)
+            - `width: 665px; height: 415.625px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s ease-in-out; objectFit: cover`
+        - **`<div.collectionProjects__cardText>`** — 665×40
+          - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+          - **`<span.collectionProjects__cardTitle>`** — 665×22
+            - text: `"Elegance Hamilton Hill"`
+            - `width: 665px; height: 21.5938px; display: block`
+          - **`<span.collectionProjects__cardLocation.font-XS>`** — 665×17
+            - text: `"Novato, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+      - **`<div.collectionProjects__smallImagesWrapper>`** — 665×471
+        - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/uc-berkeley-wu-performance-hall-renovation/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×40
+            - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/uc-davis-ann-e-pitzer-center-classroom-recital-hall/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×62
+            - `margin: 15px 0px 0px; width: 327.5px; height: 61.9844px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+  - **`<a.projectHighlight>`** — 1340×960 · href `https://lpas.com/portfolio/prospera-at-fiddyment-ranch/`
+    - `margin: 0px 0px 50px; width: 1340px; height: 960px; maxHeight: 1000px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 960px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.2s; cursor: pointer`
+    - **`<div.projectHighlight__image>`** — 1340×960
+      - `width: 1340px; height: 960px; display: block; gridColumn: 1 / -1; gridRow: 1; gridArea: 1 / 1 / auto / -1; objectFit: cover`
+      - **`<picture>`** — 1340×960
+        - `display: inline`
+        - **`<source>`** — 0×0
+          - `display: inline`
+        - **`<img.image.lazyautosizes.ls-is-cached.lazyloaded>`** — 1440×960
+          - img: `https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1440x960-c-default.webp` (natural 1440×960, alt ``)
+          - `width: 1440px; height: 960px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transition: opacity 0.3s`
+    - **`<div.projectHighlight__content>`** — 318×137
+      - `color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 20px; margin: 50px 0px 0px 50px; width: 277.5px; height: 97.3906px; display: flex; flexDirection: column; gridColumn: 1 / 6; gridRow: 1; gridArea: 1 / 1 / auto / 6; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0px 100%); backdropFilter: blur(20px)`
+      - **`<div.projectHighlight__buttonWrapper>`** — 278×27
+        - `width: 277.5px; height: 27px; display: flex`
+        - **`<div.buttonArrow.buttonArrow--icon.buttonArrow--no-title>`** — 29×27
+          - `color: rgb(38, 38, 38); width: 29px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10`
+          - **`<span.button__arrow>`** — 29×29
+            - `color: rgb(255, 255, 255); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; border: 1px solid rgb(255, 255, 255); borderTop: 1px solid rgb(255, 255, 255); borderBottom: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+      - **`<h2.projectHighlight__title>`** — 278×22
+        - text: `"Prospera at Fiddyment Ranch"`
+        - `margin: 30px 0px 2px; width: 277.5px; height: 21.5938px; display: block`
+      - **`<span.projectHighlight__location.font-XS>`** — 278×17
+        - text: `"Roseville, CA"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(163, 163, 163); width: 277.5px; height: 16.7969px; display: block`
+  - **`<div.collectionProjects__target.collectionProjects__targetTwo>`** — 1440×1042
+    - `width: 1440px; height: 1042.03px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 521.016px 521.016px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+    - **`<div.collectionProjects__layout.collectionProjects__layout3>`** — 1340×521
+      - `padding: 0px 0px 50px; width: 1340px; height: 471.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+      - **`<a.collectionProjects__card>`** — 665×471 · href `https://lpas.com/portfolio/tower-222/`
+        - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+        - **`<div.collectionProjects__cardWrapper>`** — 665×416
+          - `width: 665px; height: 415.625px; display: flex; justifyContent: center; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0px 100%)`
+          - **`<img.collectionProjects__cardImage>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-1280x800-c-default.jpg` (natural 1440×900, alt `Tower 222`)
+            - `width: 665px; height: 415.625px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s ease-in-out; objectFit: cover`
+        - **`<div.collectionProjects__cardText>`** — 665×40
+          - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+          - **`<span.collectionProjects__cardTitle>`** — 665×22
+            - text: `"Tower 222"`
+            - `width: 665px; height: 21.5938px; display: block`
+          - **`<span.collectionProjects__cardLocation.font-XS>`** — 665×17
+            - text: `"San Pedro, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+      - **`<div.collectionProjects__smallImagesWrapper>`** — 665×471
+        - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/gio-apartments/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×40
+            - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/uc-davis-health-folsom-medical-care-clinic/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×40
+            - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+    - **`<div.collectionProjects__layout.collectionProjects__layout4>`** — 1340×471
+      - `margin: 0px 0px 50px; width: 1340px; height: 471.016px; display: grid; flexDirection: column; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+      - **`<a.collectionProjects__card>`** — 665×471 · href `https://lpas.com/portfolio/the-ohlone-college-building-5-renovation/`
+        - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+        - **`<div.collectionProjects__cardWrapper>`** — 665×416
+          - `width: 665px; height: 415.625px; display: flex; justifyContent: center; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0px 100%)`
+          - **`<img.collectionProjects__cardImage>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.jpg` (natural 1440×900, alt `The Ohlone College Building 5 Renovation`)
+            - `width: 665px; height: 415.625px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s ease-in-out; objectFit: cover`
+        - **`<div.collectionProjects__cardText>`** — 665×40
+          - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+          - **`<span.collectionProjects__cardTitle>`** — 665×22
+            - text: `"The Ohlone College Building 5 Renovation"`
+            - `width: 665px; height: 21.5938px; display: block`
+          - **`<span.collectionProjects__cardLocation.font-XS>`** — 665×17
+            - text: `"Fremont, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+      - **`<div.collectionProjects__smallImagesWrapper>`** — 665×471
+        - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+        - **`<a.collectionProjects__card>`** — 665×471 · href `https://lpas.com/portfolio/730-i-street/`
+          - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridArea: auto / span 10; overflow: hidden; overflowX: hidden; overflowY: hidden; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 665×416
+            - `width: 665px; height: 415.625px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 665×40
+            - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+  - **`<a.projectHighlight>`** — 1340×960 · href `https://lpas.com/portfolio/american-river-college-student-center-cafeteria/`
+    - `margin: 0px 0px 50px; width: 1340px; height: 960px; maxHeight: 1000px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 960px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.2s; cursor: pointer`
+    - **`<div.projectHighlight__image>`** — 1340×960
+      - `width: 1340px; height: 960px; display: block; gridColumn: 1 / -1; gridRow: 1; gridArea: 1 / 1 / auto / -1; objectFit: cover`
+      - **`<picture>`** — 1340×960
+        - `display: inline`
+        - **`<source>`** — 0×0
+          - `display: inline`
+        - **`<img.image.lazyautosizes.ls-is-cached.lazyloaded>`** — 1440×960
+          - img: `https://lpas.com/wp-content/uploads/resized/2026/01/02_ARC-Student-Center_Extr-1440x960-c-default.webp` (natural 1440×960, alt ``)
+          - `width: 1440px; height: 960px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transition: opacity 0.3s`
+    - **`<div.projectHighlight__content>`** — 318×159
+      - `color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 20px; margin: 50px 0px 0px 50px; width: 277.5px; height: 118.984px; display: flex; flexDirection: column; gridColumn: 1 / 6; gridRow: 1; gridArea: 1 / 1 / auto / 6; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0px 100%); backdropFilter: blur(20px)`
+      - **`<div.projectHighlight__buttonWrapper>`** — 278×27
+        - `width: 277.5px; height: 27px; display: flex`
+        - **`<div.buttonArrow.buttonArrow--icon.buttonArrow--no-title>`** — 29×27
+          - `color: rgb(38, 38, 38); width: 29px; height: 27px; display: flex; justifyContent: center; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; zIndex: 10`
+          - **`<span.button__arrow>`** — 29×29
+            - `color: rgb(255, 255, 255); margin: 0px 0px -5px; width: 27px; height: 27px; maxHeight: 27px; display: flex; borderRadius: 50%; border: 1px solid rgb(255, 255, 255); borderTop: 1px solid rgb(255, 255, 255); borderBottom: 1px solid rgb(255, 255, 255); borderLeft: 1px solid rgb(255, 255, 255); borderRight: 1px solid rgb(255, 255, 255); overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative; transition: width 0.3s cubic-bezier(0, 0, 0.13, 0.99), border-radius 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+      - **`<h2.projectHighlight__title>`** — 278×43
+        - text: `"American River College Student Center & Cafeteria"`
+        - `margin: 30px 0px 2px; width: 277.5px; height: 43.1875px; display: block`
+      - **`<span.projectHighlight__location.font-XS>`** — 278×17
+        - text: `"Sacramento, CA"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(163, 163, 163); width: 277.5px; height: 16.7969px; display: block`
+  - **`<div.collectionProjects__target.collectionProjects__targetThree>`** — 1440×521
+    - `width: 1440px; height: 521.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 521.016px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+    - **`<div.collectionProjects__layout.collectionProjects__layout5>`** — 1340×521
+      - `padding: 0px 0px 50px; width: 1340px; height: 471.016px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 471.016px; gridColumn: 2 / -2; gridArea: auto / 2 / auto / -2`
+      - **`<a.collectionProjects__card>`** — 665×471 · href `https://lpas.com/portfolio/alwell-pleasant-hill/`
+        - `width: 665px; height: 471.016px; display: block; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+        - **`<div.collectionProjects__cardWrapper>`** — 665×416
+          - `width: 665px; height: 415.625px; display: flex; justifyContent: center; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0px 100%)`
+          - **`<img.collectionProjects__cardImage>`** — 678×424
+            - img: `https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.jpg` (natural 1440×900, alt `Alwell Pleasant Hill`)
+            - `width: 665px; height: 415.625px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s ease-in-out; objectFit: cover`
+        - **`<div.collectionProjects__cardText>`** — 665×40
+          - `margin: 15px 0px 0px; width: 665px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+          - **`<span.collectionProjects__cardTitle>`** — 665×22
+            - text: `"Alwell Pleasant Hill"`
+            - `width: 665px; height: 21.5938px; display: block`
+          - **`<span.collectionProjects__cardLocation.font-XS>`** — 665×17
+            - text: `"Pleasant Hill, CA"`
+            - `fontSize: 12px; lineHeight: 16.8px; color: rgb(116, 116, 116); width: 665px; height: 16.7969px; display: block`
+      - **`<div.collectionProjects__smallImagesWrapper>`** — 665×471
+        - `width: 665px; height: 471.016px; display: flex; gap: 10px; rowGap: 10px; gridColumn: span 10; gridRow: 1; gridArea: 1 / span 10`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/reyes-coca-cola/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×40
+            - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+        - **`<a.collectionProjects__card>`** — 328×260 · href `https://lpas.com/portfolio/the-a-j/`
+          - `width: 327.5px; height: 260px; display: block; gridColumn: span 5; gridArea: auto / span 5; overflow: hidden; overflowX: hidden; overflowY: hidden; position: sticky; top: 505px; inset: 505px auto auto; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+          - **`<div.collectionProjects__cardWrapper>`** — 328×205
+            - `width: 327.5px; height: 204.688px; display: flex; justifyContent: center`
+          - **`<div.collectionProjects__cardText>`** — 328×40
+            - `margin: 15px 0px 0px; width: 327.5px; height: 40.3906px; display: flex; flexDirection: column; gap: 2px; rowGap: 2px; columnGap: 2px; textAlign: left`
+  - **`<div.pagination>`** — 228×80
+    - `padding: 50px 0px 0px; width: 228px; height: 30px; display: flex; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; gridColumn: 3 / -3; gridArea: auto / 3 / auto / -3`
+    - **`<button.pagination__button.pagination__button--back>`** — 40×30
+      - `backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+        - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(-1, 0, 0, -1, 0, 0)`
+        - **`<use.[object.SVGAnimatedString]>`** — 4×9
+          - `display: inline`
+    - **`<div.pagination__pages>`** — 134×30
+      - `width: 134px; height: 30px; display: flex`
+      - **`<button.pagination__page.font-XS.pagination__page--current>`** — 40×30
+        - text: `"1"`
+        - `fontSize: 12px; lineHeight: 16.8px; backgroundColor: rgb(236, 236, 236); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; border: 1px solid rgb(248, 248, 248); borderTop: 1px solid rgb(248, 248, 248); borderBottom: 1px solid rgb(248, 248, 248); borderLeft: 1px solid rgb(248, 248, 248); borderRight: 1px solid rgb(248, 248, 248); transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<button.pagination__page.font-XS>`** — 40×30
+        - text: `"2"`
+        - `fontSize: 12px; lineHeight: 16.8px; backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; border: 1px solid rgb(248, 248, 248); borderTop: 1px solid rgb(248, 248, 248); borderBottom: 1px solid rgb(248, 248, 248); borderLeft: 1px solid rgb(248, 248, 248); borderRight: 1px solid rgb(248, 248, 248); transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<button.pagination__page.font-XS>`** — 40×30
+        - text: `"3"`
+        - `fontSize: 12px; lineHeight: 16.8px; backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; border: 1px solid rgb(248, 248, 248); borderTop: 1px solid rgb(248, 248, 248); borderBottom: 1px solid rgb(248, 248, 248); borderLeft: 1px solid rgb(248, 248, 248); borderRight: 1px solid rgb(248, 248, 248); transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+    - **`<button.pagination__button.pagination__button--forward>`** — 40×30
+      - `backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+        - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<use.[object.SVGAnimatedString]>`** — 4×9
+          - `display: inline`

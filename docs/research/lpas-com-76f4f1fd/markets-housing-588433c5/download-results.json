@@ -1,0 +1,60 @@
+{
+  "ok": [
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/09_Block-52_Madison-by-Lennar-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/09_Block-52_Madison-by-Lennar-1280x800-c-default.webp",
+      "bytes": 60054
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/08_Alwell_FULLSIZE-1280x800-c-default.webp",
+      "bytes": 106140
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/05_FREDERIC_Storefront-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/05_FREDERIC_Storefront-1280x800-c-default.webp",
+      "bytes": 215268
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/08_The-Emery-1440x955-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/08_The-Emery-1440x955-c-default.webp",
+      "bytes": 161214
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/02_The-AJ_FULLSIZE-1280x800-c-default.webp",
+      "bytes": 66552
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/DJI_0490_1-1280x800-c-default.webp",
+      "bytes": 106776
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-1440x993-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/11_The-Emery-1440x993-c-default.webp",
+      "bytes": 119246
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-1280x800-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/04_980-Central-1280x800-c-default.webp",
+      "bytes": 184306
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/videos/LPAS-office-thumbnail.jpg",
+      "bytes": 157248
+    },
+    {
+      "url": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+      "bytes": 183638
+    },
+    {
+      "url": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+      "dest": "/Users/hamadgul/Projects/NewNeura/public/sites/lpas-com-76f4f1fd/markets-housing-588433c5/videos/file.mp4-1080p-.mp4",
+      "bytes": 33204843
+    }
+  ],
+  "failed": []
+}

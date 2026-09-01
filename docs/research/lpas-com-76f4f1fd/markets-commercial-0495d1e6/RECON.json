@@ -1,0 +1,359 @@
+{
+  "path": "/markets/commercial/",
+  "key": "markets-commercial-0495d1e6",
+  "url": "https://lpas.com/markets/commercial/",
+  "desktop": {
+    "title": "LPAS — Commercial",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 7,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(227, 193, 170)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Commercial"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Our focus on\nDesign for business value\nCommercial"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 485,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: LPAS designs commercial environments that balance brand identity, performance, and long-term value. From workplace campu"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Design for business value\nLPAS designs commercial environments that balance brand identity, performance, and long-term value. From workplace campuses and tenant improvements to retail and mixed-use developments, our process connects business goals to design outcomes.\n\nWe understand that commercial spaces must deliver on multiple levels: supporting productivity, reflecting brand identity, attracting and retaining talent or customers, and providing measurable return on investment. Our integrated approach combines architecture, interior design, and technical expertise to create environments that respond to evolving workplace trends, changing retail models, and the increasing importance of employee wellbeing and customer experience. We focus on efficiency, adaptability, and experience, creating spaces that reflect each client's culture and enhance the way people work, shop, and connect."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS Commercial Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Brand Alignment\n02\nVisioning + Concept Development\n03\nPlanning + Performance\n04\nDetailing + Technical Coordination\n05\nDelivery + Evolution\n01\nPurpose-led clarity\nDiscovery + Brand Alignment\n\nEvery successful commercial project starts with clarity. LPAS begins by understanding our client's goals, brand identity, and operational model. We don't apply cookie-cutter solutions; we discover what makes your business unique. We study how people use space and how design can improve their experience. This early discovery phase establishes a strategic foundation that connects business needs with creative direction.\n\n02\nExpressing identity through space\nVisioning + Concept Development\n\nLPAS develops a clear and cohesive design concept that communicates brand story and purpose. We explore how materials, light, and propor"
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 397,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: LPAS Commercial Services"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Integrated Commercial Expertise\nLPAS Commercial Services\n\nIntegrated Architecture + Interior Design:\nFull-service design with architecture and interior design teams collaborating in the same BIM model.\n\nWorkplace Strategy Expertise:\nActivity-based working, hybrid work support, and evidence-based design for productivity and wellbeing.\n\nWELL Building Leadership:\nWELL AP expertise bringing healthy building principles to commercial projects.\n\nSustainable Design:\nLEED experience and sustainable strategies reducing operating costs and supporting corporate responsibility.\n\nFast-Track Delivery:\nDisciplined project management supporting compressed schedules and lease obligations.\n\nReal Estate Intelligence:\nTest fits and feasibility studies supporting site selection and lease negotiations."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 397,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Why Choose LPAS for Commercial Projects?"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Built for business success\nWhy Choose LPAS for Commercial Projects?\n\nBusiness-First Approach:\nWe design around how you work, not architectural trends. Your success is our measure.\n\nIntegrated Services:\nArchitecture and interior design under one roof, working in the same model from day one.\n\nWellness Expertise:\nWELL AP leadership bringing healthy building principles to support employee wellbeing.\n\nTechnical Excellence:\nSophisticated coordination of complex systems within commercial construction timelines.\n\nFlexible Design:\nBuilding adaptability into spaces to protect long-term investment value.\n\nProven Delivery:\nDisciplined process supporting compressed schedules and lease commencement dates."
+      },
+      {
+        "i": 5,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 1177,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Highlighted projects"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 4,
+        "linkCount": 7,
+        "text": "Highlighted projects\nAll Commercial\nUC Davis Health Folsom Medical Care Clinic\nFolsom, CA\nCalifornia Lottery Headquarters\nSacramento, CA\n100 Howe Tenant Improvement\nSacramento, CA\nMarket West\nSacramento, CA\n2020 Gateway\nSacramento, CA\nView all Commercial\nPortfolio"
+      },
+      {
+        "i": 6,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/20_UCDH_Folsom-MOB_FULLSIZE-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/20_UCDH_Folsom-MOB_FULLSIZE-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/20_UCDH_Folsom-MOB_FULLSIZE-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/202",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/202",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/08_CA-Lottery-Headquarter_bldg-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_CA-Lottery-Headquarter_bldg-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_CA-Lottery-Headquarter_bldg-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resiz",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/02_100-HOWE-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_100-HOWE-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_100-HOWE-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_100-HOWE-992x620-c-defau",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/MG_0672-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/MG_0672-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/MG_0672-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/MG_0672-992x620-c-default.jpg 992w,",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/30_2020-Gateway_Exterior-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/30_2020-Gateway_Exterior-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/30_2020-Gateway_Exterior-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/3",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2026/01/20_UCDH_Folsom-MOB_FULLSIZE.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 808,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1175,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 672,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 682,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "h": 2053,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:12:45.150Z"
+}

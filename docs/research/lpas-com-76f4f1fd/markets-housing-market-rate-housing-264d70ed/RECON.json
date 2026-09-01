@@ -1,0 +1,338 @@
+{
+  "path": "/markets/housing/market-rate-housing/",
+  "key": "markets-housing-market-rate-housing-264d70ed",
+  "url": "https://lpas.com/markets/housing/market-rate-housing/",
+  "desktop": {
+    "title": "Market Rate Housing - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 6,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(98, 86, 83)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Market Rate Housing"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 6,
+        "linkCount": 5,
+        "text": "Back to Housing\nMarket-smart residential design\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nMarket Rate Housing"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 525,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: LPAS designs housing that balances design excellence with development realities, and performs across time and market con"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Market-smart residential design\nLPAS designs housing that balances design excellence with development realities, and performs across time and market conditions. With over 20,000 units completed across 25+ jurisdictions, we understand that successful projects require more than attractive renderings. They demand a partner who thinks in yield, unit mix, and absorption rates from day one.\n\nWe work closely with developers to identify opportunity, streamline approvals, and bring clarity to complex projects. Our process is strategic and adaptable, aligning every design decision with your pro forma while navigating entitlements, community engagement, and construction logistics. From initial feasibility through certificate of occupancy, LPAS delivers predictable outcomes that maximize your return."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS Market Rate Housing Design Process\nOur Process\n\nPhases\n\n01\nSite + Feasibility\n02\nVision + Alignment\n03\nCommunity + Stakeholder Engagement\n04\nDesign Development + Optimization\n05\nDelivery + Evolution\n01\nFeasibility with foresight\nSite + Feasibility\n\nEvery successful housing project begins with a deep understanding of the site and its potential. LPAS explores how context, zoning, and financial goals intersect to create value. By analyzing physical and regulatory constraints early, we help clients make informed decisions about density, yield, and construction type. Our feasibility process connects design insight to development strategy, ensuring that every move is purposeful.\n\n02\nPurposeful community vision\nVision + Alignment\n\nA housing project succeeds when design, market, and purpose align. LPAS facilitates conversations that uncover what makes each community distinct: "
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 367,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Why Developers Choose LPAS"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Designed for performance\nWhy Developers Choose LPAS\n\nPurpose-Built for Your Success:\nOur people, processes, and technology are designed specifically for multi-family development. We think in yield, FAR, and unit mix, not just aesthetics.\n\nSpeed + Predictability:\nWe reduce risk from day one and maintain momentum through delivery. Our TAPS process ensures predictable outcomes that maximize your return.\n\nDeveloper-Aligned Partnership:\n90% of our clients are repeat clients because we partner around investment goals, not just design preferences. We make your goals our goals.\n\nProven Track Record:\nOver 20,000 units designed, entitled, and built across California. From walk-ups to high-rises, market-rate to affordable, we deliver projects that balance complex requirements with financial realities."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 2101,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 4,
+        "headings": [
+          "H2: Highlighted projects"
+        ],
+        "imgCount": 6,
+        "videoCount": 0,
+        "svgCount": 4,
+        "linkCount": 7,
+        "text": "Highlighted projects\nAll Market Rate Housing\n980 Central\nWest Sacramento, CA\nChroma at Innovation Condominiums\nFremont, CA\nThe Emery\nEmeryville, CA\nMurphy Station Apartments\nSunnyvale, CA\nThe 1960\nWalnut Creek, CA\nParker\nBerkeley, CA"
+      },
+      {
+        "i": 5,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/08_Block-52_Madison-by-Lennar-1440x696-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_Block-52_Madison-by-Lennar-375x181-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_Block-52_Madison-by-Lennar-678x328-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 696,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/image-02-blue-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/image-02-blue-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/image-02-blue-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/image-02-blue-1000x1156",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-992x62",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/11_Chroma_Warm-Springs-Condos-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_Chroma_Warm-Springs-Condos-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_Chroma_Warm-Springs-Condos-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-1440x993-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-375x259-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-678x468-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-992x684-c-de",
+        "alt": "",
+        "w": 1340,
+        "h": 924,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/25_Murphy-Station_Daniel-Gaines-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/25_Murphy-Station_Daniel-Gaines-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/25_Murphy-Station_Daniel-Gaines-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/res",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/01_AVE-Walnut-Creek-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_AVE-Walnut-Creek-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_AVE-Walnut-Creek-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_AVE-Waln",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/03_Parker-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/03_Parker-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/03_Parker-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/03_Parker-992x620-c-default.jpg",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/08_Block-52_Madison-by-Lennar.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 854,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1175,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 642,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 2218,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:08:39.481Z"
+}

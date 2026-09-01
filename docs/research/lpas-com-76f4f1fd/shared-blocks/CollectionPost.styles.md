@@ -1,0 +1,558 @@
+# CollectionPost — extracted computed styles
+
+Auto-generated from `getComputedStyle()` at 1440px via the block extraction
+pass. Every value below is measured, not estimated. Where more than one
+instance is listed, diff them to see which values are content-driven props
+and which are fixed to the block.
+
+---
+
+# Instance on `https://lpas.com/latest/`
+
+## CollectionPost
+
+- **`<section.collectionPost>`** — 1440×2832
+  - `fontSize: 16px; fontWeight: 400; lineHeight: 21.6px; color: rgb(17, 17, 17); width: 1440px; height: 2831.55px; minHeight: 900px; display: grid; gap: 0px 10px; columnGap: 10px; gridTemplateColumns: [full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]; gridTemplateRows: 408.188px 2343.36px 80px; textAlign: start; flex: 0 1 auto`
+  - **`<div.filterApi>`** — 1340×258
+    - `margin: 150px 0px 0px; width: 1340px; height: 258.188px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 164.594px 93.5938px; gridColumn: 2 / -2; gridRow: 1; gridArea: 1 / 2 / auto / -2`
+    - **`<div.filterApi__header>`** — 1340×100
+      - `margin: 0px 0px 65px; width: 1340px; height: 99.5938px; display: grid; gridTemplateRows: 57.7969px 41.7969px; gridColumn: main; gridRow: 1; gridArea: 1 / main`
+      - **`<div.filterApi__headerTagline.font-XS>`** — 1340×28
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); padding: 0px 0px 10px; margin: 0px 0px 30px; width: 1340px; height: 16.7969px; display: block; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; borderBottom: 1px solid rgb(214, 214, 214)`
+        - **`<span>`** — 38×14
+          - text: `"Journal"`
+          - `display: inline`
+      - **`<div.filterApi__headerIntro.font-L>`** — 1273×42
+        - `fontSize: 38px; lineHeight: 41.8px; width: 1272.5px; height: 41.7969px; display: block; gridColumn: 1 / -2; gridArea: auto / 1 / auto / -2`
+        - **`<h2>`** — 1273×42
+          - text: `"Stay up to date with everything that happens at LPAS."`
+          - `width: 1272.5px; height: 41.7969px; display: block`
+    - **`<div.filterApi__filterWrapper>`** — 1340×94
+      - `width: 1340px; height: 93.5938px; display: grid; gridTemplateRows: 37.5938px 1px 55px; gridColumn: 1 / -1; gridRow: 2; gridArea: 2 / 1 / auto / -1`
+      - **`<div.filterApi__Overflow.filterApi__Overflow--one>`** — 1340×38
+        - `width: 1340px; height: 37.5938px; display: block; gridColumn: 1 / -1; gridRow: 1; gridArea: 1 / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+        - **`<div.filterApi__Wrapper>`** — 1340×38
+          - `width: 1340px; height: 37.5938px; display: flex; gap: 30px; rowGap: 30px; columnGap: 30px; overflow: scroll auto; overflowX: scroll; whiteSpace: nowrap`
+          - **`<button.filterApi__item>`** — 17×38
+            - `color: rgb(38, 38, 38); padding: 0px 0px 15px; width: 17.0312px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(38, 38, 38); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 85×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 84.8594px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+      - **`<div.filterApi__Line>`** — 1340×1
+        - `backgroundColor: rgb(214, 214, 214); margin: -1px 0px 0px; width: 1340px; height: 1px; display: block; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; zIndex: 2`
+      - **`<div.filterApi__Overflow>`** — 1340×55
+        - `width: 1340px; height: 55px; display: block; gridColumn: 1 / -1; gridRow: 3; gridArea: 3 / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+  - **`<div.collectionPost__cardWrapper>`** — 1340×2343
+    - `width: 1340px; height: 2343.36px; display: grid; gap: 50px normal; rowGap: 50px; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 412.297px 494.172px 412.297px 412.297px 412.297px; gridColumn: main; gridArea: auto / main`
+    - **`<template>`** — 0×0
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DYnEV_MCaDg/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/05/705860006_18427634425120770_8881473772530157572_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 21 May 2026`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"May 21, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 21 May 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DYPz1AVicrN/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/05/690281835_18426242710120770_3696790314565088558_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 12 May 2026`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"May 12, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 12 May 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DWXNFWSEmi4/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/03/656239942_18419359891120770_8400189846813213265_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 26 Mar 2026`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"March 26, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 26 Mar 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DWASV2TD3bJ/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/03/653667598_18417016015120770_3431999040994783478_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 17 Mar 2026`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"March 17, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 17 Mar 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×494 · href `https://www.instagram.com/p/DV1dMSGFFGl/`
+      - `width: 327.5px; height: 494.172px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×409
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 409.375px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×418
+          - img: `https://lpas.com/wp-content/uploads/2026/03/650368596_18416242555120770_3751658863105406351_n-1280x0-c-default.jpg` (natural 1440×1800, alt `Instagram: 13 Mar 2026`)
+          - `width: 327.5px; height: 409.375px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"March 13, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 13 Mar 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 454.172px; left: 10px; inset: 10px 10px 454.172px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DVjXotGlEFs/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/03/645917596_18415092919120770_3490576865802946849_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 06 Mar 2026`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"March 6, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 06 Mar 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DVJtJPZkgR4/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/02/639743620_18413798356120770_3080851034257127091_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 24 Feb 2026`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"February 24, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 24 Feb 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DUbtrscEmWv/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/02/629678875_18410494183120770_3806609778747641919_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 06 Feb 2026`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"February 6, 2026"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 06 Feb 2026"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DSVUykjD-pU/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/601371553_18402260404120770_7706348919303463038_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 16 Dec 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"December 16, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 16 Dec 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DQcodyuk8Ub/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/571152120_18395933872120770_6573167260490544019_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 30 Oct 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"October 30, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 30 Oct 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DO9ksR7Ej8C/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/552930284_18389008516120770_8254037727060878943_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 23 Sep 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"September 23, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 23 Sep 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DN3WMCZ4h8O/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/539456341_18385365034120770_5891901945861936066_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 27 Aug 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"August 27, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 27 Aug 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DMquj6KB9MD/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/525439696_18381762754120770_7192444709184175844_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 28 Jul 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"July 28, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 28 Jul 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DL-XVMjxwKI/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/518812654_18379608667120770_2189618379795762948_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 11 Jul 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"July 11, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 11 Jul 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DLVIgpyRi5d/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/513540630_18377666170120770_1710219849275158112_n-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 25 Jun 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"June 25, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 25 Jun 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DEff60_vMG9/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/472430631_9541937102483643_5906846837346276025_n-1-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 06 Jan 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"January 6, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 06 Jan 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DEff284vqYa/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/472369032_1129992341841948_1222548079553134389_n-1-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 06 Jan 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"January 6, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 06 Jan 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+    - **`<a.postCard>`** — 328×412 · href `https://www.instagram.com/p/DEff0EiP9g-/`
+      - `width: 327.5px; height: 412.297px; display: flex; flexDirection: column; gap: 10px normal; rowGap: 10px; gridTemplateColumns: 1fr; gridTemplateRows: auto 1fr; gridColumn: span 5; gridArea: auto / span 5; position: relative; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.postCard__imageWrapper>`** — 328×328
+        - `backgroundColor: rgb(255, 165, 0); width: 327.5px; height: 327.5px; display: flex; alignItems: flex-end; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<img.postCard__image>`** — 334×334
+          - img: `https://lpas.com/wp-content/uploads/2026/01/472463193_607209958518487_2971062558773180837_n-1-1280x0-c-default.jpg` (natural 1440×1440, alt `Instagram: 06 Jan 2025`)
+          - `width: 327.5px; height: 327.5px; maxHeight: 410px; display: block; overflow: clip; overflowX: clip; overflowY: clip; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s; objectFit: cover`
+      - **`<div.postCard__textWrapper>`** — 328×60
+        - `margin: 15px 0px 0px; width: 327.5px; height: 59.7969px; display: flex; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1`
+        - **`<span.font-XS.postCard__date>`** — 328×17
+          - text: `"January 6, 2025"`
+          - `fontSize: 12px; lineHeight: 16.8px; width: 327.5px; height: 16.7969px; display: block`
+        - **`<span.postCard__title>`** — 328×43
+          - text: `"Instagram: 06 Jan 2025"`
+          - `width: 327.5px; height: 43px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+      - **`<div.postCard__labelWrapper>`** — 308×30
+        - `width: 307.5px; height: 30px; display: flex; flexWrap: wrap; justifyContent: flex-end; gap: 10px; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; position: absolute; top: 10px; right: 10px; bottom: 372.297px; left: 10px; inset: 10px 10px 372.297px`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label>`** — 0×0
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(255, 255, 255); backgroundColor: rgba(14, 14, 14, 0.6); padding: 6.5px 15px; borderRadius: 5px; backdropFilter: blur(20px)`
+        - **`<span.font-XS.postCard__label--insta>`** — 45×30
+          - `fontSize: 12px; lineHeight: 16.8px; color: rgb(214, 214, 214); backgroundColor: rgba(14, 14, 14, 0.6); width: 45px; height: 30px; display: flex; justifyContent: center; alignItems: center; borderRadius: 5px; backdropFilter: blur(20px)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: opacity 0.15s cubic-bezier(0, 0, 0.13, 0.99)`
+          - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+            - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.13, 0.99)`
+  - **`<div.collectionPost__cardSize>`** — 328×408
+    - `width: 327.5px; height: 408.188px; display: block; gridColumn: 2 / span 5; gridRow: 1; gridArea: 1 / 2 / auto / span 5`
+  - **`<div.pagination>`** — 181×80
+    - `padding: 50px 0px 0px; width: 181px; height: 30px; display: flex; alignItems: center; gap: 7px; rowGap: 7px; columnGap: 7px; gridColumn: 3 / -3; gridArea: auto / 3 / auto / -3`
+    - **`<button.pagination__button.pagination__button--back>`** — 40×30
+      - `backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+        - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden; transform: matrix(-1, 0, 0, -1, 0, 0)`
+        - **`<use.[object.SVGAnimatedString]>`** — 4×9
+          - `display: inline`
+    - **`<div.pagination__pages>`** — 87×30
+      - `width: 87px; height: 30px; display: flex`
+      - **`<button.pagination__page.font-XS.pagination__page--current>`** — 40×30
+        - text: `"1"`
+        - `fontSize: 12px; lineHeight: 16.8px; backgroundColor: rgb(236, 236, 236); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; border: 1px solid rgb(248, 248, 248); borderTop: 1px solid rgb(248, 248, 248); borderBottom: 1px solid rgb(248, 248, 248); borderLeft: 1px solid rgb(248, 248, 248); borderRight: 1px solid rgb(248, 248, 248); transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<button.pagination__page.font-XS>`** — 40×30
+        - text: `"2"`
+        - `fontSize: 12px; lineHeight: 16.8px; backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; border: 1px solid rgb(248, 248, 248); borderTop: 1px solid rgb(248, 248, 248); borderBottom: 1px solid rgb(248, 248, 248); borderLeft: 1px solid rgb(248, 248, 248); borderRight: 1px solid rgb(248, 248, 248); transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<button.pagination__page.font-XS>`** — 0×0
+        - `fontSize: 12px; lineHeight: 16.8px; backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; justifyContent: center; borderRadius: 5px; border: 1px solid rgb(248, 248, 248); borderTop: 1px solid rgb(248, 248, 248); borderBottom: 1px solid rgb(248, 248, 248); borderLeft: 1px solid rgb(248, 248, 248); borderRight: 1px solid rgb(248, 248, 248); transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+    - **`<button.pagination__button.pagination__button--forward>`** — 40×30
+      - `backgroundColor: rgb(248, 248, 248); width: 40px; height: 30px; display: flex; justifyContent: center; borderRadius: 5px; transition: 0.3s cubic-bezier(0, 0, 0.13, 0.99); cursor: pointer; textAlign: center`
+      - **`<svg.[object.SVGAnimatedString]>`** — 19×19
+        - `width: 19px; height: 19px; display: block; overflow: hidden; overflowX: hidden; overflowY: hidden`
+        - **`<use.[object.SVGAnimatedString]>`** — 4×9
+          - `display: inline`

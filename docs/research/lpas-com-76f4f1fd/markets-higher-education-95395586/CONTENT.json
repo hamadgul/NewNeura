@@ -1,0 +1,637 @@
+{
+  "path": "/markets/higher-education/",
+  "title": "LPAS — Higher Education",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/higher-education/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/09/lpas_image-13.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Our focus on\nArchitecture for academic community\nHigher Education",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Higher  Education"
+        }
+      ],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/09/lpas_image-13-1440x893-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/lpas_image-13-1440x893-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 893
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Architecture for academic community\nHigher education projects don't get do-overs. LPAS knows this and it shapes everything about how we work with colleges and universities, from the first stakeholder meeting to the day you open the doors.\n\nWe've spent decades learning the rhythms of campus life the budget pressures, the competing priorities, DSA approvals, and the students, faculty, and staff whose daily experience depends on getting the design right. Our process is built around listening first and designing second. We ask the right questions, bring the right people to the table, and stay closely involved from first sketch to final punch list because great educational spaces don't just happen. They're carefully, intentionally earned.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Higher education projects don't get do-overs. LPAS knows this and it shapes everything about how we work with colleges and universities, from the first stakeholder meeting to the day you open the doors."
+        }
+      ],
+      "paragraphs": [
+        "We've spent decades learning the rhythms of campus life the budget pressures, the competing priorities, DSA approvals, and the students, faculty, and staff whose daily experience depends on getting the design right. Our process is built around listening first and designing second. We ask the right questions, bring the right people to the table, and stay closely involved from first sketch to final punch list because great educational spaces don't just happen. They're carefully, intentionally earned."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS Higher Education Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Mission Alignment\n02\nEngagement + Programming\n03\nDesign Development + Technical Integration\n04\nApprovals + Agency Navigation\n05\nDelivery + Continuous Improvement\n01\nMission-driven beginnings\nDiscovery + Mission Alignment\n\nNo two campuses are the same, we never assume we already know what you need. Before any design work begins, we spend time on your campus talking to people, touring spaces, and understanding what's working and what isn't.\n\n02\nCollaboration to build alignment\nEngagement + Programming\n\nThe best campus designs are shaped by the people who use them. We run an engagement process that makes it easy for every stakeholder from department heads to students to participate meaningfully and see their input reflected in the design.\n\n03\nBuildable, enduring solutions\nDesign Development + Technical Integration\n\nThis is where ideas become buildings. We develop designs that are creative, contextually grounded, and technically sound exploring smart construction approaches and coordinating closely with engineers and builders so nothing gets lost in translation.\n\n04\nNavigating approvals with confidence\nApprovals + Agency Navigation\n\nHigher education projects move through a lot of checkpoints: DSA, the State Fire Marshal, peer review boards, and university system requirements. We've been doing this long enough to know how each agency thinks, what they need, and how to keep things moving.\n\n05\nBuilt with accountability\nDelivery + Continuous Improvement\n\nConstruction is where everything comes together. Our TAPS approach Transparent, Accountable, Predictable, Successful keeps the whole team aligned and gives you real-time visibility into exactly where things stand.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS Higher Education Design Process",
+        "Phases",
+        "01\n                        Discovery + Mission Alignment",
+        "Discovery + Mission Alignment",
+        "02\n                        Engagement + Programming",
+        "Engagement + Programming",
+        "03\n                        Design Development + Technical Integration",
+        "Design Development + Technical Integration",
+        "04\n                        Approvals + Agency Navigation",
+        "Approvals + Agency Navigation",
+        "05\n                        Delivery + Continuous Improvement",
+        "Delivery + Continuous Improvement",
+        "Discovery + Mission Alignment",
+        "No two campuses are the same, we never assume we already know what you need. Before any design work begins, we spend time on your campus talking to people, touring spaces, and understanding what's working and what isn't.",
+        "Engagement + Programming",
+        "The best campus designs are shaped by the people who use them. We run an engagement process that makes it easy for every stakeholder from department heads to students to participate meaningfully and see their input reflected in the design.",
+        "Design Development + Technical Integration",
+        "This is where ideas become buildings. We develop designs that are creative, contextually grounded, and technically sound exploring smart construction approaches and coordinating closely with engineers and builders so nothing gets lost in translation.",
+        "Approvals + Agency Navigation",
+        "Higher education projects move through a lot of checkpoints: DSA, the State Fire Marshal, peer review boards, and university system requirements. We've been doing this long enough to know how each agency thinks, what they need, and how to keep things moving.",
+        "Delivery + Continuous Improvement",
+        "Construction is where everything comes together. Our TAPS approach Transparent, Accountable, Predictable, Successful keeps the whole team aligned and gives you real-time visibility into exactly where things stand."
+      ],
+      "links": [
+        {
+          "text": "01 Mission-driven beginnings Discovery + Mission Alignment No two campuses are the same, we never assume we already know",
+          "href": "https://lpas.com/processes/discovery-mission-alignment-2/?ids=1111%2C1112%2C1113%2C1114%2C1115"
+        },
+        {
+          "text": "02 Collaboration to build alignment Engagement + Programming The best campus designs are shaped by the people who use th",
+          "href": "https://lpas.com/processes/engagement-programming/?ids=1111%2C1112%2C1113%2C1114%2C1115"
+        },
+        {
+          "text": "03 Buildable, enduring solutions Design Development + Technical Integration This is where ideas become buildings. We dev",
+          "href": "https://lpas.com/processes/design-development-technical-integration/?ids=1111%2C1112%2C1113%2C1114%2C1115"
+        },
+        {
+          "text": "04 Navigating approvals with confidence Approvals + Agency Navigation Higher education projects move through a lot of ch",
+          "href": "https://lpas.com/processes/approvals-agency-navigation/?ids=1111%2C1112%2C1113%2C1114%2C1115"
+        },
+        {
+          "text": "05 Built with accountability Delivery + Continuous Improvement Construction is where everything comes together. Our TAPS",
+          "href": "https://lpas.com/processes/delivery-continuous-improvement/?ids=1111%2C1112%2C1113%2C1114%2C1115"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/Frame-4460-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/Frame-4474-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/Frame-4473-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/Frame-4478-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/Frame-4462-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Inclusive, accountable, proven\nWhy Higher Education Institutions Choose LPAS\n\nProven Track Record\n\nFrom the CSU and UC systems to community colleges across California, we have delivered projects that balance complex requirements, tight budgets, and high aspirations.\n\nInclusive by Design\n\nFrom accessibility that exceeds code requirements to spaces that genuinely welcome diverse populations, we design environments where every person feels they belong.\n\nFiscally Responsible\n\nWe understand public budgets and how to stretch them. Our transparent process helps you see the trade-offs clearly and make decisions that maximize value without sacrificing mission.\n\nPartners, Not Vendors\n\nWe are invested in your success. Your goals become our goals, and your challenges become problems we solve together. That is how we have built relationships that last well beyond a single project.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Higher Education Institutions Choose LPAS"
+        }
+      ],
+      "paragraphs": [
+        "Proven Track Record",
+        "From the CSU and UC systems to community colleges across California, we have delivered projects that balance complex requirements, tight budgets, and high aspirations.",
+        "Inclusive by Design",
+        "From accessibility that exceeds code requirements to spaces that genuinely welcome diverse populations, we design environments where every person feels they belong.",
+        "Fiscally Responsible",
+        "We understand public budgets and how to stretch them. Our transparent process helps you see the trade-offs clearly and make decisions that maximize value without sacrificing mission.",
+        "Partners, Not Vendors",
+        "We are invested in your success. Your goals become our goals, and your challenges become problems we solve together. That is how we have built relationships that last well beyond a single project."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Trusted. Proven. Valued.\nClient Voices\n“Our goals of listening enhancement, visual improvements, third space, and better space management were all met or exceeded. The results of this project have created a wonderful experience for our students.”\n\n— Jonathan Latta, Chief of Staff, University of the Pacific\n\n \n\n“If I could sum up my experience in working with LPAS it would be collaboration and partnership!! I will be modeling future projects at this college after this one.”\n\n— Ann Kroll, Project Planner/Manager, Las Positas College\n\n \n\n“This project was a significant part of our bond process. LPAS met every challenge and deliverable and our experience has been nothing but positive.”\n\n— Owen Letcher, Vice Chancellor of Facilities and Bond Program, Las Positas College\n\n ",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Client Voices"
+        },
+        {
+          "tag": "H4",
+          "text": "“Our goals of listening enhancement, visual improvements, third space, and better space management were all met or exceeded. The results of this project have created a wonderful experience for our students.”"
+        },
+        {
+          "tag": "H4",
+          "text": "“If I could sum up my experience in working with LPAS it would be collaboration and partnership!! I will be modeling future projects at this college after this one.”"
+        },
+        {
+          "tag": "H4",
+          "text": "“This project was a significant part of our bond process. LPAS met every challenge and deliverable and our experience has been nothing but positive.”"
+        }
+      ],
+      "paragraphs": [
+        "— Jonathan Latta, Chief of Staff, University of the Pacific",
+        "— Ann Kroll, Project Planner/Manager, Las Positas College",
+        "— Owen Letcher, Vice Chancellor of Facilities and Bond Program, Las Positas College"
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted Projects\nAll Higher Education\nSolano Community College Theater Renovation and Addition.\nFairfield, CA\nUC Davis Ann E. Pitzer Center Classroom & Recital Hall\nDavis, CA\nLake Tahoe Community College Renovations for Efficiency\nSouth Lake Tahoe, CA\nCity College of San Francisco Diego Rivera Theater Criteria Document\nSan Francisco, CA\nThe Ohlone College Building 5 Renovation\nFremont, CA\nCosumnes River College College Center Expansion\nSacramento, CA",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted Projects"
+        }
+      ],
+      "paragraphs": [],
+      "links": [
+        {
+          "text": "All Higher Education",
+          "href": "https://lpas.com/portfolio/?market=higher-education"
+        },
+        {
+          "text": "Solano Community College Theater Renovation and Addition. Fairfield, CA",
+          "href": "https://lpas.com/portfolio/solano-community-college-theater-renovation-and-addition/"
+        },
+        {
+          "text": "UC Davis Ann E. Pitzer Center Classroom & Recital Hall Davis, CA",
+          "href": "https://lpas.com/portfolio/uc-davis-ann-e-pitzer-center-classroom-recital-hall/"
+        },
+        {
+          "text": "Lake Tahoe Community College Renovations for Efficiency South Lake Tahoe, CA",
+          "href": "https://lpas.com/portfolio/lake-tahoe-community-college-renovations-for-efficiency/"
+        },
+        {
+          "text": "City College of San Francisco Diego Rivera Theater Criteria Document San Francisco, CA",
+          "href": "https://lpas.com/portfolio/city-college-of-san-francisco-diego-rivera-theater-criteria-document/"
+        },
+        {
+          "text": "The Ohlone College Building 5 Renovation Fremont, CA",
+          "href": "https://lpas.com/portfolio/the-ohlone-college-building-5-renovation/"
+        },
+        {
+          "text": "Cosumnes River College College Center Expansion Sacramento, CA",
+          "href": "https://lpas.com/portfolio/cosumnes-river-college-college-center-expansion/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/24_Solano-College-Theater-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/24_Solano-College-Theater-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/22_UCD-Pitzer-Center-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/22_UCD-Pitzer-Center-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/07_LTCC-RFE-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/07_LTCC-RFE-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Concert-hall-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/Concert-hall-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/03_Cosumnes-River-College-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/03_Cosumnes-River-College-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-higher-education-95395586/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

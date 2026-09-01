@@ -1,0 +1,236 @@
+[
+  {
+    "path": "/about/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 6008,
+    "cloneMainSectionsMobile": 9630,
+    "liveDesktopSectionsH": 6014,
+    "liveMobileSectionsH": 9611,
+    "desktopDelta": -6,
+    "mobileDelta": 19,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/culture/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 2800,
+    "cloneMainSectionsMobile": 2899,
+    "liveDesktopSectionsH": 2800,
+    "liveMobileSectionsH": 2899,
+    "desktopDelta": 0,
+    "mobileDelta": 0,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/contact/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 801,
+    "cloneMainSectionsMobile": 824,
+    "liveDesktopSectionsH": 806,
+    "liveMobileSectionsH": 842,
+    "desktopDelta": -5,
+    "mobileDelta": -18,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/latest/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 3282,
+    "cloneMainSectionsMobile": 3650,
+    "liveDesktopSectionsH": 3282,
+    "liveMobileSectionsH": 3508,
+    "desktopDelta": 0,
+    "mobileDelta": 142,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/portfolio/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 5398,
+    "cloneMainSectionsMobile": 7525,
+    "liveDesktopSectionsH": 5399,
+    "liveMobileSectionsH": 7483,
+    "desktopDelta": -1,
+    "mobileDelta": 42,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/portfolio/las-positas-college-academic-support-building/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 8411,
+    "cloneMainSectionsMobile": 5655,
+    "liveDesktopSectionsH": 8411,
+    "liveMobileSectionsH": 5317,
+    "desktopDelta": 0,
+    "mobileDelta": 338,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/housing/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 3813,
+    "cloneMainSectionsMobile": 4548,
+    "liveDesktopSectionsH": 3740,
+    "liveMobileSectionsH": 4440,
+    "desktopDelta": 73,
+    "mobileDelta": 108,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/housing/affordable-housing/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 6282,
+    "cloneMainSectionsMobile": 5660,
+    "liveDesktopSectionsH": 6232,
+    "liveMobileSectionsH": 5662,
+    "desktopDelta": 50,
+    "mobileDelta": -2,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/housing/market-rate-housing/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 6569,
+    "cloneMainSectionsMobile": 5984,
+    "liveDesktopSectionsH": 6568,
+    "liveMobileSectionsH": 5980,
+    "desktopDelta": 1,
+    "mobileDelta": 4,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/housing/student-housing/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 5503,
+    "cloneMainSectionsMobile": 5565,
+    "liveDesktopSectionsH": 5502,
+    "liveMobileSectionsH": 5541,
+    "desktopDelta": 1,
+    "mobileDelta": 24,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/housing/senior-housing/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 5315,
+    "cloneMainSectionsMobile": 5245,
+    "liveDesktopSectionsH": 5314,
+    "liveMobileSectionsH": 5242,
+    "desktopDelta": 1,
+    "mobileDelta": 3,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/civic/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 6060,
+    "cloneMainSectionsMobile": 6406,
+    "liveDesktopSectionsH": 6009,
+    "liveMobileSectionsH": 6406,
+    "desktopDelta": 51,
+    "mobileDelta": 0,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/commercial/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 6082,
+    "cloneMainSectionsMobile": 6480,
+    "liveDesktopSectionsH": 6031,
+    "liveMobileSectionsH": 6481,
+    "desktopDelta": 51,
+    "mobileDelta": -1,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/interiors/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 6078,
+    "cloneMainSectionsMobile": 6532,
+    "liveDesktopSectionsH": 6027,
+    "liveMobileSectionsH": 6516,
+    "desktopDelta": 51,
+    "mobileDelta": 16,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  },
+  {
+    "path": "/markets/higher-education/",
+    "status": 200,
+    "cloneMainSectionsDesktop": 6141,
+    "cloneMainSectionsMobile": 6718,
+    "liveDesktopSectionsH": 6168,
+    "liveMobileSectionsH": 6660,
+    "desktopDelta": -27,
+    "mobileDelta": 58,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ]
+  }
+]

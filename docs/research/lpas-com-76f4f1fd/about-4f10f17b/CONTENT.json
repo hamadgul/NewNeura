@@ -1,0 +1,1138 @@
+{
+  "path": "/about/",
+  "title": "About - LPAS Architecture",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/about/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/12/02_LPAS-723-S-Street-Headquarters.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/about-4f10f17b/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Menu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderGeneral",
+      "classes": "blockHeaderGeneral",
+      "innerText": "Creativity, Community, Connection\nWe believe the best designs emerge when diverse voices come together to imagine and build with purpose.\nAbout",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "About"
+        }
+      ],
+      "paragraphs": [
+        "Creativity, Community, Connection"
+      ],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_37-1440x900-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/HW23_LPAS_web-res_37-1440x900-c-default.webp",
+          "alt": "",
+          "w": 193,
+          "h": 120
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/02_LPAS-723-S-Street-Headquarters-1440x2160-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/02_LPAS-723-S-Street-Headquarters-1440x2160-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 2160
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "About us\nLPAS Architecture + Design is an award-winning, multidisciplinary design firm providing architecture, interior design, and planning services across a diverse range of project types.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS Architecture + Design is an award-winning, multidisciplinary design firm providing architecture, interior design, and planning services across a diverse range of project types."
+        }
+      ],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockMediaDoubleQuote",
+      "classes": "blockMediaDoubleQuote",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_41-1600x1068-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/HW23_LPAS_web-res_41-1600x1068-c-default.webp",
+          "alt": "",
+          "w": 530,
+          "h": 353
+        }
+      ],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/about/",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/about-4f10f17b/videos/",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "With offices in Sacramento and Oakland, LPAS works collaboratively with clients on higher education, civic, mixed-use, housing, commercial, and adaptive-reuse projects that respond to context, community, and purpose. Our philosophy reflects a collaborative process that unites design disciplines and client goals to produce thoughtful, lasting built environments. Our work emphasizes environmental responsibility, sense of place, and design excellence that supports both performance and community value.",
+      "headings": [],
+      "paragraphs": [
+        "With offices in Sacramento and Oakland, LPAS works collaboratively with clients on higher education, civic, mixed-use, housing, commercial, and adaptive-reuse projects that respond to context, community, and purpose. Our philosophy reflects a collaborative process that unites design disciplines and client goals to produce thoughtful, lasting built environments. Our work emphasizes environmental responsibility, sense of place, and design excellence that supports both performance and community value."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "CollectionTeam",
+      "classes": "collectionTeam",
+      "innerText": "Our team\nPeople shape the spaces we design, and how we think.\nAll\nLeadership\nSacramento\nOakland\nTom Hall\nAssociate, Project Architect\nMichael Rhoades\nAssociate, Project Manager\nMelissa Sabala\nPayroll & Project Accountant\nRon Metzker\nVice President, Principal\nBryan Harry\nAssociate Principal, Senior Project Designer\nBriana Cepeda\nBookkeeper\nRay Welter\nAssociate, Senior Project Architect\nGlenn Ovitt\nAssociate, Project Manager\nYovani Trujillo\nJob Captain\nCraig Speck\nJob Captain\nHeidi Roseler-Kerby\nProject Administrator\nMorgan Tauzer\nProject Coordinator\nMervin Villar\nConstruction Administrator\nRyan Townsend\nAssociate Principal, Senior Designer\nChristian Montanez\nJob Captain\nSophie Metzker\nAccounting Assistant\nNick Shanks\nProject Architect\nAngelique Dionisio\nInterior Designer\nShaahin Davami\nJob Captain\nPat Walton\nProject Coordinator\nDavid Oliveira\nProject Architect\nKrista McCord\nOffice & IT Administrator\nKy Huynh\nDesigner\nKyle Lamb\nSenior Interior Designer\nChris Kelly\nVice President, Principal\nMatt Dalforno\nAssociate, Director of Marketing\nBecky McCormick\nAssociate, Senior Project Architect\nBrady Smith\nPresident\nLacey Oxford\nInterior Designer\nLori Winsor\nBusiness Development Manager\nLaurel Chavez\nAssociate, Contract Manager\nKristina Gwinn\nVice President, Senior Interior Designer\nKim Moore\nAssociate Principal, Director of Human Resources\nBethanie Taylor\nProject Administrative Assistant\nKen Bauer\nPrincipal, Director of Quality Control / Senior Project Manager\nKarina Welch\nProject Coordinator\nManuel Vivar-Nieto\nSenior Project Designer\nKristopher Maddox\nPrincipal, Higher Education",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "People shape the spaces we design, and how we think."
+        },
+        {
+          "tag": "H3",
+          "text": "Tom Hall"
+        },
+        {
+          "tag": "H3",
+          "text": "Michael Rhoades"
+        },
+        {
+          "tag": "H3",
+          "text": "Melissa Sabala"
+        },
+        {
+          "tag": "H3",
+          "text": "Ron Metzker"
+        },
+        {
+          "tag": "H3",
+          "text": "Bryan Harry"
+        },
+        {
+          "tag": "H3",
+          "text": "Briana Cepeda"
+        },
+        {
+          "tag": "H3",
+          "text": ""
+        },
+        {
+          "tag": "H3",
+          "text": "Ray Welter"
+        },
+        {
+          "tag": "H3",
+          "text": "Glenn Ovitt"
+        },
+        {
+          "tag": "H3",
+          "text": "Yovani Trujillo"
+        },
+        {
+          "tag": "H3",
+          "text": "Craig Speck"
+        },
+        {
+          "tag": "H3",
+          "text": "Heidi Roseler-Kerby"
+        },
+        {
+          "tag": "H3",
+          "text": "Morgan Tauzer"
+        },
+        {
+          "tag": "H3",
+          "text": ""
+        },
+        {
+          "tag": "H3",
+          "text": "Mervin Villar"
+        },
+        {
+          "tag": "H3",
+          "text": "Ryan Townsend"
+        },
+        {
+          "tag": "H3",
+          "text": "Christian Montanez"
+        },
+        {
+          "tag": "H3",
+          "text": ""
+        },
+        {
+          "tag": "H3",
+          "text": "Sophie Metzker"
+        },
+        {
+          "tag": "H3",
+          "text": "Nick Shanks"
+        },
+        {
+          "tag": "H3",
+          "text": "Angelique Dionisio"
+        },
+        {
+          "tag": "H3",
+          "text": "Shaahin Davami"
+        },
+        {
+          "tag": "H3",
+          "text": "Pat Walton"
+        },
+        {
+          "tag": "H3",
+          "text": "David Oliveira"
+        },
+        {
+          "tag": "H3",
+          "text": ""
+        },
+        {
+          "tag": "H3",
+          "text": "Krista McCord"
+        },
+        {
+          "tag": "H3",
+          "text": "Ky Huynh"
+        },
+        {
+          "tag": "H3",
+          "text": "Kyle Lamb"
+        },
+        {
+          "tag": "H3",
+          "text": "Chris Kelly"
+        },
+        {
+          "tag": "H3",
+          "text": "Matt Dalforno"
+        },
+        {
+          "tag": "H3",
+          "text": "Becky McCormick"
+        },
+        {
+          "tag": "H3",
+          "text": ""
+        },
+        {
+          "tag": "H3",
+          "text": "Brady Smith"
+        },
+        {
+          "tag": "H3",
+          "text": "Lacey Oxford"
+        },
+        {
+          "tag": "H3",
+          "text": "Lori Winsor"
+        },
+        {
+          "tag": "H3",
+          "text": "Laurel Chavez"
+        },
+        {
+          "tag": "H3",
+          "text": "Kristina Gwinn"
+        },
+        {
+          "tag": "H3",
+          "text": "Kim Moore"
+        },
+        {
+          "tag": "H3",
+          "text": ""
+        },
+        {
+          "tag": "H3",
+          "text": "Bethanie Taylor"
+        },
+        {
+          "tag": "H3",
+          "text": "Ken Bauer"
+        },
+        {
+          "tag": "H3",
+          "text": "Karina Welch"
+        },
+        {
+          "tag": "H3",
+          "text": ""
+        },
+        {
+          "tag": "H3",
+          "text": "Manuel Vivar-Nieto"
+        },
+        {
+          "tag": "H3",
+          "text": "Kristopher Maddox"
+        }
+      ],
+      "paragraphs": [],
+      "links": [
+        {
+          "text": "Tom Hall Associate, Project Architect",
+          "href": "https://lpas.com/team/tom-hall/"
+        },
+        {
+          "text": "Michael Rhoades Associate, Project Manager",
+          "href": "https://lpas.com/team/michael-rhoades/"
+        },
+        {
+          "text": "Melissa Sabala Payroll & Project Accountant",
+          "href": "https://lpas.com/team/melissa-sabala/"
+        },
+        {
+          "text": "Ron Metzker Vice President, Principal",
+          "href": "https://lpas.com/team/ron-metzker/"
+        },
+        {
+          "text": "Bryan Harry Associate Principal, Senior Project Designer",
+          "href": "https://lpas.com/team/bryan-harry/"
+        },
+        {
+          "text": "Briana Cepeda Bookkeeper",
+          "href": "https://lpas.com/team/briana-cepeda/"
+        },
+        {
+          "text": "",
+          "href": null
+        },
+        {
+          "text": "Ray Welter Associate, Senior Project Architect",
+          "href": "https://lpas.com/team/ray-welter/"
+        },
+        {
+          "text": "Glenn Ovitt Associate, Project Manager",
+          "href": "https://lpas.com/team/glenn-ovitt/"
+        },
+        {
+          "text": "Yovani Trujillo Job Captain",
+          "href": "https://lpas.com/team/yovani-trujillo/"
+        },
+        {
+          "text": "Craig Speck Job Captain",
+          "href": "https://lpas.com/team/craig-speck/"
+        },
+        {
+          "text": "Heidi Roseler-Kerby Project Administrator",
+          "href": "https://lpas.com/team/heidi-roseler-kerby/"
+        },
+        {
+          "text": "Morgan Tauzer Project Coordinator",
+          "href": "https://lpas.com/team/morgan-tauzer/"
+        },
+        {
+          "text": "",
+          "href": null
+        },
+        {
+          "text": "Mervin Villar Construction Administrator",
+          "href": "https://lpas.com/team/mervin-villar/"
+        },
+        {
+          "text": "Ryan Townsend Associate Principal, Senior Designer",
+          "href": "https://lpas.com/team/ryan-townsend/"
+        },
+        {
+          "text": "Christian Montanez Job Captain",
+          "href": "https://lpas.com/team/christian-montanez/"
+        },
+        {
+          "text": "",
+          "href": null
+        },
+        {
+          "text": "Sophie Metzker Accounting Assistant",
+          "href": "https://lpas.com/team/sophie-metzker/"
+        },
+        {
+          "text": "Nick Shanks Project Architect",
+          "href": "https://lpas.com/team/nick-shanks/"
+        },
+        {
+          "text": "Angelique Dionisio Interior Designer",
+          "href": "https://lpas.com/team/angelique-dionisio/"
+        },
+        {
+          "text": "Shaahin Davami Job Captain",
+          "href": "https://lpas.com/team/shaahin-davami/"
+        },
+        {
+          "text": "Pat Walton Project Coordinator",
+          "href": "https://lpas.com/team/pat-walton/"
+        },
+        {
+          "text": "David Oliveira Project Architect",
+          "href": "https://lpas.com/team/david-oliveira/"
+        },
+        {
+          "text": "",
+          "href": null
+        },
+        {
+          "text": "Krista McCord Office & IT Administrator",
+          "href": "https://lpas.com/team/krista-mccord/"
+        },
+        {
+          "text": "Ky Huynh Designer",
+          "href": "https://lpas.com/team/ky-huynh/"
+        },
+        {
+          "text": "Kyle Lamb Senior Interior Designer",
+          "href": "https://lpas.com/team/kyle-lamb/"
+        },
+        {
+          "text": "Chris Kelly Vice President, Principal",
+          "href": "https://lpas.com/team/chris-kelly/"
+        },
+        {
+          "text": "Matt Dalforno Associate, Director of Marketing",
+          "href": "https://lpas.com/team/matt-dalforno/"
+        },
+        {
+          "text": "Becky McCormick Associate, Senior Project Architect",
+          "href": "https://lpas.com/team/becky-mccormick/"
+        },
+        {
+          "text": "",
+          "href": null
+        },
+        {
+          "text": "Brady Smith President",
+          "href": "https://lpas.com/team/brady-smith/"
+        },
+        {
+          "text": "Lacey Oxford Interior Designer",
+          "href": "https://lpas.com/team/lacey-oxford/"
+        },
+        {
+          "text": "Lori Winsor Business Development Manager",
+          "href": "https://lpas.com/team/lori-winsor/"
+        },
+        {
+          "text": "Laurel Chavez Associate, Contract Manager",
+          "href": "https://lpas.com/team/laurel-chavez/"
+        },
+        {
+          "text": "Kristina Gwinn Vice President, Senior Interior Designer",
+          "href": "https://lpas.com/team/kristina-gwinn/"
+        },
+        {
+          "text": "Kim Moore Associate Principal, Director of Human Resources",
+          "href": "https://lpas.com/team/kim-moore/"
+        },
+        {
+          "text": "",
+          "href": null
+        },
+        {
+          "text": "Bethanie Taylor Project Administrative Assistant",
+          "href": "https://lpas.com/team/bethanie-taylor/"
+        },
+        {
+          "text": "Ken Bauer Principal, Director of Quality Control / Senior Project Manager",
+          "href": "https://lpas.com/team/ken-bauer/"
+        },
+        {
+          "text": "Karina Welch Project Coordinator",
+          "href": "https://lpas.com/team/karina-welch/"
+        },
+        {
+          "text": "",
+          "href": null
+        },
+        {
+          "text": "Manuel Vivar-Nieto Senior Project Designer",
+          "href": "https://lpas.com/team/manuel-vivar-nieto/"
+        },
+        {
+          "text": "Kristopher Maddox Principal, Higher Education",
+          "href": "https://lpas.com/team/kristopher-maddox/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Tom-Hall_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Tom-Hall_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Tom Hall",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Michael-Rhoades_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Michael-Rhoades_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Michael Rhoades",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Melissa-Sabala_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Melissa-Sabala_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Melissa Sabala",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Ron-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ron-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Ron Metzker",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Bryan-Harry_LPAS_SMALL-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Bryan-Harry_LPAS_SMALL-1280x1600-c-default.jpg",
+          "alt": "Bryan Harry",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Briana-Cepeda_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Briana-Cepeda_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Briana Cepeda",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/about/",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/",
+          "alt": "",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Ray-Welter_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ray-Welter_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Ray Welter",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/04/Glenn_Full-Res-copy-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Glenn_Full-Res-copy-1280x1600-c-default.jpg",
+          "alt": "Glenn Ovitt",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Yovani-Trujillo_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Yovani-Trujillo_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Yovani Trujillo",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Craig-Speck_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Craig-Speck_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Craig Speck",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Heidi-Roseler-Kerby_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Heidi-Roseler-Kerby_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Heidi Roseler-Kerby",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Morgan-Tauzer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Morgan-Tauzer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Morgan Tauzer",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/about/",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/",
+          "alt": "",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Mervin-Villar_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Mervin-Villar_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Mervin Villar",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/02/Ryan-Townsend_LPAS.jpg-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ryan-Townsend_LPAS.jpg-1280x1600-c-default.jpg",
+          "alt": "Ryan Townsend",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Christian-Montanez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Christian-Montanez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Christian Montanez",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/about/",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/",
+          "alt": "",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Sophie-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Sophie-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Sophie Metzker",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Nick-Shanks_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Nick-Shanks_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Nick Shanks",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Angelique-Dionisio_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Angelique-Dionisio_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Angelique Dionisio",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Shaahin-Davami_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Shaahin-Davami_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Shaahin Davami",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Pat-Walton_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Pat-Walton_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Pat Walton",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/David-Oliveira_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/David-Oliveira_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "David Oliveira",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/about/",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/",
+          "alt": "",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Krista-McCord_LPAS_FULLSIZE-375x469-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Krista-McCord_LPAS_FULLSIZE-375x469-c-default.jpg",
+          "alt": "Krista McCord",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Ky-Huynh_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ky-Huynh_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Ky Huynh",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Kyle-Lamb_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kyle-Lamb_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Kyle Lamb",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/Chris-Kelly_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Chris-Kelly_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Chris Kelly",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Matt-Dalforno_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Matt-Dalforno_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Matt Dalforno",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/Becky-McCormick_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Becky-McCormick_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Becky McCormick",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/about/",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/",
+          "alt": "",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/Brady-Smith_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Brady-Smith_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Brady Smith",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Lacey-Oxford_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Lacey-Oxford_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Lacey Oxford",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Lori-Winsor_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Lori-Winsor_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Lori Winsor",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Laurel-Chavez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Laurel-Chavez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Laurel Chavez",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Kristina-Gwinn_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kristina-Gwinn_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Kristina Gwinn",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Kim-Moore_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kim-Moore_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Kim Moore",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/about/",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/",
+          "alt": "",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2025/12/Bethanie-Taylor_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Bethanie-Taylor_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Bethanie Taylor",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Ken-Bauer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Ken-Bauer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Ken Bauer",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Karina-Welch_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Karina-Welch_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+          "alt": "Karina Welch",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/about/",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/",
+          "alt": "",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-375x469-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-375x469-c-default.jpg",
+          "alt": "Manuel Vivar-Nieto",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/Kristopher-Maddox_LPAS_FULLSIZE-375x469-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/Kristopher-Maddox_LPAS_FULLSIZE-375x469-c-default.jpg",
+          "alt": "Kristopher Maddox",
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/about-4f10f17b/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

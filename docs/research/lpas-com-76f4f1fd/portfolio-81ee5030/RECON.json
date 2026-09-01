@@ -1,0 +1,297 @@
+{
+  "path": "/portfolio/",
+  "key": "portfolio-81ee5030",
+  "url": "https://lpas.com/portfolio/",
+  "desktop": {
+    "title": "LPAS — Portfolio",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 3,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderPortfolio",
+        "dataAttrs": {
+          "control": "BlockHeaderPortfolio",
+          "grid": "grid-template"
+        },
+        "height": 450,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [
+          "H1: Portfolio"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Our Work\nOverview\nPortfolio"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "collectionProjects",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "CollectionProjects",
+          "nofilter": "true"
+        },
+        "height": 4949,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 7,
+        "headings": [
+          "H2: Prospera at Fiddyment Ranch",
+          "H2: American River College Student Center & Cafeteria"
+        ],
+        "imgCount": 16,
+        "videoCount": 0,
+        "svgCount": 6,
+        "linkCount": 16,
+        "text": "All\nHousing\n27\nInteriors\n13\nHigher Education\n12\nCivic\n6\nCommercial\n14\nThe Frederic\nSacramento, CA\nIron Point\nFolsom, CA\nThe Emery\nEmeryville, CA\nElegance Hamilton Hill\nNovato, CA\nUC Berkeley Wu Performance Hall Renovation\nBerkeley, CA\nUC Davis Ann E. Pitzer Center Classroom & Recital Hall\nDavis, CA\nProspera at Fiddyment Ranch\nRoseville, CA\nTower 222\nSan Pedro, CA\nGio Apartments\nSacramento, CA\nUC Davis Health Folsom Medical Care Clinic\nFolsom, CA\nThe Ohlone College Building 5 Renovation\nFremont, CA\n730 I Street\nSacramento, CA\nAmerican River College Student Center & Cafeteria\nSacramento, CA\nAlwell Pleasant Hill\nPleasant Hill, CA\nReyes Coca-Cola\nFresno, CA\nThe A.J.\nSacramento, CA\n1\n2\n3"
+      },
+      {
+        "i": 2,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/25_UCD-Pitzer-Center-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/25_UCD-Pitzer-Center-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/25_UCD-Pitzer-Center-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/25_UCD-Pi",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/05_FREDERIC_Storefront-992x620-c-default.jpg 992w, https://lpas.co",
+        "alt": "The Frederic",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/LeasingView_REVISEDAUG24-992x620-c-default.jpg 992w, https://l",
+        "alt": "Iron Point",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/11_The-Emery-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/1",
+        "alt": "The Emery",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/02_Elegance-Hamilton-Hill_Novato-992x620-c-def",
+        "alt": "Elegance Hamilton Hill",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/01_UCB_Wu-Performance-Hall-992x620-c-default.jpg 992w, htt",
+        "alt": "UC Berkeley Wu Performance Hall Renovation",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/22_UCD-Pitzer-Center-992x620-c-default.jpg 992w, https://lpas.com/wp-c",
+        "alt": "UC Davis Ann E. Pitzer Center Classroom &#038; Recital Hall",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-992x661-c-default.",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/Lobby-1-copy-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/02/L",
+        "alt": "Tower 222",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/06_Gio-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/06_Gio-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2025/12/06_Gio-1280x800-c-d",
+        "alt": "Gio Apartments",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/18_UCDH_Folsom-MOB_FULLSIZE-992x620-c-default.jpg 992w, ",
+        "alt": "UC Davis Health Folsom Medical Care Clinic",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Renovation-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/08_Ohlone-College-Building-5-Ren",
+        "alt": "The Ohlone College Building 5 Renovation",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/12_CapRadio-730-I-Street-992x620-c-default.jpg 992w, https://l",
+        "alt": "730 I Street",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/02_ARC-Student-Center_Extr-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/02_ARC-Student-Center_Extr-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/02_ARC-Student-Center_Extr-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/08_Alwell_FULLSIZE-992x620-c-default.jpg 992w, https://lpas.com/wp-content",
+        "alt": "Alwell Pleasant Hill",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-992x620-c-default.jpg 992w, https://lpas.com/wp-content/uploads/2026/02/BOARDROOM-",
+        "alt": "Reyes Coca-Cola",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-375x234-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-678x424-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/02_The-AJ_FULLSIZE-992x620-c-default.jpg 992w, https://lpas.com/wp-content",
+        "alt": "The A.J.",
+        "w": 1440,
+        "h": 900,
+        "parent": "collectionProjects__cardWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2026/01/25_UCD-Pitzer-Center.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 422,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 7061,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:04:47.483Z"
+}

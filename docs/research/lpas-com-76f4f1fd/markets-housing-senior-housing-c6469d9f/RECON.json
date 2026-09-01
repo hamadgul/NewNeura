@@ -1,0 +1,341 @@
+{
+  "path": "/markets/housing/senior-housing/",
+  "key": "markets-housing-senior-housing-c6469d9f",
+  "url": "https://lpas.com/markets/housing/senior-housing/",
+  "desktop": {
+    "title": "Senior Housing - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 7,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(98, 86, 83)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Senior Housing"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 6,
+        "linkCount": 5,
+        "text": "Back to Housing\nSupporting independence with care\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nSenior Housing"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 462,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: LPAS designs senior housing that supports dignity, independence, and quality of life. Whether designing independent livi"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Supporting independence with care\nLPAS designs senior housing that supports dignity, independence, and quality of life. Whether designing independent living, assisted living, memory care, or continuing care retirement communities, we understand these projects must balance safety and support with autonomy and quality of life.\n\nWith California's aging population and evolving models of senior care, successful senior housing requires deep understanding of both operational needs of care providers and experiential needs of residents and their families. Our approach centers on creating warm, residential environments that support aging in place, foster social connection, and honor the dignity of every resident."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS Senior Housing Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Market Understanding\n02\nVisioning + Lifestyle Planning\n03\nDesign Development + Integration\n04\nTechnical Coordination + Cost Management\n05\nImplementation + Post-Occupancy Evaluation\n01\nGrounded in resident needs\nDiscovery + Market Understanding\n\nSenior housing begins with understanding who the community will serve and how their needs translate into design. LPAS collaborates with owners, operators, and care providers to identify priorities around wellness, accessibility, and lifestyle. By analyzing site potential, demographic trends, and operational models, we build a foundation that connects design vision to business objectives.\n\n02\nDesigning supportive living\nVisioning + Lifestyle Planning\n\nLPAS helps clients imagine how residents will live, connect, and thrive. Senior housing must accommodate residents "
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 339,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Specialized Senior Housing Expertise"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Experience across care types\nSpecialized Senior Housing Expertise\n\nIndependent Living:\nActive adult communities with social programming and maintenance-free living.\n\nAssisted Living:\nResidential care with ADL support, balancing independence with appropriate assistance.\n\nMemory Care:\nSpecialized dementia and Alzheimer’s care in secure, cognitively supportive environments.\n\nSkilled Nursing:\nHigher-acuity care in environments maintaining residential character and resident dignity.\n\nContinuing Care Retirement Communities (CCRC):\nIntegrated campuses supporting full continuum from independent living through skilled nursing."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 382,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Why Senior Housing Developers Choose LPAS"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Expertise developers trust\nWhy Senior Housing Developers Choose LPAS\n\nResident-Centered Design:\nWe design for how people want to age, creating environments supporting dignity, independence, and quality of life.\n\nSpecialized Expertise:\nDeep understanding of senior housing operations, care models, and unique design considerations for aging populations.\n\nMemory Care Experience:\nProven approaches to dementia and Alzheimer’s care environments supporting residents and families.\n\nFinancial Performance:\nDesigns balancing cost-effectiveness with market appeal to drive occupancy and retention.\n\nUniversal Design Commitment:\nCreating environments supporting residents through changing abilities, allowing aging in place."
+      },
+      {
+        "i": 5,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 556,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: Highlighted projects"
+        ],
+        "imgCount": 3,
+        "videoCount": 0,
+        "svgCount": 2,
+        "linkCount": 4,
+        "text": "Highlighted projects\nAll Senior Housing\nElegance Hamilton Hill\nNovato, CA\nSonrisa Senior Living\nRoseville, CA\nBruceville Point\nElk Grove, CA"
+      },
+      {
+        "i": 6,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/03_SONRISA-1440x810-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/03_SONRISA-375x211-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/03_SONRISA-678x381-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/03_SONRISA-992x558-c-default.",
+        "alt": "",
+        "w": 1440,
+        "h": 810,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4479-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4479-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4479-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4479-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-20-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-20-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-20-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_Elegance-Hamilton-Hill_Novato-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_Elegance-Hamilton-Hill_Novato-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/r",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/04_SONRISA-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_SONRISA-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_SONRISA-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_SONRISA-992x620-c-default.",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/07/33_Bruceville-Point-Exterior_FAVORITE-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/07/33_Bruceville-Point-Exterior_FAVORITE-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/07/33_Bruceville-Point-Exterior_FAVORITE-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/03_SONRISA.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 710,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1175,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 602,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 667,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "h": 997,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:10:38.632Z"
+}

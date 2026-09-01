@@ -1,0 +1,621 @@
+{
+  "path": "/markets/civic/",
+  "title": "LPAS — Civic",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/civic/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/12/16_316-Vernon.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Our focus on\nArchitecture in service\nCivic",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Civic"
+        }
+      ],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/16_316-Vernon-1440x960-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/16_316-Vernon-1440x960-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 960
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Architecture in service\nLPAS designs civic spaces that embody trust, connection, and service. We understand that public buildings represent more than function; they reflect the values of the communities they serve and carry symbolic weight as landmarks of democratic ideals and public service.\n\nWith extensive experience designing civic and public agency buildings across California, we understand the unique challenges these projects face: constricted budgets, complex stakeholder groups, rigorous approval processes, and the need to serve diverse populations with dignity and transparency. Our approach emphasizes collaboration, transparency, and design excellence, ensuring every project delivers long-term value for users, agencies, and the public. From visioning through occupancy, LPAS helps civic clients achieve clarity, efficiency, and enduring impact.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS designs civic spaces that embody trust, connection, and service. We understand that public buildings represent more than function; they reflect the values of the communities they serve and carry symbolic weight as landmarks of democratic ideals and public service."
+        }
+      ],
+      "paragraphs": [
+        "With extensive experience designing civic and public agency buildings across California, we understand the unique challenges these projects face: constricted budgets, complex stakeholder groups, rigorous approval processes, and the need to serve diverse populations with dignity and transparency. Our approach emphasizes collaboration, transparency, and design excellence, ensuring every project delivers long-term value for users, agencies, and the public. From visioning through occupancy, LPAS helps civic clients achieve clarity, efficiency, and enduring impact."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS Civic Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Mission Alignment\n02\nCommunity Engagement\n03\nConcept + Design Development\n04\nTechnical + Cost Integration\n05\nImplementation + Legacy\n01\nShared purpose, clear direction\nDiscovery + Mission Alignment\n\nLPAS begins by listening to understand the mission and priorities of each agency and community. Civic buildings serve entire communities, and successful projects require meaningful engagement with diverse stakeholders. We analyze operational requirements, user needs, and site context to define a clear framework for decision-making. This early clarity helps establish a shared understanding of purpose and performance before design begins.\n\n02\nOpen dialogue for better design\nCommunity Engagement\n\nPublic projects thrive when the community has a voice in the process. Civic buildings must be physically and psychologically accessible to all community members. LPAS leads engagement efforts that invite meaningful participation from residents, users, and partner agencies. We communicate ideas clearly and visually, making complex information accessible to everyone involved.\n\n03\nDesigning for public purpose\nConcept + Design Development\n\nLPAS translates mission and engagement feedback into a clear design direction. Public projects face intense budget scrutiny, and every dollar must be justified. We focus on usability, sustainability, and identity, ensuring each space supports the people who work and gather there. Through thoughtful planning and form, we create environments that feel open, accessible, and civic in character while bringing creative problem-solving to achieve the dignity and presence civic buildings deserve.\n\n04\nResponsible civic investment\nTechnical + Cost Integration\n\nCivic design demands accountability. Civic buildings often house diverse functions requiring smart design that supports operational efficiency. LPAS integrates cost management and technical coordination throughout the process to ensure every decision supports value, durability, and maintainability. Our goal is to help clients achieve design excellence within public budgets and timelines.\n\n05\nStrengthening Communities Long-Term\nImplementation + Legacy\n\nFrom documentation through construction, LPAS maintains consistent communication and oversight. We stay involved to ensure that each project fulfills its mission and continues to perform for years after completion. Beyond function, civic buildings carry symbolic weight as investments serving multiple generations. Every civic building we deliver strengthens its community and stands as a testament to effective collaboration.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS Civic Design Process",
+        "Phases",
+        "01\n                        Discovery + Mission Alignment",
+        "Discovery + Mission Alignment",
+        "02\n                        Community Engagement",
+        "Community Engagement",
+        "03\n                        Concept + Design Development",
+        "Concept + Design Development",
+        "04\n                        Technical + Cost Integration",
+        "Technical + Cost Integration",
+        "05\n                        Implementation + Legacy",
+        "Implementation + Legacy",
+        "Discovery + Mission Alignment",
+        "LPAS begins by listening to understand the mission and priorities of each agency and community. Civic buildings serve entire communities, and successful projects require meaningful engagement with diverse stakeholders. We analyze operational requirements, user needs, and site context to define a clear framework for decision-making. This early clarity helps establish a shared understanding of purpose and performance before design begins.",
+        "Community Engagement",
+        "Public projects thrive when the community has a voice in the process. Civic buildings must be physically and psychologically accessible to all community members. LPAS leads engagement efforts that invite meaningful participation from residents, users, and partner agencies. We communicate ideas clearly and visually, making complex information accessible to everyone involved.",
+        "Concept + Design Development",
+        "LPAS translates mission and engagement feedback into a clear design direction. Public projects face intense budget scrutiny, and every dollar must be justified. We focus on usability, sustainability, and identity, ensuring each space supports the people who work and gather there. Through thoughtful planning and form, we create environments that feel open, accessible, and civic in character while bringing creative problem-solving to achieve the dignity and presence civic buildings deserve.",
+        "Technical + Cost Integration",
+        "Civic design demands accountability. Civic buildings often house diverse functions requiring smart design that supports operational efficiency. LPAS integrates cost management and technical coordination throughout the process to ensure every decision supports value, durability, and maintainability. Our goal is to help clients achieve design excellence within public budgets and timelines.",
+        "Implementation + Legacy",
+        "From documentation through construction, LPAS maintains consistent communication and oversight. We stay involved to ensure that each project fulfills its mission and continues to perform for years after completion. Beyond function, civic buildings carry symbolic weight as investments serving multiple generations. Every civic building we deliver strengthens its community and stands as a testament to effective collaboration."
+      ],
+      "links": [
+        {
+          "text": "01 Shared purpose, clear direction Discovery + Mission Alignment LPAS begins by listening to understand the mission and ",
+          "href": "https://lpas.com/processes/discovery-mission-alignment/?ids=1071%2C1072%2C1073%2C1075%2C1076"
+        },
+        {
+          "text": "02 Open dialogue for better design Community Engagement Public projects thrive when the community has a voice in the pro",
+          "href": "https://lpas.com/processes/community-engagement/?ids=1071%2C1072%2C1073%2C1075%2C1076"
+        },
+        {
+          "text": "03 Designing for public purpose Concept + Design Development LPAS translates mission and engagement feedback into a clea",
+          "href": "https://lpas.com/processes/concept-design-development/?ids=1071%2C1072%2C1073%2C1075%2C1076"
+        },
+        {
+          "text": "04 Responsible civic investment Technical + Cost Integration Civic design demands accountability. Civic buildings often ",
+          "href": "https://lpas.com/processes/technical-cost-integration/?ids=1071%2C1072%2C1073%2C1075%2C1076"
+        },
+        {
+          "text": "05 Strengthening Communities Long-Term Implementation + Legacy From documentation through construction, LPAS maintains c",
+          "href": "https://lpas.com/processes/implementation-legacy/?ids=1071%2C1072%2C1073%2C1075%2C1076"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4516-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4516-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4474-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4456-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4477-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4477-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/Frame-4468-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Purpose-Built Civic Design\nSpecialized Civic Expertise\n\nPublic Safety Facilities:\nPolice and fire stations balancing security needs with community connection and transparency.\n\nCourthouses & Justice Centers:\nDignified environments serving judicial functions with appropriate security and public accessibility.\n\nCity Halls & Municipal Buildings:\nMulti-department civic centers with public meeting spaces and efficient staff work areas.\n\nCommunity Centers:\nFlexible gathering spaces serving diverse programs and strengthening community connections.\n\nLibraries & Cultural Buildings:\nPublic buildings supporting education, culture, and community gathering.\n\nPublic Agency & Government Offices:\nState and federal facilities serving public needs with appropriate security and functionality.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Specialized Civic Expertise"
+        }
+      ],
+      "paragraphs": [
+        "Public Safety Facilities:\nPolice and fire stations balancing security needs with community connection and transparency.",
+        "Courthouses & Justice Centers:\nDignified environments serving judicial functions with appropriate security and public accessibility.",
+        "City Halls & Municipal Buildings:\nMulti-department civic centers with public meeting spaces and efficient staff work areas.",
+        "Community Centers:\nFlexible gathering spaces serving diverse programs and strengthening community connections.",
+        "Libraries & Cultural Buildings:\nPublic buildings supporting education, culture, and community gathering.",
+        "Public Agency & Government Offices:\nState and federal facilities serving public needs with appropriate security and functionality."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Trusted Civic Design Partner\nWhy Municipalities & Agencies Choose LPAS\n\nPublic Sector Experience:\nDeep understanding of public funding constraints, approval processes, and stakeholder complexity.\n\nCommunity Engagement Expertise:\nProven approaches to meaningful public input that shapes better outcomes.\n\nFiscal Responsibility:\nMaximizing civic presence and functionality within public budgets through creative value engineering.\n\nDSA & Regulatory Navigation:\nExpert navigation of Division of State Architect and public agency requirements.\n\nAccessible Design Commitment:\nUniversal design that genuinely welcomes all community members.\n\nLong-Term Thinking:\nDesigning for durability, adaptability, and multiple generations of service.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Municipalities & Agencies Choose LPAS"
+        }
+      ],
+      "paragraphs": [
+        "Public Sector Experience:\nDeep understanding of public funding constraints, approval processes, and stakeholder complexity.",
+        "Community Engagement Expertise:\nProven approaches to meaningful public input that shapes better outcomes.",
+        "Fiscal Responsibility:\nMaximizing civic presence and functionality within public budgets through creative value engineering.",
+        "DSA & Regulatory Navigation:\nExpert navigation of Division of State Architect and public agency requirements.",
+        "Accessible Design Commitment:\nUniversal design that genuinely welcomes all community members.",
+        "Long-Term Thinking:\nDesigning for durability, adaptability, and multiple generations of service."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted projects\nAll Civic\nSolano Transportation Authority\nSuisun City, CA\nTehama County Courthouse\nRed Bluff, CA\nCalifornia Highway Patrol Truckee Field Office\nTruckee, CA\nCalifornia Highway Patrol Headquarters\nSacramento, CA\n316 Vernon Street Office\nRoseville, CA\nView all Civic\nPortfolio",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted projects"
+        }
+      ],
+      "paragraphs": [
+        "View all Civic"
+      ],
+      "links": [
+        {
+          "text": "All Civic",
+          "href": "https://lpas.com/portfolio/?market=civic"
+        },
+        {
+          "text": "Solano Transportation Authority Suisun City, CA",
+          "href": "https://lpas.com/portfolio/solano-transportation-authority/"
+        },
+        {
+          "text": "Tehama County Courthouse Red Bluff, CA",
+          "href": "https://lpas.com/portfolio/tehama-county-courthouse/"
+        },
+        {
+          "text": "California Highway Patrol Truckee Field Office Truckee, CA",
+          "href": "https://lpas.com/portfolio/california-highway-patrol-truckee-field-office/"
+        },
+        {
+          "text": "California Highway Patrol Headquarters Sacramento, CA",
+          "href": "https://lpas.com/portfolio/california-highway-patrol-headquarters/"
+        },
+        {
+          "text": "316 Vernon Street Office Roseville, CA",
+          "href": "https://lpas.com/portfolio/316-vernon-street/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/?market=civic"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/07_STA-HQ-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/07_STA-HQ-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/20_Tehama-County-Courthouse-edited-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/20_Tehama-County-Courthouse-edited-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/02_CHP-Truckee-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/02_CHP-Truckee-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/10_CHP-Headquarters-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/10_CHP-Headquarters-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/19_316-Vernon-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/19_316-Vernon-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-civic-382e5b77/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

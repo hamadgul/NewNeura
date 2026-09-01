@@ -1,0 +1,245 @@
+{
+  "path": "/markets/housing/",
+  "key": "markets-housing-588433c5",
+  "url": "https://lpas.com/markets/housing/",
+  "desktop": {
+    "title": "LPAS — Housing",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 4,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(98, 86, 83)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Housing"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 5,
+        "linkCount": 4,
+        "text": "Our focus on\nResidential Housing\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nHousing"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 509,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: Every housing market demands a distinct strategy shaped by its community, funding structure, regulatory environment, and"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Residential Housing\nEvery housing market demands a distinct strategy shaped by its community, funding structure, regulatory environment, and long-term vision.\n\nAt LPAS, we understand that affordable, student, market rate, and senior housing each require a highly targeted approach. From financing complexities and entitlement pathways to resident experience and operational performance, no two sectors are the same. That is why we have developed dedicated focus areas for each housing type, allowing us to tailor our process, design strategies, and partnerships to the specific needs of every market. Our experience across multiple housing sectors strengthens our expertise within each one. Insights gained from student housing inform efficiencies in market rate developments. Lessons from affordable housing deepen our understanding of funding and community engagement. Senior housing reinforces our"
+      },
+      {
+        "i": 2,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 2101,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 4,
+        "headings": [
+          "H2: Highlighted projects"
+        ],
+        "imgCount": 7,
+        "videoCount": 0,
+        "svgCount": 6,
+        "linkCount": 9,
+        "text": "Highlighted projects\nAll Housing\nMadison by Lennar Condominiums\nSan Francisco, CA\nThe Frederic\nSacramento, CA\nAlwell Pleasant Hill\nPleasant Hill, CA\nThe Emery\nEmeryville, CA\nThe A.J.\nSacramento, CA\n980 Central\nWest Sacramento, CA\nProspera at Fiddyment Ranch\nRoseville, CA\nView all Housing\nPortfolio"
+      },
+      {
+        "i": 3,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/08_The-Emery-1440x955-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_The-Emery-375x249-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_The-Emery-678x450-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_The-Emery-992x658-c-de",
+        "alt": "",
+        "w": 1440,
+        "h": 955,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/09_Block-52_Madison-by-Lennar-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/09_Block-52_Madison-by-Lennar-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/09_Block-52_Madison-by-Lennar-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/05_FREDERIC_Storefront-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/05_FREDERIC_Storefront-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/05_FREDERIC_Storefront-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/05_FR",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/08_Alwell_FULLSIZE-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_Alwell_FULLSIZE-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_Alwell_FULLSIZE-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_Alwell_FUL",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-1440x993-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-375x259-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-678x468-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_The-Emery-992x684-c-de",
+        "alt": "",
+        "w": 1340,
+        "h": 924,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/02_The-AJ_FULLSIZE-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/02_The-AJ_FULLSIZE-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/02_The-AJ_FULLSIZE-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/02_The-AJ_FUL",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_980-Central-992x62",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/DJI_0490_1-992x620-c-default.",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/08_The-Emery.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 914,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 2435,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:06:43.754Z"
+}

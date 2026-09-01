@@ -1,0 +1,629 @@
+{
+  "path": "/markets/housing/student-housing/",
+  "title": "Student Housing - LPAS Architecture",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/housing/student-housing/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2026/03/05_CSUS-Faculty-Housing.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Back to Housing\nStudent-centered housing design\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nStudent Housing",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Student Housing"
+        }
+      ],
+      "paragraphs": [
+        "Affordable Housing",
+        "Affordable Housing",
+        "Student Housing",
+        "Student Housing",
+        "Market Rate Housing",
+        "Market Rate Housing",
+        "Senior Housing",
+        "Senior Housing"
+      ],
+      "links": [
+        {
+          "text": "Back to Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Affordable Housing",
+          "href": "https://lpas.com/markets/housing/affordable-housing/"
+        },
+        {
+          "text": "Student Housing",
+          "href": "https://lpas.com/markets/housing/student-housing/"
+        },
+        {
+          "text": "Market Rate Housing",
+          "href": "https://lpas.com/markets/housing/market-rate-housing/"
+        },
+        {
+          "text": "Senior Housing",
+          "href": "https://lpas.com/markets/housing/senior-housing/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/03/05_CSUS-Faculty-Housing-1440x699-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/05_CSUS-Faculty-Housing-1440x699-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 699
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Designing for student life\nFor many students, a residence hall is their first home away from home. LPAS designs student housing that goes beyond a place to sleep, creating communities where students connect, thrive, and feel like they belong.\n\nWe work with universities, colleges, and public-private partnerships across California to deliver housing that fits the realities of campus life: constrained budgets, diverse student populations, tight academic calendars, and evolving expectations for community and inclusivity. We listen closely to students and institutions alike, making sure every design decision serves the people who will actually live there. The result is housing that supports student success from move-in day through graduation.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "For many students, a residence hall is their first home away from home. LPAS designs student housing that goes beyond a place to sleep, creating communities where students connect, thrive, and feel like they belong."
+        }
+      ],
+      "paragraphs": [
+        "We work with universities, colleges, and public-private partnerships across California to deliver housing that fits the realities of campus life: constrained budgets, diverse student populations, tight academic calendars, and evolving expectations for community and inclusivity. We listen closely to students and institutions alike, making sure every design decision serves the people who will actually live there. The result is housing that supports student success from move-in day through graduation."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS student housing design process\nOur Process\n\nPhases\n\n01\nDiscovery + Partnership Alignment\n02\nVisioning + Experience Planning\n03\nDesign Development + Integration\n04\nCommunity Engagement + Approvals\n05\nDelivery + Post-Occupancy Evaluation\n01\nInsight-Led Housing Design\nDiscovery + Partnership Alignment\n\nGood student housing starts with good questions. Before any design work begins, we dig into how students actually use their spaces, what the institution needs to achieve, and what success looks like for everyone involved.\n\n02\nInclusive by Design\nVisioning + Experience Planning\n\nToday's student populations are wonderfully diverse, and housing needs to reflect that. We lead collaborative sessions that explore how design can foster connection, comfort, and belonging, turning stakeholder input into a clear, actionable vision.\n\n03\nFrom vision to reality\nDesign Development + Integration\n\nModern residence halls are living-learning communities, not just dormitories. We develop designs that support academic success, social connection, and personal growth, while keeping a close eye on quality, efficiency, and long-term maintainability.\n\n04\nClear paths to approval\nCommunity Engagement + Approvals\n\nStudent housing projects involve a lot of stakeholders, from campus review boards to neighboring communities. We manage that engagement proactively, making sure design solutions reflect feedback without losing sight of quality or vision.\n\n05\nPerformance beyond move-In\nDelivery + Post-Occupancy Evaluation\n\nStudent housing runs on a fixed calendar. Students need to move in on time, and there is no flexibility on that deadline. Our disciplined delivery process keeps construction on track and design intent intact all the way through.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS student housing design process",
+        "Phases",
+        "01\n                        Discovery + Partnership Alignment",
+        "Discovery + Partnership Alignment",
+        "02\n                        Visioning + Experience Planning",
+        "Visioning + Experience Planning",
+        "03\n                        Design Development + Integration",
+        "Design Development + Integration",
+        "04\n                        Community Engagement + Approvals",
+        "Community Engagement + Approvals",
+        "05\n                        Delivery + Post-Occupancy Evaluation",
+        "Delivery + Post-Occupancy Evaluation",
+        "Discovery + Partnership Alignment",
+        "Good student housing starts with good questions. Before any design work begins, we dig into how students actually use their spaces, what the institution needs to achieve, and what success looks like for everyone involved.",
+        "Visioning + Experience Planning",
+        "Today's student populations are wonderfully diverse, and housing needs to reflect that. We lead collaborative sessions that explore how design can foster connection, comfort, and belonging, turning stakeholder input into a clear, actionable vision.",
+        "Design Development + Integration",
+        "Modern residence halls are living-learning communities, not just dormitories. We develop designs that support academic success, social connection, and personal growth, while keeping a close eye on quality, efficiency, and long-term maintainability.",
+        "Community Engagement + Approvals",
+        "Student housing projects involve a lot of stakeholders, from campus review boards to neighboring communities. We manage that engagement proactively, making sure design solutions reflect feedback without losing sight of quality or vision.",
+        "Delivery + Post-Occupancy Evaluation",
+        "Student housing runs on a fixed calendar. Students need to move in on time, and there is no flexibility on that deadline. Our disciplined delivery process keeps construction on track and design intent intact all the way through."
+      ],
+      "links": [
+        {
+          "text": "01 Insight-Led Housing Design Discovery + Partnership Alignment Good student housing starts with good questions. Before ",
+          "href": "https://lpas.com/processes/discovery-partnership-alignment/?ids=947%2C949%2C951%2C3200%2C969"
+        },
+        {
+          "text": "02 Inclusive by Design Visioning + Experience Planning Today's student populations are wonderfully diverse, and housing ",
+          "href": "https://lpas.com/processes/visioning-experience-planning/?ids=947%2C949%2C951%2C3200%2C969"
+        },
+        {
+          "text": "03 From vision to reality Design Development + Integration Modern residence halls are living-learning communities, not j",
+          "href": "https://lpas.com/processes/design-development-integration/?ids=947%2C949%2C951%2C3200%2C969"
+        },
+        {
+          "text": "04 Clear paths to approval Community Engagement + Approvals Student housing projects involve a lot of stakeholders, from",
+          "href": "https://lpas.com/processes/community-engagement-approvals/?ids=947%2C949%2C951%2C3200%2C969"
+        },
+        {
+          "text": "05 Performance beyond move-In Delivery + Post-Occupancy Evaluation Student housing runs on a fixed calendar. Students ne",
+          "href": "https://lpas.com/processes/delivery-post-occupancy-evaluation/?ids=947%2C949%2C951%2C3200%2C969"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/Frame-4470-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4518-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/Frame-4518-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/Frame-4456-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/Frame-4474-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/Frame-4467-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Tailored Campus Living\nSpecialized Student Housing Expertise\n\nFirst-Year Experience Housing\n\nLiving away from home for the first time is a big transition. We design residence halls that ease that shift with strong community spaces, clear wayfinding, and environments that help new students find their footing.\n\nUpper-Division and Graduate Housing\n\nOlder students need more independence. We design apartment-style units with the privacy, amenities, and flexibility that upper-division and graduate students expect.\n\nLiving-Learning Communities\n\nWhen academic programming and residential life share the same space, something special happens. We design integrated environments where themed communities and shared academic spaces reinforce each other.\n\nAccessible and Inclusive Housing\n\nWe go beyond code minimums to create housing that works for everyone, with universal design principles, enhanced accessibility, and gender-inclusive facilities built in from the start.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Specialized Student Housing Expertise"
+        }
+      ],
+      "paragraphs": [
+        "First-Year Experience Housing",
+        "Living away from home for the first time is a big transition. We design residence halls that ease that shift with strong community spaces, clear wayfinding, and environments that help new students find their footing.",
+        "Upper-Division and Graduate Housing",
+        "Older students need more independence. We design apartment-style units with the privacy, amenities, and flexibility that upper-division and graduate students expect.",
+        "Living-Learning Communities",
+        "When academic programming and residential life share the same space, something special happens. We design integrated environments where themed communities and shared academic spaces reinforce each other.",
+        "Accessible and Inclusive Housing",
+        "We go beyond code minimums to create housing that works for everyone, with universal design principles, enhanced accessibility, and gender-inclusive facilities built in from the start."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Experience Universities Trust\nWhy Universities Choose LPAS for Student Housing\n\nStudents Come First\n\nWe listen to students before we start designing. That means housing reflects how they actually live, not just how administrators imagine they do.\n\nInclusive by Design\n\nFrom gender-inclusive facilities to universal accessibility and affinity-focused planning, we create environments where every student genuinely feels they belong.\n\nWe Know the Budget Realities\n\nUniversity capital budgets are tight and scrutinized. We bring deep experience maximizing value within constraints, without cutting corners on the things that matter most.\n\nRegulatory Experience\n\nWe know DSA, university system requirements, and the approval processes that come with public institution projects. We navigate them confidently so your project stays on schedule.\n\nHousing That Supports Success\n\nWe design living-learning communities that do more than provide shelter. They support retention, academic performance, and the kind of campus experience students remember for life.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Universities Choose LPAS for Student Housing"
+        }
+      ],
+      "paragraphs": [
+        "Students Come First",
+        "We listen to students before we start designing. That means housing reflects how they actually live, not just how administrators imagine they do.",
+        "Inclusive by Design",
+        "From gender-inclusive facilities to universal accessibility and affinity-focused planning, we create environments where every student genuinely feels they belong.",
+        "We Know the Budget Realities",
+        "University capital budgets are tight and scrutinized. We bring deep experience maximizing value within constraints, without cutting corners on the things that matter most.",
+        "Regulatory Experience",
+        "We know DSA, university system requirements, and the approval processes that come with public institution projects. We navigate them confidently so your project stays on schedule.",
+        "Housing That Supports Success",
+        "We design living-learning communities that do more than provide shelter. They support retention, academic performance, and the kind of campus experience students remember for life."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted Projects\nAll Student Housing\nCSU Stanislaus Residences Village 4\nTurlock, CA\nWest Valley-Mission Community College District Housing Initiative\nSanta Clara, CA\nSacramento State Faculty & Staff Housing\nSacramento, CA",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted Projects"
+        }
+      ],
+      "paragraphs": [],
+      "links": [
+        {
+          "text": "All Student Housing",
+          "href": "https://lpas.com/portfolio/?market=student-housing"
+        },
+        {
+          "text": "CSU Stanislaus Residences Village 4 Turlock, CA",
+          "href": "https://lpas.com/portfolio/csu-stanislaus-residences-village-4/"
+        },
+        {
+          "text": "West Valley-Mission Community College District Housing Initiative Santa Clara, CA",
+          "href": "https://lpas.com/portfolio/west-valley-mission-community-college-district-housing-initiative/"
+        },
+        {
+          "text": "Sacramento State Faculty & Staff Housing Sacramento, CA",
+          "href": "https://lpas.com/portfolio/sacramento-state-faculty-staff-housing/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/03/CSU-Stanislaus-ASH-Residence_05-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/CSU-Stanislaus-ASH-Residence_05-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/03/WVM-Student-Housing_01-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/WVM-Student-Housing_01-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/03/04_CSUS-Faculty-Housing-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/04_CSUS-Faculty-Housing-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-student-housing-72e66e7d/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

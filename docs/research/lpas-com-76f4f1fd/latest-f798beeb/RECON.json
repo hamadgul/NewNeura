@@ -1,0 +1,314 @@
+{
+  "path": "/latest/",
+  "key": "latest-f798beeb",
+  "url": "https://lpas.com/latest/",
+  "desktop": {
+    "title": "Latest Updates - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 3,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderPortfolio",
+        "dataAttrs": {
+          "control": "BlockHeaderPortfolio",
+          "grid": "grid-template"
+        },
+        "height": 450,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [
+          "H1: Latest Updates"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Stay in the know\nInspiration and knowledge\nLatest\nUpdates"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "collectionPost",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "CollectionPost",
+          "nofilter": "true"
+        },
+        "height": 2832,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 4,
+        "headings": [
+          "H2: Stay up to date with everything that happens at LPAS."
+        ],
+        "imgCount": 18,
+        "videoCount": 0,
+        "svgCount": 38,
+        "linkCount": 18,
+        "text": "Journal\nStay up to date with everything that happens at LPAS.\nAll\nInstagram\n18\nMay 21, 2026\nInstagram: 21 May 2026\nMay 12, 2026\nInstagram: 12 May 2026\nMarch 26, 2026\nInstagram: 26 Mar 2026\nMarch 17, 2026\nInstagram: 17 Mar 2026\nMarch 13, 2026\nInstagram: 13 Mar 2026\nMarch 6, 2026\nInstagram: 06 Mar 2026\nFebruary 24, 2026\nInstagram: 24 Feb 2026\nFebruary 6, 2026\nInstagram: 06 Feb 2026\nDecember 16, 2025\nInstagram: 16 Dec 2025\nOctober 30, 2025\nInstagram: 30 Oct 2025\nSeptember 23, 2025\nInstagram: 23 Sep 2025\nAugust 27, 2025\nInstagram: 27 Aug 2025\nJuly 28, 2025\nInstagram: 28 Jul 2025\nJuly 11, 2025\nInstagram: 11 Jul 2025\nJune 25, 2025\nInstagram: 25 Jun 2025\nJanuary 6, 2025\nInstagram: 06 Jan 2025\nJanuary 6, 2025\nInstagram: 06 Jan 2025\nJanuary 6, 2025\nInstagram: 06 Jan 2025\n1\n2"
+      },
+      {
+        "i": 2,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/11/lpas-latest-1440x366-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/11/lpas-latest-375x95-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/11/lpas-latest-678x172-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/11/lpas-latest-992x252-c-defaul",
+        "alt": "",
+        "w": 1440,
+        "h": 366,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/05/705860006_18427634425120770_8881473772530157572_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/05/705860006_18427634425120770_8881473772530157572_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/05/705860006_18427634425120770_8881473772530157572_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/05/705860006_184276",
+        "alt": "Instagram: 21 May 2026",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/05/690281835_18426242710120770_3696790314565088558_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/05/690281835_18426242710120770_3696790314565088558_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/05/690281835_18426242710120770_3696790314565088558_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/05/690281835_184262",
+        "alt": "Instagram: 12 May 2026",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/03/656239942_18419359891120770_8400189846813213265_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/03/656239942_18419359891120770_8400189846813213265_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/03/656239942_18419359891120770_8400189846813213265_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/03/656239942_184193",
+        "alt": "Instagram: 26 Mar 2026",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/03/653667598_18417016015120770_3431999040994783478_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/03/653667598_18417016015120770_3431999040994783478_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/03/653667598_18417016015120770_3431999040994783478_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/03/653667598_184170",
+        "alt": "Instagram: 17 Mar 2026",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/03/650368596_18416242555120770_3751658863105406351_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/03/650368596_18416242555120770_3751658863105406351_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/03/650368596_18416242555120770_3751658863105406351_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/03/650368596_184162",
+        "alt": "Instagram: 13 Mar 2026",
+        "w": 1440,
+        "h": 1800,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/03/645917596_18415092919120770_3490576865802946849_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/03/645917596_18415092919120770_3490576865802946849_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/03/645917596_18415092919120770_3490576865802946849_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/03/645917596_184150",
+        "alt": "Instagram: 06 Mar 2026",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/639743620_18413798356120770_3080851034257127091_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/639743620_18413798356120770_3080851034257127091_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/639743620_18413798356120770_3080851034257127091_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/639743620_184137",
+        "alt": "Instagram: 24 Feb 2026",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/629678875_18410494183120770_3806609778747641919_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/629678875_18410494183120770_3806609778747641919_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/629678875_18410494183120770_3806609778747641919_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/629678875_184104",
+        "alt": "Instagram: 06 Feb 2026",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/601371553_18402260404120770_7706348919303463038_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/601371553_18402260404120770_7706348919303463038_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/601371553_18402260404120770_7706348919303463038_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/601371553_184022",
+        "alt": "Instagram: 16 Dec 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/571152120_18395933872120770_6573167260490544019_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/571152120_18395933872120770_6573167260490544019_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/571152120_18395933872120770_6573167260490544019_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/571152120_183959",
+        "alt": "Instagram: 30 Oct 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/552930284_18389008516120770_8254037727060878943_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/552930284_18389008516120770_8254037727060878943_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/552930284_18389008516120770_8254037727060878943_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/552930284_183890",
+        "alt": "Instagram: 23 Sep 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/539456341_18385365034120770_5891901945861936066_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/539456341_18385365034120770_5891901945861936066_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/539456341_18385365034120770_5891901945861936066_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/539456341_183853",
+        "alt": "Instagram: 27 Aug 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/525439696_18381762754120770_7192444709184175844_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/525439696_18381762754120770_7192444709184175844_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/525439696_18381762754120770_7192444709184175844_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/525439696_183817",
+        "alt": "Instagram: 28 Jul 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/518812654_18379608667120770_2189618379795762948_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/518812654_18379608667120770_2189618379795762948_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/518812654_18379608667120770_2189618379795762948_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/518812654_183796",
+        "alt": "Instagram: 11 Jul 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/513540630_18377666170120770_1710219849275158112_n-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/513540630_18377666170120770_1710219849275158112_n-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/513540630_18377666170120770_1710219849275158112_n-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/513540630_183776",
+        "alt": "Instagram: 25 Jun 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/472430631_9541937102483643_5906846837346276025_n-1-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/472430631_9541937102483643_5906846837346276025_n-1-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/472430631_9541937102483643_5906846837346276025_n-1-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/472430631_9541",
+        "alt": "Instagram: 06 Jan 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/472369032_1129992341841948_1222548079553134389_n-1-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/472369032_1129992341841948_1222548079553134389_n-1-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/472369032_1129992341841948_1222548079553134389_n-1-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/472369032_1129",
+        "alt": "Instagram: 06 Jan 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/472463193_607209958518487_2971062558773180837_n-1-1280x0-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/472463193_607209958518487_2971062558773180837_n-1-375x0-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/472463193_607209958518487_2971062558773180837_n-1-678x0-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/472463193_607209",
+        "alt": "Instagram: 06 Jan 2025",
+        "w": 1440,
+        "h": 1440,
+        "parent": "postCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/11/lpas-latest.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 422,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 3086,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:03:48.638Z"
+}

@@ -1,0 +1,673 @@
+{
+  "path": "/about/",
+  "key": "about-4f10f17b",
+  "url": "https://lpas.com/about/",
+  "desktop": {
+    "title": "About - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 6,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderGeneral",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockHeaderGeneral"
+        },
+        "height": 720,
+        "width": 1440,
+        "bg": "rgb(236, 236, 236)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: About"
+        ],
+        "imgCount": 2,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Creativity, Community, Connection\nWe believe the best designs emerge when diverse voices come together to imagine and build with purpose.\nAbout"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 232,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: LPAS Architecture + Design is an award-winning, multidisciplinary design firm providing architecture, interior design, a"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "About us\nLPAS Architecture + Design is an award-winning, multidisciplinary design firm providing architecture, interior design, and planning services across a diverse range of project types."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "blockMediaDoubleQuote",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockMediaDoubleQuote"
+        },
+        "height": 645,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [],
+        "imgCount": 1,
+        "videoCount": 1,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 3,
+        "tag": "div",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 108,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "With offices in Sacramento and Oakland, LPAS works collaboratively with clients on higher education, civic, mixed-use, housing, commercial, and adaptive-reuse projects that respond to context, community, and purpose. Our philosophy reflects a collaborative process that unites design disciplines and client goals to produce thoughtful, lasting built environments. Our work emphasizes environmental responsibility, sense of place, and design excellence that supports both performance and community value."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": "CollectionTeam",
+        "classes": "collectionTeam",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "CollectionTeam",
+          "nofilter": "true"
+        },
+        "height": 4309,
+        "width": 1440,
+        "bg": "rgb(248, 248, 248)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: People shape the spaces we design, and how we think.",
+          "H3: Tom Hall",
+          "H3: Michael Rhoades",
+          "H3: Melissa Sabala",
+          "H3: Ron Metzker",
+          "H3: Bryan Harry"
+        ],
+        "imgCount": 45,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 45,
+        "text": "Our team\nPeople shape the spaces we design, and how we think.\nAll\nLeadership\nSacramento\nOakland\nTom Hall\nAssociate, Project Architect\nMichael Rhoades\nAssociate, Project Manager\nMelissa Sabala\nPayroll & Project Accountant\nRon Metzker\nVice President, Principal\nBryan Harry\nAssociate Principal, Senior Project Designer\nBriana Cepeda\nBookkeeper\nRay Welter\nAssociate, Senior Project Architect\nGlenn Ovitt\nAssociate, Project Manager\nYovani Trujillo\nJob Captain\nCraig Speck\nJob Captain\nHeidi Roseler-Kerby\nProject Administrator\nMorgan Tauzer\nProject Coordinator\nMervin Villar\nConstruction Administrator\nRyan Townsend\nAssociate Principal, Senior Designer\nChristian Montanez\nJob Captain\nSophie Metzker\nAccounting Assistant\nNick Shanks\nProject Architect\nAngelique Dionisio\nInterior Designer\nShaahin Davami\nJob Captain\nPat Walton\nProject Coordinator\nDavid Oliveira\nProject Architect\nKrista McCord\nOffice & IT Ad"
+      },
+      {
+        "i": 5,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_37-1440x900-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_37-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_37-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS",
+        "alt": "",
+        "w": 193,
+        "h": 120,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/02_LPAS-723-S-Street-Headquarters-1440x2160-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_LPAS-723-S-Street-Headquarters-375x562-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/02_LPAS-723-S-Street-Headquarters-678x1017-c-default.jpg 678w,\n            https://lpas.com/wp-content/upload",
+        "alt": "",
+        "w": 1440,
+        "h": 2160,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_41-1600x1068-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_41-400x267-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS_web-res_41-800x534-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/HW23_LPAS",
+        "alt": "",
+        "w": 530,
+        "h": 353,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Tom-Hall_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Tom-Hall_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Tom-Hall_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Tom-Hall_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https://lpas.c",
+        "alt": "Tom Hall",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Michael-Rhoades_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Michael-Rhoades_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Michael-Rhoades_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Michael-Rhoades_LPAS_FULLSIZE-992x1240-c-default.jpg",
+        "alt": "Michael Rhoades",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Melissa-Sabala_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Melissa-Sabala_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Melissa-Sabala_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Melissa-Sabala_LPAS_FULLSIZE-992x1240-c-default.jpg 99",
+        "alt": "Melissa Sabala",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Ron-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Ron-Metzker_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Ron-Metzker_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Ron-Metzker_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https",
+        "alt": "Ron Metzker",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Bryan-Harry_LPAS_SMALL-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Bryan-Harry_LPAS_SMALL-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Bryan-Harry_LPAS_SMALL-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Bryan-Harry_LPAS_SMALL-992x1240-c-default.jpg 992w, https://lpas.c",
+        "alt": "Bryan Harry",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Briana-Cepeda_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Briana-Cepeda_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Briana-Cepeda_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Briana-Cepeda_LPAS_FULLSIZE-992x1240-c-default.jpg 992w,",
+        "alt": "Briana Cepeda",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/about/",
+        "srcset": "",
+        "alt": "",
+        "w": 0,
+        "h": 0,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Ray-Welter_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Ray-Welter_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Ray-Welter_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Ray-Welter_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https://",
+        "alt": "Ray Welter",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/04/Glenn_Full-Res-copy-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/04/Glenn_Full-Res-copy-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/04/Glenn_Full-Res-copy-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/04/Glenn_Full-Res-copy-992x1240-c-default.jpg 992w, https://lpas.com/wp-con",
+        "alt": "Glenn Ovitt",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Yovani-Trujillo_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Yovani-Trujillo_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Yovani-Trujillo_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Yovani-Trujillo_LPAS_FULLSIZE-992x1240-c-default.jpg",
+        "alt": "Yovani Trujillo",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Craig-Speck_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Craig-Speck_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Craig-Speck_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Craig-Speck_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https",
+        "alt": "Craig Speck",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Heidi-Roseler-Kerby_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Heidi-Roseler-Kerby_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Heidi-Roseler-Kerby_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Heidi-Roseler-Kerby_LPAS_FULLSIZE-992x1240-c",
+        "alt": "Heidi Roseler-Kerby",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Morgan-Tauzer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Morgan-Tauzer_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Morgan-Tauzer_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Morgan-Tauzer_LPAS_FULLSIZE-992x1240-c-default.jpg 992w,",
+        "alt": "Morgan Tauzer",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/about/",
+        "srcset": "",
+        "alt": "",
+        "w": 0,
+        "h": 0,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Mervin-Villar_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Mervin-Villar_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Mervin-Villar_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Mervin-Villar_LPAS_FULLSIZE-992x1240-c-default.jpg 992w,",
+        "alt": "Mervin Villar",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/02/Ryan-Townsend_LPAS.jpg-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/02/Ryan-Townsend_LPAS.jpg-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/02/Ryan-Townsend_LPAS.jpg-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/02/Ryan-Townsend_LPAS.jpg-992x1240-c-default.jpg 992w, https://lpas.c",
+        "alt": "Ryan Townsend",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Christian-Montanez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Christian-Montanez_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Christian-Montanez_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Christian-Montanez_LPAS_FULLSIZE-992x1240-c-de",
+        "alt": "Christian Montanez",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/about/",
+        "srcset": "",
+        "alt": "",
+        "w": 0,
+        "h": 0,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Sophie-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Sophie-Metzker_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Sophie-Metzker_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Sophie-Metzker_LPAS_FULLSIZE-992x1240-c-default.jpg 99",
+        "alt": "Sophie Metzker",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Nick-Shanks_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Nick-Shanks_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Nick-Shanks_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Nick-Shanks_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https",
+        "alt": "Nick Shanks",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Angelique-Dionisio_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Angelique-Dionisio_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Angelique-Dionisio_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Angelique-Dionisio_LPAS_FULLSIZE-992x1240-c-de",
+        "alt": "Angelique Dionisio",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Shaahin-Davami_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Shaahin-Davami_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Shaahin-Davami_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Shaahin-Davami_LPAS_FULLSIZE-992x1240-c-default.jpg 99",
+        "alt": "Shaahin Davami",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Pat-Walton_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Pat-Walton_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Pat-Walton_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Pat-Walton_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https://",
+        "alt": "Pat Walton",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/David-Oliveira_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/David-Oliveira_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/David-Oliveira_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/David-Oliveira_LPAS_FULLSIZE-992x1240-c-default.jpg 99",
+        "alt": "David Oliveira",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/about/",
+        "srcset": "",
+        "alt": "",
+        "w": 0,
+        "h": 0,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Krista-McCord_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Krista-McCord_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Krista-McCord_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Krista-McCord_LPAS_FULLSIZE-992x1240-c-default.jpg 992w,",
+        "alt": "Krista McCord",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Ky-Huynh_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Ky-Huynh_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Ky-Huynh_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Ky-Huynh_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https://lpas.c",
+        "alt": "Ky Huynh",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Kyle-Lamb_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Kyle-Lamb_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Kyle-Lamb_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Kyle-Lamb_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https://lpa",
+        "alt": "Kyle Lamb",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/Chris-Kelly_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/Chris-Kelly_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/Chris-Kelly_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/Chris-Kelly_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https",
+        "alt": "Chris Kelly",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Matt-Dalforno_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Matt-Dalforno_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Matt-Dalforno_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Matt-Dalforno_LPAS_FULLSIZE-992x1240-c-default.jpg 992w,",
+        "alt": "Matt Dalforno",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/Becky-McCormick_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/Becky-McCormick_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/Becky-McCormick_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/Becky-McCormick_LPAS_FULLSIZE-992x1240-c-default.jpg",
+        "alt": "Becky McCormick",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/about/",
+        "srcset": "",
+        "alt": "",
+        "w": 0,
+        "h": 0,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/Brady-Smith_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/Brady-Smith_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/Brady-Smith_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/Brady-Smith_FULLSIZE-992x1240-c-default.jpg 992w, https://lpas.com/wp-",
+        "alt": "Brady Smith",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Lacey-Oxford_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Lacey-Oxford_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Lacey-Oxford_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Lacey-Oxford_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, ht",
+        "alt": "Lacey Oxford",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Lori-Winsor_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Lori-Winsor_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Lori-Winsor_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Lori-Winsor_FULLSIZE-992x1240-c-default.jpg 992w, https://lpas.com/wp-",
+        "alt": "Lori Winsor",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Laurel-Chavez_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Laurel-Chavez_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Laurel-Chavez_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Laurel-Chavez_LPAS_FULLSIZE-992x1240-c-default.jpg 992w,",
+        "alt": "Laurel Chavez",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Kristina-Gwinn_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Kristina-Gwinn_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Kristina-Gwinn_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Kristina-Gwinn_LPAS_FULLSIZE-992x1240-c-default.jpg 99",
+        "alt": "Kristina Gwinn",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Kim-Moore_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Kim-Moore_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Kim-Moore_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Kim-Moore_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https://lpa",
+        "alt": "Kim Moore",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/about/",
+        "srcset": "",
+        "alt": "",
+        "w": 0,
+        "h": 0,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2025/12/Bethanie-Taylor_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2025/12/Bethanie-Taylor_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2025/12/Bethanie-Taylor_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2025/12/Bethanie-Taylor_LPAS_FULLSIZE-992x1240-c-default.jpg",
+        "alt": "Bethanie Taylor",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Ken-Bauer_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Ken-Bauer_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Ken-Bauer_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Ken-Bauer_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, https://lpa",
+        "alt": "Ken Bauer",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Karina-Welch_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Karina-Welch_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Karina-Welch_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Karina-Welch_LPAS_FULLSIZE-992x1240-c-default.jpg 992w, ht",
+        "alt": "Karina Welch",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/about/",
+        "srcset": "",
+        "alt": "",
+        "w": 0,
+        "h": 0,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Manuel-Vivar-Nieto_V2_LPAS_FULLSIZE-992x",
+        "alt": "Manuel Vivar-Nieto",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/2026/01/Kristopher-Maddox_LPAS_FULLSIZE-1280x1600-c-default.jpg",
+        "srcset": "https://lpas.com/wp-content/uploads/2026/01/Kristopher-Maddox_LPAS_FULLSIZE-375x469-c-default.jpg 375w, https://lpas.com/wp-content/uploads/2026/01/Kristopher-Maddox_LPAS_FULLSIZE-678x848-c-default.jpg 678w, https://lpas.com/wp-content/uploads/2026/01/Kristopher-Maddox_LPAS_FULLSIZE-992x1240-c-defau",
+        "alt": "Kristopher Maddox",
+        "w": 1440,
+        "h": 1800,
+        "parent": "memberCard__imageWrapper",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      },
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/about/",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/02_LPAS-723-S-Street-Headquarters.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1013,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 311,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "div",
+      "h": 407,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "div",
+      "h": 259,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 7621,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:01:00.837Z"
+}

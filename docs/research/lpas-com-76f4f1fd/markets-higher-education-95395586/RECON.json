@@ -1,0 +1,368 @@
+{
+  "path": "/markets/higher-education/",
+  "key": "markets-higher-education-95395586",
+  "url": "https://lpas.com/markets/higher-education/",
+  "desktop": {
+    "title": "LPAS — Higher Education",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 7,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(201, 211, 223)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Higher  Education"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 1,
+        "linkCount": 0,
+        "text": "Our focus on\nArchitecture for academic community\nHigher Education"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 400,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: Higher education projects don't get do-overs. LPAS knows this and it shapes everything about how we work with colleges a"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Architecture for academic community\nHigher education projects don't get do-overs. LPAS knows this and it shapes everything about how we work with colleges and universities, from the first stakeholder meeting to the day you open the doors.\n\nWe've spent decades learning the rhythms of campus life the budget pressures, the competing priorities, DSA approvals, and the students, faculty, and staff whose daily experience depends on getting the design right. Our process is built around listening first and designing second. We ask the right questions, bring the right people to the table, and stay closely involved from first sketch to final punch list because great educational spaces don't just happen. They're carefully, intentionally earned."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS Higher Education Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Mission Alignment\n02\nEngagement + Programming\n03\nDesign Development + Technical Integration\n04\nApprovals + Agency Navigation\n05\nDelivery + Continuous Improvement\n01\nMission-driven beginnings\nDiscovery + Mission Alignment\n\nNo two campuses are the same, we never assume we already know what you need. Before any design work begins, we spend time on your campus talking to people, touring spaces, and understanding what's working and what isn't.\n\n02\nCollaboration to build alignment\nEngagement + Programming\n\nThe best campus designs are shaped by the people who use them. We run an engagement process that makes it easy for every stakeholder from department heads to students to participate meaningfully and see their input reflected in the design.\n\n03\nBuildable, enduring solutions\nDesign Development + Technical In"
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 427,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Why Higher Education Institutions Choose LPAS"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Inclusive, accountable, proven\nWhy Higher Education Institutions Choose LPAS\n\nProven Track Record\n\nFrom the CSU and UC systems to community colleges across California, we have delivered projects that balance complex requirements, tight budgets, and high aspirations.\n\nInclusive by Design\n\nFrom accessibility that exceeds code requirements to spaces that genuinely welcome diverse populations, we design environments where every person feels they belong.\n\nFiscally Responsible\n\nWe understand public budgets and how to stretch them. Our transparent process helps you see the trade-offs clearly and make decisions that maximize value without sacrificing mission.\n\nPartners, Not Vendors\n\nWe are invested in your success. Your goals become our goals, and your challenges become problems we solve together. That is how we have built relationships that last well beyond a single project."
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 689,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Client Voices"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Trusted. Proven. Valued.\nClient Voices\n“Our goals of listening enhancement, visual improvements, third space, and better space management were all met or exceeded. The results of this project have created a wonderful experience for our students.”\n\n— Jonathan Latta, Chief of Staff, University of the Pacific\n\n \n\n“If I could sum up my experience in working with LPAS it would be collaboration and partnership!! I will be modeling future projects at this college after this one.”\n\n— Ann Kroll, Project Planner/Manager, Las Positas College\n\n \n\n“This project was a significant part of our bond process. LPAS met every challenge and deliverable and our experience has been nothing but positive.”\n\n— Owen Letcher, Vice Chancellor of Facilities and Bond Program, Las Positas College"
+      },
+      {
+        "i": 5,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 1077,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Highlighted Projects"
+        ],
+        "imgCount": 6,
+        "videoCount": 0,
+        "svgCount": 2,
+        "linkCount": 7,
+        "text": "Highlighted Projects\nAll Higher Education\nSolano Community College Theater Renovation and Addition.\nFairfield, CA\nUC Davis Ann E. Pitzer Center Classroom & Recital Hall\nDavis, CA\nLake Tahoe Community College Renovations for Efficiency\nSouth Lake Tahoe, CA\nCity College of San Francisco Diego Rivera Theater Criteria Document\nSan Francisco, CA\nThe Ohlone College Building 5 Renovation\nFremont, CA\nCosumnes River College College Center Expansion\nSacramento, CA"
+      },
+      {
+        "i": 6,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/09/lpas_image-13-1440x893-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/09/lpas_image-13-375x233-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/09/lpas_image-13-678x420-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2025/09/lpas_image-13-992x615-c",
+        "alt": "",
+        "w": 1440,
+        "h": 893,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4460-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4473-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4478-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4462-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/24_Solano-College-Theater-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/24_Solano-College-Theater-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/24_Solano-College-Theater-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/22_UCD-Pitzer-Center-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/22_UCD-Pitzer-Center-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/22_UCD-Pitzer-Center-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/22_UCD-Pi",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/07_LTCC-RFE-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/07_LTCC-RFE-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/07_LTCC-RFE-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/07_LTCC-RFE-992x620-c-defau",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Concert-hall-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Concert-hall-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Concert-hall-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Concert-hall-992x620-c-de",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/08_Ohlone-College-Building-5-Renovation-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/08_Ohlone-College-Building-5-Renovation-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/08_Ohlone-College-Building-5-Renovation-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/03_Cosumnes-River-College-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/03_Cosumnes-River-College-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/03_Cosumnes-River-College-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/09/lpas_image-13.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 620,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1175,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 777,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 975,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "h": 2022,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:14:48.108Z"
+}

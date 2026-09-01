@@ -1,0 +1,621 @@
+{
+  "path": "/markets/housing/senior-housing/",
+  "title": "Senior Housing - LPAS Architecture",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/housing/senior-housing/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/12/03_SONRISA.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Back to Housing\nSupporting independence with care\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nSenior Housing",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Senior Housing"
+        }
+      ],
+      "paragraphs": [
+        "Affordable Housing",
+        "Affordable Housing",
+        "Student Housing",
+        "Student Housing",
+        "Market Rate Housing",
+        "Market Rate Housing",
+        "Senior Housing",
+        "Senior Housing"
+      ],
+      "links": [
+        {
+          "text": "Back to Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Affordable Housing",
+          "href": "https://lpas.com/markets/housing/affordable-housing/"
+        },
+        {
+          "text": "Student Housing",
+          "href": "https://lpas.com/markets/housing/student-housing/"
+        },
+        {
+          "text": "Market Rate Housing",
+          "href": "https://lpas.com/markets/housing/market-rate-housing/"
+        },
+        {
+          "text": "Senior Housing",
+          "href": "https://lpas.com/markets/housing/senior-housing/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/03_SONRISA-1440x810-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/03_SONRISA-1440x810-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 810
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Supporting independence with care\nLPAS designs senior housing that supports dignity, independence, and quality of life. Whether designing independent living, assisted living, memory care, or continuing care retirement communities, we understand these projects must balance safety and support with autonomy and quality of life.\n\nWith California's aging population and evolving models of senior care, successful senior housing requires deep understanding of both operational needs of care providers and experiential needs of residents and their families. Our approach centers on creating warm, residential environments that support aging in place, foster social connection, and honor the dignity of every resident.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS designs senior housing that supports dignity, independence, and quality of life. Whether designing independent living, assisted living, memory care, or continuing care retirement communities, we understand these projects must balance safety and support with autonomy and quality of life."
+        }
+      ],
+      "paragraphs": [
+        "With California's aging population and evolving models of senior care, successful senior housing requires deep understanding of both operational needs of care providers and experiential needs of residents and their families. Our approach centers on creating warm, residential environments that support aging in place, foster social connection, and honor the dignity of every resident."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS Senior Housing Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Market Understanding\n02\nVisioning + Lifestyle Planning\n03\nDesign Development + Integration\n04\nTechnical Coordination + Cost Management\n05\nImplementation + Post-Occupancy Evaluation\n01\nGrounded in resident needs\nDiscovery + Market Understanding\n\nSenior housing begins with understanding who the community will serve and how their needs translate into design. LPAS collaborates with owners, operators, and care providers to identify priorities around wellness, accessibility, and lifestyle. By analyzing site potential, demographic trends, and operational models, we build a foundation that connects design vision to business objectives.\n\n02\nDesigning supportive living\nVisioning + Lifestyle Planning\n\nLPAS helps clients imagine how residents will live, connect, and thrive. Senior housing must accommodate residents with varying and evolving abilities. Universal design creates environments supporting independence while building in flexibility for increasing care needs, allowing residents to age in place with dignity.\n\n03\nDesign supporting daily life\nDesign Development + Integration\n\nLPAS refines design concepts into functional, efficient, and comfortable environments. Memory care requires specialized approaches supporting residents with dementia. Beyond specialized needs, all seniors benefit from diverse opportunities for social connection, activities, and wellness. We coordinate closely with consultants and care providers to ensure safety and regulatory compliance while maintaining a warm, residential character.\n\n04\nPerformance within budget\nTechnical Coordination + Cost Management\n\nWhile resident experience is paramount, operational efficiency directly impacts quality of care and project financial performance. LPAS integrates cost management and technical collaboration to ensure performance and constructability. We apply LEAN methods and Target Value Design to achieve high-quality results within the project's financial framework.\n\n05\nDelivered with care\nImplementation + Post-Occupancy Evaluation\n\nLPAS supports the project from construction through occupancy, ensuring design intent is delivered and residents' needs are fully met. Senior housing requires careful coordination of complex systems, specialized equipment, and operational readiness. After completion, we review how spaces perform, using insights to continually enhance future communities.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS Senior Housing Design Process",
+        "Phases",
+        "01\n                        Discovery + Market Understanding",
+        "Discovery + Market Understanding",
+        "02\n                        Visioning + Lifestyle Planning",
+        "Visioning + Lifestyle Planning",
+        "03\n                        Design Development + Integration",
+        "Design Development + Integration",
+        "04\n                        Technical Coordination + Cost Management",
+        "Technical Coordination + Cost Management",
+        "05\n                        Implementation + Post-Occupancy Evaluation",
+        "Implementation + Post-Occupancy Evaluation",
+        "Discovery + Market Understanding",
+        "Senior housing begins with understanding who the community will serve and how their needs translate into design. LPAS collaborates with owners, operators, and care providers to identify priorities around wellness, accessibility, and lifestyle. By analyzing site potential, demographic trends, and operational models, we build a foundation that connects design vision to business objectives.",
+        "Visioning + Lifestyle Planning",
+        "LPAS helps clients imagine how residents will live, connect, and thrive. Senior housing must accommodate residents with varying and evolving abilities. Universal design creates environments supporting independence while building in flexibility for increasing care needs, allowing residents to age in place with dignity.",
+        "Design Development + Integration",
+        "LPAS refines design concepts into functional, efficient, and comfortable environments. Memory care requires specialized approaches supporting residents with dementia. Beyond specialized needs, all seniors benefit from diverse opportunities for social connection, activities, and wellness. We coordinate closely with consultants and care providers to ensure safety and regulatory compliance while maintaining a warm, residential character.",
+        "Technical Coordination + Cost Management",
+        "While resident experience is paramount, operational efficiency directly impacts quality of care and project financial performance. LPAS integrates cost management and technical collaboration to ensure performance and constructability. We apply LEAN methods and Target Value Design to achieve high-quality results within the project's financial framework.",
+        "Implementation + Post-Occupancy Evaluation",
+        "LPAS supports the project from construction through occupancy, ensuring design intent is delivered and residents' needs are fully met. Senior housing requires careful coordination of complex systems, specialized equipment, and operational readiness. After completion, we review how spaces perform, using insights to continually enhance future communities."
+      ],
+      "links": [
+        {
+          "text": "01 Grounded in resident needs Discovery + Market Understanding Senior housing begins with understanding who the communit",
+          "href": "https://lpas.com/processes/discovery-market-understanding/?ids=1339%2C1340%2C1341%2C1342%2C1343"
+        },
+        {
+          "text": "02 Designing supportive living Visioning + Lifestyle Planning LPAS helps clients imagine how residents will live, connec",
+          "href": "https://lpas.com/processes/visioning-lifestyle-planning/?ids=1339%2C1340%2C1341%2C1342%2C1343"
+        },
+        {
+          "text": "03 Design supporting daily life Design Development + Integration LPAS refines design concepts into functional, efficient",
+          "href": "https://lpas.com/processes/design-development-integration-2/?ids=1339%2C1340%2C1341%2C1342%2C1343"
+        },
+        {
+          "text": "04 Performance within budget Technical Coordination + Cost Management While resident experience is paramount, operationa",
+          "href": "https://lpas.com/processes/technical-coordination-cost-management/?ids=1339%2C1340%2C1341%2C1342%2C1343"
+        },
+        {
+          "text": "05 Delivered with care Implementation + Post-Occupancy Evaluation LPAS supports the project from construction through oc",
+          "href": "https://lpas.com/processes/implementation-post-occupancy-evaluation/?ids=1339%2C1340%2C1341%2C1342%2C1343"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4479-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/Frame-4479-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/Frame-4470-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/Frame-4456-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-20-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/Process-slider-20-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/Frame-4467-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Experience across care types\nSpecialized Senior Housing Expertise\n\nIndependent Living:\nActive adult communities with social programming and maintenance-free living.\n\nAssisted Living:\nResidential care with ADL support, balancing independence with appropriate assistance.\n\nMemory Care:\nSpecialized dementia and Alzheimer’s care in secure, cognitively supportive environments.\n\nSkilled Nursing:\nHigher-acuity care in environments maintaining residential character and resident dignity.\n\nContinuing Care Retirement Communities (CCRC):\nIntegrated campuses supporting full continuum from independent living through skilled nursing.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Specialized Senior Housing Expertise"
+        }
+      ],
+      "paragraphs": [
+        "Independent Living:\nActive adult communities with social programming and maintenance-free living.",
+        "Assisted Living:\nResidential care with ADL support, balancing independence with appropriate assistance.",
+        "Memory Care:\nSpecialized dementia and Alzheimer’s care in secure, cognitively supportive environments.",
+        "Skilled Nursing:\nHigher-acuity care in environments maintaining residential character and resident dignity.",
+        "Continuing Care Retirement Communities (CCRC):\nIntegrated campuses supporting full continuum from independent living through skilled nursing."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Expertise developers trust\nWhy Senior Housing Developers Choose LPAS\n\nResident-Centered Design:\nWe design for how people want to age, creating environments supporting dignity, independence, and quality of life.\n\nSpecialized Expertise:\nDeep understanding of senior housing operations, care models, and unique design considerations for aging populations.\n\nMemory Care Experience:\nProven approaches to dementia and Alzheimer’s care environments supporting residents and families.\n\nFinancial Performance:\nDesigns balancing cost-effectiveness with market appeal to drive occupancy and retention.\n\nUniversal Design Commitment:\nCreating environments supporting residents through changing abilities, allowing aging in place.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Senior Housing Developers Choose LPAS"
+        }
+      ],
+      "paragraphs": [
+        "Resident-Centered Design:\nWe design for how people want to age, creating environments supporting dignity, independence, and quality of life.",
+        "Specialized Expertise:\nDeep understanding of senior housing operations, care models, and unique design considerations for aging populations.",
+        "Memory Care Experience:\nProven approaches to dementia and Alzheimer’s care environments supporting residents and families.",
+        "Financial Performance:\nDesigns balancing cost-effectiveness with market appeal to drive occupancy and retention.",
+        "Universal Design Commitment:\nCreating environments supporting residents through changing abilities, allowing aging in place."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted projects\nAll Senior Housing\nElegance Hamilton Hill\nNovato, CA\nSonrisa Senior Living\nRoseville, CA\nBruceville Point\nElk Grove, CA",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted projects"
+        }
+      ],
+      "paragraphs": [],
+      "links": [
+        {
+          "text": "All Senior Housing",
+          "href": "https://lpas.com/portfolio/?market=senior-housing"
+        },
+        {
+          "text": "Elegance Hamilton Hill Novato, CA",
+          "href": "https://lpas.com/portfolio/elegance-hamilton-hill/"
+        },
+        {
+          "text": "Sonrisa Senior Living Roseville, CA",
+          "href": "https://lpas.com/portfolio/sonrisa-senior-living/"
+        },
+        {
+          "text": "Bruceville Point Elk Grove, CA",
+          "href": "https://lpas.com/portfolio/bruceville-point/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/02_Elegance-Hamilton-Hill_Novato-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/04_SONRISA-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/04_SONRISA-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/07/33_Bruceville-Point-Exterior_FAVORITE-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/33_Bruceville-Point-Exterior_FAVORITE-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-housing-senior-housing-c6469d9f/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

@@ -1,0 +1,597 @@
+{
+  "path": "/latest/",
+  "title": "Latest Updates - LPAS Architecture",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/latest/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/11/lpas-latest.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/latest-f798beeb/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Menu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderPortfolio",
+      "classes": "blockHeaderPortfolio",
+      "innerText": "Stay in the know\nInspiration and knowledge\nLatest\nUpdates\n",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Latest Updates"
+        }
+      ],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/11/lpas-latest-1440x366-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/lpas-latest-1440x366-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 366
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "CollectionPost",
+      "classes": "collectionPost",
+      "innerText": "Journal\nStay up to date with everything that happens at LPAS.\nAll\nInstagram\n18\nMay 21, 2026\nInstagram: 21 May 2026\nMay 12, 2026\nInstagram: 12 May 2026\nMarch 26, 2026\nInstagram: 26 Mar 2026\nMarch 17, 2026\nInstagram: 17 Mar 2026\nMarch 13, 2026\nInstagram: 13 Mar 2026\nMarch 6, 2026\nInstagram: 06 Mar 2026\nFebruary 24, 2026\nInstagram: 24 Feb 2026\nFebruary 6, 2026\nInstagram: 06 Feb 2026\nDecember 16, 2025\nInstagram: 16 Dec 2025\nOctober 30, 2025\nInstagram: 30 Oct 2025\nSeptember 23, 2025\nInstagram: 23 Sep 2025\nAugust 27, 2025\nInstagram: 27 Aug 2025\nJuly 28, 2025\nInstagram: 28 Jul 2025\nJuly 11, 2025\nInstagram: 11 Jul 2025\nJune 25, 2025\nInstagram: 25 Jun 2025\nJanuary 6, 2025\nInstagram: 06 Jan 2025\nJanuary 6, 2025\nInstagram: 06 Jan 2025\nJanuary 6, 2025\nInstagram: 06 Jan 2025\n1\n2",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Stay up to date with everything that happens at LPAS."
+        }
+      ],
+      "paragraphs": [],
+      "links": [
+        {
+          "text": "May 21, 2026 Instagram: 21 May 2026",
+          "href": "https://www.instagram.com/p/DYnEV_MCaDg/"
+        },
+        {
+          "text": "May 12, 2026 Instagram: 12 May 2026",
+          "href": "https://www.instagram.com/p/DYPz1AVicrN/"
+        },
+        {
+          "text": "March 26, 2026 Instagram: 26 Mar 2026",
+          "href": "https://www.instagram.com/p/DWXNFWSEmi4/"
+        },
+        {
+          "text": "March 17, 2026 Instagram: 17 Mar 2026",
+          "href": "https://www.instagram.com/p/DWASV2TD3bJ/"
+        },
+        {
+          "text": "March 13, 2026 Instagram: 13 Mar 2026",
+          "href": "https://www.instagram.com/p/DV1dMSGFFGl/"
+        },
+        {
+          "text": "March 6, 2026 Instagram: 06 Mar 2026",
+          "href": "https://www.instagram.com/p/DVjXotGlEFs/"
+        },
+        {
+          "text": "February 24, 2026 Instagram: 24 Feb 2026",
+          "href": "https://www.instagram.com/p/DVJtJPZkgR4/"
+        },
+        {
+          "text": "February 6, 2026 Instagram: 06 Feb 2026",
+          "href": "https://www.instagram.com/p/DUbtrscEmWv/"
+        },
+        {
+          "text": "December 16, 2025 Instagram: 16 Dec 2025",
+          "href": "https://www.instagram.com/p/DSVUykjD-pU/"
+        },
+        {
+          "text": "October 30, 2025 Instagram: 30 Oct 2025",
+          "href": "https://www.instagram.com/p/DQcodyuk8Ub/"
+        },
+        {
+          "text": "September 23, 2025 Instagram: 23 Sep 2025",
+          "href": "https://www.instagram.com/p/DO9ksR7Ej8C/"
+        },
+        {
+          "text": "August 27, 2025 Instagram: 27 Aug 2025",
+          "href": "https://www.instagram.com/p/DN3WMCZ4h8O/"
+        },
+        {
+          "text": "July 28, 2025 Instagram: 28 Jul 2025",
+          "href": "https://www.instagram.com/p/DMquj6KB9MD/"
+        },
+        {
+          "text": "July 11, 2025 Instagram: 11 Jul 2025",
+          "href": "https://www.instagram.com/p/DL-XVMjxwKI/"
+        },
+        {
+          "text": "June 25, 2025 Instagram: 25 Jun 2025",
+          "href": "https://www.instagram.com/p/DLVIgpyRi5d/"
+        },
+        {
+          "text": "January 6, 2025 Instagram: 06 Jan 2025",
+          "href": "https://www.instagram.com/p/DEff60_vMG9/"
+        },
+        {
+          "text": "January 6, 2025 Instagram: 06 Jan 2025",
+          "href": "https://www.instagram.com/p/DEff284vqYa/"
+        },
+        {
+          "text": "January 6, 2025 Instagram: 06 Jan 2025",
+          "href": "https://www.instagram.com/p/DEff0EiP9g-/"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/05/705860006_18427634425120770_8881473772530157572_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/705860006_18427634425120770_8881473772530157572_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 21 May 2026",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/05/690281835_18426242710120770_3696790314565088558_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/690281835_18426242710120770_3696790314565088558_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 12 May 2026",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/03/656239942_18419359891120770_8400189846813213265_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/656239942_18419359891120770_8400189846813213265_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 26 Mar 2026",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/03/653667598_18417016015120770_3431999040994783478_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/653667598_18417016015120770_3431999040994783478_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 17 Mar 2026",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/03/650368596_18416242555120770_3751658863105406351_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/650368596_18416242555120770_3751658863105406351_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 13 Mar 2026",
+          "w": 1440,
+          "h": 1800
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/03/645917596_18415092919120770_3490576865802946849_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/645917596_18415092919120770_3490576865802946849_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 06 Mar 2026",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/02/639743620_18413798356120770_3080851034257127091_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/639743620_18413798356120770_3080851034257127091_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 24 Feb 2026",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/02/629678875_18410494183120770_3806609778747641919_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/629678875_18410494183120770_3806609778747641919_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 06 Feb 2026",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/601371553_18402260404120770_7706348919303463038_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/601371553_18402260404120770_7706348919303463038_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 16 Dec 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/571152120_18395933872120770_6573167260490544019_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/571152120_18395933872120770_6573167260490544019_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 30 Oct 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/552930284_18389008516120770_8254037727060878943_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/552930284_18389008516120770_8254037727060878943_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 23 Sep 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/539456341_18385365034120770_5891901945861936066_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/539456341_18385365034120770_5891901945861936066_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 27 Aug 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/525439696_18381762754120770_7192444709184175844_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/525439696_18381762754120770_7192444709184175844_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 28 Jul 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/518812654_18379608667120770_2189618379795762948_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/518812654_18379608667120770_2189618379795762948_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 11 Jul 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/513540630_18377666170120770_1710219849275158112_n-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/513540630_18377666170120770_1710219849275158112_n-1280x0-c-default.jpg",
+          "alt": "Instagram: 25 Jun 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/472430631_9541937102483643_5906846837346276025_n-1-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/472430631_9541937102483643_5906846837346276025_n-1-1280x0-c-default.jpg",
+          "alt": "Instagram: 06 Jan 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/472369032_1129992341841948_1222548079553134389_n-1-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/472369032_1129992341841948_1222548079553134389_n-1-1280x0-c-default.jpg",
+          "alt": "Instagram: 06 Jan 2025",
+          "w": 1440,
+          "h": 1440
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/2026/01/472463193_607209958518487_2971062558773180837_n-1-1280x0-c-default.jpg",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/472463193_607209958518487_2971062558773180837_n-1-1280x0-c-default.jpg",
+          "alt": "Instagram: 06 Jan 2025",
+          "w": 1440,
+          "h": 1440
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/latest-f798beeb/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

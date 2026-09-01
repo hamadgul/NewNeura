@@ -1,0 +1,341 @@
+{
+  "path": "/markets/housing/student-housing/",
+  "key": "markets-housing-student-housing-72e66e7d",
+  "url": "https://lpas.com/markets/housing/student-housing/",
+  "desktop": {
+    "title": "Student Housing - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 7,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderMarkets",
+        "dataAttrs": {
+          "control": "BlockHeaderMarkets",
+          "grid": "grid-template"
+        },
+        "height": 1130,
+        "width": 1440,
+        "bg": "rgb(98, 86, 83)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H1: Student Housing"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 6,
+        "linkCount": 5,
+        "text": "Back to Housing\nStudent-centered housing design\nAffordable Housing\nStudent Housing\nMarket Rate Housing\nSenior Housing\nStudent Housing"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 400,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: For many students, a residence hall is their first home away from home. LPAS designs student housing that goes beyond a "
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Designing for student life\nFor many students, a residence hall is their first home away from home. LPAS designs student housing that goes beyond a place to sleep, creating communities where students connect, thrive, and feel like they belong.\n\nWe work with universities, colleges, and public-private partnerships across California to deliver housing that fits the realities of campus life: constrained budgets, diverse student populations, tight academic calendars, and evolving expectations for community and inclusivity. We listen closely to students and institutions alike, making sure every design decision serves the people who will actually live there. The result is housing that supports student success from move-in day through graduation."
+      },
+      {
+        "i": 2,
+        "tag": "div",
+        "id": null,
+        "classes": "pin-spacer",
+        "dataAttrs": {},
+        "height": 2445,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 1,
+        "headings": [
+          "H2: Our Process"
+        ],
+        "imgCount": 5,
+        "videoCount": 0,
+        "svgCount": 7,
+        "linkCount": 5,
+        "text": "Workflow\n\nThe LPAS student housing design process\nOur Process\n\nPhases\n\n01\nDiscovery + Partnership Alignment\n02\nVisioning + Experience Planning\n03\nDesign Development + Integration\n04\nCommunity Engagement + Approvals\n05\nDelivery + Post-Occupancy Evaluation\n01\nInsight-Led Housing Design\nDiscovery + Partnership Alignment\n\nGood student housing starts with good questions. Before any design work begins, we dig into how students actually use their spaces, what the institution needs to achieve, and what success looks like for everyone involved.\n\n02\nInclusive by Design\nVisioning + Experience Planning\n\nToday's student populations are wonderfully diverse, and housing needs to reflect that. We lead collaborative sessions that explore how design can foster connection, comfort, and belonging, turning stakeholder input into a clear, actionable vision.\n\n03\nFrom vision to reality\nDesign Development + Inte"
+      },
+      {
+        "i": 3,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 449,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Specialized Student Housing Expertise"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Tailored Campus Living\nSpecialized Student Housing Expertise\n\nFirst-Year Experience Housing\n\nLiving away from home for the first time is a big transition. We design residence halls that ease that shift with strong community spaces, clear wayfinding, and environments that help new students find their footing.\n\nUpper-Division and Graduate Housing\n\nOlder students need more independence. We design apartment-style units with the privacy, amenities, and flexibility that upper-division and graduate students expect.\n\nLiving-Learning Communities\n\nWhen academic programming and residential life share the same space, something special happens. We design integrated environments where themed communities and shared academic spaces reinforce each other.\n\nAccessible and Inclusive Housing\n\nWe go beyond code minimums to create housing that works for everyone, with universal design principles, enhanced acce"
+      },
+      {
+        "i": 4,
+        "tag": "section",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 522,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Why Universities Choose LPAS for Student Housing"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Experience Universities Trust\nWhy Universities Choose LPAS for Student Housing\n\nStudents Come First\n\nWe listen to students before we start designing. That means housing reflects how they actually live, not just how administrators imagine they do.\n\nInclusive by Design\n\nFrom gender-inclusive facilities to universal accessibility and affinity-focused planning, we create environments where every student genuinely feels they belong.\n\nWe Know the Budget Realities\n\nUniversity capital budgets are tight and scrutinized. We bring deep experience maximizing value within constraints, without cutting corners on the things that matter most.\n\nRegulatory Experience\n\nWe know DSA, university system requirements, and the approval processes that come with public institution projects. We navigate them confidently so your project stays on schedule.\n\nHousing That Supports Success\n\nWe design living-learning com"
+      },
+      {
+        "i": 5,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectsHighlight",
+        "dataAttrs": {
+          "watch": "",
+          "grid": "grid-template",
+          "control": "BlockProjectsHighlight"
+        },
+        "height": 556,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [
+          "H2: Highlighted Projects"
+        ],
+        "imgCount": 3,
+        "videoCount": 0,
+        "svgCount": 2,
+        "linkCount": 4,
+        "text": "Highlighted Projects\nAll Student Housing\nCSU Stanislaus Residences Village 4\nTurlock, CA\nWest Valley-Mission Community College District Housing Initiative\nSanta Clara, CA\nSacramento State Faculty & Staff Housing\nSacramento, CA"
+      },
+      {
+        "i": 6,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/03/05_CSUS-Faculty-Housing-1440x699-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/03/05_CSUS-Faculty-Housing-375x182-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/03/05_CSUS-Faculty-Housing-678x329-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/03/05_",
+        "alt": "",
+        "w": 1440,
+        "h": 699,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4518-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4518-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4518-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4518-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4456-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4474-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-1000x1156-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-375x433-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-678x784-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4467-1000x1156-c-defaul",
+        "alt": "",
+        "w": 353,
+        "h": 408,
+        "parent": "",
+        "pos": "absolute"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/03/CSU-Stanislaus-ASH-Residence_05-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/03/CSU-Stanislaus-ASH-Residence_05-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/03/CSU-Stanislaus-ASH-Residence_05-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/res",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/03/WVM-Student-Housing_01-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/03/WVM-Student-Housing_01-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/03/WVM-Student-Housing_01-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/03/WVM-S",
+        "alt": "",
+        "w": 328,
+        "h": 205,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2026/03/04_CSUS-Faculty-Housing-1280x800-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2026/03/04_CSUS-Faculty-Housing-375x234-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2026/03/04_CSUS-Faculty-Housing-678x424-c-default.jpg 678w,\n            https://lpas.com/wp-content/uploads/resized/2026/03/04_",
+        "alt": "",
+        "w": 665,
+        "h": 415,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-400x273-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-800x546-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized",
+        "alt": "",
+        "w": 1440,
+        "h": 981,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2026/03/05_CSUS-Faculty-Housing.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1091,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 651,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 1175,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "h": 755,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "h": 872,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "h": 997,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:09:39.921Z"
+}

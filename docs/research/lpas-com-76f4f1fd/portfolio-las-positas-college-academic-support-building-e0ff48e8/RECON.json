@@ -1,0 +1,516 @@
+{
+  "path": "/portfolio/las-positas-college-academic-support-building/",
+  "key": "portfolio-las-positas-college-academic-support-building-e0ff48e8",
+  "url": "https://lpas.com/portfolio/las-positas-college-academic-support-building/",
+  "desktop": {
+    "title": "Las Positas College Academic Support Building - LPAS Architecture",
+    "bodyClasses": "",
+    "mainClasses": "mainContent",
+    "sectionCount": 12,
+    "sections": [
+      {
+        "i": 0,
+        "tag": "header",
+        "id": null,
+        "classes": "blockHeaderProjects",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockHeaderProjects"
+        },
+        "height": 1170,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "relative",
+        "childCount": 3,
+        "headings": [
+          "H1: Las Positas College Academic Support Building"
+        ],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 3,
+        "linkCount": 2,
+        "text": "Portfolio\nLas Positas College Academic Support Building\nView all projects\nA light-filled academic support hub for learning, collaboration, and campus life.\nLas Positas College Academic Support Building\nLivermore, CA\nHigher Education"
+      },
+      {
+        "i": 1,
+        "tag": "section",
+        "id": null,
+        "classes": "blockIntroDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockIntroDouble"
+        },
+        "height": 487,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: This new Academic Support, Faculty Office and Learning Resource Center serves as a resource for the entire campus as it ",
+          "H2: Project details"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Introduction\nDetails\nThis new Academic Support, Faculty Office and Learning Resource Center serves as a resource for the entire campus as it consolidates tutoring, math, computer, proctoring and English services to all students.\n\nFaculty offices for over 80 staff are seamlessly integrated into the space, and the adjacent library was renovated, expanded, and connected to the new building as a part of the project. In order to create synergy amongst the disparate program elements and to make this a destination throughout the day and evenings, a two-story atrium was designed at the heart of the project which connects all sections of the building. This collaborative, interactive space will serve as the social and cultural center of the campus, and a hub for activities. The open floor area allows abundant natural light to filter through with views out to the campus, as well as into the activit"
+      },
+      {
+        "i": 2,
+        "tag": "section",
+        "id": null,
+        "classes": "blockMediaDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockMediaDouble"
+        },
+        "height": 657,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [],
+        "imgCount": 2,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 3,
+        "tag": "div",
+        "id": null,
+        "classes": "blockImageFull",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockImageFull"
+        },
+        "height": 809,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 4,
+        "tag": "div",
+        "id": null,
+        "classes": "blockMediaDoubleQuote",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockMediaDoubleQuote"
+        },
+        "height": 1359,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [],
+        "imgCount": 2,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 5,
+        "tag": "div",
+        "id": null,
+        "classes": "blockImageFull",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockImageFull"
+        },
+        "height": 1003,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 6,
+        "tag": "div",
+        "id": null,
+        "classes": "blockWysiwyg",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockWysiwyg"
+        },
+        "height": 166,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [
+          "H3: Fixed and lounge seating provide flexibility for a variety of interactions. A continuous work surface equipped with powe"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Fixed and lounge seating provide flexibility for a variety of interactions. A continuous work surface equipped with power and data overlooks the space from the second floor and provides a dynamic study and collaboration opportunity."
+      },
+      {
+        "i": 7,
+        "tag": "section",
+        "id": null,
+        "classes": "blockMediaDouble",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockMediaDouble"
+        },
+        "height": 657,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 2,
+        "headings": [],
+        "imgCount": 2,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 8,
+        "tag": "div",
+        "id": null,
+        "classes": "blockMediaDoubleQuote",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockMediaDoubleQuote"
+        },
+        "height": 854,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [],
+        "imgCount": 2,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "\"The open floor area allows abundant natural light to filter through with views out to the campus, as well as into the activities within\""
+      },
+      {
+        "i": 9,
+        "tag": "div",
+        "id": null,
+        "classes": "blockImageFull",
+        "dataAttrs": {
+          "grid": "grid-template",
+          "control": "BlockImageFull"
+        },
+        "height": 960,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 1,
+        "headings": [],
+        "imgCount": 1,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      },
+      {
+        "i": 10,
+        "tag": "section",
+        "id": null,
+        "classes": "blockProjectDetails",
+        "dataAttrs": {
+          "control": "BlockProjectDetails",
+          "grid": "grid-template"
+        },
+        "height": 289,
+        "width": 1440,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "static",
+        "childCount": 3,
+        "headings": [
+          "H2: Project details"
+        ],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": "Project details\nClient\nChabot-Las Positas Community College District\nBldg Area\n90,000 sq ft\nValue\n$60 million\nLEED Level\nLEED Gold\nCompleted\n2023"
+      },
+      {
+        "i": 11,
+        "tag": "template",
+        "id": "slideOut-overlay",
+        "classes": "",
+        "dataAttrs": {
+          "swupFragment": ""
+        },
+        "height": 0,
+        "width": 0,
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 17, 17)",
+        "position": "fixed",
+        "childCount": 0,
+        "headings": [],
+        "imgCount": 0,
+        "videoCount": 0,
+        "svgCount": 0,
+        "linkCount": 0,
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/05_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1440x960-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/05_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-375x250-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/05_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-678x452-c-default.jpg 678w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/06_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1067-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/06_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x267-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/06_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x533-c-default.jpg 800w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 985,
+        "h": 656,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/07_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1945-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/07_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x486-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/07_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x972-c-default.jpg 800w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 395,
+        "h": 480,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/01_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x899-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-2560x1439-c-default.jpg 2560w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1920x1079-c-default.jpg 1920w,\n            https://lpas.com/",
+        "alt": "",
+        "w": 1440,
+        "h": 809,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/11_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x2400-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x600-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/11_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x1200-c-default.jpg 800w,\n            https://lpas.com/wp-co",
+        "alt": "",
+        "w": 733,
+        "h": 1099,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/18_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1270-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/18_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x317-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/18_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x635-c-default.jpg 800w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 530,
+        "h": 420,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/10_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1114-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/10_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-2560x1782-c-default.jpg 2560w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/10_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1920x1336-c-default.jpg 1920w,\n            https://lpas.com/",
+        "alt": "",
+        "w": 1440,
+        "h": 1002,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/13_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1067-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/13_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x267-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/13_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x533-c-default.jpg 800w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 985,
+        "h": 656,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/17_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1423-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/17_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x356-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/17_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x712-c-default.jpg 800w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 395,
+        "h": 351,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/08_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1371-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x343-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/08_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x685-c-default.jpg 800w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 733,
+        "h": 628,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/09_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1067-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/09_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-400x267-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/09_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-800x533-c-default.jpg 800w,\n            https://lpas.com/wp-con",
+        "alt": "",
+        "w": 530,
+        "h": 353,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/04_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1600x1067-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-2560x1707-c-default.jpg 2560w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/04_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT-1920x1280-c-default.jpg 1920w,\n            https://lpas.com/",
+        "alt": "",
+        "w": 1440,
+        "h": 960,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/01_UCB_Wu-Performance-Hall-1600x938-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_UCB_Wu-Performance-Hall-400x235-c-default.jpg 400w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_UCB_Wu-Performance-Hall-800x469-c-default.jpg 800w,\n            https://lpas.com/wp-content/uploads/resized/2025/",
+        "alt": "",
+        "w": 1440,
+        "h": 844,
+        "parent": "",
+        "pos": "static"
+      },
+      {
+        "src": "https://lpas.com/wp-content/uploads/resized/2025/12/01_UCB_Wu-Performance-Hall-678x678-c-default.webp",
+        "srcset": "\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_UCB_Wu-Performance-Hall-375x375-c-default.jpg 375w,\n            https://lpas.com/wp-content/uploads/resized/2025/12/01_UCB_Wu-Performance-Hall-678x678-c-default.jpg 678w,\n            ",
+        "alt": "",
+        "w": 99,
+        "h": 99,
+        "parent": "",
+        "pos": "static"
+      }
+    ],
+    "videos": [
+      {
+        "src": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+        "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+        "autoplay": true,
+        "loop": true,
+        "muted": true
+      }
+    ],
+    "bgImages": [],
+    "fonts": [
+      "Aeonik, sans-serif"
+    ],
+    "scripts": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/swup-config-DoT-9FzL.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/preloader-CQAQSTAa.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/lenisSmooth-BjXMsNId.js",
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-BajH7CHa.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
+    ],
+    "hasLenis": true,
+    "stylesheets": [
+      "https://lpas.com/wp-content/themes/lpas/dist/assets/main-CnNCC-Q8.css"
+    ],
+    "meta": {
+      "description": null,
+      "ogImage": "https://lpas.com/wp-content/uploads/2025/12/05_LAS-POSITAS-COLLEGE-ACADEMIC-SUPPORT.jpg"
+    }
+  },
+  "mobileSections": [
+    {
+      "i": 0,
+      "tag": "header",
+      "h": 1097,
+      "w": 390
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "h": 487,
+      "w": 390
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "h": 476,
+      "w": 390
+    },
+    {
+      "i": 3,
+      "tag": "div",
+      "h": 219,
+      "w": 390
+    },
+    {
+      "i": 4,
+      "tag": "div",
+      "h": 741,
+      "w": 390
+    },
+    {
+      "i": 5,
+      "tag": "div",
+      "h": 272,
+      "w": 390
+    },
+    {
+      "i": 6,
+      "tag": "div",
+      "h": 270,
+      "w": 390
+    },
+    {
+      "i": 7,
+      "tag": "section",
+      "h": 422,
+      "w": 390
+    },
+    {
+      "i": 8,
+      "tag": "div",
+      "h": 657,
+      "w": 390
+    },
+    {
+      "i": 9,
+      "tag": "div",
+      "h": 260,
+      "w": 390
+    },
+    {
+      "i": 10,
+      "tag": "section",
+      "h": 416,
+      "w": 390
+    },
+    {
+      "i": 11,
+      "tag": "template",
+      "h": 0,
+      "w": 0
+    }
+  ],
+  "capturedAt": "2026-09-01T16:05:48.732Z"
+}

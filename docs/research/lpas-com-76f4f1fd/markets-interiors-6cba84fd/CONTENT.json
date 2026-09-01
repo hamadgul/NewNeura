@@ -1,0 +1,632 @@
+{
+  "path": "/markets/interiors/",
+  "title": "LPAS — Interiors",
+  "metaDescription": null,
+  "canonical": "https://lpas.com/markets/interiors/",
+  "ogImage": "https://lpas.com/wp-content/uploads/2025/12/12_Block-52_Madison-by-Lennar.jpg",
+  "blocks": [
+    {
+      "control": "Preloader",
+      "classes": "preloader",
+      "innerText": "",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [],
+      "videos": [
+        {
+          "remote": "https://player.vimeo.com/progressive_redirect/playback/1147329730/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&log_user=0&signature=c85431f7a84c6831e939c1609bc93bbe24024c78c07434a87ff077d19329b64c",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/videos/file.mp4-1080p-.mp4",
+          "poster": "https://lpas.com/wp-content/uploads/2025/12/LPAS-office-thumbnail.jpg",
+          "posterLocal": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/videos/LPAS-office-thumbnail.jpg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true
+        }
+      ]
+    },
+    {
+      "control": "NavigationMain",
+      "classes": "navigationMain",
+      "innerText": "Shift your focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nMenu",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Housing",
+        "Housing",
+        "Interiors",
+        "Interiors",
+        "Higher  Education",
+        "Higher  Education",
+        "Civic",
+        "Civic",
+        "Commercial",
+        "Commercial",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Explore our",
+        "Portfolio",
+        "Company",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockHeaderMarkets",
+      "classes": "blockHeaderMarkets",
+      "innerText": "Our focus on\nDesign for everyday life\nInteriors",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Interiors"
+        }
+      ],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/12_Block-52_Madison-by-Lennar-1440x982-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/12_Block-52_Madison-by-Lennar-1440x982-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 982
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockIntroDouble",
+      "classes": "blockIntroDouble",
+      "innerText": "Design for everyday life\nLPAS Interior Design connects people, purpose, and place. We create spaces that reflect identity, support well-being, and perform beautifully in everyday use.\n\nWith over 30 years of experience across mixed-use developments, multifamily housing, higher education, and commercial projects, we bring strategy and creativity to every environment we design. What sets us apart is our fully integrated approach. Our interior designers work side-by-side with architects in the same BIM model from project inception, eliminating the disconnect between exterior and interior design. This integration reduces rework and ensures full coordination at every milestone. Whether designing a workplace, learning environment, or public space, we focus on clarity, collaboration, and meaning at every step.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "LPAS Interior Design connects people, purpose, and place. We create spaces that reflect identity, support well-being, and perform beautifully in everyday use."
+        }
+      ],
+      "paragraphs": [
+        "With over 30 years of experience across mixed-use developments, multifamily housing, higher education, and commercial projects, we bring strategy and creativity to every environment we design. What sets us apart is our fully integrated approach. Our interior designers work side-by-side with architects in the same BIM model from project inception, eliminating the disconnect between exterior and interior design. This integration reduces rework and ensures full coordination at every milestone. Whether designing a workplace, learning environment, or public space, we focus on clarity, collaboration, and meaning at every step."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProcessCardSlider",
+      "classes": "blockProcessCardSlider",
+      "innerText": "Workflow\n\nThe LPAS Interior Design Process\nOur Process\n\nPhases\n\n01\nDiscovery + Immersion\n02\nVisioning + Concept Development\n03\nProgramming + Space Planning\n04\nDetailing + Materiality\n05\nImplementation + Activation\n01\nInsight shapes direction\nDiscovery + Immersion\n\nLPAS begins every interior project by learning about the organization, its culture, and how people use space. We immerse ourselves in your project's market context, target demographic, and competitive landscape. We ask questions, observe patterns, and listen closely to uncover the needs and opportunities that define the project. This discovery process shapes a clear direction that connects aesthetic goals to human experience and operational priorities.\n\n02\nStory translated into space\nVisioning + Concept Development\n\nFrom early insights, LPAS develops a design concept that captures the essence of the organization. We explore how materials, light, and proportion shape identity and experience. Every successful project has a central concept that unifies architecture, interiors, and landscape into a cohesive experience. This phase transforms strategy into atmosphere, giving form to culture, values, and purpose through thoughtful design language.\n\n03\nSpaces shaped by use\nProgramming + Space Planning\n\nLPAS translates project goals into practical, flexible space plans. We organize circulation, daylight, and spatial hierarchy to enhance efficiency and comfort. Working in the same BIM model as architects, our designers develop interiors in parallel with architecture. This is where vision becomes functional, a plan that balances purpose and possibility.\n\n04\nExperience in every detail\nDetailing + Materiality\n\nDesign is realized through the details. LPAS focuses on how each surface, material, and fixture contributes to overall experience and long-term durability. We refine the palette and detailing to create environments that feel timeless, authentic, and easy to maintain. We produce complete construction drawings, specifications, and schedules that integrate seamlessly with architectural documents, all maintained in the same model.\n\n05\nDesign execution with care\nImplementation + Activation\n\nLPAS remains actively involved throughout construction and installation. We provide comprehensive FF&E services with complete transparency, never profiting from furniture sales. We review shop drawings, collaborate with builders, and resolve challenges quickly to maintain quality and schedule. Once complete, we evaluate how spaces perform, ensuring every detail supports the client's goals and daily experience.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Our Process"
+        }
+      ],
+      "paragraphs": [
+        "Workflow",
+        "The LPAS Interior Design Process",
+        "Phases",
+        "01\n                        Discovery + Immersion",
+        "Discovery + Immersion",
+        "02\n                        Visioning + Concept Development",
+        "Visioning + Concept Development",
+        "03\n                        Programming + Space Planning",
+        "Programming + Space Planning",
+        "04\n                        Detailing + Materiality",
+        "Detailing + Materiality",
+        "05\n                        Implementation + Activation",
+        "Implementation + Activation",
+        "Discovery + Immersion",
+        "LPAS begins every interior project by learning about the organization, its culture, and how people use space. We immerse ourselves in your project's market context, target demographic, and competitive landscape. We ask questions, observe patterns, and listen closely to uncover the needs and opportunities that define the project. This discovery process shapes a clear direction that connects aesthetic goals to human experience and operational priorities.",
+        "Visioning + Concept Development",
+        "From early insights, LPAS develops a design concept that captures the essence of the organization. We explore how materials, light, and proportion shape identity and experience. Every successful project has a central concept that unifies architecture, interiors, and landscape into a cohesive experience. This phase transforms strategy into atmosphere, giving form to culture, values, and purpose through thoughtful design language.",
+        "Programming + Space Planning",
+        "LPAS translates project goals into practical, flexible space plans. We organize circulation, daylight, and spatial hierarchy to enhance efficiency and comfort. Working in the same BIM model as architects, our designers develop interiors in parallel with architecture. This is where vision becomes functional, a plan that balances purpose and possibility.",
+        "Detailing + Materiality",
+        "Design is realized through the details. LPAS focuses on how each surface, material, and fixture contributes to overall experience and long-term durability. We refine the palette and detailing to create environments that feel timeless, authentic, and easy to maintain. We produce complete construction drawings, specifications, and schedules that integrate seamlessly with architectural documents, all maintained in the same model.",
+        "Implementation + Activation",
+        "LPAS remains actively involved throughout construction and installation. We provide comprehensive FF&E services with complete transparency, never profiting from furniture sales. We review shop drawings, collaborate with builders, and resolve challenges quickly to maintain quality and schedule. Once complete, we evaluate how spaces perform, ensuring every detail supports the client's goals and daily experience."
+      ],
+      "links": [
+        {
+          "text": "01 Insight shapes direction Discovery + Immersion LPAS begins every interior project by learning about the organization,",
+          "href": "https://lpas.com/processes/discovery-immersion/?ids=1135%2C1136%2C1137%2C1138%2C1139"
+        },
+        {
+          "text": "02 Story translated into space Visioning + Concept Development From early insights, LPAS develops a design concept that ",
+          "href": "https://lpas.com/processes/visioning-concept-development-2/?ids=1135%2C1136%2C1137%2C1138%2C1139"
+        },
+        {
+          "text": "03 Spaces shaped by use Programming + Space Planning LPAS translates project goals into practical, flexible space plans.",
+          "href": "https://lpas.com/processes/programming-space-planning/?ids=1135%2C1136%2C1137%2C1138%2C1139"
+        },
+        {
+          "text": "04 Experience in every detail Detailing + Materiality Design is realized through the details. LPAS focuses on how each s",
+          "href": "https://lpas.com/processes/detailing-materiality/?ids=1135%2C1136%2C1137%2C1138%2C1139"
+        },
+        {
+          "text": "05 Design execution with care Implementation + Activation LPAS remains actively involved throughout construction and ins",
+          "href": "https://lpas.com/processes/implementation-activation/?ids=1135%2C1136%2C1137%2C1138%2C1139"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4483-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/Frame-4483-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4470-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/Frame-4470-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Process-slider-04-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/Process-slider-04-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4504-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/Frame-4504-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2026/01/Frame-4468-1000x1156-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/Frame-4468-1000x1156-c-default.webp",
+          "alt": "",
+          "w": 353,
+          "h": 408
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Specialized interiors, real impact\nSpecialized Interior Design Expertise\n\nMultifamily Housing Interiors:\nUnit design, amenity spaces, and common areas tailored to target demographics with market-aligned design that drives leasing.\n\nHigher Education Interiors:\nLearning spaces, residence halls, student centers, and administrative areas that support student success and campus life.\n\nSenior Living Interiors:\nAge-appropriate design with residential aesthetics and environments supporting dignity.\n\nAffordable Housing Interiors:\nCreating quality, dignified interiors within constrained budgets.\n\nCommercial Office Interiors:\nProductive work environments, collaborative spaces, and branded experiences that attract and retain talent.\n\nHospitality & Amenity Spaces:\nClubrooms, fitness centers, co-working spaces, and community areas designed to enhance resident experience and retention.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Specialized Interior Design Expertise"
+        }
+      ],
+      "paragraphs": [
+        "Multifamily Housing Interiors:\nUnit design, amenity spaces, and common areas tailored to target demographics with market-aligned design that drives leasing.",
+        "Higher Education Interiors:\nLearning spaces, residence halls, student centers, and administrative areas that support student success and campus life.",
+        "Senior Living Interiors:\nAge-appropriate design with residential aesthetics and environments supporting dignity.",
+        "Affordable Housing Interiors:\nCreating quality, dignified interiors within constrained budgets.",
+        "Commercial Office Interiors:\nProductive work environments, collaborative spaces, and branded experiences that attract and retain talent.",
+        "Hospitality & Amenity Spaces:\nClubrooms, fitness centers, co-working spaces, and community areas designed to enhance resident experience and retention."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockWysiwyg",
+      "classes": "blockWysiwyg",
+      "innerText": "Integrated. Transparent. Strategic.\nThe LPAS Interior Design Advantage\n\nFully Integrated with Architecture:\nOur interior designers work in the same BIM model as architects from day one, eliminating conflicts and ensuring coordination.\n\nNo Furniture Markups:\nWe don’t profit from product sales. Our design fees are separate, ensuring transparent costs and unbiased specifications.\n\nSustainable Design Commitment:\nWELL AP leadership brings expertise in healthy buildings, low-VOC products, and occupant wellbeing.\n\nMarket-Driven Design Intelligence:\nOur research-based approach ensures interiors align with target demographics and competitive positioning.\n\nSchedule Alignment:\nWe meet architectural milestones rather than creating separate interior packages, ensuring GMP sets are complete.\n\nFull-Service Capabilities:\nFrom concept through FF&E installation under one roof.",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "The LPAS Interior Design Advantage"
+        }
+      ],
+      "paragraphs": [
+        "Fully Integrated with Architecture:\nOur interior designers work in the same BIM model as architects from day one, eliminating conflicts and ensuring coordination.",
+        "No Furniture Markups:\nWe don’t profit from product sales. Our design fees are separate, ensuring transparent costs and unbiased specifications.",
+        "Sustainable Design Commitment:\nWELL AP leadership brings expertise in healthy buildings, low-VOC products, and occupant wellbeing.",
+        "Market-Driven Design Intelligence:\nOur research-based approach ensures interiors align with target demographics and competitive positioning.",
+        "Schedule Alignment:\nWe meet architectural milestones rather than creating separate interior packages, ensuring GMP sets are complete.",
+        "Full-Service Capabilities:\nFrom concept through FF&E installation under one roof."
+      ],
+      "links": [],
+      "images": [],
+      "videos": []
+    },
+    {
+      "control": "BlockProjectsHighlight",
+      "classes": "blockProjectsHighlight",
+      "innerText": "Highlighted projects\nAll Interiors\n17th & Broadway Interiors\nOakland, CA\nCapitol 650 Interiors\nMilpitas, CA\nAya Interiors\nFremont, CA\nMcClellan Jet Services FBO\nMcClellan Park, CA\n800J Lofts Lobby Renovation\nSacramento, CA\nNovo Interiors\nMountain View, CA\nView all Interiors\nAll Interiors",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Highlighted projects"
+        }
+      ],
+      "paragraphs": [
+        "View all Interiors"
+      ],
+      "links": [
+        {
+          "text": "All Interiors",
+          "href": "https://lpas.com/portfolio/?market=interiors"
+        },
+        {
+          "text": "17th & Broadway Interiors Oakland, CA",
+          "href": "https://lpas.com/portfolio/17th-broadway-interiors/"
+        },
+        {
+          "text": "Capitol 650 Interiors Milpitas, CA",
+          "href": "https://lpas.com/portfolio/capitol-650-interiors/"
+        },
+        {
+          "text": "Aya Interiors Fremont, CA",
+          "href": "https://lpas.com/portfolio/aya-interiors/"
+        },
+        {
+          "text": "McClellan Jet Services FBO McClellan Park, CA",
+          "href": "https://lpas.com/portfolio/mcclellan-jet-services-fbo/"
+        },
+        {
+          "text": "800J Lofts Lobby Renovation Sacramento, CA",
+          "href": "https://lpas.com/portfolio/800j-lofts-lobby-renovation/"
+        },
+        {
+          "text": "Novo Interiors Mountain View, CA",
+          "href": "https://lpas.com/portfolio/novo-interiors/"
+        },
+        {
+          "text": "All Interiors",
+          "href": "https://lpas.com/portfolio/?market=interiors"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/68_17th-Broadway-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/68_17th-Broadway-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/13b_Capitol-650-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/13b_Capitol-650-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/04_AYA-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/04_AYA-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/08_McClellan-Jet-Services-FBO_FULLSIZE-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/08_McClellan-Jet-Services-FBO_FULLSIZE-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/02_800J-Lobby-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/02_800J-Lobby-1280x800-c-default.webp",
+          "alt": "",
+          "w": 328,
+          "h": 205
+        },
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/12/01_NOVO-1280x800-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/01_NOVO-1280x800-c-default.webp",
+          "alt": "",
+          "w": 665,
+          "h": 415
+        }
+      ],
+      "videos": []
+    },
+    {
+      "control": "NavigationFooter",
+      "classes": "navigationFooter",
+      "innerText": "Our Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nExplore our\nPortfolio\nOur Focus\nHousing\nInteriors\nHigher Education\nCivic\nCommercial\nPortfolio\nLatest Updates\nAbout\nCulture\nCareers\nContact\nInstagram\nLinkedin\nFacebook\nSacramento\n\n723 S Street, Suite 150\nSacramento, CA 95811\n\n916 443 0335\nE-mail\nOakland\n\n10 Clay Street, Suite 250\nOakland, CA 94607\n\n415 213 0335\nE-mail\n© 2026. All rights reserved.\nBack to top\nWebsite by\nNaam",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Sacramento"
+        },
+        {
+          "tag": "H2",
+          "text": "Oakland"
+        }
+      ],
+      "paragraphs": [
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Our Focus",
+        "Our Focus",
+        "Housing",
+        "Interiors",
+        "Higher  Education",
+        "Civic",
+        "Commercial",
+        "Portfolio",
+        "Latest Updates",
+        "About",
+        "Culture",
+        "Careers",
+        "Contact",
+        "723 S Street, Suite 150\nSacramento, CA 95811",
+        "10 Clay Street, Suite 250\nOakland, CA 94607"
+      ],
+      "links": [
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "",
+          "href": "https://lpas.com"
+        },
+        {
+          "text": "Housing",
+          "href": "https://lpas.com/markets/housing/"
+        },
+        {
+          "text": "Interiors",
+          "href": "https://lpas.com/markets/interiors/"
+        },
+        {
+          "text": "Higher Education",
+          "href": "https://lpas.com/markets/higher-education/"
+        },
+        {
+          "text": "Civic",
+          "href": "https://lpas.com/markets/civic/"
+        },
+        {
+          "text": "Commercial",
+          "href": "https://lpas.com/markets/commercial/"
+        },
+        {
+          "text": "Portfolio",
+          "href": "https://lpas.com/portfolio/"
+        },
+        {
+          "text": "Latest Updates",
+          "href": "https://lpas.com/latest/"
+        },
+        {
+          "text": "About",
+          "href": "https://lpas.com/about/"
+        },
+        {
+          "text": "Culture",
+          "href": "https://lpas.com/culture/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://lpas.com/careers/"
+        },
+        {
+          "text": "Contact",
+          "href": "https://lpas.com/contact/"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/lpas.design"
+        },
+        {
+          "text": "Linkedin",
+          "href": "https://www.linkedin.com/company/lpas-architecture-and-design"
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/LPAS-Architecture-Design-200127570010089"
+        },
+        {
+          "text": "723 S Street, Suite 150 Sacramento, CA 95811",
+          "href": "https://maps.google.com/?q=%3Cp%3E723%20S%20Street%2C%20Suite%20150%3Cbr%20%2F%3E%0ASacramento%2C%20CA%2095811%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "916 443 0335",
+          "href": "tel:916-443-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "10 Clay Street, Suite 250 Oakland, CA 94607",
+          "href": "https://maps.google.com/?q=%3Cp%3E10%20Clay%20Street%2C%20Suite%20250%3Cbr%20%2F%3E%0AOakland%2C%20CA%2094607%3C%2Fp%3E%0A"
+        },
+        {
+          "text": "415 213 0335",
+          "href": "tel:415-213-0335"
+        },
+        {
+          "text": "E-mail",
+          "href": "mailto:ContactUs@lpas.com"
+        },
+        {
+          "text": "Website by Naam",
+          "href": "https://studionaam.com"
+        }
+      ],
+      "images": [
+        {
+          "remote": "https://lpas.com/wp-content/uploads/resized/2025/10/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "local": "/sites/lpas-com-76f4f1fd/markets-interiors-6cba84fd/images/12_Block-52_Madison-by-Lennar-1600x1091-c-default.webp",
+          "alt": "",
+          "w": 1440,
+          "h": 981
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

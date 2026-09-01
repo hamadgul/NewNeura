@@ -1,0 +1,345 @@
+# CollectionTeam — extracted computed styles
+
+Auto-generated from `getComputedStyle()` at 1440px via the block extraction
+pass. Every value below is measured, not estimated. Where more than one
+instance is listed, diff them to see which values are content-driven props
+and which are fixed to the block.
+
+---
+
+# Instance on `https://lpas.com/about/`
+
+## CollectionTeam
+
+- **`<section.collectionTeam>`** — 1440×4309
+  - `fontSize: 16px; fontWeight: 400; lineHeight: 21.6px; color: rgb(17, 17, 17); backgroundColor: rgb(248, 248, 248); padding: 0px 0px 100px; margin: 100px 0px 0px; width: 1440px; height: 4209.3px; display: grid; gap: 0px 10px; columnGap: 10px; gridTemplateColumns: [full-start] 40px [main-start] 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px 57.5px [main-end] 40px [full-end]; gridTemplateRows: 408.188px 3801.11px; textAlign: start; flex: 0 1 auto`
+  - **`<div.filterApi>`** — 1340×258
+    - `margin: 150px 0px 0px; width: 1340px; height: 258.188px; display: grid; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 164.594px 93.5938px; gridColumn: 2 / -2; gridRow: 1; gridArea: 1 / 2 / auto / -2`
+    - **`<div.filterApi__header>`** — 1340×100
+      - `margin: 0px 0px 65px; width: 1340px; height: 99.5938px; display: grid; gridTemplateRows: 57.7969px 41.7969px; gridColumn: main; gridRow: 1; gridArea: 1 / main`
+      - **`<div.filterApi__headerTagline.font-XS>`** — 1340×28
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); padding: 0px 0px 10px; margin: 0px 0px 30px; width: 1340px; height: 16.7969px; display: block; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; borderBottom: 1px solid rgb(214, 214, 214)`
+        - **`<span>`** — 50×14
+          - text: `"Our team"`
+          - `display: inline`
+      - **`<div.filterApi__headerIntro.font-L>`** — 1273×42
+        - `fontSize: 38px; lineHeight: 41.8px; width: 1272.5px; height: 41.7969px; display: block; gridColumn: 1 / -2; gridArea: auto / 1 / auto / -2`
+        - **`<h2>`** — 1273×42
+          - text: `"People shape the spaces we design, and how we think."`
+          - `width: 1272.5px; height: 41.7969px; display: block`
+    - **`<div.filterApi__filterWrapper>`** — 1340×94
+      - `width: 1340px; height: 93.5938px; display: grid; gridTemplateRows: 37.5938px 1px 55px; gridColumn: 1 / -1; gridRow: 2; gridArea: 2 / 1 / auto / -1`
+      - **`<div.filterApi__Overflow.filterApi__Overflow--one>`** — 1340×38
+        - `width: 1340px; height: 37.5938px; display: block; gridColumn: 1 / -1; gridRow: 1; gridArea: 1 / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+        - **`<div.filterApi__Wrapper>`** — 1340×38
+          - `width: 1340px; height: 37.5938px; display: flex; gap: 30px; rowGap: 30px; columnGap: 30px; overflow: scroll auto; overflowX: scroll; whiteSpace: nowrap`
+          - **`<button.filterApi__item>`** — 17×38
+            - `color: rgb(38, 38, 38); padding: 0px 0px 15px; width: 17.0312px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(38, 38, 38); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 81×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 80.5938px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 89×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 89.2812px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+          - **`<button.filterApi__item>`** — 61×38
+            - `color: rgb(89, 86, 86); padding: 0px 0px 15px; width: 61.4062px; height: 37.5938px; display: flex; alignItems: flex-start; gap: 2px; rowGap: 2px; columnGap: 2px; borderBottom: 1px solid rgb(214, 214, 214); zIndex: 3; transition: color 0.3s; cursor: pointer; textAlign: center`
+      - **`<div.filterApi__Line>`** — 1340×1
+        - `backgroundColor: rgb(214, 214, 214); margin: -1px 0px 0px; width: 1340px; height: 1px; display: block; gridColumn: 1 / -1; gridArea: auto / 1 / auto / -1; zIndex: 2`
+      - **`<div.filterApi__Overflow>`** — 1340×55
+        - `width: 1340px; height: 55px; display: block; gridColumn: 1 / -1; gridRow: 3; gridArea: 3 / 1 / auto / -1; overflow: hidden; overflowX: hidden; overflowY: hidden; position: relative`
+  - **`<div.collectionTeam__cardWrapper>`** — 1340×3776
+    - `margin: 25px 0px 0px; width: 1340px; height: 3776.11px; minHeight: 720px; display: grid; gap: 50px normal; rowGap: 50px; gridTemplateColumns: subgrid [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []; gridTemplateRows: 371.391px 371.391px 371.391px 371.391px 371.391px 371.391px 371.391px 388.188px 388.188px; gridColumn: main; gridRow: 2; gridArea: 2 / main`
+    - **`<template>`** — 0×0
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/tom-hall/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; clipPath: polygon(20px 0px, 100% 0px, 100% 100%, 0px 100%, 0px 20px); objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Tom-Hall_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Tom Hall`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Tom Hall"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Associate, Project Architect"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/michael-rhoades/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Michael-Rhoades_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Michael Rhoades`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Michael Rhoades"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Associate, Project Manager"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/melissa-sabala/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Melissa-Sabala_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Melissa Sabala`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Melissa Sabala"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Payroll & Project Accountant"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/ron-metzker/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Ron-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Ron Metzker`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Ron Metzker"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Vice President, Principal"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/bryan-harry/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Bryan-Harry_LPAS_SMALL-1280x1600-c-default.jpg` (natural 1440×1800, alt `Bryan Harry`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Bryan Harry"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Associate Principal, Senior Project Designer"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/briana-cepeda/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0px 100%); objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Briana-Cepeda_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Briana Cepeda`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Briana Cepeda"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Bookkeeper"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard.memberCard--space>`** — 260×371
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; opacity: 0`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×0
+          - img: `https://lpas.com/about/` (natural 0×0, alt ``)
+          - `width: 260px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×0
+        - `margin: 8px 0px 0px; width: 260px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×0
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/ray-welter/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; clipPath: polygon(20px 0px, 100% 0px, 100% 100%, 0px 100%, 0px 20px); objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Ray-Welter_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Ray Welter`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Ray Welter"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Associate, Senior Project Architect"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/glenn-ovitt/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/04/Glenn_Full-Res-copy-1280x1600-c-default.jpg` (natural 1440×1800, alt `Glenn Ovitt`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Glenn Ovitt"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Associate, Project Manager"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/yovani-trujillo/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Yovani-Trujillo_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Yovani Trujillo`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Yovani Trujillo"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Job Captain"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/craig-speck/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Craig-Speck_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Craig Speck`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Craig Speck"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Job Captain"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/heidi-roseler-kerby/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Heidi-Roseler-Kerby_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Heidi Roseler-Kerby`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Heidi Roseler-Kerby"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Project Administrator"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/morgan-tauzer/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0px 100%); objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Morgan-Tauzer_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Morgan Tauzer`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Morgan Tauzer"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Project Coordinator"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard.memberCard--space>`** — 260×371
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; opacity: 0`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×0
+          - img: `https://lpas.com/about/` (natural 0×0, alt ``)
+          - `width: 260px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×0
+        - `margin: 8px 0px 0px; width: 260px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×0
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/mervin-villar/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; clipPath: polygon(20px 0px, 100% 0px, 100% 100%, 0px 100%, 0px 20px); objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Mervin-Villar_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Mervin Villar`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Mervin Villar"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Construction Administrator"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/ryan-townsend/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/02/Ryan-Townsend_LPAS.jpg-1280x1600-c-default.jpg` (natural 1440×1800, alt `Ryan Townsend`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Ryan Townsend"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Associate Principal, Senior Designer"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/christian-montanez/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; clipPath: polygon(0px 0px, 100% 0px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0px 100%); objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Christian-Montanez_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Christian Montanez`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Christian Montanez"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Job Captain"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard.memberCard--space>`** — 260×371
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; opacity: 0`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×0
+          - img: `https://lpas.com/about/` (natural 0×0, alt ``)
+          - `width: 260px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×0
+        - `margin: 8px 0px 0px; width: 260px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×0
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/sophie-metzker/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; clipPath: polygon(20px 0px, 100% 0px, 100% 100%, 0px 100%, 0px 20px); objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Sophie-Metzker_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Sophie Metzker`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Sophie Metzker"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Accounting Assistant"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/nick-shanks/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Nick-Shanks_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Nick Shanks`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Nick Shanks"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Project Architect"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/angelique-dionisio/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Angelique-Dionisio_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Angelique Dionisio`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Angelique Dionisio"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Interior Designer"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/shaahin-davami/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Shaahin-Davami_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Shaahin Davami`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Shaahin Davami"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Job Captain"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+    - **`<a.memberCard>`** — 260×371 · href `https://lpas.com/team/pat-walton/`
+      - `width: 260px; height: 371.391px; display: flex; flexDirection: column; gridColumn: span 4; gridArea: auto / span 4; transform: matrix(1, 0, 0, 1, 0, 0); cursor: pointer`
+      - **`<div.memberCard__imageWrapper>`** — 260×325
+        - `width: 260px; height: 325px; aspectRatio: 4 / 5; display: block; overflow: clip; overflowX: clip; overflowY: clip; objectFit: cover`
+        - **`<img.memberCard__image>`** — 265×332
+          - img: `https://lpas.com/wp-content/uploads/2026/01/Pat-Walton_LPAS_FULLSIZE-1280x1600-c-default.jpg` (natural 1440×1800, alt `Pat Walton`)
+          - `width: 260px; height: 325px; display: block; transform: matrix(1.02, 0, 0, 1.02, 0, 0); transition: transform 0.3s, filter 0.3s; filter: grayscale(1)`
+      - **`<h3.memberCard__name>`** — 260×22
+        - text: `"Pat Walton"`
+        - `margin: 8px 0px 0px; width: 260px; height: 21.5938px; display: block`
+      - **`<div.memberCard__department.font-XS>`** — 260×17
+        - text: `"Project Coordinator"`
+        - `fontSize: 12px; lineHeight: 16.8px; color: rgb(89, 86, 86); width: 260px; height: 16.7969px; display: flow-root; overflow: hidden; overflowX: hidden; overflowY: hidden; textOverflow: ellipsis; webkitLineClamp: 2`
+  - **`<div.collectionTeam__cardSize>`** — 40×408
+    - `width: 40px; height: 408.188px; display: block`
