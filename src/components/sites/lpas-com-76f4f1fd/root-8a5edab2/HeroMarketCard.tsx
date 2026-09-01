@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import type { CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { cn } from "@/lib/utils";
+import { REVEAL_OBSERVER_INIT } from "../shared/reveal";
 import type { HeroMarketCard as HeroMarketCardData } from "@/types/lpas";
 import { ButtonCircle } from "../shared/buttons";
 import { ChevronIcon } from "../shared/icons";
@@ -37,6 +39,40 @@ export function HeroMarketCard({
   dimmed = false,
   horizontal,
 }: HeroMarketCardProps) {
+  const articleRef = useRef<HTMLElement>(null);
+  const [selfRevealed, setSelfRevealed] = useState(false);
+  const reduceMotion = usePrefersReducedMotion();
+
+  /*
+    On the pinned strip the parent owns the reveal, because "entered" there
+    means horizontal travel, not vertical scroll. In the stacked band each card
+    has to watch itself: the whole strip is one flow element, so the parent has
+    no per-card signal to give.
+
+    Measured on lpas.com at 390px, each card's title fades in on its own as that
+    card climbs the viewport — card 3 runs 0.25 → 1.00 across scrollY 800-1360,
+    card 4 across 1040-1600, card 5 across 1280-1760. Passing a hardcoded
+    `revealed` here (what this did before) meant the mobile cards were simply
+    always on, and the homepage had no reveal at all on a phone.
+  */
+  useEffect(() => {
+    if (horizontal || reduceMotion) return;
+    const node = articleRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setSelfRevealed(true);
+        observer.disconnect(); // one-shot, like every reveal on the source
+      }
+    }, REVEAL_OBSERVER_INIT);
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [horizontal, reduceMotion]);
+
+  const contentRevealed = horizontal ? revealed : selfRevealed || reduceMotion;
+
   // Measured: the image starts 1.30x oversized and eases down to exactly fill
   // its frame. The rate slows as it approaches 1.0, so progress is shaped with
   // a ~1.7 power curve — a linear ramp visibly overshoots mid-travel.
@@ -49,6 +85,7 @@ export function HeroMarketCard({
 
   return (
     <article
+      ref={articleRef}
       className={cn(
         "homeHero__card relative -mr-[2px] grid overflow-hidden text-(--marketContentColor) transition-[filter] duration-500",
         horizontal
@@ -122,7 +159,7 @@ export function HeroMarketCard({
                   className={cn(
                     "homeHero__subPageLink font-S flex items-center justify-between border-b border-current/40 pb-[8px] transition-opacity duration-500",
                     horizontal ? "w-[calc(50%-5px)]" : "w-full",
-                    revealed ? "opacity-100" : "opacity-0",
+                    contentRevealed ? "opacity-100" : "opacity-0",
                   )}
                   style={{ transitionDelay: `${i * 60}ms` }}
                 >
@@ -144,7 +181,7 @@ export function HeroMarketCard({
               // The band puts the title at the top of the card, not above the
               // count at the bottom the way the pinned strip does.
               horizontal ? "row-start-2" : "col-start-1 row-start-1 self-start",
-              revealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
+              contentRevealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
             )}
           >
             {/*
@@ -171,7 +208,7 @@ export function HeroMarketCard({
                 ? "col-start-2 max-w-[160px] justify-self-end self-end text-right"
                 : "col-start-1 mt-[30px] justify-self-start self-end text-left",
               !horizontal && card.subPages && "hidden",
-              revealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
+              contentRevealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
             )}
           >
             {card.subtitle[0]}
@@ -186,7 +223,12 @@ export function HeroMarketCard({
             and only on the cards that show a subtitle rather than sub-pages.
           */}
           {!horizontal && !card.subPages ? (
-            <div className="homeHero__cardImage--small relative col-start-1 row-start-2 row-end-4 mt-[30px] ml-[53%] h-[68px] w-[100px] justify-self-start overflow-hidden">
+            <div
+              className={cn(
+                "homeHero__cardImage--small relative col-start-1 row-start-2 row-end-4 mt-[30px] ml-[53%] h-[68px] w-[100px] justify-self-start overflow-hidden transition-all delay-100 duration-600 ease-out",
+                contentRevealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
+              )}
+            >
               <Image
                 src={card.image.src}
                 alt=""
@@ -202,7 +244,7 @@ export function HeroMarketCard({
             className={cn(
               "homeHero__cardCount font-XS col-start-1 row-start-3 self-end transition-all delay-75 duration-600 ease-out",
               horizontal ? "pb-[30px] pt-[10px]" : "pt-[10px]",
-              revealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
+              contentRevealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
             )}
           >
             {card.index} / {card.total}

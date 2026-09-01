@@ -122,8 +122,16 @@ export function HomeHero() {
 
   const cards = HERO_CARDS.map((card, i) => {
     if (!horizontal || !metrics) {
+      // `revealed` is the pin's own signal and means nothing off the strip —
+      // the stacked card watches itself. See HeroMarketCard.
       return (
-        <HeroMarketCard key={card.slug} card={card} progress={1} revealed horizontal={false} />
+        <HeroMarketCard
+          key={card.slug}
+          card={card}
+          progress={1}
+          revealed={false}
+          horizontal={false}
+        />
       );
     }
     const left = metrics.introWidth + i * metrics.cardAdvance - metrics.travel * progress;
