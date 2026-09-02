@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { cn } from "@/lib/utils";
-import { REVEAL_OBSERVER_INIT } from "../shared/reveal";
+import { REVEAL_OBSERVER_INIT, REVEAL_TRIGGER_FRACTION } from "../shared/reveal";
 import type { HeroMarketCard as HeroMarketCardData } from "@/types/lpas";
 import { ButtonCircle } from "../shared/buttons";
 import { ChevronIcon } from "../shared/icons";
@@ -40,7 +40,13 @@ export function HeroMarketCard({
   horizontal,
 }: HeroMarketCardProps) {
   const articleRef = useRef<HTMLElement>(null);
-  const [selfRevealed, setSelfRevealed] = useState(false);
+  // Starts REVEALED, and is hidden again from the client before first paint.
+  // The source does the same thing: its markup ships visible and GSAP applies
+  // the hidden state, so a device that never runs the JS still shows the copy.
+  // Seeding this `false` instead put `opacity: 0` into the server HTML, which
+  // means a blank card for as long as hydration takes — and a permanently blank
+  // one if it never lands.
+  const [selfRevealed, setSelfRevealed] = useState(true);
   const reduceMotion = usePrefersReducedMotion();
 
   /*
@@ -55,10 +61,20 @@ export function HeroMarketCard({
     `revealed` here (what this did before) meant the mobile cards were simply
     always on, and the homepage had no reveal at all on a phone.
   */
-  useEffect(() => {
+  // `useLayoutEffect` so the hide lands in the same commit as hydration and is
+  // never painted in its visible state — `useEffect` here would flash the copy
+  // in, then blink it out before fading it back.
+  useIsomorphicLayoutEffect(() => {
     if (horizontal || reduceMotion) return;
     const node = articleRef.current;
     if (!node) return;
+
+    // Only cards that have not reached the trigger line yet get hidden;
+    // anything already past it stays as rendered, so nothing above the fold
+    // blinks on load.
+    const triggerLine = window.innerHeight * REVEAL_TRIGGER_FRACTION;
+    if (node.getBoundingClientRect().top <= triggerLine) return;
+    setSelfRevealed(false);
 
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -254,3 +270,9 @@ export function HeroMarketCard({
     </article>
   );
 }
+
+/**
+ * `useLayoutEffect` that does not warn when this client component is rendered
+ * on the server, where layout effects never run and there is nothing to hide.
+ */
+const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;

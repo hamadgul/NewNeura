@@ -32,3 +32,12 @@ export const REVEAL_OBSERVER_INIT: IntersectionObserverInit = {
   threshold: 0,
   rootMargin: "0px 0px -25% 0px",
 };
+
+/**
+ * The same 75% line expressed as a number, for the components that have to test
+ * an element's position directly rather than hand the job to the observer —
+ * e.g. deciding at hydration time whether an element is still below the
+ * trigger and should be hidden at all. Keep the two in step.
+ */
+export const REVEAL_TRIGGER_FRACTION = 0.75;
+
