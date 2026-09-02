@@ -92,9 +92,13 @@ export function PageTransition() {
       return;
     }
     navigating.current = false;
+    // HOLD_MS is measured from the moment the swap lands, not from the click:
+    // this effect only runs once `pathname` has already changed, so the
+    // outgoing fade is over by now and subtracting LEAVE_MS here would cut the
+    // source's 450ms transparent hold down to 150ms.
     const id = window.setTimeout(
       () => root.classList.remove("is-changing", "is-leaving", "is-rendering"),
-      HOLD_MS - LEAVE_MS,
+      HOLD_MS,
     );
     return () => window.clearTimeout(id);
   }, [pathname]);

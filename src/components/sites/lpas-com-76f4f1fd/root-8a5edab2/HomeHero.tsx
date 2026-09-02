@@ -159,7 +159,13 @@ export function HomeHero() {
         <div className="h-screen">
           <HeroIntroPanel />
         </div>
-        <div className="homeHero__categories flex w-full flex-col">{cards}</div>
+        <div className="homeHero__categories flex w-full flex-col">
+          {cards}
+          {/* The source keeps the trailing white panel at both widths — 200px
+              tall under the last stacked card, a full card-width of run-off on
+              the strip. It used to live only in the horizontal branch. */}
+          <div className="homeHero__cardLast h-[200px] w-full shrink-0 bg-white" aria-hidden="true" />
+        </div>
       </section>
     );
   }

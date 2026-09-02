@@ -279,7 +279,11 @@ function ProjectHighlight({ highlight }: { highlight: CollectionProjectsHighligh
       href={highlight.href}
       className="projectHighlight group col-start-2 col-end-[-2] mb-[50px] grid cursor-pointer grid-cols-subgrid overflow-hidden"
     >
-      <div className="projectHighlight__image col-span-full row-start-1 h-[960px] max-h-[1000px] overflow-hidden">
+      {/* Measured on the live site at six widths, the banner image is a flat
+          66.67vw: 262px@393, 400px@600, 512px@768, 683px@1024, 854px@1280,
+          960px@1440. The old hard-coded 960px was the desktop measurement
+          applied at every width, making the card 3.7x too tall on a phone. */}
+      <div className="projectHighlight__image col-span-full row-start-1 h-[66.667vw] max-h-[1000px] overflow-hidden">
         <Image
           src={highlight.image.src}
           alt={highlight.image.alt}

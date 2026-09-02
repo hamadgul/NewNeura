@@ -34,6 +34,7 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
+import { releaseIntro } from "../shared/introGate";
 import { PRELOADER_WORDS } from "./content";
 
 /** ms before the first capital starts to arrive. */
@@ -61,17 +62,23 @@ export function Preloader() {
 
   useEffect(() => {
     // Under reduced motion the component returns null below without ever
-    // scheduling these, so the page is simply there on arrival.
-    if (reduceMotion) return;
+    // scheduling these, so the page is simply there on arrival — and the hero
+    // behind it must not sit waiting for a curtain that never rises.
+    if (reduceMotion) {
+      releaseIntro();
+      return;
+    }
 
     const timers = [
       window.setTimeout(() => setPhase("expanded"), EXPAND_START_MS),
       window.setTimeout(() => setPhase("wordsOut"), WORDS_OUT_MS),
       window.setTimeout(() => setPhase("leaving"), WORDS_OUT_MS + WORDS_OUT_DURATION_MS),
-      window.setTimeout(
-        () => setPhase("done"),
-        WORDS_OUT_MS + WORDS_OUT_DURATION_MS + FADE_MS,
-      ),
+      window.setTimeout(() => {
+        setPhase("done");
+        // The hero's own reveal is chained to this moment, not to its mount —
+        // see introGate.ts.
+        releaseIntro();
+      }, WORDS_OUT_MS + WORDS_OUT_DURATION_MS + FADE_MS),
     ];
     return () => timers.forEach(window.clearTimeout);
   }, [reduceMotion]);

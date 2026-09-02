@@ -155,8 +155,11 @@ export function GlobalLatestOverview() {
                 // date+button row. Tablet/desktop: a subgrid chained down
                 // from the `<ul>` so title/excerpt/date align to the exact
                 // column lines the spec measured.
-                "listItem__link group grid grid-cols-[1fr_auto] items-center gap-x-[12px] gap-y-[8px]",
-                "md:col-span-full md:grid-cols-subgrid md:h-[27px] md:gap-y-0",
+                // gap-y stays 0: the three mobile rows carry their own
+                // measured offsets (title, +4px excerpt, +8px date), and a
+                // row gap on top of them overshot the source's 103px row.
+                "listItem__link group grid grid-cols-[1fr_auto] items-center gap-x-[12px] gap-y-0",
+                "md:col-span-full md:grid-cols-subgrid md:h-[27px]",
               )}
               onPointerEnter={(event) => handleRowEnter(index, event)}
               onPointerMove={handleRowMove}
@@ -171,11 +174,15 @@ export function GlobalLatestOverview() {
                 {item.title}
               </h3>
 
-              {/* Dropped below xl: at tablet the row is title + date only. */}
+              {/* Visible on mobile (measured: a 19px line under the title, 4px
+                  clear of it, which is 20px of the source's 103px row height).
+                  Dropped at tablet, where the row is title + date only, and
+                  back in its own column from xl. */}
               <p
                 className={cn(
-                  "listItem__excerpt hidden font-S text-[#747474] transition-colors duration-300",
-                  "xl:block xl:truncate xl:[grid-column:11/18] xl:group-hover:text-[#111111]",
+                  "listItem__excerpt font-S col-span-full row-start-2 mt-[4px] truncate text-[#747474] transition-colors duration-300",
+                  "md:hidden",
+                  "xl:row-start-auto xl:mt-0 xl:block xl:[grid-column:11/18] xl:group-hover:text-[#111111]",
                 )}
               >
                 {item.excerpt}
@@ -183,8 +190,9 @@ export function GlobalLatestOverview() {
 
               <span
                 className={cn(
-                  "listItem__date col-start-1 row-start-2 font-XS font-semibold text-[#111111]",
-                  "md:col-start-auto md:row-start-auto md:text-right md:[grid-column:-4/-3]",
+                  "listItem__date col-start-1 row-start-3 mt-[8px] font-XS font-semibold text-[#111111]",
+                  "md:col-start-auto md:row-start-2 md:mt-0 md:text-right md:[grid-column:-4/-3]",
+                  "xl:row-start-auto",
                 )}
               >
                 {item.date}
@@ -192,8 +200,9 @@ export function GlobalLatestOverview() {
 
               <div
                 className={cn(
-                  "listItem__button col-start-2 row-start-2 justify-self-end",
-                  "md:col-start-auto md:row-start-auto md:[grid-column:-2/-1]",
+                  "listItem__button col-start-2 row-start-3 justify-self-end",
+                  "md:col-start-auto md:row-start-2 md:[grid-column:-2/-1]",
+                  "xl:row-start-auto",
                 )}
               >
                 {/* asStatic: the row itself is already the anchor, so this

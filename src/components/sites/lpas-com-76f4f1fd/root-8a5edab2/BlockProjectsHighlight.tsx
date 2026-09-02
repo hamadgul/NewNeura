@@ -26,7 +26,11 @@ export function BlockProjectsHighlight() {
           <div className="portfolioFilter__title whitespace-nowrap text-[#111111]">
             See our focus cases
           </div>
-          <div className="portfolioFilter__itemWrapper flex gap-[30px] overflow-x-auto px-[15px]">
+          {/* The source clips this row in its own `__wrapperOverflow` box. As
+              a bare grid item the scroller takes its content width (582px in a
+              343px column) because grid items default to `min-width: auto`. */}
+          <div className="portfolioFilter__wrapperOverflow w-full min-w-0 overflow-x-auto md:w-auto">
+          <div className="portfolioFilter__itemWrapper flex gap-[30px]">
             {PORTFOLIO_FILTERS.map((filter) => (
               <a
                 key={filter.label}
@@ -45,12 +49,13 @@ export function BlockProjectsHighlight() {
               </a>
             ))}
           </div>
+          </div>
         </div>
       </header>
 
       <div className="blockProjectsHighlight__layout blockProjectsHighlight__layoutOne col-start-2 col-end-[-2] grid grid-cols-subgrid gap-y-[10px] pb-[50px] md:gap-y-[20px]">
         <ImageCard project={PROJECTS_ROW_ONE[0]} className="col-span-full md:col-span-10" />
-        <div className="blockProjectsHighlight__smallImagesWrapper col-span-full flex flex-row gap-[10px] md:col-span-10">
+        <div className="blockProjectsHighlight__smallImagesWrapper col-span-full flex flex-col gap-[50px] md:col-span-10 md:flex-row md:gap-[10px]">
           <ImageCard project={PROJECTS_ROW_ONE[1]} />
           <ImageCard project={PROJECTS_ROW_ONE[2]} />
         </div>
@@ -58,7 +63,7 @@ export function BlockProjectsHighlight() {
 
       {/* Row two mirrors row one: small-card wrapper first, large card second. */}
       <div className="blockProjectsHighlight__layout blockProjectsHighlight__layoutTwo col-start-2 col-end-[-2] grid grid-cols-subgrid gap-y-[10px] md:gap-y-[20px]">
-        <div className="blockProjectsHighlight__smallImagesWrapper col-span-full order-2 flex flex-row gap-[10px] md:order-1 md:col-span-10">
+        <div className="blockProjectsHighlight__smallImagesWrapper col-span-full order-2 flex flex-col gap-[50px] md:order-1 md:col-span-10 md:flex-row md:gap-[10px]">
           <ImageCard project={PROJECTS_ROW_TWO[0]} />
           <ImageCard project={PROJECTS_ROW_TWO[1]} />
         </div>
