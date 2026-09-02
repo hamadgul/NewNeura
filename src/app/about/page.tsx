@@ -1,74 +1,64 @@
 import {
-  ABOUT_CANONICAL,
   ABOUT_HEADER,
   ABOUT_INTRO,
   ABOUT_MEDIA,
-  ABOUT_OG_IMAGE,
-  ABOUT_TITLE,
-  ABOUT_WYSIWYG_BODY,
-} from "@/components/sites/lpas-com-76f4f1fd/about-4f10f17b/content";
-import { MainNavigation } from "@/components/sites/lpas-com-76f4f1fd/root-8a5edab2/MainNavigation";
-import { NavigationFooter } from "@/components/sites/lpas-com-76f4f1fd/root-8a5edab2/NavigationFooter";
-import { BlockHeaderGeneral } from "@/components/sites/lpas-com-76f4f1fd/shared/blocks/BlockHeaderGeneral";
-import { BlockIntroDouble } from "@/components/sites/lpas-com-76f4f1fd/shared/blocks/BlockIntroDouble";
-import { BlockMediaDoubleQuote } from "@/components/sites/lpas-com-76f4f1fd/shared/blocks/BlockMediaDoubleQuote";
-import { BlockWysiwyg } from "@/components/sites/lpas-com-76f4f1fd/shared/blocks/BlockWysiwyg";
-import { CollectionTeam } from "@/components/sites/lpas-com-76f4f1fd/shared/blocks/CollectionTeam";
+  ABOUT_WYSIWYG,
+  META,
+} from "@/components/site/about/content";
+import { MainNavigation } from "@/components/site/home/MainNavigation";
+import { NavigationFooter } from "@/components/site/home/NavigationFooter";
+import { BlockHeaderGeneral } from "@/components/site/shared/blocks/BlockHeaderGeneral";
+import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
+import { BlockMediaDoubleQuote } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
+import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
 
 import type { Metadata } from "next";
 
 /**
- * The live title is "About - LPAS Architecture", which the root layout's
- * `"%s - LPAS Architecture"` template builds from the bare stem — so, unlike
- * the homepage, this route does *not* need an absolute title.
- *
- * No `description`: the source serves none on this page (see content.ts).
+ * `title` is the bare stem, so the root layout's "%s — NeuraGul" template
+ * produces "About — NeuraGul". `openGraph.title` does not inherit that template,
+ * so the resolved string is spelled out.
  */
 export const metadata: Metadata = {
-  title: ABOUT_TITLE,
-  alternates: { canonical: ABOUT_CANONICAL },
+  title: META.title,
+  description: META.description,
+  alternates: { canonical: META.canonical },
   openGraph: {
-    title: "About - LPAS Architecture",
-    url: "https://lpas.com/about/",
-    images: [ABOUT_OG_IMAGE],
+    title: `${META.title} — NeuraGul`,
+    description: META.description,
+    url: `https://neuragul.com${META.canonical}`,
   },
 };
 
 /**
- * lpas.com `/about/`.
+ * `/about/` — who you'd be working with.
  *
- * Block order is the capture's own section order (RECON.json, `sectionCount: 6`
- * counting the two navigation blocks):
- *   BlockHeaderGeneral → BlockIntroDouble → BlockMediaDoubleQuote →
- *   BlockWysiwyg → CollectionTeam
+ * Four blocks:
+ *   BlockHeaderGeneral → BlockIntroDouble → BlockMediaDoubleQuote → BlockWysiwyg
  *
- * `CollectionTeam` carries its own verbatim content as prop defaults
- * (`LPAS_TEAM_ITEMS`, `LPAS_TEAM_FILTERS`, plus the measured tagline and
- * heading), so it is rendered with no arguments.
+ * The layout this route is adapted from closed with a `CollectionTeam` grid of
+ * 38 faces. That block is deleted: NeuraGul is one person, and a one-card grid
+ * would be furniture rather than content. Nothing replaces it — the compensation
+ * is that `BlockWysiwyg` carries three paragraphs instead of the single one the
+ * original instance shipped, so the page still ends on substance.
  *
- * `BlockWysiwyg` ships an `ABOUT_WYSIWYG` constant with the same intent, but it
- * cannot be used from here: the block is a `"use client"` module, so that
- * export arrives on the server as a client-reference proxy and spreading it
- * yields `body === undefined`. `ABOUT_WYSIWYG_BODY` in this page's content.ts
- * restates the identical copy on the server side — see the note there.
- *
- * The team cards link to `/team/<slug>/`. Those 38 bio pages are out of scope
- * for this clone (OUTPUT_PLAN.md, "Team bios excluded") and will 404; the
- * hrefs stay because dropping them would change the markup and the hover
- * affordance the source ships.
+ * All copy lives in `content.ts`. That matters beyond tidiness here:
+ * `BlockWysiwyg` is a `"use client"` module, so a *value* imported from it into
+ * this server component would arrive as a client-reference proxy and spread to
+ * `undefined` (the page would die at prerender on `body.map`). `content.ts` has
+ * no `"use client"`, so its exports stay real values in the server graph.
  */
 export default function AboutPage() {
   return (
     <>
       <MainNavigation />
 
-      {/* `overflow-x: clip`, matching the homepage shell. */}
+      {/* `overflow-x: clip` (not hidden) — matches the homepage shell. */}
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderGeneral {...ABOUT_HEADER} />
         <BlockIntroDouble {...ABOUT_INTRO} />
         <BlockMediaDoubleQuote {...ABOUT_MEDIA} />
-        <BlockWysiwyg {...ABOUT_WYSIWYG_BODY} />
-        <CollectionTeam />
+        <BlockWysiwyg {...ABOUT_WYSIWYG} />
       </main>
 
       <NavigationFooter />
