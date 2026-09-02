@@ -51,7 +51,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <MainNavigation />
+      {/* `BlockHeaderGeneral` is a flat #ececec at every breakpoint, so the
+          wordmark takes the header's own ink rather than white. */}
+      <MainNavigation tone="dark" />
 
       {/* `overflow-x: clip` (not hidden) — matches the homepage shell. */}
       <main className="mainContent relative w-full overflow-x-clip bg-white">

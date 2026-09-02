@@ -101,8 +101,12 @@ const SERVICE_GROUND: Record<ServiceSlug, string> = {
  * White type on the three dark grounds, #262626 on the two light ones. The
  * pairing is a contrast fact about each accent, not a per-page choice, which
  * is why it lives here rather than in each content module.
+ *
+ * Exported because the fixed `MainNavigation` sits over this same ground and
+ * has to make the same call — see its `tone` prop. Reading one table keeps the
+ * wordmark and the header from ever disagreeing about which accent is light.
  */
-const SERVICE_TONE: Record<ServiceSlug, ServiceHeaderTone> = {
+export const SERVICE_TONE: Record<ServiceSlug, ServiceHeaderTone> = {
   "applied-ai": "light",
   "web-development": "light",
   "cloud-infrastructure": "light",

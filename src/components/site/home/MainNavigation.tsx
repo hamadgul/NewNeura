@@ -14,10 +14,30 @@ import { cn } from "@/lib/utils";
 import { CloseIcon, MenuIcon, Wordmark } from "@/components/site/shared/icons";
 import { ButtonLine } from "@/components/site/shared/buttons";
 import { COMPANY_GROUP, EXPLORE_GROUP, OFFICES, SERVICE_LINKS } from "./content";
+import type { ServiceHeaderTone } from "@/components/site/shared/blocks/BlockHeaderServices";
 import type { NavGroup, OfficeContact } from "@/types/site";
 
 /** ms the overlay's exit transition takes — used to delay unmounting the grid. */
 const OVERLAY_TRANSITION_MS = 400;
+
+export interface MainNavigationProps {
+  /**
+   * Type colour for the wordmark, matching whatever this page paints behind
+   * the top bar. `"light"` (the default) is the white wordmark every dark-ground
+   * page wants; `"dark"` is #111111, for the pages whose first viewport is a
+   * light ground.
+   *
+   * There are four of those: `/about/` and `/process/`, whose `BlockHeaderGeneral`
+   * is a flat `#ececec` at every breakpoint, and the two service lines whose
+   * accent is light (`app-development`, `data-intelligence`). Those two do not
+   * hardcode it — they pass `SERVICE_TONE[slug]` from `BlockHeaderServices`, so
+   * a new light accent is handled without touching this file.
+   *
+   * The Menu button is deliberately not affected: it carries its own
+   * `rgba(14,14,14,0.6)` pill and reads on either ground.
+   */
+  tone?: ServiceHeaderTone;
+}
 /** ms between each menu item's fade-up entrance. */
 const ITEM_STAGGER_MS = 60;
 
@@ -32,7 +52,7 @@ function staggerProps(index: number, animateIn: boolean) {
   };
 }
 
-export function MainNavigation() {
+export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
   const overlayId = useId();
 
   // `open` is the logical state (drives aria + the scroll lock + escape key).
@@ -107,7 +127,16 @@ export function MainNavigation() {
         <Link
           href="/"
           aria-label="NeuraGul home"
-          className="navigationMain__topBarLogo flex h-[30px] items-center text-white"
+          className={cn(
+            "navigationMain__topBarLogo flex h-[30px] items-center transition-colors ease-in-out",
+            // The top bar is `z-10` and the overlay is not, so the wordmark
+            // paints *over* the open menu's black/80 ground — a dark wordmark
+            // would disappear the moment the menu opened. While `open`, it is
+            // always white, and the 400ms matches the overlay's own fade so the
+            // two changes travel together in both directions.
+            open || tone === "light" ? "text-white" : "text-[#111111]",
+          )}
+          style={{ transitionDuration: `${OVERLAY_TRANSITION_MS}ms` }}
         >
           <Wordmark className="text-[17px]" />
         </Link>

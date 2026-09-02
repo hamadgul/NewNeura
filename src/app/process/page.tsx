@@ -55,7 +55,9 @@ export const metadata: Metadata = {
 export default function ProcessPage() {
   return (
     <>
-      <MainNavigation />
+      {/* `BlockHeaderGeneral` is a flat #ececec at every breakpoint, so the
+          wordmark takes the header's own ink rather than white. */}
+      <MainNavigation tone="dark" />
 
       {/* `overflow-x: clip` (not hidden) — matches the homepage shell; the
           slider and the full-bleed image both overflow the main column. */}

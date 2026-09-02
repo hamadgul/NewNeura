@@ -9,7 +9,7 @@ import {
 } from "@/components/site/services/applied-ai-models/content";
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
-import { BlockHeaderServices } from "@/components/site/shared/blocks/BlockHeaderServices";
+import { BlockHeaderServices, SERVICE_TONE } from "@/components/site/shared/blocks/BlockHeaderServices";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
 import { BlockProcessCardSlider } from "@/components/site/shared/blocks/BlockProcessCardSlider";
 import { BlockProjectsHighlight } from "@/components/site/shared/blocks/BlockProjectsHighlight";
@@ -51,7 +51,9 @@ export const metadata: Metadata = {
 export default function AppliedAiModelsPage() {
   return (
     <>
-      <MainNavigation />
+      {/* The wordmark sits on this page's accent ground, so it reads the
+          same tone table the header does — a light accent gets dark type. */}
+      <MainNavigation tone={SERVICE_TONE[HEADER.service]} />
 
       {/*
         `overflow-x: clip` (not `hidden`): `clip` does not create a scroll
