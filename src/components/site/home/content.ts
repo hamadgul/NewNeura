@@ -117,8 +117,8 @@ export const HERO_CARDS: HeroServiceCard[] = [
     total: 5,
     href: "/services/cloud-infrastructure/",
     image: {
-      src: `${IMG}/vintus.jpg`,
-      alt: "The Vintus storefront",
+      src: `${IMG}/pizzeria.jpg`,
+      alt: "The restaurant ordering portal",
       width: 1200,
       height: 750,
     },
