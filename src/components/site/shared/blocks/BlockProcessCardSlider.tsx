@@ -508,7 +508,7 @@ function ProcessCard({ phase, index }: { phase: ProcessPhase; index: number }) {
       <div
         className={cn(
           "cardItem__headerWrapper relative col-start-1 row-start-1 grid grid-cols-1 grid-rows-[399px_0px] overflow-hidden bg-[#c9d3df]",
-          dark ? "text-[#595656]" : "text-[#ececec]",
+          dark ? "text-[#262626]" : "text-[#ececec]",
           notch && "[clip-path:polygon(0_0,calc(100%_-_40px)_0,100%_40px,100%_100%,0_100%)]",
         )}
       >
@@ -520,6 +520,37 @@ function ProcessCard({ phase, index }: { phase: ProcessPhase; index: number }) {
           sizes="(min-width: 443px) 353px, calc(100vw - 90px)"
           className="absolute inset-0 z-[1] h-full w-full object-cover object-top"
         />
+
+        {/*
+          Scrim under the number and caption.
+
+          The header band has no ground of its own — the number and caption sit
+          straight on the artwork and rely on the card's tone class alone. That
+          works over the even, quiet photography the layout was drawn for. Every
+          image here is a screenshot, so the band lands on whatever the client's
+          own page happens to put at the top: "01" went white-on-white over a
+          Lighthouse panel, and the captions were unreadable on most cards.
+
+          A gradient rather than a flat panel, so it fades out before the
+          artwork proper and does not read as a bar across the image. Its colour
+          follows the tone: a light wash under dark type, a dark one under
+          light. 130px covers the 95px band plus the fade.
+        */}
+        <div
+          aria-hidden="true"
+          className={cn(
+            "pointer-events-none absolute inset-x-0 top-0 z-[1] h-[130px]",
+            // Held near full strength across the 95px band, then released over
+            // the remaining 35px. A plain two-stop gradient was already fading
+            // where the caption sits — measured 1.9:1 on a card whose artwork
+            // is a white table — so the stops are placed against the band, not
+            // spread evenly down the box.
+            dark
+              ? "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.9)_73%,rgba(255,255,255,0)_100%)]"
+              : "bg-[linear-gradient(to_bottom,rgba(0,0,0,0.85)_0%,rgba(0,0,0,0.78)_73%,rgba(0,0,0,0)_100%)]",
+          )}
+        />
+
         <div className="cardItem__header relative z-[2] col-start-1 row-start-1 flex h-[95px] items-center gap-[15px] pr-[35px] pl-[25px]">
           <span className="font-3XL shrink-0">{phase.number}</span>
           <span className="text-[16px] leading-[21.6px]">{phase.caption}</span>
