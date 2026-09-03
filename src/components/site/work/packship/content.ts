@@ -15,6 +15,11 @@
  * Ordering note: `BlockWysiwyg` appears four times (three features, then the
  * outcome), so the exported constants are numbered by their position on the
  * page.
+ *
+ * VOICE — the source site is written in the first person singular, because it
+ * was one person. It is a team, so this site says "we", which on this page is
+ * the second section's heading: "What we built". Every metric, stack entry,
+ * outcome and live URL below is exactly as the source records it.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -58,12 +63,13 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
 /**
  * Block 2 — `BlockIntroDouble`, the two-label variant.
  *
- * The source page's first two headed sections, "The brief" and "What I built",
- * map onto the block's own two halves: the active label sits over the `font-L`
- * statement, the muted one over the body copy.
+ * The source page's first two headed sections, "The brief" and "What I built"
+ * (rewritten to "What we built" for this site's voice), map onto the block's own
+ * two halves: the active label sits over the `font-L` statement, the muted one
+ * over the body copy.
  */
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
-  labels: ["The brief", "What I built"],
+  labels: ["The brief", "What we built"],
   activeLabel: 0,
   statement:
     "Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. PackShip answers all three from one photo.",

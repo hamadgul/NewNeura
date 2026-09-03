@@ -6,6 +6,11 @@
  * `work/index.html` (its `<title>`, `<h1>` and meta description). Nothing is
  * paraphrased and nothing is invented.
  *
+ * VOICE — the source site is written in the first person singular, because it
+ * was one person. It is a team, so this site says "we". The `<h1>` and the meta
+ * description are the two strings that carried the singular, and both are moved
+ * to the team's voice below; every project name, metric and route is untouched.
+ *
  * Feed order is the source's own `CASE_STUDIES` order, which is also the order
  * `work/index.html` renders the nine rows in. It is deliberately not
  * alphabetical and not chronological.
@@ -41,9 +46,12 @@ const IMAGES = "/site/images";
  */
 export const PORTFOLIO_TITLE = "Work";
 export const PORTFOLIO_CANONICAL = "/work/";
-/** Verbatim from the built page's `<meta name="description">`. */
+/**
+ * The built page's `<meta name="description">`, with its byline moved off one
+ * name and onto the practice. The list of what is in the feed is unchanged.
+ */
 export const PORTFOLIO_DESCRIPTION =
-  "Selected work by Hamad Gul: dispatch software, an iOS app, e-commerce, data pipelines, and client sites, each with a link to the live project.";
+  "Selected work by NeuraGul: dispatch software, an iOS app, e-commerce, data pipelines, and client sites, each with a link to the live project.";
 /**
  * `hero-poster.jpg` is the only 1920x1080 asset we have and the only one that
  * is not a specific project's screenshot, so it is the one image that can back
@@ -55,11 +63,12 @@ export const PORTFOLIO_OG_IMAGE = `${IMAGES}/hero-poster.jpg`;
  * Header — eyebrow / label / title over the backdrop, which is this page's LCP
  * element.
  *
- * The title is the source's own `<h1>`, "Everything I've shipped", hard-broken
- * into its two rendered lines: the block emits one `<br>` per array entry, and
- * at `font-3XL` (75px) across the seven columns it spans the phrase wraps in
- * two anyway — stating the break keeps it identical at every width instead of
- * letting the measure decide.
+ * The title is the source's own `<h1>` in the team's voice, "Everything we've
+ * shipped", hard-broken into its two rendered lines: the block emits one `<br>`
+ * per array entry, and at `font-3XL` (75px) across the seven columns the phrase
+ * wraps in two anyway — stating the break keeps it identical at every width
+ * instead of letting the measure decide. The two lines stay within a word of
+ * each other's length, which is what the source's own break was doing.
  *
  * Both small labels are strings the source already uses: "Work" is the nav and
  * breadcrumb label, "Selected work" opens the page's own meta description. The
@@ -69,7 +78,7 @@ export const PORTFOLIO_OG_IMAGE = `${IMAGES}/hero-poster.jpg`;
 export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
   eyebrow: "Work",
   label: "Selected work",
-  title: ["Everything", "I've shipped"],
+  title: ["Everything", "we've shipped"],
   image: {
     src: `${IMAGES}/hero-poster.jpg`,
     alt: "",

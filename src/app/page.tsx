@@ -7,18 +7,18 @@ import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import type { Metadata } from "next";
 
 const DESCRIPTION =
-  "I'm Hamad Gul. I build custom software, web and mobile apps, AI systems, and data pipelines for small companies, out of New York.";
+  "We build custom software, web and mobile apps, AI systems, and data pipelines for small companies, out of New York.";
 
 /**
  * The homepage title is not suffixed, so it opts out of the root layout's
  * "%s — NeuraGul" template with an absolute title.
  */
 export const metadata: Metadata = {
-  title: { absolute: "Hamad Gul — software developer, New York | NeuraGul" },
+  title: { absolute: "NeuraGul — software, web and applied AI, New York" },
   description: DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Hamad Gul — software developer, New York | NeuraGul",
+    title: "NeuraGul — software, web and applied AI, New York",
     description: DESCRIPTION,
     url: "https://neuragul.com/",
   },

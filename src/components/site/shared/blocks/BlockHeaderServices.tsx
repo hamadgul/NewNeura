@@ -4,7 +4,7 @@
  * Two content variants, both measured from `getComputedStyle()` at 1440px and
  * re-checked against the 390px screenshots:
  *
- *  - **Parent service** (`/services/applied-ai/`): a "What I build" eyebrow, a
+ *  - **Parent service** (`/services/applied-ai/`): a "What we build" eyebrow, a
  *    right-aligned descriptor, a `font-3XL` title and — for Applied AI only —
  *    a grid of child links. The other four service lines have no children at
  *    all, so the sub-nav must disappear entirely rather than reserve space.
@@ -68,7 +68,7 @@ export interface BlockHeaderServicesProps {
    * on child pages, so this defaults to `XXL` whenever `backLink` is present.
    */
   titleSize?: "3XL" | "XXL";
-  /** Parent services only: the "What I build" eyebrow. Superseded by `backLink`. */
+  /** Parent services only: the "What we build" eyebrow. Superseded by `backLink`. */
   eyebrow?: string;
   /** Right-aligned descriptor — the service subtitle, or the child page tagline. */
   subtitle?: string;

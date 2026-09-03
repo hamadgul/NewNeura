@@ -5,8 +5,16 @@
  * Copy is drawn from the NeuraGul source site's `data-intelligence` service
  * (`pages/content.py`) and from the three case studies that evidence it: the
  * Freenome 0-to-1 ETL pipeline, the delivery routing platform's log parsing and
- * exports, and the generated structured data behind Food Truck Rentals. The
- * voice is the source's own first person.
+ * exports, and the generated structured data behind Food Truck Rentals.
+ *
+ * VOICE — the source is written in the first person singular, because it was
+ * written by one person. NeuraGul is a team, so this page says "we". Hamad Gul
+ * is named only at the human moments (the contact promise, the About page, the
+ * homepage intro), and this is a capability page, so he is not named here for
+ * that reason. He *is* named twice as an attribution: the Freenome pipeline is
+ * his own biography rather than the team's work, so it is stated in the third
+ * person instead of being absorbed into a "we" that did not do it. Nothing on
+ * this page claims a headcount or a capacity.
  *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
@@ -65,7 +73,7 @@ export const META = {
  */
 export const HEADER: BlockHeaderServicesProps = {
   service: "data-intelligence",
-  eyebrow: "What I build",
+  eyebrow: "What we build",
   subtitle: "Data, turned into a decision",
   title: "Data Intelligence",
   titleSize: "3XL",
@@ -89,7 +97,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Pipelines, dashboards, and migrations that turn a pile of data into a decision.",
   body: [
-    "Before this I was a product manager at Freenome, leading a 0-to-1 ETL pipeline that pulled messy real-world clinical data from dozens of sources into a single Common Data Model. Early cancer detection research was built on that foundation, and the pipeline went from concept to production.",
+    "Before NeuraGul, Hamad Gul was a product manager at Freenome, leading a 0-to-1 ETL pipeline that pulled messy real-world clinical data from dozens of sources into a single Common Data Model. Early cancer detection research was built on that foundation, and the pipeline went from concept to production.",
     "The same discipline shows up at a much smaller scale. The delivery routing platform parses a messy delivery log and refuses to invent anything it cannot read with confidence; an unreadable row becomes a flagged task for a human rather than a quietly wrong address on a driver's sheet. Geocoding fails closed for the same reason. 1,278 tests cover the rules.",
     "What comes out the other end is whatever the office actually opens. On that project it is a printed cut sheet designed for a clipboard and a pen, plus an Excel and CSV log. Dashboards your team will open more than once, and reporting that answers the question you actually asked.",
   ],
@@ -185,12 +193,12 @@ export const PROCESS: BlockProcessCardSliderProps = {
 /** First instance — the data work that exists, and what evidences each piece. */
 export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
   tagline: "Pipelines, and what they feed",
-  title: "What I build with data",
+  title: "What we build with data",
   body: [
     {
       type: "paragraph",
       lead: "ETL pipelines:",
-      text: "A 0-to-1 pipeline at Freenome that standardized real-world clinical data from dozens of sources into one Common Data Model, taken from concept to production.",
+      text: "The 0-to-1 pipeline Hamad led at Freenome standardized real-world clinical data from dozens of sources into one Common Data Model, taken from concept to production.",
     },
     {
       type: "paragraph",
@@ -237,8 +245,8 @@ export const WYSIWYG_WHY: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      lead: "I stay on after launch:",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      lead: "We stay on after launch:",
+      text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
     },
   ],
 };

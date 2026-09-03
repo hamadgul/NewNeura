@@ -8,6 +8,12 @@
  * whole morning in four steps" — those four steps are this page's process
  * slider, quoted from that paragraph.
  *
+ * VOICE — the source is written in the first person singular because it was one
+ * person. It is a team, so this page says "we", and it claims no headcount,
+ * capacity or team size. The *client's* dispatcher carrying the rulebook in
+ * their head is a fact about the client and stays as written. See
+ * `home/content.ts` for the full statement of the rule.
+ *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
  * aspect ratio from them. Everything is a landscape 1.6:1 capture, and both
@@ -122,7 +128,7 @@ export const INTRO: BlockIntroDoubleProps = {
 export const PROCESS: BlockProcessCardSliderProps = {
   tagline: "Workflow",
   intro: "How the routing platform runs a morning",
-  title: "How I work",
+  title: "How we work",
   phasesLabel: "Phases",
   phases: [
     {
@@ -171,9 +177,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     },
     {
       number: "05",
-      title: "I stay on after launch",
-      caption: "I hold the pager",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      title: "We stay on after launch",
+      caption: "We hold the pager",
+      text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/packship.jpg`,
         width: 1200,

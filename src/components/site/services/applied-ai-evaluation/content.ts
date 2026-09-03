@@ -10,6 +10,10 @@
  * pages compete for a keyword cluster, and JSON-LD generated from a single
  * pricing module).
  *
+ * VOICE — the source is written in the first person singular because it was one
+ * person. It is a team, so this page says "we", and it claims no headcount,
+ * capacity or team size. See `home/content.ts` for the full statement of it.
+ *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
  * aspect ratio from them. Everything is a landscape 1.6:1 capture, and both
@@ -129,7 +133,7 @@ export const INTRO: BlockIntroDoubleProps = {
 export const PROCESS: BlockProcessCardSliderProps = {
   tagline: "Workflow",
   intro: "How a system gets ready for real users",
-  title: "How I work",
+  title: "How we work",
   phasesLabel: "Phases",
   phases: [
     {
@@ -178,9 +182,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     },
     {
       number: "05",
-      title: "I stay on after launch",
-      caption: "I hold the pager",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      title: "We stay on after launch",
+      caption: "We hold the pager",
+      text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
         width: 1600,
@@ -226,16 +230,21 @@ export const WYSIWYG_GUARDRAILS: BlockWysiwygProps = {
 };
 
 /**
- * Why the guardrails and the after-launch commitment are the same subject. The
- * closing paragraph is the source's own fit statement, quoted from `HOME`.
+ * Why the guardrails and the after-launch commitment are the same subject.
+ *
+ * The source's fit statement ("one person who holds the whole system in their
+ * head", "the wrong fit if you need a team of eight starting Monday") is gone
+ * rather than inverted: both halves are claims about size, and no size has been
+ * established. The closing paragraph keeps only what is checkable — the people
+ * who scope the work write it, and they are still reachable after launch.
  */
 export const WYSIWYG_AFTER_LAUNCH: BlockWysiwygProps = {
   tagline: "After launch",
-  title: "I hold the pager",
+  title: "We hold the pager",
   body: [
     {
       type: "paragraph",
-      text: "I stay on after launch. I fix what breaks and hand over once your team wants it. Most of my clients have my mobile number.",
+      text: "We stay on after launch. We fix what breaks and hand over once your team wants it. The same people are still reachable six months after launch.",
     },
     { type: "heading", text: "Why that belongs on this page" },
     {
@@ -245,7 +254,7 @@ export const WYSIWYG_AFTER_LAUNCH: BlockWysiwygProps = {
     { type: "heading", text: "Who this is for" },
     {
       type: "paragraph",
-      text: "I'm a good fit when you want one person who holds the whole system in their head and is still reachable six months after launch. I'm the wrong fit if you need a team of eight starting Monday.",
+      text: "You want a system that still behaves the way you agreed it would once real users are inside it. The people who scope your project are the people who write it, and they are still reachable six months after launch.",
     },
   ],
 };

@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 
 /**
  * `title` is the bare stem, so the root layout's "%s — NeuraGul" template
- * produces "How I work — NeuraGul". `openGraph.title` does not inherit that
+ * produces "How we work — NeuraGul". `openGraph.title` does not inherit that
  * template, so the resolved string is spelled out.
  */
 export const metadata: Metadata = {
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 /**
- * `/process/` — how I work.
+ * `/process/` — how we work.
  *
  * Block sequence:
  *   BlockHeaderGeneral → BlockIntroDouble → BlockWysiwyg → BlockImageSlider
  *   → BlockImageFull → GeneralCta
  *
  * The wysiwyg is the one addition to the sequence this route inherited, and it
- * is the page's spine: the four-step engagement, verbatim, in the block's
+ * is the page's spine: the four-step engagement, in full, in the block's
  * `<strong>` lead-in shape. See the note in `content.ts` for why the four steps
  * are not fed to `BlockProcessCardSlider` — its card body is clamped to three
  * lines and its per-phase artwork is a required portrait we do not have.

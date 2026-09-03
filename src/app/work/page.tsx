@@ -18,7 +18,8 @@ import type { Metadata } from "next";
  * `"%s — NeuraGul"` template produces from the bare word — so the title stays
  * plain rather than opting out with `{ absolute }`.
  *
- * The description is the source page's own `<meta name="description">`.
+ * The description is the source page's own `<meta name="description">`, carried
+ * in `content.ts` and bylined to the practice rather than to one person.
  */
 export const metadata: Metadata = {
   title: PORTFOLIO_TITLE,

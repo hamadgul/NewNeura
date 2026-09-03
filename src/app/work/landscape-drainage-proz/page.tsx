@@ -40,7 +40,7 @@ export const metadata: Metadata = {
  *
  * Four blocks, in the order the source page runs its sections:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what I built)
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / what we built)
  *   → BlockWysiwyg (outcome) → BlockProjectDetails
  *
  * The shortest page of the nine, and correctly so: eleven blocks existed to

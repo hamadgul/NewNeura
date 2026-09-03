@@ -1,10 +1,19 @@
 /**
  * Site-wide and homepage content for neuragul.com.
  *
- * Copy is lifted from the NeuraGul source site (`pages/content.py`, which is
- * that site's single source of truth) rather than rewritten, so the voice rules
- * it enforces still hold here: first person, no "X, not Y" antithesis, a
- * checkable number in place of an adjective wherever one exists.
+ * Copy is drawn from the NeuraGul source site (`pages/content.py`) and carries
+ * its voice rules: no "X, not Y" antithesis, at most three em dashes per block,
+ * varied sentence length, a checkable number in place of an adjective wherever
+ * one exists.
+ *
+ * VOICE — the source site is written in the first person singular, because it
+ * was one person. It is a team, so this site says "we". Hamad Gul is named at
+ * the human moments only: the contact promise, the About page's "who you'd be
+ * working with", and the process step about staying on after launch. He is
+ * "your primary point of contact and one of the developers on your project".
+ *
+ * Nothing here claims a headcount, a capacity or a team size. Those are not
+ * facts anyone has established, and the copy stands without them.
  *
  * Everything the navigation, the footer and the hero share lives in this file,
  * because all three read from it — the same arrangement the layout was built
@@ -26,8 +35,8 @@ const VIDEO = "/site/videos";
  * The office loop behind the hero intro panel.
  *
  * Deliberately generic interior footage — it sets the studio register without
- * claiming to be a specific room, which matters for a one-person practice with
- * no street office.
+ * claiming to be a specific room, which matters for a practice with no street
+ * office.
  */
 export const HERO_VIDEO = {
   src: `${VIDEO}/office.mp4`,
@@ -36,12 +45,12 @@ export const HERO_VIDEO = {
 
 export const HERO_INTRO = {
   eyebrowLeft: "Software + Applied AI",
-  eyebrowRight: "Built and maintained by one person",
+  eyebrowRight: "Built and maintained by the same team",
   /** Shown ≥768px. */
   scrollCueDesktop: "Scroll to explore",
   /** Shown <768px. */
   scrollCueMobile: "Swipe up to explore",
-  heading: "I build the software that small companies actually run on",
+  heading: "We build the software that small companies actually run on",
 };
 
 /**
@@ -146,12 +155,15 @@ export const HERO_CARDS: HeroServiceCard[] = [
 /**
  * The homepage's about block. `tagline` is the four-beat engagement shorthand;
  * the four words are the same four the preloader unfolds.
+ *
+ * This is the one place on the homepage where Hamad is named — the "who you'd
+ * be working with" beat. Everywhere else on this page the voice is "we".
  */
 export const INTRO_BLOCK = {
-  title: "One person who holds the whole system, and still picks up the phone.",
+  title: "A team that holds the whole system, and one number that always answers.",
   tagline: "Talk. Scope. Build. Stay.",
-  text: "NeuraGul is me, plus the people I bring in. Before this I was a product manager at Freenome, building a 0-to-1 ETL pipeline that pulled messy real-world clinical data from dozens of sources into a single common model. These days I mostly build operational software: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's storefront. I stay small on purpose, which is how I'm still the one who answers.",
-  cta: { label: "More about me", href: "/about/" },
+  text: "NeuraGul is a team of developers, designers and engineers working out of New York. We mostly build operational software: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's storefront. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
+  cta: { label: "More about us", href: "/about/" },
 };
 
 /** Service pills with their project counts, sized off the nine real projects. */
@@ -268,7 +280,7 @@ export const COMPANY_GROUP: NavGroup = {
   title: "Studio",
   items: [
     { label: "About", href: "/about/" },
-    { label: "How I work", href: "/process/" },
+    { label: "How we work", href: "/process/" },
     { label: "Contact", href: "/contact/" },
   ],
 };
@@ -276,8 +288,8 @@ export const COMPANY_GROUP: NavGroup = {
 /**
  * A single contact record, where the layout was built for a pair of offices.
  *
- * There is no street address: NeuraGul is one person working out of New York,
- * so the locality line is the honest version of that slot.
+ * There is no street address: the team works out of New York with no street
+ * office, so the locality line is the honest version of that slot.
  */
 export const OFFICES: OfficeContact[] = [
   {
@@ -301,9 +313,9 @@ export const FOOTER_IMAGE = {
  * The preloader wordmark: the four beats of the engagement, each unfolding
  * from its own leading capital.
  *
- * These are the four steps the source site's process section describes — you
- * write and we talk, I scope it in writing, we build in the open, I stay on
- * after launch — compressed to one word each.
+ * These are the four steps `/process/` sets out — you write and we talk, we
+ * scope it in writing, we build in the open, and Hamad stays on after launch —
+ * compressed to one word each.
  */
 export const PRELOADER_WORDS: Array<[string, string]> = [
   ["T", "alk"],

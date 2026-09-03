@@ -42,7 +42,7 @@ export const metadata: Metadata = {
  *
  * Seven blocks, in the order the source page runs its sections:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what I built)
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / what we built)
  *   → BlockWysiwyg (outcome) → BlockWysiwyg ×3 (the three features)
  *   → BlockProjectDetails
  *

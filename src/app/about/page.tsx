@@ -37,10 +37,11 @@ export const metadata: Metadata = {
  *   BlockHeaderGeneral → BlockIntroDouble → BlockMediaDoubleQuote → BlockWysiwyg
  *
  * The layout this route is adapted from closed with a `CollectionTeam` grid of
- * 38 faces. That block is deleted: NeuraGul is one person, and a one-card grid
- * would be furniture rather than content. Nothing replaces it — the compensation
- * is that `BlockWysiwyg` carries three paragraphs instead of the single one the
- * original instance shipped, so the page still ends on substance.
+ * 38 faces. That block is deleted: there are no photographs of the people here,
+ * and a grid padded out to fill the row would be furniture rather than content.
+ * Nothing replaces it — the compensation is that `BlockWysiwyg` carries three
+ * paragraphs instead of the single one the original instance shipped, so the
+ * page still ends on substance.
  *
  * All copy lives in `content.ts`. That matters beyond tidiness here:
  * `BlockWysiwyg` is a `"use client"` module, so a *value* imported from it into

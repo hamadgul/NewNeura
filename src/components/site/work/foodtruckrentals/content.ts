@@ -15,6 +15,11 @@
  * `alt` strings. The architecture layout this shell came from shipped `alt=""`
  * because its media were decorative photographs; these are informative
  * screenshots, so the caption is the description.
+ *
+ * VOICE — the source site is written in the first person singular, because it
+ * was one person. It is a team, so this site says "we", which on this page is
+ * the second section's heading: "What we built". Every metric, stack entry,
+ * outcome and live URL below is exactly as the source records it.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -61,11 +66,11 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  *
  * The source's first two headed sections map onto the block's own two halves:
  * the active label sits over the `font-L` statement (the brief), the muted one
- * over the body copy (what I built). This project's `built` is the longest of
+ * over the body copy (what was built). This project's `built` is the longest of
  * the nine, and the block's two-column measure at `xl` is what it is for.
  */
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
-  labels: ["The brief", "What I built"],
+  labels: ["The brief", "What we built"],
   activeLabel: 0,
   statement:
     "A New York brand-activation company wraps, staffs, and permits food trucks for fashion houses, department stores, and restaurants. They were selling all of it without a website of their own.",

@@ -22,6 +22,13 @@
  * This is also the one project of the nine with no year: its `meta` is
  * "Product · 0-to-1", so the details table below prints a stage where the
  * others print 2026, and no date is inferred.
+ *
+ * VOICE — the source site is written in the first person singular, because it
+ * was one person. It is a team, so this site says "we" everywhere else. This
+ * project is the exception: the pipeline is Hamad Gul's own work, done as a
+ * product manager at Freenome before NeuraGul existed, so it is attributed to
+ * him by name in the third person rather than absorbed into a team "we". The
+ * facts of the project are exactly as the source records them.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -84,14 +91,18 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  * The source page runs three headed sections: "The brief", "What I built" and
  * "Outcome". The first two map onto this block exactly — the active label sits
  * over the `font-L` statement (the brief) and the muted one over the body copy
- * (what I built) — and the third gets its own `BlockWysiwyg` below.
+ * — and the third gets its own `BlockWysiwyg` below.
+ *
+ * The second heading reads "What Hamad led" here, not the "What we built" the
+ * other eight case studies carry. This work predates NeuraGul and belongs to one
+ * named person, and the heading has to agree with the body underneath it.
  */
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
-  labels: ["The brief", "What I built"],
+  labels: ["The brief", "What Hamad led"],
   activeLabel: 0,
   statement:
     "Early cancer detection depends on real-world clinical data, and real-world clinical data arrives messy and inconsistent from dozens of sources.",
-  body: "I led product management at Freenome for a 0-to-1 ETL pipeline that standardized all of it into a single Common Data Model. Downstream research and models were built on that foundation.",
+  body: "Hamad Gul led product management at Freenome for a 0-to-1 ETL pipeline that standardized all of it into a single Common Data Model. Downstream research and models were built on that foundation.",
 };
 
 /**

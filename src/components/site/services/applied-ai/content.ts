@@ -2,10 +2,15 @@
  * Content for `/services/applied-ai/` — the parent Applied AI service page.
  *
  * Copy is drawn from the NeuraGul source site's `ai-consulting` service
- * (`pages/content.py`) and from the case studies that evidence it, in the
- * source's own first-person voice. Image paths are the real screenshots under
- * `/site/images`; `width`/`height` are the assets' true pixel sizes, because
- * `next/image` sets the reserved aspect ratio from them.
+ * (`pages/content.py`) and from the case studies that evidence it. Image paths
+ * are the real screenshots under `/site/images`; `width`/`height` are the
+ * assets' true pixel sizes, because `next/image` sets the reserved aspect ratio
+ * from them.
+ *
+ * VOICE — the source is written in the first person singular because it was one
+ * person. It is a team, so this page says "we". Nothing here claims a headcount,
+ * a capacity or a team size, and the four child pages follow the same rule. See
+ * `home/content.ts` for the full statement of it.
  *
  * ── Template note for the sibling service pages ─────────────────────────────
  * This file is the pattern the other service routes follow. Each export is
@@ -70,7 +75,7 @@ export const APPLIED_AI_SUB_PAGES: ServiceSubPageLink[] = [
  */
 export const HEADER: BlockHeaderServicesProps = {
   service: "applied-ai",
-  eyebrow: "What I build",
+  eyebrow: "What we build",
   subtitle: "AI, applied",
   title: "Applied AI",
   titleSize: "3XL",
@@ -95,7 +100,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Models and agents wired into a workflow you already have, scoped to one problem you can measure.",
   body: [
-    "The first thing you get from me is a straight answer about where AI helps you and where it would be theatre. That answer is free and it is sometimes no. When it is yes, the work goes inside the tools your team already opens every day rather than beside them, because a system nobody opens is a system nobody uses.",
+    "The first thing you get from us is a straight answer about where AI helps you and where it would be theatre. That answer is free and it is sometimes no. When it is yes, the work goes inside the tools your team already opens every day rather than beside them, because a system nobody opens is a system nobody uses.",
     "What that looks like in practice: a model on a phone that sizes a parcel from one photograph to about a centimetre. A solver that takes a messy delivery log, applies every business rule a dispatcher used to carry in their head, and returns routes a driver can actually drive. Both of those are running in production, and both of them are aimed at one number somebody was already tracking.",
     "Evaluations and guardrails ship with the system, not after it. The routing platform fails closed on a geocode it cannot trust and flags the row for a human instead of inventing an address, and 1,278 tests cover the rules. That is the part that decides whether the thing survives contact with real users.",
   ],

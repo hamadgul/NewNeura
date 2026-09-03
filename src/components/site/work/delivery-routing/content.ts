@@ -20,6 +20,11 @@
  * set, but it is still four — not the eighteen the original eleven-block
  * sequence was built for. It runs six blocks, and the only block that appears
  * more than once is none of them, so no exported constant needs numbering.
+ *
+ * VOICE — the source site is written in the first person singular, because it
+ * was one person. It is a team, so this site says "we", which on this page is
+ * the second section's heading: "What we built". Every metric, stack entry,
+ * outcome and live URL below is exactly as the source records it.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";
@@ -67,12 +72,13 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  * Block 2 — `BlockIntroDouble`, the two-label variant.
  *
  * The source page runs three headed sections: "The brief", "What I built" and
- * "Outcome". The first two map onto this block exactly — the active label sits
- * over the `font-L` statement (the brief) and the muted one over the body copy
- * (what I built) — and the third gets its own `BlockWysiwyg` further down.
+ * "Outcome". The middle one is rewritten to "What we built" for this site's
+ * voice. The first two map onto this block exactly — the active label sits over
+ * the `font-L` statement (the brief) and the muted one over the body copy (what
+ * was built) — and the third gets its own `BlockWysiwyg` further down.
  */
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
-  labels: ["The brief", "What I built"],
+  labels: ["The brief", "What we built"],
   activeLabel: 0,
   statement:
     "A home medical equipment provider planned every delivery day by hand. One dispatcher, a messy export of the day's tickets, six vans, and a yard full of drivers waiting to leave.",

@@ -1,12 +1,18 @@
 /**
- * Content for `/process/` — "How I work".
+ * Content for `/process/` — "How we work".
  *
- * Copy is lifted from the NeuraGul source site: the four-step `PROCESS` list in
+ * Copy is adapted from the NeuraGul source site: the four-step `PROCESS` list in
  * `pages/content.py` (which is what the source's `#process` section renders),
  * plus that section's own `<h2>` label. The four step titles are the four words
  * the preloader unfolds — Talk / Scope / Build / Stay, see `PRELOADER_WORDS` in
  * `home/content.ts` — so this route is where that promise gets explained, and
- * the bodies below are verbatim rather than summarised.
+ * the bodies below are stated in full rather than summarised.
+ *
+ * VOICE — the source is written in the first person singular because it was
+ * written by one person. It is a team, so the four steps are the team's and the
+ * page title is "How we work", which is also what the navigation calls it. The
+ * one exception is step 04: the pager promise is a person's, not a company's,
+ * so Hamad Gul is named there. That is the only name on the route.
  *
  * Block order:
  *   BlockHeaderGeneral → BlockIntroDouble → BlockWysiwyg → BlockImageSlider
@@ -24,7 +30,7 @@
  *   2. `ProcessPhase.image` is required, and it is card artwork — a tall
  *      portrait frame behind a big ordinal. Every asset we have is a landscape
  *      product screenshot, so the four cards would end up with a picture of the
- *      Vintus storefront sitting behind "I scope it in writing". That is
+ *      Vintus storefront sitting behind "We scope it in writing". That is
  *      decoration standing in for content.
  *
  * `BlockWysiwyg`'s `lead` + `text` paragraph shape gives each step a bold
@@ -49,10 +55,10 @@ const VIDEO = "/site/videos";
 
 export const META = {
   /** Plain stem: the root layout's "%s — NeuraGul" template adds the suffix. */
-  title: "How I work",
+  title: "How we work",
   canonical: "/process/",
   description:
-    "Four steps: you write and we talk, I scope it in writing, we build in the open, and I stay on after launch.",
+    "Four steps: you write and we talk, we scope it in writing, we build in the open, and we stay on after launch.",
 } as const;
 
 /* ── BlockHeaderGeneral ────────────────────────────────────────────────── */
@@ -76,7 +82,7 @@ export const META = {
  * No `buttonHref`: the circle is a scroll affordance with no destination.
  */
 export const PROCESS_HEADER: BlockHeaderGeneralProps = {
-  title: "How I work",
+  title: "How we work",
   // The highlight box is ~193x120. A dense dashboard screenshot
   // (`delivery-routing-review.jpg`) is unreadable mush at that size; the
   // PackShip shot is two phone silhouettes on a dark ground and still reads as
@@ -111,13 +117,20 @@ export const PROCESS_HEADER: BlockHeaderGeneralProps = {
 export const PROCESS_INTRO: BlockIntroDoubleProps = {
   labels: ["How this usually goes"],
   statement:
-    "You write, we talk. I scope it in writing. We build in the open. I stay on after launch.",
+    "You write, we talk. We scope it in writing. We build in the open. We stay on after launch.",
 };
 
 /* ── BlockWysiwyg — the four steps ─────────────────────────────────────── */
 
 /**
- * The four steps, verbatim from `PROCESS` in `content.py`, in source order.
+ * The four steps from `PROCESS` in `content.py`, in source order, with the
+ * source's first person singular moved to "we".
+ *
+ * Step 04 keeps a name. "I hold the pager" is a promise about a person being
+ * reachable at 2am, and a company cannot make it; said as "we hold the pager"
+ * it becomes a rota nobody has described. So the step title stays parallel with
+ * the other three and its body names Hamad, which is also the only place on
+ * this route anyone is named.
  *
  * `lead` + `text` rather than `heading` + `paragraph`: the block gives a heading
  * a 20px *bottom* margin and no top margin, so four heading/paragraph pairs
@@ -136,22 +149,22 @@ export const PROCESS_STEPS: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "01 · You write, we talk",
-      text: "Half an hour on a call. You describe what's broken and how much it's costing you. I ask a lot of questions. If I don't think I can help, I'll tell you then and try to point you at someone who can.",
+      text: "Half an hour on a call. You describe what's broken and how much it's costing you. We ask a lot of questions. If we don't think we can help, we'll tell you then and try to point you at someone who can.",
     },
     {
       type: "paragraph",
-      lead: "02 · I scope it in writing",
-      text: "You get a written scope, a fixed price, and a date. If I've misunderstood something, we find out here, while it's still only a document.",
+      lead: "02 · We scope it in writing",
+      text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
     },
     {
       type: "paragraph",
       lead: "03 · We build in the open",
-      text: "Working software lands in the first couple of weeks, then every week after that. You can redirect me while redirecting me is still cheap.",
+      text: "Working software lands in the first couple of weeks, then every week after that. You can redirect us while redirecting us is still cheap.",
     },
     {
       type: "paragraph",
-      lead: "04 · I stay on after launch",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      lead: "04 · We stay on after launch",
+      text: "Hamad Gul holds the pager, fixes what breaks, and hands over once your team wants it. Most of our clients have his mobile number.",
     },
   ],
 };
@@ -229,7 +242,7 @@ export const PROCESS_FULL_IMAGE: BlockImageFullImage = {
  * `contact_lead`.
  */
 export const PROCESS_GENERAL_CTA: GeneralCtaProps = {
-  text: "Tell me what's broken.",
+  text: "Tell us what's broken.",
   label: "Contact",
   href: "/contact/",
 };

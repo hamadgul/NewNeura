@@ -1,7 +1,8 @@
 "use client";
 
 /**
- * The homepage intro block — the "who I am" statement under the hero.
+ * The homepage intro block — the "who you'd be working with" statement under
+ * the hero.
  *
  * Static content, but every child fades/rises in once the section crosses
  * ~15% into the viewport (measured via IntersectionObserver, one-shot).

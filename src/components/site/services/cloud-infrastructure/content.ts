@@ -8,8 +8,13 @@
  * page of its own in this port and so folds in here — networks, firewalls,
  * hardening, patching, monitoring and documentation. The evidence comes from
  * the delivery routing platform on Fly.io, the Vintus storefront and the
- * restaurant ordering portal on Square. The voice is the source's own first
- * person.
+ * restaurant ordering portal on Square.
+ *
+ * VOICE — the source is written in the first person singular, because it was
+ * written by one person. NeuraGul is a team, so this page says "we". Hamad Gul
+ * is named only at the human moments (the contact promise, the About page, the
+ * homepage intro), and this is a capability page, so he is not named here.
+ * Nothing on this page claims a headcount or a capacity.
  *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
@@ -66,7 +71,7 @@ export const META = {
  */
 export const HEADER: BlockHeaderServicesProps = {
   service: "cloud-infrastructure",
-  eyebrow: "What I build",
+  eyebrow: "What we build",
   subtitle: "Infrastructure sized to real load",
   title: "Cloud & Infrastructure",
   titleSize: "3XL",
@@ -191,7 +196,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
 /** First instance — what actually runs, and where. */
 export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
   tagline: "Hosting, and everything under it",
-  title: "What I run for clients",
+  title: "What we run for clients",
   body: [
     {
       type: "paragraph",

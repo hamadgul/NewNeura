@@ -88,7 +88,7 @@ export interface NavGroup {
  * `/contact/`.
  *
  * The architecture template carried two of these, one per office, each with a
- * street address. NeuraGul is one person in New York with no street office, so
+ * street address. NeuraGul works out of New York with no street office, so
  * `address` carries the locality line only ("NYC based") and there is a single
  * record rather than a pair.
  */

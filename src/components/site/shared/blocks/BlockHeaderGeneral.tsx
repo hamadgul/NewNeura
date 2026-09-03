@@ -61,7 +61,7 @@ export interface BlockHeaderGeneralImage {
 }
 
 export interface BlockHeaderGeneralProps {
-  /** `<h1>` text — "About" / "How I work". */
+  /** `<h1>` text — "About" / "How we work". */
   title: string;
   /**
    * Body copy in the second row. Optional: /process/ renders the wrapper

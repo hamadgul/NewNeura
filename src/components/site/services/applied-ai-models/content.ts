@@ -7,6 +7,10 @@
  * three `features` entries in `pages/content.py` are quoted here almost whole,
  * plus the four-step engagement from that file's `PROCESS`.
  *
+ * VOICE — the source is written in the first person singular because it was one
+ * person. It is a team, so this page says "we", and it claims no headcount,
+ * capacity or team size. See `home/content.ts` for the full statement of it.
+ *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
  * aspect ratio from them. Every asset is a landscape 1.6:1 capture; both slots
@@ -121,14 +125,14 @@ export const INTRO: BlockIntroDoubleProps = {
 export const PROCESS: BlockProcessCardSliderProps = {
   tagline: "Workflow",
   intro: "How a custom model ends up in daily use",
-  title: "How I work",
+  title: "How we work",
   phasesLabel: "Phases",
   phases: [
     {
       number: "01",
       title: "Find the screen they already look at",
       caption: "No second app",
-      text: "Before any model, I find the tool your team already opens. PackShip's whole job happens inside the camera flow somebody was going to use regardless. A model that needs a new habit around it is a model that gets used twice.",
+      text: "Before any model, we find the tool your team already opens. PackShip's whole job happens inside the camera flow somebody was going to use regardless. A model that needs a new habit around it is a model that gets used twice.",
       image: {
         src: `${IMG}/packship.jpg`,
         width: 1200,
@@ -159,9 +163,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     },
     {
       number: "04",
-      title: "I scope it in writing",
+      title: "We scope it in writing",
       caption: "Fixed price, and a date",
-      text: "You get a written scope, a fixed price, and a date. If I've misunderstood something, we find out here, while it's still only a document.",
+      text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
       image: {
         src: `${IMG}/rwd-pipeline.jpg`,
         width: 1200,
@@ -170,9 +174,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     },
     {
       number: "05",
-      title: "I stay on after launch",
-      caption: "I hold the pager",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      title: "We stay on after launch",
+      caption: "We hold the pager",
+      text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/delivery-routing-routes.jpg`,
         width: 1600,
@@ -234,12 +238,12 @@ export const WYSIWYG_WHAT_YOU_GET: BlockWysiwygProps = {
     { type: "heading", text: "What integration means here" },
     {
       type: "paragraph",
-      text: "Software shaped around how your business already works, built to survive the next three years of it. Discovery maps the real problem before I write any code. What comes out is clean, documented code your team can take over whenever they want it, and support after launch for as long as you need me.",
+      text: "Software shaped around how your business already works, built to survive the next three years of it. Discovery maps the real problem before we write any code. What comes out is clean, documented code your team can take over whenever they want it, and support after launch for as long as you need us.",
     },
     { type: "heading", text: "The stack, so you can hire for it" },
     {
       type: "paragraph",
-      text: "React Native and TypeScript on the phone. Postgres and Redis behind it. Python, FastAPI, and OR-Tools where the maths lives, React and TypeScript where somebody has to look at the result. Nothing exotic, because you will be hiring against it after I hand over.",
+      text: "React Native and TypeScript on the phone. Postgres and Redis behind it. Python, FastAPI, and OR-Tools where the maths lives, React and TypeScript where somebody has to look at the result. Nothing exotic, because you will be hiring against it after we hand over.",
     },
   ],
 };

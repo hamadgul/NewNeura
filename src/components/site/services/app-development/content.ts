@@ -3,8 +3,13 @@
  *
  * Copy is drawn from the NeuraGul source site's `web-mobile` service
  * (`pages/content.py`), taking its **mobile** half, plus the one case study
- * that evidences it: PackShip, live on the App Store. The voice is the
- * source's own first person.
+ * that evidences it: PackShip, live on the App Store.
+ *
+ * VOICE — the source is written in the first person singular, because it was
+ * written by one person. NeuraGul is a team, so this page says "we". Hamad Gul
+ * is named only at the human moments (the contact promise, the About page, the
+ * homepage intro), and this is a capability page, so he is not named here.
+ * Nothing on this page claims a headcount or a capacity.
  *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
@@ -52,7 +57,7 @@ export const META = {
   title: "App Development",
   canonical: "/services/app-development/",
   description:
-    "Native-quality mobile apps for iOS and Android, built to stay maintainable long after I hand them over.",
+    "Native-quality mobile apps for iOS and Android, built to stay maintainable long after we hand them over.",
 } as const;
 
 /**
@@ -70,7 +75,7 @@ export const META = {
  */
 export const HEADER: BlockHeaderServicesProps = {
   service: "app-development",
-  eyebrow: "What I build",
+  eyebrow: "What we build",
   subtitle: "Native-quality mobile apps",
   title: "App Development",
   titleSize: "3XL",
@@ -92,7 +97,7 @@ export const HEADER: BlockHeaderServicesProps = {
 export const INTRO: BlockIntroDoubleProps = {
   labels: ["Native-quality mobile apps"],
   statement:
-    "Native-quality mobile apps for iOS and Android, built to stay maintainable long after I hand them over.",
+    "Native-quality mobile apps for iOS and Android, built to stay maintainable long after we hand them over.",
   body: [
     "PackShip is the one that is live on the App Store. Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. The app answers all three from a single photograph.",
     "A model running on the phone estimates an item's dimensions from that photograph, with no LiDAR involved. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway. A live Three.js scene then fits your items into candidate boxes while you watch, inside React Native. Rotate it. Swap the box. See exactly how much empty air you were about to pay to ship across the country.",
@@ -176,7 +181,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
 /** First instance — the mobile capabilities, all of them evidenced by PackShip. */
 export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
   tagline: "iOS and Android",
-  title: "What I build on mobile",
+  title: "What we build on mobile",
   body: [
     {
       type: "paragraph",
@@ -207,9 +212,10 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
 };
 
 /**
- * Second instance — the source's four-step engagement, verbatim from
- * `PROCESS` in `pages/content.py`. Four steps, because every AI-written process
- * has three.
+ * Second instance — the source's four-step engagement from `PROCESS` in
+ * `pages/content.py`, carried across step for step with its first-person
+ * singular turned into the team's "we". Four steps, because every AI-written
+ * process has three.
  */
 export const WYSIWYG_HOW: BlockWysiwygProps = {
   tagline: "Four steps, start to handover",
@@ -218,22 +224,22 @@ export const WYSIWYG_HOW: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "You write, we talk:",
-      text: "Half an hour on a call. You describe what's broken and how much it's costing you. I ask a lot of questions. If I don't think I can help, I'll tell you then and try to point you at someone who can.",
+      text: "Half an hour on a call. You describe what's broken and how much it's costing you. We ask a lot of questions. If we don't think we can help, we'll tell you then and try to point you at someone who can.",
     },
     {
       type: "paragraph",
-      lead: "I scope it in writing:",
-      text: "You get a written scope, a fixed price, and a date. If I've misunderstood something, we find out here, while it's still only a document.",
+      lead: "We scope it in writing:",
+      text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
     },
     {
       type: "paragraph",
       lead: "We build in the open:",
-      text: "Working software lands in the first couple of weeks, then every week after that. You can redirect me while redirecting me is still cheap.",
+      text: "Working software lands in the first couple of weeks, then every week after that. You can redirect us while redirecting us is still cheap.",
     },
     {
       type: "paragraph",
-      lead: "I stay on after launch:",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      lead: "We stay on after launch:",
+      text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
     },
   ],
 };

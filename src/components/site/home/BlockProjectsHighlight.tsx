@@ -24,7 +24,7 @@ export function BlockProjectsHighlight() {
 
         <div className="portfolioFilter col-span-full row-start-3 flex flex-col items-start gap-[10px] md:row-start-2 md:mt-[25px] md:flex-row md:items-center md:justify-end md:gap-[30px]">
           <div className="portfolioFilter__title whitespace-nowrap text-[#111111]">
-            Filter by what I built
+            Filter by what we built
           </div>
           {/*
             Below 768px this stays a horizontal scroller, which is the source's

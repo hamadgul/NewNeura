@@ -5,8 +5,14 @@
  * deliverables and this is the first of them: "A straight answer about where AI
  * helps you and where it would be theatre." Everything below is drawn from
  * `pages/content.py` (the service entry, the four-step `PROCESS`, the `HOME`
- * about copy, and the case studies that evidence the claim) in the source's own
- * first-person voice.
+ * about copy, and the case studies that evidence the claim).
+ *
+ * VOICE — the source is written in the first person singular because it was one
+ * person. It is a team, so this page says "we", and it claims no headcount,
+ * capacity or team size. Hamad Gul is named here once, in the third person, for
+ * the one paragraph that is his own biography rather than the team's work. A
+ * *client's* rules living in one person's head is a fact about the client and
+ * stays as written.
  *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
@@ -105,9 +111,9 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "A straight answer about where AI helps you and where it would be theatre. That answer is free, and it is sometimes no.",
   body: [
-    "Most of what gets sold as AI strategy is a deck. What you get from me is half an hour on a call, a lot of questions about what the problem is actually costing you, and then either a written scope with a fixed price and a date, or a no. If I don't think I can help, I'll tell you on that call and try to point you at someone who can.",
-    "The test I apply is whether there is one number somebody is already tracking. A home medical equipment provider had a dispatcher planning six vans by hand every morning from a messy export of the day's tickets. That is a measurable problem, and a solver fixed it. A brand-activation company selling wrapped food trucks to fashion houses had no website of its own, which is a different problem, and the answer there was 24 pages of Next.js with keyword research under the URL structure and no model anywhere in it.",
-    "Where the answer is yes, the work goes inside the tools your team already opens every day. A system nobody opens is a system nobody uses, and I would rather say that before you pay for it than after.",
+    "Most of what gets sold as AI strategy is a deck. What you get from us is half an hour on a call, a lot of questions about what the problem is actually costing you, and then either a written scope with a fixed price and a date, or a no. If we don't think we can help, we'll tell you on that call and try to point you at someone who can.",
+    "The test we apply is whether there is one number somebody is already tracking. A home medical equipment provider had a dispatcher planning six vans by hand every morning from a messy export of the day's tickets. That is a measurable problem, and a solver fixed it. A brand-activation company selling wrapped food trucks to fashion houses had no website of its own, which is a different problem, and the answer there was 24 pages of Next.js with keyword research under the URL structure and no model anywhere in it.",
+    "Where the answer is yes, the work goes inside the tools your team already opens every day. A system nobody opens is a system nobody uses, and we would rather say that before you pay for it than after.",
   ],
 };
 
@@ -133,15 +139,15 @@ export const INTRO: BlockIntroDoubleProps = {
  */
 export const PROCESS: BlockProcessCardSliderProps = {
   tagline: "Workflow",
-  intro: "How I decide whether AI is the answer",
-  title: "How I work",
+  intro: "How we decide whether AI is the answer",
+  title: "How we work",
   phasesLabel: "Phases",
   phases: [
     {
       number: "01",
       title: "You write, we talk",
       caption: "Half an hour on a call",
-      text: "Half an hour on a call. You describe what's broken and how much it's costing you. I ask a lot of questions. If I don't think I can help, I'll tell you then and try to point you at someone who can.",
+      text: "Half an hour on a call. You describe what's broken and how much it's costing you. We ask a lot of questions. If we don't think we can help, we'll tell you then and try to point you at someone who can.",
       image: {
         src: `${IMG}/hero-poster.jpg`,
         width: 1920,
@@ -152,7 +158,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       number: "02",
       title: "The straight answer",
       caption: "Sometimes it is no",
-      text: "I come back with where AI helps you and where it would be theatre. The bar is one number somebody is already tracking. If what you have is a manual process with rules in somebody's head, that usually clears it. If what you have is a website you don't have yet, it does not, and the answer costs you nothing.",
+      text: "We come back with where AI helps you and where it would be theatre. The bar is one number somebody is already tracking. If what you have is a manual process with rules in somebody's head, that usually clears it. If what you have is a website you don't have yet, it does not, and the answer costs you nothing.",
       image: {
         src: `${IMG}/delivery-routing-review.jpg`,
         width: 1600,
@@ -161,9 +167,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     },
     {
       number: "03",
-      title: "I scope it in writing",
+      title: "We scope it in writing",
       caption: "Fixed price, and a date",
-      text: "You get a written scope, a fixed price, and a date. If I've misunderstood something, we find out here, while it's still only a document.",
+      text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
       image: {
         src: `${IMG}/rwd-pipeline.jpg`,
         width: 1200,
@@ -174,7 +180,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       number: "04",
       title: "We build in the open",
       caption: "Working software in weeks",
-      text: "Working software lands in the first couple of weeks, then every week after that. You can redirect me while redirecting me is still cheap.",
+      text: "Working software lands in the first couple of weeks, then every week after that. You can redirect us while redirecting us is still cheap.",
       image: {
         src: `${IMG}/delivery-routing-routes.jpg`,
         width: 1600,
@@ -183,9 +189,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     },
     {
       number: "05",
-      title: "I stay on after launch",
-      caption: "I hold the pager",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      title: "We stay on after launch",
+      caption: "We hold the pager",
+      text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
         width: 1600,
@@ -206,7 +212,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
  */
 export const WYSIWYG_WHEN_IT_HELPS: BlockWysiwygProps = {
   tagline: "The judgement",
-  title: "Four calls I have actually made",
+  title: "Four calls we have actually made",
   body: [
     {
       type: "paragraph",
@@ -221,7 +227,7 @@ export const WYSIWYG_WHEN_IT_HELPS: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "A pile of data nobody has turned into an answer:",
-      text: "Real-world clinical data arrives messy and inconsistent from dozens of sources. At Freenome I led a 0-to-1 ETL pipeline that standardised all of it into a single Common Data Model, and the research ran on top of that. The work there was plumbing before it was anything cleverer.",
+      text: "Real-world clinical data arrives messy and inconsistent from dozens of sources. Before NeuraGul, Hamad Gul led a 0-to-1 ETL pipeline at Freenome that standardised all of it into a single Common Data Model, and the research ran on top of that. The work there was plumbing before it was anything cleverer.",
     },
     {
       type: "paragraph",
@@ -233,7 +239,10 @@ export const WYSIWYG_WHEN_IT_HELPS: BlockWysiwygProps = {
 
 /**
  * Who the page is for, in the source's own words, plus who does the work. The
- * `who_for` line and the about copy are quoted from `content.py`.
+ * `who_for` line is quoted from `content.py`; the closing paragraph replaces the
+ * source's "NeuraGul is me, I stay small on purpose" copy, which claimed a size
+ * nobody has established. What survives is what is checkable: the people who
+ * scope the work write it, and they are still reachable after launch.
  */
 export const WYSIWYG_WHO_ITS_FOR: BlockWysiwygProps = {
   tagline: "Who this is for",
@@ -246,12 +255,12 @@ export const WYSIWYG_WHO_ITS_FOR: BlockWysiwygProps = {
     { type: "heading", text: "What the first call costs" },
     {
       type: "paragraph",
-      text: "Nothing. I read every message myself and I answer all of them, including the ones I turn down. If I'm the wrong person for your project I'll usually know within a day, and I'll say so.",
+      text: "Nothing. We read every message and we answer all of them, including the ones we turn down. If we're the wrong fit for your project we'll usually know within a day, and we'll say so.",
     },
     { type: "heading", text: "Who is doing the work" },
     {
       type: "paragraph",
-      text: "NeuraGul is me, plus the people I bring in. When a project needs more hands I bring in people I've worked with before: a designer, a second engineer, someone who knows a stack better than me. You'll always know who is on it. I stay small on purpose, which is how I'm still the one who picks up the phone.",
+      text: "NeuraGul is a team of developers, designers and engineers working out of New York. The people who scope your project are the people who write it, so you always know who is on it. The same people are still reachable six months after launch.",
     },
   ],
 };

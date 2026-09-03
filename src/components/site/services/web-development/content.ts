@@ -4,9 +4,15 @@
  * Copy is drawn from the NeuraGul source site's `web-mobile` service
  * (`pages/content.py`), taking its **web** half, plus the four case studies
  * that evidence it: Food Truck Rentals, New York Mobile Mechanic, New York Fine
- * Foods and Landscape Drainage Proz. The voice is the source's own first
- * person — Hamad Gul is one person in New York who brings in contractors, so
- * nothing here says "we".
+ * Foods and Landscape Drainage Proz.
+ *
+ * VOICE — the source is written in the first person singular, because it was
+ * written by one person. NeuraGul is a team, so this page says "we". Hamad Gul
+ * is named only at the human moments (the contact promise, the About page, the
+ * homepage intro), and this is a capability page, so he is not named here.
+ * Nothing on this page claims a headcount or a capacity; what survives is only
+ * what is checkable, which is that the people who scope the work are the people
+ * who build it and that they are still reachable after launch.
  *
  * Image paths are the real screenshots under `/site/images`; `width`/`height`
  * are the assets' true pixel sizes, because `next/image` sets the reserved
@@ -51,7 +57,7 @@ export const META = {
   title: "Web Development",
   canonical: "/services/web-development/",
   description:
-    "Sites that load fast, rank, and stay maintainable long after I hand them over.",
+    "Sites that load fast, rank, and stay maintainable long after we hand them over.",
 } as const;
 
 /**
@@ -67,7 +73,7 @@ export const META = {
  */
 export const HEADER: BlockHeaderServicesProps = {
   service: "web-development",
-  eyebrow: "What I build",
+  eyebrow: "What we build",
   subtitle: "Sites that load fast and rank",
   title: "Web Development",
   titleSize: "3XL",
@@ -90,7 +96,7 @@ export const HEADER: BlockHeaderServicesProps = {
 export const INTRO: BlockIntroDoubleProps = {
   labels: ["Sites that load fast and rank"],
   statement:
-    "Sites that load fast, rank, and stay maintainable long after I hand them over.",
+    "Sites that load fast, rank, and stay maintainable long after we hand them over.",
   body: [
     "SEO and performance are part of the first commit rather than a phase somebody bolts on at the end. Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck actually gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets.",
     "Every commercial page on that site carries JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 119 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster. The flagship URL now targets a 12,100/mo search term. It launched on a local qualifier worth 320.",
@@ -194,7 +200,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
 /** First instance — the kinds of web work that exist in the portfolio. */
 export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
   tagline: "Sites, and what runs behind them",
-  title: "What I build on the web",
+  title: "What we build on the web",
   body: [
     {
       type: "paragraph",
@@ -225,34 +231,40 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
 };
 
 /**
- * Second instance — why a client hands the whole build to one person. The
- * first three items are the source's own New York page reasons; the fourth is
- * the last step of its four-step engagement, which is the part that decides
- * whether any of the rest of it survives the year after launch.
+ * Second instance — why a client hands the whole build to us. The first three
+ * items are the source's own New York page reasons; the fourth is the last step
+ * of its four-step engagement, which is the part that decides whether any of the
+ * rest of it survives the year after launch.
+ *
+ * The source wrote all four as a soloist's promise ("I write the scope and then
+ * I write the code", "you get a number that reaches me"). Each is now stated as
+ * the thing a team can actually stand behind: the people who scope the work are
+ * the people who build it, and you can still reach them. Nothing here says how
+ * many people there are, or how senior they are, because neither is established.
  */
 export const WYSIWYG_WHY: BlockWysiwygProps = {
-  tagline: "One person, reachable",
-  title: "Why clients hand me the whole build",
+  tagline: "Scoped, built, still reachable",
+  title: "Why clients hand us the whole build",
   body: [
     {
       type: "paragraph",
       lead: "Whoever scopes it, builds it:",
-      text: "I write the scope and then I write the code. Your project never gets quietly handed down to someone junior once the contract is signed.",
+      text: "The people who write your scope are the people who write your code. You keep the same names from the first call through to launch, and nothing gets quietly reassigned once the contract is signed.",
     },
     {
       type: "paragraph",
       lead: "In your timezone, on the phone:",
-      text: "I'm in New York. You get a number that reaches me and I pick it up. There is no ticket queue and no account manager sitting in the middle of it.",
+      text: "We work out of New York. You get a number that reaches the people building your project and somebody picks it up. There is no ticket queue and no account manager sitting in the middle of it.",
     },
     {
       type: "paragraph",
-      lead: "I rank New York businesses:",
-      text: "Local SEO is part of the build rather than an upsell afterwards. The mobile mechanic I built ranks across all five boroughs for on-demand repair searches.",
+      lead: "We rank New York businesses:",
+      text: "Local SEO is part of the build rather than an upsell afterwards. The mobile mechanic we built ranks across all five boroughs for on-demand repair searches.",
     },
     {
       type: "paragraph",
-      lead: "I stay on after launch:",
-      text: "I hold the pager, fix what breaks, and hand over once your team wants it. Most of my clients have my mobile number.",
+      lead: "We stay on after launch:",
+      text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
     },
   ],
 };
