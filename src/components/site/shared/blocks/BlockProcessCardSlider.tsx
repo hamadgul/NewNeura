@@ -399,7 +399,7 @@ export function BlockProcessCardSlider({
             className="blockProcessCardSlider__listWrapper hidden flex-col justify-end gap-[10px] xl:col-start-1 xl:col-end-6 xl:row-start-1 xl:ml-[40px] xl:flex xl:h-[450px]"
           >
             <p className="blockProcessCardSlider__listLabel font-S text-[#595656]">{phasesLabel}</p>
-            <ul className="blockProcessCardSlider__list mt-[15px] flex flex-col gap-[5px]">
+            <ul className="blockProcessCardSlider__list mt-[15px] flex flex-col gap-[10px]">
               {phases.map((phase, index) => (
                 <li
                   key={phase.number}
@@ -410,11 +410,19 @@ export function BlockProcessCardSlider({
                     type="button"
                     onClick={() => goTo(index)}
                     aria-current={index === active ? "step" : undefined}
-                    className="grid h-[32.4px] w-full cursor-pointer grid-cols-[35px_1fr] items-center text-left transition-opacity duration-300 hover:opacity-60"
+                    // `min-h`, not `h`. 32.4px is the measured one-line row and
+                    // stays the floor, but a two-line title needs the row to
+                    // grow — pinned, the second line rendered on top of the next
+                    // phase. `items-start` + the number's own line-height keeps
+                    // the digit aligned to the title's first line.
+                    className="grid min-h-[32.4px] w-full cursor-pointer grid-cols-[35px_1fr] items-start text-left transition-opacity duration-300 hover:opacity-60"
                   >
                     <span
                       className={cn(
-                        "blockProcessCardSlider__listItemNumber font-S",
+                        // `leading-[32.4px]` matches the `font-SM` title's own
+                        // line box, so the digit sits on the title's first line
+                        // now that the row can grow past one line.
+                        "blockProcessCardSlider__listItemNumber font-S leading-[32.4px]",
                         // The scroll samples record an identical colour on
                         // every phase row, so there is no measured active
                         // state; nudging only the number keeps the active
@@ -424,7 +432,14 @@ export function BlockProcessCardSlider({
                     >
                       {phase.number}
                     </span>
-                    <span className="blockProcessCardSlider__listItemTitle font-SM line-clamp-1">
+                    {/*
+                      Two lines, not one. The layout's phase titles were short
+                      noun phrases ("Discovery + Feasibility"); ours are
+                      sentences, and at `line-clamp-1` in this 288px column they
+                      came out as "Read the log, refuse t…", "Apply every rule
+                      the…", "Hand it to the van an…" — every one cut mid-word.
+                    */}
+                    <span className="blockProcessCardSlider__listItemTitle font-SM line-clamp-2">
                       {phase.title}
                     </span>
                   </button>

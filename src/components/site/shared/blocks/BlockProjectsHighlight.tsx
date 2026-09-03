@@ -377,7 +377,15 @@ function Layout({ layout, isLast }: LayoutProps) {
               className="h-auto w-full object-cover"
             />
           </div>
-          <div className="blockProjectsHighlight__layoutFiveContent col-start-1 col-end-4 flex flex-col md:col-end-7 md:row-start-1 md:mt-[50px] md:ml-[50px] md:bg-[rgba(14,14,14,0.6)] md:p-[20px] md:text-white md:backdrop-blur-[20px] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] xl:col-end-6">
+          {/*
+            0.85, not the measured 0.6. The panel is a frosted caption card and
+            reads as one over a photograph. Over a screenshot — which is what
+            every image on this site is — 0.6 plus a 20px backdrop blur smears
+            the UI underneath into the panel and the whole thing reads as a
+            rendering fault rather than as a card. Opaque enough to be a card,
+            still blurred at the edges.
+          */}
+          <div className="blockProjectsHighlight__layoutFiveContent col-start-1 col-end-4 flex flex-col md:col-end-7 md:row-start-1 md:mt-[50px] md:ml-[50px] md:bg-[rgba(14,14,14,0.85)] md:p-[20px] md:text-white md:backdrop-blur-[20px] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] xl:col-end-6">
             {/* Static: this sits inside the anchor above, so it must not be a
                 link of its own. Hidden below 768 — the source drops it when the
                 caption stops overlaying the image. */}
