@@ -53,7 +53,7 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/rwd-pipeline.jpg`;
  */
 export const PROJECT_LIVE = {
   url: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fneuragul.com%2Fassets%2Fdocs%2Frwd-pipeline-portfolio.pptx",
-  label: "View the case-study deck",
+  label: "Case study",
   display: "neuragul.com/assets/docs/rwd-pipeline-portfolio.pptx",
 } as const;
 

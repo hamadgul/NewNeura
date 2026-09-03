@@ -53,7 +53,7 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/nyff.jpg`;
  */
 export const PROJECT_LIVE = {
   url: "https://www.newyorkfinefoods.com",
-  label: "Visit the live site",
+  label: "Live site",
   display: "newyorkfinefoods.com",
 } as const;
 

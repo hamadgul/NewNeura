@@ -135,7 +135,7 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Year", value: "2026" },
   { label: "Platform", value: "iOS" },
   {
-    label: "View on the App Store",
+    label: "App Store",
     value: "apps.apple.com/app/id6754204899",
     href: "https://apps.apple.com/app/id6754204899",
   },

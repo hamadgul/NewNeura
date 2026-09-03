@@ -5,13 +5,25 @@
  * `BlockHeaderProjects.styles.md`)
  * and cross-checked against the 390px capture in `mobile-full.png`.
  *
- * SIZING — the measured `height: 1170px / maxHeight: 1170px` and
- * `gridTemplateRows: 900px 270px` are viewport-relative, not fixed:
- *   1440x900 → 1170 = 130vh, rows 900/270 = 100vh/30vh
- *    390x844 → 1097 = 130vh, rows 844/253                (both captures agree)
- * Reproduced as `h-[1170px] max-h-[130vh]` with proportional `1fr / 0.3fr`
- * rows, which lands on the measured pixels at both widths and degrades
- * sensibly on any other viewport height.
+ * TEXT ON A GROUND, NOT ON THE IMAGE — the one deliberate departure from the
+ * layout this is adapted from.
+ *
+ * That layout puts the whole header over a full-bleed photograph with a 44%
+ * black scrim. It works for architectural photography, which is textless and
+ * quiet in the corners. Every image this site owns is a screenshot of a
+ * website or an app, and a screenshot is the opposite: it is mostly type, and
+ * its type is arranged exactly where ours is. On `/work/vintus/` the client's
+ * own nav ("PRODUCERS · TRADE TOOLS · NEWS…") landed on our wordmark's
+ * baseline, their search field ran through our `<h1>`, and their headline —
+ * "Building a National Wine Import Business From Scratch", set 2.5x oversized
+ * by the upscale — read as ours. No amount of scrim fixes that; the collision
+ * is structural.
+ *
+ * So the header is two bands, which is the shape `BlockHeaderServices` already
+ * uses on this site and is proven to work: a 500px ground carrying every piece
+ * of text, then a 70vh image band with nothing over it. The screenshot gets to
+ * be a screenshot, our type gets a guaranteed contrast, and the block keeps its
+ * measured internal spacing and column spans.
  *
  * GRID — the source addresses two named areas, `left` and `right`, that split
  * the main columns in half; `.ng-grid` in globals.css carries the tracks but
@@ -85,17 +97,17 @@ export function BlockHeaderProjects({
   return (
     <header
       className={cn(
-        "blockHeaderProjects ng-grid relative mb-[100px] h-[1170px] max-h-[130vh] grid-rows-[minmax(0,1fr)_minmax(0,0.3fr)] overflow-hidden",
+        "blockHeaderProjects ng-grid relative mb-[100px] grid-rows-[500px_70vh] overflow-hidden bg-[#262626]",
         className,
       )}
     >
       {/*
-        115% tall (measured 1345.5px against a 1170px area) and clipped by the
-        section — the source keeps that 15% of headroom so its scroll parallax
-        has somewhere to travel. Static here, so only the top 100% is ever seen,
-        which is exactly the settled frame the reference screenshot captures.
+        The image band. Row 2, so nothing is ever laid over it — see the note
+        at the top of the file. `object-cover` still crops, but a screenshot
+        cropped to a wide band reads as a screenshot rather than as wallpaper,
+        and no text competes with the type inside it.
       */}
-      <div className="blockHeaderProjects__image col-span-full row-start-1 row-end-3 h-[115%] max-h-[calc(15%+1170px)]">
+      <div className="blockHeaderProjects__image col-span-full row-start-2 h-full overflow-hidden">
         <Image
           src={image.src}
           alt={image.alt}
@@ -107,15 +119,12 @@ export function BlockHeaderProjects({
         />
       </div>
 
-      <div className="blockHeaderProjects__imageOverlay col-span-full row-start-1 row-end-3 z-[2] bg-[rgba(0,0,0,0.443)]" />
-
       {/*
-        Rows: 1fr (breadcrumb + back link + lead) / auto (location + service) /
-        title. Measured at desktop as 581.094 / 18.906 / 300 against a 900px
-        wrapper — the first row is the flexible remainder, the last is the
-        title's own 225px + 25/50 margins. Below 768px the third row becomes
-        flexible too, because the scroll prompt is pinned to the bottom of it
-        (its underline sits 20px above the wrapper's bottom edge at 390px).
+        The text band. Three rows — (back link + breadcrumb + lead) / (meta +
+        service) / title — with the first taking the slack so the title sits on
+        the band's bottom edge, which is where it sat against the image before.
+        The band is 500px rather than the old 900px, so the header's top margin
+        steps down with it (75/35 rather than 75/150).
       */}
       <div className="blockHeaderProjects__contentWrapper col-span-full row-start-1 z-[3] grid grid-cols-subgrid grid-rows-[auto_auto_1fr] text-white md:grid-rows-[minmax(0,1fr)_auto_auto]">
         {/* Hidden below 768px — absent from the 390px capture. */}
@@ -142,7 +151,7 @@ export function BlockHeaderProjects({
           the reference renders — the chip's top edge lines up with the lead's
           first line, so the row is start-aligned.)
         */}
-        <div className="blockHeaderProjects__header col-span-full row-start-1 mt-[75px] grid grid-cols-subgrid self-start pb-[50px] md:mt-[150px]">
+        <div className="blockHeaderProjects__header col-span-full row-start-1 mt-[75px] grid grid-cols-subgrid self-start pb-[35px] md:mt-[110px]">
           <div className="blockHeaderProjects__backButton col-start-2 row-start-1 h-[27px]">
             <ButtonArrow title={backLabel} href={backHref ?? breadcrumbHref} color="white" />
           </div>
@@ -152,12 +161,22 @@ export function BlockHeaderProjects({
           </span>
         </div>
 
-        <div className="blockHeaderProjects__location font-S col-start-2 col-end-4 row-start-2">
+        {/*
+          Two columns held a city ("Livermore, CA"). Ours holds a meta string —
+          "2026 · E-commerce" — which wrapped to "2026 · E-" / "commerce" in
+          that width, so the slot runs to line 6.
+        */}
+        <div className="blockHeaderProjects__location font-S col-start-2 col-end-[6] row-start-2 md:col-end-8">
           {location}
         </div>
 
-        {/* Right-aligned rather than filling its cell (measured 107px in a 260px area). */}
-        <div className="blockHeaderProjects__service font-S col-start-2 col-end-[6] row-start-2 justify-self-end md:col-end-[14] xl:col-start-[18] xl:col-end-[22]">
+        {/*
+          Right-aligned rather than filling its cell. Widened from line 18 for
+          the same reason: a single market name fitted 270px, but two service
+          lines joined with a "·" ("Cloud & Infrastructure · Web Development")
+          did not and wrapped onto the title.
+        */}
+        <div className="blockHeaderProjects__service font-S col-start-2 col-end-[6] row-start-2 justify-self-end text-right md:col-start-8 md:col-end-[14] xl:col-start-[14] xl:col-end-[22]">
           {service}
         </div>
 

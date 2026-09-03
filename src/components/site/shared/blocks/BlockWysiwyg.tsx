@@ -158,7 +158,21 @@ export function BlockWysiwyg({ tagline, title, body, className }: BlockWysiwygPr
         <div className="wysiwyg">
           {body.map((node, i) =>
             node.type === "heading" ? (
-              <h3 key={i} className="font-M mb-[20px]">
+              <h3
+                key={i}
+                className={cn(
+                  "font-M mb-[20px]",
+                  // The measured rule is `margin-bottom: 20px` and nothing on
+                  // top, which is right for a heading that opens the rich text
+                  // — the source only ever used this node first. Ours follow
+                  // paragraphs ("What integration means here" after a run of
+                  // body copy on /services/applied-ai/models/), and with no top
+                  // margin they butt straight into the line above and stop
+                  // reading as headings at all. 40px only when something
+                  // precedes them, so the opening instance is untouched.
+                  i > 0 && "mt-[40px]",
+                )}
+              >
                 {node.text}
               </h3>
             ) : node.type === "quote" ? (

@@ -47,7 +47,7 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/vintus.jpg`;
  */
 export const PROJECT_LIVE = {
   url: "https://vintus.com",
-  label: "Visit the live site",
+  label: "Live site",
   display: "vintus.com",
 } as const;
 

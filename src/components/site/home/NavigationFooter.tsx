@@ -167,6 +167,22 @@ export function NavigationFooter({ variant = "full" }: NavigationFooterProps = {
           />
         </div>
 
+        {/*
+          Scrim over the parallax panel.
+
+          The layout was drawn around a dark architectural photograph, so the
+          white menu sitting on it needed nothing behind it. Our panel is a
+          bright loft interior — brick and daylight — and against that the
+          five service links measured 1.3-2.1:1 and the "Applied AI" line was
+          effectively gone. This sits between the image and the menu (the image
+          is `-z-2`, the menu `z-1`) and darkens the panel without touching the
+          parallax transform, which stays on the image wrapper above.
+        */}
+        <div
+          aria-hidden="true"
+          className="navigationFooter__mainImageScrim pointer-events-none absolute inset-0 -z-1 bg-black/55"
+        />
+
         <div className="relative z-1 flex w-full flex-col gap-[24px] xl:gap-[40px]">
           <div className="__line h-px w-full bg-white/25 xl:w-[1340px]" />
 

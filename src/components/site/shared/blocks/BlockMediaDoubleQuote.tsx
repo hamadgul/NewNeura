@@ -208,6 +208,19 @@ export function BlockMediaDoubleQuote({
           // The 100px gap is the small figure's own margin only once the block
           // is side by side; when stacked it belongs to the blockquote instead.
           "xl:col-start-[14] xl:col-end-[main-end] xl:row-start-1 xl:row-end-3 xl:mb-[100px]",
+          /*
+            Bottom-align the small media against its caption.
+
+            Rows here are sized by the big figure, which spans three of them.
+            The layout assumed the small slot held a tall portrait that filled
+            its two rows to match; ours are landscape screenshots — 512x265 on
+            /work/new-york-mobile-mechanic/ renders 530x275 in a 645px column —
+            so a top-aligned image left ~370px of white between itself and the
+            caption directly beneath it, which read as a rendering fault rather
+            than as space. Pushed to the bottom, image and caption group and the
+            slack sits above them where the eye reads it as margin.
+          */
+          "xl:justify-end",
         )}
       >
         <MediaFrame

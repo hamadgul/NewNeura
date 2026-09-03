@@ -206,7 +206,7 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Year", value: "2026" },
   { label: "Platform", value: "Web" },
   {
-    label: "Visit the live site",
+    label: "Live site",
     value: "newyorkmobilemechanic.com",
     href: "https://www.newyorkmobilemechanic.com",
   },

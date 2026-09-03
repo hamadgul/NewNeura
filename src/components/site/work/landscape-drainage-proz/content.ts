@@ -50,7 +50,7 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/landscapedrainage.jpg`;
  */
 export const PROJECT_LIVE = {
   url: "https://landscapedrainageproz.com",
-  label: "Visit the live site",
+  label: "Live site",
   display: "landscapedrainageproz.com",
 } as const;
 

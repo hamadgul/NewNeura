@@ -50,7 +50,7 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/pizzeria.jpg`;
  */
 export const PROJECT_LIVE = {
   url: "https://pizzeria-software.vercel.app",
-  label: "Visit the live demo",
+  label: "Live demo",
   display: "pizzeria-software.vercel.app",
 } as const;
 
