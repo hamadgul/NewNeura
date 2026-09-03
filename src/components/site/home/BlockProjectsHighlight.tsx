@@ -22,15 +22,27 @@ export function BlockProjectsHighlight() {
           <ButtonArrow title="All projects" href="/work/" />
         </div>
 
-        <div className="portfolioFilter col-span-full row-start-3 flex flex-col items-start gap-[10px] md:row-start-2 md:mt-[25px] md:flex-row md:items-center md:justify-end">
+        <div className="portfolioFilter col-span-full row-start-3 flex flex-col items-start gap-[10px] md:row-start-2 md:mt-[25px] md:flex-row md:items-center md:justify-end md:gap-[30px]">
           <div className="portfolioFilter__title whitespace-nowrap text-[#111111]">
             Filter by what I built
           </div>
-          {/* The source clips this row in its own `__wrapperOverflow` box. As
-              a bare grid item the scroller takes its content width (582px in a
-              343px column) because grid items default to `min-width: auto`. */}
-          <div className="portfolioFilter__wrapperOverflow w-full min-w-0 overflow-x-auto md:w-auto">
-          <div className="portfolioFilter__itemWrapper flex gap-[30px]">
+          {/*
+            Below 768px this stays a horizontal scroller, which is the source's
+            behaviour and the right affordance on a phone: the label sits on its
+            own line above it and the five pills swipe.
+
+            From 768px it must WRAP instead. The row needs 797px of content —
+            our service names are long ("Cloud & Infrastructure", "Data
+            Intelligence") where the layout was measured against one-word
+            markets — and between 768px and ~1100px the wrapper only gets
+            535-767px after the 143px label. It was clipping "Data
+            Intelligence" mid-word behind a scrollbar, which at a 30px overflow
+            reads as a broken row rather than as something you can scroll.
+            `min-w-0` stays: it is what lets the wrapper shrink to the space
+            available so the inner row knows where to break.
+          */}
+          <div className="portfolioFilter__wrapperOverflow w-full min-w-0 overflow-x-auto md:w-auto md:overflow-x-visible">
+          <div className="portfolioFilter__itemWrapper flex gap-x-[30px] gap-y-[10px] md:flex-wrap md:justify-end">
             {PORTFOLIO_FILTERS.map((filter) => (
               <a
                 key={filter.label}
