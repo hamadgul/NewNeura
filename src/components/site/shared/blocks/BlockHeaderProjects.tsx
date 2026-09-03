@@ -115,7 +115,14 @@ export function BlockHeaderProjects({
           height={image.height}
           sizes="100vw"
           priority
-          className="blockHeaderProjects__img h-full w-full object-cover"
+          // `object-top`, not the default centre. A centred cover crop takes a
+          // horizontal slice out of the middle of a website screenshot, which
+          // lands mid-paragraph — on /work/landscape-drainage-proz/ it cut
+          // through the middle of a line of the client's own body copy. Every
+          // screenshot here is top-weighted (nav, then hero), so anchoring the
+          // crop to the top shows the part that means something and cuts the
+          // bottom, which reads as a cropped screenshot rather than a slice.
+          className="blockHeaderProjects__img h-full w-full object-cover object-top"
         />
       </div>
 

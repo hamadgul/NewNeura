@@ -77,11 +77,15 @@ export const META = {
  */
 export const PROCESS_HEADER: BlockHeaderGeneralProps = {
   title: "How I work",
+  // The highlight box is ~193x120. A dense dashboard screenshot
+  // (`delivery-routing-review.jpg`) is unreadable mush at that size; the
+  // PackShip shot is two phone silhouettes on a dark ground and still reads as
+  // something at 193px, which is all this slot is asked to do.
   highlightImage: {
-    src: `${IMG}/delivery-routing-review.jpg`,
+    src: `${IMG}/packship.jpg`,
     alt: "",
-    width: 1600,
-    height: 1000,
+    width: 1200,
+    height: 750,
   },
   highlightCaption: "Talk. Scope. Build. Stay.",
   image: {

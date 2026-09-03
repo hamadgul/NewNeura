@@ -71,7 +71,7 @@ export interface BlockMediaDoubleQuoteProps {
   /** Tall media on the left (bottom when stacked). The about instance is a video. */
   large: BlockMediaDoubleQuoteMedia;
   /** Smaller media, top right (top when stacked). */
-  small: BlockMediaDoubleQuoteMedia;
+  small?: BlockMediaDoubleQuoteMedia;
   /**
    * Pull-quote, verbatim and including the source's own quotation marks — e.g.
    * `"The open floor area allows abundant natural light to filter through …"`.
@@ -187,7 +187,13 @@ export function BlockMediaDoubleQuote({
           "col-start-[main-start] col-end-[main-end] row-start-3 flex flex-col",
           // See the header note: the subgrid span is what makes rows 3 and 4
           // resolve the way the source's do.
-          "xl:col-start-[2] xl:col-end-[13] xl:row-start-2 xl:row-end-5 xl:grid xl:grid-cols-subgrid xl:grid-rows-subgrid",
+          "xl:row-start-2 xl:row-end-5 xl:grid xl:grid-cols-subgrid xl:grid-rows-subgrid",
+          // Half the main column when something shares the row; the whole of it
+          // when nothing does. Left at half with no `small` and no `quote`, the
+          // right half was simply empty — 670px of nothing beside the media.
+          small || quote
+            ? "xl:col-start-[2] xl:col-end-[13]"
+            : "xl:col-start-[main-start] xl:col-end-[main-end]",
         )}
       >
         <MediaFrame
@@ -200,6 +206,7 @@ export function BlockMediaDoubleQuote({
         />
       </figure>
 
+      {small ? (
       <figure
         className={cn(
           "blockMediaDoubleQuote__imageFigure blockMediaDoubleQuote__imageFigure--small",
@@ -230,6 +237,7 @@ export function BlockMediaDoubleQuote({
           revealClassName={revealClass}
         />
       </figure>
+      ) : null}
 
       {/* Always rendered, even with no text: the stacked layouts rely on this
           element's 100px bottom margin for the gap above the big media. */}

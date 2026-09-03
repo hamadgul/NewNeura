@@ -60,13 +60,17 @@ export const META = {
 export const ABOUT_HEADER: BlockHeaderGeneralProps = {
   title: "About",
   intro: "I'm Hamad Gul, I work out of New York, and I keep a handful of projects going at a time.",
+  // Was `packship.jpg` captioned "Who you'd be working with" — a phone
+  // screenshot answering a question about a person. The routing platform is
+  // the closest this site has to a picture of the work itself, and the caption
+  // now says what the image actually shows.
   highlightImage: {
-    src: `${IMG}/packship.jpg`,
+    src: `${IMG}/delivery-routing.jpg`,
     alt: "",
     width: 1200,
     height: 750,
   },
-  highlightCaption: "Who you'd be working with",
+  highlightCaption: "Six vans, planned every morning",
   image: {
     src: `${IMG}/hero-poster.jpg`,
     alt: "",

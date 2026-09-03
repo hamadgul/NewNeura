@@ -133,13 +133,10 @@ export const PROJECT_MEDIA_QUOTE: BlockMediaDoubleQuoteProps = {
     width: 1200,
     height: 750,
   },
-  small: {
-    type: "image",
-    src: `${IMAGES}/nyff.jpg`,
-    alt: "The New York Fine Foods site, opened at the top of the page.",
-    width: 1200,
-    height: 750,
-  },
+  // No `small`. This project owns one still and one video, and the still is
+  // already the header band *and* the video's poster — a third copy of it, sat
+  // right beside the second, was the page's worst moment. The block renders the
+  // video alone now.
 };
 
 /**
