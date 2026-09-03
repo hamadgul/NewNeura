@@ -296,13 +296,21 @@ function SubPageItem({ page }: { page: ServiceSubPageLink }) {
         aria-current={page.current ? "page" : undefined}
       >
         {/*
-          The chevron is taken out of flow so the row keeps the 18.9px font-S
-          line box; in flow its 19px height would set the row instead. The item
-          is 146px wide against a 136px column for exactly this reason — the
-          longest label, "Evaluation & Guardrails", runs to within a few px of the
-          chevron and must not wrap.
+          The chevron is taken out of flow so a one-line row keeps the 18.9px
+          font-S line box; in flow its 19px height would set the row instead.
+
+          `pr-[24px]` reserves its column. The layout was drawn for labels that
+          all fit one line — the studio's longest was "Market Rate Housing" at
+          133px against 146px of item — and two of ours do not: "Retrieval &
+          Agents" is 134px and "Evaluation & Guardrails" 168px against the 127px
+          before the chevron. With `whitespace-nowrap` and an out-of-flow chevron
+          they ran straight underneath it. Reserving the column and allowing the
+          wrap is what fixes that without shortening a real page name.
+
+          Both items on the second row wrap together, so the row stays even; at
+          <768px the item is 255px wide and nothing wraps at all.
         */}
-        <span className="font-S relative block whitespace-nowrap">
+        <span className="font-S relative block pr-[24px]">
           {page.current ? (
             <span
               aria-hidden="true"

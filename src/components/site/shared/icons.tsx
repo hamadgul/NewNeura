@@ -98,7 +98,7 @@ export function InstagramIcon(props: IconProps) {
 /**
  * The NeuraGul wordmark.
  *
- * Set in Aeonik rather than drawn as an SVG on purpose: it has to sit over the
+ * Set in type rather than drawn as an SVG on purpose: it has to sit over the
  * hero video in white and in the footer on #262626, and type inheriting
  * `currentColor` does that with no second asset. `Gul` carries the lighter
  * weight, which is the split the source site's `Neura<span>Gul</span>` brand

@@ -1,49 +1,21 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { GeistSans } from "geist/font/sans";
 import { Preloader } from "@/components/site/home/Preloader";
 import { PageTransition } from "@/components/site/shared/PageTransition";
 import { SmoothScroll } from "@/components/site/shared/SmoothScroll";
 import "./globals.css";
 
-// `next/font/local` is resolved statically at build time, so every `path` has
-// to be a literal string — a template literal or shared constant fails to
-// resolve. Keep these spelled out.
-const aeonik = localFont({
-  variable: "--font-aeonik",
-  display: "fallback",
-  src: [
-    {
-      path: "../../public/site/fonts/aeonik-light-Dpju73oo.woff2",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../../public/site/fonts/aeonik-lightitalic-CgVRFIYC.woff2",
-      weight: "300",
-      style: "italic",
-    },
-    {
-      path: "../../public/site/fonts/aeonik-regular-CDaMS559.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/site/fonts/aeonik-regularitalic-CMWVAbUM.woff2",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "../../public/site/fonts/aeonik-semibold-Dz4moNn4.woff2",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../../public/site/fonts/aeonik-semibolditalic-1Ub6-gfY.woff2",
-      weight: "600",
-      style: "italic",
-    },
-  ],
-});
+/*
+  Geist Sans, self-hosted by the `geist` package (SIL OFL 1.1). It is a
+  variable face covering 100-900 in ~30kb, which is why the six static cuts the
+  layout used to load are gone — the design only ever asked for 300/400/600 and
+  a variable axis serves those plus anything added later from one file.
+
+  It has no true italic. Nothing on the site renders one: `BlockWysiwyg`'s
+  `quote` node is the only italic code path and no content module declares one.
+  If a quote is ever added, check it — the browser will synthesise an oblique
+  rather than fail visibly.
+*/
 
 const SEO = "/site/seo";
 const IMAGES = "/site/images";
@@ -80,7 +52,7 @@ export default function RootLayout({
   return (
     // `ng-page` scopes the site's page-level rules (white ground, hidden
     // scrollbars, Lenis contract).
-    <html lang="en" className={`ng-page ${aeonik.variable} antialiased`}>
+    <html lang="en" className={`ng-page ${GeistSans.variable} antialiased`}>
       <body>
         {/*
           Both of these live here rather than in each route on purpose. The
