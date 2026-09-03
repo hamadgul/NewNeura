@@ -82,8 +82,32 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
   useEffect(() => {
     if (open) {
       setRender(true);
-      const raf = requestAnimationFrame(() => setAnimateIn(true));
-      return () => cancelAnimationFrame(raf);
+      /*
+        TWO frames, not one, and this is load-bearing.
+
+        `setRender(true)` only takes the overlay out of `display: none`; the
+        opening state (`opacity-0`, the translate, the rule's `scale-x-0`) has
+        to be *painted* before `animateIn` flips, or there is no start value to
+        interpolate from and every element snaps straight to its end state.
+
+        A single `requestAnimationFrame` was not enough: `setRender` is called
+        from a passive effect, so React has only *scheduled* that render when
+        the callback runs, and both flags landed in one commit. The whole
+        entrance — overlay fade, the 60ms item stagger, the rule wipe — was
+        silently dead, which is invisible unless you actually watch it: the menu
+        still opened, just instantly.
+
+        The first frame lets React commit and paint `render`; the second flips
+        `animateIn` against a ground truth the compositor already has.
+      */
+      let second = 0;
+      const first = requestAnimationFrame(() => {
+        second = requestAnimationFrame(() => setAnimateIn(true));
+      });
+      return () => {
+        cancelAnimationFrame(first);
+        cancelAnimationFrame(second);
+      };
     }
     setAnimateIn(false);
     const timer = window.setTimeout(() => setRender(false), OVERLAY_TRANSITION_MS);
@@ -148,7 +172,14 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
             onClick={toggle}
             aria-expanded={open}
             aria-controls={overlayId}
-            className="buttonMenu flex h-[30px] w-[89px] items-center justify-center gap-[4px] rounded-full bg-[rgba(14,14,14,0.6)] px-[8px] text-white"
+            className={cn(
+              "buttonMenu flex h-[30px] w-[89px] items-center justify-center gap-[4px] rounded-full px-[8px]",
+              "transition-colors duration-300 ease-out",
+              // Dark pill over the page so it reads on the hero video; inverted
+              // to a light pill once the overlay is up, which is what the
+              // reference does — on the blurred ground a dark pill disappears.
+              open ? "bg-white text-[#111111]" : "bg-[rgba(14,14,14,0.6)] text-white",
+            )}
           >
             {/* Both labels sit absolutely in the same 44x24 box so the swap
                 happens in place with zero layout shift — the theme toggles
@@ -203,14 +234,40 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
         aria-label="Main menu"
         aria-hidden={!render}
         className={cn(
-          "navigationMain__dropDown fixed inset-0 content-start overflow-y-auto bg-black/80 transition-[opacity,transform] duration-[400ms] ease-in-out",
-          render ? "grid" : "hidden",
+          "navigationMain__dropDown fixed inset-0 overflow-y-auto transition-[opacity,transform] duration-[400ms] ease-in-out",
+          // The reference does not lay the menu on a flat scrim — the page
+          // behind it is blurred out. Ours was `bg-black/80` alone, and at 0.8
+          // the homepage hero was still legible straight through: "I build the
+          // software that small companies actually run on" ran across the
+          // service links and the scroll cue sat under the contact block. The
+          // blur is what makes the ground quiet; the 70% black is what keeps
+          // white type at contrast over whatever page is behind it.
+          "bg-black/70 backdrop-blur-[24px]",
+          render ? "block" : "hidden",
           animateIn ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 md:translate-x-0",
         )}
       >
-        <div className="mx-auto grid w-full max-w-[1440px] auto-rows-min gap-x-[40px] gap-y-[48px] px-[15px] pb-[60px] pt-[130px] md:grid-cols-2 md:px-[30px] md:pt-[150px] lg:grid-cols-[1fr_1.4fr_1fr] lg:px-[40px] lg:pt-[170px]">
+        {/*
+          A column, not a three-up grid. The reference puts the service list
+          across the left half at `font-XL`, the two link groups at ~64% across,
+          and the contact record on the bottom edge — where ours had it in a
+          third top-row column, "Web Development", "App Development" and
+          "Cloud & Infrastructure" each wrapped onto two lines in a 376px track.
+        */}
+        <div className="mx-auto flex min-h-full w-full max-w-[1440px] flex-col px-[15px] pb-[40px] pt-[100px] md:px-[30px] lg:px-[40px]">
+          {/* The hairline under the top bar. First thing in, so the panel reads
+              as opening from the header rather than arriving all at once. */}
+          <div
+            aria-hidden="true"
+            className={cn(
+              "navigationMain__rule h-px w-full shrink-0 origin-left bg-white/25 transition-transform duration-[600ms] ease-out",
+              animateIn ? "scale-x-100" : "scale-x-0",
+            )}
+          />
+
+          <div className="mt-[40px] grid flex-1 auto-rows-min gap-x-[40px] gap-y-[48px] md:mt-[56px] lg:grid-cols-[1.5fr_1fr]">
           <ul className="navigationMain__mainMenu flex flex-col gap-[10px]">
-            <li className="font-S mb-[8px] font-semibold text-white">Services</li>
+            <li className="font-S mb-[8px] font-semibold text-white/50">Services</li>
             {SERVICE_LINKS.map((link) => {
               const props = staggerProps(itemIndex++, animateIn);
               return (
@@ -242,13 +299,13 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
             />
           </div>
 
-          {/* The layout was built for two offices and a socials row. NeuraGul
-              has one location and no social accounts, so this column carries a
-              single contact record — see OFFICES in content.ts. */}
-          <div className="flex flex-col gap-[40px]">
-            <div className="navigationMain__contactOne flex flex-col gap-[6px]">
-              <OfficeBlock office={OFFICES[0]} />
-            </div>
+          </div>
+
+          {/* The reference carries its offices on the bottom edge and its
+              socials opposite them. There are no socials to render, so the
+              single contact record sits alone on the right. */}
+          <div className="navigationMain__contactOne mt-[48px] flex w-fit shrink-0 flex-col gap-[6px] lg:mt-0 lg:self-end">
+            <OfficeBlock office={OFFICES[0]} />
           </div>
         </div>
       </nav>
@@ -266,7 +323,7 @@ interface NavGroupColumnProps {
 function NavGroupColumn({ group, startIndex, animateIn, onNavigate }: NavGroupColumnProps) {
   return (
     <div className="flex flex-col gap-[10px]">
-      <p className="font-S font-semibold text-white">{group.title}</p>
+      <p className="font-S font-semibold text-white/50">{group.title}</p>
       <ul className="flex flex-col gap-[8px]">
         {group.items.map((item, i) => {
           const props = staggerProps(startIndex + i, animateIn);
@@ -290,7 +347,7 @@ function NavGroupColumn({ group, startIndex, animateIn, onNavigate }: NavGroupCo
 function OfficeBlock({ office }: { office: OfficeContact }) {
   return (
     <>
-      <p className="font-S font-semibold text-white">{office.label}</p>
+      <p className="font-S font-semibold text-white/50">{office.label}</p>
       {office.address.map((line) => (
         <p key={line} className="font-M text-white/80">
           {line}
