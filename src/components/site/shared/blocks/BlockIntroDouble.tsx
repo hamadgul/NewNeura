@@ -264,8 +264,38 @@ export function BlockIntroDouble({
           <div
             className={cn(
               revealClass,
-              "blockIntroDouble__textMain col-start-1 col-end-[-1] row-start-2 mt-[50px] md:col-end-13 xl:col-start-7 xl:col-end-19 xl:mt-[60px]",
-              isTwoColumnBody && "xl:columns-2 xl:gap-x-[20px]",
+              "blockIntroDouble__textMain col-start-1 col-end-[-1] row-start-2 mt-[50px] md:col-end-13",
+              isTwoColumnBody
+                ? // The source's own placement, and correct for the copy it was
+                  // measured with: cols 7-19 is 1070px at 1920, which splits
+                  // into two ~525px columns whose longest rendered line is 73
+                  // characters — the top of the 65-75 band, so the source's own
+                  // intended measure. That is the number the branch below matches.
+                  "xl:col-start-7 xl:col-end-19 xl:mt-[60px] xl:columns-2 xl:gap-x-[20px]"
+                : /*
+                     Single column needs different placement, not just one fewer
+                     column. Inheriting cols 7-19 gave a body that shared no edge
+                     with the statement above it — indented 540px on the left at
+                     1920 while overhanging its right edge by 270px — at a 1070px
+                     measure whose longest line ran ~134 characters against a
+                     65-75 target. Three faults that read as one: the paragraph
+                     looked stranded.
+
+                     So it takes the statement's own left edge (both start at
+                     main-start, giving the block a real alignment), caps the
+                     measure, and closes the gap to 30px so a short paragraph
+                     groups under the statement instead of floating below it. The
+                     whitespace then sits to the right of the body, under the
+                     statement's ragged tail, where it reads as margin.
+
+                     560px, not a `ch` value: `ch` is the advance of "0", which in
+                     Geist is far wider than the average lowercase glyph, so it
+                     under-reports real line length badly — `max-w-[63ch]` metered
+                     668px and 89 characters. Measured here at 7.5px per rendered
+                     character, so 560px lands at ~75. The body is a fixed 16px at
+                     every tier, so a px cap is stable.
+                  */
+                  "xl:col-start-1 xl:col-end-[-1] xl:mt-[30px] xl:max-w-[560px]",
               // The source ships one <p>; multi-paragraph copy keeps the same
               // measure and separates on the body's own 21.6px line.
               "[&>p+p]:mt-[21.6px]",

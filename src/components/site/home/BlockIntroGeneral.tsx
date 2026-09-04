@@ -84,7 +84,9 @@ export function BlockIntroGeneral() {
       <p
         className={cn(
           revealClass,
-          "blockIntroGeneral__text col-start-[main-start] col-end-[main-end] row-start-3 mb-[40px] md:col-start-[4] md:col-end-[12] md:row-start-2 xl:col-start-[5] xl:col-end-[17]",
+          // Capped for the same reason as `BlockWysiwyg`: cols 5-17 is 1070px at
+          // 1920, which ran this paragraph at 149 characters per line.
+          "blockIntroGeneral__text col-start-[main-start] col-end-[main-end] row-start-3 mb-[40px] md:col-start-[4] md:col-end-[12] md:row-start-2 xl:col-start-[5] xl:col-end-[17] xl:max-w-[560px]",
         )}
         style={{ transitionDelay: "160ms" }}
       >
