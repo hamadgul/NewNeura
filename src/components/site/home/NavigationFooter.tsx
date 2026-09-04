@@ -141,8 +141,20 @@ export function NavigationFooter({ variant = "full" }: NavigationFooterProps = {
         // 700/900 at 1440): `__topSection` is always exactly the viewport
         // height. It used to be a px ladder that happened to be right at the
         // two sizes it was first measured at and wrong everywhere else.
-        className="navigationFooter__topSection relative z-2 flex h-screen w-full flex-col justify-end overflow-hidden bg-[#262626] px-[25px] pb-[80px] text-white md:px-[30px] md:pb-[35px] xl:px-[40px] xl:pb-[35px]"
+        className="navigationFooter__topSection relative z-2 flex h-screen w-full flex-col justify-between overflow-hidden bg-[#262626] px-[25px] pb-[80px] text-white md:px-[30px] md:pb-[35px] xl:px-[40px] xl:pb-[35px]"
       >
+        {/*
+          `justify-between`, not `justify-end`. The source lays this panel out
+          as a two-row grid — measured `grid-template-rows: 381.6px 483.4px` on
+          a 900px panel — with the rule and the menu in the top row and the
+          contact block down in the second. Its rule sits at the panel's very
+          top edge, offset 0.
+
+          Ours bottom-aligned the lot: the rule landed 445px down, at the
+          panel's midpoint, and everything below it ran to the bottom edge.
+          Against a full-height photograph that reads as an empty top half and a
+          crowded foot — "Its too bottom heavy."
+        */}
         {/* The source fills the section and scales it 1.4 — measured
             `matrix(1.4, 0, 0, 1.4, 0, ty)` at every width, giving a rect of
             140% x 140% of the section. Oversizing it with px dimensions

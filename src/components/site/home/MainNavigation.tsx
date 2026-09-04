@@ -244,14 +244,43 @@ export function MainNavigation({ tone = "light", service }: MainNavigationProps 
     return () => window.clearTimeout(timer);
   }, [open]);
 
-  // Lock body scroll while the overlay is open; always restore the previous
-  // value rather than assuming "" so we don't clobber another lock.
+  /*
+    Lock the page while the overlay is open, and hold the layout still while it
+    is locked.
+
+    `overflow: hidden` takes the scrollbar away, and on any platform that draws
+    a classic one rather than an overlay the page then widens by its width —
+    everything jumps sideways as the menu arrives. The user: "it dissapears when
+    the nav meu is opened but that causes things to shift and makes it look
+    bad."
+
+    So the gutter is measured at lock time and handed back: as padding on the
+    body for everything in flow, and as a custom property the fixed nav reads,
+    since a fixed element is laid out against the viewport and padding on the
+    body cannot reach it. Both are zero on overlay-scrollbar platforms, so this
+    costs nothing there.
+
+    `scrollbar-gutter: stable` on `html` would also work and is less code — but
+    it reserves that strip permanently, which measured 15px off the page width
+    even when nothing is locked, moving `main-end` from 1390 to 1375 and undoing
+    the nav's alignment with the source.
+  */
   useEffect(() => {
     if (!open) return;
-    const original = document.body.style.overflow;
+    const root = document.documentElement;
+    const gutter = window.innerWidth - root.clientWidth;
+    const originalOverflow = document.body.style.overflow;
+    const originalPadding = document.body.style.paddingRight;
+
     document.body.style.overflow = "hidden";
+    if (gutter > 0) {
+      document.body.style.paddingRight = `${gutter}px`;
+      root.style.setProperty("--ng-lock-gutter", `${gutter}px`);
+    }
     return () => {
-      document.body.style.overflow = original;
+      document.body.style.overflow = originalOverflow;
+      document.body.style.paddingRight = originalPadding;
+      root.style.removeProperty("--ng-lock-gutter");
     };
   }, [open]);
 
@@ -278,7 +307,7 @@ export function MainNavigation({ tone = "light", service }: MainNavigationProps 
   let serviceIndex = 0;
 
   return (
-    <div className="navigationMain fixed inset-x-0 top-0 z-[1000] flex h-[100px] w-full items-center bg-transparent">
+    <div className="navigationMain fixed inset-x-0 top-0 z-[1000] flex h-[100px] w-full items-center bg-transparent pr-[var(--ng-lock-gutter,0px)]">
       {/*
         The bar rides the page grid rather than its own calc widths. Its two
         ends must sit on `main-start` / `main-end` — the line every content

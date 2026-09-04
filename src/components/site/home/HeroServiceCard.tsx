@@ -10,6 +10,31 @@ import type { HeroServiceCard as HeroServiceCardData } from "@/types/site";
 import { ButtonCircle } from "../shared/buttons";
 import { ChevronIcon } from "../shared/icons";
 
+/*
+  The stacked card's image strip slides in from the right as the card crosses
+  the viewport — the animation the mobile view was missing entirely; ours held
+  the strip at `transform: none` the whole way down.
+
+  Measured on the source at 360 / 390 / 430 / 600px: the resting offset is
+  121 / 131 / 144.5 / 201.6px against strip widths of 101 / 109 / 120 / 168 —
+  a constant **1.20x the strip's own width**, so it is a percentage translate
+  and needs no measurement at runtime.
+
+  The run, fitted against the card's OWN top rather than against scrollY — that
+  is what made the per-card timing comparable, since every card repeats the same
+  curve as it crosses. The strip is home while the card's top is above 25% of
+  the viewport height and fully offset once it passes 87.5%, on a ~2.5 power:
+
+    card top (of 800px vh)   200   300   400   500   600   700
+    source translate          0     2    14    33    84   131
+    fitted                    0     2    13    37    75   131
+*/
+const STRIP_SLIDE_PERCENT = 120;
+/** Fractions of the viewport height where the slide starts and completes. */
+const STRIP_SLIDE_FROM = 0.25;
+const STRIP_SLIDE_TO = 0.875;
+const STRIP_SLIDE_POWER = 2.5;
+
 /** Progress at which a card's entry animation starts — see `imageScale` below. */
 const ENTRY_START = 0.136;
 /** Progress at which the colour band has finished collapsing. */
@@ -99,6 +124,44 @@ export function HeroServiceCard({
   }, [horizontal, reduceMotion]);
 
   const contentRevealed = horizontal ? revealed : selfRevealed || reduceMotion;
+
+  /*
+    Written straight to the node rather than held in state: this runs on every
+    scroll frame across five cards, and a `setState` each would be five React
+    renders a frame for a value nothing else reads.
+  */
+  const stripRef = useRef<HTMLAnchorElement>(null);
+  useEffect(() => {
+    if (horizontal) return;
+    const card = articleRef.current;
+    const strip = stripRef.current;
+    if (!card || !strip) return;
+
+    if (reduceMotion) {
+      strip.style.transform = "";
+      return;
+    }
+
+    const sync = () => {
+      const vh = window.innerHeight;
+      const from = vh * STRIP_SLIDE_FROM;
+      const span = vh * (STRIP_SLIDE_TO - STRIP_SLIDE_FROM);
+      const v = clamp01((card.getBoundingClientRect().top - from) / span);
+      const offset = STRIP_SLIDE_PERCENT * v ** STRIP_SLIDE_POWER;
+      strip.style.transform = offset < 0.05 ? "" : `translateX(${offset.toFixed(2)}%)`;
+    };
+
+    sync();
+    // Lenis dispatches `scroll` once per frame, so a passive listener is already
+    // frame-rate — no rAF loop of our own, and none left running per card.
+    window.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
+    return () => {
+      window.removeEventListener("scroll", sync);
+      window.removeEventListener("resize", sync);
+      strip.style.transform = "";
+    };
+  }, [horizontal, reduceMotion]);
 
   /*
     Card entry, sampled off the live source at 1440x900 and 1280x700 by
@@ -196,6 +259,7 @@ export function HeroServiceCard({
       }}
     >
       <Link
+        ref={stripRef}
         href={card.href}
         className={cn(
           "homeHero__cardImage relative z-[2] overflow-hidden",
