@@ -190,7 +190,18 @@ export function HomeHero() {
       // and the intro block's 50px, putting 450px of white under the last card
       // where the source has 300px.
       <section className="homeHero relative w-full overflow-x-clip">
-        <div className="h-screen">
+        {/*
+          `100svh`, not `100vh` — verbatim from the source, whose mobile rule is
+          `.homeHero__main { height: 100svh }` (it keeps `100vh` only behind
+          `(pointer: fine) and (min-width: 768px)`, which is the branch below).
+          On iOS Safari `100vh` is the LARGE viewport, ~90px taller than what is
+          actually on screen while the toolbar is showing, so a `100vh` hero
+          hangs its bottom row under the toolbar: the "Swipe up to explore" cue
+          is bottom-anchored, and on a real phone it sat clipped behind the
+          browser chrome. `svh` is the height with the toolbar out, which is the
+          one that has to fit.
+        */}
+        <div className="h-[100svh]">
           <HeroIntroPanel />
         </div>
         <div className="homeHero__categories flex w-full flex-col">
