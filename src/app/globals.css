@@ -4,24 +4,37 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+  The grid's own 480px tier, as a named breakpoint so blocks can place
+  themselves against it — see the four-tier note below.
+
+  It has to live in a plain `@theme`, not the `@theme inline` block under it:
+  a `--breakpoint-*` declared there compiles to nothing at all. No error, no
+  warning — the `xs:` utilities simply never appear in the output, and every
+  element keeps its base placement.
+*/
+@theme {
+  --breakpoint-xs: 480px;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-aeonik), "Aeonik", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
   --font-heading: var(--font-sans);
 
-  /* ---- lpas.com palette (site-key lpas-com-76f4f1fd) ---- */
-  --color-lpas-ink: var(--lpas-ink);
-  --color-lpas-dark: var(--lpas-dark);
-  --color-lpas-body: var(--lpas-body);
-  --color-lpas-muted: var(--lpas-muted);
-  --color-lpas-line: var(--lpas-line);
-  --color-lpas-housing: var(--lpas-housing);
-  --color-lpas-interiors: var(--lpas-interiors);
-  --color-lpas-highered: var(--lpas-highered);
-  --color-lpas-civic: var(--lpas-civic);
-  --color-lpas-commercial: var(--lpas-commercial);
+  /* ---- neuragul.com palette ---- */
+  --color-ng-ink: var(--ng-ink);
+  --color-ng-dark: var(--ng-dark);
+  --color-ng-body: var(--ng-body);
+  --color-ng-muted: var(--ng-muted);
+  --color-ng-line: var(--ng-line);
+  --color-ng-applied-ai: var(--ng-applied-ai);
+  --color-ng-web-development: var(--ng-web-development);
+  --color-ng-app-development: var(--ng-app-development);
+  --color-ng-cloud-infrastructure: var(--ng-cloud-infrastructure);
+  --color-ng-data-intelligence: var(--ng-data-intelligence);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -139,12 +152,28 @@
   html {
     @apply font-sans;
   }
+
+  /*
+    A `<button>` gets the browser's arrow cursor, not a pointer — that is the UA
+    default and neither Tailwind's preflight nor ours changes it, so every
+    button here showed the same cursor as plain text. Links were fine, which is
+    what made it easy to miss: only three controls on the whole site are real
+    buttons (the Menu toggle, the mobile services disclosure, "Back to top"),
+    and two others had `cursor-pointer` pasted on by hand.
+
+    Set once here rather than per component, so the next button cannot miss it.
+    `:disabled` keeps its default cursor, which is the point of the exclusion —
+    the slider's prev/next go disabled at the ends of the run.
+  */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
 }
 
 /* =========================================================================
    lpas.com clone — design tokens, type scale and shared primitives.
-   site-key: lpas-com-76f4f1fd   page-key: root-8a5edab2
-
+   
    NOTE ON UNITS: the source site sets `html { font-size: 62.5% }` so that
    1rem = 10px. We deliberately do NOT change the root font-size here (it
    would silently rescale every Tailwind utility). Every value below is the
@@ -154,24 +183,26 @@
 
 :root {
   /* Neutrals, sampled from computed styles on the live page */
-  --lpas-ink: #000000; /* body text */
-  --lpas-dark: #262626; /* dark sections: preloader, footer */
-  --lpas-body: #111111; /* headings on light ground */
-  --lpas-muted: #747474; /* secondary / meta text */
-  --lpas-line: #d6d6d6; /* hairline rules and dividers */
+  --ng-ink: #000000; /* body text */
+  --ng-dark: #262626; /* dark sections: preloader, footer */
+  --ng-body: #111111; /* headings on light ground */
+  --ng-muted: #747474; /* secondary / meta text */
+  --ng-line: #d6d6d6; /* hairline rules and dividers */
 
-  /* Market accent colours — one per hero card */
-  --lpas-housing: #625653;
-  --lpas-interiors: #925434;
-  --lpas-highered: #c9d3df;
-  --lpas-civic: #707569;
-  --lpas-commercial: #e3c1aa;
+  /* Service accent colours — one per hero card, in strip order.
+     Three dark grounds take white type, two light grounds take #262626;
+     `SERVICE_TONE` in BlockHeaderServices.tsx is the table that pairs them. */
+  --ng-applied-ai: #625653; /* warm graphite */
+  --ng-web-development: #925434; /* terracotta */
+  --ng-app-development: #c9d3df; /* pale slate */
+  --ng-cloud-infrastructure: #707569; /* olive grey */
+  --ng-data-intelligence: #e3c1aa; /* sand */
 
   /* Layout rhythm (source rem → px at 10px base) */
-  --lpas-gutter: 30px; /* 3rem  — page side padding, < 992px */
-  --lpas-gutter-lg: 50px; /* 5rem  — page side padding, ≥ 992px */
-  --lpas-xxl-space: 85px; /* 8.5rem — --xxlSpace */
-  --lpas-column-gap: 10px; /* 1rem  — --column-gap */
+  --ng-gutter: 30px; /* 3rem  — page side padding, < 992px */
+  --ng-gutter-lg: 50px; /* 5rem  — page side padding, ≥ 992px */
+  --ng-xxl-space: 85px; /* 8.5rem — --xxlSpace */
+  --ng-column-gap: 10px; /* 1rem  — --column-gap */
 }
 
 /* -------------------------------------------------------------------------
@@ -209,7 +240,7 @@
 .font-SM,
 .font-S,
 .font-XS {
-  font-family: var(--font-aeonik), "Aeonik", sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   letter-spacing: 0;
 }
 
@@ -263,7 +294,7 @@
 /* -------------------------------------------------------------------------
    The page grid.
 
-   Every content section on lpas.com sits on the same named-line grid, so
+   Every content section sits on the same named-line grid, so
    sections can address `main-start` / `main-end` / `full-start` / `full-end`
    instead of hard-coding widths. Measured column counts per breakpoint:
      < 768px  →  4 columns, 15px edges
@@ -271,20 +302,51 @@
      ≥ 1280px → 20 columns, 40px edges (+10px gap = the 50px visual gutter)
    ------------------------------------------------------------------------- */
 
-.lpas-grid {
-  display: grid;
-  column-gap: var(--lpas-column-gap);
-  row-gap: 0;
-  grid-template-columns:
+/*
+  ONE definition of the track list, exposed as a custom property.
+
+  It used to live only on `.ng-grid`, and `HeroIntroPanel` carried a hand-copied
+  duplicate of the below-768 tier in a Tailwind class. When the 480px tier was
+  added to `.ng-grid` the copy did not get it, so the hero alone kept marching
+  inwards — its content sat at 50px at a 530px viewport and 85px at 600px where
+  the source holds 25px at every phone width. A copy of a grid is a copy that
+  will drift; this is the fix for the class of bug, not the instance.
+
+  Anything that needs the site's columns now reads `var(--ng-grid-columns)`.
+*/
+:root {
+  --ng-grid-columns:
     [full-start] minmax(15px, 1fr)
     [main-start] repeat(4, minmax(0, 100px))
     [main-end] minmax(15px, 1fr)
     [full-end];
 }
 
+/*
+  The source has FOUR column tiers, not three: 4 columns below 480, 6 from 480,
+  12 from 768, 20 from 1280. Breakpoint measured exactly — 479 gives 4 columns,
+  480 gives 6 — with the gutter staying `minmax(15px, 1fr)` across both small
+  tiers and the columns capped at 100px.
+
+  This tier is not cosmetic. Without it four 100px-capped columns cannot absorb
+  the width above ~470px, so the `1fr` gutters take all the slack and every
+  block on the page marches inwards: `main-start` measured 85px at a 600px
+  viewport and 168.5px at 767px, against the source's 25px and 58.5px. It was
+  the whole site's mid-range layout, not one block's.
+*/
+@media (min-width: 480px) {
+  :root {
+    --ng-grid-columns:
+      [full-start] minmax(15px, 1fr)
+      [main-start] repeat(6, minmax(0, 100px))
+      [main-end] minmax(15px, 1fr)
+      [full-end];
+  }
+}
+
 @media (min-width: 768px) {
-  .lpas-grid {
-    grid-template-columns:
+  :root {
+    --ng-grid-columns:
       [full-start] minmax(30px, 1fr)
       [main-start] repeat(12, minmax(0, 100px))
       [main-end] minmax(30px, 1fr)
@@ -293,13 +355,20 @@
 }
 
 @media (min-width: 1280px) {
-  .lpas-grid {
-    grid-template-columns:
+  :root {
+    --ng-grid-columns:
       [full-start] minmax(40px, 1fr)
       [main-start] repeat(20, minmax(50px, 80px))
       [main-end] minmax(40px, 1fr)
       [full-end];
   }
+}
+
+.ng-grid {
+  display: grid;
+  column-gap: var(--ng-column-gap);
+  row-gap: 0;
+  grid-template-columns: var(--ng-grid-columns);
 }
 
 /* -------------------------------------------------------------------------
@@ -310,7 +379,7 @@
    to play it in. Honour reduced-motion by showing the end state immediately.
    ------------------------------------------------------------------------- */
 
-.lpas-reveal {
+.ng-reveal {
   opacity: 0;
   transform: translateY(50px);
   transition:
@@ -318,13 +387,13 @@
     transform 0.9s cubic-bezier(0.14, 0.83, 0.4, 1);
 }
 
-.lpas-reveal.is-revealed {
+.ng-reveal.is-revealed {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* The image wipe: a 1.2s clip-path reveal paired with a slight scale settle. */
-.lpas-image-reveal {
+.ng-image-reveal {
   clip-path: inset(100% 0 0 0);
   transform: scale(1.02);
   transition:
@@ -332,14 +401,14 @@
     transform 1.2s cubic-bezier(0.14, 0.83, 0.4, 1);
 }
 
-.lpas-image-reveal.is-revealed {
+.ng-image-reveal.is-revealed {
   clip-path: inset(0% 0 0 0);
   transform: scale(1);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lpas-reveal,
-  .lpas-image-reveal {
+  .ng-reveal,
+  .ng-image-reveal {
     opacity: 1;
     transform: none;
     clip-path: none;
@@ -351,14 +420,14 @@
    Page-level behaviour
    ------------------------------------------------------------------------- */
 
-html.lpas-page {
+html.ng-page {
   scroll-behavior: auto; /* Lenis drives scrolling; never double-animate */
 }
 
-.lpas-page body {
+.ng-page body {
   overflow-x: clip;
   background-color: #ffffff;
-  color: var(--lpas-ink);
+  color: var(--ng-ink);
   /*
     The source's body metrics: 16px/21.6px, i.e. a 1.35 ratio. Tailwind's
     default 1.5 makes every inherited line 2.4px taller, which compounds down
@@ -372,45 +441,45 @@ html.lpas-page {
 /* -------------------------------------------------------------------------
    Page transition.
 
-   The source runs Swup, which flags `<html>` through a navigation and
+   The reference site runs Swup, which flags `<html>` through a navigation and
    crossfades the swapped content. Measured on a click from `/` to `/about/`:
    `.mainContent` fades out over 300ms, is held transparent while the new
    markup is swapped in, then fades back over 350ms. `PageTransition.tsx`
    raises and drops the flags; the motion is all here.
    ------------------------------------------------------------------------- */
 
-.lpas-page .mainContent,
-.lpas-page .navigationFooter {
+.ng-page .mainContent,
+.ng-page .navigationFooter {
   transition: opacity 350ms linear;
 }
 
-.lpas-page.is-leaving .mainContent,
-.lpas-page.is-leaving .navigationFooter {
+.ng-page.is-leaving .mainContent,
+.ng-page.is-leaving .navigationFooter {
   opacity: 0;
   transition-duration: 300ms;
 }
 
 /* Held flat through the swap — the new page must not fade up until the DOM
    has actually been replaced, or the crossfade reads as a flicker. */
-.lpas-page.is-rendering .mainContent,
-.lpas-page.is-rendering .navigationFooter {
+.ng-page.is-rendering .mainContent,
+.ng-page.is-rendering .navigationFooter {
   opacity: 0;
   transition-duration: 0ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lpas-page .mainContent,
-  .lpas-page .navigationFooter,
-  .lpas-page.is-leaving .mainContent,
-  .lpas-page.is-leaving .navigationFooter,
-  .lpas-page.is-rendering .mainContent,
-  .lpas-page.is-rendering .navigationFooter {
+  .ng-page .mainContent,
+  .ng-page .navigationFooter,
+  .ng-page.is-leaving .mainContent,
+  .ng-page.is-leaving .navigationFooter,
+  .ng-page.is-rendering .mainContent,
+  .ng-page.is-rendering .navigationFooter {
     opacity: 1;
     transition: none;
   }
 }
 
-/* Lenis smooth-scroll contract (matches the source site's stylesheet) */
+/* Lenis smooth-scroll contract */
 html.lenis,
 html.lenis body {
   height: auto;
@@ -425,12 +494,12 @@ html.lenis body {
   overflow: hidden;
 }
 
-/* Hide scrollbars the way the source does, without losing scrollability */
-.lpas-page body::-webkit-scrollbar {
+/* Hide scrollbars without losing scrollability */
+.ng-page body::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
-.lpas-page body {
+.ng-page body {
   scrollbar-width: none;
 }
 

@@ -1,51 +1,48 @@
-import { MainNavigation } from "@/components/sites/lpas-com-76f4f1fd/root-8a5edab2/MainNavigation";
-import { NavigationFooter } from "@/components/sites/lpas-com-76f4f1fd/root-8a5edab2/NavigationFooter";
-import { BlockContact } from "@/components/sites/lpas-com-76f4f1fd/shared/blocks/BlockContact";
+import { MainNavigation } from "@/components/site/home/MainNavigation";
+import { NavigationFooter } from "@/components/site/home/NavigationFooter";
+import { BlockContact } from "@/components/site/shared/blocks/BlockContact";
 import {
-  CONTACT_CAREERS,
   CONTACT_HEADING,
   CONTACT_IMAGE,
+  CONTACT_LEAD,
   CONTACT_OFFICES,
-  CONTACT_SOCIAL_LABEL,
-  CONTACT_SOCIALS,
-} from "@/components/sites/lpas-com-76f4f1fd/contact-cfd191cd/content";
+  META,
+} from "@/components/site/contact/content";
 
 import type { Metadata } from "next";
 
 /**
- * The source serves no `<meta name="description">` on this route (CONTENT.json
- * records `metaDescription: null`), so none is invented here. The title comes
- * through the root layout's "%s - LPAS Architecture" template, which reproduces
- * the served "Contact - LPAS Architecture" exactly.
+ * `title` is the bare stem, so the root layout's "%s — NeuraGul" template
+ * produces "Contact — NeuraGul". `openGraph.title` does not inherit that
+ * template, so the resolved string is spelled out.
  */
 export const metadata: Metadata = {
-  title: "Contact",
-  alternates: { canonical: "/contact/" },
+  title: META.title,
+  description: META.description,
+  alternates: { canonical: META.canonical },
   openGraph: {
-    title: "Contact - LPAS Architecture",
-    url: "https://lpas.com/contact/",
+    title: `${META.title} — NeuraGul`,
+    description: META.description,
+    url: `https://neuragul.com${META.canonical}`,
   },
 };
 
 /**
- * lpas.com `/contact/` clone.
+ * `/contact/` — one block, and nothing else.
  *
- * Block sequence (measured from the live page): `BlockContact`, and nothing
- * else — it carries the `<h1>`, both offices, the socials row, the careers
- * teaser and the closing photo on its own dark ground.
+ * `BlockContact` carries the `<h1>`, both contact records, the lead line with
+ * its arrow chip and the closing photo on its own `#262626` ground. There is no
+ * socials row (NeuraGul has no social accounts, and the block no longer takes
+ * one) and no careers teaser; the lead line occupies the row the teaser used to.
  *
  * The `bg-white` on `<main>` is kept identical to the homepage on purpose:
- * `BlockContact` owns the `#262626` ground itself and, being the sole child
- * with no vertical margins, covers `main` edge to edge, so no white ever
- * shows.
+ * `BlockContact` owns the dark ground itself and, being the sole child with no
+ * vertical margins, covers `main` edge to edge, so no white ever shows.
  *
- * The footer uses the `compact` variant. Measured on the live page, this route
- * serves a 94px footer (20px pad + a 74px copyright band, dark ground) with
- * `__topSection` and bands 1-2 set to `display: none` and no back-to-top —
- * versus 1525px everywhere else. The source drops the duplicate because this
- * page already carries the offices and socials in `BlockContact` itself.
- * Rendering the full footer here added ~1620px of document height that the
- * source does not have.
+ * The footer uses the `compact` variant — a 20px pad plus a 74px copyright band,
+ * versus 1525px everywhere else. The full footer would repeat the phone number,
+ * the e-mail and the "NYC based" line this block already carries, and add
+ * ~1620px of document height to a page that is one screen of content.
  */
 export default function ContactPage() {
   return (
@@ -58,9 +55,7 @@ export default function ContactPage() {
         <BlockContact
           heading={CONTACT_HEADING}
           offices={CONTACT_OFFICES}
-          socialLabel={CONTACT_SOCIAL_LABEL}
-          socials={CONTACT_SOCIALS}
-          careers={CONTACT_CAREERS}
+          lead={CONTACT_LEAD}
           image={CONTACT_IMAGE}
         />
       </main>
