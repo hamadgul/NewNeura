@@ -304,10 +304,10 @@ export const OFFICES: OfficeContact[] = [
 
 /** The footer's parallax panel. */
 export const FOOTER_IMAGE = {
-  src: `${VIDEO}/office-poster.jpg`,
+  src: `${IMG}/footer_image.png`,
   alt: "",
-  width: 1920,
-  height: 1080,
+  width: 1672,
+  height: 941,
 };
 
 /**

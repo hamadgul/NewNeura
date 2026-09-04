@@ -113,12 +113,15 @@ export function HeroIntroPanel() {
         "homeHero__main relative isolate grid h-full w-[calc(100vw-200px)] shrink-0 gap-x-[10px] max-xl:w-screen",
         // ≥768: the panel's own 20-column bed, unchanged.
         "grid-cols-[repeat(20,minmax(0,1fr))] grid-rows-[1fr_auto_1fr] px-[40px] py-[60px] pl-[50px]",
-        // <768: the site grid from globals.css — 4 columns inside 15px gutters
-        // — and the source's five-row band: a 60px cap, flexible space, the
-        // eyebrow row, the headline, and a 60px foot for the scroll cue. The
-        // track list has to be a class, not the inline style it used to be,
-        // or nothing below could override it.
-        "max-md:grid-cols-[minmax(15px,1fr)_repeat(4,minmax(0,100px))_minmax(15px,1fr)]",
+        // <768: the site grid itself, read from `--ng-grid-columns`, plus the
+        // source's five-row band — a 60px cap, flexible space, the eyebrow row,
+        // the headline, and a 60px foot for the scroll cue.
+        //
+        // This used to be a hand-copied track list (`4 columns inside 15px
+        // gutters`). It was a copy, so when globals.css gained the 480px tier
+        // the hero did not: its content sat at 50px at a 530px viewport and
+        // 85px at 600px where the source holds 25px at every phone width.
+        "max-md:grid-cols-[var(--ng-grid-columns)]",
         "max-md:grid-rows-[60px_1fr_100px_auto_60px] max-md:px-0 max-md:pt-[40px] max-md:pb-[35px]",
       )}
     >
@@ -162,7 +165,14 @@ export function HeroIntroPanel() {
       </span>
 
       <span
-        className="homeHero__detail--two font-S relative z-10 row-start-2 self-center text-white [grid-column:7/span_6] max-md:row-start-3 max-md:self-start max-md:[grid-column:4/-1]"
+        // Ends on `main-end`, not `full-end`. Our eyebrow copy is longer than
+        // the layout's ("Built and maintained by the same team" against "A
+        // Market-Focused Approach"), so it wraps to two lines on a phone — and
+        // running to `-1` put that wrap hard against the screen edge with no
+        // margin at all. The source's own second eyebrow stops 10px short of
+        // the edge; `main-end` is 15px short, which is this site's gutter and
+        // the line every other element here already respects.
+        className="homeHero__detail--two font-S relative z-10 row-start-2 self-center text-white [grid-column:7/span_6] max-md:row-start-3 max-md:self-start max-md:[grid-column:4/-2]"
         style={animate ? enter(revealed, DETAIL_TWO_DELAY_MS) : undefined}
       >
         {HERO_INTRO.eyebrowRight}

@@ -142,7 +142,7 @@ export function BlockHeaderProjects({
           <Link href={breadcrumbHref} className="block">
             {breadcrumbLabel}
           </Link>
-          <ChevronIcon className="h-[19px] w-[19px] shrink-0" />
+          <ChevronIcon className="h-[11px] w-[6px] shrink-0" />
           {/* Clamped to 180px and ellipsised, exactly as measured. */}
           <span className="blockHeaderProjects__breadCrumbPost z-[4] max-w-[180px] truncate text-[#d6d6d6]">
             {title}

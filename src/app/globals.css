@@ -152,6 +152,23 @@
   html {
     @apply font-sans;
   }
+
+  /*
+    A `<button>` gets the browser's arrow cursor, not a pointer — that is the UA
+    default and neither Tailwind's preflight nor ours changes it, so every
+    button here showed the same cursor as plain text. Links were fine, which is
+    what made it easy to miss: only three controls on the whole site are real
+    buttons (the Menu toggle, the mobile services disclosure, "Back to top"),
+    and two others had `cursor-pointer` pasted on by hand.
+
+    Set once here rather than per component, so the next button cannot miss it.
+    `:disabled` keeps its default cursor, which is the point of the exclusion —
+    the slider's prev/next go disabled at the ends of the run.
+  */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
 }
 
 /* =========================================================================
@@ -285,11 +302,20 @@
      ≥ 1280px → 20 columns, 40px edges (+10px gap = the 50px visual gutter)
    ------------------------------------------------------------------------- */
 
-.ng-grid {
-  display: grid;
-  column-gap: var(--ng-column-gap);
-  row-gap: 0;
-  grid-template-columns:
+/*
+  ONE definition of the track list, exposed as a custom property.
+
+  It used to live only on `.ng-grid`, and `HeroIntroPanel` carried a hand-copied
+  duplicate of the below-768 tier in a Tailwind class. When the 480px tier was
+  added to `.ng-grid` the copy did not get it, so the hero alone kept marching
+  inwards — its content sat at 50px at a 530px viewport and 85px at 600px where
+  the source holds 25px at every phone width. A copy of a grid is a copy that
+  will drift; this is the fix for the class of bug, not the instance.
+
+  Anything that needs the site's columns now reads `var(--ng-grid-columns)`.
+*/
+:root {
+  --ng-grid-columns:
     [full-start] minmax(15px, 1fr)
     [main-start] repeat(4, minmax(0, 100px))
     [main-end] minmax(15px, 1fr)
@@ -309,8 +335,8 @@
   the whole site's mid-range layout, not one block's.
 */
 @media (min-width: 480px) {
-  .ng-grid {
-    grid-template-columns:
+  :root {
+    --ng-grid-columns:
       [full-start] minmax(15px, 1fr)
       [main-start] repeat(6, minmax(0, 100px))
       [main-end] minmax(15px, 1fr)
@@ -319,8 +345,8 @@
 }
 
 @media (min-width: 768px) {
-  .ng-grid {
-    grid-template-columns:
+  :root {
+    --ng-grid-columns:
       [full-start] minmax(30px, 1fr)
       [main-start] repeat(12, minmax(0, 100px))
       [main-end] minmax(30px, 1fr)
@@ -329,13 +355,20 @@
 }
 
 @media (min-width: 1280px) {
-  .ng-grid {
-    grid-template-columns:
+  :root {
+    --ng-grid-columns:
       [full-start] minmax(40px, 1fr)
       [main-start] repeat(20, minmax(50px, 80px))
       [main-end] minmax(40px, 1fr)
       [full-end];
   }
+}
+
+.ng-grid {
+  display: grid;
+  column-gap: var(--ng-column-gap);
+  row-gap: 0;
+  grid-template-columns: var(--ng-grid-columns);
 }
 
 /* -------------------------------------------------------------------------

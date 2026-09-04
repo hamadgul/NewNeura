@@ -68,10 +68,21 @@ export function ButtonArrow({
           direction === "left" && "rotate-180",
         )}
       >
-        {/* Arrow 1 starts centred and slides out to the right. */}
-        <ArrowIcon className="absolute left-1/2 top-1/2 h-[19px] w-[19px] -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 ease-out group-hover:translate-x-[25%]" />
-        {/* Arrow 2 waits off to the left and slides in 0.3s later. */}
-        <ArrowIcon className="absolute left-1/2 top-1/2 h-[19px] w-[19px] -translate-x-[225%] -translate-y-1/2 transition-transform delay-300 duration-300 ease-out group-hover:-translate-x-1/2" />
+        {/*
+          The relay, measured off the source's own chip (29x29 -> 39x29, icon
+          19px, both arrows `translate` in px there):
+
+            arrow one   -9.5  ->  +14.25   =  -50% -> +75% of the icon
+            arrow two   -33.25 -> -9.5     = -175% -> -50%
+
+          The exit was `+25%`, which is a 4.75px nudge on a 19px icon — arrow
+          one was still sitting in the middle of the chip when arrow two
+          arrived, so both were on screen at once and the move read as "two
+          arrows" rather than one coming back around. It has to travel a full
+          125% of its own width to clear.
+        */}
+        <ArrowIcon className="absolute left-1/2 top-1/2 h-[19px] w-[19px] -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 ease-out group-hover:translate-x-[75%]" />
+        <ArrowIcon className="absolute left-1/2 top-1/2 h-[19px] w-[19px] -translate-x-[175%] -translate-y-1/2 transition-transform delay-300 duration-300 ease-out group-hover:-translate-x-1/2" />
       </span>
     </>
   );

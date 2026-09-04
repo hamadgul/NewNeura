@@ -171,16 +171,26 @@ export function NavigationFooter({ variant = "full" }: NavigationFooterProps = {
           Scrim over the parallax panel.
 
           The layout was drawn around a dark architectural photograph, so the
-          white menu sitting on it needed nothing behind it. Our panel is a
-          bright loft interior — brick and daylight — and against that the
-          five service links measured 1.3-2.1:1 and the "Applied AI" line was
-          effectively gone. This sits between the image and the menu (the image
-          is `-z-2`, the menu `z-1`) and darkens the panel without touching the
-          parallax transform, which stays on the image wrapper above.
+          white menu sitting on it needed nothing behind it. This scrim was
+          added when our panel was a BRIGHT loft interior — brick and daylight —
+          against which the five service links measured 1.3-2.1:1 and "Applied
+          AI" was effectively gone.
+
+          The photograph is now a dark one, so 55% was over-correcting it into
+          a near-black rectangle: the picture the page is showing had almost
+          nothing left to see. Measured on the new image, white text against the
+          photo's 90th-percentile brightness: 13.2:1 at 55%, 9.0:1 at 30%,
+          5.6:1 with no scrim at all. 30% keeps twice the contrast the AA
+          threshold asks for and gives the room back its floor, lamps and
+          plants.
+
+          It sits between the image and the menu (the image is `-z-2`, the menu
+          `z-1`) and darkens the panel without touching the parallax transform,
+          which stays on the image wrapper above.
         */}
         <div
           aria-hidden="true"
-          className="navigationFooter__mainImageScrim pointer-events-none absolute inset-0 -z-1 bg-black/55"
+          className="navigationFooter__mainImageScrim pointer-events-none absolute inset-0 -z-1 bg-black/30"
         />
 
         <div className="relative z-1 flex w-full flex-col gap-[24px] xl:gap-[40px]">

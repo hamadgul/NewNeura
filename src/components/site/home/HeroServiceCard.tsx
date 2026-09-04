@@ -154,7 +154,34 @@ export function HeroServiceCard({
           // card out as a 275px band: the copy fills the width and the photo
           // is a 28% strip down the right-hand edge, over it. Measured
           // 280.797px / 109.188px at a 390px viewport.
-          : "h-[275px] w-full grid-cols-[72%_28%] grid-rows-[275px]",
+          : cn(
+              "h-[275px] w-full grid-cols-[72%_28%] grid-rows-[275px]",
+              /*
+                DELIBERATE DIVERGENCE — a hairline between stacked cards. The
+                source has none, and its geometry is what we match exactly
+                (275px tall, zero gap). It gets away with it because its image
+                strips are photographs of different buildings: measured at the
+                card boundary, the source's strip steps 56 -> 83 in luma, a
+                delta of 27 that the eye reads as an edge.
+
+                Ours are all bright UI screenshots — 240 -> 237, a delta of 3 —
+                so two adjacent strips merge into one white block and the card
+                boundary disappears on the 28% of the width where the accent
+                colour does not reach. The user: "its hard to identify where the
+                section ends. the two section pictures are coliding and hard to
+                tell them apart."
+
+                Remove this the day the cards carry tonally varied artwork; it
+                is a patch for the imagery, not a correction to the layout.
+
+                              A white hairline was the first attempt and it disappeared:
+                against a 240-luma screenshot, white on white. This is the
+                card's OWN accent instead, which means it is invisible across
+                the 72% where that colour already is, and draws a 2px accent
+                edge exactly where the two screenshots meet.
+              */
+              "border-t-2 border-(--serviceMainColor) first:border-t-0",
+            ),
         dimmed ? "brightness-50" : "brightness-100",
       )}
       style={{
@@ -213,7 +240,13 @@ export function HeroServiceCard({
           {card.subPages ? (
             <div
               className={cn(
-                "homeHero__subPagesWrapper row-start-1 flex flex-wrap justify-between gap-x-[10px]",
+                // Row gap measured on the source: the wrapper is 222x142 at a 390px
+                // viewport (four 28px rows + three 10px gaps) and 626x71 at
+                // desktop (two rows + one 15px gap). Ours had `gap-x` only, so
+                // the rows touched — 222x112 and 626x56 — and four underlined
+                // links with no air between them read as a dense table rather
+                // than a list.
+                "homeHero__subPagesWrapper row-start-1 flex flex-wrap justify-between gap-x-[10px] gap-y-[10px] md:gap-y-[15px]",
                 // On the band layout they stack under the title, pinned to the
                 // bottom of the row, and stay clear of the image strip.
                 horizontal

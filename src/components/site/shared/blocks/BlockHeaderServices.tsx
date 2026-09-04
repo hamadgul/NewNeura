@@ -182,7 +182,7 @@ export function BlockHeaderServices({
               EASE,
             )}
           >
-            <ChevronIcon className="h-[19px] w-[19px] shrink-0 rotate-180" />
+            <ChevronIcon className="h-[11px] w-[6px] shrink-0 rotate-180" />
             {backLink.label}
           </Link>
         ) : eyebrow ? (
@@ -318,7 +318,7 @@ function SubPageItem({ page }: { page: ServiceSubPageLink }) {
             />
           ) : null}
           {page.title}
-          <ChevronIcon className="absolute right-0 top-1/2 h-[19px] w-[19px] -translate-y-1/2" />
+          <ChevronIcon className="absolute right-0 top-1/2 h-[11px] w-[6px] -translate-y-1/2" />
         </span>
         <span className="buttonLine__line relative mt-[8px] h-px w-full overflow-hidden">
           <span className="buttonLine__line--one absolute h-px w-full bg-current transition-all duration-300 group-hover:translate-x-[105%]" />

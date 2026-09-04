@@ -22,11 +22,23 @@ export function ArrowIcon(props: IconProps) {
   );
 }
 
-/** `#icon-Chevron` — small chevron used by the hero sub-page links. */
+/**
+ * `#icon-Chevron` — the small chevron on sub-page links.
+ *
+ * The one glyph in this set that does NOT use the 19x19 viewBox, and it has to
+ * be the exception. The chevron itself is only 4.2 x 8.6 units, so inside a
+ * 19x19 box rendered at the source's 6x11 it scaled down to about 1.3 x 2.7
+ * actual pixels — the user's report was "the arrows next to the subtopics on
+ * Applied AI are so small I can barely see them on mobile view."
+ *
+ * The source ships it in a viewBox tight to the glyph, so 6x11 means 6x11 of
+ * ink. Same two strokes as before, translated by (-6, -4) into that box —
+ * verified against the source's own markup.
+ */
 export function ChevronIcon(props: IconProps) {
   return (
-    <svg fill="none" viewBox="0 0 19 19" aria-hidden="true" {...props}>
-      <path d="M11.23 10.498 7 13.826M11.23 8.506 7 5.178" stroke="currentColor" strokeLinecap="round" />
+    <svg fill="none" viewBox="0 0 6 11" aria-hidden="true" {...props}>
+      <path d="M5.23 6.498 1 9.826M5.23 4.506 1 1.178" stroke="currentColor" strokeLinecap="round" />
     </svg>
   );
 }
