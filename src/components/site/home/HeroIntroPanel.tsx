@@ -121,8 +121,18 @@ export function HeroIntroPanel() {
         // gutters`). It was a copy, so when globals.css gained the 480px tier
         // the hero did not: its content sat at 50px at a 530px viewport and
         // 85px at 600px where the source holds 25px at every phone width.
+        //
+        // Row 4 is `1fr`, not `auto`. The source is literally
+        // `grid-template-rows: 6rem 1fr 10rem 1fr 6rem` — TWO flexible tracks,
+        // so the free height is shared between the space above the eyebrows and
+        // the space above the headline. With `auto` there, row 2 swallowed all
+        // of it (327px against the source's 278.5px at 393x852) and the eyebrow
+        // row sat 48px lower than the source's while the headline and cue
+        // stayed put — the whole first screen read bottom-heavy. `1fr` still
+        // floors at the headline's own height, so short phones behave as the
+        // source does rather than clipping it.
         "max-md:grid-cols-[var(--ng-grid-columns)]",
-        "max-md:grid-rows-[60px_1fr_100px_auto_60px] max-md:px-0 max-md:pt-[40px] max-md:pb-[35px]",
+        "max-md:grid-rows-[60px_1fr_100px_1fr_60px] max-md:px-0 max-md:pt-[40px] max-md:pb-[35px]",
       )}
     >
       {/*
