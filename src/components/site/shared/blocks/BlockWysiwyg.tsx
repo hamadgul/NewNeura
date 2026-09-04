@@ -151,7 +151,15 @@ export function BlockWysiwyg({ tagline, title, body, className }: BlockWysiwygPr
       <div
         className={cn(
           revealClass,
-          "blockWysiwyg__content col-start-[main-start] col-end-[main-end] md:col-start-[6] md:row-start-2 xl:col-start-[8] xl:col-end-[-4]",
+          // `max-w`: the span is measured in *grid columns*, and grid columns keep
+          // growing with the viewport while a reading measure must not. Uncapped
+          // this ran 710px at 1280, 800px at the 1440 reference and 1070px at 1920
+          // — 135-152 characters per line across 20 paragraphs on 10 routes, against
+          // a 65-75 target. 560px is the same cap `BlockIntroDouble` takes, so every
+          // body column on the site now reads at one measure (73-84 chars, varying
+          // with how short the copy's words are). See that block for why this is px
+          // and not `ch`.
+          "blockWysiwyg__content col-start-[main-start] col-end-[main-end] md:col-start-[6] md:row-start-2 xl:col-start-[8] xl:col-end-[-4] xl:max-w-[560px]",
         )}
         style={{ transitionDelay: "160ms" }}
       >
