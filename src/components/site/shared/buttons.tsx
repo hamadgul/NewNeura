@@ -146,12 +146,22 @@ export function ButtonCircle({
   asStatic = false,
   style,
 }: ButtonCircleProps) {
+  /*
+    Both `hover:` AND `group-hover:` on the ink, and that pairing is the fix.
+
+    The rising disc is `group-hover:top-0` on a child, so it fills whenever ANY
+    ancestor carrying `group` is hovered — including the process card, which
+    sets `group` on purpose so the whole card drives the button. The ink only
+    had `hover:`, which fires for the button itself and not for the card, so
+    hovering a card raised a white disc under a still-white plus and the glyph
+    vanished. `group-hover:` makes the two flip together.
+  */
   const tone =
     color === "white"
-      ? "text-white border-white hover:text-[#262626]"
+      ? "text-white border-white hover:text-[#262626] group-hover:text-[#262626]"
       : color === "service"
-        ? "text-(--serviceContentColor) border-(--serviceContentColor) hover:text-(--serviceMainColor)"
-        : "text-[#262626] border-[#262626] hover:text-white";
+        ? "text-(--serviceContentColor) border-(--serviceContentColor) hover:text-(--serviceMainColor) group-hover:text-(--serviceMainColor)"
+        : "text-[#262626] border-[#262626] hover:text-white group-hover:text-white";
 
   const fill =
     color === "white"

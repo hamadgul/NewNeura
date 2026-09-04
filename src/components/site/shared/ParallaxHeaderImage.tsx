@@ -72,9 +72,11 @@ export function ParallaxHeaderImage({
       // The slack is whatever the image overflows its band by. Reading it
       // rather than hard-coding 95px keeps this honest if the 115% changes.
       const slack = Math.max(0, el.offsetHeight - band.clientHeight);
-      const bandTop = band.getBoundingClientRect().top + window.scrollY;
-      const travelled = Math.max(0, window.scrollY - (bandTop - band.offsetTop));
-      const offset = Math.min(travelled / SCROLL_DIVISOR, slack);
+      // Raw page scroll, which is what the source's rule measures: both
+      // headers using this are the first block on their page, so the distance
+      // scrolled IS the distance the band has travelled. A header placed lower
+      // would need its own top offset subtracted here.
+      const offset = Math.min(window.scrollY / SCROLL_DIVISOR, slack);
       el.style.transform = offset < 0.5 ? "" : `translate3d(0, ${-offset.toFixed(2)}px, 0)`;
     };
 

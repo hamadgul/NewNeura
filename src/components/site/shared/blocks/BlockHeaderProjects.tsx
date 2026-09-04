@@ -41,7 +41,7 @@
  * is no scroll wipe to reproduce. That keeps it a server component; the
  * `.ng-image-reveal` IntersectionObserver trap does not apply here.
  */
-import Image from "next/image";
+import { ParallaxHeaderImage } from "@/components/site/shared/ParallaxHeaderImage";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ButtonArrow } from "@/components/site/shared/buttons";
@@ -107,8 +107,8 @@ export function BlockHeaderProjects({
         cropped to a wide band reads as a screenshot rather than as wallpaper,
         and no text competes with the type inside it.
       */}
-      <div className="blockHeaderProjects__image col-span-full row-start-2 h-full overflow-hidden">
-        <Image
+      <div className="blockHeaderProjects__image relative col-span-full row-start-2 h-full overflow-hidden">
+        <ParallaxHeaderImage
           src={image.src}
           alt={image.alt}
           width={image.width}
@@ -122,7 +122,11 @@ export function BlockHeaderProjects({
           // screenshot here is top-weighted (nav, then hero), so anchoring the
           // crop to the top shows the part that means something and cuts the
           // bottom, which reads as a cropped screenshot rather than a slice.
-          className="blockHeaderProjects__img h-full w-full object-cover object-top"
+          // 124% and anchored to the top, exactly as the service headers are:
+          // the overflow is the parallax's runway. It was `h-full`, which left
+          // nothing to move, which is why these pages sat still while the
+          // section pages drifted.
+          className="blockHeaderProjects__img absolute inset-x-0 top-0 h-[124%] w-full object-cover object-top"
         />
       </div>
 
