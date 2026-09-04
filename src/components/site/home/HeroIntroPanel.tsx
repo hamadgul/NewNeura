@@ -3,7 +3,7 @@
 import type { CSSProperties } from "react";
 import { cn } from "@/lib/utils";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
-import { ButtonArrow, ButtonCircle } from "../shared/buttons";
+import { ButtonArrow } from "../shared/buttons";
 import { useIntroReleased } from "../shared/introGate";
 import { HERO_INTRO, HERO_VIDEO } from "./content";
 
@@ -193,22 +193,14 @@ export function HeroIntroPanel() {
         className="homeHero__title relative z-10 row-start-3 max-w-[900px] self-end text-white [grid-column:1/-1] max-md:row-start-4 max-md:[grid-column:2/-2]"
         style={animate ? enter(revealed, TITLE_DELAY_MS, TITLE_BLUR_PX) : undefined}
       >
-        <h1 className="font-3XL text-white">
-          {HERO_INTRO.heading}
-          {/*
-            The plus trails the final word inline, so it has to sit in the text
-            flow rather than in the grid. Hidden below 768px, where the headline
-            already fills the panel.
-          */}
-          <span className="homeHero__titleButton relative ml-[20px] inline max-md:hidden">
-            <ButtonCircle
-              asStatic
-              color="white"
-              label="Explore"
-              className="absolute left-1/2 top-[55%] -translate-y-1/2"
-            />
-          </span>
-        </h1>
+        {/*
+          The source trails this headline with a `homeHero__titleButton` plus.
+          Ours was `asStatic` with no href — a `<span>` that rendered a circle
+          and did nothing at all, so it read as an affordance and wasn't one.
+          Removed at the user's request: "Get rid of the button after the text
+          here. It does nothing."
+        */}
+        <h1 className="font-3XL text-white">{HERO_INTRO.heading}</h1>
       </header>
     </div>
   );

@@ -11,10 +11,16 @@
 import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 import { ServicesMenu } from "@/components/site/shared/ServicesMenu";
 import { MenuIcon, Wordmark } from "@/components/site/shared/icons";
 import { ButtonLine } from "@/components/site/shared/buttons";
-import { COMPANY_GROUP, EXPLORE_GROUP, OFFICES, SERVICE_LINKS } from "./content";
+import {
+  COMPANY_GROUP,
+  EXPLORE_GROUP,
+  OFFICES,
+  SERVICE_LINKS,
+} from "./content";
 import type { ServiceHeaderTone } from "@/components/site/shared/blocks/BlockHeaderServices";
 import type { ServiceSlug } from "@/types/site";
 import type { NavGroup, OfficeContact } from "@/types/site";
@@ -97,12 +103,48 @@ const CLOSE_RULE_DELAY_MS = ms(480);
 const CLOSE_RULE_MS = ms(400);
 
 /**
+ * The dot marking the section you are on, measured off the source's open menu:
+ * a **5x5px** white circle with `margin: 0 10px 0 -15px`. The negative left
+ * margin is the whole trick — it hangs the dot outside the text rather than
+ * indenting it, so the labels stay on `main-start` whether or not one of them
+ * is current. (-15 + 5 + 10 = 0.)
+ *
+ * The source draws it as an `::before` on the current anchor; this is a real
+ * element instead, so the marker can be hidden from assistive tech separately
+ * while `aria-current` carries the meaning.
+ */
+function CurrentDot() {
+  return (
+    <span
+      aria-hidden="true"
+      className="-ml-[15px] mr-[10px] inline-block h-[5px] w-[5px] shrink-0 rounded-full bg-white"
+    />
+  );
+}
+
+/**
+ * Whether a nav link points at the page being viewed. Compares on the path's
+ * own segments so `/services/applied-ai/` matches its sub-pages too — standing
+ * on `/services/applied-ai/agents/`, the section you are in is still Applied AI,
+ * which is what the dot is there to say.
+ */
+function isCurrentSection(pathname: string | null, href: string) {
+  if (!pathname) return false;
+  const trim = (v: string) => v.replace(/\/+$/, "") || "/";
+  const here = trim(pathname);
+  const target = trim(href.split(/[?#]/)[0]);
+  if (target === "/") return here === "/";
+  return here === target || here.startsWith(`${target}/`);
+}
+
+/**
  * How many items take part in the stagger. Needed because closing runs the
  * stagger backwards, so an item's delay depends on how many come after it.
  */
 /** Each column's own length, headings included — they animate too. */
 const SERVICE_COLUMN_COUNT = SERVICE_LINKS.length + 1;
-const LINK_COLUMN_COUNT = EXPLORE_GROUP.items.length + COMPANY_GROUP.items.length + 2;
+const LINK_COLUMN_COUNT =
+  EXPLORE_GROUP.items.length + COMPANY_GROUP.items.length + 2;
 
 /**
  * When the panel may leave the DOM: after the last thing inside it has gone.
@@ -166,7 +208,12 @@ export interface MainNavigationProps {
  * (f = 0.46 at u = 0.44, 0.68 at 0.63, 0.84 at 0.81); an `ease-out` would be
  * at 0.62 by u = 0.44 and would read as visibly quicker off the mark.
  */
-function staggerProps(index: number, animateIn: boolean, count: number, step: number) {
+function staggerProps(
+  index: number,
+  animateIn: boolean,
+  count: number,
+  step: number,
+) {
   const delay = animateIn
     ? OPEN_ITEM_DELAY_MS + index * step
     : (count - 1 - index) * CLOSE_ITEM_STAGGER_MS;
@@ -182,8 +229,12 @@ function staggerProps(index: number, animateIn: boolean, count: number, step: nu
   };
 }
 
-export function MainNavigation({ tone = "light", service }: MainNavigationProps = {}) {
+export function MainNavigation({
+  tone = "light",
+  service,
+}: MainNavigationProps = {}) {
   const overlayId = useId();
+  const pathname = usePathname();
 
   // `open` is the logical state (drives aria + the scroll lock + escape key).
   // `render`/`animateIn` split mount from transition so the overlay can fade
@@ -368,7 +419,9 @@ export function MainNavigation({ tone = "light", service }: MainNavigationProps 
               // Dark pill over the page so it reads on the hero video; inverted
               // to a light pill once the overlay is up, which is what the
               // reference does — on the blurred ground a dark pill disappears.
-              open ? "bg-white text-[#111111]" : "bg-[rgba(14,14,14,0.6)] text-white",
+              open
+                ? "bg-white text-[#111111]"
+                : "bg-[rgba(14,14,14,0.6)] text-white",
             )}
           >
             {/*
@@ -453,7 +506,9 @@ export function MainNavigation({ tone = "light", service }: MainNavigationProps 
         style={{
           top: animateIn ? 0 : "100vh",
           transitionProperty: "top",
-          transitionTimingFunction: animateIn ? OPEN_SLIDE_EASE : CLOSE_SLIDE_EASE,
+          transitionTimingFunction: animateIn
+            ? OPEN_SLIDE_EASE
+            : CLOSE_SLIDE_EASE,
           transitionDuration: `${animateIn ? OPEN_SLIDE_MS : CLOSE_SLIDE_MS}ms`,
           transitionDelay: `${animateIn ? OPEN_SLIDE_DELAY_MS : CLOSE_SLIDE_DELAY_MS}ms`,
         }}
@@ -465,95 +520,147 @@ export function MainNavigation({ tone = "light", service }: MainNavigationProps 
           third top-row column, "Web Development", "App Development" and
           "Cloud & Infrastructure" each wrapped onto two lines in a 376px track.
         */}
-        <div className="mx-auto flex min-h-full w-full max-w-[1440px] flex-col px-[15px] pb-[40px] pt-[100px] md:px-[30px] lg:px-[40px]">
-          {/* The hairline under the top bar. First thing in, so the panel reads
+        {/*
+          On the page grid, like the top bar. This carried its own paddings
+          (15 / 30 / 40) inside a `max-w-[1440px]` box, which put the menu's
+          content at x=40 where every other element on the site — the wordmark,
+          the Menu button, every content block — sits on `main-start` at 50.
+          Reading the grid instead of restating an inset means it cannot drift
+          from them, and it tracks the 480px tier for free.
+        */}
+        <div className="ng-grid min-h-full w-full pb-[40px] pt-[100px]">
+          <div className="col-start-[main-start] col-end-[main-end] flex min-h-full flex-col">
+            {/* The hairline under the top bar. First thing in, so the panel reads
               as opening from the header rather than arriving all at once. */}
-          <div
-            aria-hidden="true"
-            className={cn(
-              // The source fades this to opacity 0.30; it does not wipe it.
-              // A `scaleX` on a full-width child of a backdrop-blurred panel
-              // is another thing the compositor has to re-blur per frame.
-              "navigationMain__rule h-px w-full shrink-0 bg-white transition-opacity ease-linear",
-              animateIn ? "opacity-30" : "opacity-0",
-            )}
-            style={{
-              transitionDuration: `${animateIn ? OPEN_RULE_MS : CLOSE_RULE_MS}ms`,
-              transitionDelay: `${animateIn ? OPEN_RULE_DELAY_MS : CLOSE_RULE_DELAY_MS}ms`,
-            }}
-          />
+            <div
+              aria-hidden="true"
+              className={cn(
+                // The source fades this to opacity 0.30; it does not wipe it.
+                // A `scaleX` on a full-width child of a backdrop-blurred panel
+                // is another thing the compositor has to re-blur per frame.
+                "navigationMain__rule h-px w-full shrink-0 bg-white transition-opacity ease-linear",
+                animateIn ? "opacity-30" : "opacity-0",
+              )}
+              style={{
+                transitionDuration: `${animateIn ? OPEN_RULE_MS : CLOSE_RULE_MS}ms`,
+                transitionDelay: `${animateIn ? OPEN_RULE_DELAY_MS : CLOSE_RULE_DELAY_MS}ms`,
+              }}
+            />
 
-          <div className="mt-[40px] grid flex-1 auto-rows-min gap-x-[40px] gap-y-[48px] md:mt-[56px] lg:grid-cols-[1.5fr_1fr]">
-          <ul className="navigationMain__mainMenu flex flex-col gap-[10px]">
-            {/* The heading animates with its list — index 0 of this column. */}
-            {(() => {
-              const props = staggerProps(
-                serviceIndex++,
-                animateIn,
-                SERVICE_COLUMN_COUNT,
-                OPEN_ITEM_STAGGER_MS,
-              );
-              return (
-                <li
-                  className={cn("font-S mb-[8px] font-semibold text-white/50", props.className)}
-                  style={props.style}
-                >
-                  Services
-                </li>
-              );
-            })()}
-            {SERVICE_LINKS.map((link) => {
-              const props = staggerProps(serviceIndex++, animateIn, SERVICE_COLUMN_COUNT, OPEN_ITEM_STAGGER_MS);
-              return (
-                <li key={link.href} className={props.className} style={props.style}>
-                  <Link
-                    href={link.href}
-                    onClick={close}
-                    className="font-XL block text-white transition-opacity duration-300 ease-out hover:opacity-60"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+            <div className="mt-[40px] grid flex-1 auto-rows-min gap-x-[40px] gap-y-[48px] md:mt-[56px] lg:grid-cols-[1.5fr_1fr]">
+              <ul
+                className={cn(
+                  "navigationMain__mainMenu flex flex-col gap-[10px]",
+                  /*
+                Hover one service and the others go soft. Measured on the
+                source: the un-hovered links take `filter: blur(2px)` over 0.3s
+                while the hovered one stays at `none`, and opacity does not move
+                at all on any of them.
 
-          <div className="navigationMain__subMenu flex flex-col gap-[40px] md:flex-row lg:flex-col lg:gap-[48px]">
-            {/* One sequence across both groups, headings included — that is
+                Scoped to this list on purpose — hovering a service leaves the
+                Explore/Company columns sharp, and hovering those blurs nothing.
+                Verified both directions on the source.
+
+                `:has()` is what lets the parent react to which child is
+                hovered; the `_a:not(:hover)` half is "every link that is not the
+                one under the cursor".
+              */
+                  "[&:has(a:hover)_a:not(:hover)]:blur-[2px]",
+                )}
+              >
+                {/* The heading animates with its list — index 0 of this column. */}
+                {(() => {
+                  const props = staggerProps(
+                    serviceIndex++,
+                    animateIn,
+                    SERVICE_COLUMN_COUNT,
+                    OPEN_ITEM_STAGGER_MS,
+                  );
+                  return (
+                    <li
+                      className={cn(
+                        "font-S mb-[8px] font-semibold text-white/50",
+                        props.className,
+                      )}
+                      style={props.style}
+                    >
+                      Services
+                    </li>
+                  );
+                })()}
+                {SERVICE_LINKS.map((link) => {
+                  const props = staggerProps(
+                    serviceIndex++,
+                    animateIn,
+                    SERVICE_COLUMN_COUNT,
+                    OPEN_ITEM_STAGGER_MS,
+                  );
+                  return (
+                    <li
+                      key={link.href}
+                      className={props.className}
+                      style={props.style}
+                    >
+                      <Link
+                        href={link.href}
+                        onClick={close}
+                        aria-current={
+                          isCurrentSection(pathname, link.href)
+                            ? "page"
+                            : undefined
+                        }
+                        className="font-XL flex items-center text-white transition-[filter] duration-300 ease-out"
+                      >
+                        {isCurrentSection(pathname, link.href) ? (
+                          <CurrentDot />
+                        ) : null}
+                        {link.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+
+              <div className="navigationMain__subMenu flex flex-col gap-[40px] md:flex-row lg:flex-col lg:gap-[48px]">
+                {/* One sequence across both groups, headings included — that is
                 how the source orders this column. */}
-            <NavGroupColumn
-              group={EXPLORE_GROUP}
-              startIndex={0}
-              animateIn={animateIn}
-              onNavigate={close}
-            />
-            <NavGroupColumn
-              group={COMPANY_GROUP}
-              startIndex={EXPLORE_GROUP.items.length + 1}
-              animateIn={animateIn}
-              onNavigate={close}
-            />
-          </div>
+                <NavGroupColumn
+                  group={EXPLORE_GROUP}
+                  startIndex={0}
+                  animateIn={animateIn}
+                  onNavigate={close}
+                  pathname={pathname}
+                />
+                <NavGroupColumn
+                  group={COMPANY_GROUP}
+                  startIndex={EXPLORE_GROUP.items.length + 1}
+                  animateIn={animateIn}
+                  onNavigate={close}
+                  pathname={pathname}
+                />
+              </div>
+            </div>
 
-          </div>
-
-          {/* The reference carries its offices on the bottom edge and its
+            {/* The reference carries its offices on the bottom edge and its
               socials opposite them. There are no socials to render, so the
               single contact record sits alone on the right. */}
-          {/* The source fades its offices in last, ~630ms after the columns
+            {/* The source fades its offices in last, ~630ms after the columns
               start — it is the one element that arrives after the links have
               finished. */}
-          <div
-            className={cn(
-              "navigationMain__contactOne mt-[48px] flex w-fit shrink-0 flex-col gap-[6px] transition-[opacity,transform] ease-linear lg:mt-0 lg:self-end",
-              animateIn ? "translate-y-0 opacity-100" : "translate-y-[10px] opacity-0",
-            )}
-            style={{
-              transitionDuration: `${animateIn ? OPEN_ITEM_MS : CLOSE_ITEM_MS}ms`,
-              transitionDelay: `${animateIn ? OPEN_ITEM_DELAY_MS + OPEN_CONTACT_OFFSET_MS : 0}ms`,
-            }}
-          >
-            <OfficeBlock office={OFFICES[0]} />
+            <div
+              className={cn(
+                "navigationMain__contactOne mt-[48px] flex w-fit shrink-0 flex-col gap-[6px] transition-[opacity,transform] ease-linear lg:mt-0 lg:self-end",
+                animateIn
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-[10px] opacity-0",
+              )}
+              style={{
+                transitionDuration: `${animateIn ? OPEN_ITEM_MS : CLOSE_ITEM_MS}ms`,
+                transitionDelay: `${animateIn ? OPEN_ITEM_DELAY_MS + OPEN_CONTACT_OFFSET_MS : 0}ms`,
+              }}
+            >
+              <OfficeBlock office={OFFICES[0]} />
+            </div>
           </div>
         </div>
       </nav>
@@ -566,9 +673,16 @@ interface NavGroupColumnProps {
   startIndex: number;
   animateIn: boolean;
   onNavigate: () => void;
+  pathname: string | null;
 }
 
-function NavGroupColumn({ group, startIndex, animateIn, onNavigate }: NavGroupColumnProps) {
+function NavGroupColumn({
+  group,
+  startIndex,
+  animateIn,
+  onNavigate,
+  pathname,
+}: NavGroupColumnProps) {
   const headingProps = staggerProps(
     startIndex,
     animateIn,
@@ -578,21 +692,33 @@ function NavGroupColumn({ group, startIndex, animateIn, onNavigate }: NavGroupCo
   return (
     <div className="flex flex-col gap-[10px]">
       <p
-        className={cn("font-S font-semibold text-white/50", headingProps.className)}
+        className={cn(
+          "font-S font-semibold text-white/50",
+          headingProps.className,
+        )}
         style={headingProps.style}
       >
         {group.title}
       </p>
       <ul className="flex flex-col gap-[8px]">
         {group.items.map((item, i) => {
-          const props = staggerProps(startIndex + 1 + i, animateIn, LINK_COLUMN_COUNT, OPEN_LINK_STAGGER_MS);
+          const props = staggerProps(
+            startIndex + 1 + i,
+            animateIn,
+            LINK_COLUMN_COUNT,
+            OPEN_LINK_STAGGER_MS,
+          );
           return (
             <li key={item.href} className={props.className} style={props.style}>
               <Link
                 href={item.href}
                 onClick={onNavigate}
-                className="font-M block text-white transition-opacity duration-300 ease-out hover:opacity-60"
+                aria-current={
+                  isCurrentSection(pathname, item.href) ? "page" : undefined
+                }
+                className="font-M flex items-center text-white transition-opacity duration-300 ease-out hover:opacity-60"
               >
+                {isCurrentSection(pathname, item.href) ? <CurrentDot /> : null}
                 {item.label}
               </Link>
             </li>
@@ -621,7 +747,12 @@ function OfficeBlock({ office }: { office: OfficeContact }) {
         </a>
       ) : null}
       {office.email ? (
-        <ButtonLine label="E-mail" href={`mailto:${office.email}`} color="white" className="mt-[4px]" />
+        <ButtonLine
+          label="E-mail"
+          href={`mailto:${office.email}`}
+          color="white"
+          className="mt-[4px]"
+        />
       ) : null}
     </>
   );

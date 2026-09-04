@@ -2,6 +2,7 @@ import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
+import { projectIntroTabs } from "@/components/site/shared/blocks/projectIntroTabs";
 import { BlockMediaDoubleQuote } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
 import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjectDetails";
 import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
@@ -64,7 +65,7 @@ export default function FoodTruckRentalsPage() {
       {/* `overflow-x: clip` (not hidden) — matches the homepage shell. */}
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderProjects {...PROJECT_HEADER} />
-        <BlockIntroDouble {...PROJECT_INTRO} />
+        <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
         <BlockWysiwyg {...PROJECT_OUTCOME} />
         <BlockMediaDoubleQuote {...PROJECT_MEDIA_QUOTE} />
         <BlockProjectDetails details={PROJECT_DETAILS} />

@@ -57,6 +57,15 @@ export interface BlockIntroDoubleProps {
   /** Index of the active label. Only meaningful with 2+ labels. */
   activeLabel?: number;
   /**
+   * One panel per label, making the tab strip actually do something.
+   *
+   * Without this the block renders a single `statement`/`body` and the labels
+   * are decoration — which is what the project pages shipped: two tabs, a rule
+   * under the first, and nothing behind the second. Pass `panels` and the block
+   * owns the active index, renders the labels as buttons, and swaps content.
+   */
+  panels?: readonly { statement: string; body?: string | readonly string[] }[];
+  /**
    * Makes the labels real tab `<button>`s (the source renders `<div>`s for the
    * single-caption variant and `<button>`s for the tabbed one). Omit for the
    * static instances.
@@ -78,12 +87,22 @@ export function BlockIntroDouble({
   labels,
   activeLabel = 0,
   onLabelSelect,
+  panels,
   statement,
   body,
   className,
 }: BlockIntroDoubleProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const [isRevealed, setIsRevealed] = useState(false);
+  const [selected, setSelected] = useState(activeLabel);
+
+  // With `panels`, the strip is self-driving: the block holds the index and
+  // reads its copy from the panel. Without it nothing changes and the labels
+  // stay the static captions the /about/ and service pages want.
+  const activeIndex = panels ? selected : activeLabel;
+  const activePanel = panels?.[activeIndex];
+  const shownStatement = activePanel?.statement ?? statement;
+  const shownBody = activePanel ? activePanel.body : body;
 
   useEffect(() => {
     const node = sectionRef.current;
@@ -112,7 +131,7 @@ export function BlockIntroDouble({
   const revealClass = cn("ng-reveal", isRevealed && "is-revealed");
 
   const paragraphs =
-    body === undefined ? [] : typeof body === "string" ? [body] : [...body];
+    shownBody === undefined ? [] : typeof shownBody === "string" ? [shownBody] : [...shownBody];
   // Two or more labels = the tabbed variant; that is the only instance where
   // the source shows the active-tab rule (it renders it at `opacity: 0` on the
   // single-caption pages, which is visually identical to not rendering it).
@@ -137,7 +156,7 @@ export function BlockIntroDouble({
             it never fills the header row. */}
         <div className="blockIntroDouble__headerButtonWrapper relative flex w-fit items-center gap-[50px]">
           {labels?.map((label, index) => {
-            const isActive = isTabbed && index === activeLabel;
+            const isActive = isTabbed && index === activeIndex;
             const content = (
               <>
                 {label}
@@ -167,12 +186,22 @@ export function BlockIntroDouble({
                 : "text-[var(--ng-muted)]",
             );
 
-            return onLabelSelect ? (
+            const select = panels
+              ? () => {
+                  setSelected(index);
+                  onLabelSelect?.(index);
+                }
+              : onLabelSelect
+                ? () => onLabelSelect(index)
+                : undefined;
+
+            return select ? (
               <button
                 key={label}
                 type="button"
+                aria-pressed={isActive}
                 className={cn(itemClass, "cursor-pointer text-center")}
-                onClick={() => onLabelSelect(index)}
+                onClick={select}
               >
                 {content}
               </button>
@@ -193,7 +222,7 @@ export function BlockIntroDouble({
           )}
           style={{ transitionDelay: "80ms" }}
         >
-          {statement}
+          {shownStatement}
         </h2>
 
         {paragraphs.length > 0 ? (
