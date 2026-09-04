@@ -10,10 +10,26 @@ import { HeroServiceCard } from "./HeroServiceCard";
 const HORIZONTAL_MIN_WIDTH = 768;
 
 /**
- * The measured ratio of horizontal travel to vertical scroll across the pin:
- * the strip advanced ~4009px over 4320px of scroll.
+ * The pin's three geometric laws, each read off the live source at ten
+ * viewport sizes (see the note on `measure`).
+ *
+ * `PIN_DISTANCE_PER_VW`: the pin consumes exactly 3x the viewport WIDTH of
+ * scroll, at every size, and does not depend on the viewport height at all.
+ *
+ * `TRAVEL_PER_CARD`: the strip advances exactly 5.2 card widths, which — since
+ * the card is sized off the viewport height — makes travel a function of height
+ * alone. Those two facts together are why the ratio of travel to scroll is not
+ * a constant: it runs from 0.74 at 1440x700 to 1.43 at 900x800.
+ *
+ * `INTRO_INSET_MIN_WIDTH` / `INTRO_INSET`: the intro panel is `100vw - 200px`
+ * from 1280 up (which is what leaves the first card peeking in at rest) and the
+ * full viewport below it. Keep in step with `max-xl:w-screen` in
+ * `HeroIntroPanel`.
  */
-const SCROLL_TO_TRAVEL = 0.928;
+const PIN_DISTANCE_PER_VW = 3;
+const TRAVEL_PER_CARD = 5.2;
+const INTRO_INSET_MIN_WIDTH = 1280;
+const INTRO_INSET = 200;
 
 interface StripMetrics {
   /** Horizontal distance the strip travels from rest to the end of the pin. */
@@ -25,6 +41,18 @@ interface StripMetrics {
   viewportWidth: number;
 }
 
+/**
+ * Read off the live source by scrubbing the pin at ten viewport sizes and
+ * measuring the first card's resting x, its x at the end of the pin, and the
+ * pin-spacer's height. The three laws hold exactly at every one of them,
+ * including the size where the 80vw clamp binds (800x1000, card 640px).
+ *
+ * What this replaced was fitted at 1440x900 alone — a single measurement that a
+ * second viewport size would have falsified immediately. It tied the pin length
+ * to the travel through one constant ratio, so away from that one size the
+ * strip ran at the wrong speed: at 1280x700 the clone's card was 170px further
+ * left than the source's by the same scroll position.
+ */
 function measure(): StripMetrics {
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
@@ -34,16 +62,16 @@ function measure(): StripMetrics {
   const cardWidth = Math.min(Math.max(rawCardWidth, 500), Math.min(viewportWidth * 0.8, 900));
   const cardAdvance = cardWidth - 2; // the -2px margin closes the seam between cards
 
-  const introWidth = viewportWidth - 200;
-
-  // The pin ends with the last service card centred in the viewport — that is
-  // where the measured run stops, short of fully revealing the trailing panel.
-  const lastCardRest = introWidth + (HERO_CARDS.length - 1) * cardAdvance;
-  const travel = Math.max(0, lastCardRest - (viewportWidth - cardWidth) / 2);
+  const introWidth =
+    viewportWidth >= INTRO_INSET_MIN_WIDTH ? viewportWidth - INTRO_INSET : viewportWidth;
 
   return {
-    travel,
-    pinDistance: travel / SCROLL_TO_TRAVEL,
+    // Not "stop with the last card centred", which is what this used to
+    // compute: the source's end position is not a fixed place in the viewport
+    // (the last card lands at x=306 at 1440x900 but x=146 at 1280x900). It is a
+    // fixed distance, and the distance is 5.2 card widths.
+    travel: TRAVEL_PER_CARD * cardWidth,
+    pinDistance: PIN_DISTANCE_PER_VW * viewportWidth,
     introWidth,
     cardAdvance,
     viewportWidth,
@@ -155,7 +183,13 @@ export function HomeHero() {
 
   if (!horizontal || !metrics) {
     return (
-      <section className="homeHero relative mb-[200px] w-full overflow-x-clip">
+      // No `mb-200` here. That 200px is GSAP's pin-spacer on the source, and
+      // the pin-spacer only exists on the pinned branch — measured on the live
+      // source, the stacked hero's own margin-bottom is 0 at 767 and below.
+      // Carrying it here stacked 200px on top of the 200px `cardLast` run-off
+      // and the intro block's 50px, putting 450px of white under the last card
+      // where the source has 300px.
+      <section className="homeHero relative w-full overflow-x-clip">
         <div className="h-screen">
           <HeroIntroPanel />
         </div>

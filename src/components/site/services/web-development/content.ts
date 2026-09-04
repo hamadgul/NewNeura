@@ -153,10 +153,26 @@ export const PROCESS: BlockProcessCardSliderProps = {
       caption: "Built to rank",
       text: "Keyword research shapes the URL structure before a page exists. New York Mobile Mechanic ships a landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green.",
       image: {
-        // The service-by-borough page matrix behind the local rankings.
+        // A Lighthouse report: a row of five scores across the top, the big
+        // 100 Performance ring on the left, the site's own screenshot on the
+        // right.
         src: `${IMG}/mechanicseo.png`,
         width: 512,
         height: 265,
+        /*
+          The card crops this 512x265 shot to a 353x399 portrait slot, so
+          `object-cover` scales it 1.51x and shows a 234px-wide window on a
+          512px-wide image. Centred, that window is x=139..373 — which lands
+          between the two things worth seeing, clipping the Performance ring at
+          the left edge and catching only part of the screenshot at the right.
+
+          The ring's measured centre is x=130.5 (green pixels, bbox 94..167).
+          6% puts the window at roughly x=17..251 on the desktop card and
+          x=18..232 on the phone's narrower one, holding the ring within a few
+          pixels of centre at both, with the top row's 100 Performance and 100
+          Accessibility above it.
+        */
+        position: "6% top",
       },
     },
     {

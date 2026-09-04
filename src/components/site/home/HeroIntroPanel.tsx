@@ -81,6 +81,13 @@ function enter(revealed: boolean, delayMs: number, blurPx = 0): CSSProperties {
  * It is `calc(100vw - 200px)` wide rather than full-bleed, which is what leaves
  * the first service card peeking in from the right edge at rest — the visual hint
  * that the strip scrolls sideways.
+ *
+ * That 200px inset only applies from **1280px up**; below it the panel is the
+ * full viewport and the first card starts off-screen, with no peek. Measured on
+ * the source at 1279 (panel 1279) and 1280 (panel 1080). This was `max-lg:`
+ * (Tailwind's 1024), which left three hundred pixels of widths showing a peek
+ * the source does not have — and, worse, disagreed with `HomeHero`'s own
+ * `measure()`, which assumed the inset at every width.
  */
 export function HeroIntroPanel() {
   // The source ignores `prefers-reduced-motion`; this clone honours it, in step
@@ -103,7 +110,7 @@ export function HeroIntroPanel() {
       // escaped to the root layer and `main.mainContent`'s opaque white
       // background painted straight over it: white type on white, a blank hero.
       className={cn(
-        "homeHero__main relative isolate grid h-full w-[calc(100vw-200px)] shrink-0 gap-x-[10px] max-lg:w-screen",
+        "homeHero__main relative isolate grid h-full w-[calc(100vw-200px)] shrink-0 gap-x-[10px] max-xl:w-screen",
         // ≥768: the panel's own 20-column bed, unchanged.
         "grid-cols-[repeat(20,minmax(0,1fr))] grid-rows-[1fr_auto_1fr] px-[40px] py-[60px] pl-[50px]",
         // <768: the site grid from globals.css — 4 columns inside 15px gutters

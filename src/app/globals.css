@@ -4,6 +4,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+  The grid's own 480px tier, as a named breakpoint so blocks can place
+  themselves against it — see the four-tier note below.
+
+  It has to live in a plain `@theme`, not the `@theme inline` block under it:
+  a `--breakpoint-*` declared there compiles to nothing at all. No error, no
+  warning — the `xs:` utilities simply never appear in the output, and every
+  element keeps its base placement.
+*/
+@theme {
+  --breakpoint-xs: 480px;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -281,6 +294,28 @@
     [main-start] repeat(4, minmax(0, 100px))
     [main-end] minmax(15px, 1fr)
     [full-end];
+}
+
+/*
+  The source has FOUR column tiers, not three: 4 columns below 480, 6 from 480,
+  12 from 768, 20 from 1280. Breakpoint measured exactly — 479 gives 4 columns,
+  480 gives 6 — with the gutter staying `minmax(15px, 1fr)` across both small
+  tiers and the columns capped at 100px.
+
+  This tier is not cosmetic. Without it four 100px-capped columns cannot absorb
+  the width above ~470px, so the `1fr` gutters take all the slack and every
+  block on the page marches inwards: `main-start` measured 85px at a 600px
+  viewport and 168.5px at 767px, against the source's 25px and 58.5px. It was
+  the whole site's mid-range layout, not one block's.
+*/
+@media (min-width: 480px) {
+  .ng-grid {
+    grid-template-columns:
+      [full-start] minmax(15px, 1fr)
+      [main-start] repeat(6, minmax(0, 100px))
+      [main-end] minmax(15px, 1fr)
+      [full-end];
+  }
 }
 
 @media (min-width: 768px) {

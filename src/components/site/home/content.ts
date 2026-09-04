@@ -153,8 +153,9 @@ export const HERO_CARDS: HeroServiceCard[] = [
 ];
 
 /**
- * The homepage's about block. `tagline` is the four-beat engagement shorthand;
- * the four words are the same four the preloader unfolds.
+ * The homepage's about block. `tagline` is the four-beat engagement shorthand.
+ * It used to be the same four words the preloader unfolded; the preloader now
+ * spells out NEURA, so the two are independent.
  *
  * This is the one place on the homepage where Hamad is named — the "who you'd
  * be working with" beat. Everywhere else on this page the voice is "we".
@@ -310,18 +311,23 @@ export const FOOTER_IMAGE = {
 };
 
 /**
- * The preloader wordmark: the four beats of the engagement, each unfolding
- * from its own leading capital.
+ * The preloader wordmark: NEURA unfolding into what the name stands for —
+ * Next-Generation Engineering, Unified Research & AI. Each line grows from its
+ * own leading capital, so the five capitals read as the name before the tails
+ * open.
  *
- * These are the four steps `/process/` sets out — you write and we talk, we
- * scope it in writing, we build in the open, and Hamad stays on after launch —
- * compressed to one word each.
+ * Five words, not the four this was adapted from: the layout takes the count
+ * from this array (`Preloader.tsx` chunks it two to a section), so the only
+ * thing to keep in mind when editing is line length — "Next-Generation" is the
+ * longest line the wordmark has ever carried and it sets the block's width at
+ * every viewport.
  */
 export const PRELOADER_WORDS: Array<[string, string]> = [
-  ["T", "alk"],
-  ["S", "cope"],
-  ["B", "uild"],
-  ["S", "tay"],
+  ["N", "ext-Generation"],
+  ["E", "ngineering"],
+  ["U", "nified"],
+  ["R", "esearch"],
+  ["A", "I"],
 ];
 
 export const FOOTER_COPYRIGHT = "© 2026 NeuraGul. All rights reserved.";

@@ -385,7 +385,7 @@ function Layout({ layout, isLast }: LayoutProps) {
             rendering fault rather than as a card. Opaque enough to be a card,
             still blurred at the edges.
           */}
-          <div className="blockProjectsHighlight__layoutFiveContent col-start-1 col-end-4 flex flex-col md:col-end-7 md:row-start-1 md:mt-[50px] md:ml-[50px] md:bg-[rgba(14,14,14,0.85)] md:p-[20px] md:text-white md:backdrop-blur-[20px] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] xl:col-end-6">
+          <div className="blockProjectsHighlight__layoutFiveContent col-start-1 col-end-4 flex flex-col xs:col-end-6 md:col-end-7 md:row-start-1 md:mt-[50px] md:ml-[50px] md:bg-[rgba(14,14,14,0.85)] md:p-[20px] md:text-white md:backdrop-blur-[20px] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] xl:col-end-6">
             {/* Static: this sits inside the anchor above, so it must not be a
                 link of its own. Hidden below 768 — the source drops it when the
                 caption stops overlaying the image. */}

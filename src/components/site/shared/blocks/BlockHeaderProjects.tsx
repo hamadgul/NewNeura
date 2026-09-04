@@ -187,7 +187,7 @@ export function BlockHeaderProjects({
           {service}
         </div>
 
-        <div className="blockHeaderProjects__title font-3XL col-start-2 col-end-[6] row-start-3 z-[2] mt-[25px] mb-[50px] self-start md:col-end-8 xl:col-end-[12]">
+        <div className="blockHeaderProjects__title font-3XL col-start-2 col-end-[-2] row-start-3 z-[2] mt-[25px] mb-[50px] self-start md:col-end-8 xl:col-end-[12]">
           <h1>{title}</h1>
         </div>
 

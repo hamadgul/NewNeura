@@ -10,6 +10,17 @@ import type { HeroServiceCard as HeroServiceCardData } from "@/types/site";
 import { ButtonCircle } from "../shared/buttons";
 import { ChevronIcon } from "../shared/icons";
 
+/** Progress at which a card's entry animation starts — see `imageScale` below. */
+const ENTRY_START = 0.136;
+/** Progress at which the colour band has finished collapsing. */
+const BAND_END = 0.64;
+const BAND_POWER = 1.9;
+const IMAGE_POWER = 1.55;
+/** The band's resting height, and the height of the content pinned inside it. */
+const BAND_REST_PX = 285;
+
+const clamp01 = (n: number) => Math.min(Math.max(n, 0), 1);
+
 interface HeroServiceCardProps {
   card: HeroServiceCardData;
   /**
@@ -89,10 +100,43 @@ export function HeroServiceCard({
 
   const contentRevealed = horizontal ? revealed : selfRevealed || reduceMotion;
 
-  // Measured: the image starts 1.30x oversized and eases down to exactly fill
-  // its frame. The rate slows as it approaches 1.0, so progress is shaped with
-  // a ~1.7 power curve — a linear ramp visibly overshoots mid-travel.
-  const imageScale = horizontal ? 1 + 0.3 * Math.pow(1 - progress, 1.7) : 1;
+  /*
+    Card entry, sampled off the live source at 1440x900 and 1280x700 by
+    scrubbing the pin in 40px steps and reading `gridTemplateRows` and the
+    image's transform against the card's left edge.
+
+    Nothing moves while the card is merely parked. At rest its left edge sits
+    at `introWidth`, which is on-screen — 200px of the first card shows — and
+    the source holds `1.3` and a half-height colour band until the card has
+    come in about 220px further. In this component's `progress` that threshold
+    lands at 0.136 at BOTH viewport sizes, which is what makes it a threshold
+    on entry rather than a coincidence of one viewport.
+
+    From there two things run at different rates:
+
+      the colour band  50% of the card → 285px, done by progress ~0.64
+      the image        scale 1.3 → 1.0, still easing out at progress 1
+
+    Both are ease-outs. The band's exponent fits 1.9 across both viewports
+    (the fitted end point is 0.66 at 1440x900 and 0.61 at 1280x700 — 0.64
+    splits them, and the curve is flat enough there that the difference is
+    a few pixels of band height). The image's fits 1.55.
+
+    The image exponent was first fitted at 1.35, against a clone whose strip
+    still ran at the wrong speed away from 1440x900 — so the sampled source and
+    clone frames were not at the same card position and the fit absorbed the
+    error. It was refitted here once `HomeHero`'s pin geometry was corrected and
+    the two strips lined up to the pixel.
+  */
+  const entry = horizontal ? clamp01((progress - ENTRY_START) / (1 - ENTRY_START)) : 1;
+  const imageScale = horizontal ? 1 + 0.3 * Math.pow(1 - entry, IMAGE_POWER) : 1;
+
+  // 1 = band at its maximum (half the card), 0 = collapsed to its resting
+  // 285px. The content inside it is 285px tall and pinned to the bottom, so
+  // the extra height reads purely as more colour above the title.
+  const bandOpen = horizontal
+    ? Math.pow(1 - clamp01((progress - ENTRY_START) / (BAND_END - ENTRY_START)), BAND_POWER)
+    : 0;
 
   const serviceVars = {
     "--serviceMainColor": card.mainColor,
@@ -105,7 +149,7 @@ export function HeroServiceCard({
       className={cn(
         "homeHero__card relative -mr-[2px] grid overflow-hidden text-(--serviceContentColor) transition-[filter] duration-500",
         horizontal
-          ? "h-full aspect-[6/7] min-w-[500px] max-w-[min(80vw,900px)] shrink-0 grid-rows-[1fr_285px]"
+          ? "h-full aspect-[6/7] min-w-[500px] max-w-[min(80vw,900px)] shrink-0"
           // Below 768 the source stops stacking image-over-text and lays the
           // card out as a 275px band: the copy fills the width and the photo
           // is a 28% strip down the right-hand edge, over it. Measured
@@ -113,7 +157,16 @@ export function HeroServiceCard({
           : "h-[275px] w-full grid-cols-[72%_28%] grid-rows-[275px]",
         dimmed ? "brightness-50" : "brightness-100",
       )}
-      style={serviceVars}
+      style={{
+        ...serviceVars,
+        // A percentage row track resolves against the card's own height, so
+        // this needs no viewport measurement and stays right through a resize.
+        ...(horizontal
+          ? {
+              gridTemplateRows: `1fr calc(${BAND_REST_PX}px + (50% - ${BAND_REST_PX}px) * ${bandOpen.toFixed(4)})`,
+            }
+          : null),
+      }}
     >
       <Link
         href={card.href}

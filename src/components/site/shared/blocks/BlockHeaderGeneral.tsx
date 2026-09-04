@@ -159,7 +159,7 @@ export function BlockHeaderGeneral({
         <div
           className={cn(
             "blockHeaderGeneral__intro row-start-2",
-            "[grid-column-start:1] [grid-column-end:-1]",
+            "[grid-column-start:1] [grid-column-end:-1] xs:[grid-column-start:3]",
             "xl:mr-[30px] xl:[grid-column-start:6]",
           )}
         >

@@ -82,8 +82,18 @@ export interface ProcessPhase {
   caption: string;
   /** Body copy in the dark panel. Clamped to three lines by the source. */
   text: string;
-  /** Card artwork. Paths live under `/sites/<site>/<page>/images/`. */
-  image: { src: string; width: number; height: number; alt?: string };
+  /**
+   * Card artwork. Paths live under `/sites/<site>/<page>/images/`.
+   *
+   * `position` overrides the default `object-position` for this one card. The
+   * artwork slot is a 353x399 portrait box and every image here is a landscape
+   * screenshot, so `object-cover` keeps the full height and shows well under
+   * half the width — 46% of it at 353px, 42% at the phone's 322px. Centring
+   * that window is right for a screenshot whose subject is in the middle and
+   * wrong for one whose subject is not, and there is no way to tell from the
+   * dimensions. Set it when the crop is cutting the thing the card is about.
+   */
+  image: { src: string; width: number; height: number; alt?: string; position?: string };
   /**
    * `cardItem__headerWrapper--dark` — set when the artwork is *light*, so
    * the number and caption painted over it go dark. The source alternates
@@ -519,6 +529,7 @@ function ProcessCard({ phase, index }: { phase: ProcessPhase; index: number }) {
           height={phase.image.height}
           sizes="(min-width: 443px) 353px, calc(100vw - 90px)"
           className="absolute inset-0 z-[1] h-full w-full object-cover object-top"
+          style={phase.image.position ? { objectPosition: phase.image.position } : undefined}
         />
 
         {/*

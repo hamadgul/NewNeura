@@ -121,18 +121,57 @@ export function Wordmark({ className, ...props }: React.ComponentProps<"span">) 
   );
 }
 
+/*
+  The menu mark's morph into the close cross, measured off the source by
+  sampling every 16ms across a click:
+
+    .menuLineTwo     rotate 0 -> -45deg   about (8.828, 20)
+    .menuLinesGroup  rotate 0 -> +45deg   about (8.828, 9)
+    .menuLineThree   opacity 0 -> 1, in lockstep with the rotation
+
+  Both origins were solved from the endpoints the source lands on rather than
+  guessed: its two lines finish at (4,22)->(18.85,7.15) and (4,7)->(18.85,21.85),
+  one X anchored at x=4 spanning 15 units. `transform-box: view-box` is what
+  makes a px transform-origin mean user units inside the 29x29 viewBox.
+
+  500ms on `cubic-bezier(0.44, 0.74, 0.7, 1)`, fitted to nine sampled points of
+  the source's rotation (rms 0.006 of the 45deg sweep).
+*/
+const MENU_LINE_TIMING = "duration-500 ease-[cubic-bezier(0.44,0.74,0.7,1)]";
+const MENU_LINE_TRANSITION = `transition-transform ${MENU_LINE_TIMING}`;
+
 /**
- * `#icon-menu` — the hamburger. Two visible rules plus a third stacked
- * beneath the top one at `opacity: 0`; the theme animates the group to form
- * the close cross, so the markup keeps all three paths.
+ * `#icon-menu` — the hamburger, which morphs into the close cross when `open`.
+ * Two visible rules plus a third stacked under the top one at `opacity: 0`.
  */
-export function MenuIcon(props: IconProps) {
+export function MenuIcon({ open = false, ...props }: IconProps & { open?: boolean }) {
   return (
     <svg viewBox="0 0 29 29" fill="none" aria-hidden="true" {...props}>
-      <path className="menuLineTwo" d="M4 18h21" stroke="currentColor" strokeLinecap="round" />
-      <g className="menuLinesGroup" stroke="currentColor" strokeLinecap="round">
+      <path
+        className={cn("menuLineTwo [transform-box:view-box]", MENU_LINE_TRANSITION)}
+        style={{ transformOrigin: "8.828px 20px", transform: open ? "rotate(-45deg)" : "none" }}
+        d="M4 18h21"
+        stroke="currentColor"
+        strokeLinecap="round"
+      />
+      <g
+        className={cn("menuLinesGroup [transform-box:view-box]", MENU_LINE_TRANSITION)}
+        style={{ transformOrigin: "8.828px 9px", transform: open ? "rotate(45deg)" : "none" }}
+        stroke="currentColor"
+        strokeLinecap="round"
+      >
         <path className="menuLineOne" d="M4 11h21" />
-        <path className="menuLineThree" d="M4 11h21" style={{ opacity: 0 }} />
+        {/*
+          Identical to menuLineOne and inside the same rotating group, so it
+          lands exactly on top of it — it is not a third arm of the cross. The
+          source fades it in across the morph anyway; kept so this icon's DOM
+          and behaviour stay one-to-one with the source's.
+        */}
+        <path
+          className={cn("menuLineThree transition-opacity", MENU_LINE_TIMING)}
+          d="M4 11h21"
+          style={{ opacity: open ? 1 : 0 }}
+        />
       </g>
     </svg>
   );

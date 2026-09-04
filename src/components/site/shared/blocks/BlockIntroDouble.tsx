@@ -189,7 +189,7 @@ export function BlockIntroDouble({
         <h2
           className={cn(
             revealClass,
-            "blockIntroDouble__textIntro font-L col-start-1 col-end-5 row-start-1 md:col-end-13 xl:col-end-16",
+            "blockIntroDouble__textIntro font-L col-start-1 col-end-[-1] row-start-1 md:col-end-13 xl:col-end-16",
           )}
           style={{ transitionDelay: "80ms" }}
         >
@@ -200,7 +200,7 @@ export function BlockIntroDouble({
           <div
             className={cn(
               revealClass,
-              "blockIntroDouble__textMain col-start-1 col-end-5 row-start-2 mt-[50px] md:col-end-13 xl:col-start-7 xl:col-end-19 xl:mt-[60px] xl:columns-2 xl:gap-x-[20px]",
+              "blockIntroDouble__textMain col-start-1 col-end-[-1] row-start-2 mt-[50px] md:col-end-13 xl:col-start-7 xl:col-end-19 xl:mt-[60px] xl:columns-2 xl:gap-x-[20px]",
               // The source ships one <p>; multi-paragraph copy keeps the same
               // measure and separates on the body's own 21.6px line.
               "[&>p+p]:mt-[21.6px]",

@@ -29,7 +29,16 @@ export function BlockProjectsHighlight() {
           {/*
             Below 768px this stays a horizontal scroller, which is the source's
             behaviour and the right affordance on a phone: the label sits on its
-            own line above it and the five pills swipe.
+            own line above it and the five pills swipe. Two things make it read
+            as one. It is full-bled (`50% - 50vw` out, the same distance back in
+            as padding) so the row runs off the screen edge instead of being
+            cut 25px short of it — a label chopped inside the gutter reads as
+            broken text, the same label chopped at the edge reads as "there is
+            more over there". And the bar is hidden, as it is on every other
+            scroller here (CollectionProjects, BlockImageSlider,
+            BlockProcessCardSlider): platforms with classic scrollbars were
+            drawing a 15px track across the row and shoving the header rule
+            down with it.
 
             From 768px it must WRAP instead. The row needs 797px of content —
             our service names are long ("Cloud & Infrastructure", "Data
@@ -41,8 +50,12 @@ export function BlockProjectsHighlight() {
             `min-w-0` stays: it is what lets the wrapper shrink to the space
             available so the inner row knows where to break.
           */}
-          <div className="portfolioFilter__wrapperOverflow w-full min-w-0 overflow-x-auto md:w-auto md:overflow-x-visible">
-          <div className="portfolioFilter__itemWrapper flex gap-x-[30px] gap-y-[10px] md:flex-wrap md:justify-end">
+          <div className="portfolioFilter__wrapperOverflow mx-[calc(50%-50vw)] w-screen min-w-0 overflow-x-auto px-[calc(50vw-50%)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:w-auto md:overflow-x-visible md:px-0">
+          {/* A scroller's padding-right is not part of its scrollable width, so
+              at the end of the swipe "Data Intelligence" sat flush against the
+              screen edge. This spacer rides inside the scrolled row, where its
+              width does count. */}
+          <div className="portfolioFilter__itemWrapper flex gap-x-[30px] gap-y-[10px] after:block after:w-[25px] after:shrink-0 after:content-[''] md:flex-wrap md:justify-end md:after:hidden">
             {PORTFOLIO_FILTERS.map((filter) => (
               <a
                 key={filter.label}

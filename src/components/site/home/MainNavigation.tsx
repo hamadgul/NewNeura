@@ -11,7 +11,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { CloseIcon, MenuIcon, Wordmark } from "@/components/site/shared/icons";
+import { MenuIcon, Wordmark } from "@/components/site/shared/icons";
 import { ButtonLine } from "@/components/site/shared/buttons";
 import { COMPANY_GROUP, EXPLORE_GROUP, OFFICES, SERVICE_LINKS } from "./content";
 import type { ServiceHeaderTone } from "@/components/site/shared/blocks/BlockHeaderServices";
@@ -147,12 +147,26 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
 
   return (
     <div className="navigationMain fixed inset-x-0 top-0 z-[1000] flex h-[100px] w-full items-center bg-transparent">
-      <div className="navigationMain__topBar relative z-10 mx-auto my-[25px] flex h-[50px] w-[calc(100%-30px)] items-center justify-between py-[10px] md:w-[calc(100%-60px)] lg:w-[calc(100%-80px)]">
+      {/*
+        The bar rides the page grid rather than its own calc widths. Its two
+        ends must sit on `main-start` / `main-end` — the line every content
+        block on the site starts at — which is the gutter PLUS the grid's 10px
+        column gap: 25px inset below 768, 40px from 768, 50px from 1280. The
+        source does exactly this with a subgrid bar.
+
+        It used to be `w-[calc(100%-30px)] md:-60px lg:-80px`, which is the
+        gutter alone (15/30/40) with no gap, and stepped at Tailwind's `lg`
+        (1024) where the grid steps at 1280. So the nav sat 10px wide of every
+        other element on the page at every width, and a further 10px out
+        between 1024 and 1279. Placing it on the named grid lines means it
+        cannot drift again if the gutters are ever retuned.
+      */}
+      <div className="navigationMain__topBar ng-grid relative z-10 my-[25px] h-[50px] w-full items-center py-[10px]">
         <Link
           href="/"
           aria-label="NeuraGul home"
           className={cn(
-            "navigationMain__topBarLogo flex h-[30px] items-center transition-colors ease-in-out",
+            "navigationMain__topBarLogo col-start-[main-start] col-end-[main-end] row-start-1 flex h-[30px] items-center justify-self-start transition-colors ease-in-out",
             // The top bar is `z-10` and the overlay is not, so the wordmark
             // paints *over* the open menu's black/80 ground — a dark wordmark
             // would disappear the moment the menu opened. While `open`, it is
@@ -165,7 +179,7 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
           <Wordmark className="text-[17px]" />
         </Link>
 
-        <div className="navigationMain__topBarItems flex h-[30px] w-[89px] items-center justify-end">
+        <div className="navigationMain__topBarItems col-start-[main-start] col-end-[main-end] row-start-1 flex h-[30px] w-[89px] items-center justify-end justify-self-end">
           <button
             ref={toggleRef}
             type="button"
@@ -173,8 +187,19 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
             aria-expanded={open}
             aria-controls={overlayId}
             className={cn(
-              "buttonMenu flex h-[30px] w-[89px] items-center justify-center gap-[4px] rounded-full px-[8px]",
-              "transition-colors duration-300 ease-out",
+              // The source's own box model, which is what makes the pill
+              // tighten as the icon morphs: 3px before the label, 5px between
+              // label and icon, and a right pad that runs 7px -> 2px. With the
+              // icon's own 30px -> 21px that takes the button from 89px to
+              // 75px, right edge fixed (it sits at the end of a 89px flex row
+              // that justifies to the end). It used to be pinned at `w-[89px]`,
+              // which left no room for any of that to move.
+              // 6px, not a stadium: the source's pill is a rounded rect, and it
+              // sits on a `blur(5px)` backdrop so it stays legible over the
+              // hero video without needing a heavier ground.
+              "buttonMenu flex h-[30px] items-center justify-center gap-[5px] rounded-[6px] pl-[3px] backdrop-blur-[5px]",
+              "transition-[background-color,color,padding] duration-300 ease-out",
+              open ? "pr-[2px]" : "pr-[7px]",
               // Dark pill over the page so it reads on the hero video; inverted
               // to a light pill once the overlay is up, which is what the
               // reference does — on the blurred ground a dark pill disappears.
@@ -185,7 +210,14 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
                 happens in place with zero layout shift — the theme toggles
                 display flex/none, we cross-fade opacity for the same visual
                 result without fighting a non-animatable display change. */}
-            <span className="buttonMenu__text font-XS relative h-[24px] w-[44px]">
+            {/*
+              The label has its own ground and keeps it in both states: a
+              #262626 pill, 4px radius, white text, never inverting with the
+              button around it. Only the button's own background crosses over,
+              which is why the open state reads as a dark chip on white rather
+              than as plain black text.
+            */}
+            <span className="buttonMenu__text font-XS relative flex h-[24px] w-[44px] items-center justify-center rounded-[4px] bg-[#262626] px-[7px] text-white">
               <span
                 className={cn(
                   "buttonMenu__textMenu absolute inset-0 flex items-center justify-center transition-opacity duration-300 ease-out",
@@ -205,24 +237,20 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
                 Close
               </span>
             </span>
-            {/* MenuIcon's three paths (menuLineOne/Two/Three) aren't exposed
-                for per-line control from outside icons.tsx, so we cross-fade
-                MenuIcon -> CloseIcon with opacity+rotate instead of morphing
-                the hamburger lines into a cross, per spec's fallback. */}
-            <span className="relative flex h-[30px] w-[30px] shrink-0 items-center justify-center">
-              <MenuIcon
-                className={cn(
-                  "absolute h-[30px] w-[30px] transition-[opacity,transform] duration-300 ease-out",
-                  open ? "rotate-45 opacity-0" : "rotate-0 opacity-100",
-                )}
-              />
-              <CloseIcon
-                className={cn(
-                  "absolute h-[30px] w-[30px] transition-[opacity,transform] duration-300 ease-out",
-                  open ? "rotate-0 opacity-100" : "-rotate-45 opacity-0",
-                )}
-              />
-            </span>
+            {/*
+              One icon that morphs, not two that cross-fade. The lines rotate
+              into the cross about origins solved from the source's own end
+              geometry — see `MenuIcon`. The 30px -> 21px width is the source's
+              too, and it runs faster than the rotation, so the pill has
+              finished tightening while the cross is still turning.
+            */}
+            <MenuIcon
+              open={open}
+              className={cn(
+                "h-[30px] shrink-0 transition-[width] duration-300 ease-out",
+                open ? "w-[21px]" : "w-[30px]",
+              )}
+            />
           </button>
         </div>
       </div>

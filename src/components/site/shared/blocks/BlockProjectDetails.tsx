@@ -72,16 +72,16 @@ export function BlockProjectDetails({
       {/* Desktop-only hairline; below 1280px the heading's own border stands in. */}
       <div className="blockProjectDetails__line row-start-1 hidden h-px bg-[#d6d6d6] xl:col-start-2 xl:col-end-[21] xl:block" />
 
-      <h2 className="blockProjectDetails__title font-M col-start-2 col-end-[6] row-start-2 border-b border-[#d6d6d6] pb-[15px] md:col-end-[14] xl:col-start-2 xl:col-end-[7] xl:border-b-0 xl:py-[15px]">
+      <h2 className="blockProjectDetails__title font-M col-start-2 col-end-[-2] row-start-2 border-b border-[#d6d6d6] pb-[15px] md:col-end-[14] xl:col-start-2 xl:col-end-[7] xl:border-b-0 xl:py-[15px]">
         {heading}
       </h2>
 
-      <ul className="blockProjectDetails__wrapper col-start-1 col-end-7 row-start-3 grid grid-cols-subgrid md:col-end-[15] xl:col-start-[9] xl:col-end-[21] xl:row-start-2">
+      <ul className="blockProjectDetails__wrapper col-start-1 col-end-[-1] row-start-3 grid grid-cols-subgrid md:col-end-[15] xl:col-start-[9] xl:col-end-[21] xl:row-start-2">
         {details.map((detail, index) => (
           <li
             key={detail.label}
             className={cn(
-              "blockProjectDetails__itemList font-S col-start-2 col-end-6 grid grid-cols-subgrid border-b border-[#d6d6d6] py-[15px]",
+              "blockProjectDetails__itemList font-S col-start-2 col-end-[-2] grid grid-cols-subgrid border-b border-[#d6d6d6] py-[15px]",
               index % 2 === 0
                 ? "md:col-start-2 md:col-end-8 xl:col-start-1 xl:col-end-7"
                 : "md:col-start-8 md:col-end-[14] xl:col-start-7 xl:col-end-[13]",

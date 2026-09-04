@@ -211,7 +211,7 @@ export function BlockMediaDoubleQuote({
         className={cn(
           "blockMediaDoubleQuote__imageFigure blockMediaDoubleQuote__imageFigure--small",
           "col-start-[main-start] col-end-[4] row-start-1 flex flex-col",
-          "md:col-end-[10]",
+          "xs:col-end-[6] md:col-end-[10]",
           // The 100px gap is the small figure's own margin only once the block
           // is side by side; when stacked it belongs to the blockquote instead.
           "xl:col-start-[14] xl:col-end-[main-end] xl:row-start-1 xl:row-end-3 xl:mb-[100px]",

@@ -94,7 +94,7 @@ export function BlockContact({
       {officeTwo ? (
         <ContactInfo
           office={officeTwo}
-          className="blockContact__contactTwo col-start-[4] col-end-[main-end] row-start-2 md:col-start-[-6] md:col-end-[-3] xl:col-start-[17] xl:col-end-[20] xl:row-start-1"
+          className="blockContact__contactTwo col-start-[4] col-end-[main-end] row-start-2 xs:col-start-[5] xs:col-end-[7] md:col-start-[-6] md:col-end-[-3] xl:col-start-[17] xl:col-end-[20] xl:row-start-1"
         />
       ) : null}
 

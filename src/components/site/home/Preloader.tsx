@@ -1,27 +1,28 @@
 "use client";
 
 /**
- * The intro overlay: a dark ground on which four capitals unfold into the
- * four beats of the engagement — "Talk / Scope / Build / Stay".
+ * The intro overlay: a dark ground on which the five capitals of NEURA unfold
+ * into what the name stands for — Next-Generation Engineering, Unified
+ * Research & AI.
  *
  * Measured off the reference intro (mobile, 390px) by sampling the GSAP-written inline
  * styles every 120ms across a page load. The three beats, with times relative
  * to the start of the theme's timeline:
  *
- *   0.00 – 0.86s  the four capitals fade up one at a time — `opacity 0 → 1`,
+ *   0.00 – 1.15s  the capitals fade up one at a time — `opacity 0 → 1`,
  *                 `filter: blur(10px) → none`, `translateY(10px) → 0`,
  *                 ~500ms each, ~287ms apart.
  *   1.23 – 2.28s  each word's remainder unfurls to the right while the block
- *                 re-centres, so "L P A S" becomes the four words. The source
+ *                 re-centres, so "N E U R A" becomes the five words. The source
  *                 does this by translating the tail spans and counter-moving
  *                 the sections; we get the same motion — and the same
  *                 re-centring — from a `0fr → 1fr` grid column, with no
  *                 measured widths to keep in sync.
  *   2.48 – 3.13s  the words fade out, then the overlay fades out behind them.
  *
- * The four words carry NO gaps: the wrapper is 193px tall at 390px, which is
- * exactly 4 × the 48.4px `font-XXL` line box. There is deliberately no media
- * behind them — the overlay is type on a flat ground.
+ * The words carry NO gaps: the wrapper is an exact multiple of the 48.4px
+ * `font-XXL` line box (193px at four words, 242px at NEURA's five). There is
+ * deliberately no media behind them — the overlay is type on a flat ground.
  *
  * Mounted from the root layout, not from each page. Navigation here is
  * client-side, and mounting this per route replayed the whole 3.4s intro on
@@ -36,8 +37,19 @@ import { PRELOADER_WORDS } from "./content";
 
 /** ms before the first capital starts to arrive. */
 const LETTERS_START_MS = 250;
-/** ms between each capital's entrance. */
-const LETTER_STAGGER_MS = 287;
+/**
+ * ms between each capital's entrance.
+ *
+ * The measured value is 287ms, but it was measured on four letters, where it
+ * started the last capital 369ms before the unfurl. Held at 287 across NEURA's
+ * five, the "A" would begin 82ms *after* the unfurl had started and the
+ * acronym would never be legible whole — which is the one thing this intro now
+ * exists to show. So what is preserved is the span, not the interval: 861ms
+ * (the measured 3 × 287) divided across however many letters there are, which
+ * puts the last capital at the same point in the timeline as before.
+ */
+const LETTERS_SPREAD_MS = 861;
+const LETTER_STAGGER_MS = LETTERS_SPREAD_MS / Math.max(PRELOADER_WORDS.length - 1, 1);
 /** ms for one capital's fade/blur/lift. */
 const LETTER_MS = 500;
 /** ms at which the words unfurl (measured 1.23s after the first capital). */
@@ -50,6 +62,17 @@ const WORDS_OUT_MS = EXPAND_START_MS + EXPAND_MS + 200;
 const WORDS_OUT_DURATION_MS = 350;
 /** ms for the overlay's own fade, which follows the words. */
 const FADE_MS = 300;
+
+/**
+ * The words are laid out two to a section, mirroring the source's two
+ * counter-translated groups. Derived rather than written out, so NEURA's five
+ * words split 2/2/1 without the last one being dropped — the old `[0, 2]`
+ * rendered exactly four and would have silently swallowed the "AI".
+ */
+const SECTION_OFFSETS = Array.from(
+  { length: Math.ceil(PRELOADER_WORDS.length / 2) },
+  (_, i) => i * 2,
+);
 
 type Phase = "letters" | "expanded" | "wordsOut" | "leaving" | "done";
 
@@ -103,7 +126,7 @@ export function Preloader() {
         counter-translated sections do.
       */}
       <div className="preloader__wordWrapper w-fit">
-        {[0, 2].map((offset) => (
+        {SECTION_OFFSETS.map((offset) => (
           <div
             key={offset}
             className={cn(
@@ -131,14 +154,14 @@ export function Preloader() {
 interface WordProps {
   capital: string;
   rest: string;
-  /** Position among all four words — sets the capital's stagger delay. */
+  /** Position among the words — sets the capital's stagger delay. */
   index: number;
   expanded: boolean;
 }
 
 function Word({ capital, rest, index, expanded }: WordProps) {
   // The capital is mounted already hidden and transitions to its resting
-  // state, so the delay alone sequences the four of them.
+  // state, so the delay alone sequences them.
   const [arrived, setArrived] = useState(false);
   useEffect(() => {
     const id = window.setTimeout(() => setArrived(true), LETTERS_START_MS);
