@@ -23,7 +23,7 @@
  * above the fold, so it renders in its settled state and stays a server
  * component.
  */
-import Image from "next/image";
+import { ParallaxHeaderImage } from "@/components/site/shared/ParallaxHeaderImage";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import type { ServiceSlug } from "@/types/site";
@@ -257,19 +257,24 @@ export function BlockHeaderServices({
           className="blockHeaderServices__imageOverlay absolute inset-0 z-[1] bg-black/50"
         />
         {/*
-          The image is 115% of the band's height and anchored to its top, so a
+          The image is taller than the band and anchored to its top, so a
           centred `object-fit: cover` crop is then itself cropped from below.
           Reproducing both steps is what puts the horizon where the source has
           it; a plain `h-full` frames the photo ~47px lower.
+
+          124%, not the source's 115%: the overflow is the parallax's runway,
+          and the user asked for that movement to be more apparent. See
+          `ParallaxHeaderImage` — the rate and the slack were raised together so
+          the travel still lasts exactly as long as the band is on screen.
         */}
-        <Image
+        <ParallaxHeaderImage
           src={image.src}
           alt={image.alt ?? ""}
           width={image.width}
           height={image.height}
           priority
           sizes="100vw"
-          className="image blockHeaderServices__image absolute inset-x-0 top-0 h-[115%] w-full object-cover"
+          className="image blockHeaderServices__image absolute inset-x-0 top-0 h-[124%] w-full object-cover"
         />
       </div>
     </header>
