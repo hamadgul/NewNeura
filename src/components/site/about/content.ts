@@ -24,10 +24,10 @@
  * three-paragraph `ng-prose`, then a closing `ng-margin` line), only mapped onto
  * this layout's blocks.
  *
- * Image paths are the real screenshots under `/site/images` and `/site/videos`;
- * `width`/`height` are the assets' true pixel sizes, because `next/image` sets
- * the reserved aspect ratio from them. Every asset here is landscape; the header
- * and the media block both crop with `object-cover`, so the shape holds.
+ * Image paths are the real screenshots under `/site/images`; `width`/`height`
+ * are the assets' true pixel sizes, because `next/image` sets the reserved
+ * aspect ratio from them. Every asset here is landscape; the header and the
+ * media block both crop with `object-cover`, so the shape holds.
  *
  * ── What is deliberately absent ─────────────────────────────────────────────
  * The team grid. The layout this page is adapted from closed with a 38-face
@@ -42,7 +42,6 @@ import type { BlockMediaDoubleQuoteProps } from "@/components/site/shared/blocks
 import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
 
 const IMG = "/site/images";
-const VIDEO = "/site/videos";
 
 export const META = {
   /** Plain stem: the root layout's "%s — NeuraGul" template adds the suffix. */
@@ -61,11 +60,10 @@ export const META = {
  * ("I keep a handful of projects going at a time") ended on a capacity claim
  * and that half is dropped rather than restated with a bigger number.
  *
- * The right column is `hero-poster.jpg`, the generic still: it is cropped with
- * `object-cover` into a ~715×600 box at 1280+, so a 16:9 frame loses its sides
- * and reads as a backdrop rather than as a claim about a specific room. The
- * notched highlight is a real project screenshot and its caption is the label
- * the source prints over this section.
+ * The right column is cropped with `object-cover` into a ~715×720 box at
+ * 1280+, so a 16:9 frame loses its sides — pick images whose subject survives
+ * a centre crop to near-square. The notched highlight is a real project
+ * screenshot and its caption is the label the source prints over this section.
  *
  * No `buttonHref`: the circle is a scroll affordance with no destination, the
  * same as every other instance of this block.
@@ -78,15 +76,30 @@ export const ABOUT_HEADER: BlockHeaderGeneralProps = {
   // screenshot answering a question about a person. The routing platform is
   // the closest this site has to a picture of the work itself, and the caption
   // now says what the image actually shows.
+  //
+  // The full `delivery-routing.jpg` dashboard does not survive this slot: the
+  // block renders it 193px wide, and at that size a white-chrome screenshot on
+  // the header's #ececec ground has no visible edge and no legible content —
+  // it read as a blank rectangle floating in the grey. `-map.jpg` is the map
+  // panel of that same capture, cropped 1.6:1, so the six colour-coded driver
+  // routes are the whole image and the caption describes what you can see.
   highlightImage: {
-    src: `${IMG}/delivery-routing.jpg`,
+    src: `${IMG}/delivery-routing-map.jpg`,
     alt: "",
-    width: 1200,
-    height: 750,
+    width: 1008,
+    height: 630,
   },
   highlightCaption: "Six vans, planned every morning",
+  // Was `hero-poster.jpg` — stock "futuristic data centre" material: neon
+  // tubes, a blurred figure, and overlaid glyphs that are not real text. It is
+  // the loudest thing above the fold on a page about who we are, it looks
+  // nothing like the photography on /process/ or /contact/, and it makes a
+  // claim about a room that does not exist. This is frame 180 of `office.mp4`
+  // — the same building /process/ and /contact/ already show, a different
+  // shot of it (stairwell and window wall, no people), so the two pages read
+  // as one place without repeating a frame.
   image: {
-    src: `${IMG}/hero-poster.jpg`,
+    src: `${IMG}/about-studio.jpg`,
     alt: "",
     width: 1920,
     height: 1080,
@@ -117,15 +130,23 @@ export const ABOUT_INTRO: BlockIntroDoubleProps = {
 };
 
 /**
- * Media pair. This is the site's one instance whose large slot is a `<video>`,
- * so it takes the `type: "video"` arm of the media union. 1920×1080 is
- * `office.mp4`'s real stream size, which is what holds the grid rows stable
- * before metadata loads.
+ * Media pair.
  *
- * The footage is deliberately generic loft-office material: it sets the register
- * without claiming to be a particular room, which is the honest choice for a
- * practice with no street office. The small slot is the real-world data pipeline
- * screenshot, which is the project the paragraph directly above it describes.
+ * The large slot held `office.mp4` — the same loft footage as the homepage,
+ * whose poster frame is a concrete ceiling and a "CYCLOPS 5 TON CRANE" sign.
+ * Two problems once the header stopped being stock: the header is now a frame
+ * of that same building, so the page showed the loft twice and the work once;
+ * and a crane sign says nothing on a page whose next paragraph names three
+ * specific projects. It is `vintus.jpg` instead — the wine importer's
+ * storefront, which the `BlockWysiwyg` copy directly below names. With the
+ * header's routing map and the small slot's pipeline, the page's four images
+ * are now one real place and three different real projects, none repeated.
+ *
+ * That leaves no `<video>` on this route; `office.mp4` still runs on the
+ * homepage, which is where the room is worth showing in motion.
+ *
+ * The small slot is the real-world data pipeline screenshot, which is the
+ * project the paragraph directly above it describes.
  *
  * `quote` is a sentence from `about_3`, hoisted into the pull-quote column. It
  * is the site's own copy rather than a testimonial — nobody is being quoted who
@@ -135,11 +156,11 @@ export const ABOUT_INTRO: BlockIntroDoubleProps = {
  */
 export const ABOUT_MEDIA: BlockMediaDoubleQuoteProps = {
   large: {
-    type: "video",
-    src: `${VIDEO}/office.mp4`,
-    poster: `${VIDEO}/office-poster.jpg`,
-    width: 1920,
-    height: 1080,
+    type: "image",
+    src: `${IMG}/vintus.jpg`,
+    alt: "",
+    width: 1200,
+    height: 750,
   },
   small: {
     type: "image",
@@ -165,16 +186,26 @@ export const ABOUT_MEDIA: BlockMediaDoubleQuoteProps = {
  * boast about being bigger; what stands in their place is the only thing here
  * anyone can hold us to.
  *
- * The bare shape (no `tagline`, no `title`) is the one this block ships on an
- * about page: an empty first grid row, then a single wide text column. Three
- * `paragraph` nodes rather than one long string, so the block's `p + p`
+ * Three `paragraph` nodes rather than one long string, so the block's `p + p`
  * 15px rhythm reproduces the source's paragraph breaks.
+ *
+ * `tagline` and `title` were both absent, on the reasoning that the bare shape
+ * — empty first grid row, then one wide text column — is what the block ships
+ * on an about page. On this route that shape failed: `__content` starts at
+ * column 8 (x=455 at 1440), so with no title beside it the closing section was
+ * 200px of 16px body copy indented into the right two-thirds with 455px of
+ * empty white to its left and no rule above it, arriving straight after the
+ * media block's own white. It read as a fragment of a page rather than the end
+ * of one. The tagline supplies the top rule the section had no edge without,
+ * and the title fills the column the block reserves for it at `md:col-end-[6]`.
  *
  * This is also where the deleted team grid's weight went. The source's `#about`
  * runs to five paragraphs; the header and the intro take two, and the remaining
  * three land here, which is what keeps the route from ending on a stub.
  */
 export const ABOUT_WYSIWYG: BlockWysiwygProps = {
+  tagline: "In practice",
+  title: "What we build, and who builds it.",
   body: [
     {
       type: "paragraph",

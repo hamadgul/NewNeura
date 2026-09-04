@@ -48,6 +48,12 @@ COPY . .
 
 ENV NODE_ENV=production
 
+# Opt this build into `output: "standalone"` (see next.config.ts). The config
+# defaults to Next's normal output so that Vercel — which does its own output
+# file tracing and errors on the standalone copy step — can build the same repo.
+# The `COPY /app/.next/standalone` in the runner stage below depends on this.
+ENV NEXT_OUTPUT=standalone
+
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.

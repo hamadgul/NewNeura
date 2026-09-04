@@ -204,6 +204,30 @@ export function BlockHeaderGeneral({
         className={cn(
           "blockHeaderGeneral__imageWrapper row-start-2",
           "[grid-column-start:1] [grid-column-end:-1]",
+          /*
+            `min-height: 0` is what keeps the `5fr` row honest below xl.
+
+            A grid item's automatic minimum size is its min-content height, and
+            for this one that is the image's intrinsic height at the current
+            column width — 16:9, so full-bleed it is `0.5625 * viewport width`.
+            Whenever that exceeded the row's `5fr` share (half the 120vh block,
+            i.e. `0.5 * viewport height`) the floor won, the row grew past its
+            fr size, and the rows summed to more than the `h-[120vh]` the
+            container is pinned at. The image then spilled out of the bottom of
+            the header and the next section's label printed on top of the photo.
+
+            The condition is `width / height > 0.888`, so it missed every
+            portrait viewport in the reference set — 390x844 (0.46) and 768x900
+            (0.85) both land under it — and hit every landscape window between
+            the md and xl tiers. Measured overflow before this line: +160px at
+            1024x768, +180px at 1100x800, +178px at 1279x900, +165px at 900x700,
+            on both /about/ and /process/; 0 at 390x844, 768x900 and 1440x900.
+
+            With the floor removed the row takes its `5fr` share and the image's
+            own `object-cover` crops to it. `xl:min-h-[600px]` still applies at
+            xl, where the single `1fr` row never had the problem.
+          */
+          "min-h-0",
           "xl:row-start-1 xl:min-h-[600px] xl:[grid-column-start:12]",
         )}
       >

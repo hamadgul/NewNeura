@@ -40,6 +40,22 @@
  *     the indented 800px two-column measure (`columns: 2; column-gap: 20px`,
  *     confirmed visually in the block screenshots — the computed-style dump
  *     records the 20px column-gap but not the count).
+ *
+ * ── Why the second column is conditional ────────────────────────────────
+ * The captured instances all carried long body copy: `columns: 2` cut them
+ * near their midpoint and each column came out several lines deep, which is
+ * what a two-column measure is for. Ten of our call sites do not — the work
+ * pages ship a single 143-287 character paragraph, and /about/ ships 232.
+ * At 800px wide that is barely three lines, so `columns: 2` balances it into
+ * two three-line stacks and the break lands *mid-sentence*: the reader
+ * finishes "...clinical data from dozens of" at the bottom of column one and
+ * has to jump back up to find "sources into a single common model". The
+ * source never rendered that because the source never fed this slot a short
+ * paragraph. `BODY_COLUMN_THRESHOLD` restores one column below the length
+ * where a second one starts paying for itself; every service page (910-1355
+ * chars) and the two long project bodies (680/692) stay two-column and are
+ * pixel-unchanged. The measured gap between the two populations is wide —
+ * 287 vs 680 — so the exact threshold is not load-bearing.
  */
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -79,9 +95,21 @@ export interface BlockIntroDoubleProps {
    * Omitted entirely on /about/, which is statement-only.
    */
   body?: string | readonly string[];
+  /**
+   * Force the ≥1280px body measure to one or two columns instead of letting
+   * the length rule decide. Only worth passing when copy sits near the
+   * threshold and the automatic choice reads wrong.
+   */
+  bodyColumns?: 1 | 2;
   /** Extra classes for the section (e.g. per-page margin overrides). */
   className?: string;
 }
+
+/**
+ * Body length, in characters across every paragraph, at or above which the
+ * ≥1280px measure splits into two columns. See the block note above.
+ */
+const BODY_COLUMN_THRESHOLD = 400;
 
 export function BlockIntroDouble({
   labels,
@@ -90,6 +118,7 @@ export function BlockIntroDouble({
   panels,
   statement,
   body,
+  bodyColumns,
   className,
 }: BlockIntroDoubleProps) {
   const sectionRef = useRef<HTMLElement>(null);
@@ -136,6 +165,12 @@ export function BlockIntroDouble({
   // the source shows the active-tab rule (it renders it at `opacity: 0` on the
   // single-caption pages, which is visually identical to not rendering it).
   const isTabbed = (labels?.length ?? 0) > 1;
+  // Measured on the joined copy, not per paragraph: three short paragraphs
+  // still fill two columns, one short paragraph does not.
+  const isTwoColumnBody =
+    bodyColumns !== undefined
+      ? bodyColumns === 2
+      : paragraphs.join(" ").length >= BODY_COLUMN_THRESHOLD;
 
   return (
     <section
@@ -229,7 +264,8 @@ export function BlockIntroDouble({
           <div
             className={cn(
               revealClass,
-              "blockIntroDouble__textMain col-start-1 col-end-[-1] row-start-2 mt-[50px] md:col-end-13 xl:col-start-7 xl:col-end-19 xl:mt-[60px] xl:columns-2 xl:gap-x-[20px]",
+              "blockIntroDouble__textMain col-start-1 col-end-[-1] row-start-2 mt-[50px] md:col-end-13 xl:col-start-7 xl:col-end-19 xl:mt-[60px]",
+              isTwoColumnBody && "xl:columns-2 xl:gap-x-[20px]",
               // The source ships one <p>; multi-paragraph copy keeps the same
               // measure and separates on the body's own 21.6px line.
               "[&>p+p]:mt-[21.6px]",
