@@ -53,7 +53,7 @@ export default function AppDevelopmentPage() {
     <>
       {/* The wordmark sits on this page's accent ground, so it reads the
           same tone table the header does — a light accent gets dark type. */}
-      <MainNavigation tone={SERVICE_TONE[HEADER.service]} />
+      <MainNavigation tone={SERVICE_TONE[HEADER.service]} service={HEADER.service} />
 
       {/* `overflow-x: clip` (not hidden) — matches the homepage shell, and is
           what lets the process slider's sticky pin survive. */}

@@ -4,7 +4,12 @@
  * this stays a server component.
  */
 import { ButtonArrow } from "@/components/site/shared/buttons";
-import { PORTFOLIO_FILTERS, PROJECTS_ROW_ONE, PROJECTS_ROW_TWO } from "./content";
+import {
+  PORTFOLIO_FILTERS,
+  PROJECTS_ROW_ONE,
+  PROJECTS_ROW_TWO,
+} from "./content";
+import { StickyCompanion } from "@/components/site/shared/StickyCompanion";
 import { ImageCard } from "./ImageCard";
 
 export function BlockProjectsHighlight() {
@@ -51,46 +56,62 @@ export function BlockProjectsHighlight() {
             available so the inner row knows where to break.
           */}
           <div className="portfolioFilter__wrapperOverflow mx-[calc(50%-50vw)] w-screen min-w-0 overflow-x-auto px-[calc(50vw-50%)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:w-auto md:overflow-x-visible md:px-0">
-          {/* A scroller's padding-right is not part of its scrollable width, so
+            {/* A scroller's padding-right is not part of its scrollable width, so
               at the end of the swipe "Data Intelligence" sat flush against the
               screen edge. This spacer rides inside the scrolled row, where its
               width does count. */}
-          <div className="portfolioFilter__itemWrapper flex gap-x-[30px] gap-y-[10px] after:block after:w-[25px] after:shrink-0 after:content-[''] md:flex-wrap md:justify-end md:after:hidden">
-            {PORTFOLIO_FILTERS.map((filter) => (
-              <a
-                key={filter.label}
-                href={filter.href}
-                className="portfolioFilter__item group relative flex shrink-0 items-baseline gap-[4px] whitespace-nowrap text-[#111111]"
-              >
-                <span className="relative">
-                  {filter.label}
-                  {/* Underline wipe: two stacked bars relayed the same way as ButtonArrow/ButtonLine. */}
-                  <span className="pointer-events-none absolute inset-x-0 -bottom-[2px] h-px overflow-hidden">
-                    <span className="absolute h-px w-full bg-[#111111] transition-transform duration-300 group-hover:translate-x-[105%]" />
-                    <span className="absolute h-px w-full -translate-x-[105%] bg-[#111111] transition-transform delay-300 duration-300 group-hover:translate-x-0" />
+            <div className="portfolioFilter__itemWrapper flex gap-x-[30px] gap-y-[10px] after:block after:w-[25px] after:shrink-0 after:content-[''] md:flex-wrap md:justify-end md:after:hidden">
+              {PORTFOLIO_FILTERS.map((filter) => (
+                <a
+                  key={filter.label}
+                  href={filter.href}
+                  className="portfolioFilter__item group relative flex shrink-0 items-baseline gap-[4px] whitespace-nowrap text-[#111111]"
+                >
+                  <span className="relative">
+                    {filter.label}
+                    {/* Underline wipe: two stacked bars relayed the same way as ButtonArrow/ButtonLine. */}
+                    <span className="pointer-events-none absolute inset-x-0 -bottom-[2px] h-px overflow-hidden">
+                      <span className="absolute h-px w-full bg-[#111111] transition-transform duration-300 group-hover:translate-x-[105%]" />
+                      <span className="absolute h-px w-full -translate-x-[105%] bg-[#111111] transition-transform delay-300 duration-300 group-hover:translate-x-0" />
+                    </span>
                   </span>
-                </span>
-                <span className="font-XS text-[rgb(116,116,116)]">{filter.count}</span>
-              </a>
-            ))}
-          </div>
+                  <span className="font-XS text-[rgb(116,116,116)]">
+                    {filter.count}
+                  </span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </header>
 
       <div className="blockProjectsHighlight__layout blockProjectsHighlight__layoutOne col-start-2 col-end-[-2] grid grid-cols-subgrid gap-y-[10px] pb-[50px] md:gap-y-[20px]">
-        <ImageCard project={PROJECTS_ROW_ONE[0]} className="col-span-full md:col-span-10" />
+        <ImageCard
+          project={PROJECTS_ROW_ONE[0]}
+          className="col-span-full md:col-span-10"
+        />
         <div className="blockProjectsHighlight__smallImagesWrapper col-span-full flex flex-col gap-[50px] md:col-span-10 md:flex-row md:gap-[10px]">
-          <ImageCard project={PROJECTS_ROW_ONE[1]} />
-          <ImageCard project={PROJECTS_ROW_ONE[2]} />
+          {/* The lag that makes this column slide against the large card as
+              the row goes by — the same pin the /work grid uses. See
+              StickyCompanion. */}
+          <StickyCompanion>
+            <ImageCard project={PROJECTS_ROW_ONE[1]} />
+          </StickyCompanion>
+          <StickyCompanion>
+            <ImageCard project={PROJECTS_ROW_ONE[2]} />
+          </StickyCompanion>
         </div>
       </div>
 
       {/* Row two mirrors row one: small-card wrapper first, large card second. */}
       <div className="blockProjectsHighlight__layout blockProjectsHighlight__layoutTwo col-start-2 col-end-[-2] grid grid-cols-subgrid gap-y-[10px] md:gap-y-[20px]">
         <div className="blockProjectsHighlight__smallImagesWrapper col-span-full order-2 flex flex-col gap-[50px] md:order-1 md:col-span-10 md:flex-row md:gap-[10px]">
-          <ImageCard project={PROJECTS_ROW_TWO[0]} />
-          <ImageCard project={PROJECTS_ROW_TWO[1]} />
+          <StickyCompanion>
+            <ImageCard project={PROJECTS_ROW_TWO[0]} />
+          </StickyCompanion>
+          <StickyCompanion>
+            <ImageCard project={PROJECTS_ROW_TWO[1]} />
+          </StickyCompanion>
         </div>
         <ImageCard
           project={PROJECTS_ROW_TWO[2]}

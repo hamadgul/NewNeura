@@ -11,10 +11,12 @@
 import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { ServicesMenu } from "@/components/site/shared/ServicesMenu";
 import { MenuIcon, Wordmark } from "@/components/site/shared/icons";
 import { ButtonLine } from "@/components/site/shared/buttons";
 import { COMPANY_GROUP, EXPLORE_GROUP, OFFICES, SERVICE_LINKS } from "./content";
 import type { ServiceHeaderTone } from "@/components/site/shared/blocks/BlockHeaderServices";
+import type { ServiceSlug } from "@/types/site";
 import type { NavGroup, OfficeContact } from "@/types/site";
 
 /** ms the overlay's exit transition takes — used to delay unmounting the grid. */
@@ -37,6 +39,12 @@ export interface MainNavigationProps {
    * `rgba(14,14,14,0.6)` pill and reads on either ground.
    */
   tone?: ServiceHeaderTone;
+  /**
+   * Set on a service page to show the "Shift your focus" strip beside the
+   * Menu button, with this service open. Omitted everywhere else — the source
+   * hides the strip on its home, about and portfolio pages.
+   */
+  service?: ServiceSlug;
 }
 /** ms between each menu item's fade-up entrance. */
 const ITEM_STAGGER_MS = 60;
@@ -52,7 +60,7 @@ function staggerProps(index: number, animateIn: boolean) {
   };
 }
 
-export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
+export function MainNavigation({ tone = "light", service }: MainNavigationProps = {}) {
   const overlayId = useId();
 
   // `open` is the logical state (drives aria + the scroll lock + escape key).
@@ -179,7 +187,11 @@ export function MainNavigation({ tone = "light" }: MainNavigationProps = {}) {
           <Wordmark className="text-[17px]" />
         </Link>
 
-        <div className="navigationMain__topBarItems col-start-[main-start] col-end-[main-end] row-start-1 flex h-[30px] w-[89px] items-center justify-end justify-self-end">
+        <div className="navigationMain__topBarItems col-start-[main-start] col-end-[main-end] row-start-1 flex h-[30px] items-center justify-end justify-self-end">
+          {/* Sits left of the Menu button, which stays hard against main-end.
+              The `w-[89px]` this used to carry was exactly the button; with the
+              strip beside it the row has to size to its content instead. */}
+          {service ? <ServicesMenu current={service} tone={tone} /> : null}
           <button
             ref={toggleRef}
             type="button"

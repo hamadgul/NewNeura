@@ -30,6 +30,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { cn } from "@/lib/utils";
+import { StickyCompanion } from "../StickyCompanion";
 import { ButtonArrow } from "@/components/site/shared/buttons";
 import { ArrowIcon } from "@/components/site/shared/icons";
 import { REVEAL_OBSERVER_INIT } from "../reveal";
@@ -119,7 +120,11 @@ export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
       { label: "AI Strategy", slug: "ai-strategy", count: 1 },
       { label: "Custom Models", slug: "custom-models", count: 1 },
       { label: "Retrieval & Agents", slug: "retrieval-agents", count: 1 },
-      { label: "Evaluation & Guardrails", slug: "evaluation-guardrails", count: 1 },
+      {
+        label: "Evaluation & Guardrails",
+        slug: "evaluation-guardrails",
+        count: 1,
+      },
     ],
   },
   { label: "Web Development", slug: "web-development", count: 5 },
@@ -167,9 +172,8 @@ const LAYOUT_SPECS: readonly LayoutSpec[] = [
 ];
 
 /** Where each layout's slice of the 14-card page starts. */
-const LAYOUT_OFFSETS: readonly number[] = LAYOUT_SPECS.map(
-  (_, index) =>
-    LAYOUT_SPECS.slice(0, index).reduce((total, spec) => total + spec.size, 0),
+const LAYOUT_OFFSETS: readonly number[] = LAYOUT_SPECS.map((_, index) =>
+  LAYOUT_SPECS.slice(0, index).reduce((total, spec) => total + spec.size, 0),
 );
 
 const TARGET_CLASSES = [
@@ -190,7 +194,12 @@ interface ProjectCardProps {
   sizes: string;
 }
 
-function ProjectCard({ project, notch = false, className, sizes }: ProjectCardProps) {
+function ProjectCard({
+  project,
+  notch = false,
+  className,
+  sizes,
+}: ProjectCardProps) {
   const cardRef = useRef<HTMLAnchorElement>(null);
   const [revealed, setRevealed] = useState(false);
   const reduceMotion = usePrefersReducedMotion();
@@ -204,15 +213,12 @@ function ProjectCard({ project, notch = false, className, sizes }: ProjectCardPr
     const node = cardRef.current;
     if (!node || reduceMotion) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setRevealed(true);
-          observer.disconnect();
-        }
-      },
-      REVEAL_OBSERVER_INIT,
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setRevealed(true);
+        observer.disconnect();
+      }
+    }, REVEAL_OBSERVER_INIT);
 
     observer.observe(node);
     return () => observer.disconnect();
@@ -281,7 +287,11 @@ function ProjectCard({ project, notch = false, className, sizes }: ProjectCardPr
  * Highlight banner
  * ------------------------------------------------------------------ */
 
-function ProjectHighlight({ highlight }: { highlight: CollectionProjectsHighlight }) {
+function ProjectHighlight({
+  highlight,
+}: {
+  highlight: CollectionProjectsHighlight;
+}) {
   return (
     <Link
       href={highlight.href}
@@ -341,7 +351,12 @@ interface FilterButtonProps {
   onSelect: (slug: string) => void;
 }
 
-function FilterButton({ filter, active, bottom = false, onSelect }: FilterButtonProps) {
+function FilterButton({
+  filter,
+  active,
+  bottom = false,
+  onSelect,
+}: FilterButtonProps) {
   return (
     <button
       type="button"
@@ -353,12 +368,15 @@ function FilterButton({ filter, active, bottom = false, onSelect }: FilterButton
         "filterApi__item z-[3] flex shrink-0 cursor-pointer items-start gap-[2px] whitespace-nowrap transition-colors duration-300 hover:text-[#262626]",
         bottom
           ? "filterApi__item--bottom pt-[20px]"
-          : "border-b pb-[15px] " + (active ? "border-[#262626]" : "border-[#d6d6d6]"),
+          : "border-b pb-[15px] " +
+              (active ? "border-[#262626]" : "border-[#d6d6d6]"),
         active ? "text-[#262626]" : "text-[#595656]",
       )}
     >
       <span>{filter.label}</span>
-      {filter.count === undefined ? null : <span className="font-XS">{filter.count}</span>}
+      {filter.count === undefined ? null : (
+        <span className="font-XS">{filter.count}</span>
+      )}
     </button>
   );
 }
@@ -387,7 +405,9 @@ export function CollectionProjects({
   // server render does not use.
   useEffect(() => {
     const read = () => {
-      setService(new URLSearchParams(window.location.search).get("service") ?? "");
+      setService(
+        new URLSearchParams(window.location.search).get("service") ?? "",
+      );
       setPage(1);
     };
     read();
@@ -404,14 +424,22 @@ export function CollectionProjects({
     } else {
       url.searchParams.delete("service");
     }
-    window.history.pushState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    window.history.pushState(
+      null,
+      "",
+      `${url.pathname}${url.search}${url.hash}`,
+    );
   }, []);
 
   /** The top-row pill that owns the current selection (Applied AI owns its children). */
   const activeTop = useMemo(() => {
     if (!service) return "";
     if (filters.some((filter) => filter.slug === service)) return service;
-    return filters.find((filter) => filter.children?.some((child) => child.slug === service))?.slug ?? "";
+    return (
+      filters.find((filter) =>
+        filter.children?.some((child) => child.slug === service),
+      )?.slug ?? ""
+    );
   }, [filters, service]);
 
   const subFilters = useMemo(
@@ -437,16 +465,29 @@ export function CollectionProjects({
     );
   }, [projects, service, highlights]);
 
-  const totalPages = Math.max(1, Math.ceil(filtered.length / COLLECTION_PROJECTS_PER_PAGE));
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filtered.length / COLLECTION_PROJECTS_PER_PAGE),
+  );
   const currentPage = Math.min(page, totalPages);
   const start = (currentPage - 1) * COLLECTION_PROJECTS_PER_PAGE;
-  const pageProjects = filtered.slice(start, start + COLLECTION_PROJECTS_PER_PAGE);
+  const pageProjects = filtered.slice(
+    start,
+    start + COLLECTION_PROJECTS_PER_PAGE,
+  );
 
   // The source never shows more than three page numbers (its `.pagination__pages`
   // measures 134px = 3 × 40px + 2 × 7px), so the window slides with the cursor.
-  const windowStart = Math.min(Math.max(currentPage - 1, 1), Math.max(totalPages - 2, 1));
+  const windowStart = Math.min(
+    Math.max(currentPage - 1, 1),
+    Math.max(totalPages - 2, 1),
+  );
   const pageNumbers: number[] = [];
-  for (let n = windowStart; n <= Math.min(windowStart + 2, totalPages); n += 1) {
+  for (
+    let n = windowStart;
+    n <= Math.min(windowStart + 2, totalPages);
+    n += 1
+  ) {
     pageNumbers.push(n);
   }
 
@@ -477,13 +518,18 @@ export function CollectionProjects({
   }, [pageProjects]);
 
   const targets = TARGET_CLASSES.map((_, index) =>
-    layouts.filter((layout) => layout.spec.target === index && layout.large !== undefined),
+    layouts.filter(
+      (layout) => layout.spec.target === index && layout.large !== undefined,
+    ),
   );
 
   return (
     <section
       data-control="CollectionProjects"
-      className={cn("collectionProjects ng-grid min-h-[900px] text-[#111111]", className)}
+      className={cn(
+        "collectionProjects ng-grid min-h-[900px] text-[#111111]",
+        className,
+      )}
     >
       {/*
         Full-bleed below 1280px so the pill row can scroll off the screen edge;
@@ -583,25 +629,16 @@ export function CollectionProjects({
                           )}
                         >
                           {companions.map((project) => (
-                            <ProjectCard
-                              key={project.href}
-                              project={project}
-                              sizes={
-                                wide ? "(min-width: 1280px) 50vw, 100vw" : "(min-width: 768px) 25vw, 100vw"
-                              }
-                              // `sticky` is the source's own value, and it is
-                              // what pushes the small cards down past the large
-                              // one as a row scrolls by. It only has room to
-                              // travel from 1280px up, where the wrapper
-                              // stretches to the large card's height; below
-                              // that the wrapper hugs its content and the
-                              // offset is inert.
-                              // `self-start` is scoped to xl for two reasons:
-                              // a stretched item cannot travel, and in the
-                              // column-direction wrapper below md it would
-                              // shrink the card to its content width.
-                              className="min-w-0 flex-1 xl:sticky xl:top-[505px] xl:self-start"
-                            />
+                            <StickyCompanion key={project.href}>
+                              <ProjectCard
+                                project={project}
+                                sizes={
+                                  wide
+                                    ? "(min-width: 1280px) 50vw, 100vw"
+                                    : "(min-width: 768px) 25vw, 100vw"
+                                }
+                              />
+                            </StickyCompanion>
                           ))}
                         </div>
                       )}
@@ -610,7 +647,9 @@ export function CollectionProjects({
                 })}
               </div>
             )}
-            {highlight && nextTargetHasCards ? <ProjectHighlight highlight={highlight} /> : null}
+            {highlight && nextTargetHasCards ? (
+              <ProjectHighlight highlight={highlight} />
+            ) : null}
           </div>
         );
       })}
@@ -648,7 +687,9 @@ export function CollectionProjects({
             type="button"
             aria-label="Next page"
             disabled={currentPage === totalPages}
-            onClick={() => setPage((current) => Math.min(totalPages, current + 1))}
+            onClick={() =>
+              setPage((current) => Math.min(totalPages, current + 1))
+            }
             className="pagination__button pagination__button--forward flex h-[30px] w-[40px] cursor-pointer items-center justify-center rounded-[5px] bg-[#f8f8f8] transition-all duration-300 [transition-timing-function:cubic-bezier(0,0,0.13,0.99)] hover:bg-[#ececec] disabled:cursor-default disabled:opacity-40"
           >
             <ArrowIcon className="h-[19px] w-[19px]" />

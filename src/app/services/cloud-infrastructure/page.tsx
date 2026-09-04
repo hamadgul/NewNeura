@@ -56,7 +56,7 @@ export default function CloudInfrastructurePage() {
     <>
       {/* The wordmark sits on this page's accent ground, so it reads the
           same tone table the header does — a light accent gets dark type. */}
-      <MainNavigation tone={SERVICE_TONE[HEADER.service]} />
+      <MainNavigation tone={SERVICE_TONE[HEADER.service]} service={HEADER.service} />
 
       {/* `overflow-x: clip` (not hidden) — see the note above; the process
           slider's `position: sticky` pin depends on it. */}
