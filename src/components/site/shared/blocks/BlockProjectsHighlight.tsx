@@ -385,7 +385,18 @@ function Layout({ layout, isLast }: LayoutProps) {
             rendering fault rather than as a card. Opaque enough to be a card,
             still blurred at the edges.
           */}
-          <div className="blockProjectsHighlight__layoutFiveContent col-start-1 col-end-4 flex flex-col xs:col-end-6 md:col-end-7 md:row-start-1 md:mt-[50px] md:ml-[50px] md:bg-[rgba(14,14,14,0.85)] md:p-[20px] md:text-white md:backdrop-blur-[20px] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] xl:col-end-6">
+          {/*
+            `md:self-start` is what keeps this a *card*. The panel shares grid
+            row 1 with the image, and a grid item's default `align-self:
+            stretch` grew it to the image's full height — a 278×788 blackout
+            stripe down the left edge of every layoutFive image (44% of the
+            image's width at 1024). The source's panel hugs its two lines of
+            text; ours must too, or it hides the screenshot it is captioning.
+            `justify-self-start` does the same on the other axis: the panel is
+            sized by its title rather than stretched across the whole column
+            band, which the grid area still caps it at.
+          */}
+          <div className="blockProjectsHighlight__layoutFiveContent col-start-1 col-end-4 flex flex-col xs:col-end-6 md:col-end-7 md:row-start-1 md:mt-[50px] md:ml-[50px] md:justify-self-start md:self-start md:bg-[rgba(14,14,14,0.85)] md:p-[20px] md:text-white md:backdrop-blur-[20px] md:[clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)] xl:col-end-6">
             {/* Static: this sits inside the anchor above, so it must not be a
                 link of its own. Hidden below 768 — the source drops it when the
                 caption stops overlaying the image. */}
