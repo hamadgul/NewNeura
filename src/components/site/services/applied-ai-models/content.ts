@@ -42,15 +42,19 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is the bare page name so the root layout's
- * "%s — NeuraGul" template supplies the suffix; `description` is the page's own
- * promise line.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "Custom Models",
+  title: "Custom AI Model Development & Integration",
   canonical: "/services/applied-ai/models/",
   description:
-    "Custom models and integrations that live inside the tools your team already opens every day.",
+    "Custom AI model development and integration in New York. Fine-tuned and on-device models that live inside the tools your team already opens every day.",
 } as const;
 
 /**
@@ -96,7 +100,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Custom models and integrations that live inside the tools your team already opens every day.",
   body: [
-    "A model on its own is a demo. What makes it useful is where it sits. PackShip's sizing model runs on the phone that was going to take the photograph anyway, so nobody has to open a second app, upload anything, or wait on a round trip to a server.",
+    "Custom AI model development, from a New York team. A model on its own is a demo. What makes it useful is where it sits. PackShip's sizing model runs on the phone that was going to take the photograph anyway, so nobody has to open a second app, upload anything, or wait on a round trip to a server.",
     "It estimates an item's dimensions from a single photograph, with no LiDAR. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in the box anyway. From there a live 3D scene fits the item into candidate boxes while you watch, and UPS, FedEx, and USPS rates re-quote themselves every time the box changes.",
     "The integration work is the unglamorous half and it is most of the job. React Native on the front, Postgres and Redis behind it so the rate lookups come back fast enough to feel instant, and a stack your team can hire for. The code is clean and documented, and it is yours to take over whenever you want it.",
   ],
@@ -135,6 +139,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Before any model, we find the tool your team already opens. PackShip's whole job happens inside the camera flow somebody was going to use regardless. A model that needs a new habit around it is a model that gets used twice.",
       image: {
         src: `${IMG}/packship.jpg`,
+        alt: "The PackShip parcel-sizing app on iOS",
         width: 1200,
         height: 750,
       },
@@ -146,6 +151,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.",
       image: {
         src: `${IMG}/packship.jpg`,
+        alt: "The PackShip parcel-sizing app on iOS",
         width: 1200,
         height: 750,
       },
@@ -157,6 +163,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
+        alt: "Export: printable driver cut sheets for the van, Excel and CSV for the office",
         width: 1600,
         height: 1000,
       },
@@ -168,6 +175,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
       image: {
         src: `${IMG}/rwd-pipeline.jpg`,
+        alt: "The real-world clinical data pipeline",
         width: 1200,
         height: 750,
       },
@@ -179,6 +187,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/delivery-routing-routes.jpg`,
+        alt: "Solved routes: six drivers colour-matched to the map",
         width: 1600,
         height: 1000,
       },
@@ -263,7 +272,7 @@ const DELIVERY_ROUTING: ProjectCard = {
   href: "/work/delivery-routing/",
   image: {
     src: `${IMG}/delivery-routing-routes.jpg`,
-    alt: "Delivery routing platform",
+    alt: "The delivery routing platform, showing six drivers' solved routes",
     width: 1600,
     height: 1000,
   },
@@ -276,7 +285,7 @@ const RWD_PIPELINE: ProjectCard = {
   href: "/work/rwd-pipeline/",
   image: {
     src: `${IMG}/rwd-pipeline.jpg`,
-    alt: "Real-World Data Pipeline",
+    alt: "The real-world clinical data pipeline",
     width: 1200,
     height: 750,
   },
@@ -289,7 +298,7 @@ const PACKSHIP: ProjectCard = {
   href: "/work/packship/",
   image: {
     src: `${IMG}/packship.jpg`,
-    alt: "PackShip",
+    alt: "The PackShip parcel-sizing app on iOS",
     width: 1200,
     height: 750,
   },

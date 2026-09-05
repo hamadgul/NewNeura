@@ -44,11 +44,18 @@ import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWys
 const IMG = "/site/images";
 
 export const META = {
-  /** Plain stem: the root layout's "%s — NeuraGul" template adds the suffix. */
-  title: "About",
+  /**
+   * Plain stem: the root layout's "%s — NeuraGul" template adds the suffix.
+   *
+   * The bare word "About" ranked for nothing and told a searcher nothing. This
+   * stem names the category and the city, which is what an "about" page is
+   * actually competing on, and still reads as the page it labels. 55 characters
+   * with the suffix.
+   */
+  title: "About Our New York Software Development Team",
   canonical: "/about/",
   description:
-    "NeuraGul is a team of developers, designers and engineers working out of New York. Hamad Gul is your primary point of contact and one of the developers on your project.",
+    "Meet the New York developers, designers and engineers behind NeuraGul. Hamad Gul is your point of contact and one of the developers who writes your code.",
 } as const;
 
 /**

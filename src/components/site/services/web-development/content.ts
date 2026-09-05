@@ -49,15 +49,25 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is plain (not absolute) so the root layout's
- * "%s — NeuraGul" template supplies the suffix. `description` is the web half
- * of the `web-mobile` promise line.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "Web Development",
+  title: "Web Development Company in New York",
+  /*
+    The old description was 78 characters — half the snippet Google would have
+    rendered, and it named no technology, no city and no page type. This one
+    keeps the same promise and spends the other half on the words a search
+    actually contains.
+  */
   canonical: "/services/web-development/",
   description:
-    "Sites that load fast, rank, and stay maintainable long after we hand them over.",
+    "A New York web development company building Next.js and Shopify sites that load fast, rank across the five boroughs, and stay maintainable after handover.",
 } as const;
 
 /**
@@ -98,7 +108,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Sites that load fast, rank, and stay maintainable long after we hand them over.",
   body: [
-    "SEO and performance are part of the first commit rather than a phase somebody bolts on at the end. Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck actually gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets.",
+    "We are a web development company in New York. SEO and performance are part of the first commit rather than a phase somebody bolts on at the end. Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck actually gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets.",
     "Every commercial page on that site carries JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 119 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster. The flagship URL now targets a 12,100/mo search term. It launched on a local qualifier worth 320.",
     "New York Mobile Mechanic points the same discipline at a stranded driver: a landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green. Stat gauges count up as they scroll into view, live Google reviews carry the credibility, and a one-tap call-to-book follows you down the page. When your car dies on the BQE you call whoever ranks. Nobody comparison-shops from the shoulder.",
   ],
@@ -142,6 +152,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Front-ends that behave on every screen size. Food Truck Rentals runs twenty-four pages of Next.js 16 and React 19, from the full-bleed activation hero down to the truck roster that animates along a variable-width axis.",
       image: {
         src: `${IMG}/foodtruckrentals-home.jpg`,
+        alt: "The Food Truck Rentals home page",
         width: 1600,
         height: 1000,
       },
@@ -157,6 +168,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
         // 100 Performance ring on the left, the site's own screenshot on the
         // right.
         src: `${IMG}/mechanicseo.png`,
+        alt: "A Lighthouse report for New York Mobile Mechanic, scoring 100 for performance and accessibility",
         width: 512,
         height: 265,
         /*
@@ -183,6 +195,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. 119 Vitest tests guard the structure.",
       image: {
         src: `${IMG}/foodtruckrentals-work.jpg`,
+        alt: "The work index: every activation, with the client, the borough, and the year",
         width: 1600,
         height: 1000,
       },
@@ -195,6 +208,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "TypeScript, Next.js, React and Tailwind CSS, with Framer Motion where a page earns it. Nothing exotic, so the next person to open the repo is not the only person who can.",
       image: {
         src: `${IMG}/nymm.jpg`,
+        alt: "The New York Mobile Mechanic home page",
         width: 1200,
         height: 750,
       },
@@ -310,7 +324,7 @@ const FOODTRUCKRENTALS: ProjectCard = {
   href: "/work/foodtruckrentals/",
   image: {
     src: `${IMG}/foodtruckrentals.jpg`,
-    alt: "Food Truck Rentals",
+    alt: "The Food Truck Rentals home page",
     width: 1200,
     height: 750,
   },
@@ -323,7 +337,7 @@ const NEW_YORK_MOBILE_MECHANIC: ProjectCard = {
   href: "/work/new-york-mobile-mechanic/",
   image: {
     src: `${IMG}/nymm.jpg`,
-    alt: "New York Mobile Mechanic",
+    alt: "The New York Mobile Mechanic home page",
     width: 1200,
     height: 750,
   },
@@ -336,7 +350,7 @@ const NEW_YORK_FINE_FOODS: ProjectCard = {
   href: "/work/new-york-fine-foods/",
   image: {
     src: `${IMG}/nyff.jpg`,
-    alt: "New York Fine Foods",
+    alt: "The New York Fine Foods catering site",
     width: 1200,
     height: 750,
   },
@@ -350,7 +364,7 @@ const VINTUS: ProjectCard = {
   href: "/work/vintus/",
   image: {
     src: `${IMG}/vintus.jpg`,
-    alt: "Vintus",
+    alt: "The Vintus wine importer storefront",
     width: 1200,
     height: 750,
   },
@@ -363,7 +377,7 @@ const LANDSCAPE_DRAINAGE_PROZ: ProjectCard = {
   href: "/work/landscape-drainage-proz/",
   image: {
     src: `${IMG}/landscapedrainage.jpg`,
-    alt: "Landscape Drainage Proz",
+    alt: "The Landscape Drainage Proz Shopify storefront",
     width: 1200,
     height: 750,
   },

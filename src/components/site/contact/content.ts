@@ -26,10 +26,17 @@ const VIDEO = "/site/videos";
 
 export const META = {
   /** Plain stem: the root layout's "%s — NeuraGul" template adds the suffix. */
-  title: "Contact",
+  title: "Contact a New York Software Developer",
   canonical: "/contact/",
+  /*
+    The phone number and the email are in the description on purpose. A contact
+    page's snippet is read by someone who has already decided to get in touch,
+    and putting the NAP in the snippet lets them act without the click. It also
+    repeats the same number the JSON-LD and the footer carry, which is the
+    consistency local ranking is built on.
+  */
   description:
-    "Tell us what's broken. Hamad Gul reads every message himself and answers all of them, usually within a day.",
+    "Call (203) 685 9193 or email hamad@neuragul.com. Tell us what's broken. Hamad Gul reads every message himself and answers, usually within a day.",
 } as const;
 
 export const CONTACT_HEADING = "Contact";

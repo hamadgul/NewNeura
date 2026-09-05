@@ -1,5 +1,6 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
+import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
 import { projectIntroTabs } from "@/components/site/shared/blocks/projectIntroTabs";
@@ -18,13 +19,16 @@ import {
   PROJECT_TITLE,
 } from "@/components/site/work/new-york-fine-foods/content";
 
+import { breadcrumbSchema, caseStudySchema } from "@/lib/seo";
+
 import type { Metadata } from "next";
 
 /**
- * The live title is "New York Fine Foods — NeuraGul", which is exactly the root
- * layout's "%s — NeuraGul" template applied to the project name, so the plain
- * (non-absolute) form is correct here. The description is the project's own
- * `brief`.
+ * `title` is the plain stem, so the root layout's "%s — NeuraGul" template
+ * supplies the suffix. Both `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are
+ * search-facing strings that appear nowhere on the page — the `<h1>` and the
+ * brief are separate constants and are unchanged. See their notes in
+ * `content.ts`.
  */
 export const metadata: Metadata = {
   title: PROJECT_TITLE,
@@ -37,6 +41,31 @@ export const metadata: Metadata = {
     images: [PROJECT_OG_IMAGE],
   },
 };
+
+/**
+ * `CreativeWork` + `BreadcrumbList`.
+ *
+ * `about` is split off `PROJECT_HEADER.service` — the same dot-separated
+ * service line printed in the page header — so the topics in the data are
+ * literally the topics on the page, and adding a service to one adds it to the
+ * other.
+ *
+ * The breadcrumb is what earns this page a `neuragul.com › Work › <project>`
+ * trail in place of a raw URL in the result.
+ */
+const SCHEMA = [
+  caseStudySchema({
+    name: PROJECT_HEADER.title,
+    description: PROJECT_DESCRIPTION,
+    href: PROJECT_CANONICAL,
+    image: PROJECT_OG_IMAGE,
+    about: PROJECT_HEADER.service.split(" · "),
+  }),
+  breadcrumbSchema([
+    { name: "Work", href: "/work/" },
+    { name: PROJECT_HEADER.title, href: PROJECT_CANONICAL },
+  ]),
+];
 
 /**
  * `/work/new-york-fine-foods/`.
@@ -75,6 +104,8 @@ export default function NewYorkFineFoodsPage() {
       </main>
 
       <NavigationFooter />
+
+      <JsonLd schema={SCHEMA} />
     </>
   );
 }

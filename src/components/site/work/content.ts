@@ -3,8 +3,13 @@
  *
  * Everything here comes from the NeuraGul source: `CASE_STUDIES` in
  * `pages/content.py` (slug, `name`, `meta`, `image`) and the built
- * `work/index.html` (its `<title>`, `<h1>` and meta description). Nothing is
- * paraphrased and nothing is invented.
+ * `work/index.html` (its `<h1>`). Every project name, metric and route is the
+ * source's own.
+ *
+ * The two exceptions are `PORTFOLIO_TITLE` and `PORTFOLIO_DESCRIPTION`, which
+ * the SEO pass rewrote. Both are metadata only — the `<title>` stem and the
+ * meta description — and neither appears on the page; the `<h1>` still reads
+ * "Everything we've shipped".
  *
  * VOICE — the source site is written in the first person singular, because it
  * was one person. It is a team, so this site says "we". The `<h1>` and the meta
@@ -39,19 +44,24 @@ import type { BlockHeaderPortfolioProps } from "@/components/site/shared/blocks/
 const IMAGES = "/site/images";
 
 /**
- * The source serves this page as `Work — NeuraGul`, which is exactly the root
- * layout's `"%s — NeuraGul"` template applied to `Work` — so the route sets the
- * bare word and lets the template suffix it, rather than opting out with an
- * absolute title.
+ * The `<title>` stem, suffixed by the root layout's `"%s — NeuraGul"` template.
+ *
+ * The bare word "Work" is still the nav label, the breadcrumb and the header's
+ * eyebrow. It is not the title tag, because "Work" matches no query and tells a
+ * searcher nothing about what is on the page. This stem names both things a
+ * portfolio page is looked for as.
  */
-export const PORTFOLIO_TITLE = "Work";
+export const PORTFOLIO_TITLE = "Software Development Portfolio & Case Studies";
 export const PORTFOLIO_CANONICAL = "/work/";
 /**
- * The built page's `<meta name="description">`, with its byline moved off one
- * name and onto the practice. The list of what is in the feed is unchanged.
+ * The meta description. The list of what is in the feed is the source's own;
+ * what is added is the count (a number in a snippet is the single most
+ * clickable thing you can put in one), the city, and the fact that every entry
+ * links to something live — which is the reason to click through rather than
+ * read the snippet and leave.
  */
 export const PORTFOLIO_DESCRIPTION =
-  "Selected work by NeuraGul: dispatch software, an iOS app, e-commerce, data pipelines, and client sites, each with a link to the live project.";
+  "Nine NeuraGul case studies: dispatch software, an iOS app, e-commerce storefronts, data pipelines and New York client sites, each linking to the live build.";
 /**
  * `hero-poster.jpg` is the only 1920x1080 asset we have and the only one that
  * is not a specific project's screenshot, so it is the one image that can back
@@ -130,7 +140,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["applied-ai", "app-development"],
     image: {
       src: `${IMAGES}/packship.jpg`,
-      alt: "PackShip",
+      alt: "The PackShip parcel-sizing app on iOS",
       width: 1200,
       height: 750,
     },
@@ -143,7 +153,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["web-development", "data-intelligence"],
     image: {
       src: `${IMAGES}/foodtruckrentals.jpg`,
-      alt: "Food Truck Rentals",
+      alt: "The Food Truck Rentals home page",
       width: 1200,
       height: 750,
     },
@@ -156,7 +166,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["web-development"],
     image: {
       src: `${IMAGES}/nyff.jpg`,
-      alt: "New York Fine Foods",
+      alt: "The New York Fine Foods catering site",
       width: 1200,
       height: 750,
     },
@@ -169,7 +179,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["web-development"],
     image: {
       src: `${IMAGES}/nymm.jpg`,
-      alt: "New York Mobile Mechanic",
+      alt: "The New York Mobile Mechanic home page",
       width: 1200,
       height: 750,
     },
@@ -187,7 +197,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["applied-ai", "data-intelligence"],
     image: {
       src: `${IMAGES}/delivery-routing.jpg`,
-      alt: "Delivery routing platform",
+      alt: "The delivery routing platform, showing six drivers' solved routes",
       width: 1200,
       height: 750,
     },
@@ -200,7 +210,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["cloud-infrastructure", "web-development"],
     image: {
       src: `${IMAGES}/vintus.jpg`,
-      alt: "Vintus",
+      alt: "The Vintus wine importer storefront",
       width: 1200,
       height: 750,
     },
@@ -213,7 +223,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["cloud-infrastructure"],
     image: {
       src: `${IMAGES}/pizzeria.jpg`,
-      alt: "Restaurant ordering portal",
+      alt: "The restaurant's own online ordering portal",
       width: 1200,
       height: 750,
     },
@@ -226,7 +236,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["data-intelligence"],
     image: {
       src: `${IMAGES}/rwd-pipeline.jpg`,
-      alt: "Real-World Data Pipeline",
+      alt: "The real-world clinical data pipeline",
       width: 1200,
       height: 750,
     },
@@ -239,7 +249,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["web-development", "data-intelligence"],
     image: {
       src: `${IMAGES}/landscapedrainage.jpg`,
-      alt: "Landscape Drainage Proz",
+      alt: "The Landscape Drainage Proz Shopify storefront",
       width: 1200,
       height: 750,
     },

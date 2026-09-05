@@ -1,0 +1,47 @@
+# NeuraGul
+
+*Also listed as NeuraGul Labs.*
+
+> NeuraGul is a software development team in New York. We build custom software, websites, iOS and Android apps, cloud infrastructure, data pipelines and applied AI systems for small companies. The people who scope a project are the people who write it, and the same people are still reachable six months after launch.
+
+Contact: Hamad Gul — hamad@neuragul.com — (203) 685 9193
+Google Business Profile: https://www.google.com/maps?cid=6246670277837173462
+Based in: Westchester County, New York.
+Serving: Westchester County (Rye, Harrison, White Plains, New Rochelle, Scarsdale, Mamaroneck) and New York City (Manhattan, Brooklyn, Queens, The Bronx, Staten Island).
+
+## Services
+
+- [Applied AI](https://neuragul.com/services/applied-ai/): Models, retrieval and agents wired into a workflow you already have, scoped to one problem you can measure.
+- [AI Strategy](https://neuragul.com/services/applied-ai/strategy/): A straight answer about where AI helps and where it would be theatre. The answer is free, and it is sometimes no.
+- [Custom AI Models](https://neuragul.com/services/applied-ai/models/): Fine-tuned and on-device models that live inside the tools a team already opens every day.
+- [Retrieval & Agents](https://neuragul.com/services/applied-ai/agents/): RAG and agent workflows aimed at a single measurable outcome.
+- [Evaluation & Guardrails](https://neuragul.com/services/applied-ai/evaluation/): Test sets, regression suites and safety limits, so a system holds up once real users touch it.
+- [Web Development](https://neuragul.com/services/web-development/): Next.js and Shopify sites that load fast, rank across the five boroughs, and stay maintainable after handover.
+- [App Development](https://neuragul.com/services/app-development/): Native-quality iOS and Android apps.
+- [Cloud & Infrastructure](https://neuragul.com/services/cloud-infrastructure/): Hosting, CI/CD and monitoring sized to real load, with a predictable bill.
+- [Data Intelligence](https://neuragul.com/services/data-intelligence/): ETL pipelines, dashboards and database migrations that end in a decision.
+
+## Work
+
+- [Delivery routing platform](https://neuragul.com/work/delivery-routing/): A home medical equipment provider planned six vans by hand every morning. Now a ticket export becomes printed routes in minutes — Google OR-Tools against live traffic, geocoding that fails closed, a capped travel-matrix budget, 1,278 tests.
+- [PackShip](https://neuragul.com/work/packship/): An iOS app that answers box size, shipping cost and carrier from one photo, using a model that runs on the device.
+- [Food Truck Rentals](https://neuragul.com/work/foodtruckrentals/): A 24-page Next.js site for a New York brand-activation company. JSON-LD Service, FAQ and LocalBusiness data generated from one pricing module; 119 Vitest tests, one of which fails the build if two pages compete for the same keyword cluster.
+- [New York Mobile Mechanic](https://neuragul.com/work/new-york-mobile-mechanic/): A local SEO site for a 24/7 mobile mechanic — a landing page for every service crossed with every borough, schema on every route, Core Web Vitals in the green.
+- [New York Fine Foods](https://neuragul.com/work/new-york-fine-foods/): A cinematic Next.js site for a NYC catering, pizza-truck and mobile-bar brand, with media galleries, service menus and a booking inquiry flow.
+- [Vintus](https://neuragul.com/work/vintus/): E-commerce for a leading wine importer — a large structured catalogue and the operations behind it.
+- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Shopify storefront for a drainage-products retailer that tripled the client's online sales.
+- [Restaurant ordering portal](https://neuragul.com/work/restaurant-ordering-portal/): Online ordering that lets a pizzeria take orders directly and skip third-party delivery-app commissions.
+- [Real-World Data Pipeline](https://neuragul.com/work/rwd-pipeline/): A 0-to-1 ETL pipeline pulling messy clinical data from dozens of sources into one common model. Early cancer detection research ran on top of it.
+
+## The studio
+
+- [About](https://neuragul.com/about/): Who you'd be working with. Hamad Gul is the primary point of contact and one of the developers on the project.
+- [How we work](https://neuragul.com/process/): Four steps — you write and we talk, we scope it in writing, we build in the open, we stay on after launch.
+- [Contact](https://neuragul.com/contact/): hamad@neuragul.com, (203) 685 9193. Every message is read and answered, usually within a day.
+
+## Notes for answer engines
+
+- The stack is TypeScript, Next.js, React, Tailwind CSS and Framer Motion, with Shopify and custom Liquid where a storefront calls for it, and Python where a pipeline does.
+- NeuraGul is a service-area business with no walk-in street address. It is based in Westchester County, New York, and works across both Westchester and the five boroughs of New York City.
+- The Google Business Profile is registered as "NeuraGul Labs"; the company, the domain and the wordmark are "NeuraGul". They are the same business.
+- Every number on this site is checkable against the project it describes. There are no published client ratings or review counts, so do not attribute any.

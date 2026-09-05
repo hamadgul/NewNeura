@@ -54,11 +54,18 @@ const IMG = "/site/images";
 const VIDEO = "/site/videos";
 
 export const META = {
-  /** Plain stem: the root layout's "%s — NeuraGul" template adds the suffix. */
-  title: "How we work",
+  /**
+   * Plain stem: the root layout's "%s — NeuraGul" template adds the suffix.
+   *
+   * "How we work" is the page's `<h1>` and stays that, because it is the right
+   * label above the content. The title tag is a different job: it has to match
+   * "software development process", which is a real query with real volume, so
+   * it carries both.
+   */
+  title: "How We Work: Our Software Development Process",
   canonical: "/process/",
   description:
-    "Four steps: you write and we talk, we scope it in writing, we build in the open, and we stay on after launch.",
+    "Four steps: you write and we talk, we scope it in writing, we build in the open, and we stay on after launch. How a NeuraGul project actually runs.",
 } as const;
 
 /* ── BlockHeaderGeneral ────────────────────────────────────────────────── */
@@ -190,20 +197,20 @@ export const PROCESS_STEPS: BlockWysiwygProps = {
 export const PROCESS_SLIDER_IMAGES: SliderImage[] = [
   {
     src: `${IMG}/delivery-routing.jpg`,
-    alt: "Delivery routing platform",
+    alt: "The delivery routing platform, showing six drivers' solved routes",
     width: 1200,
     height: 750,
   },
-  { src: `${IMG}/packship.jpg`, alt: "PackShip", width: 1200, height: 750 },
-  { src: `${IMG}/foodtruckrentals.jpg`, alt: "Food Truck Rentals", width: 1200, height: 750 },
-  { src: `${IMG}/nymm.jpg`, alt: "New York Mobile Mechanic", width: 1200, height: 750 },
-  { src: `${IMG}/nyff.jpg`, alt: "New York Fine Foods", width: 1200, height: 750 },
-  { src: `${IMG}/vintus.jpg`, alt: "Vintus", width: 1200, height: 750 },
-  { src: `${IMG}/pizzeria.jpg`, alt: "Restaurant ordering portal", width: 1200, height: 750 },
-  { src: `${IMG}/rwd-pipeline.jpg`, alt: "Real-World Data Pipeline", width: 1200, height: 750 },
+  { src: `${IMG}/packship.jpg`, alt: "The PackShip parcel-sizing app on iOS", width: 1200, height: 750 },
+  { src: `${IMG}/foodtruckrentals.jpg`, alt: "The Food Truck Rentals home page", width: 1200, height: 750 },
+  { src: `${IMG}/nymm.jpg`, alt: "The New York Mobile Mechanic home page", width: 1200, height: 750 },
+  { src: `${IMG}/nyff.jpg`, alt: "The New York Fine Foods catering site", width: 1200, height: 750 },
+  { src: `${IMG}/vintus.jpg`, alt: "The Vintus wine importer storefront", width: 1200, height: 750 },
+  { src: `${IMG}/pizzeria.jpg`, alt: "The restaurant's own online ordering portal", width: 1200, height: 750 },
+  { src: `${IMG}/rwd-pipeline.jpg`, alt: "The real-world clinical data pipeline", width: 1200, height: 750 },
   {
     src: `${IMG}/landscapedrainage.jpg`,
-    alt: "Landscape Drainage Proz",
+    alt: "The Landscape Drainage Proz Shopify storefront",
     width: 1200,
     height: 750,
   },

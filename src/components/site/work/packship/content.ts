@@ -20,6 +20,16 @@
  * was one person. It is a team, so this site says "we", which on this page is
  * the second section's heading: "What we built". Every metric, stack entry,
  * outcome and live URL below is exactly as the source records it.
+ *
+ * ── What the SEO pass changed ───────────────────────────────────────────────
+ * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
+ * strings. Both are metadata only — the `<title>` stem and the meta
+ * description — and both were rewritten to compete in a result list rather
+ * than to open a page; see the notes on each. Some `alt` strings were also
+ * lengthened from a bare project name to a description of the screenshot.
+ *
+ * Everything a visitor reads is still the source's own: the header, the brief,
+ * what we built, the outcome, every metric, stack entry and live URL.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -29,14 +39,26 @@ import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProject
 const IMAGES = "/site/images";
 
 /**
- * The live source title is "PackShip — NeuraGul", i.e. the root layout's
- * `"%s — NeuraGul"` template applied to the project name.
+ * The `<title>` stem, suffixed by the root layout's `"%s — NeuraGul"` template.
+ *
+ * This is NOT the project's display name — `PROJECT_HEADER.title` is, and it
+ * still reads "PackShip" on the page and in the breadcrumb. The two diverge on
+ * purpose: an `<h1>` sits under a header that has already established what the
+ * page is, while a `<title>` is read cold in a result list, so it has to name
+ * the category of work as well as the client. `PROJECT_TITLE` is referenced
+ * only by `metadata` in the route file, so nothing visible moves with it.
  */
-export const PROJECT_TITLE = "PackShip";
+export const PROJECT_TITLE = "PackShip: an iOS App That Prices a Parcel";
 export const PROJECT_CANONICAL = "/work/packship/";
-/** The `brief`, which is what the source serves as this page's description. */
+/**
+ * The meta description. It was the project's `brief` verbatim, which reads as
+ * the opening of a story rather than as a search result: the brief sets a scene
+ * and names no technology, so the snippet said nothing a searcher could match.
+ * This states what was built and what it was built with, in ~150 characters.
+ * The brief itself is untouched and still opens the page.
+ */
 export const PROJECT_DESCRIPTION =
-  "Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. PackShip answers all three from one photo.";
+  "An iOS app that answers box size, shipping cost and carrier from a single photo, using a model that runs on the device. A NeuraGul case study.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/packship.jpg`;
 
 /**

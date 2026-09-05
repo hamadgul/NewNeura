@@ -44,7 +44,22 @@ export const HERO_VIDEO = {
 };
 
 export const HERO_INTRO = {
-  eyebrowLeft: "Software + Applied AI",
+  /*
+    The city is added here rather than to the `<h1>` below it. The headline
+    ("the software that small companies actually run on") is true of clients in
+    and well outside New York — Vintus is a national importer and the Freenome
+    pipeline was not local work — so putting a city in it would narrow a claim
+    that is currently accurate. The eyebrow states where the team is, which is
+    the fact, and it is the first geographic signal above the fold.
+
+    Slot check, swept 320-1728px: one line everywhere except the 768-900px
+    band, where `[grid-column:1/7]` is only ~196px and it wraps to two. That is
+    not a defect there — `eyebrowRight` ("Built and maintained by the same
+    team") and the scroll cue already wrap to two lines at those widths, so the
+    row is two lines tall regardless and all three now align. Measured: the
+    title's top is unmoved (748px at 768, 744px at 800).
+  */
+  eyebrowLeft: "Software + Applied AI · New York",
   eyebrowRight: "Built and maintained by the same team",
   /** Shown ≥768px. */
   scrollCueDesktop: "Scroll to explore",
@@ -163,8 +178,16 @@ export const HERO_CARDS: HeroServiceCard[] = [
 export const INTRO_BLOCK = {
   title: "A team that holds the whole system, and one number that always answers.",
   tagline: "Talk. Scope. Build. Stay.",
-  text: "NeuraGul is a team of developers, designers and engineers working out of New York. We mostly build operational software: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's storefront. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
-  cta: { label: "More about us", href: "/about/" },
+  text: "NeuraGul is a software development team in New York: developers, designers and engineers. We mostly build operational software: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's storefront. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
+  /*
+    The anchor text was "More about us", which describes the click and not the
+    destination. Internal anchor text is one of the few on-page signals that
+    acts on the *target* page, and `/about/` now competes on "New York software
+    development team" — so the one link the homepage points at it should say so.
+    `ButtonArrow` sets `whitespace-nowrap` on the label and the slot is an
+    8-column span, so the longer string neither wraps nor overflows.
+  */
+  cta: { label: "About our New York team", href: "/about/" },
 };
 
 /** Service pills with their project counts, sized off the nine real projects. */
@@ -192,7 +215,7 @@ export const PROJECTS_ROW_ONE: ProjectCard[] = [
     href: "/work/delivery-routing/",
     image: {
       src: `${IMG}/delivery-routing.jpg`,
-      alt: "Delivery routing platform",
+      alt: "The delivery routing platform, showing six drivers' solved routes",
       width: 1200,
       height: 750,
     },
@@ -204,7 +227,7 @@ export const PROJECTS_ROW_ONE: ProjectCard[] = [
     href: "/work/packship/",
     image: {
       src: `${IMG}/packship.jpg`,
-      alt: "PackShip",
+      alt: "The PackShip parcel-sizing app on iOS",
       width: 1200,
       height: 750,
     },
@@ -216,7 +239,7 @@ export const PROJECTS_ROW_ONE: ProjectCard[] = [
     href: "/work/foodtruckrentals/",
     image: {
       src: `${IMG}/foodtruckrentals.jpg`,
-      alt: "Food Truck Rentals",
+      alt: "The Food Truck Rentals home page",
       width: 1200,
       height: 750,
     },
@@ -232,7 +255,7 @@ export const PROJECTS_ROW_TWO: ProjectCard[] = [
     href: "/work/vintus/",
     image: {
       src: `${IMG}/vintus.jpg`,
-      alt: "Vintus",
+      alt: "The Vintus wine importer storefront",
       width: 1200,
       height: 750,
     },
@@ -244,7 +267,7 @@ export const PROJECTS_ROW_TWO: ProjectCard[] = [
     href: "/work/landscape-drainage-proz/",
     image: {
       src: `${IMG}/landscapedrainage.jpg`,
-      alt: "Landscape Drainage Proz",
+      alt: "The Landscape Drainage Proz Shopify storefront",
       width: 1200,
       height: 750,
     },
@@ -256,7 +279,7 @@ export const PROJECTS_ROW_TWO: ProjectCard[] = [
     href: "/work/new-york-mobile-mechanic/",
     image: {
       src: `${IMG}/nymm.jpg`,
-      alt: "New York Mobile Mechanic",
+      alt: "The New York Mobile Mechanic home page",
       width: 1200,
       height: 750,
     },
@@ -295,7 +318,32 @@ export const COMPANY_GROUP: NavGroup = {
 export const OFFICES: OfficeContact[] = [
   {
     label: "New York",
-    address: ["NYC based", "Working across the five boroughs"],
+    /*
+      Was ["NYC based", "Working across the five boroughs"]. "NYC based" is not
+      true: the Google Business Profile is pinned in Westchester County, and a
+      page that claims a city its own listing contradicts breaks the NAP
+      agreement local ranking is built on — quite apart from being wrong.
+
+      What replaces it is the tiered geography the whole SEO layer now states:
+      based in Westchester, working across both. `areaServed` in `lib/seo.ts`
+      says the same thing in the same order.
+
+      Two lines, because `ContactInfo` was measured against a 37.8px two-line
+      box — so each entry has to fit on ONE line or the box is three deep.
+
+      Measured in the live slot (165px at 390, 170px at 1280, 193px at 1440,
+      236px at 1728), which is narrower than it looks:
+
+        "Working across the five boroughs"   2 lines below 1728  (the original,
+                                             so the old copy already overflowed)
+        "Working across NYC and Westchester" 2 lines everywhere
+        "Serving NYC and Westchester"        2 lines below 1440
+        "Working across NYC"                 1 line everywhere  ← this
+
+      Westchester is not repeated on the second line because the first already
+      names it, which is also what buys the room.
+    */
+    address: ["Westchester County, NY", "Working across NYC"],
     phone: "(203) 685 9193",
     phoneHref: "tel:+12036859193",
     email: "hamad@neuragul.com",

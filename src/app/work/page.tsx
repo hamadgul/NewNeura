@@ -1,5 +1,6 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
+import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderPortfolio } from "@/components/site/shared/blocks/BlockHeaderPortfolio";
 import { CollectionProjects } from "@/components/site/shared/blocks/CollectionProjects";
 import {
@@ -10,6 +11,8 @@ import {
   PORTFOLIO_PROJECTS,
   PORTFOLIO_TITLE,
 } from "@/components/site/work/content";
+
+import { abs, breadcrumbSchema, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 
 import type { Metadata } from "next";
 
@@ -32,6 +35,38 @@ export const metadata: Metadata = {
     images: [PORTFOLIO_OG_IMAGE],
   },
 };
+
+/**
+ * `CollectionPage` + `ItemList` + `BreadcrumbList`.
+ *
+ * The `ItemList` is the point: it tells a crawler that this URL is an index of
+ * nine specific things and names each one with its URL, which is what makes the
+ * nine case studies discoverable as a set rather than as nine links it happens
+ * to find. `position` follows the rendered feed order, not alphabetical, so the
+ * data matches the page.
+ */
+const SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: PORTFOLIO_TITLE,
+    description: PORTFOLIO_DESCRIPTION,
+    url: abs(PORTFOLIO_CANONICAL),
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": ORG_ID },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: PORTFOLIO_PROJECTS.length,
+      itemListElement: PORTFOLIO_PROJECTS.map((project, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: project.title,
+        url: abs(project.href),
+      })),
+    },
+  },
+  breadcrumbSchema([{ name: "Work", href: PORTFOLIO_CANONICAL }]),
+];
 
 /**
  * `/work/` — two blocks: `BlockHeaderPortfolio` → `CollectionProjects`.
@@ -60,6 +95,8 @@ export default function WorkPage() {
       </main>
 
       <NavigationFooter />
+
+      <JsonLd schema={SCHEMA} />
     </>
   );
 }

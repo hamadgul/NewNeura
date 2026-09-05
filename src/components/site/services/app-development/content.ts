@@ -48,16 +48,19 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is plain (not absolute) so the root layout's
- * "%s — NeuraGul" template supplies the suffix. `description` is the mobile
- * half of the `web-mobile` promise line, carrying that service's own
- * "Native-quality mobile apps for iOS and Android" deliverable.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "App Development",
+  title: "iOS & Android App Development in New York",
   canonical: "/services/app-development/",
   description:
-    "Native-quality mobile apps for iOS and Android, built to stay maintainable long after we hand them over.",
+    "Mobile app development in New York. Native-quality iOS and Android apps, built by the people who scoped them and maintainable long after we hand them over.",
 } as const;
 
 /**
@@ -99,7 +102,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Native-quality mobile apps for iOS and Android, built to stay maintainable long after we hand them over.",
   body: [
-    "PackShip is the one that is live on the App Store. Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. The app answers all three from a single photograph.",
+    "We build iOS and Android apps out of New York. PackShip is the one that is live on the App Store. Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. The app answers all three from a single photograph.",
     "A model running on the phone estimates an item's dimensions from that photograph, with no LiDAR involved. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway. A live Three.js scene then fits your items into candidate boxes while you watch, inside React Native. Rotate it. Swap the box. See exactly how much empty air you were about to pay to ship across the country.",
     "Behind that, UPS, FedEx and USPS rates sit side by side and re-quote themselves every time the box changes. Postgres and Redis keep the lookups fast enough to feel instant, so the cheapest safe option surfaces while you are still holding the parcel. A multi-step, error-prone chore became one photo and a tap.",
   ],
@@ -138,7 +141,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       title: "One photo, measured",
       caption: "On-device model",
       text: "A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.",
-      image: { src: `${IMG}/packship.jpg`, width: 1200, height: 750 },
+      image: { src: `${IMG}/packship.jpg`, alt: "The PackShip parcel-sizing app on iOS", width: 1200, height: 750 },
     },
     {
       number: "02",
@@ -146,7 +149,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       title: "Watch it pack itself",
       caption: "Three.js in React Native",
       text: "A live 3D scene fits your items into candidate boxes while you watch. Rotate it. Swap the box. See exactly how much empty air you were about to pay to ship across the country.",
-      image: { src: `${IMG}/packship.jpg`, width: 1200, height: 750 },
+      image: { src: `${IMG}/packship.jpg`, alt: "The PackShip parcel-sizing app on iOS", width: 1200, height: 750 },
     },
     {
       number: "03",
@@ -154,7 +157,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       title: "Three carriers, racing",
       caption: "Carrier APIs on Redis",
       text: "UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.",
-      image: { src: `${IMG}/packship.jpg`, width: 1200, height: 750 },
+      image: { src: `${IMG}/packship.jpg`, alt: "The PackShip parcel-sizing app on iOS", width: 1200, height: 750 },
     },
     {
       number: "04",
@@ -162,7 +165,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       title: "Shipped to the store",
       caption: "Live on iOS",
       text: "PackShip is live on the App Store as a consumer product. React Native on the front, Postgres and Redis behind it, and one codebase that can carry Android when the app calls for it.",
-      image: { src: `${IMG}/packship.jpg`, width: 1200, height: 750 },
+      image: { src: `${IMG}/packship.jpg`, alt: "The PackShip parcel-sizing app on iOS", width: 1200, height: 750 },
     },
   ],
 };
@@ -268,7 +271,7 @@ const PACKSHIP: ProjectCard = {
   href: "/work/packship/",
   image: {
     src: `${IMG}/packship.jpg`,
-    alt: "PackShip",
+    alt: "The PackShip parcel-sizing app on iOS",
     width: 1200,
     height: 750,
   },

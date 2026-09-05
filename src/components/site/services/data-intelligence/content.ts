@@ -47,15 +47,23 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is plain (not absolute) so the root layout's
- * "%s — NeuraGul" template supplies the suffix. `description` is the
- * `data-intelligence` service's promise line, verbatim.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "Data Intelligence",
+  /*
+    "Data Intelligence" is a name, not a query. "Data engineering" and
+    "analytics" are what people type, and both describe this page honestly.
+  */
+  title: "Data Engineering & Analytics in New York",
   canonical: "/services/data-intelligence/",
   description:
-    "Pipelines, dashboards, and migrations that turn a pile of data into a decision.",
+    "Data engineering in New York: ETL pipelines, dashboards and database migrations that turn a pile of data into a decision your team can act on.",
 } as const;
 
 /**
@@ -97,7 +105,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Pipelines, dashboards, and migrations that turn a pile of data into a decision.",
   body: [
-    "Before NeuraGul, Hamad Gul was a product manager at Freenome, leading a 0-to-1 ETL pipeline that pulled messy real-world clinical data from dozens of sources into a single Common Data Model. Early cancer detection research was built on that foundation, and the pipeline went from concept to production.",
+    "We do data engineering out of New York: ETL pipelines, dashboards, and the database migrations underneath them. Before NeuraGul, Hamad Gul was a product manager at Freenome, leading a 0-to-1 ETL pipeline that pulled messy real-world clinical data from dozens of sources into a single Common Data Model. Early cancer detection research was built on that foundation, and the pipeline went from concept to production.",
     "The same discipline shows up at a much smaller scale. The delivery routing platform parses a messy delivery log and refuses to invent anything it cannot read with confidence; an unreadable row becomes a flagged task for a human rather than a quietly wrong address on a driver's sheet. Geocoding fails closed for the same reason. 1,278 tests cover the rules.",
     "What comes out the other end is whatever the office actually opens. On that project it is a printed cut sheet designed for a clipboard and a pen, plus an Excel and CSV log. Dashboards your team will open more than once, and reporting that answers the question you actually asked.",
   ],
@@ -138,7 +146,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       title: "One clean model",
       caption: "Scattered sources, consolidated",
       text: "Pipelines that consolidate scattered sources into one clean model. At Freenome that meant messy real-world clinical data from dozens of sources standardized into a single Common Data Model.",
-      image: { src: `${IMG}/rwd-pipeline.jpg`, width: 1200, height: 750 },
+      image: { src: `${IMG}/rwd-pipeline.jpg`, alt: "The real-world clinical data pipeline", width: 1200, height: 750 },
     },
     {
       number: "02",
@@ -148,6 +156,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Dashboards your team will open more than once. The routing platform's review screen puts 47 tickets on one sheet and flags the single row a human has to look at.",
       image: {
         src: `${IMG}/delivery-routing-review.jpg`,
+        alt: "Review and fix: 47 tickets on the sheet, one flagged for a human",
         width: 1600,
         height: 1000,
       },
@@ -160,6 +169,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Migrations handled without losing history, because the answer you want next year depends on the rows somebody kept this year.",
       image: {
         src: `${IMG}/delivery-routing-routes.jpg`,
+        alt: "Solved routes: six drivers colour-matched to the map",
         width: 1600,
         height: 1000,
       },
@@ -172,6 +182,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Reporting that answers the question you actually asked. On the routing platform that is a printable driver cut sheet for the van, and an Excel and CSV log for the office.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
+        alt: "Export: printable driver cut sheets for the van, Excel and CSV for the office",
         width: 1600,
         height: 1000,
       },
@@ -278,7 +289,7 @@ const DELIVERY_ROUTING: ProjectCard = {
   href: "/work/delivery-routing/",
   image: {
     src: `${IMG}/delivery-routing.jpg`,
-    alt: "Delivery routing platform",
+    alt: "The delivery routing platform, showing six drivers' solved routes",
     width: 1200,
     height: 750,
   },
@@ -291,7 +302,7 @@ const RWD_PIPELINE: ProjectCard = {
   href: "/work/rwd-pipeline/",
   image: {
     src: `${IMG}/rwd-pipeline.jpg`,
-    alt: "Real-World Data Pipeline",
+    alt: "The real-world clinical data pipeline",
     width: 1200,
     height: 750,
   },
@@ -304,7 +315,7 @@ const FOODTRUCKRENTALS: ProjectCard = {
   href: "/work/foodtruckrentals/",
   image: {
     src: `${IMG}/foodtruckrentals.jpg`,
-    alt: "Food Truck Rentals",
+    alt: "The Food Truck Rentals home page",
     width: 1200,
     height: 750,
   },
@@ -318,7 +329,7 @@ const LANDSCAPE_DRAINAGE_PROZ: ProjectCard = {
   href: "/work/landscape-drainage-proz/",
   image: {
     src: `${IMG}/landscapedrainage.jpg`,
-    alt: "Landscape Drainage Proz",
+    alt: "The Landscape Drainage Proz Shopify storefront",
     width: 1200,
     height: 750,
   },

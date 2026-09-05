@@ -46,15 +46,19 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is the bare page name so the root layout's
- * "%s — NeuraGul" template supplies the suffix; `description` is the page's own
- * promise line.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "Evaluation & Guardrails",
+  title: "AI Evaluation & Guardrails Engineering",
   canonical: "/services/applied-ai/evaluation/",
   description:
-    "Evaluations and guardrails, so the system holds up once real users touch it.",
+    "AI evaluation and guardrails engineering in New York. Test sets, regression suites and safety limits, so the system holds up once real users touch it.",
 } as const;
 
 /**
@@ -103,7 +107,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Evaluations and guardrails, so the system holds up once real users touch it.",
   body: [
-    "Guardrails ship with the system. They are the part that decides whether the thing survives contact with a real Tuesday, and they are cheapest to build while the code is still being written.",
+    "AI evaluation and guardrails engineering, out of New York. Guardrails ship with the system. They are the part that decides whether the thing survives contact with a real Tuesday, and they are cheapest to build while the code is still being written.",
     "On the routing platform that means three things you can check. Geocoding fails closed, so a location the app cannot trust becomes a flagged task for a human. A per-solve travel-matrix budget makes a runaway maps bill structurally impossible. And 1,278 tests cover the business rules, which is what lets a dispatcher trust a sheet they did not plan themselves.",
     "The same discipline applies well outside models. The food-truck site carries 119 Vitest tests guarding its URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster. Its JSON-LD Service, FAQ, and LocalBusiness data is generated from a single pricing module, so a published price can never drift away from the page it sits on.",
   ],
@@ -143,6 +147,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Before any guardrail there is a list. The address that must never reach a driver. The price that must never disagree with the page it sits on. The box that must never be too small for the thing going in it. Everything after this is that list made mechanical.",
       image: {
         src: `${IMG}/delivery-routing.jpg`,
+        alt: "The delivery routing platform, showing six drivers' solved routes",
         width: 1200,
         height: 750,
       },
@@ -154,6 +159,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "The routing platform's geocoding fails closed. A location it cannot trust becomes a flagged task for a human. The review screen shows what that looks like on an ordinary morning: 47 tickets on the sheet, one of them held back.",
       image: {
         src: `${IMG}/delivery-routing-review.jpg`,
+        alt: "Review and fix: 47 tickets on the sheet, one flagged for a human",
         width: 1600,
         height: 1000,
       },
@@ -165,6 +171,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "1,278 tests cover the routing rules. The food-truck site carries 119 Vitest tests, one of which fails the build outright when two pages start competing for the same keyword cluster. A guardrail nobody can merge past is the only kind that holds.",
       image: {
         src: `${IMG}/foodtruckrentals-work.jpg`,
+        alt: "The work index: every activation, with the client, the borough, and the year",
         width: 1600,
         height: 1000,
       },
@@ -176,6 +183,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "A per-solve travel-matrix budget makes a runaway maps bill structurally impossible. On the food-truck site, JSON-LD generated from a single pricing module means a published price can never drift away from the page it sits on. Limits belong in the code, well upstream of a runbook nobody reads.",
       image: {
         src: `${IMG}/foodtruckrentals-home.jpg`,
+        alt: "The Food Truck Rentals home page",
         width: 1600,
         height: 1000,
       },
@@ -187,6 +195,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
+        alt: "Export: printable driver cut sheets for the van, Excel and CSV for the office",
         width: 1600,
         height: 1000,
       },
@@ -274,7 +283,7 @@ const PACKSHIP: ProjectCard = {
   href: "/work/packship/",
   image: {
     src: `${IMG}/packship.jpg`,
-    alt: "PackShip",
+    alt: "The PackShip parcel-sizing app on iOS",
     width: 1200,
     height: 750,
   },

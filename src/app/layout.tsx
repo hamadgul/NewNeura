@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
+import { JsonLd } from "@/components/site/shared/JsonLd";
 import { Preloader } from "@/components/site/home/Preloader";
 import { PageTransition } from "@/components/site/shared/PageTransition";
 import { SmoothScroll } from "@/components/site/shared/SmoothScroll";
+import { organizationSchema, websiteSchema } from "@/lib/seo";
 import "./globals.css";
 
 /*
@@ -29,8 +31,42 @@ const IMAGES = "/site/images";
 export const metadata: Metadata = {
   metadataBase: new URL("https://neuragul.com"),
   title: {
-    default: "NeuraGul",
+    default: "NeuraGul — Custom Software & AI Development in New York",
     template: "%s — NeuraGul",
+  },
+  /*
+    `applicationName` and `authors` are cheap entity signals: they give the
+    domain a name and a person that match what the JSON-LD and the About page
+    already say. Consistency across those three is what builds a knowledge-graph
+    entity; a name that appears in only one of them builds nothing.
+
+    There is no `keywords` field. Google has ignored the meta keywords tag since
+    2009, Bing treats it as a spam signal, and nothing else reads it. The
+    keywords for this site live in the titles, the headings and the body copy,
+    which is the only place they do any work.
+  */
+  applicationName: "NeuraGul",
+  authors: [{ name: "Hamad Gul", url: "https://neuragul.com/about/" }],
+  creator: "NeuraGul",
+  publisher: "NeuraGul",
+  category: "technology",
+  /*
+    Without this, Google caps image previews at a thumbnail and truncates the
+    snippet at its own default. `max-image-preview: large` is what makes a
+    result carry a full-width image, and it is a prerequisite for Discover.
+    `max-snippet: -1` lets Google quote as much of a page as it wants, which is
+    the behaviour you want when the goal is being quoted by answer engines.
+  */
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   openGraph: {
     locale: "en_US",
@@ -65,6 +101,13 @@ export default function RootLayout({
         <PageTransition />
         <Preloader />
         {children}
+        {/*
+          The publisher and the site, declared once for the whole document.
+          Every per-route graph references the organization by `@id` rather than
+          repeating it, so a crawler assembles one entity across 23 pages
+          instead of 23 descriptions of a possibly-different company.
+        */}
+        <JsonLd schema={[organizationSchema(), websiteSchema()]} />
       </body>
     </html>
   );

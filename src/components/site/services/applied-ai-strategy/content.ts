@@ -51,15 +51,19 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is the bare page name so the root layout's
- * "%s — NeuraGul" template supplies the suffix; `description` is the page's own
- * promise line, which is the first `deliverables` bullet of `ai-consulting`.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "AI Strategy",
+  title: "AI Strategy Consulting for Small Business",
   canonical: "/services/applied-ai/strategy/",
   description:
-    "A straight answer about where AI helps you and where it would be theatre. That answer is free, and it is sometimes no.",
+    "AI strategy consulting from a New York team: a straight answer about where AI helps and where it would be theatre. That answer is free, and sometimes it is no.",
 } as const;
 
 /**
@@ -111,7 +115,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "A straight answer about where AI helps you and where it would be theatre. That answer is free, and it is sometimes no.",
   body: [
-    "Most of what gets sold as AI strategy is a deck. What you get from us is half an hour on a call, a lot of questions about what the problem is actually costing you, and then either a written scope with a fixed price and a date, or a no. If we don't think we can help, we'll tell you on that call and try to point you at someone who can.",
+    "AI strategy consulting, from a team in New York that also writes the code. Most of what gets sold as AI strategy is a deck. What you get from us is half an hour on a call, a lot of questions about what the problem is actually costing you, and then either a written scope with a fixed price and a date, or a no. If we don't think we can help, we'll tell you on that call and try to point you at someone who can.",
     "The test we apply is whether there is one number somebody is already tracking. A home medical equipment provider had a dispatcher planning six vans by hand every morning from a messy export of the day's tickets. That is a measurable problem, and a solver fixed it. A brand-activation company selling wrapped food trucks to fashion houses had no website of its own, which is a different problem, and the answer there was 24 pages of Next.js with keyword research under the URL structure and no model anywhere in it.",
     "Where the answer is yes, the work goes inside the tools your team already opens every day. A system nobody opens is a system nobody uses, and we would rather say that before you pay for it than after.",
   ],
@@ -161,6 +165,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "We come back with where AI helps you and where it would be theatre. The bar is one number somebody is already tracking. If what you have is a manual process with rules in somebody's head, that usually clears it. If what you have is a website you don't have yet, it does not, and the answer costs you nothing.",
       image: {
         src: `${IMG}/delivery-routing-review.jpg`,
+        alt: "Review and fix: 47 tickets on the sheet, one flagged for a human",
         width: 1600,
         height: 1000,
       },
@@ -172,6 +177,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
       image: {
         src: `${IMG}/rwd-pipeline.jpg`,
+        alt: "The real-world clinical data pipeline",
         width: 1200,
         height: 750,
       },
@@ -183,6 +189,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Working software lands in the first couple of weeks, then every week after that. You can redirect us while redirecting us is still cheap.",
       image: {
         src: `${IMG}/delivery-routing-routes.jpg`,
+        alt: "Solved routes: six drivers colour-matched to the map",
         width: 1600,
         height: 1000,
       },
@@ -194,6 +201,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
+        alt: "Export: printable driver cut sheets for the van, Excel and CSV for the office",
         width: 1600,
         height: 1000,
       },
@@ -294,7 +302,7 @@ const PACKSHIP: ProjectCard = {
   href: "/work/packship/",
   image: {
     src: `${IMG}/packship.jpg`,
-    alt: "PackShip",
+    alt: "The PackShip parcel-sizing app on iOS",
     width: 1200,
     height: 750,
   },
@@ -307,7 +315,7 @@ const RWD_PIPELINE: ProjectCard = {
   href: "/work/rwd-pipeline/",
   image: {
     src: `${IMG}/rwd-pipeline.jpg`,
-    alt: "Real-World Data Pipeline",
+    alt: "The real-world clinical data pipeline",
     width: 1200,
     height: 750,
   },
@@ -326,7 +334,7 @@ const FOODTRUCKRENTALS: ProjectCard = {
   href: "/work/foodtruckrentals/",
   image: {
     src: `${IMG}/foodtruckrentals.jpg`,
-    alt: "Food Truck Rentals",
+    alt: "The Food Truck Rentals home page",
     width: 1200,
     height: 750,
   },

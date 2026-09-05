@@ -272,9 +272,17 @@ function ProjectCard({
         </div>
       </div>
       <div className="collectionProjects__cardText mt-[15px] flex flex-col gap-[2px] text-left">
-        <span className="collectionProjects__cardTitle block leading-[21.6px] text-[#111111]">
+        {/*
+          A heading, not a `<p>`. Tailwind's Preflight resets h1-h6 to
+          `font-size: inherit; font-weight: inherit` and zeroes their margins,
+          so this renders pixel-identically — but a crawler and a screen
+          reader's heading list now see the project names as the structure of
+          the section rather than as loose text. `/work/` carries no section heading between the page `<h1>` and the
+          feed, so a card is an `<h2>`.
+        */}
+        <h2 className="collectionProjects__cardTitle block leading-[21.6px] text-[#111111]">
           {project.title}
-        </span>
+        </h2>
         <span className="collectionProjects__cardLocation font-XS block text-[#747474]">
           {project.location}
         </span>

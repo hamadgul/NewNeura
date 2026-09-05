@@ -158,7 +158,8 @@ function ContactInfo({ office, className }: { office: OfficeContact; className?:
         <h2 className="contactInfo__Label font-S mb-[5px] font-semibold">{office.label}</h2>
         {/* One block span per line reproduces the source's `<p>` + `<br>` box
             (37.8px for two 18.9px lines) without the break element. There is no
-            map link: "NYC based" is a locality, not an address to route to. */}
+            map link: the lines are a locality and a service area, not an
+            address to route to. */}
         <address className="font-S not-italic">
           {office.address.map((line) => (
             <span key={line} className="block">

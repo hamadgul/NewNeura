@@ -1,5 +1,6 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
+import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderGeneral } from "@/components/site/shared/blocks/BlockHeaderGeneral";
 import { BlockImageFull } from "@/components/site/shared/blocks/BlockImageFull";
 import { BlockImageSlider } from "@/components/site/shared/blocks/BlockImageSlider";
@@ -16,6 +17,8 @@ import {
   PROCESS_STEPS,
 } from "@/components/site/process/content";
 
+import { abs, breadcrumbSchema, ORG_ID, WEBSITE_ID } from "@/lib/seo";
+
 import type { Metadata } from "next";
 
 /**
@@ -31,8 +34,37 @@ export const metadata: Metadata = {
     title: `${META.title} — NeuraGul`,
     description: META.description,
     url: `https://neuragul.com${META.canonical}`,
+    /*
+      Stated explicitly, not inherited. A route's `openGraph` object REPLACES
+      the root layout's rather than merging into it, so declaring `title`,
+      `description` and `url` here silently dropped the layout's default image
+      — this page was sharing with no preview card at all. Every route that
+      sets `openGraph` therefore has to set its own image.
+    */
+    images: [{ url: PROCESS_HEADER.image.src, width: PROCESS_HEADER.image.width, height: PROCESS_HEADER.image.height }],
   },
 };
+
+/**
+ * `WebPage` + `BreadcrumbList`.
+ *
+ * Deliberately not `HowTo`. That type describes instructions the *reader*
+ * follows, and this page describes what we do; Google also dropped `HowTo` rich
+ * results entirely in 2023, so mistyping it would buy nothing and misdescribe
+ * the page.
+ */
+const SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: META.title,
+    description: META.description,
+    url: abs(META.canonical),
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": ORG_ID },
+  },
+  breadcrumbSchema([{ name: "How we work", href: META.canonical }]),
+];
 
 /**
  * `/process/` — how we work.
@@ -76,6 +108,8 @@ export default function ProcessPage() {
       </main>
 
       <NavigationFooter />
+
+      <JsonLd schema={SCHEMA} />
     </>
   );
 }

@@ -48,15 +48,24 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is plain (not absolute) so the root layout's
- * "%s — NeuraGul" template supplies the suffix. `description` is the `cloud`
- * service's promise line, verbatim.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "Cloud & Infrastructure",
+  /*
+    "DevOps" is in the title because it is the word buyers use for this work
+    even when the page never says it. "Cloud & Infrastructure" is the studio's
+    own name for the line and stays as the `<h1>`.
+  */
+  title: "Cloud Infrastructure & DevOps in New York",
   canonical: "/services/cloud-infrastructure/",
   description:
-    "Infrastructure sized to your real load, with a bill that stays predictable.",
+    "Cloud infrastructure and DevOps for small companies in New York. Hosting, CI/CD and monitoring sized to your real load, with a bill that stays predictable.",
 } as const;
 
 /**
@@ -100,7 +109,7 @@ export const INTRO: BlockIntroDoubleProps = {
   labels: ["Infrastructure sized to real load"],
   statement: "Infrastructure sized to your real load, with a bill that stays predictable.",
   body: [
-    "Cost control is an architectural decision. The delivery routing platform runs on Fly.io with a per-solve travel-matrix budget, which is what makes a runaway maps bill structurally impossible rather than merely unlikely. Nobody has to remember to check it.",
+    "We run cloud infrastructure and DevOps for small companies in New York. Cost control is an architectural decision. The delivery routing platform runs on Fly.io with a per-solve travel-matrix budget, which is what makes a runaway maps bill structurally impossible rather than merely unlikely. Nobody has to remember to check it.",
     "Under that sit the unglamorous parts that keep the doors open: networks, servers and firewalls set up properly the first time, security hardening and patch management on a schedule, monitoring that surfaces a problem before your customers find it, and documentation your team can actually follow.",
     "The Vintus storefront carries a national wine importer's catalog, with inventory management, order processing and customer-relationship tooling behind it. WordPress and PHP on the surface, Python services doing the work underneath. The restaurant ordering portal plugs straight into a restaurant's existing Square POS, so orders, payments and SMS updates all flow through with nobody skimming the check.",
   ],
@@ -143,6 +152,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Architecture sized to your traffic and your budget. The delivery routing platform runs its morning solves on Fly.io, which is what that workload needs and no more.",
       image: {
         src: `${IMG}/delivery-routing-routes.jpg`,
+        alt: "Solved routes: six drivers colour-matched to the map",
         width: 1600,
         height: 1000,
       },
@@ -155,6 +165,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Automated deploys and infrastructure as code, so shipping a change is a command rather than an afternoon, and so the next person can rebuild the whole environment from the repository.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
+        alt: "Export: printable driver cut sheets for the van, Excel and CSV for the office",
         width: 1600,
         height: 1000,
       },
@@ -165,7 +176,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       title: "Security, backups, monitoring",
       caption: "Configured on day one",
       text: "Security, backups and monitoring configured on day one. Network, server and firewall setup done properly the first time, then hardening and patch management on a schedule.",
-      image: { src: `${IMG}/pizzeria.jpg`, width: 1200, height: 750 },
+      image: { src: `${IMG}/pizzeria.jpg`, alt: "The restaurant's own online ordering portal", width: 1200, height: 750 },
     },
     {
       number: "04",
@@ -175,6 +186,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Cost controls, so the bill tracks revenue. The routing platform holds a per-solve travel-matrix budget, which makes a runaway maps bill structurally impossible.",
       image: {
         src: `${IMG}/delivery-routing-review.jpg`,
+        alt: "Review and fix: 47 tickets on the sheet, one flagged for a human",
         width: 1600,
         height: 1000,
       },
@@ -289,7 +301,7 @@ const VINTUS: ProjectCard = {
   href: "/work/vintus/",
   image: {
     src: `${IMG}/vintus.jpg`,
-    alt: "Vintus",
+    alt: "The Vintus wine importer storefront",
     width: 1200,
     height: 750,
   },
@@ -302,7 +314,7 @@ const RESTAURANT_ORDERING_PORTAL: ProjectCard = {
   href: "/work/restaurant-ordering-portal/",
   image: {
     src: `${IMG}/pizzeria.jpg`,
-    alt: "Restaurant ordering portal",
+    alt: "The restaurant's own online ordering portal",
     width: 1200,
     height: 750,
   },

@@ -46,15 +46,23 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 /**
- * Route metadata. `title` is the bare page name so the root layout's
- * "%s — NeuraGul" template supplies the suffix; `description` is the page's own
- * promise line.
+ * Route metadata. `title` is the plain stem, so the root layout's
+ * "%s — NeuraGul" template supplies the suffix.
+ *
+ * Neither string appears on the page. The `<h1>` is `HEADER.title` and the
+ * promise line is `INTRO.statement`, both unchanged and both still the
+ * source's own — which is what lets the title and description here be written
+ * for a result list instead. See the note beside `description`.
  */
 export const META = {
-  title: "Retrieval & Agents",
+  /*
+    "RAG" is the term the buyer searches and "Retrieval" is the word the page
+    uses. The title carries both so the page can be found by either.
+  */
+  title: "RAG & AI Agent Development Services",
   canonical: "/services/applied-ai/agents/",
   description:
-    "Retrieval, automation, and agent workflows aimed at a single measurable outcome.",
+    "RAG and AI agent development from a New York team. Retrieval, automation and agent workflows aimed at a single outcome you can actually measure.",
 } as const;
 
 /**
@@ -100,7 +108,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Retrieval, automation, and agent workflows aimed at a single measurable outcome.",
   body: [
-    "An automation earns its keep when it takes one whole job off somebody's morning. A home medical equipment provider had a dispatcher doing that job by hand: a messy export of the day's tickets, six vans, and a yard full of drivers waiting to leave.",
+    "RAG and AI agent development, out of New York. An automation earns its keep when it takes one whole job off somebody's morning. A home medical equipment provider had a dispatcher doing that job by hand: a messy export of the day's tickets, six vans, and a yard full of drivers waiting to leave.",
     "The app runs the whole morning in four steps. It parses the delivery log and refuses to invent anything it cannot read with confidence, so an unreadable row becomes a flagged task for a human. It applies the business rules the dispatcher used to carry in their head, all of them: per-driver caps, town bans, delivery windows, driver and vehicle eligibility. Google OR-Tools then solves for minimum drive time against live traffic.",
     "What comes out is a printed cut sheet designed for a clipboard and a pen, plus an Excel and CSV log for the office. Upload to printed routes in minutes, with every ticket accounted for. It is in daily production use on Fly.io, 1,278 tests cover the rules, and the screenshots on this site run on synthetic data because the client is not named here.",
   ],
@@ -138,6 +146,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "It parses the delivery log and refuses to invent anything it cannot read with confidence. An unreadable row becomes a flagged task for a human, which is the only safe thing to do with an address a van would otherwise drive to.",
       image: {
         src: `${IMG}/delivery-routing-review.jpg`,
+        alt: "Review and fix: 47 tickets on the sheet, one flagged for a human",
         width: 1600,
         height: 1000,
       },
@@ -149,6 +158,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Per-driver caps, town bans, delivery windows, driver and vehicle eligibility. Every business rule one person used to hold in their head, applied the same way each morning whether or not that person is in today.",
       image: {
         src: `${IMG}/delivery-routing.jpg`,
+        alt: "The delivery routing platform, showing six drivers' solved routes",
         width: 1200,
         height: 750,
       },
@@ -160,6 +170,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "Google OR-Tools solves for minimum drive time against live traffic. Geocoding fails closed. A per-solve travel-matrix budget makes a runaway maps bill structurally impossible.",
       image: {
         src: `${IMG}/delivery-routing-routes.jpg`,
+        alt: "Solved routes: six drivers colour-matched to the map",
         width: 1600,
         height: 1000,
       },
@@ -171,6 +182,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "What comes out is a printed cut sheet designed for a clipboard and a pen, plus an Excel and CSV log for the office. Upload to printed routes in minutes, with every ticket accounted for.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
+        alt: "Export: printable driver cut sheets for the van, Excel and CSV for the office",
         width: 1600,
         height: 1000,
       },
@@ -182,6 +194,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       text: "We hold the pager, fix what breaks, and hand over once your team wants it. The same people are still reachable six months after launch.",
       image: {
         src: `${IMG}/packship.jpg`,
+        alt: "The PackShip parcel-sizing app on iOS",
         width: 1200,
         height: 750,
       },
@@ -268,7 +281,7 @@ const PACKSHIP: ProjectCard = {
   href: "/work/packship/",
   image: {
     src: `${IMG}/packship.jpg`,
-    alt: "PackShip",
+    alt: "The PackShip parcel-sizing app on iOS",
     width: 1200,
     height: 750,
   },

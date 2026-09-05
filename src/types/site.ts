@@ -88,9 +88,10 @@ export interface NavGroup {
  * `/contact/`.
  *
  * The architecture template carried two of these, one per office, each with a
- * street address. NeuraGul works out of New York with no street office, so
- * `address` carries the locality line only ("NYC based") and there is a single
- * record rather than a pair.
+ * street address. NeuraGul is a service-area business with no street office —
+ * its Google Business Profile hides its address — so `address` carries locality
+ * lines only ("Westchester County, NY" / "Working across NYC") and there is a
+ * single record rather than a pair.
  */
 export interface OfficeContact {
   /** Heading, e.g. "New York". */

@@ -96,9 +96,16 @@ export function ImageCard({ project, className }: ImageCardProps) {
           is one line) clipped the second line off on every page with a long
           project name.
         */}
-        <p className="imageCard__title min-h-[22px] overflow-hidden text-[#111111] leading-[21.6px]">
+        {/*
+          A heading, not a `<p>`. Tailwind's Preflight resets h1-h6 to
+          `font-size: inherit; font-weight: inherit` and zeroes their margins,
+          so this renders pixel-identically — but a crawler and a screen
+          reader's heading list now see the project names as the structure of
+          the section rather than as loose text. The section's own title is the `<h2>`, so a card is an `<h3>`.
+        */}
+        <h3 className="imageCard__title min-h-[22px] overflow-hidden text-[#111111] leading-[21.6px]">
           {project.title}
-        </p>
+        </h3>
         <p className="imageCard__location font-XS text-[#747474]">{project.location}</p>
       </div>
     </a>

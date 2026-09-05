@@ -29,6 +29,16 @@
  * product manager at Freenome before NeuraGul existed, so it is attributed to
  * him by name in the third person rather than absorbed into a team "we". The
  * facts of the project are exactly as the source records them.
+ *
+ * ── What the SEO pass changed ───────────────────────────────────────────────
+ * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
+ * strings. Both are metadata only — the `<title>` stem and the meta
+ * description — and both were rewritten to compete in a result list rather
+ * than to open a page; see the notes on each. Some `alt` strings were also
+ * lengthened from a bare project name to a description of the screenshot.
+ *
+ * Everything a visitor reads is still the source's own: the header, the brief,
+ * what we built, the outcome, every metric, stack entry and live URL.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -38,15 +48,26 @@ import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProject
 const IMAGES = "/site/images";
 
 /**
- * The live source title is "Real-World Data Pipeline — NeuraGul", which is the
- * root layout's `"%s — NeuraGul"` template applied to the project name, so the
- * route sets the bare name.
+ * The `<title>` stem, suffixed by the root layout's `"%s — NeuraGul"` template.
+ *
+ * This is NOT the project's display name — `PROJECT_HEADER.title` is, and it
+ * still reads "Real-World Data Pipeline" on the page and in the breadcrumb. The two diverge on
+ * purpose: an `<h1>` sits under a header that has already established what the
+ * page is, while a `<title>` is read cold in a result list, so it has to name
+ * the category of work as well as the client. `PROJECT_TITLE` is referenced
+ * only by `metadata` in the route file, so nothing visible moves with it.
  */
-export const PROJECT_TITLE = "Real-World Data Pipeline";
+export const PROJECT_TITLE = "Real-World Data Pipeline for Cancer Research";
 export const PROJECT_CANONICAL = "/work/rwd-pipeline/";
-/** The `brief`, which is what the source serves as this page's description. */
+/**
+ * The meta description. It was the project's `brief` verbatim, which reads as
+ * the opening of a story rather than as a search result: the brief sets a scene
+ * and names no technology, so the snippet said nothing a searcher could match.
+ * This states what was built and what it was built with, in ~150 characters.
+ * The brief itself is untouched and still opens the page.
+ */
 export const PROJECT_DESCRIPTION =
-  "Early cancer detection depends on real-world clinical data, and real-world clinical data arrives messy and inconsistent from dozens of sources.";
+  "A 0-to-1 ETL pipeline pulling messy real-world clinical data from dozens of sources into one common model. Early cancer detection research ran on top of it.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/rwd-pipeline.jpg`;
 
 /**

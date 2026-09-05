@@ -43,10 +43,15 @@ import type { ProjectCard } from "@/types/site";
 const IMG = "/site/images";
 
 export const META = {
-  title: "Applied AI",
+  /*
+    "Applied AI" is the nav label and stays the `<h1>`; the title tag has to
+    match how the service is actually searched for, which is "AI development
+    services" plus a city.
+  */
+  title: "Applied AI Development Services in New York",
   canonical: "/services/applied-ai/",
   description:
-    "Models and agents wired into a workflow you already have, scoped to one problem you can measure.",
+    "AI development for small companies in New York. Models, retrieval and agents wired into a workflow you already have, scoped to one problem you can measure.",
 } as const;
 
 /**
@@ -100,7 +105,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Models and agents wired into a workflow you already have, scoped to one problem you can measure.",
   body: [
-    "The first thing you get from us is a straight answer about where AI helps you and where it would be theatre. That answer is free and it is sometimes no. When it is yes, the work goes inside the tools your team already opens every day rather than beside them, because a system nobody opens is a system nobody uses.",
+    "We build applied AI systems for small companies in New York. The first thing you get from us is a straight answer about where AI helps you and where it would be theatre. That answer is free and it is sometimes no. When it is yes, the work goes inside the tools your team already opens every day rather than beside them, because a system nobody opens is a system nobody uses.",
     "What that looks like in practice: a model on a phone that sizes a parcel from one photograph to about a centimetre. A solver that takes a messy delivery log, applies every business rule a dispatcher used to carry in their head, and returns routes a driver can actually drive. Both of those are running in production, and both of them are aimed at one number somebody was already tracking.",
     "Evaluations and guardrails ship with the system, not after it. The routing platform fails closed on a geocode it cannot trust and flags the row for a human instead of inventing an address, and 1,278 tests cover the rules. That is the part that decides whether the thing survives contact with real users.",
   ],
@@ -121,7 +126,7 @@ const DELIVERY_ROUTING: ProjectCard = {
   href: "/work/delivery-routing/",
   image: {
     src: `${IMG}/delivery-routing-routes.jpg`,
-    alt: "Delivery routing platform",
+    alt: "The delivery routing platform, showing six drivers' solved routes",
     width: 1600,
     height: 1000,
   },
@@ -134,7 +139,7 @@ const PACKSHIP: ProjectCard = {
   href: "/work/packship/",
   image: {
     src: `${IMG}/packship.jpg`,
-    alt: "PackShip",
+    alt: "The PackShip parcel-sizing app on iOS",
     width: 1200,
     height: 750,
   },
@@ -147,7 +152,7 @@ const RWD_PIPELINE: ProjectCard = {
   href: "/work/rwd-pipeline/",
   image: {
     src: `${IMG}/rwd-pipeline.jpg`,
-    alt: "Real-World Data Pipeline",
+    alt: "The real-world clinical data pipeline",
     width: 1200,
     height: 750,
   },

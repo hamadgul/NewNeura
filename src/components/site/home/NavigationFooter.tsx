@@ -251,9 +251,23 @@ export function NavigationFooter({ variant = "full" }: NavigationFooterProps = {
           why the two lists stay separate.
         */}
         <div className="navigationFooter__bottomSection--1 flex flex-col py-[25px] md:flex-row md:items-start md:justify-between md:py-[32px]">
-          <div className="navigationFooter__bottomMenu order-2 mt-[65px] flex flex-col md:order-1 md:mt-0 md:flex-row md:gap-[30px]">
-            <div className="navigationFooter__bottomMenuWrapper mt-[65px] flex flex-row gap-[30px] md:mt-0">
-              <ul className="navigationFooter__bottomMenuList flex w-[167px] flex-col gap-[10px] md:w-auto md:flex-row md:items-center md:gap-[20px]">
+          {/*
+            `md:flex-wrap` on both rows below. Between 768px and ~959px the two
+            horizontal lists need 908px of content in a 774px row and there was
+            no wrap, so they pushed `document.scrollWidth` to 938 and every page
+            on the site scrolled sideways — measured on an untouched route, so
+            it predates this change. An iPad Pro 11" in portrait is 834px and an
+            iPad Air is 820px, which is squarely inside the band.
+
+            The cause is the one this repo keeps hitting: the row was measured
+            against short one-word nav labels, and ours are "Cloud &
+            Infrastructure" and "Data Intelligence". Above 960px the content
+            already fits, so wrapping changes nothing there; below 768px the
+            lists are `flex-col` and were never affected.
+          */}
+          <div className="navigationFooter__bottomMenu order-2 mt-[65px] flex flex-col md:order-1 md:mt-0 md:flex-row md:flex-wrap md:gap-[30px]">
+            <div className="navigationFooter__bottomMenuWrapper mt-[65px] flex flex-row gap-[30px] md:mt-0 md:flex-wrap">
+              <ul className="navigationFooter__bottomMenuList flex w-[167px] flex-col gap-[10px] md:w-auto md:flex-row md:flex-wrap md:items-center md:gap-[20px]">
                 <li className="navigationFooter__bottomMenuButton">
                   <button
                     type="button"
@@ -270,7 +284,7 @@ export function NavigationFooter({ variant = "full" }: NavigationFooterProps = {
                   </li>
                 ))}
               </ul>
-              <ul className="navigationFooter__bottomSubMenu flex w-[167px] flex-col gap-[10px] md:w-auto md:flex-row md:items-center md:gap-[20px]">
+              <ul className="navigationFooter__bottomSubMenu flex w-[167px] flex-col gap-[10px] md:w-auto md:flex-row md:flex-wrap md:items-center md:gap-[20px]">
                 {[...EXPLORE_GROUP.items, ...COMPANY_GROUP.items].map((item) => (
                   <li key={item.href}>
                     <ButtonLine label={item.label} href={item.href} color="white" />
