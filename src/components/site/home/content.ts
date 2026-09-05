@@ -317,33 +317,36 @@ export const COMPANY_GROUP: NavGroup = {
  */
 export const OFFICES: OfficeContact[] = [
   {
-    label: "New York",
     /*
-      Was ["NYC based", "Working across the five boroughs"]. "NYC based" is not
-      true: the Google Business Profile is pinned in Westchester County, and a
-      page that claims a city its own listing contradicts breaks the NAP
-      agreement local ranking is built on — quite apart from being wrong.
+      Both strings below are governed by the Google Business Profile's own
+      service-area list, transcribed into `AREA_SERVED` in `lib/seo.ts`. A page
+      that claims a geography its own listing does not is the NAP inconsistency
+      local ranking punishes, so these two move only when the profile moves.
 
-      What replaces it is the tiered geography the whole SEO layer now states:
-      based in Westchester, working across both. `areaServed` in `lib/seo.ts`
-      says the same thing in the same order.
-
-      Two lines, because `ContactInfo` was measured against a 37.8px two-line
-      box — so each entry has to fit on ONE line or the box is three deep.
-
-      Measured in the live slot (165px at 390, 170px at 1280, 193px at 1440,
-      236px at 1728), which is narrower than it looks:
-
-        "Working across the five boroughs"   2 lines below 1728  (the original,
-                                             so the old copy already overflowed)
-        "Working across NYC and Westchester" 2 lines everywhere
-        "Serving NYC and Westchester"        2 lines below 1440
-        "Working across NYC"                 1 line everywhere  ← this
-
-      Westchester is not repeated on the second line because the first already
-      names it, which is also what buys the room.
+      History worth not repeating: this record said "NYC based" / "Working
+      across the five boroughs". The profile says "No location; deliveries and
+      home services only", lists three boroughs rather than five, and lists
+      three Connecticut towns the site never mentioned. An intermediate pass
+      also put Westchester here, inferred by reverse-geocoding the profile's
+      hidden pin — the profile lists no Westchester at all.
     */
-    address: ["Westchester County, NY", "Working across NYC"],
+    label: "New York & Connecticut",
+    /*
+      Two lines, because `ContactInfo` was measured against a 37.8px two-line
+      box — so each entry must fit on ONE line or the box renders three deep.
+      The slot is much narrower than it looks: 165px at 390, 170px at 1280,
+      193px at 1440, 236px at 1728. Measured in the live slot, at all four:
+
+        "Queens, Brooklyn, Manhattan"     wraps below 1440
+        "Fairfield County, Connecticut"   wraps below 1440
+        "New York City"                   1 line everywhere  ← used
+        "and Fairfield County, CT"        1 line everywhere  ← used
+
+      The six Queens neighbourhoods the profile lists do not fit two short
+      lines and do not need to — they are carried in full by `areaServed`,
+      which is what Google actually reads for service-area geography.
+    */
+    address: ["New York City", "and Fairfield County, CT"],
     phone: "(203) 685 9193",
     phoneHref: "tel:+12036859193",
     email: "hamad@neuragul.com",

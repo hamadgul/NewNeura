@@ -71,43 +71,54 @@ export const BUSINESS = {
 } as const;
 
 /**
- * Service areas, listed individually rather than as one "New York" string:
- * `areaServed` is how a service-area business tells Google which local packs it
- * belongs in, and a town or a borough is the unit people actually search in
- * ("web developer White Plains", "mobile mechanic Brooklyn").
+ * Service areas, mirrored EXACTLY from the Google Business Profile's own
+ * "Service area" list (Business information → Location → Service area).
  *
- * ── Why Westchester comes first ─────────────────────────────────────────────
- * The Google Business Profile is pinned at 40.9746535, -73.699747, which
- * reverse-geocodes to Rye, Westchester County. Google's local pack is
- * proximity-gated on that pin, so a Manhattan or Brooklyn map-pack result is
- * not reachable from here no matter what this array says — while a Westchester
- * one is, against a fraction of the competition.
+ * This is not a wishlist and not a guess. Google cross-references a site's
+ * stated geography against the profile's, and the profile is the authority —
+ * so this array is a transcription, in the profile's own order, and it changes
+ * only when the profile changes.
  *
- * So the strategy is tiered, and this array is the local half of it: the towns
- * near the pin, where the profile can actually rank, followed by the boroughs,
- * which the practice genuinely serves and which the page titles and body copy
- * compete for organically (where proximity does not gate anything).
+ * ── Read this before adding a place ─────────────────────────────────────────
+ * The profile says "No location; deliveries and home services only", which is
+ * why `organizationSchema`'s address carries no locality and no street: there
+ * is no business address to state. See the note there.
  *
- * Do not reorder this into "NYC first" without moving the GBP pin — the order
- * is the strategy.
+ * Three things this list settles that were previously inferred wrong:
+ *
+ *   1. NO WESTCHESTER. An earlier pass reverse-geocoded the pin in the
+ *      profile's share link to Rye, Westchester County, and built a Westchester
+ *      tier on it. The pin is the hidden registered address, not a service
+ *      area, and Westchester appears nowhere in this list. Do not reintroduce
+ *      it.
+ *   2. NO BRONX, NO STATEN ISLAND. "The five boroughs" is a phrase this site
+ *      used freely; the profile claims three. Only three are listed here.
+ *   3. CONNECTICUT IS A THIRD OF THE PROFILE. Newtown, Monroe and Trumbull are
+ *      Fairfield County, which is also where the (203) phone number comes
+ *      from. The two facts corroborate each other.
+ *
+ * Queens carries six of the twelve entries, which is why Queens and its
+ * neighbourhoods lead: `areaServed` is how a service-area business tells Google
+ * which local packs it belongs in, and a neighbourhood is the unit people
+ * actually search in ("web developer Forest Hills").
  */
 export const AREA_SERVED = [
-  // Southern Westchester — the pin's own catchment.
-  "Westchester County",
-  "Rye, New York",
-  "Harrison, New York",
-  "White Plains, New York",
-  "New Rochelle, New York",
-  "Scarsdale, New York",
-  "Mamaroneck, New York",
-  // New York City — served, and what the organic pages target.
-  "New York City",
-  "Manhattan",
-  "Brooklyn",
-  "Queens",
-  "The Bronx",
-  "Staten Island",
-  "New York Metropolitan Area",
+  // Queens — half the profile's list.
+  "Queens, New York",
+  "Jamaica, Queens, New York",
+  "Ridgewood, Queens, New York",
+  "Kew Gardens, Queens, New York",
+  "Kew Gardens Hills, Queens, New York",
+  "Forest Hills, Queens, New York",
+  // Brooklyn.
+  "Brooklyn, New York",
+  "Williamsburg, Brooklyn, New York",
+  // Manhattan — the profile's "New York, NY".
+  "New York, New York",
+  // Fairfield County, Connecticut.
+  "Newtown, Connecticut",
+  "Monroe, Connecticut",
+  "Trumbull, Connecticut",
 ] as const;
 
 /**
@@ -179,7 +190,7 @@ export function organizationSchema() {
     alternateName: GBP_NAME,
     url: `${SITE_URL}/`,
     description:
-      "NeuraGul is a New York software development team building custom software, websites, mobile apps, cloud infrastructure, data pipelines and applied AI systems for small companies. Based in Westchester County and working across New York City.",
+      "NeuraGul is a New York software development team building custom software, websites, mobile apps, cloud infrastructure, data pipelines and applied AI systems for small companies. Serving Queens, Brooklyn, Manhattan and Fairfield County, Connecticut.",
     telephone: BUSINESS.telephone,
     email: BUSINESS.email,
     /*
@@ -190,9 +201,11 @@ export function organizationSchema() {
       the coordinates in the profile's share link, not read off the profile
       itself. Publishing a locality that turns out to be the neighbouring town
       would put a wrong location in the knowledge graph and break NAP against
-      the profile — the exact failure this file exists to avoid. The state is
-      certain, so the state is what is claimed. Add the locality here once the
-      profile's registered city is confirmed.
+      the profile — the exact failure this file exists to avoid.
+
+      Since confirmed from the profile itself: it reads "No location; deliveries
+      and home services only". There is no business address to state, so no
+      locality is ever added here. `areaServed` carries the whole geography.
     */
     address: {
       "@type": "PostalAddress",

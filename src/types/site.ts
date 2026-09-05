@@ -89,9 +89,11 @@ export interface NavGroup {
  *
  * The architecture template carried two of these, one per office, each with a
  * street address. NeuraGul is a service-area business with no street office —
- * its Google Business Profile hides its address — so `address` carries locality
- * lines only ("Westchester County, NY" / "Working across NYC") and there is a
- * single record rather than a pair.
+ * its Google Business Profile reads "No location; deliveries and home services
+ * only" — so `address` carries service-area lines rather than a street address
+ * ("New York City" / "and Fairfield County, CT"), and there is a single record
+ * rather than a pair. The authoritative geography is `AREA_SERVED` in
+ * `lib/seo.ts`, transcribed from that profile.
  */
 export interface OfficeContact {
   /** Heading, e.g. "New York". */
