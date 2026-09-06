@@ -168,7 +168,7 @@ export function HeroIntroPanel() {
       />
 
       <span
-        className="homeHero__detail--one font-S relative z-10 row-start-2 self-center text-white [grid-column:1/7] max-md:row-start-3 max-md:self-start max-md:[grid-column:2/-1]"
+        className="homeHero__detail--one font-S relative z-10 row-start-2 self-center text-white [grid-column:1/7] max-md:row-start-3 max-md:self-start max-md:[grid-column:2/-2]"
         style={animate ? enter(revealed, DETAIL_ONE_DELAY_MS) : undefined}
       >
         {HERO_INTRO.eyebrowLeft}
@@ -182,7 +182,18 @@ export function HeroIntroPanel() {
         // margin at all. The source's own second eyebrow stops 10px short of
         // the edge; `main-end` is 15px short, which is this site's gutter and
         // the line every other element here already respects.
-        className="homeHero__detail--two font-S relative z-10 row-start-2 self-center text-white [grid-column:7/span_6] max-md:row-start-3 max-md:self-start max-md:[grid-column:4/-2]"
+        //
+        // <768 it STACKS under eyebrow one rather than sitting beside it, and
+        // that is a deliberate divergence from the source. The source puts both
+        // eyebrows on `grid-row: 3` with overlapping columns — `2/8` for one
+        // and `4/-1` for two — and gets away with it only because its strings
+        // are short enough that the first stops before the second's start line
+        // ("Architecture + Interiors", 24 characters). Ours is 32 and runs
+        // straight through it, so the two labels painted on top of each other
+        // on every phone. Same column span as eyebrow one (`2/-2`) with
+        // `self-end` against its `self-start`, which uses the band the source
+        // already sized at 10rem/100px for exactly two lines of this text.
+        className="homeHero__detail--two font-S relative z-10 row-start-2 self-center text-white [grid-column:7/span_6] max-md:row-start-3 max-md:self-end max-md:[grid-column:2/-2]"
         style={animate ? enter(revealed, DETAIL_TWO_DELAY_MS) : undefined}
       >
         {HERO_INTRO.eyebrowRight}
