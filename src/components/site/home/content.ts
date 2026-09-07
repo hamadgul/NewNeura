@@ -403,22 +403,17 @@ export const FOOTER_IMAGE = {
  * every viewport.
  */
 /**
- * The preloader's stack, read down as NEURAGUL.
+ * The preloader's acronym — five letters, five words, and no sixth entry.
  *
- * The first five carry the acronym — Next-Generation Engineering, Unified
- * Research & AI — and unfurl into it. The last three are the surname and stand
- * for nothing, so their tail is the empty string and `Preloader` renders no
- * expanding track for them at all; they arrive as capitals and stay capitals.
- * Requested that way: "no abbreviation word needed it can just be added at the
- * end of NEURA".
+ * The surname is NOT in this list. Adding `["G",""] ["U",""] ["L",""]` here was
+ * the first attempt at "add Gul to the loading animation", and it left three
+ * bare capitals hanging under "AI" at full word-line height: *"this looks kind
+ * of ugly"*. A letter that expands into nothing has no business in a list whose
+ * whole premise is that each letter expands into something.
  *
- * The letter stagger is derived from this array's length (`LETTERS_SPREAD_MS`
- * divided across it), so going from five to eight tightens the interval and
- * leaves the last capital at the same point in the timeline. Nothing else here
- * needs a number changed.
- *
- * "U" appears twice, so `Preloader` keys these by index rather than by capital
- * — a duplicate React key here would drop one of the two.
+ * `Gul` arrives at the payoff instead — the acronym block cross-fades into the
+ * `Wordmark`, so the intro explains what NEURA stands for and then lands on the
+ * name the rest of the site wears. See `Preloader`.
  */
 export const PRELOADER_WORDS: Array<[string, string]> = [
   ["N", "ext-Generation"],
@@ -426,9 +421,6 @@ export const PRELOADER_WORDS: Array<[string, string]> = [
   ["U", "nified"],
   ["R", "esearch"],
   ["A", "I"],
-  ["G", ""],
-  ["U", ""],
-  ["L", ""],
 ];
 
 export const FOOTER_COPYRIGHT = "© 2026 NeuraGul. All rights reserved.";

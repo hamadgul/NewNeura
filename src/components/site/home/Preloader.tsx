@@ -1,12 +1,9 @@
 "use client";
 
 /**
- * The intro overlay: a dark ground on which the eight capitals of NEURAGUL
- * arrive one at a time, and the first five unfold into what the acronym stands
- * for — Next-Generation Engineering, Unified Research & AI. G, U and L are the
- * surname; they stand for nothing and stay capitals, so the stack reads
- * NEURAGUL top to bottom before the expansion and keeps its last three letters
- * after it.
+ * The intro overlay: a dark ground on which the five capitals of NEURA unfold
+ * into what the name stands for — Next-Generation Engineering, Unified
+ * Research & AI — and then resolve into the NeuraGul wordmark.
  *
  * Measured off the reference intro (mobile, 390px) by sampling the GSAP-written inline
  * styles every 120ms across a page load. The three beats, with times relative
@@ -21,7 +18,20 @@
  *                 the sections; we get the same motion — and the same
  *                 re-centring — from a `0fr → 1fr` grid column, with no
  *                 measured widths to keep in sync.
- *   2.48 – 3.13s  the words fade out, then the overlay fades out behind them.
+ *   2.48 – 2.83s  the words fade out.
+ *   2.53 – 2.93s  the wordmark arrives in their place, overlapping their exit
+ *                 so the block reads as resolving rather than as being
+ *                 replaced. It holds, then the overlay fades out behind it.
+ *
+ * That last beat is the answer to "add Gul to the loading animation". The first
+ * attempt appended G, U and L to `PRELOADER_WORDS` as letters standing for
+ * nothing, which left three bare capitals dangling under "AI" — *"this looks
+ * kind of ugly, find a better way to incorporate the Gul part of it"*. The
+ * surname is not an acronym entry, so it does not go in the acronym; the intro
+ * spells out what NEURA means and then lands on the whole name, which is also
+ * how the nav and the footer set it (`Wordmark`, "Neura" semibold + "Gul"
+ * light). It costs 500ms, and most of that was previously an empty dark screen
+ * between the words leaving and the overlay following them.
  *
  * The words carry NO gaps: the wrapper is an exact multiple of the 48.4px
  * `font-XXL` line box (193px at four words, 242px at NEURA's five). There is
@@ -36,6 +46,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { releaseIntro } from "../shared/introGate";
+import { Wordmark } from "../shared/icons";
 import { PRELOADER_WORDS } from "./content";
 
 /** ms before the first capital starts to arrive. */
@@ -52,7 +63,8 @@ const LETTERS_START_MS = 250;
  * puts the last capital at the same point in the timeline as before.
  */
 const LETTERS_SPREAD_MS = 861;
-const LETTER_STAGGER_MS = LETTERS_SPREAD_MS / Math.max(PRELOADER_WORDS.length - 1, 1);
+const LETTER_STAGGER_MS =
+  LETTERS_SPREAD_MS / Math.max(PRELOADER_WORDS.length - 1, 1);
 /** ms for one capital's fade/blur/lift. */
 const LETTER_MS = 500;
 /** ms at which the words unfurl (measured 1.23s after the first capital). */
@@ -63,8 +75,20 @@ const EXPAND_MS = 1050;
 const WORDS_OUT_MS = EXPAND_START_MS + EXPAND_MS + 200;
 /** ms for the words' fade. */
 const WORDS_OUT_DURATION_MS = 350;
-/** ms for the overlay's own fade, which follows the words. */
+/**
+ * The wordmark's arrival, overlapping the words' exit by 250ms of its 350ms —
+ * the two are a cross-fade, not a sequence. Starting it after the words had
+ * fully gone put a blank ground between them and made the mark read as a
+ * second, unrelated screen.
+ */
+const MARK_IN_DELAY_MS = 100;
+const MARK_MS = 400;
+/** ms the wordmark holds at rest before the overlay goes. */
+const MARK_HOLD_MS = 350;
+/** ms for the overlay's own fade, which follows the wordmark. */
 const FADE_MS = 300;
+/** When the overlay starts to leave: the mark in, then its hold. */
+const LEAVE_MS = MARK_IN_DELAY_MS + MARK_MS + MARK_HOLD_MS;
 
 /**
  * The words are laid out two to a section, mirroring the source's two
@@ -77,6 +101,11 @@ const SECTION_OFFSETS = Array.from(
   (_, i) => i * 2,
 );
 
+/**
+ * `wordsOut` is the cross-fade: the words are leaving AND the mark is arriving.
+ * The mark stays up through `leaving`, fading out with the overlay rather than
+ * before it.
+ */
 type Phase = "letters" | "expanded" | "wordsOut" | "leaving" | "done";
 
 export function Preloader() {
@@ -95,13 +124,16 @@ export function Preloader() {
     const timers = [
       window.setTimeout(() => setPhase("expanded"), EXPAND_START_MS),
       window.setTimeout(() => setPhase("wordsOut"), WORDS_OUT_MS),
-      window.setTimeout(() => setPhase("leaving"), WORDS_OUT_MS + WORDS_OUT_DURATION_MS),
-      window.setTimeout(() => {
-        setPhase("done");
-        // The hero's own reveal is chained to this moment, not to its mount —
-        // see introGate.ts.
-        releaseIntro();
-      }, WORDS_OUT_MS + WORDS_OUT_DURATION_MS + FADE_MS),
+      window.setTimeout(() => setPhase("leaving"), WORDS_OUT_MS + LEAVE_MS),
+      window.setTimeout(
+        () => {
+          setPhase("done");
+          // The hero's own reveal is chained to this moment, not to its mount —
+          // see introGate.ts.
+          releaseIntro();
+        },
+        WORDS_OUT_MS + LEAVE_MS + FADE_MS,
+      ),
     ];
     return () => timers.forEach(window.clearTimeout);
   }, [reduceMotion]);
@@ -112,6 +144,7 @@ export function Preloader() {
 
   const expanded = phase !== "letters";
   const wordsVisible = phase === "letters" || phase === "expanded";
+  const markVisible = phase === "wordsOut" || phase === "leaving";
 
   return (
     <div
@@ -138,20 +171,49 @@ export function Preloader() {
             )}
             style={{ transitionDuration: `${WORDS_OUT_DURATION_MS}ms` }}
           >
-            {PRELOADER_WORDS.slice(offset, offset + 2).map(([capital, rest], i) => (
-              <Word
-                // By index, not by capital: NEURAGUL has two "U"s, and a
-                // duplicate key drops one of them.
-                key={offset + i}
-                capital={capital}
-                rest={rest}
-                index={offset + i}
-                expanded={expanded}
-              />
-            ))}
+            {PRELOADER_WORDS.slice(offset, offset + 2).map(
+              ([capital, rest], i) => (
+                <Word
+                  // By index, not by capital: NEURAGUL has two "U"s, and a
+                  // duplicate key drops one of them.
+                  key={offset + i}
+                  capital={capital}
+                  rest={rest}
+                  index={offset + i}
+                  expanded={expanded}
+                />
+              ),
+            )}
           </div>
         ))}
       </div>
+
+      {/*
+        The payoff, and where "Gul" lives.
+
+        Absolutely positioned rather than added to the stack above: the words'
+        wrapper is `w-fit`, and that width is what makes the unfurl re-centre
+        itself. A sixth in-flow child would join that measurement and drag the
+        centring around for the whole 1050ms expansion — for an element that is
+        not even visible yet. Out of flow, the mark simply lands in the middle
+        of an overlay that is already `items-center justify-center`, over the
+        block it is replacing.
+
+        `pointer-events-none` because the overlay is still on screen and this
+        sits above everything in it; it is decoration, not a target.
+      */}
+      <Wordmark
+        className={cn(
+          "preloader__mark font-XXL pointer-events-none absolute transition-[opacity,transform,filter] ease-[cubic-bezier(0.14,0.83,0.4,1)]",
+          markVisible
+            ? "translate-y-0 opacity-100 blur-none"
+            : "translate-y-[10px] opacity-0 blur-[8px]",
+        )}
+        style={{
+          transitionDuration: `${MARK_MS}ms`,
+          transitionDelay: markVisible ? `${MARK_IN_DELAY_MS}ms` : "0ms",
+        }}
+      />
     </div>
   );
 }
@@ -178,7 +240,9 @@ function Word({ capital, rest, index, expanded }: WordProps) {
       <span
         className={cn(
           "preloader__wordFl transition-[opacity,filter,transform] ease-out",
-          arrived ? "translate-y-0 opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
+          arrived
+            ? "translate-y-0 opacity-100 blur-none"
+            : "translate-y-[10px] opacity-0 blur-[10px]",
         )}
         style={{
           transitionDuration: `${LETTER_MS}ms`,
