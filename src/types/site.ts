@@ -35,6 +35,19 @@ export interface HeroServiceCard {
     width: number;
     height: number;
   };
+  /**
+   * Optional replacement for `image` on the stacked (<768px) band only, where
+   * the strip is a fixed 275px tall and only 101-215px wide. A wide screenshot
+   * centre-cropped into a slot that narrow shows whatever happens to sit in the
+   * middle of it — for a two-device shot, that is the gap between the devices.
+   * Cards whose image reads fine at any crop leave this unset.
+   */
+  imageStacked?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
   /** Card ground colour. */
   mainColor: string;
   /** Text/icon colour on that ground. */

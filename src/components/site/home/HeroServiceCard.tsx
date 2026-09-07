@@ -194,6 +194,9 @@ export function HeroServiceCard({
   const entry = horizontal ? clamp01((progress - ENTRY_START) / (1 - ENTRY_START)) : 1;
   const imageScale = horizontal ? 1 + 0.3 * Math.pow(1 - entry, IMAGE_POWER) : 1;
 
+  /** The pinned strip is wide enough for the full shot; the stacked one is not. */
+  const stripImage = (!horizontal && card.imageStacked) || card.image;
+
   // 1 = band at its maximum (half the card), 0 = collapsed to its resting
   // 285px. The content inside it is 285px tall and pinned to the bottom, so
   // the extra height reads purely as more colour above the title.
@@ -267,11 +270,19 @@ export function HeroServiceCard({
         )}
         aria-label={card.title.replace(/\s+/g, " ")}
       >
+        {/*
+          `imageStacked` when the band is stacked and the card carries one. The
+          strip is 275px tall and 101-215px wide down here, so a wide shot is
+          centre-cropped to about a hundred pixels of its middle; a card whose
+          subject is off-centre (PackShip's two devices) needs its own crop.
+          Falls back to `image`, which is what every other card uses at both
+          widths. See the note in `content.ts`.
+        */}
         <Image
-          src={card.image.src}
-          alt={card.image.alt}
-          width={card.image.width}
-          height={card.image.height}
+          src={stripImage.src}
+          alt={stripImage.alt}
+          width={stripImage.width}
+          height={stripImage.height}
           priority={card.index === 1}
           className="h-full w-full object-cover"
           style={{ transform: `scale(${imageScale})`, transformOrigin: "center" }}

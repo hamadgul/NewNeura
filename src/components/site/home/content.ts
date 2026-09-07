@@ -139,6 +139,20 @@ export const HERO_CARDS: HeroServiceCard[] = [
       width: 1200,
       height: 750,
     },
+    /*
+      PackShip's shot is two phones side by side, measured at x 134-566 and
+      634-1066 of 1200 with a 68px gap between them. The stacked band's strip is
+      275px tall and 101-215px wide, so `object-cover` scales the image to 440px
+      and shows only the middle ~100 of it — which is exactly that gap, plus a
+      sliver of each device. This crop is the same photograph cut to 610-1090,
+      i.e. the right-hand device centred, and it is the only card that needs one.
+    */
+    imageStacked: {
+      src: `${IMG}/packship-stacked.jpg`,
+      alt: "PackShip on iOS",
+      width: 480,
+      height: 750,
+    },
     mainColor: "#c9d3df",
     contentColor: "#111111",
   },
