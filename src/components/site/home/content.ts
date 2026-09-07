@@ -74,7 +74,7 @@ export const HERO_INTRO = {
   scrollCueDesktop: "Scroll to explore",
   /** Shown <768px. */
   scrollCueMobile: "Swipe up to explore",
-  heading: "We build the software that small companies actually run on",
+  heading: "We build the software that small companies run on",
 };
 
 /**
