@@ -547,10 +547,32 @@ export function MainNavigation({
               }}
             />
 
-            <div className="mt-[40px] grid flex-1 auto-rows-min gap-x-[40px] gap-y-[48px] md:mt-[56px] lg:grid-cols-[1.5fr_1fr]">
+            {/*
+              The desktop column split is the source's, read off its own grid.
+              Its menu is a subgrid on the site grid with three rows, and every
+              block is placed by column line:
+
+                mainMenu    row 1, cols  2 / 10
+                subMenu     row 1, cols -9 / -2
+                contactOne  row 3, cols -9 / -6
+
+              The load-bearing fact is that **`subMenu` and `contactOne` share
+              the line `-9`** — the second column and the contact record hang off
+              one left edge. Ours had the contact on `lg:self-end` instead, which
+              right-aligns it to the band: at 1440 it started at x=1087 while the
+              "See the"/"Studio" column above it started at 870, so the bottom of
+              the panel read as a stray block rather than as the foot of that
+              column.
+
+              `-9` measures at 65.5% of the main band at 1440 and 65.4% at 1920 —
+              a fraction, not a fixed inset — so a `34.5%` second track puts its
+              left edge exactly there without restating the site grid's line
+              numbers, which change tier by tier (4/6/12/20 columns).
+            */}
+            <div className="mt-[40px] grid flex-1 grid-rows-[auto_auto_1fr] gap-x-[40px] gap-y-[48px] md:mt-[56px] lg:grid-cols-[1fr_34.5%] lg:grid-rows-[auto_1fr]">
               <ul
                 className={cn(
-                  "navigationMain__mainMenu flex flex-col gap-[10px]",
+                  "navigationMain__mainMenu flex flex-col gap-[10px] lg:col-start-1 lg:row-start-1",
                   /*
                 Hover one service and the others go soft. Measured on the
                 source: the un-hovered links take `filter: blur(2px)` over 0.3s
@@ -621,7 +643,7 @@ export function MainNavigation({
                 })}
               </ul>
 
-              <div className="navigationMain__subMenu flex flex-col gap-[40px] md:flex-row lg:flex-col lg:gap-[48px]">
+              <div className="navigationMain__subMenu flex flex-col gap-[40px] md:flex-row lg:col-start-2 lg:row-start-1 lg:flex-col lg:gap-[48px]">
                 {/* One sequence across both groups, headings included — that is
                 how the source orders this column. */}
                 <NavGroupColumn
@@ -639,27 +661,28 @@ export function MainNavigation({
                   pathname={pathname}
                 />
               </div>
-            </div>
 
-            {/* The reference carries its offices on the bottom edge and its
+              {/* The reference carries its offices on the bottom edge and its
               socials opposite them. There are no socials to render, so the
-              single contact record sits alone on the right. */}
-            {/* The source fades its offices in last, ~630ms after the columns
+              single contact record sits alone under the second column — on the
+              source's `-9` line, the same left edge as the links above it. */}
+              {/* The source fades its offices in last, ~630ms after the columns
               start — it is the one element that arrives after the links have
               finished. */}
-            <div
-              className={cn(
-                "navigationMain__contactOne mt-[48px] flex w-fit shrink-0 flex-col gap-[6px] transition-[opacity,transform] ease-linear lg:mt-0 lg:self-end",
-                animateIn
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-[10px] opacity-0",
-              )}
-              style={{
-                transitionDuration: `${animateIn ? OPEN_ITEM_MS : CLOSE_ITEM_MS}ms`,
-                transitionDelay: `${animateIn ? OPEN_ITEM_DELAY_MS + OPEN_CONTACT_OFFSET_MS : 0}ms`,
-              }}
-            >
-              <OfficeBlock office={OFFICES[0]} />
+              <div
+                className={cn(
+                  "navigationMain__contactOne flex w-fit flex-col gap-[6px] self-end transition-[opacity,transform] ease-linear lg:col-start-2 lg:row-start-2",
+                  animateIn
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-[10px] opacity-0",
+                )}
+                style={{
+                  transitionDuration: `${animateIn ? OPEN_ITEM_MS : CLOSE_ITEM_MS}ms`,
+                  transitionDelay: `${animateIn ? OPEN_ITEM_DELAY_MS + OPEN_CONTACT_OFFSET_MS : 0}ms`,
+                }}
+              >
+                <OfficeBlock office={OFFICES[0]} />
+              </div>
             </div>
           </div>
         </div>
