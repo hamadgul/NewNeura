@@ -58,6 +58,15 @@ export const HERO_INTRO = {
     team") and the scroll cue already wrap to two lines at those widths, so the
     row is two lines tall regardless and all three now align. Measured: the
     title's top is unmoved (748px at 768, 744px at 800).
+
+    Below 768 these two STACK — see the note on `homeHero__detail--two` in
+    `HeroIntroPanel.tsx`. The source lays them out as overlapping grid areas on
+    one row and relies on its own strings being short enough not to meet
+    ("Architecture + Interiors" / "A Market-Focused Approach"); both of ours are
+    longer and collided on every phone until they were stacked. So if you
+    lengthen either string, check the phone widths, not just the desktop slot —
+    and each must still fit ONE line inside `main-start`/`main-end` at 320px,
+    which is 270px. Both currently do, with little to spare.
   */
   eyebrowLeft: "Software + Applied AI · New York",
   eyebrowRight: "Built and maintained by the same team",

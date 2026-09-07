@@ -190,10 +190,19 @@ export function HeroIntroPanel() {
         // are short enough that the first stops before the second's start line
         // ("Architecture + Interiors", 24 characters). Ours is 32 and runs
         // straight through it, so the two labels painted on top of each other
-        // on every phone. Same column span as eyebrow one (`2/-2`) with
-        // `self-end` against its `self-start`, which uses the band the source
-        // already sized at 10rem/100px for exactly two lines of this text.
-        className="homeHero__detail--two font-S relative z-10 row-start-2 self-center text-white [grid-column:7/span_6] max-md:row-start-3 max-md:self-end max-md:[grid-column:2/-2]"
+        // on every phone. Same column span as eyebrow one (`2/-2`), and offset
+        // by exactly one line (`1lh` = 14px x 135% = 18.9px) plus a 6px gap, so
+        // the two read as one pair.
+        //
+        // It is `self-start` + a margin rather than `self-end`, which was the
+        // first attempt: `self-end` does clear the overlap, but it parks the
+        // second label at the bottom of the 100px band, 62px below the first
+        // and hard against the headline — so it read as the headline's kicker
+        // rather than as eyebrow one's partner. The source's own eyebrows sit
+        // at the band's TOP edge (they inherit `stretch`, so the text renders
+        // from the top), and the ~80px of air beneath them is what separates
+        // the pair from the headline. Anchoring both to the top keeps that.
+        className="homeHero__detail--two font-S relative z-10 row-start-2 self-center text-white [grid-column:7/span_6] max-md:row-start-3 max-md:mt-[calc(1lh_+_6px)] max-md:self-start max-md:[grid-column:2/-2]"
         style={animate ? enter(revealed, DETAIL_TWO_DELAY_MS) : undefined}
       >
         {HERO_INTRO.eyebrowRight}
