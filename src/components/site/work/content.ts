@@ -61,7 +61,7 @@ export const PORTFOLIO_CANONICAL = "/work/";
  * read the snippet and leave.
  */
 export const PORTFOLIO_DESCRIPTION =
-  "Nine NeuraGul case studies: dispatch software, an iOS app, e-commerce storefronts, data pipelines and New York client sites, each linking to the live build.";
+  "Ten NeuraGul case studies: dispatch software, an iOS app, e-commerce storefronts, data pipelines and New York client sites, each linking to the live build.";
 /**
  * `hero-poster.jpg` is the only 1920x1080 asset we have and the only one that
  * is not a specific project's screenshot, so it is the one image that can back
@@ -117,7 +117,8 @@ export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
 export const PORTFOLIO_HIGHLIGHTS: CollectionProjectsHighlight[] = [];
 
 /**
- * All nine projects, in `CASE_STUDIES` order.
+ * All ten projects: the source's nine in `CASE_STUDIES` order, then
+ * Hasina Hijama Cupping.
  *
  * `location` carries the project's `meta` string ("2026 · iOS"), because there
  * is no city to print under a project name — the slot the original layout
@@ -250,6 +251,33 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     image: {
       src: `${IMAGES}/landscapedrainage.jpg`,
       alt: "The Landscape Drainage Proz Shopify storefront",
+      width: 1200,
+      height: 750,
+    },
+  },
+  /*
+    The tenth, and the first entry here that is not in the source's
+    `CASE_STUDIES` — added 2026-09-07. Appended rather than slotted in, because
+    the feed order is the source's own and this one has no place in it.
+
+    `web-development` only. The build is a Next.js marketing site; the SEO and
+    the AI-crawler files are part of shipping a marketing site, not a second
+    service, and claiming `data-intelligence` for a keyword spreadsheet would
+    inflate a filter count with nothing behind it.
+
+    Cover is a 1200x750 screenshot of the live home page, captured at 1600x1000
+    on a 2x device and downsampled — the same ratio as the other nine, which is
+    exactly `CollectionProjects`' card ratio, so it does not crop.
+  */
+  {
+    title: "Hasina Hijama Cupping",
+    href: "/work/hasina-hijama-cupping/",
+    location: "2026 · Next.js",
+    services: ["web-development"],
+    topServices: ["web-development"],
+    image: {
+      src: `${IMAGES}/hasinahijama.jpg`,
+      alt: "The Hasina Hijama Cupping site for a Queens cupping practice",
       width: 1200,
       height: 750,
     },

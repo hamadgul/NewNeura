@@ -54,7 +54,7 @@ const TIERS: Array<{
     changeFrequency: "monthly",
   },
   {
-    // The nine case studies. These are the pages that carry the evidence, so
+    // The ten case studies. These are the pages that carry the evidence, so
     // they sit above the two studio pages.
     paths: [
       "/work/delivery-routing/",
@@ -66,6 +66,7 @@ const TIERS: Array<{
       "/work/new-york-fine-foods/",
       "/work/restaurant-ordering-portal/",
       "/work/rwd-pipeline/",
+      "/work/hasina-hijama-cupping/",
     ],
     priority: 0.7,
     changeFrequency: "yearly",

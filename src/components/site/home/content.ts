@@ -144,8 +144,13 @@ export const HERO_CARDS: HeroServiceCard[] = [
       634-1066 of 1200 with a 68px gap between them. The stacked band's strip is
       275px tall and 101-215px wide, so `object-cover` scales the image to 440px
       and shows only the middle ~100 of it — which is exactly that gap, plus a
-      sliver of each device. This crop is the same photograph cut to 610-1090,
-      i.e. the right-hand device centred, and it is the only card that needs one.
+      sliver of each device. This crop is the same photograph cut to 110-590,
+      i.e. the LEFT-hand device centred, and it is the only card that needs one.
+
+      The right-hand device (the shipping-rate list) was the first crop and the
+      user replaced it: at ~100px wide those rows are unreadable grey type,
+      while the box-packing view carries a red/blue/green solid that still
+      reads. "The one its using right now is more bland than the other one".
     */
     imageStacked: {
       src: `${IMG}/packship-stacked.jpg`,
@@ -216,15 +221,16 @@ export const INTRO_BLOCK = {
 /** Service pills with their project counts, sized off the nine real projects. */
 export const PORTFOLIO_FILTERS: PortfolioFilterItem[] = [
   { label: "Applied AI", count: 2, href: "/work/?service=applied-ai" },
-  { label: "Web Development", count: 5, href: "/work/?service=web-development" },
+  { label: "Web Development", count: 6, href: "/work/?service=web-development" },
   { label: "App Development", count: 1, href: "/work/?service=app-development" },
   { label: "Cloud & Infrastructure", count: 2, href: "/work/?service=cloud-infrastructure" },
   { label: "Data Intelligence", count: 4, href: "/work/?service=data-intelligence" },
 ];
 
 /**
- * The homepage work grid: six of the nine, in the order the source site
- * features them.
+ * The homepage work grid: six of the ten, in the order the source site
+ * features them. Hasina Hijama Cupping is not among them — the grid is a
+ * curated six, not a feed, and the full list lives at `/work/`.
  *
  * `location` carries the year-and-platform qualifier the source prints under
  * each name, which is the equivalent of the city line the layout expects.
@@ -396,12 +402,33 @@ export const FOOTER_IMAGE = {
  * longest line the wordmark has ever carried and it sets the block's width at
  * every viewport.
  */
+/**
+ * The preloader's stack, read down as NEURAGUL.
+ *
+ * The first five carry the acronym — Next-Generation Engineering, Unified
+ * Research & AI — and unfurl into it. The last three are the surname and stand
+ * for nothing, so their tail is the empty string and `Preloader` renders no
+ * expanding track for them at all; they arrive as capitals and stay capitals.
+ * Requested that way: "no abbreviation word needed it can just be added at the
+ * end of NEURA".
+ *
+ * The letter stagger is derived from this array's length (`LETTERS_SPREAD_MS`
+ * divided across it), so going from five to eight tightens the interval and
+ * leaves the last capital at the same point in the timeline. Nothing else here
+ * needs a number changed.
+ *
+ * "U" appears twice, so `Preloader` keys these by index rather than by capital
+ * — a duplicate React key here would drop one of the two.
+ */
 export const PRELOADER_WORDS: Array<[string, string]> = [
   ["N", "ext-Generation"],
   ["E", "ngineering"],
   ["U", "nified"],
   ["R", "esearch"],
   ["A", "I"],
+  ["G", ""],
+  ["U", ""],
+  ["L", ""],
 ];
 
 export const FOOTER_COPYRIGHT = "© 2026 NeuraGul. All rights reserved.";

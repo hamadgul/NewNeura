@@ -1,9 +1,12 @@
 "use client";
 
 /**
- * The intro overlay: a dark ground on which the five capitals of NEURA unfold
- * into what the name stands for — Next-Generation Engineering, Unified
- * Research & AI.
+ * The intro overlay: a dark ground on which the eight capitals of NEURAGUL
+ * arrive one at a time, and the first five unfold into what the acronym stands
+ * for — Next-Generation Engineering, Unified Research & AI. G, U and L are the
+ * surname; they stand for nothing and stay capitals, so the stack reads
+ * NEURAGUL top to bottom before the expansion and keeps its last three letters
+ * after it.
  *
  * Measured off the reference intro (mobile, 390px) by sampling the GSAP-written inline
  * styles every 120ms across a page load. The three beats, with times relative
@@ -137,7 +140,9 @@ export function Preloader() {
           >
             {PRELOADER_WORDS.slice(offset, offset + 2).map(([capital, rest], i) => (
               <Word
-                key={capital}
+                // By index, not by capital: NEURAGUL has two "U"s, and a
+                // duplicate key drops one of them.
+                key={offset + i}
                 capital={capital}
                 rest={rest}
                 index={offset + i}
@@ -188,16 +193,23 @@ function Word({ capital, rest, index, expanded }: WordProps) {
         interpolates, so the word grows from just its capital to its full
         length. The inner span needs `overflow: hidden` or it would spill out
         of the collapsed track instead of being clipped by it.
+
+        Omitted entirely for a letter that stands for nothing — G, U and L of
+        the surname. An empty tail would still mount a track and run a 1050ms
+        transition on it, and `w-fit` on the wrapper measures every child, so a
+        zero-width animating column is a thing that can go wrong for no gain.
       */}
-      <span
-        className="preloader__wordRl grid ease-[cubic-bezier(0.14,0.83,0.4,1)] transition-[grid-template-columns]"
-        style={{
-          gridTemplateColumns: expanded ? "1fr" : "0fr",
-          transitionDuration: `${EXPAND_MS}ms`,
-        }}
-      >
-        <span className="overflow-hidden">{rest}</span>
-      </span>
+      {rest ? (
+        <span
+          className="preloader__wordRl grid ease-[cubic-bezier(0.14,0.83,0.4,1)] transition-[grid-template-columns]"
+          style={{
+            gridTemplateColumns: expanded ? "1fr" : "0fr",
+            transitionDuration: `${EXPAND_MS}ms`,
+          }}
+        >
+          <span className="overflow-hidden">{rest}</span>
+        </span>
+      ) : null}
     </div>
   );
 }

@@ -107,7 +107,12 @@ export const COLLECTION_PROJECTS_PER_PAGE = 14;
  *
  * A project routinely carries more than one service — the routing platform is
  * both Applied AI and Data Intelligence — so these counts deliberately sum to
- * more than the nine projects in the feed.
+ * more than the ten projects in the feed.
+ *
+ * These are HAND-MAINTAINED and nothing verifies them: a pill can advertise a
+ * count that no longer matches the cards behind it. Adding a project means
+ * bumping every service it carries, here AND in `home/content.ts`'s
+ * `PORTFOLIO_FILTERS`, which is a second copy of the same numbers.
  */
 export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
   { label: "All", slug: "" },
@@ -127,7 +132,7 @@ export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
       },
     ],
   },
-  { label: "Web Development", slug: "web-development", count: 5 },
+  { label: "Web Development", slug: "web-development", count: 6 },
   { label: "App Development", slug: "app-development", count: 1 },
   { label: "Cloud & Infrastructure", slug: "cloud-infrastructure", count: 2 },
   { label: "Data Intelligence", slug: "data-intelligence", count: 4 },
