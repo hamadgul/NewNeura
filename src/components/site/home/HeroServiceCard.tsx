@@ -394,28 +394,25 @@ export function HeroServiceCard({
           </p>
 
           {/*
-            A 100×68 crop of the same photo, set 53% across the copy column and
-            spanning the subtitle and count rows — the source's
-            `homeHero__cardImage--small`. It exists only on the band layout,
-            and only on the cards that show a subtitle rather than sub-pages.
+            The source puts a second, 100x68 crop of the same photo here on the
+            band layout (`homeHero__cardImage--small`, 53% across the copy
+            column, spanning the subtitle and count rows). Removed at the user's
+            request: "get rid of the small screenshots next to the big ones on
+            mobile view (the small full picture in the corner of each section
+            but not the bigger one)".
+
+            It reads differently here than it does on the source. LPAS's photos
+            are architectural interiors, which survive a 100px crop; every image
+            on this site is a product screenshot, so the thumbnail was a
+            postage-stamp of UI sitting beside the full-height strip showing the
+            same shot — a duplicate rather than a detail. See
+            [[neuragul-port-visual-fixes]] on portrait slots cropping landscape
+            screenshots.
+
+            Nothing else moves when it goes: the subtitle (row 2) and the count
+            (row 3) both carry explicit `col-start-1 row-start-*`, so neither
+            was relying on this element to hold a track open.
           */}
-          {!horizontal && !card.subPages ? (
-            <div
-              className={cn(
-                "homeHero__cardImage--small relative col-start-1 row-start-2 row-end-4 mt-[30px] ml-[53%] h-[68px] w-[100px] justify-self-start overflow-hidden transition-all delay-100 duration-600 ease-out",
-                contentRevealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
-              )}
-            >
-              <Image
-                src={card.image.src}
-                alt=""
-                fill
-                sizes="100px"
-                className="object-cover"
-                aria-hidden="true"
-              />
-            </div>
-          ) : null}
 
           <span
             className={cn(
