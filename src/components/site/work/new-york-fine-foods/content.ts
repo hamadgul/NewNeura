@@ -10,7 +10,7 @@
  * frame's `aspect-ratio` is computed from them too.
  *
  * Block-count note: this project owns one still and one motion capture, so the
- * page runs five blocks, not the eleven the inherited template was built for —
+ * page runs four blocks, not the eleven the inherited template was built for —
  * that sequence existed to carry eighteen architecture photographs. The one
  * repeat is `nyff.jpg`: it is the header's full-bleed backdrop, the video's
  * poster, and the media block's small slot. That is not padding but arithmetic
