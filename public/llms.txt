@@ -29,7 +29,7 @@ Queens NY (Jamaica, Ridgewood, Kew Gardens, Kew Gardens Hills, Forest Hills), Br
 - [New York Mobile Mechanic](https://neuragul.com/work/new-york-mobile-mechanic/): A local SEO site for a 24/7 mobile mechanic — a landing page for every service crossed with every borough, schema on every route, Core Web Vitals in the green.
 - [New York Fine Foods](https://neuragul.com/work/new-york-fine-foods/): A cinematic Next.js site for a NYC catering, pizza-truck and mobile-bar brand, with media galleries, service menus and a booking inquiry flow.
 - [Vintus](https://neuragul.com/work/vintus/): E-commerce for a leading wine importer — a large structured catalogue and the operations behind it.
-- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Shopify storefront for a drainage-products retailer that tripled the client's online sales.
+- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Shopify storefront for a drainage-products retailer, built with custom Liquid, CTA design, Google Ads, and SEO.
 - [Restaurant ordering portal](https://neuragul.com/work/restaurant-ordering-portal/): Online ordering that lets a pizzeria take orders directly and skip third-party delivery-app commissions.
 - [Real-World Data Pipeline](https://neuragul.com/work/rwd-pipeline/): A 0-to-1 ETL pipeline pulling messy clinical data from dozens of sources into one common model. Early cancer detection research ran on top of it.
 

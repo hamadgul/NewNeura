@@ -110,7 +110,7 @@ export const INTRO: BlockIntroDoubleProps = {
     "Sites that load fast, rank, and stay maintainable long after we hand them over.",
   body: [
     "We are a web development company in New York. SEO and performance are part of the first commit rather than a phase somebody bolts on at the end. Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck actually gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets.",
-    "Every commercial page on that site carries JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 141 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster. The flagship URL now targets a 12,100/mo search term. It launched on a local qualifier worth 320.",
+    "Every commercial page on that site carries JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 141 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster.",
     "New York Mobile Mechanic points the same discipline at a stranded driver: a landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green. Stat gauges count up as they scroll into view, live Google reviews carry the credibility, and a one-tap call-to-book follows you down the page. When your car dies on the BQE you call whoever ranks. Nobody comparison-shops from the shoulder.",
   ],
 };
@@ -251,7 +251,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Storefronts:",
-      text: "A national wine importer's catalog on Vintus, and a Shopify buildout for Landscape Drainage Proz that tripled the client's online sales.",
+      text: "A national wine importer's catalog on Vintus, and a Shopify buildout for Landscape Drainage Proz with custom Liquid, CTA design, Google Ads, and SEO.",
     },
     {
       type: "paragraph",

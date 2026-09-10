@@ -18,8 +18,8 @@
  *
  * VOICE — the source site is written in the first person singular, because it
  * was one person. It is a team, so this site says "we", which on this page is
- * the second section's heading: "What we built". Every metric, stack entry,
- * outcome and live URL below is exactly as the source records it.
+ * the second section's heading: "What we built". Every stack entry and live
+ * URL below is exactly as the source records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
  * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
@@ -28,8 +28,13 @@
  * than to open a page; see the notes on each. Some `alt` strings were also
  * lengthened from a bare project name to a description of the screenshot.
  *
- * Everything a visitor reads is still the source's own: the header, the brief,
- * what we built, the outcome, every metric, stack entry and live URL.
+ * ── What the unverifiable-claims pass changed ───────────────────────────────
+ * `PROJECT_OUTCOME` originally closed with two third-party search-volume
+ * figures ("targets a 12,100/mo search term... a local qualifier worth 320")
+ * that have no source on this machine. Those two sentences were cut; the
+ * surrounding claims about JSON-LD, the single pricing module and the 141
+ * Vitest tests are unchanged and remain verifiable against
+ * `~/Desktop/foodtruckrentals.com`.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -105,7 +110,7 @@ export const PROJECT_OUTCOME: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "A live national site, indexed and structured to compete well past its first city. The flagship URL now targets a 12,100/mo search term. It launched on a local qualifier worth 320.",
+      text: "A live national site, indexed and structured to compete well past its first city.",
     },
   ],
 };
