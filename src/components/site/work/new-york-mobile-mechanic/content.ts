@@ -6,9 +6,43 @@
  * against the built `work/new-york-mobile-mechanic/index.html`. Nothing is
  * paraphrased and nothing is invented.
  *
+ * ── Asset refresh, 2026-09-07 ───────────────────────────────────────────────
+ * The client rebuilt the site's homepage hero, so `nymm.jpg` and
+ * `nymm-hero.mp4` were both re-captured from the live site. What changed on
+ * their end, and therefore what the old assets were still showing: the
+ * wordmark ("ADAM'S" -> "ADAM"), the hero photograph (a dark SUV -> a red BMW
+ * at dusk), the nav ("Contact" -> "Resources", and a reordering), the
+ * sub-headline ("Skip the tow truck and save time." -> "Don't waste time at a
+ * shop, we come to you."), the button case, and the review gauge (142+ ->
+ * 158+).
+ *
+ * The VIDEO was the easy one to miss: it is a screen capture of this same
+ * hero, so it was showing the previous branding for 12 seconds next to a cover
+ * showing the new one. When a client changes a page, every asset OF that page
+ * is stale, not just the still.
+ *
+ * Recipe, so a future refresh matches rather than drifts:
+ *   cover  1200x750 viewport at deviceScaleFactor 2, downsampled to 1200x750.
+ *          Not 1600 — the headline measures 480/1200 of the frame in the asset
+ *          this replaced, which is a 1200-wide capture, and a wider one shrinks
+ *          the type against every other still on the page.
+ *   video  Playwright `recordVideo` at 1200x750, reloaded so the gauges count
+ *          up on camera, held ~4s, eased scroll down over 3s, held, eased back.
+ *          Transcoded `fps=24, crf 30` to land at 12.75s / 995KB against the
+ *          previous 12.67s / 1026KB.
+ *
+ * `conversion.png` was checked and NOT re-captured: it already carries the new
+ * "ADAM" wordmark, so it post-dates the rebrand. `mechanicseo.png` is the
+ * borough matrix, not the homepage.
+ *
  * Assets, and why each one sits where it does:
  *   nymm.jpg        1200x750   the cover; header, then the second media pair
- *   mechanicseo.png  512x265   the borough matrix. Small, so it goes in the
+ *   mechanicseo.png  512x265   the Lighthouse report — 100 for performance,
+ *                              accessibility, best practices and SEO, plus 3/3
+ *                              agentic browsing. NOT the borough matrix, which
+ *                              is what the filename and this line used to claim
+ *                              and what its caption described until 2026-09-10.
+ *                              Small, so it goes in the
  *                              `small` slot of `BlockMediaDoubleQuote`, which
  *                              measures 530px at `xl` — a 3.5% upscale. In the
  *                              `large` slot (733px) or full-bleed (1440px) it
@@ -28,6 +62,19 @@
  * images they were written for. The architecture layout this shell came from
  * shipped `alt=""` because its media were decorative photographs; these are
  * informative screenshots, so the caption is the description.
+ *
+ * `mechanicseo.png` is the one place where the `alt` and the `quote` are NOT
+ * the same string, and deliberately. Both used to read "The service-by-borough
+ * page matrix behind the local rankings", which describes an asset this page
+ * does not contain — the picture is a Lighthouse report. Reworded to the
+ * scores at the user's direction ("reword the caption to match the lighthouse
+ * scores") rather than by re-shooting the matrix. The pull-quote is set large
+ * and wants one clean line, while the `alt` has to describe everything in the
+ * frame, so the two now carry different lengths of the same fact.
+ *
+ * The borough matrix itself is not lost: `PROJECT_FEATURE_ONE` still states it
+ * in copy ("A landing-page matrix of service crossed with borough"). It simply
+ * no longer claims a screenshot is showing it.
  *
  * Ordering note: `BlockMediaDoubleQuote` appears twice and `BlockWysiwyg` four
  * times, so the exported constants are numbered by their position on the page.
@@ -144,11 +191,11 @@ export const PROJECT_MEDIA_QUOTE_ONE: BlockMediaDoubleQuoteProps = {
   small: {
     type: "image",
     src: `${IMAGES}/mechanicseo.png`,
-    alt: "The service-by-borough page matrix behind the local rankings.",
+    alt: "A Lighthouse report for the site scoring 100 for performance, accessibility, best practices and SEO, and 3/3 for agentic browsing.",
     width: 512,
     height: 265,
   },
-  quote: "The service-by-borough page matrix behind the local rankings.",
+  quote: "Lighthouse at 100 for performance, accessibility, best practices and SEO.",
 };
 
 /**
