@@ -152,6 +152,27 @@ export const PROJECT_OUTCOME: BlockWysiwygProps = {
  * project. The element still renders — its 100px bottom margin is load-bearing
  * for the stacked layouts — it is simply empty.
  */
+/*
+  Asset refresh, 2026-09-10, alongside the New York Mobile Mechanic one.
+
+  This project needed the OTHER half of that job. NYMM's section slot was a
+  still and became a 3s loop; here the slot was already a hero-locked video, so
+  there was nothing to convert — only stale content to replace.
+
+  What had actually changed on the live site: the nav gained **Corporate**
+  (Home · Pizza Trucks · Catering · Corporate · Mobile Bar · About · Contact).
+  That is the whole diff — same wordmark, headline, eyebrow, sub-head and
+  buttons. Small, but the old cover and the old capture both showed a nav that
+  no longer exists, and the cover is also this page's og:image.
+
+  Kept at 9.1s rather than cut to NYMM's 3s, deliberately. NYMM's animation is a
+  count-up that finishes in 1.5s, so 3s holds all of it. This hero is a
+  background SLIDESHOW — measured by hashing a 200x500 strip of the background
+  every 400ms, every single frame differs, so the scenes also drift as they
+  cross-fade. Three seconds buys one scene and half a transition; the copy above
+  claims "full-bleed motion", and one scene does not show motion through a set
+  of scenes. 9.1s carries oven -> party -> skyline -> truck -> oven.
+*/
 export const PROJECT_MEDIA_QUOTE: BlockMediaDoubleQuoteProps = {
   large: {
     type: "video",
