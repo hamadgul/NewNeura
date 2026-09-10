@@ -32,7 +32,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck && npm run build"
+    "check": "npm run lint && npm run typecheck && node scripts/check-assets.mjs && npm run build"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
