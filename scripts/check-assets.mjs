@@ -56,6 +56,18 @@ function stripComments(text) {
   while (i < n) {
     const c = text[i];
     const c2 = text[i + 1];
+    // A backslash always escapes the very next character, even at the top
+    // level outside a string or template — a regex literal like
+    // `/\/site\/images\//` relies on this. Without it, the escaped slash's
+    // `/` sits directly next to the regex's own closing `/`, and that pair
+    // reads as a `//` line-comment start, silently eating the rest of the
+    // line. Consuming the backslash and the character it escapes as one
+    // atomic unit means the scanner never lands on that `/` on its own.
+    if (c === "\\" && i + 1 < n) {
+      out += c + c2;
+      i += 2;
+      continue;
+    }
     if (c === "/" && c2 === "/") {
       while (i < n && text[i] !== "\n") i++;
       continue;
@@ -145,8 +157,13 @@ function pixels(file) {
   const h = /pixelHeight:\s*(\d+)/.exec(out);
   return w && h ? { width: +w[1], height: +h[1] } : null;
 }
+// `url:` alongside `src:` because the same declared-dimension convention is
+// used both by component image props (`src`) and by `metadata.openGraph.images`
+// entries (`url`) — e.g. src/app/page.tsx and src/app/layout.tsx's hero-poster
+// OG image. Excluding `url:` would leave two of the 15 known single-line
+// declarations permanently unreachable regardless of the newline fix below.
 const DECL_RE =
-  /src:\s*[`"'](\/site\/images\/[^`"']+)[`"'][\s\S]{0,400}?width:\s*(\d+),\s*\n\s*height:\s*(\d+)/g;
+  /(?:src|url):\s*[`"'](\/site\/images\/[^`"']+)[`"'][\s\S]{0,400}?width:\s*(\d+),\s*height:\s*(\d+)/g;
 for (const { f, resolved } of fileTexts) {
   for (const m of resolved.matchAll(DECL_RE)) {
     const rel = m[1];
@@ -209,12 +226,25 @@ const shotsDir = join(ROOT, "scripts", "shots");
 if (existsSync(shotsDir)) {
   const configs = readdirSync(shotsDir).filter((f) => f.endsWith(".config.mjs"));
   for (const c of configs) {
-    const { default: cfg } = await import(join(shotsDir, c));
-    if (cfg.shots.length === 0) fail(`${c}: zero shots declared`);
+    let cfg;
+    try {
+      ({ default: cfg } = await import(join(shotsDir, c)));
+    } catch (e) {
+      // A config that throws at import time (e.g. defineShots rejecting a
+      // malformed shape) must not crash the whole run — every assertion
+      // already collected above would be discarded along with it.
+      fail(`${c}: ${e.message}`);
+      continue;
+    }
     for (const s of cfg.shots) {
       const name = s.out.startsWith("cover:") ? s.out.slice(6) : s.out;
       const abs = join(PUBLIC, "site", "images", name);
       if (!existsSync(abs)) {
+        // Assertion (3) — zero real captures is a hard failure — is delivered
+        // here, per shot: `defineShots` already refuses an empty `shots`
+        // array at import time (see _schema.mjs), so the only way a slug
+        // ships with zero real captures is every one of its declared shots
+        // failing this existence check.
         fail(`${c}: declared shot ${name} was never captured`);
         continue;
       }
