@@ -42,6 +42,7 @@ import type {
 import type { BlockHeaderPortfolioProps } from "@/components/site/shared/blocks/BlockHeaderPortfolio";
 
 const IMAGES = "/site/images";
+const VIDEOS = "/site/videos";
 
 /**
  * The `<title>` stem, suffixed by the root layout's `"%s — NeuraGul"` template.
@@ -171,6 +172,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
       width: 1200,
       height: 750,
     },
+    video: { src: `${VIDEOS}/nyff-hero.mp4` },
   },
   {
     title: "New York Mobile Mechanic",
@@ -184,6 +186,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
       width: 1200,
       height: 750,
     },
+    video: { src: `${VIDEOS}/nymm-hero-loop.mp4` },
   },
   {
     title: "Delivery routing platform",

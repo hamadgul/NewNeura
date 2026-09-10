@@ -18,8 +18,10 @@
  *                 the sections; we get the same motion — and the same
  *                 re-centring — from a `0fr → 1fr` grid column, with no
  *                 measured widths to keep in sync.
- *   2.48 – 2.83s  the words fade out.
- *   2.53 – 2.93s  the wordmark arrives in their place, overlapping their exit
+ *   2.53 – 4.33s  the five words hold, open and still, long enough to read
+ *                 (`WORDS_HOLD_MS`).
+ *   4.33 – 4.68s  the words fade out.
+ *   4.43 – 4.83s  the wordmark arrives in their place, overlapping their exit
  *                 so the block reads as resolving rather than as being
  *                 replaced. It holds, then the overlay fades out behind it.
  *
@@ -71,8 +73,26 @@ const LETTER_MS = 500;
 const EXPAND_START_MS = LETTERS_START_MS + 1230;
 /** ms for the unfurl. */
 const EXPAND_MS = 1050;
+/**
+ * How long the five expanded words HOLD, fully open and still, before they
+ * start to fade.
+ *
+ * This was 200ms — the words finished unfurling and left again almost in the
+ * same breath, which is long enough to notice the motion and nowhere near long
+ * enough to read five phrases. Requested 2026-09-10: "let it stay there for a
+ * few so that the user can actually have time to read it the full abbreviation
+ * meaning".
+ *
+ * 1800ms is a reading budget, not a round number: the five lines are 46
+ * characters of text, and ~25 characters/second is the slow end of adult silent
+ * reading, so ~1.8s covers a first-time reader who is not expecting words to
+ * appear at all. It puts the whole intro at ~5.5s, which is long for a
+ * preloader — that is the trade this asks for, and it is paid once per document
+ * load, not per navigation (see the note on mounting, above).
+ */
+const WORDS_HOLD_MS = 1800;
 /** ms at which the words start to fade. */
-const WORDS_OUT_MS = EXPAND_START_MS + EXPAND_MS + 200;
+const WORDS_OUT_MS = EXPAND_START_MS + EXPAND_MS + WORDS_HOLD_MS;
 /** ms for the words' fade. */
 const WORDS_OUT_DURATION_MS = 350;
 /**

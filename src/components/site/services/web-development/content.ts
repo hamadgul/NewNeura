@@ -47,6 +47,7 @@ import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWys
 import type { ProjectCard } from "@/types/site";
 
 const IMG = "/site/images";
+const VIDEOS = "/site/videos";
 
 /**
  * Route metadata. `title` is the plain stem, so the root layout's
@@ -341,6 +342,7 @@ const NEW_YORK_MOBILE_MECHANIC: ProjectCard = {
     width: 1200,
     height: 750,
   },
+  video: { src: `${VIDEOS}/nymm-hero-loop.mp4` },
   size: "small",
 };
 
@@ -354,6 +356,7 @@ const NEW_YORK_FINE_FOODS: ProjectCard = {
     width: 1200,
     height: 750,
   },
+  video: { src: `${VIDEOS}/nyff-hero.mp4` },
   size: "small",
 };
 

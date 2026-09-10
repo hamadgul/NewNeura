@@ -30,6 +30,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { cn } from "@/lib/utils";
+import { CardMedia, posterBackdrop } from "@/components/site/shared/CardMedia";
 import { StickyCompanion } from "../StickyCompanion";
 import { ButtonArrow } from "@/components/site/shared/buttons";
 import { ArrowIcon } from "@/components/site/shared/icons";
@@ -57,6 +58,8 @@ export interface CollectionProjectsProject {
   /** Top-tier slugs only — the five entries of `ServiceSlug`. */
   topServices: string[];
   image: CollectionProjectsImage;
+  /** Played in place of `image` when present; `image` is its poster. */
+  video?: { src: string };
 }
 
 /**
@@ -262,12 +265,11 @@ function ProjectCard({
             "ng-image-reveal aspect-[665/415.625] w-full overflow-hidden",
             isRevealed && "is-revealed",
           )}
+          // Poster under a playing loop — see `posterBackdrop`.
+          style={posterBackdrop(project)}
         >
-          <Image
-            src={project.image.src}
-            alt={project.image.alt}
-            width={project.image.width}
-            height={project.image.height}
+          <CardMedia
+            media={project}
             sizes={sizes}
             // The source parks the image at scale(1.02) at rest — an
             // overscale that hides the edges as the wipe settles — and eases

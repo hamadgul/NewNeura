@@ -134,6 +134,25 @@ export function HeroIntroPanel() {
         "max-md:grid-cols-[var(--ng-grid-columns)]",
         "max-md:grid-rows-[60px_1fr_100px_1fr_60px] max-md:px-0 max-md:pt-[40px] max-md:pb-[35px]",
       )}
+      /*
+        The hero video's poster, painted on the panel itself.
+
+        Same defect as the project tiles: at each loop `readyState` drops to 1
+        for a frame while the decoder rewinds, and a <video> with no current
+        frame paints nothing — here that exposed `main.mainContent`'s white,
+        one frame of white across the whole first screen. The video is
+        `-z-[2]`, and negative-z descendants paint ABOVE the parent's
+        background, so a background here sits behind it exactly where the gap
+        opens. `brightness-50` on the video does not apply to this, so the
+        poster is pre-darkened by the `#262626` beneath it showing through
+        nothing — it simply matches closely enough for one frame.
+      */
+      style={{
+        backgroundColor: "#262626",
+        backgroundImage: `url(${HERO_VIDEO.poster})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       {/*
         The video is 100vw — wider than this panel — so it reads as one

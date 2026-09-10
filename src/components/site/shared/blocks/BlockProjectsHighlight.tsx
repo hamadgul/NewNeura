@@ -43,10 +43,10 @@
  * This file is a client component only because `NotchedImageCard` (below) needs
  * an IntersectionObserver; the block itself holds no state.
  */
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ButtonArrow } from "@/components/site/shared/buttons";
+import { CardMedia, posterBackdrop } from "@/components/site/shared/CardMedia";
 // Reused as-is: it already gets the two-element animation split right (reveal on
 // the wrapper, hover zoom on the <img>) and observes an unclipped ancestor.
 import { ImageCard } from "@/components/site/home/ImageCard";
@@ -175,7 +175,11 @@ interface NotchedImageCardProps {
  * `.ng-image-reveal` starts at `clip-path: inset(100% 0 0)`, so an observer
  * pointed at it reports ratio 0 forever and the image never appears.
  */
-function NotchedImageCard({ project, notch, className }: NotchedImageCardProps) {
+function NotchedImageCard({
+  project,
+  notch,
+  className,
+}: NotchedImageCardProps) {
   const cardRef = useRef<HTMLAnchorElement>(null);
   const [revealed, setRevealed] = useState(false);
   const reduceMotion = usePrefersReducedMotion();
@@ -187,15 +191,12 @@ function NotchedImageCard({ project, notch, className }: NotchedImageCardProps) 
     // Reduced motion renders revealed from the start — nothing to observe.
     if (reduceMotion) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setRevealed(true);
-          observer.disconnect(); // one-shot
-        }
-      },
-      REVEAL_OBSERVER_INIT,
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setRevealed(true);
+        observer.disconnect(); // one-shot
+      }
+    }, REVEAL_OBSERVER_INIT);
 
     observer.observe(node);
     return () => observer.disconnect();
@@ -207,7 +208,11 @@ function NotchedImageCard({ project, notch, className }: NotchedImageCardProps) 
     <Link
       ref={cardRef}
       href={project.href}
-      className={cn("imageCard group flex flex-col", !isLarge && "flex-1", className)}
+      className={cn(
+        "imageCard group flex flex-col",
+        !isLarge && "flex-1",
+        className,
+      )}
     >
       <div className={NOTCH_CLASS[notch]}>
         <div
@@ -216,12 +221,10 @@ function NotchedImageCard({ project, notch, className }: NotchedImageCardProps) 
             isLarge ? "aspect-[665/415.63]" : "aspect-[328/205]",
             isRevealed && "is-revealed",
           )}
+          style={posterBackdrop(project)}
         >
-          <Image
-            src={project.image.src}
-            alt={project.image.alt}
-            width={project.image.width}
-            height={project.image.height}
+          <CardMedia
+            media={project}
             className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
           />
         </div>
@@ -241,7 +244,9 @@ function NotchedImageCard({ project, notch, className }: NotchedImageCardProps) 
         <h3 className="imageCard__title min-h-[22px] overflow-hidden text-[#111111] leading-[21.6px]">
           {project.title}
         </h3>
-        <p className="imageCard__location font-XS text-[#747474]">{project.location}</p>
+        <p className="imageCard__location font-XS text-[#747474]">
+          {project.location}
+        </p>
       </div>
     </Link>
   );
@@ -265,8 +270,14 @@ function Layout({ layout, isLast }: LayoutProps) {
        row 1 and the small wrapper row 2, which is already the DOM order. */
     case "one":
       return (
-        <div className={cn(LAYOUT_ROW, "blockProjectsHighlight__layoutOne", pad)}>
-          <NotchedImageCard project={layout.large} notch="topLeft" className={HALF_SPAN} />
+        <div
+          className={cn(LAYOUT_ROW, "blockProjectsHighlight__layoutOne", pad)}
+        >
+          <NotchedImageCard
+            project={layout.large}
+            notch="topLeft"
+            className={HALF_SPAN}
+          />
           <div className={cn(SMALL_WRAPPER, HALF_SPAN)}>
             <ImageCard project={layout.small[0]} className={STICKY_SMALL} />
             <ImageCard project={layout.small[1]} className={STICKY_SMALL} />
@@ -279,7 +290,9 @@ function Layout({ layout, isLast }: LayoutProps) {
        must still lead, hence the order swap up to `xl`. */
     case "two":
       return (
-        <div className={cn(LAYOUT_ROW, "blockProjectsHighlight__layoutTwo", pad)}>
+        <div
+          className={cn(LAYOUT_ROW, "blockProjectsHighlight__layoutTwo", pad)}
+        >
           <div className={cn(SMALL_WRAPPER, HALF_SPAN, "order-2 xl:order-1")}>
             <ImageCard project={layout.small[0]} className={STICKY_SMALL} />
             <ImageCard project={layout.small[1]} className={STICKY_SMALL} />
@@ -306,7 +319,13 @@ function Layout({ layout, isLast }: LayoutProps) {
             pad,
           )}
         >
-          <div className={cn(SMALL_WRAPPER, HALF_SPAN, "order-2 xl:order-1 xl:row-start-1")}>
+          <div
+            className={cn(
+              SMALL_WRAPPER,
+              HALF_SPAN,
+              "order-2 xl:order-1 xl:row-start-1",
+            )}
+          >
             <ImageCard project={layout.small[0]} />
             <ImageCard project={layout.small[1]} />
           </div>
@@ -375,14 +394,11 @@ function Layout({ layout, isLast }: LayoutProps) {
             pad,
           )}
         >
-          <div className="blockProjectsHighlight__layoutFiveImage col-span-full md:row-start-1">
-            <Image
-              src={project.image.src}
-              alt={project.image.alt}
-              width={project.image.width}
-              height={project.image.height}
-              className="h-auto w-full object-cover"
-            />
+          <div
+            className="blockProjectsHighlight__layoutFiveImage col-span-full md:row-start-1"
+            style={posterBackdrop(project)}
+          >
+            <CardMedia media={project} className="h-auto w-full object-cover" />
           </div>
           {/*
             0.85, not the measured 0.6. The panel is a frosted caption card and
@@ -435,7 +451,12 @@ export function BlockProjectsHighlight({
   className,
 }: BlockProjectsHighlightProps) {
   return (
-    <section className={cn("blockProjectsHighlight ng-grid my-[100px] text-[#111111]", className)}>
+    <section
+      className={cn(
+        "blockProjectsHighlight ng-grid my-[100px] text-[#111111]",
+        className,
+      )}
+    >
       <header className="blockProjectsHighlight__header col-start-2 col-end-[-2] mb-[25px] grid grid-cols-subgrid border-b border-[#d6d6d6] pb-[17.5px]">
         {/* `1 / -4` at ≥768 leaves the last four columns for the button; under
             768 the two stack and the button goes full-width and left-aligned. */}
@@ -445,7 +466,11 @@ export function BlockProjectsHighlight({
 
         {button ? (
           <div className="highlightedButton z-50 col-span-full row-start-2 mt-[5px] md:col-start-[-5] md:col-end-[-1] md:row-start-1 md:justify-self-end">
-            <ButtonArrow title={button.title} href={button.href} color="slate" />
+            <ButtonArrow
+              title={button.title}
+              href={button.href}
+              color="slate"
+            />
           </div>
         ) : null}
 

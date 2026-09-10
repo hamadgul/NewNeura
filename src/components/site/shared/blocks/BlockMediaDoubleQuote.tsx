@@ -104,7 +104,28 @@ function MediaFrame({ media, sizes, className, revealClassName }: MediaFrameProp
       // keeps the grid rows stable before metadata loads.
       <div
         className={cn(className, "overflow-hidden")}
-        style={{ aspectRatio: `${media.width} / ${media.height}` }}
+        style={{
+          aspectRatio: `${media.width} / ${media.height}`,
+          /*
+            The poster painted UNDER the video, for the same reason as
+            `home/ImageCard`: at every loop point `readyState` drops to 1
+            (HAVE_METADATA) for a frame or more while the decoder rewinds, and
+            an element with no current frame paints nothing — so the white page
+            behind it blinks through. Measured on the homepage tile as
+            `t=3 rs=4 | t=0 rs=1 | t=0.037 rs=4`.
+
+            `poster` alone does not cover it: a poster shows before playback
+            starts, not during a gap mid-playback. Costs no extra request — it
+            is the same URL the `poster` attribute below fetches.
+          */
+          ...(media.poster
+            ? {
+                backgroundImage: `url(${media.poster})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : null),
+        }}
       >
         <video
           src={media.src}

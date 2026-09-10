@@ -15,9 +15,9 @@
  *  durations/easings racing on the same `transform` property), producing a
  *  visible stutter whenever a visitor hovers before the reveal settles.
  */
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { CardMedia, posterBackdrop } from "@/components/site/shared/CardMedia";
 import type { ProjectCard } from "@/types/site";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { REVEAL_OBSERVER_INIT } from "../shared/reveal";
@@ -46,16 +46,13 @@ export function ImageCard({ project, className }: ImageCardProps) {
     // there is nothing to observe for.
     if (reduceMotion) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setRevealed(true);
-          // One-shot: the reveal never plays again once a card has entered.
-          observer.disconnect();
-        }
-      },
-      REVEAL_OBSERVER_INIT,
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setRevealed(true);
+        // One-shot: the reveal never plays again once a card has entered.
+        observer.disconnect();
+      }
+    }, REVEAL_OBSERVER_INIT);
 
     observer.observe(node);
     return () => observer.disconnect();
@@ -71,7 +68,11 @@ export function ImageCard({ project, className }: ImageCardProps) {
     <a
       ref={cardRef}
       href={project.href}
-      className={cn("imageCard group flex flex-col", !isLarge && "flex-1", className)}
+      className={cn(
+        "imageCard group flex flex-col",
+        !isLarge && "flex-1",
+        className,
+      )}
     >
       <div
         className={cn(
@@ -79,43 +80,13 @@ export function ImageCard({ project, className }: ImageCardProps) {
           isLarge ? "aspect-[665/415.63]" : "aspect-[328/205]",
           isRevealed && "is-revealed",
         )}
+        // Poster under a playing loop — see `posterBackdrop`.
+        style={posterBackdrop(project)}
       >
-        {/*
-          A tile carrying `video` plays it here in place of the still. Same
-          element, same classes, so the two animations described at the top of
-          this file are untouched: the reveal still lives on the wrapper above,
-          the hover zoom still lives on this element.
-
-          `poster` is the tile's own `image`, which is why that field stays
-          required — a poster of a different frame would flash before the first
-          video frame decodes.
-
-          Reduced motion falls back to the still. Everything else on this site
-          honours the preference, and an autoplaying loop is the single most
-          literal thing it asks you not to do; the card loses nothing, since the
-          poster IS the image the tile would otherwise show.
-        */}
-        {project.video && !reduceMotion ? (
-          <video
-            src={project.video.src}
-            poster={project.image.src}
-            autoPlay
-            loop
-            muted
-            // Required alongside `muted` for autoplay to start on iOS Safari.
-            playsInline
-            aria-label={project.image.alt}
-            className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
-          />
-        ) : (
-          <Image
-            src={project.image.src}
-            alt={project.image.alt}
-            width={project.image.width}
-            height={project.image.height}
-            className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
-          />
-        )}
+        <CardMedia
+          media={project}
+          className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
+        />
       </div>
       <div className="imageCard__textWrap mt-[15px] flex flex-col gap-[2px]">
         {/*
@@ -135,7 +106,9 @@ export function ImageCard({ project, className }: ImageCardProps) {
         <h3 className="imageCard__title min-h-[22px] overflow-hidden text-[#111111] leading-[21.6px]">
           {project.title}
         </h3>
-        <p className="imageCard__location font-XS text-[#747474]">{project.location}</p>
+        <p className="imageCard__location font-XS text-[#747474]">
+          {project.location}
+        </p>
       </div>
     </a>
   );
