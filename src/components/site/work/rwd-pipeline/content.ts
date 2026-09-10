@@ -105,8 +105,10 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  *
  * The source page runs three headed sections: "The brief", "What I built" and
  * "Outcome". The first two map onto this block exactly — the active label sits
- * over the `font-L` statement (the brief) and the muted one over the body copy
- * — and the third gets its own `BlockWysiwyg` below.
+ * over the `font-L` statement (the brief) and the muted one over the body copy.
+ * The third, "Outcome", is not a separate block on this page: it was
+ * character-identical to `PROJECT_HEADER.lead`, so it was deleted rather than
+ * printed twice.
  *
  * The second heading reads "What Hamad led" here, not the "What we built" the
  * other eight case studies carry. This work predates NeuraGul and belongs to one

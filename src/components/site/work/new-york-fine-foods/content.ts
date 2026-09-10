@@ -106,7 +106,9 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  * "Outcome". The middle one is rewritten to "What we built" for this site's
  * voice. The first two map onto this block exactly — the active label sits over
  * the `font-L` statement (the brief) and the muted one over the body copy (what
- * was built) — and the third gets its own `BlockWysiwyg` further down.
+ * was built). The third, "Outcome", is not a separate block on this page: it
+ * was character-identical to `PROJECT_HEADER.lead`, so it was deleted rather
+ * than printed twice.
  */
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
   labels: ["The brief", "What we built"],
