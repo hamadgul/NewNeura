@@ -9,13 +9,15 @@
  * header sizes its crop from that ratio rather than from a fixed height.
  *
  * Block-count note: this project has exactly one image and the header already
- * paints it full-bleed, so the page runs four blocks rather than the eleven the
- * inherited template was built for — that sequence existed to carry eighteen
- * architecture photographs. There is deliberately no media block: every one of
- * them needs either a second asset (`BlockMediaDouble`, `BlockMediaDoubleQuote`)
- * or a picture the header has not already shown (`BlockImageFull`), and
- * re-rendering `rwd-pipeline.jpg` through one would be padding rather than
- * evidence. No constant needs numbering, because no block appears twice.
+ * paints it full-bleed, so the page runs three blocks rather than the eleven
+ * the inherited template was built for — that sequence existed to carry
+ * eighteen architecture photographs. There is deliberately no media block:
+ * every one of them needs either a second asset (`BlockMediaDouble`,
+ * `BlockMediaDoubleQuote`) or a picture the header has not already shown
+ * (`BlockImageFull`), and re-rendering `rwd-pipeline.jpg` through one would be
+ * padding rather than evidence. There is also no `BlockWysiwyg` outcome
+ * section — see the note on `PROJECT_INTRO` below. No constant needs
+ * numbering, because no block appears twice.
  *
  * This is also the one project of the nine with no year: its `meta` is
  * "Product · 0-to-1", so the details table below prints a stage where the
@@ -129,8 +131,13 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
  * entries are disciplines rather than technologies — that is what the source
  * ships and what its own page renders as the chip row. The two halves of the
  * `meta` string become the platform and the stage; there is no year to print.
- * The block auto-places pairs, so the four rows read (Stack | Platform) then
- * (Stage | the deck).
+ *
+ * `Stack` stays in this array — `projectIntroTabs` (in `page.tsx`) still reads
+ * it to build the second intro tab — but `projectDetailsWithoutStack` filters
+ * it out before this array reaches `BlockProjectDetails`, so the rendered
+ * table only ever sees the other three rows. The block auto-places pairs, so
+ * those three rows read (Platform | Stage) then (the deck | —, its column
+ * empty, since there is no fourth row to pair with it).
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Stack", value: "Product Management, Agile, Planning" },

@@ -79,8 +79,11 @@
  * in copy ("A landing-page matrix of service crossed with borough"). It simply
  * no longer claims a screenshot is showing it.
  *
- * Ordering note: `BlockMediaDoubleQuote` appears twice and `BlockWysiwyg` four
- * times, so the exported constants are numbered by their position on the page.
+ * Ordering note: `BlockMediaDoubleQuote` appears twice and `BlockWysiwyg`
+ * three times, so the exported constants are numbered by their position on
+ * the page. `BlockWysiwyg` no longer carries a fourth, "Outcome" instance:
+ * its text was character-identical to `PROJECT_HEADER.lead`, so it was
+ * deleted rather than printed twice.
  *
  * VOICE — the source site is written in the first person singular, because it
  * was one person. It is a team, so this site says "we". "What we built" was

@@ -170,8 +170,14 @@ export const PROJECT_MEDIA_QUOTE: BlockMediaDoubleQuoteProps = {
 /**
  * Block 4 — `BlockProjectDetails`. The real facts only: the `stack` list as the
  * source records it, the year and platform split out of the `meta` string, and
- * the live link. The block auto-places pairs, so the four rows read
- * (Stack | Year) then (Platform | live link).
+ * the live link.
+ *
+ * `Stack` stays in this array — `projectIntroTabs` (in `page.tsx`) still reads
+ * it to build the second intro tab — but `projectDetailsWithoutStack` filters
+ * it out before this array reaches `BlockProjectDetails`, so the rendered
+ * table only ever sees the other three rows. The block auto-places pairs, so
+ * those three rows read (Year | Platform) then (Live site | —, its column
+ * empty, since there is no fourth row to pair with it).
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Stack", value: "TypeScript, Next.js, JavaScript" },

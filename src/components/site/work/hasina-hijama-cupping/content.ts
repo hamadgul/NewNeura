@@ -118,8 +118,14 @@ export const PROJECT_OUTCOME: BlockWysiwygProps = {
 };
 
 /**
- * Block 4 — the details row. `BlockProjectDetails` auto-places pairs, so these
- * read (Stack | Year) then (Platform | live link).
+ * Block 4 — the details row.
+ *
+ * `Stack` stays in this array — `projectIntroTabs` (in `page.tsx`) still reads
+ * it to build the second intro tab — but `projectDetailsWithoutStack` filters
+ * it out before this array reaches `BlockProjectDetails`, so the rendered
+ * table only ever sees the other three rows. `BlockProjectDetails` auto-places
+ * pairs, so those three rows read (Year | Platform) then (Live site | —, its
+ * column empty, since there is no fourth row to pair with it).
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Stack", value: "Next.js 16, React 19, TypeScript, Vercel" },

@@ -9,13 +9,15 @@
  * header sizes its crop from that ratio rather than from a fixed height.
  *
  * Block-count note: this project has exactly one image and the header already
- * paints it full-bleed, so the page runs four blocks rather than the eleven the
- * inherited template was built for — that sequence existed to carry eighteen
- * architecture photographs. There is deliberately no media block: every one of
- * them needs either a second asset (`BlockMediaDouble`, `BlockMediaDoubleQuote`)
- * or a picture the header has not already shown (`BlockImageFull`), and
- * re-rendering `vintus.jpg` through one would be padding rather than evidence.
- * No constant needs numbering, because no block appears twice.
+ * paints it full-bleed, so the page runs three blocks rather than the eleven
+ * the inherited template was built for — that sequence existed to carry
+ * eighteen architecture photographs. There is deliberately no media block:
+ * every one of them needs either a second asset (`BlockMediaDouble`,
+ * `BlockMediaDoubleQuote`) or a picture the header has not already shown
+ * (`BlockImageFull`), and re-rendering `vintus.jpg` through one would be
+ * padding rather than evidence. There is also no `BlockWysiwyg` outcome
+ * section — see the note on `PROJECT_INTRO` below. No constant needs
+ * numbering, because no block appears twice.
  *
  * VOICE — the source site is written in the first person singular, because it
  * was one person. It is a team, so this site says "we". "What we built" was
@@ -115,8 +117,14 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
 /**
  * Block 3 — `BlockProjectDetails`. The real facts only: the `stack` list as the
  * source records it, the year and platform split out of the `meta` string, and
- * the live link. The block auto-places pairs, so the four rows read
- * (Stack | Year) then (Platform | live link).
+ * the live link.
+ *
+ * `Stack` stays in this array — `projectIntroTabs` (in `page.tsx`) still reads
+ * it to build the second intro tab — but `projectDetailsWithoutStack` filters
+ * it out before this array reaches `BlockProjectDetails`, so the rendered
+ * table only ever sees the other three rows. The block auto-places pairs, so
+ * those three rows read (Year | Platform) then (Live site | —, its column
+ * empty, since there is no fourth row to pair with it).
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Stack", value: "WordPress, PHP, Python" },
