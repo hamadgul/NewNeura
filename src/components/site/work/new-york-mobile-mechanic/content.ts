@@ -52,6 +52,11 @@
  *                              that block is full-bleed at `h-auto w-full`, so
  *                              a 1.87 portrait would render 2,690px tall at
  *                              1440. The `small` slot caps it at ~990px.
+ *   nymm-hero-loop.mp4
+ *                   1200x750   a 3s loop of the hero alone, gauges counting.
+ *                              Replaced the still in the SECOND media pair on
+ *                              2026-09-10; it is the evidence for the "numbers
+ *                              that move" feature, which a JPEG cannot carry.
  *   nymm-hero.mp4   1200x750   the project's own site capture. Fed to
  *                              `BlockMediaDoubleQuote`'s `type: "video"` arm,
  *                              which is the one media slot on this layout that
@@ -236,15 +241,35 @@ export const PROJECT_FEATURE_TWO: BlockWysiwygProps = {
  * `conversion.png` takes the `small` slot for the reason set out at the top of
  * this file — it is the only portrait asset on the site, and 530px is the
  * widest slot that does not turn 2,203px of phone screen into a scroll of its
- * own. The `large` slot re-uses the cover: it is the only other still this
- * project has, and re-use across a page is how the original layout treats its
- * hero shots too.
+ * own. The `large` slot used to re-use the cover still; it now carries
+ * `nymm-hero-loop.mp4` instead. See the note on the slot below.
  */
 export const PROJECT_MEDIA_QUOTE_TWO: BlockMediaDoubleQuoteProps = {
+  /*
+    A 3-second loop of the hero, not the still it used to be. The point of the
+    slot is `PROJECT_FEATURE_TWO` two blocks up — "Stat gauges count up as they
+    scroll into view" — and a JPEG cannot show a count-up; it shows the number
+    the count ARRIVES at, which is the one frame that proves nothing.
+
+    Locked on the hero, no scroll. `nymm-hero.mp4` in the first media pair
+    already pans down the page; this one holds the exact framing the still had,
+    which is what was asked for: "keep the whole homepage hero in view (as it
+    is currently but just make it a video)".
+
+    1200x750, the still's own pixel size, so the block's `aspectRatio` box does
+    not move. `poster` stays `nymm.jpg` — a frame of this same hero, so there is
+    no flash of a different image before the first frame decodes. The block
+    defaults `autoPlay`/`loop`/`muted` to true and adds `playsInline`, so none
+    of those are restated here.
+
+    Cut against the live count: the gauges move from first paint to settled in
+    ~1.5s, and the clip holds the settled numbers for the remaining ~1.5s so
+    they are readable before the loop restarts. 314KB at crf 25.
+  */
   large: {
-    type: "image",
-    src: `${IMAGES}/nymm.jpg`,
-    alt: "The New York Mobile Mechanic site.",
+    type: "video",
+    src: `${VIDEOS}/nymm-hero-loop.mp4`,
+    poster: `${IMAGES}/nymm.jpg`,
     width: 1200,
     height: 750,
   },
