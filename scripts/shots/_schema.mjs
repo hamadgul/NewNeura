@@ -18,6 +18,20 @@ export function defineShots(slug, shots) {
           `or "cover:" (frozen cover filenames are addressed as cover:<filename>)`
       );
     }
+    // `out` (after stripping the "cover:" prefix) must be a bare filename, not
+    // a path. Ten different subagents author these configs by hand, so a
+    // mistaken relative path — "cover:../../.env" — is a plausible accident,
+    // not an attacker input, but the effect is the same: the runner would
+    // join() it onto public/site/images and write outside that directory.
+    // Failing here, at config-authoring/import time, catches it before any
+    // browser ever launches.
+    const name = s.out.startsWith("cover:") ? s.out.slice(6) : s.out;
+    if (name.includes("/") || name.includes("\\") || name.includes("..")) {
+      throw new Error(
+        `defineShots(${slug}): out "${s.out}" must be a bare filename ` +
+          `(no "/", "\\", or ".." — it is joined onto public/site/images directly)`
+      );
+    }
   }
   return { slug, shots };
 }
