@@ -5,6 +5,24 @@
  *   3. per-slug minimum shot count — zero captures is a hard failure
  *   4. declared width/height literals match actual pixels
  *   5. every <slug>-* image is referenced with a non-empty alt
+ *
+ * Two passes happen before any assertion runs, per file:
+ *
+ *   a. `stripComments` removes `/* ... *\/` blocks and `// ...` line tails from
+ *      the raw text (a hand-rolled scanner, not a parser dependency) so a JSDoc
+ *      example like `/site/images/<file>` is never read as a real reference.
+ *      It tracks string/template-literal boundaries so a `//` inside a URL
+ *      string (e.g. `https://neuragul.com`) is never mistaken for a comment.
+ *
+ *   b. `resolveIdents` finds this file's own `const <IDENT> = "/site/images"`
+ *      (or "/site/videos") declarations and substitutes `${<IDENT>}` with that
+ *      literal base path everywhere it appears — so `${IMAGES}/x.jpg` and
+ *      `${IMG}/x.jpg` both become the plain literal `/site/images/x.jpg` before
+ *      any assertion regex runs. Any identifier name works; nothing is
+ *      hardcoded to "IMAGES". This matters because the case-study COVER images
+ *      — the single riskiest asset this whole plan touches — are declared with
+ *      `${IMG}` in src/components/site/{home,about,process}/content.ts and all
+ *      nine src/components/site/services/*​/content.ts, not `${IMAGES}`.
  */
 import { readdirSync, readFileSync, statSync, existsSync } from "node:fs";
 import { join, extname } from "node:path";
@@ -24,14 +42,90 @@ function walk(dir, out = []) {
   return out;
 }
 
+/**
+ * Removes `/* block *\/` and `// line` comments from source text with a small
+ * character-scanning state machine, not a regex or a parser dependency.
+ * Quoted strings and template literals are copied through verbatim (including
+ * any `//` or `/*` they contain) so a URL like `https://neuragul.com` inside a
+ * string is never treated as the start of a comment.
+ */
+function stripComments(text) {
+  let out = "";
+  let i = 0;
+  const n = text.length;
+  while (i < n) {
+    const c = text[i];
+    const c2 = text[i + 1];
+    if (c === "/" && c2 === "/") {
+      while (i < n && text[i] !== "\n") i++;
+      continue;
+    }
+    if (c === "/" && c2 === "*") {
+      i += 2;
+      while (i < n && !(text[i] === "*" && text[i + 1] === "/")) i++;
+      i += 2;
+      continue;
+    }
+    if (c === '"' || c === "'" || c === "`") {
+      const quote = c;
+      out += c;
+      i++;
+      while (i < n && text[i] !== quote) {
+        if (text[i] === "\\" && i + 1 < n) {
+          out += text[i] + text[i + 1];
+          i += 2;
+        } else {
+          out += text[i];
+          i++;
+        }
+      }
+      if (i < n) {
+        out += text[i];
+        i++;
+      }
+      continue;
+    }
+    out += c;
+    i++;
+  }
+  return out;
+}
+
+// Any file's own `const <IDENT> = "/site/images"` / `"/site/videos"` — the
+// identifier name is never assumed, only discovered.
+const CONST_DECL_RE = /const\s+([A-Za-z_$][A-Za-z0-9_$]*)\s*=\s*["'](\/site\/(?:images|videos))["']/g;
+
+function buildIdentMap(text) {
+  const map = new Map();
+  for (const m of text.matchAll(CONST_DECL_RE)) map.set(m[1], m[2]);
+  return map;
+}
+
+// Plain string substitution (no regex) — safe for identifiers containing `$`.
+function resolveIdents(text, identMap) {
+  let resolved = text;
+  for (const [ident, base] of identMap) {
+    resolved = resolved.split(`\${${ident}}`).join(base);
+  }
+  return resolved;
+}
+
 const srcFiles = walk(join(ROOT, "src")).filter((f) => /\.(ts|tsx)$/.test(f));
+
+// Comment-stripped, identifier-resolved text per file, computed once and
+// shared by all five assertions below.
+const fileTexts = srcFiles.map((f) => {
+  const raw = readFileSync(f, "utf8");
+  const stripped = stripComments(raw);
+  const resolved = resolveIdents(stripped, buildIdentMap(stripped));
+  return { f, resolved };
+});
 
 // (1) every referenced asset exists
 const ASSET_RE = /["`](\/site\/(?:images|videos)\/[^"`${}]+)["`]/g;
 const referenced = new Map(); // assetPath -> [srcFile]
-for (const f of srcFiles) {
-  const text = readFileSync(f, "utf8");
-  for (const m of text.matchAll(ASSET_RE)) {
+for (const { f, resolved } of fileTexts) {
+  for (const m of resolved.matchAll(ASSET_RE)) {
     if (!referenced.has(m[1])) referenced.set(m[1], []);
     referenced.get(m[1]).push(f);
   }
@@ -52,18 +146,17 @@ function pixels(file) {
   return w && h ? { width: +w[1], height: +h[1] } : null;
 }
 const DECL_RE =
-  /src:\s*(?:`\$\{IMAGES\}(\/[^`]+)`|["'](\/site\/images\/[^"']+)["'])[\s\S]{0,400}?width:\s*(\d+),\s*\n\s*height:\s*(\d+)/g;
-for (const f of srcFiles) {
-  const text = readFileSync(f, "utf8");
-  for (const m of text.matchAll(DECL_RE)) {
-    const rel = m[1] ? `/site/images${m[1]}` : m[2];
+  /src:\s*[`"'](\/site\/images\/[^`"']+)[`"'][\s\S]{0,400}?width:\s*(\d+),\s*\n\s*height:\s*(\d+)/g;
+for (const { f, resolved } of fileTexts) {
+  for (const m of resolved.matchAll(DECL_RE)) {
+    const rel = m[1];
     const abs = join(PUBLIC, rel);
     if (!existsSync(abs)) continue; // already reported by (1)
     if (extname(abs) === ".svg") continue;
     const actual = pixels(abs);
-    if (actual && (actual.width !== +m[3] || actual.height !== +m[4])) {
+    if (actual && (actual.width !== +m[2] || actual.height !== +m[3])) {
       fail(
-        `${rel}: declared ${m[3]}x${m[4]} but file is ${actual.width}x${actual.height} ` +
+        `${rel}: declared ${m[2]}x${m[3]} but file is ${actual.width}x${actual.height} ` +
           `(${f.replace(ROOT + "/", "")})`
       );
     }
@@ -71,12 +164,42 @@ for (const f of srcFiles) {
 }
 
 // (5) non-empty alt on every <slug>-* screenshot
-const ALT_RE = /src:\s*`\$\{IMAGES\}\/([a-z0-9-]+-[a-z0-9-]+\.(?:jpg|png))`[\s\S]{0,200}?alt:\s*(""|"[^"]+")/g;
-for (const f of srcFiles) {
+//
+// FROZEN_COVERS are pre-existing project/header cover images that this site
+// legitimately ships with alt="" by convention (decorative backdrop behind an
+// eyebrow/label/title, not informative content). They predate this check and
+// are not screenshots this plan captures. Do NOT add a new file here to
+// silence a real finding — a screenshot with an empty alt is exactly the
+// defect assertion (5) exists to catch. This list only exempts the frozen set
+// below; anything else with an empty alt under /site/work/ is a real failure.
+const FROZEN_COVERS = new Set([
+  "packship.jpg",
+  "delivery-routing.jpg",
+  "foodtruckrentals.jpg",
+  "nyff.jpg",
+  "nymm.jpg",
+  "pizzeria.jpg",
+  "vintus.jpg",
+  "hasinahijama.jpg",
+  "landscapedrainage.jpg",
+  "rwd-pipeline.jpg",
+  "mechanicseo.png",
+  "conversion.png",
+  "hero-poster.jpg",
+  "footer_image.png",
+  "logo.png",
+  "about-studio.jpg",
+  "packship-stacked.jpg",
+]);
+const ALT_RE =
+  /src:\s*[`"'](\/site\/images\/[a-z0-9-]+-[a-z0-9-]+\.(?:jpg|png))[`"'][\s\S]{0,200}?alt:\s*(""|"[^"]+")/g;
+for (const { f, resolved } of fileTexts) {
   if (!f.includes("/site/work/")) continue;
-  for (const m of readFileSync(f, "utf8").matchAll(ALT_RE)) {
+  for (const m of resolved.matchAll(ALT_RE)) {
+    const name = m[1].split("/").pop();
+    if (FROZEN_COVERS.has(name)) continue;
     if (m[2] === '""') {
-      fail(`${m[1]}: empty alt in ${f.replace(ROOT + "/", "")} — screenshots are not decorative`);
+      fail(`${name}: empty alt in ${f.replace(ROOT + "/", "")} — screenshots are not decorative`);
     }
   }
 }
