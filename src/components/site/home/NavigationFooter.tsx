@@ -137,11 +137,25 @@ export function NavigationFooter({ variant = "full" }: NavigationFooterProps = {
     <footer ref={footerRef} className="navigationFooter relative w-full bg-white pt-[120px]">
       <div
         ref={topSectionRef}
-        // Measured live at five viewport sizes (600/852/1000 tall at 393 wide,
-        // 700/900 at 1440): `__topSection` is always exactly the viewport
-        // height. It used to be a px ladder that happened to be right at the
-        // two sizes it was first measured at and wrong everywhere else.
-        className="navigationFooter__topSection relative z-2 flex h-screen w-full flex-col justify-between overflow-hidden bg-[#262626] px-[25px] pb-[80px] text-white md:px-[30px] md:pb-[35px] xl:px-[40px] xl:pb-[35px]"
+        // The source makes this exactly the viewport height (measured live at
+        // 600/852/1000 tall at 393 wide and 700/900 at 1440). We deliberately
+        // do NOT, since 2026-09-10: "Shorten the height of the image in this
+        // section for both mobile and web".
+        //
+        // Why it reads as dead space here and not on the source: this panel has
+        // ONE flex child, and its content is a fixed 420px at desktop / 441px
+        // on a phone no matter how tall the viewport is. At 100vh that left
+        // 480px of empty photograph below the menu at 1440x900 and 411px at
+        // 393x852 — more than half the panel, on a picture with nothing in its
+        // lower half to look at.
+        //
+        // `clamp(620px, 72vh, 820px)` keeps it viewport-relative (so the
+        // parallax amplitude, which is derived from `offsetHeight`, still
+        // scales) while flooring it above the content and capping the run-off.
+        // Resolved: 648px at 1440x900, 620px at 1440x700, 620px on a phone —
+        // roughly 190px of photograph under the menu on desktop and 100px on a
+        // phone, against 411-480px before.
+        className="navigationFooter__topSection relative z-2 flex h-[clamp(620px,72vh,820px)] w-full flex-col justify-between overflow-hidden bg-[#262626] px-[25px] pb-[80px] text-white md:px-[30px] md:pb-[35px] xl:px-[40px] xl:pb-[35px]"
       >
         {/*
           `justify-between`, not `justify-end`. The source lays this panel out
