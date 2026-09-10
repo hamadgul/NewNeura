@@ -1,9 +1,8 @@
 /**
  * Content for `/work/packship/`.
  *
- * Every string is verbatim from the `packship` entry of `CASE_STUDIES` in the
- * NeuraGul source's `pages/content.py`, cross-checked against the built
- * `work/packship/index.html`. Nothing is paraphrased and nothing is invented.
+ * Provenance for every string here is recorded in
+ * `docs/research/case-studies/packship.md`.
  *
  * Image note: PackShip has exactly one asset, `packship.jpg` (1200x750), and it
  * is spent on the page header. There is no second shot, so this page carries no
@@ -12,14 +11,18 @@
  * `features`, and `BlockWysiwyg`'s tagline + title + body shape carries one
  * feature per instance exactly as the source lays them out.
  *
- * Ordering note: `BlockWysiwyg` appears four times (three features, then the
- * outcome), so the exported constants are numbered by their position on the
- * page.
+ * Ordering note: `BlockWysiwyg` appears three times, once per feature, so the
+ * exported constants are numbered by their position on the page. There is no
+ * `PROJECT_OUTCOME` constant: the source's outcome sentence said nothing
+ * `PROJECT_HEADER.lead` did not already say, so the block that duplicated it
+ * was deleted rather than kept as a fourth `BlockWysiwyg` instance.
  *
  * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we", which on this page is
- * the second section's heading: "What we built". Every metric, stack entry,
- * outcome and live URL below is exactly as the source records it.
+ * was one person. It is a team, so this site says "we". "What we built" was
+ * the label on the second intro section before `projectIntroTabs` shipped;
+ * that helper now overwrites both tab labels to "The brief" / "The tech
+ * stack", so "What we built" no longer renders anywhere on this page. Every
+ * metric, stack entry and live URL below is exactly as the source records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
  * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
@@ -27,9 +30,6 @@
  * description — and both were rewritten to compete in a result list rather
  * than to open a page; see the notes on each. Some `alt` strings were also
  * lengthened from a bare project name to a description of the screenshot.
- *
- * Everything a visitor reads is still the source's own: the header, the brief,
- * what we built, the outcome, every metric, stack entry and live URL.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -98,19 +98,8 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
   body: "An iOS app that sizes an item from a photograph, fits it into the right box with a live 3D packing view, then races UPS, FedEx, and USPS rates against each other on screen. React Native on the front, Postgres and Redis behind it so the rate lookups come back fast enough to feel instant.",
 };
 
-/** Block 3 — `BlockWysiwyg` (first instance): the source's "Outcome" section. */
-export const PROJECT_OUTCOME: BlockWysiwygProps = {
-  title: "Outcome",
-  body: [
-    {
-      type: "paragraph",
-      text: "Live on the App Store as a consumer product. A multi-step, error-prone chore became one photo and a tap.",
-    },
-  ],
-};
-
 /**
- * Blocks 4-6 — `BlockWysiwyg` (second, third and fourth instances): the three
+ * Blocks 3-5 — `BlockWysiwyg` (first, second and third instances): the three
  * `features`, in source order.
  *
  * Each feature is a label, a title and a paragraph, which is precisely the
@@ -153,7 +142,7 @@ export const PROJECT_FEATURE_THREE: BlockWysiwygProps = {
 };
 
 /**
- * Block 7 — `BlockProjectDetails`. The live row uses the source's own
+ * Block 6 — `BlockProjectDetails`. The live row uses the source's own
  * `live_label` as its label and the App Store URL as its value; the block
  * renders values as text, so the address is written the way it would be read
  * aloud rather than as an unclickable full URL.

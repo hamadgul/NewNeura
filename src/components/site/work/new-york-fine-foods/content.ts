@@ -1,11 +1,8 @@
 /**
  * Content for `/work/new-york-fine-foods/`.
  *
- * Every string is verbatim from the `new-york-fine-foods` entry of
- * `CASE_STUDIES` in the NeuraGul source's `pages/content.py`, cross-checked
- * against the built `work/new-york-fine-foods/index.html`, which prints the
- * same copy under "The brief", "What I built" and "Outcome". Nothing is
- * paraphrased and nothing is invented.
+ * Provenance for every string here is recorded in
+ * `docs/research/case-studies/new-york-fine-foods.md`.
  *
  * Image sizing note: `width`/`height` are the assets' true decoded pixels
  * (1200x750 for the cover, and the same for the video's stream, per `ffprobe`),
@@ -24,9 +21,11 @@
  * block appears twice.
  *
  * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we", which on this page is
- * the second section's heading: "What we built". Every metric, stack entry,
- * outcome and live URL below is exactly as the source records it.
+ * was one person. It is a team, so this site says "we". "What we built" was
+ * the label on the second intro section before `projectIntroTabs` shipped;
+ * that helper now overwrites both tab labels to "The brief" / "The tech
+ * stack", so "What we built" no longer renders anywhere on this page. Every
+ * metric, stack entry and live URL below is exactly as the source records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
  * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
@@ -34,14 +33,10 @@
  * description — and both were rewritten to compete in a result list rather
  * than to open a page; see the notes on each. Some `alt` strings were also
  * lengthened from a bare project name to a description of the screenshot.
- *
- * Everything a visitor reads is still the source's own: the header, the brief,
- * what we built, the outcome, every metric, stack entry and live URL.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
 import type { BlockMediaDoubleQuoteProps } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
-import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
 import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProjectDetails";
 
 const IMAGES = "/site/images";
@@ -122,24 +117,7 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
 };
 
 /**
- * Block 3 — `BlockWysiwyg`, carrying the source's third headed section.
- *
- * `title` only, no `tagline`: the narrow left column becomes the "Outcome"
- * heading and the wide right column the copy, which is the block's own
- * two-column shape. A tagline would add a second, duplicate label above it.
- */
-export const PROJECT_OUTCOME: BlockWysiwygProps = {
-  title: "Outcome",
-  body: [
-    {
-      type: "paragraph",
-      text: "A live brand site that turns browsing into event inquiries.",
-    },
-  ],
-};
-
-/**
- * Block 4 — `BlockMediaDoubleQuote`, the `type: "video"` arm.
+ * Block 3 — `BlockMediaDoubleQuote`, the `type: "video"` arm.
  *
  * The copy above claims full-bleed motion; this is the block that shows it
  * rather than asserting it, which is the whole reason the project's own capture
@@ -188,7 +166,7 @@ export const PROJECT_MEDIA_QUOTE: BlockMediaDoubleQuoteProps = {
 };
 
 /**
- * Block 5 — `BlockProjectDetails`. The real facts only: the `stack` list as the
+ * Block 4 — `BlockProjectDetails`. The real facts only: the `stack` list as the
  * source records it, the year and platform split out of the `meta` string, and
  * the live link. The block auto-places pairs, so the four rows read
  * (Stack | Year) then (Platform | live link).

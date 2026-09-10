@@ -3,9 +3,11 @@ import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
-import { projectIntroTabs } from "@/components/site/shared/blocks/projectIntroTabs";
+import {
+  projectDetailsWithoutStack,
+  projectIntroTabs,
+} from "@/components/site/shared/blocks/projectIntroTabs";
 import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjectDetails";
-import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
 import {
   PROJECT_CANONICAL,
   PROJECT_DESCRIPTION,
@@ -13,7 +15,6 @@ import {
   PROJECT_HEADER,
   PROJECT_INTRO,
   PROJECT_OG_IMAGE,
-  PROJECT_OUTCOME,
   PROJECT_TITLE,
 } from "@/components/site/work/landscape-drainage-proz/content";
 
@@ -68,23 +69,27 @@ const SCHEMA = [
 /**
  * `/work/landscape-drainage-proz/`.
  *
- * Four blocks, in the order the source page runs its sections:
+ * Three blocks, in the order the source page runs its sections:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what we built)
- *   → BlockWysiwyg (outcome) → BlockProjectDetails
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / the tech stack)
+ *   → BlockProjectDetails
  *
- * The shortest page of the nine, and correctly so: eleven blocks existed to
- * carry eighteen photographs, and this project has one image and three
+ * The shortest page of the ten, and correctly so: eleven blocks existed to
+ * carry eighteen photographs, and this project has one image and two
  * sentences. That image is the header's full-bleed backdrop, so there is no
  * `BlockImageFull` and no media block — every one of them would have to
  * re-render the picture the reader has just scrolled past, which reads as
- * padding because it is.
+ * padding because it is. There is also no `BlockWysiwyg` outcome section: the
+ * source's outcome sentence was an unverifiable claim ("tripled the client's
+ * online sales") that had already been cut from `lead` and the meta
+ * description, so the block carrying it is deleted outright rather than
+ * rewritten — see `content.ts`.
  *
  * Client-boundary note: every constant above comes from this project's plain
- * `content.ts`. `BlockWysiwyg` and `BlockIntroDouble` both carry `"use client"`,
- * so a value imported from one of them would reach this server component as a
- * client-reference proxy and kill the prerender — only their TYPES cross that
- * boundary, and they do it in `content.ts`.
+ * `content.ts`. `BlockIntroDouble` carries `"use client"`, so a value imported
+ * from it would reach this server component as a client-reference proxy and
+ * kill the prerender — only its TYPES cross that boundary, and they do it in
+ * `content.ts`.
  */
 export default function LandscapeDrainageProzPage() {
   return (
@@ -95,8 +100,7 @@ export default function LandscapeDrainageProzPage() {
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
-        <BlockWysiwyg {...PROJECT_OUTCOME} />
-        <BlockProjectDetails details={PROJECT_DETAILS} />
+        <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
       </main>
 
       <NavigationFooter />

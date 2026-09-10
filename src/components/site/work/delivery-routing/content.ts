@@ -1,10 +1,8 @@
 /**
  * Content for `/work/delivery-routing/`.
  *
- * Every string is verbatim from the `delivery-routing` entry of `CASE_STUDIES`
- * in the NeuraGul source's `pages/content.py`, cross-checked against the built
- * `work/delivery-routing/index.html`. Nothing is paraphrased and nothing is
- * invented.
+ * Provenance for every string here is recorded in
+ * `docs/research/case-studies/delivery-routing.md`.
  *
  * Image sizing note: `width`/`height` are the assets' true decoded pixels
  * (1200x750 for the cover, 1600x1000 for the three screens), because
@@ -22,9 +20,12 @@
  * more than once is none of them, so no exported constant needs numbering.
  *
  * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we", which on this page is
- * the second section's heading: "What we built". Every metric, stack entry,
- * outcome and live URL below is exactly as the source records it.
+ * was one person. It is a team, so this site says "we". "What we built" was
+ * the label on the second intro section before `projectIntroTabs` shipped;
+ * that helper now overwrites both tab labels to "The brief" / "The tech
+ * stack", so "What we built" no longer renders anywhere on this page. Every
+ * metric, stack entry, outcome and live URL below is exactly as the source
+ * records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
  * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
@@ -32,9 +33,6 @@
  * description — and both were rewritten to compete in a result list rather
  * than to open a page; see the notes on each. Some `alt` strings were also
  * lengthened from a bare project name to a description of the screenshot.
- *
- * Everything a visitor reads is still the source's own: the header, the brief,
- * what we built, the outcome, every metric, stack entry and live URL.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";

@@ -3,7 +3,10 @@ import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
-import { projectIntroTabs } from "@/components/site/shared/blocks/projectIntroTabs";
+import {
+  projectDetailsWithoutStack,
+  projectIntroTabs,
+} from "@/components/site/shared/blocks/projectIntroTabs";
 import { BlockMediaDoubleQuote } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
 import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjectDetails";
 import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
@@ -19,7 +22,6 @@ import {
   PROJECT_MEDIA_QUOTE_ONE,
   PROJECT_MEDIA_QUOTE_TWO,
   PROJECT_OG_IMAGE,
-  PROJECT_OUTCOME,
   PROJECT_TITLE,
 } from "@/components/site/work/new-york-mobile-mechanic/content";
 
@@ -74,11 +76,15 @@ const SCHEMA = [
 /**
  * `/work/new-york-mobile-mechanic/`.
  *
- * Nine blocks, in the order the source page runs its sections:
+ * Eight blocks, in the order the source page runs its sections:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what we built)
- *   → BlockWysiwyg (outcome) → BlockMediaDoubleQuote → BlockWysiwyg ×2
- *   → BlockMediaDoubleQuote → BlockWysiwyg → BlockProjectDetails
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / the tech stack)
+ *   → BlockMediaDoubleQuote → BlockWysiwyg ×2 → BlockMediaDoubleQuote
+ *   → BlockWysiwyg → BlockProjectDetails
+ *
+ * There is no `BlockWysiwyg` outcome section: the source's outcome sentence
+ * was character-identical to `PROJECT_HEADER.lead`, so it was deleted rather
+ * than printed twice.
  *
  * The two media blocks are placed where the source places its two feature
  * images: each one sits immediately above the feature it illustrates, and
@@ -106,13 +112,12 @@ export default function NewYorkMobileMechanicPage() {
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
-        <BlockWysiwyg {...PROJECT_OUTCOME} />
         <BlockMediaDoubleQuote {...PROJECT_MEDIA_QUOTE_ONE} />
         <BlockWysiwyg {...PROJECT_FEATURE_ONE} />
         <BlockWysiwyg {...PROJECT_FEATURE_TWO} />
         <BlockMediaDoubleQuote {...PROJECT_MEDIA_QUOTE_TWO} />
         <BlockWysiwyg {...PROJECT_FEATURE_THREE} />
-        <BlockProjectDetails details={PROJECT_DETAILS} />
+        <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
       </main>
 
       <NavigationFooter />

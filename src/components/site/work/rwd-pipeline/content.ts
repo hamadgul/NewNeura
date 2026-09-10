@@ -1,10 +1,8 @@
 /**
  * Content for `/work/rwd-pipeline/`.
  *
- * Every string is verbatim from the `rwd-pipeline` entry of `CASE_STUDIES` in
- * the NeuraGul source's `pages/content.py`, cross-checked against the built
- * `work/rwd-pipeline/index.html`, which prints the same copy under "The brief",
- * "What I built" and "Outcome". Nothing is paraphrased and nothing is invented.
+ * Provenance for every string here is recorded in
+ * `docs/research/case-studies/rwd-pipeline.md`.
  *
  * Image sizing note: `width`/`height` are the file's true decoded pixels
  * (1200x750), because `next/image` reserves the aspect ratio from them and the
@@ -36,13 +34,9 @@
  * description — and both were rewritten to compete in a result list rather
  * than to open a page; see the notes on each. Some `alt` strings were also
  * lengthened from a bare project name to a description of the screenshot.
- *
- * Everything a visitor reads is still the source's own: the header, the brief,
- * what we built, the outcome, every metric, stack entry and live URL.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
-import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
 import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProjectDetails";
 
 const IMAGES = "/site/images";
@@ -127,24 +121,7 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
 };
 
 /**
- * Block 3 — `BlockWysiwyg`, carrying the source's third headed section.
- *
- * `title` only, no `tagline`: the narrow left column becomes the "Outcome"
- * heading and the wide right column the copy, which is the block's own
- * two-column shape. A tagline would add a second, duplicate label above it.
- */
-export const PROJECT_OUTCOME: BlockWysiwygProps = {
-  title: "Outcome",
-  body: [
-    {
-      type: "paragraph",
-      text: "A 0-to-1 data pipeline taken from concept to production.",
-    },
-  ],
-};
-
-/**
- * Block 4 — `BlockProjectDetails`. The real facts only.
+ * Block 3 — `BlockProjectDetails`. The real facts only.
  *
  * "Stack" holds the source's `stack` list unchanged even though this project's
  * entries are disciplines rather than technologies — that is what the source

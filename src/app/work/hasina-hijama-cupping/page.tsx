@@ -3,7 +3,10 @@ import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
-import { projectIntroTabs } from "@/components/site/shared/blocks/projectIntroTabs";
+import {
+  projectDetailsWithoutStack,
+  projectIntroTabs,
+} from "@/components/site/shared/blocks/projectIntroTabs";
 import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjectDetails";
 import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
 import {
@@ -70,7 +73,7 @@ const SCHEMA = [
  *
  * Four blocks:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what we built)
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / the tech stack)
  *   → BlockWysiwyg (outcome) → BlockProjectDetails
  *
  * The same four-block shape as `landscape-drainage-proz`, and for the same
@@ -98,7 +101,7 @@ export default function HasinaHijamaCuppingPage() {
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
         <BlockWysiwyg {...PROJECT_OUTCOME} />
-        <BlockProjectDetails details={PROJECT_DETAILS} />
+        <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
       </main>
 
       <NavigationFooter />

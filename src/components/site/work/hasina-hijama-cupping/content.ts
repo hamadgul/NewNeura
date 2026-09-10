@@ -81,7 +81,10 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
 
 /**
  * Block 2 — the brief and what we built, in the two-label variant every case
- * study here uses.
+ * study here uses. `labels` below is the raw pair; on the page,
+ * `projectIntroTabs` overwrites it to "The brief" / "The tech stack" and moves
+ * this section's `statement`/`body` into the first tab, so "What we built"
+ * itself never renders.
  *
  * The build detail is specific because it is the interesting part: six of the
  * ten pages exist to answer one question each ("what does it cost", "do the

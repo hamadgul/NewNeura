@@ -4,7 +4,10 @@ import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockImageFull } from "@/components/site/shared/blocks/BlockImageFull";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
-import { projectIntroTabs } from "@/components/site/shared/blocks/projectIntroTabs";
+import {
+  projectDetailsWithoutStack,
+  projectIntroTabs,
+} from "@/components/site/shared/blocks/projectIntroTabs";
 import { BlockMediaDoubleQuote } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
 import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjectDetails";
 import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
@@ -74,7 +77,7 @@ const SCHEMA = [
  *
  * Six blocks, in the order the source page runs its sections:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what we built)
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / the tech stack)
  *   → BlockWysiwyg (outcome) → BlockImageFull → BlockMediaDoubleQuote
  *   → BlockProjectDetails
  *
@@ -105,7 +108,7 @@ export default function DeliveryRoutingPage() {
         <BlockWysiwyg {...PROJECT_OUTCOME} />
         <BlockImageFull {...PROJECT_IMAGE_FULL} priority />
         <BlockMediaDoubleQuote {...PROJECT_MEDIA_QUOTE} />
-        <BlockProjectDetails details={PROJECT_DETAILS} />
+        <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
       </main>
 
       <NavigationFooter />

@@ -1,10 +1,8 @@
 /**
  * Content for `/work/foodtruckrentals/`.
  *
- * Every string is verbatim from the `foodtruckrentals` entry of `CASE_STUDIES`
- * in the NeuraGul source's `pages/content.py`, cross-checked against the built
- * `work/foodtruckrentals/index.html`. Nothing is paraphrased and nothing is
- * invented.
+ * Provenance for every string here is recorded in
+ * `docs/research/case-studies/foodtruckrentals.md`.
  *
  * Image sizing note: `width`/`height` are the assets' true decoded pixels
  * (1200x750 for the cover, 1600x1000 for the two screens). `next/image`
@@ -17,9 +15,11 @@
  * screenshots, so the caption is the description.
  *
  * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we", which on this page is
- * the second section's heading: "What we built". Every stack entry and live
- * URL below is exactly as the source records it.
+ * was one person. It is a team, so this site says "we". "What we built" was
+ * the label on the second intro section before `projectIntroTabs` shipped;
+ * that helper now overwrites both tab labels to "The brief" / "The tech
+ * stack", so "What we built" no longer renders anywhere on this page. Every
+ * stack entry and live URL below is exactly as the source records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
  * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
@@ -34,12 +34,14 @@
  * that have no source on this machine. Those two sentences were cut; the
  * surrounding claims about JSON-LD, the single pricing module and the 141
  * Vitest tests are unchanged and remain verifiable against
- * `~/Desktop/foodtruckrentals.com`.
+ * `~/Desktop/foodtruckrentals.com`. `PROJECT_OUTCOME` itself is now deleted
+ * outright: what survived the unverifiable-claims cut was character-identical
+ * to `PROJECT_HEADER.lead`, so it duplicated the header rather than adding
+ * anything.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
 import type { BlockMediaDoubleQuoteProps } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
-import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
 import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProjectDetails";
 
 const IMAGES = "/site/images";
@@ -104,19 +106,8 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
   body: "Twenty-four pages of Next.js 16 built around the work itself: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets. Every commercial page carries JSON-LD Service, FAQ, and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 141 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster.",
 };
 
-/** Block 3 — `BlockWysiwyg`: the source's "Outcome" section, in its own place. */
-export const PROJECT_OUTCOME: BlockWysiwygProps = {
-  title: "Outcome",
-  body: [
-    {
-      type: "paragraph",
-      text: "A live national site, indexed and structured to compete well past its first city.",
-    },
-  ],
-};
-
 /**
- * Block 4 — `BlockMediaDoubleQuote`, carrying both of this project's screens.
+ * Block 3 — `BlockMediaDoubleQuote`, carrying both of this project's screens.
  *
  * At `xl` the blockquote sits directly under the *small* media, so the quote is
  * that image's own caption rather than a pull-quote borrowed from elsewhere:
@@ -143,7 +134,7 @@ export const PROJECT_MEDIA_QUOTE: BlockMediaDoubleQuoteProps = {
 };
 
 /**
- * Block 5 — `BlockProjectDetails`. The live row takes the source's own
+ * Block 4 — `BlockProjectDetails`. The live row takes the source's own
  * `live_label` as its label; the block renders values as text, so the address is
  * written the way it would be read rather than as an unclickable full URL.
  */

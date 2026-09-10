@@ -29,3 +29,20 @@ export function projectIntroTabs(
     ],
   };
 }
+
+/**
+ * Drops the `Stack` row from a project's details before they reach
+ * `BlockProjectDetails`.
+ *
+ * `PROJECT_DETAILS` stays the single source of truth for the stack — this
+ * function above (`projectIntroTabs`) still reads the row directly off that
+ * array to build the second intro tab, above the fold. Without this helper,
+ * `BlockProjectDetails` prints the exact same string again at the page foot.
+ * The fix is here, not a `.filter()` copied into ten `page.tsx` files, so the
+ * two call sites can never drift apart.
+ */
+export function projectDetailsWithoutStack(
+  details: readonly ProjectDetail[],
+): ProjectDetail[] {
+  return details.filter((row) => row.label.toLowerCase() !== "stack");
+}

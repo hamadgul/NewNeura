@@ -1,10 +1,8 @@
 /**
  * Content for `/work/new-york-mobile-mechanic/`.
  *
- * Every string is verbatim from the `new-york-mobile-mechanic` entry of
- * `CASE_STUDIES` in the NeuraGul source's `pages/content.py`, cross-checked
- * against the built `work/new-york-mobile-mechanic/index.html`. Nothing is
- * paraphrased and nothing is invented.
+ * Provenance for every string here is recorded in
+ * `docs/research/case-studies/new-york-mobile-mechanic.md`.
  *
  * ── Asset refresh, 2026-09-07 ───────────────────────────────────────────────
  * The client rebuilt the site's homepage hero, so `nymm.jpg` and
@@ -85,9 +83,11 @@
  * times, so the exported constants are numbered by their position on the page.
  *
  * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we", which on this page is
- * the second section's heading: "What we built". Every metric, stack entry,
- * outcome and live URL below is exactly as the source records it.
+ * was one person. It is a team, so this site says "we". "What we built" was
+ * the label on the second intro section before `projectIntroTabs` shipped;
+ * that helper now overwrites both tab labels to "The brief" / "The tech
+ * stack", so "What we built" no longer renders anywhere on this page. Every
+ * metric, stack entry and live URL below is exactly as the source records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
  * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
@@ -95,9 +95,6 @@
  * description — and both were rewritten to compete in a result list rather
  * than to open a page; see the notes on each. Some `alt` strings were also
  * lengthened from a bare project name to a description of the screenshot.
- *
- * Everything a visitor reads is still the source's own: the header, the brief,
- * what we built, the outcome, every metric, stack entry and live URL.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -165,19 +162,8 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
   body: "A high-energy Next.js site with stat gauges that count up as you scroll, plain-language service breakdowns, live Google reviews, and a one-tap call-to-book. Local SEO built to rank across all five boroughs.",
 };
 
-/** Block 3 — `BlockWysiwyg` (first instance): the source's "Outcome" section. */
-export const PROJECT_OUTCOME: BlockWysiwygProps = {
-  title: "Outcome",
-  body: [
-    {
-      type: "paragraph",
-      text: "A conversion-focused site aimed squarely at same-day repair demand.",
-    },
-  ],
-};
-
 /**
- * Block 4 — `BlockMediaDoubleQuote` (first instance): the site itself, moving,
+ * Block 3 — `BlockMediaDoubleQuote` (first instance): the site itself, moving,
  * beside the borough matrix.
  *
  * The video takes the `large` slot; the block renders it with an explicit
@@ -204,7 +190,7 @@ export const PROJECT_MEDIA_QUOTE_ONE: BlockMediaDoubleQuoteProps = {
 };
 
 /**
- * Blocks 5 and 6 — `BlockWysiwyg` (second and third instances): the first two
+ * Blocks 4 and 5 — `BlockWysiwyg` (first and second instances): the first two
  * `features`, in source order.
  *
  * Each feature is a label, a title and a paragraph, which is exactly the
@@ -235,7 +221,7 @@ export const PROJECT_FEATURE_TWO: BlockWysiwygProps = {
 };
 
 /**
- * Block 7 — `BlockMediaDoubleQuote` (second instance): the pinned call-to-book
+ * Block 6 — `BlockMediaDoubleQuote` (second instance): the pinned call-to-book
  * control, with its own caption as the quote.
  *
  * `conversion.png` takes the `small` slot for the reason set out at the top of
@@ -283,7 +269,7 @@ export const PROJECT_MEDIA_QUOTE_TWO: BlockMediaDoubleQuoteProps = {
   quote: "The call-to-book control, pinned so it follows the scroll.",
 };
 
-/** Block 8 — `BlockWysiwyg` (fourth instance): the third and last feature. */
+/** Block 7 — `BlockWysiwyg` (third instance): the third and last feature. */
 export const PROJECT_FEATURE_THREE: BlockWysiwygProps = {
   tagline: "Conversion",
   title: "Panic into a phone call.",
@@ -296,7 +282,7 @@ export const PROJECT_FEATURE_THREE: BlockWysiwygProps = {
 };
 
 /**
- * Block 9 — `BlockProjectDetails`. The live row takes the source's own
+ * Block 8 — `BlockProjectDetails`. The live row takes the source's own
  * `live_label` as its label; the block renders values as text, so the address
  * is written the way it would be read rather than as an unclickable full URL.
  */

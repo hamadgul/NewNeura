@@ -1,18 +1,16 @@
 /**
  * Content for `/work/landscape-drainage-proz/`.
  *
- * Every string is verbatim from the `landscape-drainage-proz` entry of
- * `CASE_STUDIES` in the NeuraGul source's `pages/content.py`, cross-checked
- * against the built `work/landscape-drainage-proz/index.html`, which prints the
- * same copy under "The brief", "What I built" and "Outcome" — with one
- * exception: the source's outcome claim, "tripled the client's online sales,"
- * has no supporting evidence anywhere on this machine (there is no local
- * source for this project at all), so it was cut from every slot that visitors
- * read. `PROJECT_OUTCOME` still prints the source's original sentence for now
- * — that block is being deleted wholesale across every case study in a later
- * pass, and rewriting it here first would collide with that work — but
- * `PROJECT_HEADER.lead` and `PROJECT_DESCRIPTION` no longer repeat it; see the
- * notes on each.
+ * Provenance for every string here is recorded in
+ * `docs/research/case-studies/landscape-drainage-proz.md`. One exception: the
+ * source's outcome claim, "tripled the client's online sales," had no
+ * supporting evidence anywhere on this machine (there is no local source for
+ * this project at all), so it was cut from every slot that visitors read,
+ * including the `PROJECT_OUTCOME` block that used to carry it — that block is
+ * now deleted, not just rewritten, since it was also a character-identical
+ * repeat of `PROJECT_HEADER.lead`. `PROJECT_HEADER.lead` and
+ * `PROJECT_DESCRIPTION` never carried the unverified figure; see the notes on
+ * each.
  *
  * Image sizing note: `width`/`height` are the file's true decoded pixels
  * (1200x750), because `next/image` reserves the aspect ratio from them and the
@@ -29,9 +27,11 @@
  * numbering, because no block appears twice.
  *
  * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we", which on this page is
- * the second section's heading: "What we built". Every stack entry and live
- * URL below is exactly as the source records it.
+ * was one person. It is a team, so this site says "we". "What we built" was
+ * the label on the second intro section before `projectIntroTabs` shipped;
+ * that helper now overwrites both tab labels to "The brief" / "The tech
+ * stack", so "What we built" no longer renders anywhere on this page. Every
+ * stack entry and live URL below is exactly as the source records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
  * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
@@ -45,13 +45,12 @@
  * "tripled the client's online sales" — that figure has no source on this
  * machine and was replaced with a factual description of what was built
  * (Shopify, custom Liquid, plus the CTA design, Google Ads and SEO work
- * around it). `PROJECT_OUTCOME` still carries the source's original claim,
- * left in place deliberately so a later pass that deletes the outcome block
- * across every case study doesn't collide with this one.
+ * around it). `PROJECT_OUTCOME`, which still carried the source's original
+ * claim, is now deleted outright rather than rewritten — see the note at the
+ * top of this file.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
-import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
 import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProjectDetails";
 
 const IMAGES = "/site/images";
@@ -101,9 +100,9 @@ export const PROJECT_LIVE = {
  * printing it in both slots repeated the same sentence inside two screens.
  * This page is the exception: its only outcome claim, "tripled the client's
  * online sales," has no source on this machine, so `lead` instead states what
- * was built — a summary, not a duplicate of the brief or of `PROJECT_OUTCOME`
- * below (which still carries the source's unverifiable line pending a later
- * pass that removes it).
+ * was built — a summary, not a duplicate of the brief. There is no
+ * `PROJECT_OUTCOME` block on this page at all: it used to carry that
+ * unverifiable line, and it is deleted rather than rewritten.
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Landscape Drainage Proz",
@@ -138,28 +137,7 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
 };
 
 /**
- * Block 3 — `BlockWysiwyg`, carrying the source's third headed section.
- *
- * `title` only, no `tagline`: the narrow left column becomes the "Outcome"
- * heading and the wide right column the copy, which is the block's own
- * two-column shape. A tagline would add a second, duplicate label above it.
- *
- * The copy is one short sentence and it is the strongest fact on the page, so
- * it gets the block rather than being appended to the intro body where it would
- * read as a trailing clause.
- */
-export const PROJECT_OUTCOME: BlockWysiwygProps = {
-  title: "Outcome",
-  body: [
-    {
-      type: "paragraph",
-      text: "Tripled the client's online sales.",
-    },
-  ],
-};
-
-/**
- * Block 4 — `BlockProjectDetails`. The real facts only: the `stack` list as the
+ * Block 3 — `BlockProjectDetails`. The real facts only: the `stack` list as the
  * source records it, the year and platform split out of the `meta` string, and
  * the live link. "Shopify" appearing in both the platform and the stack is the
  * source's own duplication and is left alone. The block auto-places pairs, so

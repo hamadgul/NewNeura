@@ -3,7 +3,10 @@ import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
-import { projectIntroTabs } from "@/components/site/shared/blocks/projectIntroTabs";
+import {
+  projectDetailsWithoutStack,
+  projectIntroTabs,
+} from "@/components/site/shared/blocks/projectIntroTabs";
 import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjectDetails";
 import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
 import {
@@ -16,7 +19,6 @@ import {
   PROJECT_HEADER,
   PROJECT_INTRO,
   PROJECT_OG_IMAGE,
-  PROJECT_OUTCOME,
   PROJECT_TITLE,
 } from "@/components/site/work/packship/content";
 
@@ -71,18 +73,20 @@ const SCHEMA = [
 /**
  * `/work/packship/`.
  *
- * Seven blocks, in the order the source page runs its sections:
+ * Six blocks, in the order the source page runs its sections:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what we built)
- *   → BlockWysiwyg (outcome) → BlockWysiwyg ×3 (the three features)
- *   → BlockProjectDetails
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / the tech stack)
+ *   → BlockWysiwyg ×3 (the three features) → BlockProjectDetails
  *
  * There is deliberately **no** media block. PackShip ships one image,
  * `packship.jpg`, and the header spends it; a `BlockImageFull` or
  * `BlockMediaDouble` here could only repeat the shot already at the top of the
  * page. The three written features carry the middle of the page instead, one
  * `BlockWysiwyg` each — which is the same block, and the same tagline / title /
- * body shape, the service sub-pages use.
+ * body shape, the service sub-pages use. There is also no `BlockWysiwyg`
+ * outcome section: the source's outcome sentence said nothing
+ * `PROJECT_HEADER.lead` did not already say, so it was deleted rather than
+ * printed as a near-duplicate fourth `BlockWysiwyg`.
  *
  * Client-boundary note: every constant above comes from this project's plain
  * `content.ts`. `BlockWysiwyg` and `BlockIntroDouble` both carry `"use
@@ -99,11 +103,10 @@ export default function PackShipPage() {
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
-        <BlockWysiwyg {...PROJECT_OUTCOME} />
         <BlockWysiwyg {...PROJECT_FEATURE_ONE} />
         <BlockWysiwyg {...PROJECT_FEATURE_TWO} />
         <BlockWysiwyg {...PROJECT_FEATURE_THREE} />
-        <BlockProjectDetails details={PROJECT_DETAILS} />
+        <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
       </main>
 
       <NavigationFooter />
