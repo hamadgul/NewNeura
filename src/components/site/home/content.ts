@@ -29,6 +29,7 @@ import type {
 } from "@/types/site";
 
 const IMG = "/site/images";
+const VIDEOS = "/site/videos";
 const VIDEO = "/site/videos";
 
 /**
@@ -312,6 +313,16 @@ export const PROJECTS_ROW_TWO: ProjectCard[] = [
       width: 1200,
       height: 750,
     },
+    /*
+      The same 3s hero loop the case study runs. The still stays above it as the
+      poster and the reduced-motion fallback — it is a frame of this very clip,
+      so nothing flashes before the first frame decodes.
+
+      Only this tile moves, and that is the point: six identical still tiles
+      with one that plays reads as the one worth clicking. Six that all play
+      would read as a page that will not sit still.
+    */
+    video: { src: `${VIDEOS}/nymm-hero-loop.mp4` },
     size: "large",
   },
 ];

@@ -73,6 +73,16 @@ export interface ProjectCard {
     width: number;
     height: number;
   };
+  /**
+   * Optional moving version of `image`, played in the tile instead of it.
+   *
+   * `image` stays required and is not redundant: it is the video's poster, the
+   * reduced-motion fallback, and what any consumer that does not know about
+   * video still renders. A tile that sets this must keep the two showing the
+   * same frame, or the poster flashes a different picture before the first
+   * frame decodes.
+   */
+  video?: { src: string };
   /** `large` = 665×471 hero tile, `small` = 328×260 stacked tile. */
   size: "large" | "small";
 }

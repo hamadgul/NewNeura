@@ -80,13 +80,42 @@ export function ImageCard({ project, className }: ImageCardProps) {
           isRevealed && "is-revealed",
         )}
       >
-        <Image
-          src={project.image.src}
-          alt={project.image.alt}
-          width={project.image.width}
-          height={project.image.height}
-          className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
-        />
+        {/*
+          A tile carrying `video` plays it here in place of the still. Same
+          element, same classes, so the two animations described at the top of
+          this file are untouched: the reveal still lives on the wrapper above,
+          the hover zoom still lives on this element.
+
+          `poster` is the tile's own `image`, which is why that field stays
+          required — a poster of a different frame would flash before the first
+          video frame decodes.
+
+          Reduced motion falls back to the still. Everything else on this site
+          honours the preference, and an autoplaying loop is the single most
+          literal thing it asks you not to do; the card loses nothing, since the
+          poster IS the image the tile would otherwise show.
+        */}
+        {project.video && !reduceMotion ? (
+          <video
+            src={project.video.src}
+            poster={project.image.src}
+            autoPlay
+            loop
+            muted
+            // Required alongside `muted` for autoplay to start on iOS Safari.
+            playsInline
+            aria-label={project.image.alt}
+            className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
+          />
+        ) : (
+          <Image
+            src={project.image.src}
+            alt={project.image.alt}
+            width={project.image.width}
+            height={project.image.height}
+            className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
+          />
+        )}
       </div>
       <div className="imageCard__textWrap mt-[15px] flex flex-col gap-[2px]">
         {/*
