@@ -240,7 +240,7 @@ export const WYSIWYG_WHEN_IT_HELPS: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "A problem AI would only decorate:",
-      text: "A brand-activation company was wrapping, staffing, and permitting food trucks for fashion houses and selling all of it without a website. The fix was 24 pages, keyword research shaping the URL structure, and 119 tests holding it in place. No model would have rented a single truck.",
+      text: "A brand-activation company was wrapping, staffing, and permitting food trucks for fashion houses and selling all of it without a website. The fix was 24 pages, keyword research shaping the URL structure, and 141 tests holding it in place. No model would have rented a single truck.",
     },
   ],
 };

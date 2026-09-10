@@ -6,7 +6,7 @@
  * once real users touch it." The evidence is the two builds in
  * `pages/content.py` that describe their own guardrails: the routing platform
  * (fail-closed geocoding, a per-solve travel-matrix budget, 1,278 tests) and
- * foodtruckrentals (119 Vitest tests, one of which fails the build when two
+ * foodtruckrentals (141 Vitest tests, one of which fails the build when two
  * pages compete for a keyword cluster, and JSON-LD generated from a single
  * pricing module).
  *
@@ -109,7 +109,7 @@ export const INTRO: BlockIntroDoubleProps = {
   body: [
     "AI evaluation and guardrails engineering, out of New York. Guardrails ship with the system. They are the part that decides whether the thing survives contact with a real Tuesday, and they are cheapest to build while the code is still being written.",
     "On the routing platform that means three things you can check. Geocoding fails closed, so a location the app cannot trust becomes a flagged task for a human. A per-solve travel-matrix budget makes a runaway maps bill structurally impossible. And 1,278 tests cover the business rules, which is what lets a dispatcher trust a sheet they did not plan themselves.",
-    "The same discipline applies well outside models. The food-truck site carries 119 Vitest tests guarding its URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster. Its JSON-LD Service, FAQ, and LocalBusiness data is generated from a single pricing module, so a published price can never drift away from the page it sits on.",
+    "The same discipline applies well outside models. The food-truck site carries 141 Vitest tests guarding its URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster. Its JSON-LD Service, FAQ, and LocalBusiness data is generated from a single pricing module, so a published price can never drift away from the page it sits on.",
   ],
 };
 
@@ -167,8 +167,8 @@ export const PROCESS: BlockProcessCardSliderProps = {
     {
       number: "03",
       title: "Tests that block the build",
-      caption: "1,278 and 119",
-      text: "1,278 tests cover the routing rules. The food-truck site carries 119 Vitest tests, one of which fails the build outright when two pages start competing for the same keyword cluster. A guardrail nobody can merge past is the only kind that holds.",
+      caption: "1,278 and 141",
+      text: "1,278 tests cover the routing rules. The food-truck site carries 141 Vitest tests, one of which fails the build outright when two pages start competing for the same keyword cluster. A guardrail nobody can merge past is the only kind that holds.",
       image: {
         src: `${IMG}/foodtruckrentals-work.jpg`,
         alt: "The work index: every activation, with the client, the borough, and the year",
@@ -228,7 +228,7 @@ export const WYSIWYG_GUARDRAILS: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Tests that block the merge:",
-      text: "1,278 tests cover the routing rules. On the food-truck site, 119 Vitest tests guard the URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster.",
+      text: "1,278 tests cover the routing rules. On the food-truck site, 141 Vitest tests guard the URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster.",
     },
     {
       type: "paragraph",
@@ -292,7 +292,7 @@ const PACKSHIP: ProjectCard = {
 
 /**
  * Tagged Web Development and Data Intelligence rather than Applied AI, so it
- * does not appear behind the header's filter. It is here because its 119 tests
+ * does not appear behind the header's filter. It is here because its 141 tests
  * are half of what this page is arguing, and a guardrail is a guardrail whether
  * or not a model sits behind it.
  */

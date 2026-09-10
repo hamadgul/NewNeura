@@ -59,7 +59,7 @@ export const PROJECT_CANONICAL = "/work/foodtruckrentals/";
  * The brief itself is untouched and still opens the page.
  */
 export const PROJECT_DESCRIPTION =
-  "A 24-page Next.js site for a New York food truck brand-activation company, built to rank: JSON-LD from one pricing module and 119 tests guarding the structure.";
+  "A 24-page Next.js site for a New York food truck brand-activation company, built to rank: JSON-LD from one pricing module and 141 tests guarding the structure.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/foodtruckrentals.jpg`;
 
 /**
@@ -96,7 +96,7 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
   activeLabel: 0,
   statement:
     "A New York brand-activation company wraps, staffs, and permits food trucks for fashion houses, department stores, and restaurants. They were selling all of it without a website of their own.",
-  body: "Twenty-four pages of Next.js 16 built around the work itself: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets. Every commercial page carries JSON-LD Service, FAQ, and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 119 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster.",
+  body: "Twenty-four pages of Next.js 16 built around the work itself: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets. Every commercial page carries JSON-LD Service, FAQ, and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 141 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster.",
 };
 
 /** Block 3 — `BlockWysiwyg`: the source's "Outcome" section, in its own place. */
