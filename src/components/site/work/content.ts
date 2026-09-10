@@ -173,6 +173,13 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
       height: 750,
     },
     video: { src: `${VIDEOS}/nyff-hero.mp4` },
+    /*
+      Promoted into a large card slot. These two are the only projects whose
+      thumbnail MOVES, and a 334x209 tile is not enough room to notice a
+      3-second count-up or a slideshow cross-fade — the motion reads as a
+      flicker at that size and as the point at 678x424.
+    */
+    featured: true,
   },
   {
     title: "New York Mobile Mechanic",
@@ -187,6 +194,13 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
       height: 750,
     },
     video: { src: `${VIDEOS}/nymm-hero-loop.mp4` },
+    /*
+      Promoted into a large card slot. These two are the only projects whose
+      thumbnail MOVES, and a 334x209 tile is not enough room to notice a
+      3-second count-up or a slideshow cross-fade — the motion reads as a
+      flicker at that size and as the point at 678x424.
+    */
+    featured: true,
   },
   {
     title: "Delivery routing platform",

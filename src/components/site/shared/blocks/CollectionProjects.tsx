@@ -60,6 +60,12 @@ export interface CollectionProjectsProject {
   image: CollectionProjectsImage;
   /** Played in place of `image` when present; `image` is its poster. */
   video?: { src: string };
+  /**
+   * Promote this project into one of the page's LARGE card slots — see
+   * `promoteFeatured`. Set it on the handful whose thumbnail earns the room,
+   * not as a ranking of the work.
+   */
+  featured?: boolean;
 }
 
 /**
@@ -183,6 +189,46 @@ const LAYOUT_SPECS: readonly LayoutSpec[] = [
 const LAYOUT_OFFSETS: readonly number[] = LAYOUT_SPECS.map((_, index) =>
   LAYOUT_SPECS.slice(0, index).reduce((total, spec) => total + spec.size, 0),
 );
+
+/**
+ * The position, within a page, of every large card — `LAYOUT_OFFSETS` plus each
+ * layout's own `large` index. For the five specs above: 0, 5, 6, 10, 11.
+ */
+const LARGE_INDICES: readonly number[] = LAYOUT_SPECS.map(
+  (spec, index) => LAYOUT_OFFSETS[index] + spec.large,
+);
+
+/**
+ * Reorder a page so `featured` projects land on the large slots.
+ *
+ * The layouts decide which POSITIONS are large, and the feed decides which
+ * project sits at each position, so "make these two the bigger thumbnails" is a
+ * question about ordering, not about the layouts. Flagging alone cannot do it:
+ * a layout has exactly one large slot, and both flagged projects were landing
+ * in the same three-card slice.
+ *
+ * Everything not flagged keeps its feed order around them, so this is the
+ * smallest disturbance that gets the result. Flagged projects beyond the number
+ * of large slots simply stay in the queue and are placed like any other card.
+ *
+ * Deliberately computed from `LARGE_INDICES` rather than from the literals
+ * `[0, 5]`: the web-development filter happens to return six projects today,
+ * and a hard-coded pair of indices would silently stop meaning "the large ones"
+ * the moment that count changes.
+ */
+function promoteFeatured(
+  items: CollectionProjectsProject[],
+): CollectionProjectsProject[] {
+  const featured = items.filter((project) => project.featured);
+  if (featured.length === 0) return items;
+
+  const plain = items.filter((project) => !project.featured);
+  return items.map((_, index) =>
+    LARGE_INDICES.includes(index) && featured.length > 0
+      ? (featured.shift() as CollectionProjectsProject)
+      : ((plain.shift() ?? featured.shift()) as CollectionProjectsProject),
+  );
+}
 
 const TARGET_CLASSES = [
   "collectionProjects__targetOne",
@@ -518,9 +564,11 @@ export function CollectionProjects({
 
   // Slice the page across the five layouts, then group the layouts by target.
   const layouts = useMemo(() => {
+    // Featured projects first claim the large slots; see `promoteFeatured`.
+    const ordered = promoteFeatured(pageProjects);
     return LAYOUT_SPECS.map((spec, index) => {
       const offset = LAYOUT_OFFSETS[index];
-      const items = pageProjects.slice(offset, offset + spec.size);
+      const items = ordered.slice(offset, offset + spec.size);
       // A short final page can leave a layout with fewer cards than its
       // template expects; clamp so the lead card is always a real project.
       const largeIndex = Math.min(spec.large, items.length - 1);
