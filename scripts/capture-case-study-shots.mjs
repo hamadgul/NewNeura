@@ -85,30 +85,52 @@ try {
         reducedMotion: "reduce",
       });
       const page = await context.newPage();
-      await page.goto(new URL(shot.route, base).href, { waitUntil: "networkidle" });
+      // NOT "networkidle": a page with a continuously streaming response —
+      // e.g. an autoplaying hero <video>, which several of our target sites
+      // (this one included, plus NY Mobile Mechanic and NY Fine Foods) ship —
+      // never lets the network go quiet, so "networkidle" hangs until
+      // Playwright's timeout and hard-fails the whole batch. Reproduced
+      // directly: this repo's own "/" times out at 30s under "networkidle"
+      // while "domcontentloaded" returns immediately. It is also redundant
+      // here regardless of streaming media — the readiness gates below
+      // (fonts, lazy-image completion) are strictly stronger and more
+      // specific than "network went quiet" for proving a page is painted. Do
+      // not restore "networkidle"; it buys nothing and reintroduces the hang.
+      await page.goto(new URL(shot.route, base).href, { waitUntil: "domcontentloaded" });
 
       if (shot.waitFor) await page.waitForSelector(shot.waitFor, { timeout: 15000 });
       for (const sel of shot.hideSelectors || []) {
         await page.locator(sel).evaluateAll((els) => els.forEach((e) => (e.style.visibility = "hidden")));
       }
 
-      // `networkidle` fires once network activity settles, but that's before
-      // web fonts finish swapping in and before below-the-fold `loading="lazy"`
-      // images even start fetching. A screenshot that races either has the
-      // right dimensions and a plausible byte count — it passes every
-      // automated check we have — and is only catchable by a human looking at
-      // it. So wait on the real signals instead of a blind timeout:
+      // "domcontentloaded" fires before web fonts finish swapping in and
+      // before below-the-fold `loading="lazy"` images even start fetching. A
+      // screenshot that races either has the right dimensions and a
+      // plausible byte count — it passes every automated check we have — and
+      // is only catchable by a human looking at it. So wait on the real
+      // signals instead of a blind timeout:
       //   1. document.fonts.ready — no more font-swap layout shift.
       //   2. scroll to the bottom and back to the top, so IntersectionObserver
       //      lazy-loading actually triggers for every image, then poll until
       //      every <img> reports complete && naturalWidth > 0.
       await page.evaluate(() => document.fonts.ready);
-      await page.evaluate(() => {
-        window.scrollTo(0, document.body.scrollHeight);
-        window.scrollTo(0, 0);
-      });
+      // Scrolling to the bottom and immediately back to top inside one
+      // evaluate() runs both scrollTo calls synchronously with no render
+      // frame in between, so IntersectionObserver never actually sees the
+      // bottom-of-page state and a footer image's lazy fetch never starts.
+      // A short pause between the two scrolls lets the browser paint the
+      // scrolled-down frame so the observer fires before we scroll back up.
+      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+      await page.waitForTimeout(300);
+      await page.evaluate(() => window.scrollTo(0, 0));
+      // waitForFunction's signature is (pageFunction, arg, options) — with a
+      // zero-arg pageFunction, an options object passed as the *second*
+      // parameter is silently taken as `arg` instead, and `options` is left
+      // undefined (falling back to Playwright's 30s default). Pass an
+      // explicit `undefined` arg so the object lands in `options`.
       await page.waitForFunction(
         () => Array.from(document.images).every((img) => img.complete && img.naturalWidth > 0),
+        undefined,
         { timeout: 15000 }
       );
       // Short settle delay as a fallback only — not the primary mechanism —
