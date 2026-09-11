@@ -224,7 +224,7 @@ export const PORTFOLIO_FILTERS: PortfolioFilterItem[] = [
   { label: "Applied AI", count: 2, href: "/work/?service=applied-ai" },
   { label: "Web Development", count: 6, href: "/work/?service=web-development" },
   { label: "App Development", count: 1, href: "/work/?service=app-development" },
-  { label: "Cloud & Infrastructure", count: 2, href: "/work/?service=cloud-infrastructure" },
+  { label: "Cloud & Infrastructure", count: 1, href: "/work/?service=cloud-infrastructure" },
   { label: "Data Intelligence", count: 4, href: "/work/?service=data-intelligence" },
 ];
 

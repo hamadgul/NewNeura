@@ -126,19 +126,21 @@ export const PORTFOLIO_HIGHLIGHTS: CollectionProjectsHighlight[] = [];
  * reserved for one now holds the year and the platform.
  *
  * Applied AI's four sub-services are assigned from what each project actually
- * contains: PackShip is the straight where-does-AI-help call plus an on-device
- * model it needed a custom one for ("ai-strategy", "custom-models"), and the
- * routing platform is an automation aimed at one measurable outcome that fails
- * closed and ships 1,278 tests with it ("retrieval-agents",
- * "evaluation-guardrails"). That gives each of the four children exactly the
- * count `WORK_SERVICE_FILTERS` declares.
+ * contains: PackShip is the straight where-does-AI-help call ("ai-strategy")
+ * and nothing more — its dimension lookup is a gated call to a hosted model and
+ * its packing solver is deterministic, so it earns no "custom-models" (the
+ * on-device model that tag once cited does not exist; user ruling 2026-09-11)
+ * — and the routing platform is an automation aimed at one measurable outcome
+ * that fails closed and ships 1,278 tests with it ("retrieval-agents",
+ * "evaluation-guardrails"). That leaves "custom-models" at zero and gives each
+ * other child exactly the count `WORK_SERVICE_FILTERS` declares.
  */
 export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
   {
     title: "PackShip",
     href: "/work/packship/",
     location: "2026 · iOS",
-    services: ["applied-ai", "ai-strategy", "custom-models", "app-development"],
+    services: ["applied-ai", "ai-strategy", "app-development"],
     topServices: ["applied-ai", "app-development"],
     image: {
       src: `${IMAGES}/packship.jpg`,
@@ -224,8 +226,12 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     title: "Vintus",
     href: "/work/vintus/",
     location: "2026 · WordPress",
-    services: ["cloud-infrastructure", "web-development"],
-    topServices: ["cloud-infrastructure", "web-development"],
+    // `web-development` only (user ruling 2026-09-11): ongoing maintenance and
+    // feature work on an inherited theme. The nginx, HSTS and CSP headers the
+    // site serves are the host's, not infrastructure we built, so no
+    // `cloud-infrastructure`.
+    services: ["web-development"],
+    topServices: ["web-development"],
     image: {
       src: `${IMAGES}/vintus.jpg`,
       alt: "The Vintus wine importer storefront",
@@ -263,6 +269,10 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     title: "Landscape Drainage Proz",
     href: "/work/landscape-drainage-proz/",
     location: "2026 · Shopify",
+    // `data-intelligence` is the measurement layer, not the storefront: seven
+    // Google Ads conversion labels on the web pixel's eleven checkout events,
+    // GTM and GA4, and the Merchant Center link (kept by user ruling
+    // 2026-09-11; see docs/research/case-studies/landscape-drainage-proz.md).
     services: ["web-development", "data-intelligence"],
     topServices: ["web-development", "data-intelligence"],
     image: {

@@ -13,7 +13,7 @@ Queens NY (Jamaica, Ridgewood, Kew Gardens, Kew Gardens Hills, Forest Hills), Br
 
 - [Applied AI](https://neuragul.com/services/applied-ai/): Models, retrieval and agents wired into a workflow you already have, scoped to one problem you can measure.
 - [AI Strategy](https://neuragul.com/services/applied-ai/strategy/): A straight answer about where AI helps and where it would be theatre. The answer is free, and it is sometimes no.
-- [Custom AI Models](https://neuragul.com/services/applied-ai/models/): Fine-tuned and on-device models that live inside the tools a team already opens every day.
+- [Custom AI Models](https://neuragul.com/services/applied-ai/models/): Models wired into the tools a team already opens every day, gated, cached, on the phone or the server.
 - [Retrieval & Agents](https://neuragul.com/services/applied-ai/agents/): RAG and agent workflows aimed at a single measurable outcome.
 - [Evaluation & Guardrails](https://neuragul.com/services/applied-ai/evaluation/): Test sets, regression suites and safety limits, so a system holds up once real users touch it.
 - [Web Development](https://neuragul.com/services/web-development/): Next.js and Shopify sites that load fast, rank across the five boroughs, and stay maintainable after handover.

@@ -54,7 +54,7 @@ export const META = {
   title: "Custom AI Model Development & Integration",
   canonical: "/services/applied-ai/models/",
   description:
-    "Custom AI model development and integration in New York. Fine-tuned and on-device models that live inside the tools your team already opens every day.",
+    "Custom AI model development and integration in New York. Models wired into the tools your team already opens every day, gated, cached, on the phone or the server.",
 } as const;
 
 /**

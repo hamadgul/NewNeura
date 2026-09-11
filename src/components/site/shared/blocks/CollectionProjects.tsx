@@ -132,7 +132,7 @@ export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
     children: [
       { label: "All", slug: "applied-ai" },
       { label: "AI Strategy", slug: "ai-strategy", count: 1 },
-      { label: "Custom Models", slug: "custom-models", count: 1 },
+      { label: "Custom Models", slug: "custom-models", count: 0 },
       { label: "Retrieval & Agents", slug: "retrieval-agents", count: 1 },
       {
         label: "Evaluation & Guardrails",
@@ -143,7 +143,7 @@ export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
   },
   { label: "Web Development", slug: "web-development", count: 6 },
   { label: "App Development", slug: "app-development", count: 1 },
-  { label: "Cloud & Infrastructure", slug: "cloud-infrastructure", count: 2 },
+  { label: "Cloud & Infrastructure", slug: "cloud-infrastructure", count: 1 },
   { label: "Data Intelligence", slug: "data-intelligence", count: 4 },
 ];
 
