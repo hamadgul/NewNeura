@@ -158,8 +158,10 @@ case study already does this in its header `lead`; match that pattern.
 - Delivery routing platform: 1,278 tests, Google OR-Tools, live traffic
   routing, fail-closed geocoding, a per-solve travel-matrix budget, in daily
   production use on Fly.io.
-- PackShip: live on the App Store (`apps.apple.com/app/id6754204899`), an
-  on-device sizing model, a live 3D packing view, three-carrier live rate
+- PackShip: live on the App Store (`apps.apple.com/app/id6754204899`), LiDAR
+  measuring on Pro iPhones, an on-device packing solver (18 of the app's 31 Jest
+  test files cover it; 349 tests across the app) with a live 3D view, a
+  name-or-photo dimension lookup with a confidence gate, three-carrier live rate
   comparison.
 - Food Truck Rentals: 141 Vitest tests, JSON-LD generated from a single
   pricing module (so a published price can never drift from the page it
