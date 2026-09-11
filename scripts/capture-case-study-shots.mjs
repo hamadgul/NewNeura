@@ -103,16 +103,33 @@ try {
         await page.locator(sel).evaluateAll((els) => els.forEach((e) => (e.style.visibility = "hidden")));
       }
 
-      // "domcontentloaded" fires before web fonts finish swapping in and
-      // before below-the-fold `loading="lazy"` images even start fetching. A
-      // screenshot that races either has the right dimensions and a
-      // plausible byte count — it passes every automated check we have — and
-      // is only catchable by a human looking at it. So wait on the real
-      // signals instead of a blind timeout:
+      // "domcontentloaded" fires before web fonts finish swapping in, before
+      // below-the-fold `loading="lazy"` images even start fetching, and
+      // before a CSS `background-image` (this site uses one as a poster
+      // backdrop under autoplay video, specifically to prevent a white flash
+      // — see HeroIntroPanel.tsx, CardMedia.tsx, BlockMediaDoubleQuote.tsx)
+      // has necessarily painted. A screenshot that races any of these has
+      // the right dimensions and a plausible byte count — it passes every
+      // automated check we have — and is only catchable by a human looking
+      // at it. So wait on real signals instead of a blind timeout.
+      //
+      // This gates exactly three things: web fonts, every <img> element, and
+      // every CSS background-image url(...) found via computed style. It
+      // does NOT gate: <video> first-frame paint, SVG <image> hrefs, or
+      // anything injected into the DOM after these waits complete — a shot
+      // that depends on one of those needs its own `waitFor` selector in its
+      // config. Do not read the gates below as "the page is fully settled";
+      // read them as "these three specific things are settled."
       //   1. document.fonts.ready — no more font-swap layout shift.
       //   2. scroll to the bottom and back to the top, so IntersectionObserver
       //      lazy-loading actually triggers for every image, then poll until
       //      every <img> reports complete && naturalWidth > 0.
+      //   3. collect every url(...) inside a computed backgroundImage
+      //      (skipping "none", CSS gradients, and data: URIs — none of those
+      //      need a network wait) and wait for each to settle (load or
+      //      error) before screenshotting. The browser's HTTP cache means
+      //      this never refetches — <img> and background-image elements
+      //      pointed at the same URL share one network request.
       await page.evaluate(() => document.fonts.ready);
       // Scrolling to the bottom and immediately back to top inside one
       // evaluate() runs both scrollTo calls synchronously with no render
@@ -133,8 +150,70 @@ try {
         undefined,
         { timeout: 15000 }
       );
+
+      // Background images: <img> enumeration above sees none of these — a
+      // CSS backgroundImage never appears in document.images. Collect every
+      // fetchable url(...) via computed style first, so a shot with zero
+      // background images (most shots) pays no extra cost and the caller can
+      // log a real count rather than assume the gate found nothing because
+      // it's broken.
+      const bgUrls = await page.evaluate(() => {
+        const found = new Set();
+        for (const el of document.querySelectorAll("*")) {
+          const bg = getComputedStyle(el).backgroundImage;
+          if (!bg || bg === "none") continue;
+          // backgroundImage can list multiple comma-separated layers mixing
+          // url(...) and gradients (linear-gradient(...), etc.) in one
+          // string — only the url(...) layers need a network wait.
+          for (const m of bg.matchAll(/url\((['"]?)(.*?)\1\)/g)) {
+            const raw = m[2];
+            if (!raw || raw.startsWith("data:")) continue;
+            found.add(new URL(raw, document.baseURI).href);
+          }
+        }
+        return Array.from(found);
+      });
+      console.log(`    (${bgUrls.length} background-image url${bgUrls.length === 1 ? "" : "s"})`);
+      if (bgUrls.length > 0) {
+        // Not waitForFunction: that API takes (pageFunction, arg, options),
+        // and the arg/options mixup already bit this file once (see the
+        // comment above). A Node-side Promise.race sidesteps that entirely —
+        // page.evaluate's returned promise races a plain setTimeout, so the
+        // 15s bound applies to the whole batch regardless of how many URLs
+        // there are.
+        await Promise.race([
+          page.evaluate(
+            (urls) =>
+              Promise.all(
+                urls.map(
+                  (u) =>
+                    new Promise((res) => {
+                      const img = new Image();
+                      // Settle (don't hang) on error too — a background image
+                      // that 404s is a content bug for a human to notice in
+                      // the capture, not something this gate should block on
+                      // forever. What this gate exists to prevent is a
+                      // capture that races a background image that WOULD
+                      // have loaded fine, given a little more time.
+                      img.onload = () => res();
+                      img.onerror = () => res();
+                      img.src = u;
+                    })
+                )
+              ),
+            bgUrls
+          ),
+          new Promise((_, reject) =>
+            setTimeout(
+              () => reject(new Error(`background-image wait timed out (15000ms): ${bgUrls.length} url(s)`)),
+              15000
+            )
+          ),
+        ]);
+      }
+
       // Short settle delay as a fallback only — not the primary mechanism —
-      // for anything the two signals above don't cover (e.g. a CSS transition
+      // for anything the signals above don't cover (e.g. a CSS transition
       // still finishing after scroll-to-top).
       await page.waitForTimeout(150);
 
