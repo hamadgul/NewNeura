@@ -129,11 +129,25 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/nymm.jpg`;
  * both llms.txt routes read it; the CONTENT of the topic, combo and area pages
  * lives in `lib/service-topics.ts`, `lib/service-area-combos.ts`,
  * `lib/area-content.ts` and four MDX files, which is why the sentence says
- * "keyed off" and not "became".
+ * "keyed off" and not "became". "Call and Text one tap away on every page":
+ * the mobile-only fixed bottom bar with `Call` (`tel:`) and `Text Now`
+ * (`sms:`) rendered on every route (dossier, "Book and Call are one tap away
+ * on every page"; `conversion.png` is its evidence).
+ *
+ * LENGTH IS MEASURED, NOT CHOSEN. The header's text band is a fixed 500px
+ * from `md` up and the lead shares its columns with the service line; the
+ * lead's slot is three lines at 1280 (xl: lines 12-19, ~27 chars/line). The
+ * previous 145-char lead ran five lines and printed over "Web Development"
+ * by 99x6.5px at 1024, passed the meta row by 35.5px at 1280/1440 and sat
+ * 2.3px from it at 768. This 83-char lead measures 3 lines at 768/1024/1280/
+ * 1440 with the block's own 35px gap intact (lead.bottom - meta.top = -64.7 /
+ * -66.3 / -37.3 / -37.3), 3 lines at 390 and 4 at 320. The "search a stranded
+ * driver types" clause it used to carry is still on the page, in the
+ * `BlockIntroDouble` statement.
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "New York Mobile Mechanic",
-  lead: "117 pages keyed off one config file, every service page an answer to a search a stranded driver types, and the phone one tap away on all of them.",
+  lead: "117 pages keyed off one config file, with Call and Text one tap away on every page.",
   location: "2026 · Web",
   service: "Web Development",
   breadcrumbLabel: "Work",
