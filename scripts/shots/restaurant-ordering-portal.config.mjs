@@ -26,7 +26,7 @@ import { defineShots } from "./_schema.mjs";
  *      already in the environment, so the Neon URL in .env.local is never read. The
  *      Square SANDBOX token in that file is allowed to load (user ruling): the menu is a
  *      live `catalog.list` with no local fallback, and every call this run makes is a
- *      read (`catalog.list`, `orders.search`, `orders.get`).
+ *      read (`catalog.list` and `orders.search`; nothing that calls `orders.get` was visited).
  *   3. A scratch Playwright script (in $SCRATCH, never committed) logs in through the real
  *      /admin/login form, seeds the scratch DB through the app's own admin APIs
  *      (`restaurantName`, `address`, a dummy `sms.authToken` so the masking shows,

@@ -253,7 +253,7 @@ export const PROJECT_MEDIA_BACK_OFFICE: BlockMediaDoubleQuoteProps = {
  * surface (Gap 5, decision 6): code defaults, env vars for the first boot, and
  * a `config_overrides` row that wins over both; 44 admin-editable keys, five
  * masked secrets, the mask-is-a-no-op rule, the delivery provider switch, and
- * the three-attempt dispatch retry with the alert text.
+ * the three-attempts-in-all dispatch ladder with the alert text.
  */
 export const PROJECT_SETTINGS: BlockWysiwygProps = {
   title: "Changes without a developer",
@@ -264,7 +264,7 @@ export const PROJECT_SETTINGS: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "Square, Twilio and Uber Direct credentials are edited on the Integrations page the same way, so a rotated key takes effect without a deploy. The five secret values are returned to the browser masked, and a save that sends the mask back changes nothing. Delivery can switch between the restaurant's own drivers and Uber Direct couriers from the same admin; a failed courier dispatch retries three times and texts the restaurant's alert number if it still fails.",
+      text: "Square, Twilio and Uber Direct credentials are edited on the Integrations page the same way, so a rotated key takes effect without a deploy. The five secret values are returned to the browser masked, and a save that sends the mask back changes nothing. Delivery can switch between the restaurant's own drivers and Uber Direct couriers from the same admin; a failed courier dispatch is tried three times in all, and texts the restaurant's alert number if the third attempt fails.",
     },
   ],
 };
@@ -281,7 +281,7 @@ export const PROJECT_MEDIA_SETTINGS: BlockMediaDoubleQuoteProps = {
   large: {
     type: "image",
     src: `${IMAGES}/restaurant-ordering-portal-settings.jpg`,
-    alt: "The admin Settings page: restaurant name, address and timezone fields each marked 'Last updated by' an admin and a date, above a business-hours editor for every day of the week.",
+    alt: "The admin Settings page: restaurant name and address fields each marked 'Last updated by' an admin and a date, a timezone field, and a business-hours editor for every day of the week.",
     width: 1600,
     height: 1000,
   },

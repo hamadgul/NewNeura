@@ -126,8 +126,10 @@ courier" (`webhooks/square/route.ts:160-179`).
 Google Geocoding from the restaurant's own address) or `UberDirectProvider` (live quote passed
 through to the customer, courier dispatched on the kitchen's PREPARED webhook) according to
 `delivery.provider` — an admin-editable key, so "switch between in-house drivers and Uber
-Direct without a redeploy" (`README.md:23`). Failed dispatches retry on a 3-attempt ladder,
-30s then 120s (`lib/delivery/retry.ts`), picked up by the 5-minute cron.
+Direct without a redeploy" (`README.md:23`). A failed dispatch is tried three times in all —
+one attempt plus two retries, due no sooner than 30s and then 120s later (`MAX_ATTEMPTS = 3`,
+`lib/delivery/retry.ts:1-8`) — and actually re-run by the 5-minute cron, which is the only
+retry driver (`webhooks/square/route.ts:141-144`: the in-process timer was removed).
 
 Smaller, also checkable: an in-memory sliding-window rate limiter on five endpoints
 (`lib/rate-limit.ts`; pay and create-order 10/min, validate-address 30/min, change-password
@@ -152,8 +154,8 @@ checkable, and unmentioned. Ordered by how much a restaurant owner would care.
    per-day hours, delivery on/off, fee, radius, minimum order, prep time, days ahead, order
    cutoff, ready-time estimates, all seven SMS templates, and every credential: 44 keys in
    `ALLOWED_KEYS`. This is the config-precedence system (decision 3).
-3. **A one-tap open/closed switch** on the Orders page that overrides today's hours in either
-   direction and expires at midnight (decision 4).
+3. **A one-tap open/closed switch** on the Orders page that overrides today's weekday's hours
+   in either direction until the admin flips it back or saves that day's hours (decision 4).
 4. **Menu visibility from the admin, POS untouched.** `hidden_items` is keyed by Square item
    id; `getMenu()` filters the customer portal only (`lib/menu.ts:119-133`), and the admin
    Menu page lists everything (`app/api/admin/menu-items/route.ts`, "admin sees everything").
@@ -227,6 +229,7 @@ Each with the command that proves it. Run from `~/Projects/PizzeriaSoftware`.
 | **2s** config cache, **30s** menu cache | `lib/config-resolved.ts:102`, `lib/menu.ts:100` |
 | **5** rate-limited endpoints (10, 10, 30, 5, 10 per minute) | `grep -rn "checkRateLimit(" app/api` |
 | **200** orders per feed, **500** per analytics window | `app/api/admin/orders/route.ts:24`, `analytics/route.ts:38` |
+| **7 / 30 / 90**-day analytics windows | `ALLOWED_DAYS`, `app/api/admin/analytics/route.ts:11` |
 | Orders feed refreshes every **30s** | `app/admin/orders/page.tsx:197` (`README.md:19` says 50 orders / 60s — the code is the record) |
 | **2MB** logo cap, PNG/JPEG/WebP/SVG/GIF | `app/api/admin/upload-logo/route.ts:8-14` |
 | bcrypt cost **12** | `scripts/create-admin.ts:19` |
@@ -280,7 +283,9 @@ booted with `DATABASE_URL`, `PGHOST`, `PGUSER`, `PGPASSWORD`, `PGDATABASE`, `POS
 `AUTH_SECRET`, `AUTH_URL`, `NEXTAUTH_SECRET`, `NEXTAUTH_URL` set on the command line, which
 `@next/env` never overrides from `.env.local`, so the Neon database named in that file was
 never opened. The Square sandbox token in `.env.local` was allowed to load (user ruling); the
-only Square calls made were reads — `catalog.list`, `orders.search`, `orders.get`. No order was
+only Square calls made were reads — `catalog.list` (storefront, checkout, admin menu) and
+`orders.search` (admin orders, analytics); `orders.get` is called only by the confirmation page,
+pay, webhook, cron and the two per-order admin routes, none of which was visited. No order was
 created, no payment made, no SMS sent (Twilio keys are empty in that file anyway).
 
 **Proof the scratch DB was the live one.** `restaurant.config.ts` says `Joe's Pizza`, `123
