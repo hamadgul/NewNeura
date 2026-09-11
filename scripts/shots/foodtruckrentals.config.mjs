@@ -94,8 +94,9 @@ export default defineShots("foodtruckrentals", [
   },
   {
     // Evidence for: "Every price comes from one file." (the pricing section) — `/food-truck-rental`, the
-    // page whose three tiers, `From $1,500`, and JSON-LD `Offer` nodes are all rendered from
-    // `TIERS` in `lib/pricing.ts` (`app/food-truck-rental/page.tsx:10, 123-134`).
+    // page whose lead rate is `PRICE_FLOOR`, whose service-area row is `SERVICE_AREA.label`,
+    // and whose tier table and JSON-LD `Offer` nodes are rendered from `TIERS`, all in
+    // `lib/pricing.ts` (`app/food-truck-rental/page.tsx:10, 170, 190, 123-134`).
     route: "/food-truck-rental",
     viewport: { width: 1600, height: 1000 },
     out: "foodtruckrentals-rental.jpg",

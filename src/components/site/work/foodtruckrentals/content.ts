@@ -62,10 +62,13 @@ export const PROJECT_CANONICAL = "/work/foodtruckrentals/";
  * The meta description, ~150 characters, stating what was built and what
  * holds it in place. The old one said the JSON-LD was "from one pricing
  * module" for every page; seven pages build their offers from it, so this
- * names the two rules the tests actually enforce.
+ * names the two rules the tests actually enforce. "one owner for the New York
+ * query" is scoped on purpose: `tests/nyc-cannibalization.test.ts` guards ONE
+ * cluster (nine NYC phrasings) with one owner; no site-wide one-page-per-query
+ * rule exists.
  */
 export const PROJECT_DESCRIPTION =
-  "A 24-page Next.js site for a New York food truck brand-activation company: one page per search query, prices from one module, 141 Vitest tests guarding it.";
+  "A 24-page Next.js site for a New York food truck brand-activation company: one owner for the New York query, prices from one module, 141 Vitest tests guarding it.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/foodtruckrentals.jpg`;
 
 /**
@@ -85,8 +88,10 @@ export const PROJECT_LIVE = {
  * header's lead slot at 390 px holds five lines (156 px) before the `<h1>`
  * runs into the cover's top edge; a six-line lead overlapped it by 10 px at
  * 390 and 41 px at 360 (`$SCRATCH/ftr-lead.mjs`, candidates swapped into the
- * live slot). 114 characters is four lines at 390 and five at 320, clear at
- * every width. Do not lengthen it without re-measuring. The old lead ("a live
+ * live slot). The shipped 118 characters is four lines at 390 and five at
+ * 320, clear at every width (re-measured after review round 1 scoped the
+ * owner rule to the New York query; 130 and 120 characters overlapped by
+ * 10 px at 320). Do not lengthen it without re-measuring. The old lead ("a live
  * national site, indexed and structured to compete well past its first city")
  * claimed a market the source excludes (`lib/pricing.ts:92-99`) and an outcome
  * it does not record (dossier, Unverifiable 1). The cover is the site's home
@@ -94,7 +99,7 @@ export const PROJECT_LIVE = {
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Food Truck Rentals",
-  lead: "Twenty-four pages, one owner per search query, prices from one module, and 141 Vitest tests holding both in place.",
+  lead: "Twenty-four pages, one owner for the New York query, prices from one file, and 141 Vitest tests holding both in place.",
   location: "2026 · Web",
   service: "Web Development · Data Intelligence",
   breadcrumbLabel: "Work",
@@ -123,7 +128,7 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
   activeLabel: 0,
   statement:
     "A New York brand-activation company wraps, staffs, and permits food trucks for fashion houses, department stores, and restaurants. They were selling all of it without a website of their own.",
-  body: "Next.js 16 and React 19 in TypeScript, Tailwind CSS 4, and Motion for the hero and the roster, with Archivo, Public Sans and Overpass Mono loaded through next/font. Vitest 4 with Testing Library and axe runs 141 tests across 24 files. Twenty-four routes plus seven case studies from one template, deployed on Vercel, with Resend delivering every inquiry to the client's inbox.",
+  body: "Next.js 16 and React 19 in TypeScript, Tailwind CSS 4, and Motion for the hero, the roster and the nav, with Archivo, Public Sans and Overpass Mono loaded through next/font. Vitest 4 with Testing Library and axe runs 141 tests across 24 files. Twenty-four routes plus seven case studies from one template, deployed on Vercel, with Resend delivering every inquiry to the client's inbox.",
 };
 
 /**
@@ -194,7 +199,7 @@ export const PROJECT_PRICING: BlockWysiwygProps = {
 export const PROJECT_IMAGE_RENTAL: BlockImageFullProps = {
   image: {
     src: `${IMAGES}/foodtruckrentals-rental.jpg`,
-    alt: "The rental page: the headline Food truck rental, handled end to end, a lead quoting $1,500 a day and $10,000 from the pricing module, and a facts ledger whose service-area row reads NYC + Long Island, New Jersey & Connecticut, the module's label verbatim.",
+    alt: "The rental page: the headline Food truck rental, handled end to end, a lead whose $1,500 a day is the pricing module's floor, and a facts ledger whose service-area row reads NYC + Long Island, New Jersey & Connecticut, the module's label verbatim.",
     width: 1600,
     height: 1000,
   },
@@ -206,8 +211,9 @@ export const PROJECT_IMAGE_RENTAL: BlockImageFullProps = {
  * Sitemap: `app/sitemap.ts:7-44` (the two failures, dated) and
  * `tests/sitemap-freshness.test.ts:43-70, 93-124`. GBP: `lib/gbp.ts:13-22,
  * 58-67, 84`, `lib/schema.ts:5-8, 77-141`, `tests/gbp.test.ts` ("keeps the
- * telephone out of everything a person can read"), the address test at
- * `tests/nyc-cannibalization.test.ts:237-255`. Specs: `lib/specs.ts:4-24, 106`,
+ * telephone out of everything a person can read"; `:87` no `address` on the
+ * ORG and LOCAL nodes), the page-level address test at
+ * `tests/nyc-cannibalization.test.ts:237-255` (contact + NYC JSON-LD only). Specs: `lib/specs.ts:4-24, 106`,
  * `lib/pricing.ts:101-109`, `tests/specs.test.ts`. The 48-hour wording and the
  * built-HTML scan: `tests/rendered-copy.test.ts:5-19, 21-55`. Seven case
  * studies and the typed slug union: `lib/case-studies.ts:1-16`,
@@ -224,7 +230,7 @@ export const PROJECT_GUARDS: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "The Google Business Profile is wired into the structured data by stable ids, with the listing's spelling of the name carried as an alternate name so the listing and the site resolve to one company, and its hours as read off the profile on 16 August 2026. The listing's telephone number is in the JSON-LD and nowhere a person can read it; a test fails if it leaks into a page or a component. There is no street address on purpose, because the profile hides one, and a second test fails on any address that appears.",
+      text: "The Google Business Profile is wired into the structured data by stable ids, with the listing's spelling of the name carried as an alternate name so the listing and the site resolve to one company, and its hours as read off the profile on 16 August 2026. The listing's telephone number is in the JSON-LD and nowhere a person can read it; a test fails if it leaks into a page or a component. There is no street address on purpose, because the profile hides one, and tests assert that neither company node, nor the contact and NYC pages' own schema, carries one.",
     },
     {
       type: "paragraph",

@@ -46,7 +46,7 @@ July 2026). Email delivery is the Resend REST API (`app/actions/inquiry.ts:52`).
 
 **No CI wiring for the tests.** `package.json` `build` is `next build`; there is no
 `prebuild`/`pretest`, no `.github/`, no `.husky/`. Three source comments say a test "fails
-the build" (`app/sitemap.ts:16-17`, `tests/pricing.test.ts:27`, `lib/pricing.ts:7`); what the
+the build" (`app/sitemap.ts:16-17`, `tests/pricing.test.ts:27`, `tests/agent-files.test.ts:123`); what the
 repo actually does is fail `vitest run`. The page says "fails the test run".
 
 ---
@@ -120,9 +120,11 @@ hidden-address listing (lines 47-56). `lib/schema.ts` gives `Organization`,
 `sameAs`, and puts the telephone in the JSON-LD only: `tests/gbp.test.ts` "keeps the
 telephone out of everything a person can read" fails if the number appears in `app/` or
 `components/` (`lib/gbp.ts:58-67`). No `address` on purpose: the listing hides its address
-because it is a service-area business, and `tests/nyc-cannibalization.test.ts:237-255`
-fails if a `streetAddress` or `PostalAddress` appears. Booted copy: `/` carries
-`"telephone":"+1-516-205-7629"` six times inside `<script type="application/ld+json">` and
+because it is a service-area business; `tests/gbp.test.ts:87` asserts no `address` on the
+`Organization` and `LocalBusiness` nodes, and `tests/nyc-cannibalization.test.ts:237-255`
+asserts no `streetAddress`/`PostalAddress`/`telephone` in the contact and NYC pages' own
+JSON-LD. Neither is a site-wide scan. Booted copy: `/` carries
+the listing's telephone six times inside `<script type="application/ld+json">` and
 zero times in the visible body, on all 31 routes.
 
 **5. Planning ranges, not borrowed specs.** `lib/specs.ts` (2026-08-15) is the answer to a
@@ -393,18 +395,35 @@ task.**
 1. `{file: "src/components/site/services/web-development/content.ts", line: 113, anchor: "Every commercial page on that site carries JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 141 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster.", replacement: "Every published price on that site lives in one module: the machine-readable price sheet and both llms files are generated from it, seven pages build their JSON-LD offers from it, and one of the site's 141 Vitest tests fails the run if a superseded price reappears in any page's copy. Another names the one page allowed to own the New York rental query and fails if a second page claims it.", reason: "the module reaches seven of 24 routes' Offer nodes, not every commercial page (four hard-code minPrice; 138 literal price strings in prose); nothing wires the tests to the build (no CI, build = next build)"}`
 2. `{file: "src/components/site/services/web-development/content.ts", line: 153, anchor: "Food Truck Rentals runs twenty-four pages of Next.js 16 and React 19, from the full-bleed activation hero down to the truck roster that animates along a variable-width axis.", replacement: "Food Truck Rentals runs twenty-four pages of Next.js 16 and React 19, from a hero that shows three wrapped trucks at once down to a client roster whose active name widens on the typeface's width axis without reflowing a single row.", reason: "the hero has been a one-screen three-photograph collage since 2026-08-16 (any-street-hero.tsx:77-80); 'full-bleed activation hero' described the retired pinned scroll section"}`
 3. `{file: "src/components/site/services/web-development/content.ts", line: 196, anchor: "JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. 141 Vitest tests guard the structure.", replacement: "Published prices live in one module that generates the price sheet, both llms files and the JSON-LD offers on seven pages; 141 Vitest tests guard the structure, one of them scanning every page for a superseded price.", reason: "same overstatement as delta 1"}`
-4. `{file: "src/components/site/services/web-development/content.ts", line: 239, anchor: "Twenty-four pages for Food Truck Rentals, indexed and structured to compete well past its first city.", replacement: "Twenty-four pages for Food Truck Rentals, with one owner per search query and a test that keeps it that way.", reason: "'indexed and structured to compete' implies a ranking outcome the repo does not record (Unverifiable 1); mirrors the rewritten header lead"}`
+4. `{file: "src/components/site/services/web-development/content.ts", line: 239, anchor: "Twenty-four pages for Food Truck Rentals, indexed and structured to compete well past its first city.", replacement: "Twenty-four pages for Food Truck Rentals, with one page allowed to own the New York query and a test that keeps it that way.", reason: "'indexed and structured to compete' implies a ranking outcome the repo does not record (Unverifiable 1); mirrors the rewritten header lead"}`
 5. `{file: "src/components/site/services/data-intelligence/content.ts", line: 232, anchor: "On Food Truck Rentals, JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on.", replacement: "On Food Truck Rentals, one pricing module generates the machine-readable price sheet, both llms files and the JSON-LD offers on seven pages, and a test fails the run if a superseded price reappears in any page's copy.", reason: "same overstatement as delta 1"}`
-6. `{file: "src/components/site/services/applied-ai-strategy/content.ts", line: 243, anchor: "The fix was 24 pages, keyword research shaping the URL structure, and 141 tests holding it in place.", replacement: "The fix was 24 pages, one owner per search query, and 141 tests holding it in place.", reason: "optional; 'keyword research shaping the URL structure' is true (docs/KEYWORD-RESEARCH.md, DataForSEO) but the checkable noun is the owner rule; apply or leave"}`
+6. `{file: "src/components/site/services/applied-ai-strategy/content.ts", line: 243, anchor: "The fix was 24 pages, keyword research shaping the URL structure, and 141 tests holding it in place.", replacement: "The fix was 24 pages, one page allowed to own the New York query, and 141 tests holding it in place.", reason: "optional; 'keyword research shaping the URL structure' is true (docs/KEYWORD-RESEARCH.md, DataForSEO) but the checkable noun is the owner rule; apply or leave"}`
 7. `{file: "src/components/site/services/applied-ai-evaluation/content.ts", line: 112, anchor: "The food-truck site carries 141 Vitest tests guarding its URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster. Its JSON-LD Service, FAQ, and LocalBusiness data is generated from a single pricing module, so a published price can never drift away from the page it sits on.", replacement: "The food-truck site carries 141 Vitest tests guarding its URL structure, including one that fails the run if a second page claims the New York rental query the owner page holds. Its published prices live in one module that generates the price sheet, both llms files and the JSON-LD offers on seven pages, with another test scanning every page for a superseded price.", reason: "findings 1 and 2"}`
 8. `{file: "src/components/site/services/applied-ai-evaluation/content.ts", line: 171, anchor: "The food-truck site carries 141 Vitest tests, one of which fails the build outright when two pages start competing for the same keyword cluster.", replacement: "The food-truck site carries 141 Vitest tests, one of which fails the run when a second page claims the search query the owner page holds.", reason: "finding 2"}`
 9. `{file: "src/components/site/services/applied-ai-evaluation/content.ts", line: 231, anchor: "On the food-truck site, 141 Vitest tests guard the URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster.", replacement: "On the food-truck site, 141 Vitest tests guard the URL structure, including one that fails the run if a second page claims the search query the owner page holds.", reason: "finding 2"}`
 10. `{file: "public/llms.txt", line: 28, anchor: "A 24-page Next.js site for a New York brand-activation company. JSON-LD Service, FAQ and LocalBusiness data generated from one pricing module; 141 Vitest tests, one of which fails the build if two pages compete for the same keyword cluster.", replacement: "A 24-page Next.js site for a New York brand-activation company: one pricing module generating the price sheet, both llms files and the JSON-LD offers on seven pages; 141 Vitest tests, one of which fails the run if a second page claims the search query the owner page holds.", reason: "findings 1 and 2; llms.txt is orchestrator-owned"}`
 11. `{file: ".agents/product-marketing.md", line: 166, anchor: "- Food Truck Rentals: 141 Vitest tests, JSON-LD generated from a single", replacement: "- Food Truck Rentals: 141 Vitest tests, a price module that generates the", reason: "the proof-point bullet spans lines 166-168 ('pricing module (so a published price can never drift from the page it sits on), a national, technical-SEO-driven Next.js build.'); the anchor is its first line only, so the controller can rewrite the three-line bullet as: '- Food Truck Rentals: 141 Vitest tests, a price module that generates the machine-readable price sheet and the JSON-LD offers on seven pages (with a test that fails on any superseded price in page copy), one owner page per search query, a Next.js 16 build.' — also drop 'national': lib/pricing.ts:92 and tests/pricing.test.ts:150-163 say NYC metro only and fail on LA/Houston/Vegas"}`
+12. `{file: "src/components/site/services/web-development/content.ts", line: 112, anchor: "Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck actually gets rented.", replacement: "Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a hero that shows three wrapped trucks at once, a client roster whose active name widens on the typeface's width axis without reflowing a row, and a dedicated page for every way a truck actually gets rented.", reason: "sibling of delta 2 in the same body array; the hero has been a one-screen collage since 2026-08-16 (any-street-hero.tsx:77-80)"}`
+13. `{file: "src/components/site/services/applied-ai-evaluation/content.ts", line: 183, anchor: "On the food-truck site, JSON-LD generated from a single pricing module means a published price can never drift away from the page it sits on.", replacement: "On the food-truck site, one pricing module generates the price sheet, both llms files and the JSON-LD offers on seven pages, and a test fails the run if a superseded price reappears in any page's copy.", reason: "same overstatement as delta 1"}`
+14. `{file: "src/components/site/services/applied-ai-evaluation/content.ts", line: 236, anchor: "Every commercial page on that site carries JSON-LD Service, FAQ, and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on.", replacement: "Published prices on that site live in one module that generates the price sheet, both llms files and the JSON-LD offers on seven pages, and a test fails the run if a superseded price reappears in any page's copy.", reason: "same overstatement as delta 1 (the module reaches seven of 24 routes' Offer nodes; four hard-code minPrice)"}`
 
 Three comment-only echoes exist in `applied-ai-evaluation/content.ts:9` and `:295` (doc
 comments, "fails the build") and `data-intelligence/content.ts:8`; no anchor, nothing
 rendered.
+
+**Sweep accounting** (`grep -rn -iE "every commercial page|single pricing module|one pricing
+module|fails the build|full-bleed activation hero|variable-width axis|national" src/
+public/llms.txt .agents/product-marketing.md`, excluding `work/foodtruckrentals/`), every hit:
+`web-development/content.ts:112, 113, 153, 196` → deltas 12, 1, 2, 3;
+`data-intelligence/content.ts:232` → delta 5; `applied-ai-evaluation/content.ts:112, 171,
+183, 231, 236` → deltas 7, 8, 13, 9, 14; `applied-ai-evaluation/content.ts:9` → comment,
+no anchor; `.agents/product-marketing.md:168` ("national") → the third line of delta 11's
+bullet, rewritten in its replacement. Unrelated to this project: "national" on
+`home/content.ts:51`, `BlockHeaderProjects.tsx:18`, `work/vintus/content.ts:84`,
+`cloud-infrastructure/content.ts:114, 221`, `web-development/content.ts:254` (Vintus, a wine
+importer that is national); "fails the build" in `work/delivery-routing/content.ts:17` and
+`work/restaurant-ordering-portal/content.ts:18` (NewNeura's own `check-assets.mjs`, which
+does gate `npm run check`).
 
 **Notes for the user (no anchor, nothing to apply):**
 
@@ -423,7 +442,7 @@ rendered.
 
 ### Anchor uniqueness (so the controller can apply by exact replacement)
 
-Checked at `3231d68` on 2026-09-11 with `grep -cF -- "<anchor>" <file>` and `grep -nF` for the
+Checked at `3231d68` on 2026-09-11 (deltas 12–14 added and all fourteen re-checked at `f890006`) with `grep -cF -- "<anchor>" <file>` and `grep -nF` for the
 line:
 
 | Delta | File | Line | Check | Occurrences | At cited line |
@@ -439,5 +458,8 @@ line:
 | 9 | `services/applied-ai-evaluation/content.ts` | 231 | single-line `grep -cF` | 1 | yes |
 | 10 | `public/llms.txt` | 28 | single-line `grep -cF` | 1 | yes |
 | 11 | `.agents/product-marketing.md` | 166 | single-line `grep -cF` | 1 | yes |
+| 12 | `services/web-development/content.ts` | 112 | single-line `grep -cF` (substring of the line) | 1 | yes |
+| 13 | `services/applied-ai-evaluation/content.ts` | 183 | single-line `grep -cF` (substring of the line) | 1 | yes |
+| 14 | `services/applied-ai-evaluation/content.ts` | 236 | single-line `grep -cF` | 1 | yes |
 
 All are single-line anchors. Re-run the same check before applying if any file has moved on.
