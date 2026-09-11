@@ -87,7 +87,7 @@ export const PROJECT_CANONICAL = "/work/new-york-fine-foods/";
  * numbers are the sitemap count before and after the 2026-08-27 commits.
  */
 export const PROJECT_DESCRIPTION =
-  "A Next.js site for a NYC catering, pizza-truck and mobile-bar brand: 26 pages from a measured 6, ten borough pages each written around a local fact, JSON-LD on every service page.";
+  "A Next.js site for a NYC catering and pizza-truck brand: 26 pages from 6, ten borough and regional pages each built on a local fact, JSON-LD on every service page.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/nyff.jpg`;
 
 /**
@@ -113,7 +113,7 @@ export const PROJECT_LIVE = {
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "New York Fine Foods",
-  lead: "Six indexable pages became twenty-six, each new one built for a search from a specific borough or occasion, from a measured baseline of 29 ranked keywords and about 85 visits a month.",
+  lead: "Six indexable pages became twenty-six, most of them built for a search from a specific borough or occasion, from a measured baseline of 29 ranked keywords and an estimated 85 visits a month.",
   location: "2026 · Web",
   service: "Web Development",
   breadcrumbLabel: "Work",
@@ -158,7 +158,7 @@ export const PROJECT_BASELINE: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "On 27 August 2026 the site had 29 ranked keywords, about 85 organic visits a month and six pages Google could index. Three keywords sat on page one, and all three were the brand's own name. The plan in the repo says it plainly: you cannot rank for terms you have no page for.",
+      text: "On 27 August 2026 the site had 29 ranked keywords, an estimated 85 organic visits a month and six pages Google could index. Three keywords sat on page one, and all three were the brand's own name. The plan in the repo says it plainly: you cannot rank for terms you have no page for.",
     },
     {
       type: "paragraph",
@@ -166,7 +166,7 @@ export const PROJECT_BASELINE: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "The same plan records the one thing code could not fix: the business had no claimed Google Business Profile, and every commercial result page starts with a local pack. Until that profile exists the new pages compete for positions four to ten, and the plan says so in its second section.",
+      text: "The same plan records the one thing code could not fix: the business had no claimed Google Business Profile, and every commercial result page it checked starts with a local pack. Until that profile exists the new pages compete for positions four to ten, and the plan says so in its second section.",
     },
   ],
 };
@@ -188,7 +188,7 @@ export const PROJECT_AREAS: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "Ten catering pages, one per borough or region, each written around a fact that is only true there. The data file that builds them carries the rule in its first lines: if you could swap the area name and the page still read correctly, it is not finished. Brooklyn's page is about the walk-up, four flights with no elevator and a one-way street where the truck cannot idle. Staten Island's is about the driveway. Long Island's is about the four Saturdays in June when half of Nassau and Suffolk throws a graduation party.",
+      text: "Ten catering pages, one per borough or region, each written around a fact that is only true there. The data file that builds them carries the rule in its first lines: if you could swap the area name and the page still read correctly, it is not finished. Brooklyn's page is about the walk-up, four flights with no elevator and a one-way street where the truck cannot idle. Staten Island's is about the driveway. Long Island's is about late May through June, when half of Nassau and Suffolk throws a party on the same four Saturdays.",
     },
     {
       type: "paragraph",
@@ -212,7 +212,7 @@ export const PROJECT_IMAGE_BROOKLYN: BlockImageFullProps = {
  * Search Console figures and the slug ruling: `docs/seo-pizza-truck-plan.md`
  * (2026-07-13), §0 and "GSC baseline". The H1 swap and schema: the 2026-07-22
  * commit (#4), `app/pizza-trucks/page.tsx:36-72`. The spokes: `data/pizza-truck-
- * pages.ts` (hook, 5 faqs, 2 related each) and `minPrice: 1500` in
+ * pages.ts` (hook, 5 faqs, `related` = one sibling spoke + one non-spoke page each) and `minPrice: 1500` in
  * `app/pizza-trucks/[topic]/page.tsx`. The orphaned spokes and the six
  * unlinked mentions: commit `d5d929f` (#6) and `components/ui/rich-text.tsx:4-12`.
  */
@@ -226,7 +226,7 @@ export const PROJECT_HUB: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "Four pages now hang under it, one per occasion or region: weddings, parties, Long Island and Connecticut. Each opens with the reason it exists apart from the hub, carries five questions and links to two of its siblings, and its schema states the client's published starting price. The same day they shipped, a fix commit repaired the internal linking: two of the four spokes had gone out with no link pointing at them, and the corporate page was named on six pages without a keyword-anchored link from any of them, so the plain-text data now carries real links.",
+      text: "Four pages now hang under it, one per occasion or region: weddings, parties, Long Island and Connecticut. Each opens with the reason it exists apart from the hub, carries five questions and links to one sibling and one related page, and its schema states the client's published starting price. The same day they shipped, a fix commit repaired the internal linking: two of the four spokes had gone out with no link pointing at them, and the corporate page was named on six pages without a keyword-anchored link from any of them, so the plain-text data now carries real links.",
     },
   ],
 };
@@ -260,7 +260,7 @@ export const PROJECT_BOOKING: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "The contact form asks which of the three services you want before it asks anything else, then shows only that service's fields: an event type for catering, a location for the truck, a location and a package for the bar. Each submission reaches Formspree tagged with the service it came from. Three shorter forms sit inline on the service hubs, and on a phone a fixed booking bar appears on those three hubs once the menu has scrolled past.",
+      text: "The contact form asks which of the three services you want before it asks anything else, then shows only that service's fields: an event type for catering, a location for the truck, a location and a package for the bar. Each submission reaches Formspree tagged with the service it came from. Three shorter forms sit inline on the service hubs, and on a phone a fixed booking bar appears on those three hubs once the menu or package section comes into view.",
     },
   ],
 };
@@ -303,7 +303,7 @@ export const PROJECT_FRONT_DOOR: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "Every response carries seven security headers from the proxy: a content security policy that limits images to the site's own and one photo host and form posts to Formspree, no framing, a year of HSTS, and a permissions policy that switches off camera, microphone, location and payment. The email address is never in the HTML; it renders after hydration.",
+      text: "Every page response carries seven security headers from the proxy: a content security policy that limits images to the site's own and one photo host and form posts to Formspree, no framing, a year of HSTS, and a permissions policy that switches off camera, microphone, location and payment. The email address is never in the HTML; it renders after hydration.",
     },
   ],
 };

@@ -55,8 +55,8 @@ Six a reader can check rather than an adjective. File references are to the sour
 
 **1. The site was expanded from a measured baseline, and the plan is in the repo.**
 `docs/seo-page-plan-2026-08.md` (committed 2026-08-27) records the starting point, pulled
-from the DataForSEO API that day: **29 ranked keywords, ~85 estimated monthly organic visits,
-6 indexable pages**, with only three keywords on page one and all three branded. Its
+from the DataForSEO API that day: **29 ranked keywords, ~85 ETV (DataForSEO's estimated
+monthly organic visits, not a measurement), 6 indexable pages**, with only three keywords on page one and all three branded. Its
 diagnosis: "You cannot rank for terms you have no page for." The build order it sets is
 sequenced by expected value — `/catering/brooklyn` first (1,300 searches a month in the New
 York DMA, the largest single term), `/corporate-catering` second (the highest cost-per-click
@@ -66,7 +66,8 @@ the two commits of that day ship 20 new URLs: ten `/catering/[area]` pages, four
 (previously `noindex` and empty) and the first three posts. The sitemap went from 6 URLs
 (`git show 1ab1de5^:src/app/sitemap.ts`) to 26 (`app/sitemap.ts`; `/sitemap.xml` on the booted
 copy → 26 `<loc>`). The plan also records what it could NOT fix with code: "There is no claimed Google
-Business Profile … Until this exists, the pages below compete for positions 4–10 only."
+Business Profile … Until this exists, the pages below compete for positions 4–10 only." Its
+local-pack observation covers the five commercial SERPs it checked, not every SERP.
 
 **2. Every area page has to pass a find-and-replace test.** The header of
 `src/data/service-areas.ts:1-9` sets the rule: "Each area MUST carry material that is only
@@ -99,8 +100,10 @@ schema with `areaServed`, a `hasOfferCatalog` built from the nine-item `pizzaMen
 `provider` that references the layout's `Organization` by `@id` rather than duplicating it
 (`app/pizza-trucks/page.tsx:36-72`). The four `/pizza-trucks/[topic]` spokes (weddings,
 parties, long-island, connecticut) each carry a `hook` ("the reason this page exists
-separately"), an occasions/logistics section, five FAQs and two `related` links
-(`data/pizza-truck-pages.ts`), and their schema carries a `minPrice: 1500` offer — the
+separately"), an occasions/logistics section, five FAQs and two `related` links, one to a
+sibling spoke and one to a non-spoke page (weddings → parties + `/mobile-bar`; parties →
+weddings + `/catering`; long-island → `/catering/long-island` + parties; connecticut →
+`/catering/connecticut` + weddings; `data/pizza-truck-pages.ts`), and their schema carries a `minPrice: 1500` offer — the
 client's published starting price.
 
 **4. Prose data carries real links.** The area and spoke pages are plain-string data, which
@@ -120,7 +123,8 @@ the hero, then `webm` (1.8 MB) and `mp4` (2.3 MB) sources are attached, `load()`
 (`LazyVideo`) gets its `src` only within 200 px of the viewport. (The footage itself: see
 Unverifiable 1.)
 
-**6. Every request carries seven security headers from `proxy.ts`.** CSP (`default-src
+**6. Every page response carries seven security headers from `proxy.ts`** (the matcher
+excludes `_next/static`, `_next/image` and image files). CSP (`default-src
 'self'`; images from self, data: and Unsplash only; `connect-src` and `form-action` allow
 Formspree; `frame-ancestors 'none'`), `Referrer-Policy: strict-origin-when-cross-origin`,
 `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `X-XSS-Protection: 0` (per OWASP,
@@ -138,8 +142,8 @@ disabling camera, microphone, geolocation and payment. Confirmed on the booted c
   `EventInquiryForm`, `MobileBarInquiryForm`).
 - **A fixed booking bar on the three hubs, below `lg`.** `components/ui/sticky-booking-bar.tsx`
   appears once the `showAfter` section (the menu on `/pizza-trucks` and `/catering`, the
-  packages on `/mobile-bar`) has scrolled above the viewport and hides while `#book` is on
-  screen. (It is also rendered on the 16 newer pages WITHOUT `showAfter`, where the guard can
+  packages on `/mobile-bar`) intersects the viewport, stays while it is above, and hides
+  while `#book` is on screen (`sticky-booking-bar.tsx:26-31`). (It is also rendered on the 16 newer pages WITHOUT `showAfter`, where the guard can
   never become true — see Notes for the user.)
 - **Sitemap dates are constants, not build time.** `app/sitemap.ts:9-15`: per-page
   `lastModified` constants ("Using a constant avoids the 'lastmod = build time for every
@@ -192,7 +196,7 @@ does for the business.
 
 **The objection this page has to answer:** *"My site looks fine too. What did yours actually
 do?"* Everything checkable in the repo is an answer: a measured baseline (29 keywords, ~85
-visits, 6 pages) and a plan sequenced by demand; ten borough pages each written around a
+visits, 6 pages) and a plan sequenced by demand; ten borough and regional pages each written around a
 fact that is only true there, with a test for thinness written into the data file; a hub
 that kept its slug because it already ranked; a form that asks the one question that decides
 which fields matter. The page argues *mechanism and measurement*, never "cinematic".
@@ -224,7 +228,7 @@ copy) unless noted.
 | **3** blog posts, 2026-08-25/26/27 | `ls content/blog/*.md \| grep -v _example \| wc -l` → 3; `date:` front-matter |
 | **4** `cateringFor` sections, **3** FAQs, **10–12** places, **2** siblings per area | node script over the two area files (task-12-report.md §2) |
 | **12** inline links in the area data | `cat src/data/areas-nyc.ts src/data/areas-tristate.ts \| grep -o '](/' \| wc -l` → 12 |
-| **29** ranked keywords, **~85** ETV, **6** indexable pages, 2026-08-27 | `docs/seo-page-plan-2026-08.md` §1 (DataForSEO, that day) — a dated record in the source, not re-measured |
+| **29** ranked keywords, **~85** ETV (estimated, not measured), **6** indexable pages, 2026-08-27 | `docs/seo-page-plan-2026-08.md` §1 (DataForSEO, that day) — a dated record in the source, not re-measured |
 | **1,300**/mo `catering brooklyn`; **$53.59** CPC / KD **0** `corporate event catering`; **~6,500**/mo addressable | same file, §3–§4 — dated record |
 | Position **8.1** / **88** impressions / **1** click for "pizza truck", 2026-07-13 | `docs/seo-pizza-truck-plan.md` "GSC baseline" — dated record |
 | **7** security headers | `grep -c "headers.set" src/proxy.ts` → 7; `curl -sI http://localhost:3102/` |
