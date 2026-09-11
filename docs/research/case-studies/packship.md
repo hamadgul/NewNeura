@@ -255,6 +255,8 @@ Run from `~/Projects/MagicBoxer` unless stated.
 | AR measuring landed **2025-12-12** | `git log --reverse --format=%ad --date=short -- ios/SmartBoxAI/LidarMeasureModule.swift \| head -1` |
 | App Store **1.2.0**, released **August 18** (2026) | HEAD commit subject; listing at `apps.apple.com/app/id6754204899` fetched 2026-09-11 |
 | **5 / 15 / 3** AR sampling frames | `ios/SmartBoxAI/ARMeasureView.swift:49-51` |
+| **18 of 31** test files are the solver's | `npx jest --listTests \| wc -l` → 31; `npx jest --listTests \| grep -c packing_algo/__tests__` → 18 |
+| **two** subscriptions (plus a free tier) | `backend/utils/subscriptionTiers.js:23-26` `PRODUCT_TIER_MAP` has two product ids (`pro.yearly`, `casual.monthly1`); the App Store listing (fetched 2026-09-11) lists two in-app purchases. `subscriptionPlans.js` also defines an `enterprise` plan with no RevenueCat product mapped, so it is not sold. |
 
 **Numbers deliberately NOT used on the page:** 48 routes, 9 tables, 5,905 lines, 1,452
 commits, the 10/min image cap, the breaker constants. True, checkable, and they measure the
@@ -318,7 +320,7 @@ which is the developer's own device screenshot rendered at 660 px wide.
 | --- | --- | --- |
 | `packship-measure.jpg` (1600x1000) | `CreatePackage.jpg` + the AR frame of `02_build.png` | "Type the dimensions, tap the AI chip beside the name field to look them up, or tap the scan icon beside a field and measure it with the phone's LiDAR." — the form shows the `AI` chip and the three scan icons; the AR screen shows a 6.5" width measured on a keyboard, with the app's own "Ready to measure", the 1–2 step pill, and "Use 6.5"". |
 | `packship-library.jpg` (1600x1000) | `savedItems.jpg` + `savedPackages.jpg` | "What comes back is saved to the account, so the second time is a tap." — four saved items, three of them with the `AI` badge, and three saved packages with item counts. |
-| `packship-lookup.jpg` (1179x2203, portrait slot) | `itemAILookUp.jpg`, status bar cropped | "The lookup refuses a low-confidence answer rather than guessing." — `Product Found · Microsoft Xbox Series X (1TB) · AI Verified`, dimensions and weight, and the screen's own note, which is the block's quote. |
+| `packship-lookup.jpg` (1179x2203, portrait slot) | `itemAILookUp.jpg`, status bar cropped | "the answer comes back as dimensions in inches with a confidence level" — `Product Found · Microsoft Xbox Series X (1TB)`, the `AI Verified` badge (the confidence the app accepted), length / width / height in inches, weight, and the screen's own note, which is the block's quote. The screen shows a high-confidence success; it does not show the refusal path, so the refusal sentence in the same paragraph is carried by the code citation, not by this image. |
 
 **Not on the page, and why.** `3DPackage.jpg` and `shippingRates.jpg` are the two phones of
 the frozen cover (same timestamps, 1:06 and 1:38); repeating either in the body is the Task 8
@@ -329,19 +331,111 @@ cropped away. `FormPage.jpeg` in `demo/` is the old form.
 
 ## Cross-page deltas
 
-The on-device-model sentence is echoed outside this page. Each is a `{file, anchor,
-replacement, reason}`; none applied by this task.
+The cut sentence — an on-device model sizing an item from a photograph, no LiDAR, about a
+centimetre — is echoed outside this page in the files below. Each entry is a
+`{file, anchor, replacement, reason}`; anchors are exact current strings (or, where the
+string wraps, the unique fragment plus its line number). **None applied by this task.**
+Line numbers are from `case-study-expansion` at `1456aaf`.
 
-1. `{file: "src/components/site/services/app-development/content.ts", anchor: "PackShip sizes an item from one photograph to about a centimetre, with the model running on the phone and no LiDAR involved.", replacement: "PackShip measures an item with the phone's LiDAR, or looks its dimensions up by name or photo and refuses a low-confidence answer.", reason: "no on-device model, LiDAR required, no accuracy figure (dossier top section)"}`
-2. `{file: "src/components/site/services/app-development/content.ts", anchor: "React Native on the front, Postgres and Redis behind it, and one codebase that can carry Android when the app calls for it.", replacement: "React Native on the front, an Express backend on Railway with Postgres and Redis behind it, and one codebase that can carry Android when the app calls for it.", reason: "stack now verified; optional, not a falsehood"}`
-3. `{file: "src/components/site/services/applied-ai-strategy/content.ts", anchor: "PackShip answers all three from one photograph, with the model running on the phone that was going to take the photograph anyway. Also a yes.", replacement: "PackShip answers all three from a name, a photo or a LiDAR scan, with the packing solver running on the phone and the lookup behind a confidence gate. Also a yes.", reason: "no on-device model; the thing that runs on the phone is the solver"}`
-4. `{file: "src/components/site/services/applied-ai-models/content.ts", anchor: "PackShip's sizing model runs on the phone that was going to take the photograph anyway, so nobody has to open a second app, upload anything, or wait on a round trip to a server.", replacement: "PackShip's packing solver runs on the phone, so choosing a box never waits on a server; the dimension lookup is a server call with a seven-day cache and a confidence gate.", reason: "the lookup IS a round trip to a server (backend/api/openai.js); only the solver is on-device"}`
-5. `{file: "src/components/site/services/applied-ai-models/content.ts", anchor: "PackShip's whole job happens inside the camera flow somebody was going to use regardless.", replacement: "PackShip's whole job happens inside the form somebody fills to ship a parcel: a name, a photo or a LiDAR scan, and the box and rate follow.", reason: "there is no camera-only flow; the form is the entry point (CreatePackage.jpg)"}`
-6. `{file: "src/components/site/services/applied-ai-models/content.ts", anchor: "PackShip, layer by layer", replacement: "(unchanged title) — but the three feature bodies under it are copies of the old packship features (`content.py`), including the on-device-model sentence; they need the same rewrite as this page's PROJECT_MEASURE / PROJECT_LOOKUP / PROJECT_RATES paragraphs", reason: "applied-ai-models/content.ts:203-209 says its bodies are PackShip's three features verbatim"}`
-7. `{file: "public/llms.txt", anchor: "An iOS app that answers box size, shipping cost and carrier from one photo, using a model that runs on the device.", replacement: "An iOS app that measures an item with LiDAR or looks it up by name or photo, packs it into the smallest carrier box in 3D on the phone, and compares live UPS, USPS and FedEx rates.", reason: "same falsehood; llms.txt is orchestrator-owned"}`
-8. `{file: ".agents/product-marketing.md", anchor: "PackShip: live on the App Store (`apps.apple.com/app/id6754204899`), an on-device sizing model, a live 3D packing view, three-carrier live rate comparison.", replacement: "PackShip: live on the App Store (`apps.apple.com/app/id6754204899`), LiDAR measuring on Pro iPhones, an on-device packing solver with 349 tests and a live 3D view, a name-or-photo dimension lookup with a confidence gate, three-carrier live rate comparison.", reason: "the proof-point list feeds every later copy pass; it must not hand the cut claim to Tasks 11-17"}`
-9. `{file: "src/components/site/home/content.ts", anchor: "alt: \"PackShip on iOS\"", replacement: "(no change required)", reason: "recorded only: the two home alts are generic and remain true; the cover was not re-captured"}`
-10. `{file: "src/components/site/services/app-development/content.ts", anchor: "the process slider also reuses `packship.jpg`, because it is the only mobile", replacement: "(no change required; note only)", reason: "three new PackShip images now exist (`packship-measure.jpg`, `packship-library.jpg`, `packship-lookup.jpg`) if the App Development page wants a second mobile image; the orchestrator's call"}`
+**The reasons, shared, so they are not repeated eighteen times:** (a) no on-device model
+exists (`grep` of `src/`, all of git history); (b) measuring is ARKit `sceneDepth` and is
+gated on LiDAR (`LidarMeasureModule.swift:42-43`, `FormPage.jsx:660-673`); (c) the photo path
+is a server call to `gpt-4o` that returns a product name (`backend/api/openai.js:288-307`);
+(d) no accuracy figure exists anywhere ("about a centimetre" is measured nowhere); (e) "the
+cheapest safe option wins, usually by a wider margin than people expect" — no margin is
+measured anywhere (Unverifiable item 4); (f) "fast enough to feel instant" — not measured
+(Unverifiable item 7).
+
+### `src/components/site/services/app-development/content.ts`
+
+1. `{file: "src/components/site/services/app-development/content.ts", line: 106, anchor: "A model running on the phone estimates an item's dimensions from that photograph, with no LiDAR involved. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway. A live Three.js scene then fits your items into candidate boxes while you watch, inside React Native. Rotate it. Swap the box. See exactly how much empty air you were about to pay to ship across the country.", replacement: "The item's dimensions come from the phone's LiDAR scanner, or from a lookup by name or photo that refuses a low-confidence answer. A live Three.js scene then fits the items into the smallest carrier box that takes them, inside React Native. Rotate it. Swap the box. See how much empty air you were about to pay to ship.", reason: "(a) (b) (c) (d)"}`
+2. `{file: "src/components/site/services/app-development/content.ts", line: 107, anchor: "Postgres and Redis keep the lookups fast enough to feel instant, so the cheapest safe option surfaces while you are still holding the parcel. A multi-step, error-prone chore became one photo and a tap.", replacement: "Each quote is cached in Redis for 15 minutes on the exact box and route, and the list comes back sorted cheapest first with the cheapest and the fastest marked.", reason: "(f); 'one photo and a tap' names one of three entry points — see delta 15 for the same sentence"}`
+3. `{file: "src/components/site/services/app-development/content.ts", lines: "141-143", anchor: "title: \"One photo, measured\",\n      caption: \"On-device model\",\n      text: \"A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.\"", replacement: "title: \"Measured, or looked up\",\n      caption: \"LiDAR and a lookup\",\n      text: \"Dimensions come in three ways: typed, measured with the phone's LiDAR scanner through ARKit, or looked up by name or photo through a server call that comes back with a confidence level and refuses anything below medium.\"", reason: "(a) (b) (c) (d); phase 01 of the process slider"}`
+4. `{file: "src/components/site/services/app-development/content.ts", line: 159, anchor: "UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.", replacement: "UPS, FedEx and USPS rates are fetched in parallel through the backend, cached in Redis for 15 minutes on the exact box and route, and listed cheapest first with the cheapest and the fastest marked.", reason: "(e); phase 03 of the process slider"}`
+5. `{file: "src/components/site/services/app-development/content.ts", lines: "196-197", anchor: "lead: \"On-device models:\",\n      text: \"PackShip sizes an item from one photograph to about a centimetre, with the model running on the phone and no LiDAR involved.\"", replacement: "lead: \"On the device:\",\n      text: \"PackShip's packing solver and its 3D view run on the phone, with 349 Jest tests behind them; measuring is ARKit with the LiDAR scanner, and the dimension lookup is a server call with a seven-day cache and a confidence gate.\"", reason: "(a) (b) (c) (d); the lead and the sentence are one claim, replaced together"}`
+
+Fine as-is in this file: `:105` "The app answers all three from a single photograph." — the
+photo path is real (`POST /identify-image` → name → dimensions → box → rates); the controller
+has deferred this sentence's twin on the packship page. `:167` "React Native on the front,
+Postgres and Redis behind it" — true; an Express-on-Railway mention would be fuller but
+nothing is false. `:6, :36, :38, :120, :127, :254` — comments and a luminance measurement;
+no claim. `:212` "not a demo build passed around on TestFlight" — true (App Store 1.2.0).
+
+### `src/components/site/services/applied-ai-models/content.ts`
+
+6. `{file: "src/components/site/services/applied-ai-models/content.ts", line: 103, anchor: "PackShip's sizing model runs on the phone that was going to take the photograph anyway, so nobody has to open a second app, upload anything, or wait on a round trip to a server.", replacement: "PackShip's packing solver runs on the phone, so choosing a box never waits on a server; the dimension lookup is a server call with a seven-day cache and a confidence gate.", reason: "(a); the lookup IS a round trip to a server (backend/api/openai.js); only the solver is on-device"}`
+7. `{file: "src/components/site/services/applied-ai-models/content.ts", line: 104, anchor: "It estimates an item's dimensions from a single photograph, with no LiDAR. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in the box anyway. From there a live 3D scene fits the item into candidate boxes while you watch, and UPS, FedEx, and USPS rates re-quote themselves every time the box changes.", replacement: "Measuring is ARKit with the LiDAR scanner on Pro iPhones; the lookup by name or photo comes back with a confidence level, and anything below medium is refused. From there a live 3D scene fits the items into the smallest carrier box while you watch, and UPS, FedEx and USPS rates are fetched in parallel and listed cheapest first.", reason: "(a) (b) (c) (d)"}`
+8. `{file: "src/components/site/services/applied-ai-models/content.ts", line: 139, anchor: "PackShip's whole job happens inside the camera flow somebody was going to use regardless. A model that needs a new habit around it is a model that gets used twice.", replacement: "PackShip's whole job happens inside the form somebody fills to ship a parcel: a name, a photo or a LiDAR scan, and the box and rate follow. A model that needs a new habit around it is a model that gets used twice.", reason: "there is no camera-only flow; the form is the entry point (CreatePackage.jpg)"}`
+9. `{file: "src/components/site/services/applied-ai-models/content.ts", lines: "149-151", anchor: "title: \"One photo, measured\",\n      caption: \"On-device model\",\n      text: \"A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.\"", replacement: "title: \"Measured, or looked up\",\n      caption: \"LiDAR and a lookup\",\n      text: \"Dimensions come in three ways: typed, measured with the phone's LiDAR scanner through ARKit, or looked up by name or photo through a server call that comes back with a confidence level and refuses anything below medium.\"", reason: "(a) (b) (c) (d); phase 02 of the process slider"}`
+10. `{file: "src/components/site/services/applied-ai-models/content.ts", line: 163, anchor: "UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.", replacement: "UPS, FedEx and USPS rates are fetched in parallel through the backend, cached in Redis for 15 minutes on the exact box and route, and listed cheapest first with the cheapest and the fastest marked.", reason: "(e); phase 03 of the process slider"}`
+11. `{file: "src/components/site/services/applied-ai-models/content.ts", lines: "213-214", anchor: "lead: \"On-device model:\",\n      text: \"A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.\"", replacement: "lead: \"On the device:\",\n      text: \"The packing solver: 149 boxes, envelopes and mailers across USPS, FedEx, UPS and retail sizes, six item orderings by six rotations, first fit wins, all on the phone with 349 Jest tests behind it. Measuring is ARKit with the LiDAR scanner.\"", reason: "(a) (b) (c) (d); 'PackShip, layer by layer' paragraph 1"}`
+12. `{file: "src/components/site/services/applied-ai-models/content.ts", lines: "218-219", anchor: "lead: \"Three.js in React Native:\",\n      text: \"A live 3D scene fits your items into candidate boxes while you watch. Rotate it. Swap the box. See exactly how much empty air you were about to pay to ship across the country.\"", replacement: "lead: \"Three.js in React Native:\",\n      text: \"A live 3D scene draws the chosen box with the used volume against the box volume. Rotate it. Swap the box or the carrier and it re-packs.\"", reason: "true in substance (the 3D view, alternative boxes, the fill percentage on screen); tightened so the four paragraphs read as one set — optional"}`
+13. `{file: "src/components/site/services/applied-ai-models/content.ts", lines: "223-224", anchor: "lead: \"Carrier APIs on Redis:\",\n      text: \"UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.\"", replacement: "lead: \"Carrier APIs on Redis:\",\n      text: \"UPS, FedEx and USPS rates are fetched in parallel through the backend, cached in Redis for 15 minutes on the exact box and route, and listed cheapest first with the cheapest and the fastest marked.\"", reason: "(e); 'PackShip, layer by layer' paragraph 3"}`
+14. `{file: "src/components/site/services/applied-ai-models/content.ts", lines: "228-229", anchor: "lead: \"Where it ended up:\",\n      text: \"Live on the App Store as a consumer product. A multi-step, error-prone chore became one photo and a tap.\"", replacement: "lead: \"Where it ended up:\",\n      text: \"Live on the App Store as a consumer product, at version 1.2.0: measure or look up the item, get the smallest box that fits, see three carriers' rates on one screen.\"", reason: "'one photo and a tap' names one of three entry points; the packship page's lead was rewritten the same way"}`
+
+Fine as-is in this file: `:6` and `:118, :203-209` are comments describing the copy (they
+will be stale once the deltas land; the controller may trim them). `:57` and `:141-142,
+:153-154, :300-301` — the meta description and cover alts; see Notes for the controller
+below for `:57`.
+
+### Other files
+
+15. `{file: "src/components/site/services/applied-ai-strategy/content.ts", line: 233, anchor: "PackShip answers all three from one photograph, with the model running on the phone that was going to take the photograph anyway. Also a yes.", replacement: "PackShip answers all three from a name, a photo or a LiDAR scan, with the packing solver running on the phone and the lookup behind a confidence gate. Also a yes.", reason: "(a); the thing that runs on the phone is the solver"}`
+16. `{file: "src/components/site/services/applied-ai/content.ts", line: 109, anchor: "a model on a phone that sizes a parcel from one photograph to about a centimetre.", replacement: "a solver on a phone that fits a parcel into the smallest of 149 carrier boxes, with the item measured by LiDAR or looked up by name.", reason: "(a) (d)"}`
+17. `{file: "public/llms.txt", line: 27, anchor: "An iOS app that answers box size, shipping cost and carrier from one photo, using a model that runs on the device.", replacement: "An iOS app that measures an item with LiDAR or looks it up by name or photo, packs it into the smallest carrier box in 3D on the phone, and compares live UPS, USPS and FedEx rates.", reason: "(a); llms.txt is orchestrator-owned"}`
+18. `{file: ".agents/product-marketing.md", line: 162, anchor: "on-device sizing model" (the sentence wraps :161-163: "- PackShip: live on the App Store (`apps.apple.com/app/id6754204899`), an\n  on-device sizing model, a live 3D packing view, three-carrier live rate\n  comparison."), replacement: "- PackShip: live on the App Store (`apps.apple.com/app/id6754204899`), LiDAR\n  measuring on Pro iPhones, an on-device packing solver with 349 tests and a\n  live 3D view, a name-or-photo dimension lookup with a confidence gate,\n  three-carrier live rate comparison.", reason: "(a); the proof-point list feeds every later copy pass and must not hand the cut claim to Tasks 11-17"}`
+
+### Every grep hit, accounted for
+
+`grep -rn -iE "on-device|LiDAR|centimetre|photograph" src/ public/llms.txt .agents/product-marketing.md`
+at `1456aaf`, excluding `src/components/site/work/packship/` and `src/app/work/packship/`,
+returns 53 lines. Each:
+
+| Hit | Delta / why it is fine |
+| --- | --- |
+| `services/app-development/content.ts:105` | fine — the photo path is real; the twin sentence on the packship page is deferred by the controller |
+| `services/app-development/content.ts:106` | delta 1 |
+| `services/app-development/content.ts:142`, `:143` | delta 3 |
+| `services/app-development/content.ts:196`, `:197` | delta 5 |
+| `services/applied-ai-strategy/content.ts:233` | delta 15 |
+| `services/applied-ai/content.ts:109` | delta 16 |
+| `services/applied-ai-models/content.ts:57` | Notes for the controller (taxonomy positioning; a meta description) |
+| `services/applied-ai-models/content.ts:103` | delta 6 |
+| `services/applied-ai-models/content.ts:104` | delta 7 |
+| `services/applied-ai-models/content.ts:150`, `:151` | delta 9 |
+| `services/applied-ai-models/content.ts:213`, `:214` | delta 11 |
+| `public/llms.txt:16` | Notes for the controller (taxonomy positioning) |
+| `.agents/product-marketing.md:162` | delta 18 |
+| `work/content.ts:129` | Notes for the controller (a comment justifying the `custom-models` tag) |
+| `work/delivery-routing/content.ts:16`, `work/restaurant-ordering-portal/content.ts:17`, `work/foodtruckrentals/content.ts:14`, `work/new-york-mobile-mechanic/content.ts:11, :66`, `work/vintus/content.ts:14`, `work/rwd-pipeline/content.ts:14`, `work/new-york-fine-foods/content.ts:14`, `work/landscape-drainage-proz/content.ts:22` | fine — "photograph(s)" in comments about alt text or the source layout's eighteen architecture photographs; no PackShip claim |
+| `app/about/page.tsx:72`, `app/work/{landscape-drainage-proz,new-york-fine-foods,vintus,rwd-pipeline}/page.tsx:78-80`, `app/work/hasina-hijama-cupping/page.tsx:85` | fine — same: comments about photographs the layout carried |
+| `home/HeroServiceCard.tsx:229`, `home/content.ts:148`, `home/NavigationFooter.tsx:148, :156, :169, :199, :205`, `home/HeroIntroPanel.tsx:23`, `shared/ParallaxHeaderImage.tsx:8`, `shared/blocks/BlockProjectsHighlight.tsx:405`, `shared/blocks/BlockHeaderProjects.tsx:11, :12`, `shared/blocks/BlockProcessCardSlider.tsx:540` | fine — comments about photographic backdrops and crops; no claim |
+| `about/content.ts:34, :103`, `process/content.ts:184`, `services/cloud-infrastructure/content.ts:138`, `services/data-intelligence/content.ts:133`, `services/web-development/content.ts:20`, `services/applied-ai-evaluation/content.ts:81` | fine — comments about photography or "a guardrail, photographed" (delivery routing); no PackShip claim |
+
+Also filed although outside that grep (they carry Unverifiable items 4 and 7, which this
+page cut): deltas 2, 4, 10, 12, 13, 14. `grep -rn "wider margin\|one photo and a tap\|feel instant" src/`
+→ `app-development/content.ts:107, :159`, `applied-ai-models/content.ts:163, :224, :229` — all
+covered by those six.
 
 No test-count delta: `grep -rn "349\|348" src public/llms.txt` finds no PackShip test count
 anywhere before this task, so the number is introduced here only.
+
+### Notes for the controller — the frozen taxonomy leans on the cut claim
+
+Not this task's to change; recorded so the consequence is visible:
+
+- `src/components/site/work/content.ts:129-130` justifies PackShip's `custom-models` tag with
+  "an on-device model it needed a custom one for". No custom model exists. What PackShip does
+  have on the applied-AI side is the OpenAI-backed lookup with a confidence gate and a
+  two-layer cache, and the deterministic packing solver. Whether that still earns
+  `custom-models` (the page is "Fine-tuned and on-device models") is a taxonomy call.
+- `src/components/site/services/applied-ai-models/content.ts:57` (meta description) and
+  `public/llms.txt:16` position Custom AI Models as "fine-tuned and on-device models that
+  live inside the tools your team already opens every day", and PackShip is that page's only
+  proof (`applied-ai-models/content.ts:6-7, :310-325`: PackShip takes the hero). After deltas
+  6-14 the page's worked example is a solver plus a gated server-side lookup, which is
+  "integration" more than "on-device model". The positioning sentence may need to move with
+  it, or the page needs a different proof.
+- The three new images (`packship-measure.jpg`, `packship-library.jpg`, `packship-lookup.jpg`)
+  exist if either service page wants a PackShip image that is not the cover
+  (`app-development/content.ts:36-38` reuses `packship.jpg` four times for lack of one).

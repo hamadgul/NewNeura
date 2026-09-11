@@ -244,6 +244,11 @@ export const PROJECT_LOOKUP: BlockWysiwygProps = {
  * lookup takes the small, portrait slot because it is a raw phone screenshot
  * (the site's 1179x2203 phone size, as `conversion.png` on the mechanic page);
  * the two library screens take the large slot as one landscape frame.
+ *
+ * The lookup image is evidence for "the answer comes back as dimensions in
+ * inches with a confidence level" in the paragraph above: a high-confidence
+ * success with the `AI Verified` badge. It does not show the refusal path;
+ * that sentence rests on the code citation in the dossier.
  */
 export const PROJECT_MEDIA_QUOTE: BlockMediaDoubleQuoteProps = {
   large: {

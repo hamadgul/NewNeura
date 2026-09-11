@@ -53,10 +53,13 @@ export default defineShots("packship", [
     minBytes: 40000,
   },
   {
-    // Evidence for: "The lookup refuses a low-confidence answer rather than guessing."
-    // The AI Item Search result: `Product Found · Microsoft Xbox Series X (1TB) · AI Verified`,
-    // length / width / height / weight, and the screen's own note — "Dimensions retrieved
-    // from available online resources." — which is the block's quote. Portrait slot
+    // Evidence for: "the answer comes back as dimensions in inches with a confidence level."
+    // The AI Item Search result: `Product Found · Microsoft Xbox Series X (1TB)`, the
+    // `AI Verified` badge (the confidence the app accepted), length / width / height in
+    // inches, weight, and the screen's own note — "Dimensions retrieved from available
+    // online resources." — which is the block's quote. It shows a high-confidence success,
+    // NOT the refusal path; the refusal sentence in the same paragraph is carried by the code
+    // citation (useAIDimensionLookup.js:73-80), not by this image. Portrait slot
     // (the site's 1179x2203 phone size, as `conversion.png` on the mechanic page); the raw
     // screenshot with its status bar cropped.
     route: "LookupItemPage",
