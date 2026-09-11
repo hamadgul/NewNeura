@@ -97,9 +97,14 @@ screen this is the difference between the file's `Joe's Pizza` and the running a
 `README.md:71` and `lib/config-resolved.ts:58-90`: the open/closed decision formats `now` in
 `config.timezone` with `Intl.DateTimeFormat`, never server-local time (Vercel runs UTC). The
 Orders page's open/closed toggle writes `hours.<today>` as `{open:'FORCE',close:'FORCE'}` or
-`{open:'',close:''}` (`app/api/admin/close-today/route.ts:64-66`) — keyed to today's weekday
-"so it expires automatically" — and the general config POST refuses to write `FORCE`
-(`config/route.ts:133-141`), so only that toggle can force the store open.
+`{open:'',close:''}` (`app/api/admin/close-today/route.ts:64-66`), and the general config POST
+refuses to write `FORCE` (`config/route.ts:133-141`), so only that toggle can force the store
+open. One caution for the copy: the route's comment says the override is "keyed to today's
+date so it expires automatically at midnight", but the key is the **weekday**
+(`hours.friday`) and nothing in the repo clears it, so the same weekday next week inherits it
+until the admin flips the switch or saves that day's hours. The page therefore says the switch
+"overrides today's hours and leaves the rest of the week alone", which is what the code does,
+and never says it expires.
 
 **5. At-least-once webhooks are answered with send-once ledgers.** Square retries any
 non-2xx, so the webhook handler verifies the HMAC-SHA256 signature over `notificationUrl +
