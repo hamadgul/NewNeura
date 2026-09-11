@@ -113,7 +113,7 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  * Block 2 — `BlockIntroDouble`, the two-label variant.
  *
  * `statement` is the brief. The old one said "no website"; the source records
- * a live one-page deployment on a `.vercel.app` host that the Google listing
+ * a live one-page deployment (dated live check in the dossier, Verifiable numbers) on a `.vercel.app` host that the Google listing
  * linked to (`NYC-SEO-PLAN.md:17-27`) and a registrar's parking lander on the
  * domain itself (`README.md:114-121`). The 5.0 is the client's rating as the
  * site records it (`lib/site.ts:36`), stated as theirs. `body` is the stack
@@ -157,7 +157,7 @@ export const PROJECT_SEARCH: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "We added the city page three days after the rest. Until it existed the site answered the city query with nothing: by the plan's own count on 27 August 2026, the built home page said New York four times against ninety-two for Queens. The page it has to beat holds first place with a single homepage on an exact-match domain, so this one carries what that page lacks: door-to-door travel times from each borough with the subway lines, a five-point guide to choosing any practitioner, written to be useful to someone who books elsewhere, and the five questions that repeat across the results. There are no borough pages, because the borough variants measured nothing. Headlines say Queens throughout; Flushing stays in every description, every body paragraph, the alt text and the address, so the local term still works.",
+      text: "We added the city page three days after the rest. Until it existed the site answered the city query with nothing: by the plan's own count on 27 August 2026, the built home page said New York four times against ninety-two for Queens. The page it had to beat held first place on 27 August 2026 with a single homepage on an exact-match domain, so this one carries what that page lacks: door-to-door travel times from each borough with the subway lines, a five-point guide to choosing any practitioner, written to be useful to someone who books elsewhere, and the five questions that repeat across the results. There are no borough pages, because the borough variants measured nothing. Headlines say Queens throughout; Flushing stays in every description, every body paragraph, the alt text and the address, so the local term still works.",
     },
   ],
 };
@@ -208,11 +208,11 @@ export const PROJECT_ONE_FILE: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "A phone number, an opening hour or the postal address changes in one file, and every page reads it from there: the masthead, the hero, the Visit table, both footers, the share card and the structured data. The hero's one-line hours, Sun to Tue and Thu, 9 AM to 7 PM, are derived from the same table the Visit section renders. Consecutive open days collapse into a run, and a time is printed only when every open day shares one, so the summary cannot become true-looking and wrong.",
+      text: "A phone number, an opening hour or the postal address changes in one file, and every page reads it from there: the masthead, the hero, the Visit table, both footers and the structured data. The hero's one-line hours, Sun to Tue and Thu, 9 AM to 7 PM, are derived from the same table the Visit section renders. Consecutive open days collapse into a run, and a time is printed only when every open day shares one, so the summary cannot become true-looking and wrong.",
     },
     {
       type: "paragraph",
-      text: "On 27 August 2026 we changed one line in that file: the canonical host, from the apex to www. The apex redirects to www at the edge, so every canonical, all ten sitemap entries and every share image had been pointing at a URL that redirected back to the page announcing it, and a canonical that cannot resolve to a 200 is one Google discards. Open Graph goes through one helper for a related reason: Next merges page metadata shallowly, so a page that declared its own block replaced the layout's and silently dropped the image, and WhatsApp, which is how these links get shared, showed a grey blob. All ten pages call the helper, and it supplies the image and the type by default.",
+      text: "On 27 August 2026 we changed one line in that file: the canonical host, from the apex to www. The apex redirects to www at the edge, so every canonical, all nine sitemap entries and every share image had been pointing at a URL that redirected back to the page announcing it, and a canonical that cannot resolve to a 200 is one Google discards. Open Graph goes through one helper for a related reason: Next merges page metadata shallowly, so a page that declared its own block replaced the layout's and silently dropped the image, and WhatsApp, which is how these links get shared, showed a grey blob. All ten pages call the helper, and it supplies the image and the type by default.",
     },
     {
       type: "paragraph",
@@ -238,7 +238,9 @@ export const PROJECT_IMAGE_GUIDE: BlockImageFullProps = {
  * `public/llms.txt:30-41`. The footer disclaimer: `components/SiteFooter.tsx:4`.
  * The certification line: `README.md:108-111`, `app/about/page.tsx:69-74`.
  * The hero claim's dated check and expiry: `app/page.tsx:385-404`,
- * `NYC-SEO-PLAN.md:209-223`. Nothing in this block asserts efficacy in our
+ * `NYC-SEO-PLAN.md:209-223`. Eight of ten footers carry the disclaimer (`components/SiteFooter.tsx:54-59`;
+ * `app/what-is-hijama/page.tsx:497` and `app/cupping-marks-and-bruising/page.tsx:241`
+ * pass `disclaimer={false}`). Nothing in this block asserts efficacy in our
  * voice; every clause is what the client's site says or declines to say.
  */
 export const PROJECT_HEALTH: BlockWysiwygProps = {
@@ -247,7 +249,7 @@ export const PROJECT_HEALTH: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "This is a health site, so its guide carries an evidence section that says the research on cupping is mixed and mostly small, that trials are short and near impossible to blind, and that claims of detoxifying the blood, curing chronic disease or replacing medication run ahead of anything demonstrated. The audit notes list that section as the one thing not to be turned into marketing copy. Every footer says hijama does not replace medical advice. The certification line names no certifying body, because the practice has not named one. The hero's claim to be the city's most-reviewed five-star hijama practice is backed in the source by a dated comparison, with the note that it fails the day another practice passes it. The same facts, evidence summary included, are in llms.txt for any model that reads the site first.",
+      text: "This is a health site, so its guide carries an evidence section that says the research on cupping is mixed and mostly small, that trials tend to be small, follow-up short, and cupping close to impossible to blind, and that claims of detoxifying the blood, curing chronic disease or replacing medication run ahead of anything demonstrated. The audit notes list that section as not to be turned into marketing copy. The footer on eight of the ten pages says hijama does not replace medical advice. The certification line names no certifying body, because the practice has not named one. The hero's claim to be the city's most-reviewed five-star hijama practice is backed in the source by a dated comparison, with the note that it fails the day another practice passes it. The same facts, evidence summary included, are in llms.txt for any model that reads the site first.",
     },
   ],
 };
@@ -258,7 +260,8 @@ export const PROJECT_HEALTH: BlockWysiwygProps = {
  * duplicate-cover trap. The copy points the reader back up.
  *
  * The hero rebuild: `app/page.tsx:250-297, 443-455` (2026-08-29); the gallery's
- * removal: `lib/site.ts:216-224`; no `'use client'` in `app/page.tsx`. Quality
+ * removal: `lib/site.ts:216-224` ("takes the hero off client-side JS"; the
+ * masthead, mobile bar and back-to-top are still client components). Quality
  * 82: `next.config.ts:88-129` (the 63,915-byte render confirmed on the booted
  * copy). The Arabic subset: `app/layout.tsx:23-41` (10,136 bytes on disk).
  * No radius, no shadow: `globals.css:1826-1827`, `components/CuppingCup.tsx:1-18`.
@@ -266,7 +269,7 @@ export const PROJECT_HEALTH: BlockWysiwygProps = {
  * bar: `components/MobileCta.tsx:6-40, 53-63`. Headers: `next.config.ts:3-81,
  * 159-181`. Crawlers: `app/robots.ts:4-46`, `public/ai.txt`. The host
  * redirect and the deployment it cannot reach: `next.config.ts:132-157`,
- * `NYC-SEO-PLAN.md:179-184`; still answering 200 on 2026-09-11.
+ * `NYC-SEO-PLAN.md:179-184` (the dated live check is in the dossier).
  */
 export const PROJECT_FRONT_DOOR: BlockWysiwygProps = {
   tagline: "Front door",
@@ -274,11 +277,11 @@ export const PROJECT_FRONT_DOOR: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "The frame at the top of this page is the hero: one photograph on a full-bleed ink field, which we rebuilt on 29 August 2026 from a three-frame crossfading gallery that had put a client component in front of the largest element on the page. The home page now ships no client-side JavaScript of its own. The photograph is 1,019 pixels wide against a field that stretches it on any desktop, so it is served at quality 82 instead of the default 75. That costs a measured 19 KB on the one image that opts in; 90 would have cost 56, on a site whose visitors are mostly on phones. The one line of Arabic on the site loads from a font subset to its eighteen codepoints, 10 KB in place of 92 on every route. There is no border radius and no box shadow anywhere in the stylesheet, and the cup beside two headings is a stroked SVG at the same weight as the site's other line drawings.",
+      text: "The frame at the top of this page is the hero: one photograph on a full-bleed ink field, which we rebuilt on 29 August 2026 from a three-frame crossfading gallery that had put a client component in front of the largest element on the page. The hero now ships no client-side JavaScript. The photograph is 1,019 pixels wide against a field that stretches it on any desktop, so it is served at quality 82 instead of the default 75. That costs a measured 19 KB on the one image that opts in; 90 would have cost 56, on a site whose visitors are mostly on phones. The one line of Arabic on the site loads from a font subset to its eighteen codepoints, 10 KB in place of 92 on every route. There is no border radius and no box shadow anywhere in the stylesheet, and the cup beside two headings is a stroked SVG with a hairline stroke, like the site's other line drawings.",
     },
     {
       type: "paragraph",
-      text: "The enquiry form has no backend and needs none. Submitting composes the fields into a text draft addressed to the practice and opens the visitor's own messaging app: WhatsApp above 780 pixels, where an SMS link has no handler, and SMS below it. Nothing claims to have been sent. The mobile booking bar appears on any scroll and leaves 1.5 seconds after scrolling stops, never while a keyboard user is standing on it. Every route carries a content security policy, a permissions policy that denies eighteen features, and a frame denial in both the old header and the new directive. Robots names nineteen AI crawlers and allows every one on purpose, with ai.txt saying the same in prose. Any vercel.app host now redirects to the real domain. The practice's older subdomain deployment predates that rule and still answers; retiring it is a dashboard action.",
+      text: "The enquiry form has no backend and needs none. Submitting composes the fields into a text draft addressed to the practice and opens the visitor's own messaging app: WhatsApp above 780 pixels, where an SMS link has no handler, and SMS below it. Nothing claims to have been sent. The mobile booking bar appears on any scroll and leaves 1.5 seconds after scrolling stops, never while a keyboard user is standing on it. Every route carries a content security policy, a permissions policy that governs eighteen features, and a frame denial in both the old header and the new directive. Robots names nineteen AI crawlers and allows every one on purpose, with ai.txt saying the same in prose. Any vercel.app host now redirects to the real domain. The practice's older subdomain deployment predates that rule, so the rule cannot reach it.",
     },
   ],
 };

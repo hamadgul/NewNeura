@@ -184,8 +184,14 @@ copy: `/robots.txt` has 20 `User-Agent` lines, 2 `Allow: /`, 0 `Disallow`; `/llm
   host now 308s to the canonical domain (booted copy, `Host: hasina-hijama-site.vercel.app`
   → `308 -> https://www.hasinahijamacupping.com/about`). The rule "cannot fix the existing
   stale one — that build predates this config", which is a dashboard action
-  (`NYC-SEO-PLAN.md:179-184`). **Still open on 2026-09-11:** that host answers 200 with the
-  title `Hasina Hijama — Sunnah Cupping for Women`.
+  (`NYC-SEO-PLAN.md:179-184`). **Dated live check, 2026-09-11 18:16 UTC** (`curl -sS https://hasina-hijama-site.vercel.app/`):
+  status 200; `<title>Hasina Hijama — Sunnah Cupping for Women</title>`; `rel="canonical"`
+  0; `noindex` 0; internal `href`s to a second route 0 — every link is a same-page anchor
+  (`#book` ×4, `#process` ×3, `#why`, `#reviews`, `#about`) or a placeholder
+  `tel:+10000000000` / `wa.me/10000000000`; inline-styled markup in Cormorant Garamond with
+  no `_next/static` bundle. That is what "one-page deployment" in the brief rests on; the
+  repo itself calls the host "a fully indexable duplicate of the whole site"
+  (`next.config.ts:137`), which described it on 2026-08-27.
 - **Security headers on every route.** A non-nonce CSP — the nonce recipe "requires every
   page to be dynamically rendered", the wrong trade for a static ten-page site with no
   accounts, cookies, user input or third-party JavaScript (`next.config.ts:3-49`; 13
@@ -200,8 +206,10 @@ copy: `/robots.txt` has 20 `User-Agent` lines, 2 `Allow: /`, 0 `Disallow`; `/llm
   set on the photograph, because on a phone the old layout was "a 137px letterbox band
   squeezed above a wall of stacked paragraphs"; the three-frame crossfading gallery with
   its timer, indicators and motion-preference subscription — "a client component, on the
-  hero, in front of the LCP element" — became one server-rendered `<Image>` (`lib/site.ts:216-224`;
-  `components/HeroGallery.tsx` deleted). `app/page.tsx` has no `'use client'`. The old
+  hero, in front of the LCP element" — became one server-rendered `<Image>` (`lib/site.ts:216-224`, "which also takes the hero
+  off client-side JS"; `components/HeroGallery.tsx` deleted). The HERO ships no client
+  JavaScript; the page still renders `SiteHeader` (`'use client'`, `app/page.tsx:9, 247`) and
+  the layout adds `MobileCta` and `BackToTop` to every route (`app/layout.tsx:80-81`). The old
   notice bar's three claims became the three cells of the offer strip, so the price stopped
   being "12px of tracked grey in a strip that, below 780px, scrolled past as a marquee"
   (lines 443-455).
@@ -239,8 +247,8 @@ copy: `/robots.txt` has 20 `User-Agent` lines, 2 `Allow: /`, 0 `Disallow`; `/llm
   scrim and drawer are siblings of the header, not children, because a `backdrop-filter`
   ancestor collapses `position: fixed` on iOS Safari (lines 207-213).
 - **One design rule for glyphs.** `components/CuppingCup.tsx:1-18`: the stylesheet's only
-  marks are line drawings, so the cup beside two headings is a stroked SVG at the same
-  weight, with the suction valve kept "so it reads as a *cupping* cup instead of a bell or
+  marks are line drawings, so the cup beside two headings is a stroked SVG (stroke 1.8 against the arrows'
+  1.4–1.5, for contrast on cream; lines 26-32), with the suction valve kept "so it reads as a *cupping* cup instead of a bell or
   a jar"; stroke 1.8 so it survives a 15 px box at 320 px wide (lines 26-32).
 
 ---
@@ -325,6 +333,8 @@ carries `.git`) unless noted.
 | Arabic subset **10,136 B** (≈9.9 KB) vs **~92 KB** full face | `ls -l app/fonts/noto-naskh-arabic-ayah.woff2`; `app/layout.tsx:25-28` |
 | Type scale **10** steps; `border-radius` / `box-shadow` **0** uses | `sed -n 88,97p app/globals.css`; `grep -n "border-radius\|box-shadow" app/globals.css` → one comment line (1826-1827) |
 | Stylesheet **3,036** lines, **116,270** bytes; `IDLE_MS` **1,500**; form/bar breakpoint **780 px** | `wc -l -c app/globals.css`; `components/MobileCta.tsx:21`; `components/EnquiryForm.tsx:100-103`, `globals.css:2520` |
+| Footer disclaimer on **8/10** pages (`disclaimer={false}` on the two guides); Permissions-Policy **18** entries, **17** denied + `fullscreen` granted to the Maps embed | `grep -n 'disclaimer={false}' app/*/page.tsx` → 2; `next.config.ts:62-81` |
+| Stale `hasina-hijama-site.vercel.app`, **2026-09-11 18:16 UTC**: **200**, canonical **0**, `noindex` **0**, internal route links **0** | `curl -sS -o /tmp/stale.html -w '%{http_code}' https://hasina-hijama-site.vercel.app/`; `grep -c 'rel="canonical"'`; `grep -oE 'href="[^"]*"' \| sort \| uniq -c` |
 | **29** commits, **2026-08-24 → 2026-08-29** | `git log --oneline \| wc -l`; `git log --reverse --format=%ad --date=short \| head -1`; `git log -1 --format=%ad --date=short` |
 | City page + canonical fix + `.vercel.app` redirect **2026-08-27** (`6b970ad`); form draft **2026-08-27** (`89dd55b`); hero rebuild **2026-08-29**; robots list + `ai.txt` + CSP **2026-08-29** (`bfec627`); nine of ten pages in the initial commit **2026-08-24** (`b8a0ee2`) | `git log --format='%h %ad' --date=short -- <file>`; `git show --stat <hash>` |
 
@@ -358,7 +368,9 @@ For the user. **Not written on the page**, and no later task should promote one 
    to blind", and that "claims that hijama detoxifies the blood, cures chronic disease or
    replaces medication run well ahead of anything demonstrated"
    (`app/what-is-hijama/page.tsx:322-345`; `public/llms.txt:30-34`), with a disclaimer in
-   every footer (`components/SiteFooter.tsx:4`) and the audit's refusal to soften it
+   the footer of eight of the ten pages (`components/SiteFooter.tsx:4, 54-59`;
+   `app/what-is-hijama/page.tsx:497` and `app/cupping-marks-and-bruising/page.tsx:241` pass
+   `disclaimer={false}`) and the audit's refusal to soften it
    (`ACTION-PLAN.md:81`). Our page describes that section and that refusal; it asserts no
    efficacy.
 4. **"New York City's most-reviewed five-star hijama practice."** The hero's claim,
@@ -422,10 +434,13 @@ end). **None applied by this task.**
 
 1. `{file: "public/llms.txt", line: 34, anchor: "- [Real-World Data Pipeline](https://neuragul.com/work/rwd-pipeline/): A 0-to-1 ETL pipeline pulling messy clinical data from dozens of sources into one common model. Early cancer detection research ran on top of it.", replacement: "- [Real-World Data Pipeline](https://neuragul.com/work/rwd-pipeline/): A 0-to-1 ETL pipeline pulling messy clinical data from dozens of sources into one common model. Early cancer detection research ran on top of it.\n- [Hasina Hijama Cupping](https://neuragul.com/work/hasina-hijama-cupping/): A ten-page Next.js site for a Queens cupping practice: six pages that each answer one question its customers search, business data on every page with the rating left to Google, and one host that every canonical, sitemap entry and share image agrees on.", reason: "the 2026-09-07 commit that added the tenth case study (b8ae883) updated the sitemap, PORTFOLIO_PROJECTS, the filter counts and the home grid but not llms.txt, whose Work section lists nine; the anchor is the current last Work entry and the replacement appends the tenth after it (llms.txt is orchestrator-owned)"}`
 
-**Comment-only echoes (no anchor, nothing rendered):** `src/app/work/page.tsx:43-44` ("an
-index of nine specific things … the nine case studies … nine links") and `:82` ("with nine
-projects the cards stop at target two"); `src/components/site/work/content.ts:105` ("a
-nine-project feed") and `:115` ("Nine projects is a small enough feed"). The rendered
+**Comment-only echoes (no anchor, nothing rendered), seven:** `src/app/work/page.tsx:43-44`
+("an index of nine specific things … the nine case studies … nine links"), `:74` ("the whole
+nine-project feed") and `:82` ("with nine projects the cards stop at target two");
+`src/components/site/work/content.ts:20` ("renders the nine rows in"), `:25` ("All nine
+covers are 1200x750"), `:106` ("a nine-project feed") and `:115` ("Nine projects is a small
+enough feed"). `work/content.ts:121` ("the source's nine … then Hasina") and `:286` ("the
+other nine") are correct as written. The rendered
 `ItemList` uses `PORTFOLIO_PROJECTS.length` (`work/page.tsx:59`), so it already says 10.
 `.agents/product-marketing.md:16-22, 60, 171` already list the project.
 
