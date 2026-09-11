@@ -22,7 +22,7 @@
  *
  * Image sizing note: every `width`/`height` below is the asset's true decoded
  * size, because `next/image` reserves the aspect ratio from those two numbers.
- * All nine covers are 1200x750 (1.6), which is exactly the ratio
+ * All ten covers are 1200x750 (1.6), which is exactly the ratio
  * `CollectionProjects` gives its cards (`aspect-[665/415.625]`), so no card
  * crops.
  *
@@ -103,7 +103,7 @@ export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
  *
  * `CollectionProjects` treats a highlight as page furniture *and* excludes that
  * project from the results, and it only paints a banner when a later target
- * container still has cards in it. Run those two rules against a nine-project
+ * container still has cards in it. Run those two rules against a ten-project
  * feed: the cards fill layouts 1-3 (targets one and two) and leave target three
  * empty, so banner one paints and banner two never can. Two highlights would
  * therefore delete two projects from the site's only index while showing one of
@@ -112,7 +112,7 @@ export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
  * One highlight would render, but it still removes its project from the
  * results — including from its own service filter, whose count in
  * `WORK_SERVICE_FILTERS` would then be one higher than the number of cards on
- * screen. Nine projects is a small enough feed that every one of them earns a
+ * screen. Ten projects is a small enough feed that every one of them earns a
  * card, so the banner is dropped rather than paid for with a missing project.
  */
 export const PORTFOLIO_HIGHLIGHTS: CollectionProjectsHighlight[] = [];
@@ -234,7 +234,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     topServices: ["web-development"],
     image: {
       src: `${IMAGES}/vintus.jpg`,
-      alt: "The Vintus wine importer storefront",
+      alt: "The Vintus wine importer trade portal",
       width: 1200,
       height: 750,
     },

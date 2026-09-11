@@ -113,11 +113,13 @@ export const PROJECT_TITLE = "New York Mobile Mechanic: Local SEO Build";
 export const PROJECT_CANONICAL = "/work/new-york-mobile-mechanic/";
 /**
  * The meta description. Says what was built and what it was built with, in
- * ~150 characters. "Core Web Vitals green" is gone from it: nothing in the
- * repo measures field CWV. The Lighthouse score is what exists.
+ * under 160 characters. "Core Web Vitals green" is gone from it: nothing in
+ * the repo measures field CWV. The Lighthouse score is what exists, but it
+ * is a dated report (9 July 2026) and dating it here pushed the string past
+ * 160, so the figure lives only in the body, where it carries its date.
  */
 export const PROJECT_DESCRIPTION =
-  "A Next.js site for a 24/7 NYC mobile mechanic: 117 pages keyed off one config file, a service-by-borough matrix, JSON-LD on every service page, Lighthouse at 100.";
+  "A Next.js site for a 24/7 NYC mobile mechanic: 117 pages keyed off one config file, a service-by-borough matrix, JSON-LD on every service page.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/nymm.jpg`;
 
 /**

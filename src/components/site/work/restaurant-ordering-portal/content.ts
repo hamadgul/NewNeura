@@ -69,7 +69,7 @@ export const PROJECT_CANONICAL = "/work/restaurant-ordering-portal/";
  * still opens the page.
  */
 export const PROJECT_DESCRIPTION =
-  "Commission-free online ordering on a restaurant's own Square POS, with a back office for hours, menu, delivery and credentials. Next.js, Square, Twilio, 154 tests.";
+  "Commission-free online ordering on a restaurant's own Square POS, a back office for hours, menu, delivery and credentials. Next.js, Square, Twilio, 154 tests.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/pizzeria.jpg`;
 
 /**

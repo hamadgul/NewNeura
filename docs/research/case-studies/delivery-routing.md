@@ -256,9 +256,9 @@ opened.
 
 **What must be hidden in every frame.** Two things carry the client's identity:
 
-- `header a img` — the top bar's `<img src="/logo.png" alt="DME Living Well">`
-  (`web/src/components/TopBar.tsx:15-16`). Present on all five SPA screens.
-- `.org` — the cut sheet's `DLW HME · Delivery cut sheet` line
+- `header a img` — the top bar's client logo (`/logo.png`), whose `alt` is the client's
+  name (`web/src/components/TopBar.tsx:15-16`). Present on all five SPA screens.
+- `.org` — the cut sheet's masthead line, which opens with the client's short name
   (`src/dlw_routing/export/printable.py:311`). Printable screen only.
 
 Both go in `hideSelectors`. This is the single highest-risk detail in the whole capture: the

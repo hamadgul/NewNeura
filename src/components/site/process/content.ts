@@ -205,7 +205,7 @@ export const PROCESS_SLIDER_IMAGES: SliderImage[] = [
   { src: `${IMG}/foodtruckrentals.jpg`, alt: "The Food Truck Rentals home page", width: 1200, height: 750 },
   { src: `${IMG}/nymm.jpg`, alt: "The New York Mobile Mechanic home page", width: 1200, height: 750 },
   { src: `${IMG}/nyff.jpg`, alt: "The New York Fine Foods catering site", width: 1200, height: 750 },
-  { src: `${IMG}/vintus.jpg`, alt: "The Vintus wine importer storefront", width: 1200, height: 750 },
+  { src: `${IMG}/vintus.jpg`, alt: "The Vintus wine importer trade portal", width: 1200, height: 750 },
   { src: `${IMG}/pizzeria.jpg`, alt: "The restaurant's own online ordering portal", width: 1200, height: 750 },
   { src: `${IMG}/rwd-pipeline.jpg`, alt: "The real-world clinical data pipeline", width: 1200, height: 750 },
   {

@@ -109,14 +109,20 @@ export const PROJECT_LIVE = {
  * The band is still a fixed 500px from `md` up, and the xl lead column
  * (1280, ~27 chars/line, three lines) is the tightest slot, so re-measure
  * at 1280 as well as 320 before lengthening. The eyebrow row: under `md`
- * `location` and `service` share one cell, and this page's 40-character
- * service line (the longest of the ten) overprinted the location text by
- * 42 px at 390 and 112 px at 320 (54 / 124 px with the old
- * "2026 · E-commerce"). Fixed in `BlockHeaderProjects` (5ab9d32): the pair
- * is a wrapping flex row below `md`, and the service line drops to its own
- * right-aligned line here at 320-430 (text overlap 0 at 320/360/390/414/
- * 430, measured on the production build; unchanged at 767+ where it never
- * overlapped). The cover is the live home page as of
+ * `location` and `service` share one cell, and this page's former
+ * 40-character service line ("Cloud & Infrastructure · Web Development",
+ * then the longest of the ten) overprinted the location text by 42 px at
+ * 390 and 112 px at 320 (54 / 124 px with the old "2026 · E-commerce").
+ * Fixed in `BlockHeaderProjects` (5ab9d32): the pair is a wrapping flex row
+ * below `md`, and the service line drops to its own right-aligned line at
+ * 320-430 (text overlap 0 at 320/360/390/414/430, measured on the
+ * production build; unchanged at 767+ where it never overlapped). The
+ * service line is now the 15-character "Web Development" (user retag,
+ * 2026-09-11, matching `services` in work/content.ts), so this page no
+ * longer holds the longest one — the 36-character "Web Development · Data
+ * Intelligence" on foodtruckrentals and landscape-drainage-proz does; the
+ * measurements above are kept as the worst case the fix was proven on.
+ * The cover is the live home page as of
  * 2026-09-11: the seven-item header, the H1 "Building a National Wine Import
  * Business From Scratch" over a vineyard, the search box, the SevenFiftyDaily
  * teaser and READ MORE.
@@ -125,7 +131,7 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Vintus",
   lead: "A wine importer's trade portal: 161 producers, 703 wines and 1,600 vintage pages.",
   location: "2026 · WordPress",
-  service: "Cloud & Infrastructure · Web Development",
+  service: "Web Development",
   breadcrumbLabel: "Work",
   breadcrumbHref: "/work/",
   backLabel: "All work",

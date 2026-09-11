@@ -68,7 +68,7 @@ export const PROJECT_CANONICAL = "/work/foodtruckrentals/";
  * rule exists.
  */
 export const PROJECT_DESCRIPTION =
-  "A 24-page Next.js site for a New York food truck brand-activation company: one owner for the New York query, prices from one module, 141 Vitest tests guarding it.";
+  "A 24-page Next.js site for a New York food truck brand-activation company: one owner for the New York query, prices from one module, 141 Vitest tests.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/foodtruckrentals.jpg`;
 
 /**

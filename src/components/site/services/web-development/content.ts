@@ -251,7 +251,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Storefronts:",
-      text: "A national wine importer's catalog on Vintus, and a Dawn storefront for Landscape Drainage Proz with two hand-written Custom Liquid sections, a municipal quote path and Google Ads conversion labels on the checkout events.",
+      text: "A national wine importer's catalog on Vintus, and a Dawn storefront for Landscape Drainage Proz with two hand-written Custom Liquid sections, a municipal quote path and Google Ads conversion labels on seven storefront events, from page view to purchase.",
     },
     {
       type: "paragraph",
@@ -367,7 +367,7 @@ const VINTUS: ProjectCard = {
   href: "/work/vintus/",
   image: {
     src: `${IMG}/vintus.jpg`,
-    alt: "The Vintus wine importer storefront",
+    alt: "The Vintus wine importer trade portal",
     width: 1200,
     height: 750,
   },

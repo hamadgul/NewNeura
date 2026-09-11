@@ -285,7 +285,7 @@ export const PROJECTS_ROW_TWO: ProjectCard[] = [
     href: "/work/vintus/",
     image: {
       src: `${IMG}/vintus.jpg`,
-      alt: "The Vintus wine importer storefront",
+      alt: "The Vintus wine importer trade portal",
       width: 1200,
       height: 750,
     },

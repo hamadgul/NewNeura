@@ -6,7 +6,7 @@
  * once real users touch it." The evidence is the two builds in
  * `pages/content.py` that describe their own guardrails: the routing platform
  * (fail-closed geocoding, a per-solve travel-matrix budget, 1,278 tests) and
- * foodtruckrentals (141 Vitest tests, one of which fails the build when two
+ * foodtruckrentals (141 Vitest tests, one of which fails the run when two
  * pages compete for a keyword cluster, and JSON-LD generated from a single
  * pricing module).
  *

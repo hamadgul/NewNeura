@@ -87,7 +87,7 @@ export const PROJECT_CANONICAL = "/work/new-york-fine-foods/";
  * numbers are the sitemap count before and after the 2026-08-27 commits.
  */
 export const PROJECT_DESCRIPTION =
-  "A Next.js site for a NYC catering and pizza-truck brand: 26 pages from 6, ten borough and regional pages each built on a local fact, JSON-LD on every service page.";
+  "A Next.js site for a NYC catering and pizza-truck brand: 26 pages from 6, ten borough and regional pages each on a local fact, JSON-LD on every service page.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/nyff.jpg`;
 
 /**
@@ -180,7 +180,7 @@ export const PROJECT_BASELINE: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "So the pages were built in the order the numbers set. Brooklyn first, because catering brooklyn is searched 1,300 times a month in the New York market. Corporate second, because corporate event catering had the highest cost per click in the dataset at a keyword difficulty of zero. Then Staten Island, weddings, Long Island, parties, and on down the list. Twenty new URLs shipped that day, and the sitemap dates each one by hand rather than stamping every page with the build time.",
+      text: "So the pages were built in the order the numbers set. Brooklyn first, because the August 2026 plan put catering brooklyn at 1,300 searches a month in the New York market. Corporate second, because corporate event catering had the highest cost per click in the dataset at a keyword difficulty of zero. Then Staten Island, weddings, Long Island, parties, and on down the list. Twenty new URLs shipped that day, and the sitemap dates each one by hand rather than stamping every page with the build time.",
     },
     {
       type: "paragraph",

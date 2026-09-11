@@ -40,8 +40,8 @@ export const metadata: Metadata = {
  * `CollectionPage` + `ItemList` + `BreadcrumbList`.
  *
  * The `ItemList` is the point: it tells a crawler that this URL is an index of
- * nine specific things and names each one with its URL, which is what makes the
- * nine case studies discoverable as a set rather than as nine links it happens
+ * ten specific things and names each one with its URL, which is what makes the
+ * ten case studies discoverable as a set rather than as ten links it happens
  * to find. `position` follows the rendered feed order, not alphabetical, so the
  * data matches the page.
  */
@@ -71,7 +71,7 @@ const SCHEMA = [
 /**
  * `/work/` — two blocks: `BlockHeaderPortfolio` → `CollectionProjects`.
  *
- * `CollectionProjects` receives the whole nine-project feed and pages it
+ * `CollectionProjects` receives the whole ten-project feed and pages it
  * client-side, 14 at a time, so in practice there is one page and the
  * pagination row stays collapsed. Its `filters` prop is deliberately left at
  * its default: the block already exports the measured `WORK_SERVICE_FILTERS`,
@@ -79,7 +79,7 @@ const SCHEMA = [
  *
  * `highlights` is deliberately not passed either. The block excludes a
  * highlighted project from the results and only paints a banner when a later
- * target container still holds cards; with nine projects the cards stop at
+ * target container still holds cards; with ten projects the cards stop at
  * target two, so a second banner could never render and any banner at all
  * would cost the index a project. See the note on `PORTFOLIO_HIGHLIGHTS`.
  */

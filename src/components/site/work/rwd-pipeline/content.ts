@@ -71,29 +71,33 @@ export const PROJECT_TITLE = "Real-World Data Pipeline for Cancer Research";
 export const PROJECT_CANONICAL = "/work/rwd-pipeline/";
 /**
  * The meta description. It states what was built and what it was built with,
- * in ~175 characters. The previous version counted "dozens of sources", which
+ * in 160 characters (the SERP cap; "research" is dropped here because
+ * `PROJECT_TITLE` already ends "for Cancer Research"). An earlier version
+ * counted "dozens of sources", which
  * the deck never does (it says "diverse sources & formats", slide 5, and
  * names four source types, slide 6); the source types and the model are
  * what the deck states.
  */
 export const PROJECT_DESCRIPTION =
-  "A 0-to-1 ETL pipeline normalising real-world clinical data from hospital records, claims and wearables into one OMOP model on Google Cloud, for early cancer detection research.";
+  "A 0-to-1 ETL pipeline normalising real-world clinical data (hospital records, claims, wearables) into one OMOP model on Google Cloud for early cancer detection.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/rwd-pipeline.jpg`;
 
 /**
- * The case-study deck, kept exact.
+ * No `PROJECT_LIVE` here (final review, 2026-09-11).
  *
- * This project has no site: the link is the Office web viewer opening the
- * `.pptx` this whole page is written from. `BlockProjectDetails` renders its
- * values as plain text, so `display` prints the file the viewer opens rather
- * than the 130-character viewer URL, and `url` — the exact string the source
- * ships — survives here.
+ * This project has no site. The source page's "Case study" details row
+ * opened the deck through the Office web viewer at
+ * `https://neuragul.com/assets/docs/rwd-pipeline-portfolio.pptx`, but that
+ * file is NOT in this repository (it lives in
+ * `~/Projects/NeuraGul/assets/docs/`), so the URL 404s on the deployed site
+ * and the viewer shows an error. The row is removed rather than pointed at
+ * a file that does not ship. Whether the deck is committed is the user's
+ * call, not this task's: it is 5.4 MB in a public repo and it names the data
+ * vendor the page withholds (dossier, Unverifiable 6). If it is committed
+ * under `public/assets/docs/`, restore the row as
+ * `{ label: "Case study", value: "neuragul.com/assets/docs/rwd-pipeline-portfolio.pptx", href: <viewer URL> }`
+ * and re-check the details table's row count below.
  */
-export const PROJECT_LIVE = {
-  url: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fneuragul.com%2Fassets%2Fdocs%2Frwd-pipeline-portfolio.pptx",
-  label: "Case study",
-  display: "neuragul.com/assets/docs/rwd-pipeline-portfolio.pptx",
-} as const;
 
 /**
  * Header. `lead` is the project's arc, not its brief: the brief is the
@@ -316,8 +320,11 @@ export const PROJECT_OUTCOME: BlockWysiwygProps = {
  * `Stack` stays in this array — `projectIntroTabs` (in `page.tsx`) reads it
  * to build the second intro tab — but `projectDetailsWithoutStack` filters it
  * out before this array reaches `BlockProjectDetails`, so the rendered table
- * sees the other six rows, an even count, so no row's right-hand column
- * renders empty.
+ * sees the other five rows. Five is odd, so from `md` up the last row
+ * (`Orchestration`) stands alone in the left column with the right one
+ * empty — the same shape `packship` renders with its five rows. It was six
+ * until the dead "Case study" row was removed (see the note above
+ * `PROJECT_HEADER`).
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Stack", value: "Python, Pandas, Polars, SQLGlot, Flyte, Google Cloud, BigQuery, DataHub, React" },
@@ -326,7 +333,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Model", value: "OMOP common data model" },
   { label: "Cloud", value: "Google Cloud · BigQuery" },
   { label: "Orchestration", value: "Flyte" },
-  { label: PROJECT_LIVE.label, value: PROJECT_LIVE.display, href: PROJECT_LIVE.url },
 ];
 
 /**

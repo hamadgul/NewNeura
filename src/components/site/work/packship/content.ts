@@ -65,7 +65,7 @@ export const PROJECT_CANONICAL = "/work/packship/";
  * the app does and what it was built with, in ~160 characters.
  */
 export const PROJECT_DESCRIPTION =
-  "An iOS app that measures an item with LiDAR or a photo, fits it into the smallest carrier box in 3D, and compares live UPS, USPS and FedEx rates. A NeuraGul case study.";
+  "An iOS app that measures an item with LiDAR or a photo, fits it into the smallest carrier box in 3D, and compares live UPS, USPS and FedEx rates.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/packship.jpg`;
 
 /**
@@ -98,11 +98,14 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  * the `Stack` row of `PROJECT_DETAILS`. Only `statement` and `body` reach the
  * page; `labels` and `activeLabel` are overwritten by that helper.
  *
- * `statement` is the brief and is unchanged. Its last clause, "answers all
- * three from one photo", holds because the photo path is real: a photo goes to
- * `POST /identify-image` to name the product, the name goes to the dimension
- * lookup, and the box and rates follow (dossier, "Where the models are"). It
- * is one of three ways in, and the sections below say so.
+ * `statement` is the brief. Its last clause used to read "answers all three
+ * from one photo"; the final review (2026-09-11) changed it to name the three
+ * ways in that the body describes — the LiDAR scan, a photo, or a typed
+ * product name — so the intro no longer promotes one path over the others.
+ * The photo path is real: a photo goes to `POST /identify-image` to name the
+ * product, the name goes to the dimension lookup, and the box and rates
+ * follow (dossier, "Where the models are"). No claim is added: each of the
+ * three appears in the sections below.
  *
  * `body` used to promise rate lookups "fast enough to feel instant"; nothing
  * measures that. It now names the stack and the numbers.
@@ -111,7 +114,7 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
   labels: ["The brief", "What we built"],
   activeLabel: 0,
   statement:
-    "Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. PackShip answers all three from one photo.",
+    "Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. PackShip answers all three from a LiDAR scan, a photo or a product name.",
   body: "A React Native app with the packing solver and the 3D view running on the phone, and an Express backend on Railway with Postgres and Redis that proxies UPS, FedEx and USPS rates and the dimension lookup. Measuring is ARKit with the LiDAR scanner. 349 Jest tests cover the app and 22 the backend. Version 1.2.0 is on the App Store.",
 };
 

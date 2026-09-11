@@ -131,7 +131,7 @@ lines, all live routes: **Applied AI** (with four children: AI Strategy,
 Custom Models, Retrieval & Agents, Evaluation & Guardrails), **Web
 Development**, **App Development**, **Cloud & Infrastructure**, **Data
 Intelligence** (`src/components/site/home/content.ts:91-197`,
-`SERVICE_LINKS`). A case study is evidence for one or more of these lines —
+`HERO_CARDS`; the same five lines again as `SERVICE_LINKS` at `:330-336`). A case study is evidence for one or more of these lines —
 check `services`/`topServices` on that project's entry in
 `src/components/site/work/content.ts` before writing, since that is the
 service claim the page has to support.

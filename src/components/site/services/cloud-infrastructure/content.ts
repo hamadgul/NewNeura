@@ -218,7 +218,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Edge and operations:",
-      text: "The operations layer in front of the WordPress trade portal we maintain for a national wine importer: nginx, HSTS, a full content-security policy, a permissions policy.",
+      text: "The edge layer observed in front of the WordPress trade portal we maintain for a national wine importer: nginx, HSTS, a full content-security policy, a permissions policy.",
     },
     {
       type: "paragraph",
@@ -304,7 +304,7 @@ const VINTUS: ProjectCard = {
   href: "/work/vintus/",
   image: {
     src: `${IMG}/vintus.jpg`,
-    alt: "The Vintus wine importer storefront",
+    alt: "The Vintus wine importer trade portal",
     width: 1200,
     height: 750,
   },

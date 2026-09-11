@@ -34,9 +34,9 @@ import { defineShots } from "./_schema.mjs";
  * The page states that the client is not named. Two elements name them, and both would
  * otherwise appear in the published JPEGs:
  *
- *   header a img   the top bar's <img src="/logo.png" alt="DME Living Well">
+ *   header a img   the top bar's client logo, whose alt is the client's name
  *                  (web/src/components/TopBar.tsx) — on all five app screens.
- *   .org           the cut sheet's "DLW HME · Delivery cut sheet" masthead line
+ *   .org           the cut sheet's masthead line, which opens with the client's short name
  *                  (src/dlw_routing/export/printable.py) — printable screen only.
  *
  * `hideSelectors` sets visibility:hidden, so the layout does not reflow and the frame matches

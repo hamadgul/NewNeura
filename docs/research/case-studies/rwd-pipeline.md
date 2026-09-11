@@ -2,8 +2,10 @@
 
 Source of record: **one file, `~/Projects/NeuraGul/assets/docs/rwd-pipeline-portfolio.pptx`, and
 nothing else** (5,380,224 bytes, mtime 2026-05-30 00:02:45, sha256
-`a1783530a7ea7cfb483684e6cd67f3d1636dc57cce75f1c73a646d6d108acbe4`). It is the deck the page's
-details table already links to through the Office web viewer. There is no repository, no UI,
+`a1783530a7ea7cfb483684e6cd67f3d1636dc57cce75f1c73a646d6d108acbe4`). The page's details table
+used to link to it through the Office web viewer at `neuragul.com/assets/docs/…`, but the file is
+not in this repository and that URL 404s, so the "Case study" row was removed in the final
+review (2026-09-11); see *Links* under the shot list. There is no repository, no UI,
 no live site and no manifest: the plan's row reads "No UI exists; this page stays text-forward.
 Do not invent screenshots." Every line in this file names the slide number and the exact text on
 it, or the media file inside the deck, and nothing is taken from memory.
@@ -369,7 +371,16 @@ measured in the live slot with candidate strings swapped into it (`$SCRATCH/rwd-
 shipped 80 characters is four lines at 320 (h1 bottom 494 against the cover's 500), four at 360
 (448) and three at 390 (417), overlap 0; a 94-character draft was five lines at 320 and ran 25 px
 into the cover, and was cut. The old 56-character lead was three lines at 320 (463). The stack
-tab prints slide 38's list; the details table renders six rows in three pairs.
+tab prints slide 38's list; the details table rendered six rows in three pairs at that
+measurement. It now renders five (the last standing alone, as `packship` does).
+
+**Links.** None. The previous page's `PROJECT_LIVE` — "Case study" →
+`https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fneuragul.com%2Fassets%2Fdocs%2Frwd-pipeline-portfolio.pptx`
+— was removed in the final review: the `.pptx` is not in this repository (only at
+`~/Projects/NeuraGul/assets/docs/`), so the deployed URL 404s and the viewer shows an error.
+Whether to commit the deck is the user's decision (5.4 MB, public repo, and it names the data
+vendor the page withholds — Unverifiable 6); if it is committed under `public/assets/docs/`, the
+row is restored per the note above `PROJECT_HEADER` in `content.ts`.
 
 **Frozen cover `rwd-pipeline.jpg`:** NOT re-captured, not touched (Unverifiable 9). Referenced by
 `work/content.ts:256` (alt "The real-world clinical data pipeline"), `home/content.ts:189` ("The
@@ -430,6 +441,8 @@ src/ public/ .agents/` → 0).
   60%.
 - **The data vendor's name** (Unverifiable 6): withheld on the page; one sentence to change if the
   user wants it named.
+- **The deck itself.** Not in the repo, so the "Case study" link is gone from the details table.
+  Committing it restores the link but publishes 5.4 MB that names the vendor above.
 - **The frozen cover's invented specifics** (Unverifiable 9): five formats and four stage names that
   are not the deck's. It is a schematic and its alts call it a schematic; left alone.
 - **Service filters.** The `PORTFOLIO_PROJECTS` entry lists `data-intelligence` only, while the
