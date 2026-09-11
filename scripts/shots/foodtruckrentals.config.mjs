@@ -40,8 +40,10 @@ import { defineShots } from "./_schema.mjs";
  *                               "From $1,500 a day", and the Trusted-by strip. Shared by
  *                               /services/web-development/ and /services/applied-ai-evaluation/
  *                               with alt "The Food Truck Rentals home page". It IS the hero
- *                               at HEAD `5ff670f` (the collage shipped 2026-08-16), so it
- *                               stays and is evidence for the hero section.
+ *                               at HEAD `5ff670f` (the collage shipped 2026-08-16) and the
+ *                               same frame as the frozen cover, so it is NOT placed on the
+ *                               case-study page (duplicate-cover trap); the cover carries
+ *                               the hero section. Kept in public/ for the two service pages.
  *   foodtruckrentals-work.jpg   1600x1000, captured 2026-09-04: `/work`, the case-study
  *                               index. Shared by the same two service pages with alt "The
  *                               work index: every activation, with the client, the borough,
@@ -65,7 +67,7 @@ import { defineShots } from "./_schema.mjs";
  */
 export default defineShots("foodtruckrentals", [
   {
-    // Evidence for: "One page owns the New York cluster" — the breadcrumb `Food truck rental
+    // Evidence for: "One query, one owner." (the owner section) — the breadcrumb `Food truck rental
     // NYC`, the H1 `Food truck rental in New York City, priced up front.`, the subtitle
     // ("From $1,500 a day unbranded, or $10,000 custom-wrapped, published here rather than
     // quoted on request"), and the top of the facts ledger. This is the route
@@ -91,7 +93,7 @@ export default defineShots("foodtruckrentals", [
     hideSelectors: ["nextjs-portal"],
   },
   {
-    // Evidence for: "Every published price lives in one module" — `/food-truck-rental`, the
+    // Evidence for: "Every price comes from one file." (the pricing section) — `/food-truck-rental`, the
     // page whose three tiers, `From $1,500`, and JSON-LD `Offer` nodes are all rendered from
     // `TIERS` in `lib/pricing.ts` (`app/food-truck-rental/page.tsx:10, 123-134`).
     route: "/food-truck-rental",
@@ -102,7 +104,9 @@ export default defineShots("foodtruckrentals", [
     hideSelectors: ["nextjs-portal"],
   },
   {
-    // Evidence for: "The form is the one human-facing channel" — `/contact`, the inquiry
+    // Evidence for: "The same suite holds the contact page's reply promise to one wording,
+    // within 48 hours" and "The listing's telephone number is in the JSON-LD and nowhere a
+    // person can read it" — `/contact`, the inquiry
     // form (`components/inquiry.tsx`) whose delivery inbox and public address are kept
     // distinct by `tests/contact-address.test.tsx`, with the "within 48 hours" reply promise
     // the client confirmed on 2026-07-29 and `tests/rendered-copy.test.ts` holds to one

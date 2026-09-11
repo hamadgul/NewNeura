@@ -334,7 +334,7 @@ For the user. **Not written on the page**, and no later task should promote one 
 
 ## Shot list
 
-Three runner captures, two earlier captures kept, one frozen cover left alone. Every entry
+Three runner captures, one earlier capture kept on the page (the work index), one earlier capture kept in `public/` but not on this page (the home frame, which is the cover), one frozen cover left alone. Every entry
 names the sentence in `content.ts` it is evidence for.
 
 **How the source was booted.** From a scratch COPY (`rsync -a --exclude .next` into
@@ -355,11 +355,11 @@ rendered, so no frame can show it.
 
 | `out` | Route | Evidence for |
 | --- | --- | --- |
-| `foodtruckrentals-nyc.jpg` (1600x1000, new) | `/food-truck-rental-nyc` (loaded at `#:~:text=Parked%20here%20already.`, see below) | "One page owns the New York cluster" — the breadcrumb `Food truck rental NYC`, the H1 `Food truck rental in New York City, priced up front.`, the price-led subtitle, and the top of the facts ledger ($1,500 / day; From $10,000) |
-| `foodtruckrentals-rental.jpg` (1600x1000, new) | `/food-truck-rental` | "Every published price lives in one module" — the H1 `Food truck rental, handled end to end.`, the hero's `$1,500 a day` (`PRICE_FLOOR`), and the facts ledger whose `Service area` row is `SERVICE_AREA.label` verbatim (`NYC + Long Island, New Jersey & Connecticut`) |
-| `foodtruckrentals-contact.jpg` (1600x1000, new) | `/contact` | "The form is the one human-facing channel" — the H1 `Start an activation.`, the ledger's `Quote turnaround · Within 48 hours`, and no telephone anywhere in the frame |
-| `foodtruckrentals-home.jpg` (1600x1000, kept, 2026-09-04) | `/` | "Three photographs at once" — the 3x2 collage (Louis Vuitton large, Sartiano's and Blank Street stacked), the H1 `Branded food truck rentals`, `From $1,500 a day`, the Trusted-by strip. It IS the hero at HEAD (the collage shipped 2026-08-16). Shared by two service pages with alt "The Food Truck Rentals home page" |
-| `foodtruckrentals-work.jpg` (1600x1000, kept, 2026-09-04) | `/work` | "Seven case studies from one template" — `The work.`, the Louis Vuitton spread with its client · borough · year tag and its two metrics. Captured before the 2026-08-27 em-dash sweep (the brief still shows one dash); the shared alt is unaffected |
+| `foodtruckrentals-nyc.jpg` (1600x1000, new) | `/food-truck-rental-nyc` (loaded at `#:~:text=Parked%20here%20already.`, see below) | "One query, one owner." — the breadcrumb `Food truck rental NYC`, the H1 `Food truck rental in New York City, priced up front.`, the price-led subtitle, and the top of the facts ledger ($1,500 / day; From $10,000) |
+| `foodtruckrentals-rental.jpg` (1600x1000, new) | `/food-truck-rental` | "Every price comes from one file." — the H1 `Food truck rental, handled end to end.`, the hero's `$1,500 a day` (`PRICE_FLOOR`), and the facts ledger whose `Service area` row is `SERVICE_AREA.label` verbatim (`NYC + Long Island, New Jersey & Connecticut`) |
+| `foodtruckrentals-contact.jpg` (1600x1000, new) | `/contact` | "The same suite holds the contact page's reply promise to one wording, within 48 hours" and "The listing's telephone number is in the JSON-LD and nowhere a person can read it" — the H1 `Start an activation.`, the ledger's `Quote turnaround · Within 48 hours`, and no telephone anywhere in the frame |
+| `foodtruckrentals-home.jpg` (1600x1000, kept, 2026-09-04) | `/` | "Three trucks at once." — the 3x2 collage (Louis Vuitton large, Sartiano's and Blank Street stacked), the H1 `Branded food truck rentals`, `From $1,500 a day`, the Trusted-by strip. It IS the hero at HEAD (the collage shipped 2026-08-16) and the same frame as the frozen cover, so it is NOT placed on this page (Task 8's duplicate-cover trap); it stays in `public/` for the two service pages that use it with alt "The Food Truck Rentals home page" |
+| `foodtruckrentals-work.jpg` (1600x1000, kept, 2026-09-04) | `/work` | "All seven render from one template and one data file" — `The work.`, the Louis Vuitton spread with its client · borough · year tag and its two metrics. Captured before the 2026-08-27 em-dash sweep (the brief still shows one dash); the shared alt is unaffected |
 | `foodtruckrentals.jpg` (frozen cover, 1200x750) | NOT re-captured | Shared by `/`, `/work/`, `/process/` and all four service pages with alt "The Food Truck Rentals home page". The header renders it under the title. |
 
 **The NYC capture needed a text fragment.** The page is 11,578 px tall with two
