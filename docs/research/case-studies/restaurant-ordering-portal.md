@@ -306,14 +306,16 @@ optional per-shot `storageState` (validated in `_schema.mjs`, passed to `browser
 to load it; nothing about the runner's behaviour changes for a shot without the key.
 
 **What must be hidden in every frame.** Nothing carries a client identity — the restaurant
-name is an invented override and the orders are sandbox test orders. The admin sidebar's
-sign-out button and the customer phone column were checked by eye for anything real; see the
-report.
+name is an invented override and the orders are sandbox test orders. On the Orders shot two
+columns are hidden (`visibility: hidden`, rows keep their layout): the customer phone (the
+developer's real number on the sandbox test orders) and, by user decision after review, the
+customer name (the developer's own name and keyboard-mash test entries). Each row then reads
+id · Pickup · ASAP · amount · state.
 
 | `out` | Route | Evidence for |
 | --- | --- | --- |
 | `restaurant-ordering-portal-checkout.jpg` | `/checkout` (cart from storageState) | "pickup or delivery, now or a scheduled slot inside the restaurant's hours, a tip, and a card field that is a Square-hosted frame" — Pickup/Delivery and ASAP/Schedule pills, the two-line order summary (`1x Margherita Pizza (Medium) · Thin Crust`, `1x Garlic Bread`), the tip row, and the Square card iframe |
-| `restaurant-ordering-portal-orders.jpg` | `/admin/orders` | "a live feed of the same Square orders, an open/closed switch that blocks or accepts orders immediately" — the green `Open — accepting orders` band (this run's `hours.friday = FORCE` row), ten sandbox orders in Received / Ready / Completed, `Auto-refreshes every 30s · plays a sound on new orders` |
+| `restaurant-ordering-portal-orders.jpg` | `/admin/orders` | "a live feed of the same Square orders, an open/closed switch that blocks or accepts orders immediately" — the green `Open — accepting orders` band (this run's `hours.friday = FORCE` row), ten sandbox orders in Received / Ready / Completed with their customer-name and phone columns hidden, `Auto-refreshes every 30s · plays a sound on new orders` |
 | `restaurant-ordering-portal-menu.jpg` | `/admin/menu` | "Hide a dish from the admin and it leaves the ordering portal at once while staying in the Square catalog" — `1 hidden`, Hawaiian Pizza struck through with its toggle off, and the page's own sentence: "Hidden items and modifiers are removed from the customer ordering portal immediately. They remain in your Square catalog." |
 | `restaurant-ordering-portal-settings.jpg` | `/admin/settings` | "each is a row in a table that beats the code" — Restaurant Info showing the overridden name and address with `Last updated by shots@example.test on 9/11/2026` under each, and the per-day Business Hours editor |
 | `restaurant-ordering-portal-integrations.jpg` | `/admin/integrations` | "the five secret values are returned to the browser masked" — the Square card with its `DB values override environment variables. Secrets are masked after save` note, Twilio's Auth Token as dots with its own `Last updated by` line. The Square fields are empty placeholders because no Square override exists: the env token is never echoed to the browser. |
@@ -327,8 +329,9 @@ referenced them; the config's five outputs are checked for existence, bytes and 
 not product) on all five. On the Orders shot also the per-row phone span (`main button
 div.flex.items-center.gap-4 > span:first-child`, `visibility: hidden` so the row keeps its
 layout): the sandbox test orders were placed by the developer with a real phone number. The
-customer names on those rows (`Jack M`, `Test Tester`, `kjnknk`, `Hamad Gul`…) are sandbox
-test entries and stay; nothing else on any screen identifies a person.
+customer names on those rows (`Jack M`, `Test Tester`, `kjnknk`, `Hamad Gul`…) were sandbox
+test entries; they are hidden too since review round 2 (`main button
+div.flex.items-center.gap-3 > span:nth-child(2)`). Nothing else on any screen identifies a person.
 
 **Not captured, and why.** The storefront (`/`) — it is the cover already. `/admin/analytics`
 — the sandbox's test orders are all from April, outside the 90-day window, so every tile

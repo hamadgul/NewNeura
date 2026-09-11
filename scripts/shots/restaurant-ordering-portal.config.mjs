@@ -48,7 +48,10 @@ import { defineShots } from "./_schema.mjs";
  *   the phone span  The Orders feed prints each sandbox order's customer phone. The sandbox
  *                   test orders were placed by the developer with a real number, so the
  *                   column is hidden (visibility: hidden — the row keeps its layout).
- *                   The names on those rows are sandbox test entries and stay.
+ *   the name span   The customer-name column on the same rows (user decision, review round
+ *                   2): the sandbox entries are the developer's own name and keyboard-mash
+ *                   test names, neither of which belongs on the site. Each row then reads
+ *                   id · Pickup · ASAP · amount · state.
  *
  * ── Capture notes ──────────────────────────────────────────────────────────
  *
@@ -79,13 +82,18 @@ export default defineShots("restaurant-ordering-portal", [
     // live feed, an open/closed switch at the top that blocks or accepts orders
     // immediately, and a sound when a new one lands." The green
     // "Open — accepting orders" band is the force-open row this run wrote; the rows are
-    // Square sandbox test orders in Received / Ready / Completed states.
+    // Square sandbox test orders in Received / Ready / Completed states, with both the
+    // customer-name and the phone columns hidden (see the header note).
     route: "/admin/orders",
     viewport: { width: 1600, height: 1000 },
     out: "restaurant-ordering-portal-orders.jpg",
     minBytes: 40000,
     waitFor: "main button span.font-mono",
-    hideSelectors: ["nextjs-portal", "main button div.flex.items-center.gap-4 > span:first-child"],
+    hideSelectors: [
+      "nextjs-portal",
+      "main button div.flex.items-center.gap-3 > span:nth-child(2)",
+      "main button div.flex.items-center.gap-4 > span:first-child",
+    ],
     ...authed,
   },
   {
