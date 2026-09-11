@@ -94,10 +94,18 @@ export function BlockHeaderProjects({
   scrollPrompt = "Scroll to explore",
   className,
 }: BlockHeaderProjectsProps) {
+  // Below `md` the text band is `minmax(500px, auto)`, not a fixed 500px. The
+  // band was sized for the layout's short strings; a seven-line lead and a
+  // three-line title (new-york-fine-foods, new-york-mobile-mechanic at 390)
+  // overflowed the fixed row and the title, and the scroll prompt with it,
+  // printed on top of the image band (measured 32-142px into it at 320-430).
+  // Letting the row grow to its content keeps every page that fits at exactly
+  // 500px and gives the ones that do not the height they need. At `md` and up
+  // the measured 500px is restored unchanged.
   return (
     <header
       className={cn(
-        "blockHeaderProjects ng-grid relative mb-[100px] grid-rows-[500px_70vh] overflow-hidden bg-[#262626]",
+        "blockHeaderProjects ng-grid relative mb-[100px] grid-rows-[minmax(500px,auto)_70vh] overflow-hidden bg-[#262626] md:grid-rows-[500px_70vh]",
         className,
       )}
     >
@@ -173,22 +181,36 @@ export function BlockHeaderProjects({
         </div>
 
         {/*
-          Two columns held a city ("Livermore, CA"). Ours holds a meta string —
-          "2026 · E-commerce" — which wrapped to "2026 · E-" / "commerce" in
-          that width, so the slot runs to line 6.
+          Below `md` the location and service strings share one grid cell (the
+          layout's `left` and `right` areas stack there), which is fine for a
+          city and a market name and not for "2026 · WordPress" against "Cloud
+          & Infrastructure · Web Development": the two text runs overprinted
+          each other by 42px at 390 and 112px at 320 on /work/vintus/. So they
+          sit in a wrapping flex row here — one line with a 20px minimum gap
+          when both fit, and the service line drops to a second line, still
+          right-aligned, when they do not. At `md` the wrapper is
+          `display: contents`, so the two address the page grid directly with
+          the spans below, exactly as before.
         */}
-        <div className="blockHeaderProjects__location font-S col-start-2 col-end-[6] row-start-2 md:col-end-8">
-          {location}
-        </div>
+        <div className="blockHeaderProjects__meta col-start-2 col-end-[6] row-start-2 flex flex-wrap justify-between gap-x-[20px] md:contents">
+          {/*
+            Two columns held a city ("Livermore, CA"). Ours holds a meta string —
+            "2026 · E-commerce" — which wrapped to "2026 · E-" / "commerce" in
+            that width, so the slot runs to line 6.
+          */}
+          <div className="blockHeaderProjects__location font-S col-start-2 col-end-[6] row-start-2 md:col-end-8">
+            {location}
+          </div>
 
-        {/*
-          Right-aligned rather than filling its cell. Widened from line 18 for
-          the same reason: a single market name fitted 270px, but two service
-          lines joined with a "·" ("Cloud & Infrastructure · Web Development")
-          did not and wrapped onto the title.
-        */}
-        <div className="blockHeaderProjects__service font-S col-start-2 col-end-[6] row-start-2 justify-self-end text-right md:col-start-8 md:col-end-[14] xl:col-start-[14] xl:col-end-[22]">
-          {service}
+          {/*
+            Right-aligned rather than filling its cell. Widened from line 18 for
+            the same reason: a single market name fitted 270px, but two service
+            lines joined with a "·" ("Cloud & Infrastructure · Web Development")
+            did not and wrapped onto the title.
+          */}
+          <div className="blockHeaderProjects__service font-S col-start-2 col-end-[6] row-start-2 justify-self-end text-right max-md:ml-auto md:col-start-8 md:col-end-[14] xl:col-start-[14] xl:col-end-[22]">
+            {service}
+          </div>
         </div>
 
         <div className="blockHeaderProjects__title font-3XL col-start-2 col-end-[-2] row-start-3 z-[2] mt-[25px] mb-[50px] self-start md:col-end-8 xl:col-end-[12]">
