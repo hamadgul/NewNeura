@@ -32,6 +32,21 @@ export function defineShots(slug, shots) {
           `(no "/", "\\", or ".." — it is joined onto public/site/images directly)`
       );
     }
+    // Optional. A Playwright storageState file (cookies + localStorage) the
+    // runner loads into the shot's browser context, so an authenticated route
+    // (`/admin/*` behind a login) or a page that needs client state (a cart in
+    // localStorage) can be captured without the runner knowing how to log in.
+    // The file is produced by a scratch script outside the repo and is never
+    // committed; it must be an absolute path so a config never points into
+    // the repo by accident. Shots without the key behave exactly as before.
+    if ("storageState" in s) {
+      if (typeof s.storageState !== "string" || !s.storageState.startsWith("/")) {
+        throw new Error(
+          `defineShots(${slug}): storageState for "${s.out}" must be an absolute path ` +
+            `to a Playwright storageState JSON file`
+        );
+      }
+    }
   }
   return { slug, shots };
 }

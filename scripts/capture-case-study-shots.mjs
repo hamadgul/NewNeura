@@ -78,11 +78,21 @@ try {
 
     let context;
     try {
+      // Optional per-shot `storageState` (validated as an absolute path in
+      // _schema.mjs): a Playwright cookies+localStorage file produced by a
+      // scratch login script outside the repo. It is how an authenticated
+      // route or a page that needs client state gets captured; a missing
+      // file fails the shot by name here rather than silently capturing the
+      // login page it would otherwise be redirected to.
+      if (shot.storageState && !existsSync(shot.storageState)) {
+        throw new Error(`storageState file not found: ${shot.storageState}`);
+      }
       context = await browser.newContext({
         viewport: shot.viewport,
         deviceScaleFactor: 2,
         // Kill animation nondeterminism so a re-run is byte-comparable.
         reducedMotion: "reduce",
+        ...(shot.storageState ? { storageState: shot.storageState } : {}),
       });
       const page = await context.newPage();
       // NOT "networkidle": a page with a continuously streaming response —
