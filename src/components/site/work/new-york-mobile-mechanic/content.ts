@@ -2,107 +2,93 @@
  * Content for `/work/new-york-mobile-mechanic/`.
  *
  * Provenance for every string here is recorded in
- * `docs/research/case-studies/new-york-mobile-mechanic.md`.
+ * `docs/research/case-studies/new-york-mobile-mechanic.md` (Task 11, 2026-09-11):
+ * the stack from the manifest, every number with the command that proves it,
+ * and the sentence each image is evidence for. Nothing below is from memory.
  *
- * ── Asset refresh, 2026-09-07 ───────────────────────────────────────────────
- * The client rebuilt the site's homepage hero, so `nymm.jpg` and
- * `nymm-hero.mp4` were both re-captured from the live site. What changed on
- * their end, and therefore what the old assets were still showing: the
- * wordmark ("ADAM'S" -> "ADAM"), the hero photograph (a dark SUV -> a red BMW
- * at dusk), the nav ("Contact" -> "Resources", and a reordering), the
- * sub-headline ("Skip the tow truck and save time." -> "Don't waste time at a
- * shop, we come to you."), the button case, and the review gauge (142+ ->
- * 158+).
+ * ── What the 2026-09-11 rewrite changed, and why ────────────────────────────
+ * Three claims on the previous page were contradicted by the repo and are gone:
+ *   "Framer Motion"        — the site declares `gsap`; `framer-motion` is in no
+ *                            manifest, lockfile or source file. The dials are
+ *                            hand-built SVG on requestAnimationFrame.
+ *   the dial list          — "jobs completed, average response time, star
+ *                            rating" — the four dials are years in business,
+ *                            cars serviced, Google reviews, avg text reply.
+ *                            No dial shows a star rating.
+ *   "schema on every route" / "exactly one exit and it is the phone" —
+ *                            three of fifteen route files emit no JSON-LD, and
+ *                            the site has a call link, an SMS link and a form.
+ * "Core Web Vitals in the green" was not contradicted but is not evidenced
+ * (field CWV is nowhere in the repo); what exists is a Lighthouse report at
+ * 100 / 100 / 100 / 100, so the page says that. Echoes of all four on other
+ * pages are filed as cross-page deltas in the dossier, never applied here.
  *
- * The VIDEO was the easy one to miss: it is a screen capture of this same
- * hero, so it was showing the previous branding for 12 seconds next to a cover
- * showing the new one. When a client changes a page, every asset OF that page
- * is stale, not just the still.
+ * ── Assets, and why each one sits where it does ─────────────────────────────
+ *   nymm.jpg          1200x750  the cover, captured from the LIVE site on
+ *                               2026-09-07 (the `158+` dial). Shared by /,
+ *                               /work/, /process/ and two slots on
+ *                               /services/web-development/. Header only: the
+ *                               hero with its four dials and two call buttons
+ *                               is the page's opening image, so it is not
+ *                               repeated in the body (Task 8's duplicate-cover
+ *                               trap).
+ *   new-york-mobile-mechanic-combo.jpg   1600x1000  a runner capture of
+ *                               /service-areas/queens/brake-jobs from a scratch
+ *                               copy of the repo. Full-bleed under the matrix
+ *                               section.
+ *   new-york-mobile-mechanic-topic.jpg   1600x1000  the same for
+ *                               /services/starter-alternator/alternator-replacement.
+ *   new-york-mobile-mechanic-lighthouse.jpg  1600x841  the user's own Lighthouse
+ *                               screenshot of 2026-07-09, resized whole. This
+ *                               is the SAME report as the frozen
+ *                               `mechanicseo.png` (512x265), which used to sit
+ *                               in the `small` slot of `BlockMediaDoubleQuote`
+ *                               at 530px, where the scores were hard to read.
+ *                               `mechanicseo.png` stays on disk for
+ *                               /services/web-development/ and is no longer
+ *                               placed on this page.
+ *   new-york-mobile-mechanic-chatgpt-nyc.jpg     1600x1156  and
+ *   new-york-mobile-mechanic-chatgpt-queens.jpg  1600x1174  the user's two
+ *                               ChatGPT screenshots (2026-07-28, 2026-08-07),
+ *                               resized whole. Paired in one
+ *                               `BlockMediaDoubleQuote` because they are the
+ *                               same kind of artefact ten days apart.
+ *   conversion.png    1179x2203 the live /reviews page on a phone (4.9, 147
+ *                               reviews, the fixed Call / Text Now bar). The
+ *                               only portrait asset on the site; the `small`
+ *                               slot caps it at ~990px tall, whereas
+ *                               `BlockImageFull` would render it 2,690px tall
+ *                               at 1440. Not re-captured: a local boot has no
+ *                               Google credentials and would print `5.0` from
+ *                               eight curated reviews.
+ *   nymm-hero-loop.mp4  1200x750 a 3s loop of the hero with the dials revving,
+ *                               poster `nymm.jpg`. The evidence for the dial
+ *                               sentence, which a JPEG cannot carry (it shows
+ *                               the number the count ARRIVES at). Also used by
+ *                               /, /work/ and /services/web-development/.
+ *   nymm-hero.mp4     (no longer referenced here) the 12s pan of the whole
+ *                               home page. Dropped: the cover and the loop
+ *                               already show the hero, and nothing on this
+ *                               page is evidenced by a pan. The file stays in
+ *                               public/site/videos; it is outside this task's
+ *                               paths and is noted in the report.
  *
- * Recipe, so a future refresh matches rather than drifts:
- *   cover  1200x750 viewport at deviceScaleFactor 2, downsampled to 1200x750.
- *          Not 1600 — the headline measures 480/1200 of the frame in the asset
- *          this replaced, which is a 1200-wide capture, and a wider one shrinks
- *          the type against every other still on the page.
- *   video  Playwright `recordVideo` at 1200x750, reloaded so the gauges count
- *          up on camera, held ~4s, eased scroll down over 3s, held, eased back.
- *          Transcoded `fps=24, crf 30` to land at 12.75s / 995KB against the
- *          previous 12.67s / 1026KB.
- *
- * `conversion.png` was checked and NOT re-captured: it already carries the new
- * "ADAM" wordmark, so it post-dates the rebrand. `mechanicseo.png` is the
- * borough matrix, not the homepage.
- *
- * Assets, and why each one sits where it does:
- *   nymm.jpg        1200x750   the cover; header, then the second media pair
- *   mechanicseo.png  512x265   the Lighthouse report — 100 for performance,
- *                              accessibility, best practices and SEO, plus 3/3
- *                              agentic browsing. NOT the borough matrix, which
- *                              is what the filename and this line used to claim
- *                              and what its caption described until 2026-09-10.
- *                              Small, so it goes in the
- *                              `small` slot of `BlockMediaDoubleQuote`, which
- *                              measures 530px at `xl` — a 3.5% upscale. In the
- *                              `large` slot (733px) or full-bleed (1440px) it
- *                              would be blown up 1.4x to 2.8x.
- *   conversion.png  1179x2203  the only portrait asset on the whole site.
- *                              Deliberately never handed to `BlockImageFull`:
- *                              that block is full-bleed at `h-auto w-full`, so
- *                              a 1.87 portrait would render 2,690px tall at
- *                              1440. The `small` slot caps it at ~990px.
- *   nymm-hero-loop.mp4
- *                   1200x750   a 3s loop of the hero alone, gauges counting.
- *                              Replaced the still in the SECOND media pair on
- *                              2026-09-10; it is the evidence for the "numbers
- *                              that move" feature, which a JPEG cannot carry.
- *   nymm-hero.mp4   1200x750   the project's own site capture. Fed to
- *                              `BlockMediaDoubleQuote`'s `type: "video"` arm,
- *                              which is the one media slot on this layout that
- *                              takes moving footage; `nymm.jpg` is its poster,
- *                              being a still of the same site.
- *
- * Alt text note: the source's two feature captions become the `alt` of the
- * images they were written for. The architecture layout this shell came from
- * shipped `alt=""` because its media were decorative photographs; these are
- * informative screenshots, so the caption is the description.
- *
- * `mechanicseo.png` is the one place where the `alt` and the `quote` are NOT
- * the same string, and deliberately. Both used to read "The service-by-borough
- * page matrix behind the local rankings", which describes an asset this page
- * does not contain — the picture is a Lighthouse report. Reworded to the
- * scores at the user's direction ("reword the caption to match the lighthouse
- * scores") rather than by re-shooting the matrix. The pull-quote is set large
- * and wants one clean line, while the `alt` has to describe everything in the
- * frame, so the two now carry different lengths of the same fact.
- *
- * The borough matrix itself is not lost: `PROJECT_FEATURE_ONE` still states it
- * in copy ("A landing-page matrix of service crossed with borough"). It simply
- * no longer claims a screenshot is showing it.
- *
- * Ordering note: `BlockMediaDoubleQuote` appears twice and `BlockWysiwyg`
- * three times, so the exported constants are numbered by their position on
- * the page. `BlockWysiwyg` no longer carries a fourth, "Outcome" instance:
- * its text was character-identical to `PROJECT_HEADER.lead`, so it was
- * deleted rather than printed twice.
- *
- * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we". "What we built" was
- * the label on the second intro section before `projectIntroTabs` shipped;
- * that helper now overwrites both tab labels to "The brief" / "The tech
- * stack", so "What we built" no longer renders anywhere on this page. Every
- * metric, stack entry and live URL below is exactly as the source records it.
+ * VOICE — the source site is written for one mechanic and says "Adam". This
+ * site says "we". No headcount, no "I", no em dash in any copy string (the
+ * client's own copy test bans the em dash, which seemed worth matching).
+ * Every metric, stack entry and live URL below is exactly as the repo records it.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
- * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
- * strings. Both are metadata only — the `<title>` stem and the meta
- * description — and both were rewritten to compete in a result list rather
- * than to open a page; see the notes on each. Some `alt` strings were also
- * lengthened from a bare project name to a description of the screenshot.
+ * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are metadata only — the `<title>`
+ * stem and the meta description — and are written to compete in a result
+ * list rather than to open a page; see the notes on each.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
+import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
 import type { BlockMediaDoubleQuoteProps } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
 import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
+import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProjectDetails";
 
 const IMAGES = "/site/images";
@@ -112,33 +98,31 @@ const VIDEOS = "/site/videos";
  * The `<title>` stem, suffixed by the root layout's `"%s — NeuraGul"` template.
  *
  * This is NOT the project's display name — `PROJECT_HEADER.title` is, and it
- * still reads "New York Mobile Mechanic" on the page and in the breadcrumb. The two diverge on
- * purpose: an `<h1>` sits under a header that has already established what the
- * page is, while a `<title>` is read cold in a result list, so it has to name
- * the category of work as well as the client. `PROJECT_TITLE` is referenced
- * only by `metadata` in the route file, so nothing visible moves with it.
+ * still reads "New York Mobile Mechanic" on the page and in the breadcrumb.
+ * A `<title>` is read cold in a result list, so it names the category of work
+ * as well as the client. Referenced only by `metadata` in the route file.
  */
 export const PROJECT_TITLE = "New York Mobile Mechanic: Local SEO Build";
 export const PROJECT_CANONICAL = "/work/new-york-mobile-mechanic/";
 /**
- * The meta description. It was the project's `brief` verbatim, which reads as
- * the opening of a story rather than as a search result: the brief sets a scene
- * and names no technology, so the snippet said nothing a searcher could match.
- * This states what was built and what it was built with, in ~150 characters.
- * The brief itself is untouched and still opens the page.
+ * The meta description. Says what was built and what it was built with, in
+ * ~150 characters. "Core Web Vitals green" is gone from it: nothing in the
+ * repo measures field CWV. The Lighthouse score is what exists.
  */
 export const PROJECT_DESCRIPTION =
-  "A local SEO site for a 24/7 NYC mobile mechanic: a landing page for every service crossed with every borough, schema on every route, Core Web Vitals green.";
+  "A Next.js site for a 24/7 NYC mobile mechanic: 117 pages from one config file, a service-by-borough matrix, JSON-LD on every service page, Lighthouse at 100.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/nymm.jpg`;
 
 /**
  * Header. `lead` is the project's OUTCOME, not its brief: the brief is the
- * `BlockIntroDouble` statement two blocks down, and printing it in both slots
- * repeated the same sentence inside two screens on every case study.
+ * `BlockIntroDouble` statement below. 117 is the sitemap's URL count
+ * (10 static + 11 services + 30 topics + 17 areas + 4 posts + 45 combos), and
+ * "one config file" is `content/site.config.ts`, which the sitemap, both
+ * llms.txt routes and every page read.
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "New York Mobile Mechanic",
-  lead: "A conversion-focused site aimed squarely at same-day repair demand.",
+  lead: "One config file became 117 pages, every service page an answer to a search a stranded driver types, and the phone one tap away on all of them.",
   location: "2026 · Web",
   service: "Web Development",
   breadcrumbLabel: "Work",
@@ -153,108 +137,167 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
 };
 
 /**
- * Block 2 — `BlockIntroDouble`, the two-label variant. The source's first two
- * headed sections map onto the block's own two halves: the active label over
- * the `font-L` statement, the muted one over the body copy.
+ * Block 2 — `BlockIntroDouble`. `projectIntroTabs` turns this into two tabs:
+ * the brief (statement + body) and the `Stack` row of `PROJECT_DETAILS`.
+ * The statement is the original brief, unchanged. The body is the stack in
+ * prose, every item from `package.json` or the source.
  */
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
   labels: ["The brief", "What we built"],
   activeLabel: 0,
   statement:
     "A 24/7 mobile mechanic competing for the most urgent searches in the city. Someone is stranded and typing with one thumb.",
-  body: "A high-energy Next.js site with stat gauges that count up as you scroll, plain-language service breakdowns, live Google reviews, and a one-tap call-to-book. Local SEO built to rank across all five boroughs.",
+  body: "Next.js 16 and React 19 in TypeScript, Tailwind CSS 4, GSAP for the hero reveal and hand-built SVG dials for the numbers, zod on the site config and the contact form, 157 Vitest tests. Deployed on Vercel. Google reviews are pulled on the server through Featurable, with the Places API behind it and eight real reviews in config behind that.",
 };
 
 /**
- * Block 3 — `BlockMediaDoubleQuote` (first instance): the site itself, moving,
- * beside the borough matrix.
+ * Block 3 — `BlockWysiwyg`: the service-by-borough matrix.
  *
- * The video takes the `large` slot; the block renders it with an explicit
- * aspect-ratio box and no wipe, which is the source's own treatment of a
- * `<video>` here. At `xl` the blockquote sits directly under the `small` media,
- * so the quote is the matrix screenshot's own caption.
+ * Numbers: `COMBO_SERVICE_SLUGS` (9) x `COMBO_AREA_SLUGS` (5) in
+ * `lib/service-area-combos.ts`; `dynamicParams = false` on the route;
+ * `test/combo-page.test.tsx` ("generates exactly the matrix params", "404s for
+ * an off-matrix pair"); 17 entries in `serviceAreas.areas`, 17 keyed entries
+ * in `lib/area-content.ts`; the doorway note is the file's own header comment.
  */
-export const PROJECT_MEDIA_QUOTE_ONE: BlockMediaDoubleQuoteProps = {
-  large: {
-    type: "video",
-    src: `${VIDEOS}/nymm-hero.mp4`,
-    poster: `${IMAGES}/nymm.jpg`,
-    width: 1200,
-    height: 750,
-  },
-  small: {
-    type: "image",
-    src: `${IMAGES}/mechanicseo.png`,
-    alt: "A Lighthouse report for the site scoring 100 for performance, accessibility, best practices and SEO, and 3/3 for agentic browsing.",
-    width: 512,
-    height: 265,
-  },
-  quote: "Lighthouse at 100 for performance, accessibility, best practices and SEO.",
-};
-
-/**
- * Blocks 4 and 5 — `BlockWysiwyg` (first and second instances): the first two
- * `features`, in source order.
- *
- * Each feature is a label, a title and a paragraph, which is exactly the
- * block's tagline / title / body shape. The source's single "How it works"
- * heading above the run is section chrome with no slot here, and is dropped
- * rather than repeated as a tagline the labels already earn.
- */
-export const PROJECT_FEATURE_ONE: BlockWysiwygProps = {
+export const PROJECT_MATRIX: BlockWysiwygProps = {
   tagline: "Local SEO",
-  title: "Built to rank.",
+  title: "Forty-five pages, none of them thin.",
   body: [
     {
       type: "paragraph",
-      text: "A landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green. When your car dies on the BQE you call whoever ranks. Nobody comparison-shops from the shoulder.",
+      text: "Nine services crossed with five boroughs make forty-five pages, each one composed from the service's own angle and a paragraph written for that borough, so the Queens brake page and the Brooklyn brake page share a service and nothing else. The route is closed: a pair that is not in the matrix returns a 404 instead of a templated page, and a test generates the whole matrix and checks that an off-matrix pair fails.",
+    },
+    {
+      type: "paragraph",
+      text: "With seventeen area pages, each carrying its own local copy, the site sits past what the file that builds the matrix calls Google's fifty-page doorway line, on purpose. The file says so in its first twenty lines, and names the Search Console report that will decide whether any cell gets pruned.",
     },
   ],
 };
 
-export const PROJECT_FEATURE_TWO: BlockWysiwygProps = {
-  tagline: "Framer Motion",
-  title: "Numbers that move.",
+export const PROJECT_IMAGE_COMBO: BlockImageFullProps = {
+  image: {
+    src: `${IMAGES}/new-york-mobile-mechanic-combo.jpg`,
+    alt: "The Queens brake-repair page: the headline Mobile Brake Repair in Queens, NY, the service's near-me intro, its description, and two sections written for Queens.",
+    width: 1600,
+    height: 1000,
+  },
+};
+
+/**
+ * Block 5 — `BlockWysiwyg`: the thirty topic pages.
+ *
+ * The Search Console figures are a dated record in the source
+ * (`lib/service-topics.ts:5-12`, "measured 2026-08-17, GSC sc-domain, 90
+ * days"), attributed here to the report and the date; this task could not
+ * re-measure them (dossier, Unverifiable 5). 30 = `grep -c 'topic: "'`. The
+ * pricing rule is the same header; `Diagnosis from $95` is the alternator
+ * page's own `priceLabel`.
+ */
+export const PROJECT_TOPICS: BlockWysiwygProps = {
+  tagline: "Search Console",
+  title: "Thirty pages that answer one question each.",
   body: [
     {
       type: "paragraph",
-      text: "Stat gauges count up as they scroll into view: jobs completed, average response time, star rating. Energy that earns trust without crowding out the one thing the page wants you to do.",
+      text: "The four blog posts earned 31 impressions and no clicks in the 90 days to 17 August 2026. The eleven service pages earned 1,918 impressions and 10 clicks from positions 24 to 58. Google was showing them on pages three to six and ten people clicked, because a 560-word service page does not answer the question a driver typed.",
+    },
+    {
+      type: "paragraph",
+      text: "So thirty pages went under the services, one question each: battery light on, clicking when starting, pedal goes to the floor, starts then dies. Each carries its own price chip and a note saying what that price covers. The alternator page prices the diagnosis and nothing else, because the config prices the starter and nothing else, and a rule in the file forbids inventing a rate.",
+    },
+  ],
+};
+
+export const PROJECT_IMAGE_TOPIC: BlockImageFullProps = {
+  image: {
+    src: `${IMAGES}/new-york-mobile-mechanic-topic.jpg`,
+    alt: "The alternator replacement page: the headline, an answer-first lead, the Diagnosis from $95 chip with a note that the alternator itself is quoted after testing, and the first symptom section.",
+    width: 1600,
+    height: 1000,
+  },
+};
+
+/**
+ * Block 7 — `BlockWysiwyg`: the copy test. Everything here is
+ * `test/copy-tells.test.ts` (eight patterns in `BLACKLIST`, the walk over
+ * config, borough copy, topic pages and the raw MDX, and the comment recording
+ * the six weeks the posts went unscanned).
+ */
+export const PROJECT_COPY_TEST: BlockWysiwygProps = {
+  tagline: "Copy",
+  title: "A test that fails if the writing sounds like a machine.",
+  body: [
+    {
+      type: "paragraph",
+      text: "An outside reviewer said the copy read as AI-generated. The rewrite pinned eight patterns in a test, from “peace of mind” and “no surprises” down to the em dash. The test walks every service description, FAQ, process step, borough paragraph, topic section, table cell and the raw text of every blog post. Customer reviews are the one thing it skips, because they are quoted verbatim. When two “no surprises” lines sat live for six weeks in posts the test had not covered, the posts were added to it.",
     },
   ],
 };
 
 /**
- * Block 6 — `BlockMediaDoubleQuote` (second instance): the pinned call-to-book
- * control, with its own caption as the quote.
- *
- * `conversion.png` takes the `small` slot for the reason set out at the top of
- * this file — it is the only portrait asset on the site, and 530px is the
- * widest slot that does not turn 2,203px of phone screen into a scroll of its
- * own. The `large` slot used to re-use the cover still; it now carries
- * `nymm-hero-loop.mp4` instead. See the note on the slot below.
+ * Block 8 — `BlockWysiwyg`: performance. The scores are the 2026-07-09 report
+ * (the image below). The mechanisms: `experimental.inlineCss` in
+ * `next.config.ts`; `hero-poster.avif` 13,863 B and `hero-loop-1280x700.mp4`
+ * 755,140 B (`ls -la public/media`), lazy-loaded on intersection and skipped
+ * under reduced motion (`HeroVideo.tsx`); `ReviewsLazy` / `GalleryPreviewLazy`
+ * are `next/dynamic` with `ssr: false`.
  */
-export const PROJECT_MEDIA_QUOTE_TWO: BlockMediaDoubleQuoteProps = {
-  /*
-    A 3-second loop of the hero, not the still it used to be. The point of the
-    slot is `PROJECT_FEATURE_TWO` two blocks up — "Stat gauges count up as they
-    scroll into view" — and a JPEG cannot show a count-up; it shows the number
-    the count ARRIVES at, which is the one frame that proves nothing.
+export const PROJECT_PERFORMANCE: BlockWysiwygProps = {
+  tagline: "Performance",
+  title: "100, four times.",
+  body: [
+    {
+      type: "paragraph",
+      text: "Lighthouse scored the home page 100 for performance, accessibility, best practices and SEO, and 3 of 3 for agentic browsing, on 9 July 2026. The choices behind it: the stylesheet is inlined into the document head, so no render-blocking request ships. The hero poster is a 14 KB AVIF, and the 755 KB video loop loads only once the hero is on screen, never for a visitor who prefers reduced motion. The reviews and gallery sections mount when scrolled to, so their markup stays out of the first response.",
+    },
+  ],
+};
 
-    Locked on the hero, no scroll. `nymm-hero.mp4` in the first media pair
-    already pans down the page; this one holds the exact framing the still had,
-    which is what was asked for: "keep the whole homepage hero in view (as it
-    is currently but just make it a video)".
+export const PROJECT_IMAGE_LIGHTHOUSE: BlockImageFullProps = {
+  image: {
+    src: `${IMAGES}/new-york-mobile-mechanic-lighthouse.jpg`,
+    alt: "A Lighthouse report from 9 July 2026: 100 for Performance, Accessibility, Best Practices and SEO, 3/3 for Agentic Browsing, beside a thumbnail of the home page as it looked that day.",
+    width: 1600,
+    height: 841,
+  },
+};
 
-    1200x750, the still's own pixel size, so the block's `aspectRatio` box does
-    not move. `poster` stays `nymm.jpg` — a frame of this same hero, so there is
-    no flash of a different image before the first frame decodes. The block
-    defaults `autoPlay`/`loop`/`muted` to true and adds `playsInline`, so none
-    of those are restated here.
+/**
+ * Block 10 — `BlockWysiwyg`: the live numbers and the phone.
+ *
+ * Dials: `stats` in `site.config.ts`; `REV_KEYS` (9) and `DURATION = 2400` in
+ * `GaugeCounter.tsx`. Reviews: `lib/google-reviews.ts`, `lib/rating.ts`,
+ * the single-source note in `HeroVideo.tsx:27-33`. The bar: `Nav.tsx:438-483`
+ * (hidden while the hero intersects). The form: `app/api/contact/route.ts`
+ * (honeypot, zod) and `lib/rate-limit.ts` (5 per 10 minutes).
+ */
+export const PROJECT_LIVE: BlockWysiwygProps = {
+  tagline: "Trust",
+  title: "Every number is live, and the fallback is real.",
+  body: [
+    {
+      type: "paragraph",
+      text: "The four dials on the hero read years in business, cars serviced, Google reviews and average text reply, and they rev like a tachometer: a nine-keyframe curve over 2.4 seconds, drawn as SVG through requestAnimationFrame, with the settled number shown to anyone who prefers reduced motion.",
+    },
+    {
+      type: "paragraph",
+      text: "The review count comes from Google on the server through Featurable, with the Places API behind it, and the same resolved value feeds the hero chip, the dial, the reviews page and the JSON-LD, so three surfaces can never show three numbers. If both feeds fail, the site falls back to the eight real reviews kept in config.",
+    },
+    {
+      type: "paragraph",
+      text: "On a phone, a fixed bar with Call and Text Now appears the moment the hero scrolls out of view, on every page but the contact page. The form behind that page checks a honeypot field, validates with zod, and allows five submissions per ten minutes from one address.",
+    },
+  ],
+};
 
-    Cut against the live count: the gauges move from first paint to settled in
-    ~1.5s, and the clip holds the settled numbers for the remaining ~1.5s so
-    they are readable before the loop restarts. 314KB at crf 25.
-  */
+/**
+ * Block 11 — `BlockMediaDoubleQuote`: the hero loop (the dials revving) beside
+ * the phone-sized reviews page with the fixed bar. The block defaults
+ * `autoPlay` / `loop` / `muted` to true and adds `playsInline`. The loop holds
+ * the exact framing of the cover; `poster` is `nymm.jpg`, a frame of this same
+ * hero, so nothing flashes before the first frame decodes. 314 KB at crf 25.
+ */
+export const PROJECT_MEDIA_LIVE: BlockMediaDoubleQuoteProps = {
   large: {
     type: "video",
     src: `${VIDEOS}/nymm-hero-loop.mp4`,
@@ -265,32 +308,66 @@ export const PROJECT_MEDIA_QUOTE_TWO: BlockMediaDoubleQuoteProps = {
   small: {
     type: "image",
     src: `${IMAGES}/conversion.png`,
-    alt: "The call-to-book control, pinned so it follows the scroll.",
+    alt: "The reviews page on a phone: 4.9 stars from 147 Google reviews, two review cards, and the fixed Call and Text Now bar across the bottom.",
     width: 1179,
     height: 2203,
   },
-  quote: "The call-to-book control, pinned so it follows the scroll.",
+  quote: "4.9 from 147 Google reviews, and the phone one tap away.",
 };
 
-/** Block 7 — `BlockWysiwyg` (third instance): the third and last feature. */
-export const PROJECT_FEATURE_THREE: BlockWysiwygProps = {
-  tagline: "Conversion",
-  title: "Panic into a phone call.",
+/**
+ * Block 12 — `BlockWysiwyg`: the two ChatGPT answers, written as dated
+ * observations (controller ruling: never a standing "ranks first" claim, and
+ * no causal claim for the site). The 4.9 / 133 are what the screenshot shows;
+ * the second answer's Reddit line is visible in it too. The llms.txt sentence
+ * is `app/llms.txt/route.ts:33-39`.
+ */
+export const PROJECT_AI: BlockWysiwygProps = {
+  tagline: "Answer engines",
+  title: "What ChatGPT said, twice.",
   body: [
     {
       type: "paragraph",
-      text: "Live Google reviews for immediate credibility, and a one-tap call-to-book that follows you down the page. The site has exactly one exit and it is the phone.",
+      text: "On 28 July 2026, asked for the top five mobile mechanics in New York City, ChatGPT listed the business first, with its 4.9 rating and 133 reviews. On 7 August, asked for the best mobile mechanic in Queens, it did the same. Those answers draw on the Google Business Profile and, in the second case, Reddit, so we do not claim the site produced them.",
+    },
+    {
+      type: "paragraph",
+      text: "What the site contributes is the part an answer engine can read: JSON-LD on every service, area and topic page, and an llms.txt generated from the same config, listing all thirty topic pages with their price chips so a model asked what an alternator costs in NYC can reach the page that answers it.",
     },
   ],
 };
 
+export const PROJECT_MEDIA_AI: BlockMediaDoubleQuoteProps = {
+  large: {
+    type: "image",
+    src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-nyc.jpg`,
+    alt: "ChatGPT on 28 July 2026, asked for the top 5 mobile mechanics in New York City: a map card for Adam Mobile Mechanic at 4.9, and the business listed first in the numbered answer with 133 reviews.",
+    width: 1600,
+    height: 1156,
+  },
+  small: {
+    type: "image",
+    src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-queens.jpg`,
+    alt: "ChatGPT on 7 August 2026, asked for the best mobile mechanic in Queens: the map card at 4.9 and the business listed first in the answer.",
+    width: 1600,
+    height: 1174,
+  },
+  quote: "Asked twice, ten days apart, the business came first both times.",
+};
+
 /**
- * Block 8 — `BlockProjectDetails`. The live row takes the source's own
- * `live_label` as its label; the block renders values as text, so the address
- * is written the way it would be read rather than as an unclickable full URL.
+ * Block 14 — `BlockProjectDetails`. `Stack` feeds the intro's second tab and is
+ * dropped from this block by `projectDetailsWithoutStack`. Every entry is from
+ * `package.json`; `Tests` is the measured run; the live row takes the domain
+ * from `seo.siteUrl`.
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
-  { label: "Stack", value: "TypeScript, Next.js, Tailwind CSS, Framer Motion" },
+  {
+    label: "Stack",
+    value: "TypeScript, Next.js 16, React 19, Tailwind CSS 4, GSAP, zod, Vitest, Vercel",
+  },
+  { label: "Tests", value: "157 Vitest" },
+  { label: "Deployment", value: "Vercel · Featurable and the Places API for reviews · Formspree for leads" },
   { label: "Year", value: "2026" },
   { label: "Platform", value: "Web" },
   {
@@ -299,3 +376,14 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
     href: "https://www.newyorkmobilemechanic.com",
   },
 ];
+
+/**
+ * Block 15 — `GeneralCta`. Points at `/contact/`, never at the live site (the
+ * live URL is a details row). The line names this reader's own problem: a
+ * site that exists and does not bring the calls.
+ */
+export const PROJECT_CTA: GeneralCtaProps = {
+  text: "Is your site bringing the calls?",
+  label: "Contact",
+  href: "/contact/",
+};

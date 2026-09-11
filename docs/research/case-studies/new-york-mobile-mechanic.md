@@ -325,4 +325,61 @@ captured pages prove the matrices by showing a cell of each, which the indexes c
 
 ## Cross-page deltas
 
-*(Filled in at Step 12.)*
+Echoes, outside this page, of the four claims this task cut or rewrote. Each entry is a
+`{file, anchor, replacement, reason}`; anchors are exact current strings, each verified to
+occur exactly once in its file by `grep -cF` (table at the end). **None applied by this
+task.** Line numbers are from `case-study-expansion` at `62402fd`.
+
+**The reasons, shared:** (a) `framer-motion` is in no manifest, lockfile or source file of
+the repo; the site declares `gsap` and uses it in one file, and the dials are hand-built SVG
+on `requestAnimationFrame`. No other shipped NeuraGul project declares `framer-motion` either
+(`grep -l framer-motion ~/Projects/*/package.json` → two unshipped templates only). (b)
+"schema markup on every route": 12 of 15 route files emit JSON-LD; `/gallery`, `/privacy`,
+`/terms` emit none. (c) "Core Web Vitals in the green": field CWV is measured nowhere in the
+repo (`FULL-AUDIT-REPORT.md` 2026-07-01: PageSpeed call rate-limited, score carried); what
+exists is the Lighthouse report of 2026-07-09 at 100 / 100 / 100 / 100 (Unverifiable 1). (d)
+"ranks across all five boroughs": the repo's own audit has the site absent from the top 30
+organic on 2026-07-01 and the service pages at positions 24.8–57.8 on 2026-08-17; no later
+organic position is recorded (Unverifiable 2). (e) "stat gauges count up as they scroll into
+view" is true; kept wherever it appears.
+
+### `src/components/site/services/web-development/content.ts`
+
+1. `{file: "src/components/site/services/web-development/content.ts", line: 114, anchor: "a landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green. Stat gauges count up as they scroll into view, live Google reviews carry the credibility, and a one-tap call-to-book follows you down the page.", replacement: "forty-five pages of service crossed with borough and thirty more that each answer one question, JSON-LD on every one of them, and a Lighthouse 100 for performance, accessibility, best practices and SEO. Stat dials rev as they scroll into view, the Google rating is pulled live with the real reviews as its fallback, and on a phone a Call and Text bar follows you down the page.", reason: "(b) (c); the sentence is the old case-study intro verbatim"}`
+2. `{file: "src/components/site/services/web-development/content.ts", line: 166, anchor: "New York Mobile Mechanic ships a landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green.", replacement: "New York Mobile Mechanic ships forty-five pages of service crossed with borough, thirty pages that each answer one question a driver types, JSON-LD on every one of them, and a Lighthouse 100 across all four categories.", reason: "(b) (c); phase 02 of the process slider, beside the `mechanicseo.png` Lighthouse card, whose alt (`:172`) already says 100 for performance and accessibility and stays true"}`
+3. `{file: "src/components/site/services/web-development/content.ts", line: 209, anchor: "TypeScript, Next.js, React and Tailwind CSS, with Framer Motion where a page earns it.", replacement: "TypeScript, Next.js, React and Tailwind CSS, with GSAP where a page earns it.", reason: "(a); phase 04, and its image (`:211-216`) is the New York Mobile Mechanic cover, so the illustrated project is the one that declares GSAP"}`
+4. `{file: "src/components/site/services/web-development/content.ts", line: 259, anchor: "TypeScript, Next.js, React, Tailwind CSS and Framer Motion, with Shopify and custom Liquid where a storefront calls for it.", replacement: "TypeScript, Next.js, React, Tailwind CSS and GSAP, with Shopify and custom Liquid where a storefront calls for it.", reason: "(a); a service-wide stack line — GSAP is verified for this repo, and no shipped repo declares framer-motion; the controller may prefer to drop the motion library from the line altogether"}`
+5. `{file: "src/components/site/services/web-development/content.ts", line: 293, anchor: "The mobile mechanic we built ranks across all five boroughs for on-demand repair searches.", replacement: "The mobile mechanic we built has a page for every service in every borough, and on 28 July 2026 ChatGPT, asked for the top five mobile mechanics in New York City, listed it first.", reason: "(d); the replacement is the dated observation the case study now makes, with no causal claim"}`
+
+Fine as-is in this file: `:172` (the Lighthouse alt, true); `:244` "built to rank across all
+five boroughs" (intent, not a ranking claim); `:212`, `:341` and the other cover alts.
+
+### Other files
+
+6. `{file: "public/llms.txt", line: 29, anchor: "A local SEO site for a 24/7 mobile mechanic — a landing page for every service crossed with every borough, schema on every route, Core Web Vitals in the green.", replacement: "A Next.js site for a 24/7 mobile mechanic: 117 pages generated from one config file, a service-by-borough matrix of forty-five pages plus thirty single-question pages, JSON-LD on every one of them, Lighthouse at 100 across all four categories.", reason: "(b) (c); llms.txt is orchestrator-owned"}`
+7. `{file: "public/llms.txt", line: 44, anchor: "The stack is TypeScript, Next.js, React, Tailwind CSS and Framer Motion, with Shopify and custom Liquid where a storefront calls for it, and Python where a pipeline does.", replacement: "The stack is TypeScript, Next.js, React, Tailwind CSS and GSAP, with Shopify and custom Liquid where a storefront calls for it, and Python where a pipeline does.", reason: "(a); mirrors delta 4"}`
+
+**Notes for the controller (no anchor, nothing to apply):** `public/site/videos/nymm-hero.mp4`
+(994,714 B, the 12-second pan of the home page) is no longer referenced by any file after
+this task (`grep -rn nymm-hero.mp4 src/` → only a comment in this page's `content.ts`). It
+sits outside this task's owned paths; delete or keep at the controller's discretion. The
+home/work/process/web-development alts "The New York Mobile Mechanic home page" remain true.
+`.agents/product-marketing.md` needs no change: its proof-point list already sends Tasks
+12–17 to this dossier for this project's numbers.
+
+### Anchor uniqueness (so the controller can apply by exact replacement)
+
+Checked at `62402fd` on 2026-09-11 with `grep -cF -- "<anchor>" <file>`:
+
+| # | File | `grep -cF` |
+| --- | --- | --- |
+| 1 | `src/components/site/services/web-development/content.ts` | 1 |
+| 2 | `src/components/site/services/web-development/content.ts` | 1 |
+| 3 | `src/components/site/services/web-development/content.ts` | 1 |
+| 4 | `src/components/site/services/web-development/content.ts` | 1 |
+| 5 | `src/components/site/services/web-development/content.ts` | 1 |
+| 6 | `public/llms.txt` | 1 |
+| 7 | `public/llms.txt` | 1 |
+
+Deltas 3, 4 and 7 are the only three occurrences of "Framer Motion" outside this page
+(`grep -rn "Framer Motion" src/ public/llms.txt` → 3 after this task's rewrite).
