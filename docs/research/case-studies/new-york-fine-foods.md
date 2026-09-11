@@ -341,7 +341,7 @@ exactly once in its file by `grep -cF` (table at the end). **None applied by thi
 ### Anchor uniqueness (so the controller can apply by exact replacement)
 
 Checked at `50975f8` on 2026-09-11 with `grep -cF -- "<anchor>" <file>` and `grep -nF` for the
-line:
+line; re-verified at `899b0ee` (both still 1):
 
 | Delta | File | Lines | Check | Occurrences | At cited line |
 | --- | --- | --- | --- | --- | --- |
