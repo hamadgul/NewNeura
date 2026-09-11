@@ -47,15 +47,22 @@
  *                               `mechanicseo.png` stays on disk for
  *                               /services/web-development/ and is no longer
  *                               placed on this page.
- *   new-york-mobile-mechanic-chatgpt-nyc.jpg     1600x1156  and
- *   new-york-mobile-mechanic-chatgpt-queens.jpg  1600x1174  the user's two
+ *   new-york-mobile-mechanic-chatgpt-nyc.jpg     1600x1000  and
+ *   new-york-mobile-mechanic-chatgpt-queens.jpg  1600x1000  the user's two
  *                               ChatGPT screenshots (2026-07-28, 2026-08-07),
- *                               resized whole. Paired in one
+ *                               resized to 1600 wide and cropped 60px off the
+ *                               top (the ChatGPT chrome) and the rest off the
+ *                               bottom, so the typed prompt, the map card and
+ *                               the "1. Adam Mobile Mechanic" line all
+ *                               survive. Paired in one
  *                               `BlockMediaDoubleQuote` because they are the
  *                               same kind of artefact ten days apart.
  *   conversion.png    1179x2203 the live /reviews page on a phone (4.9, 147
- *                               reviews, the fixed Call / Text Now bar). The
- *                               only portrait asset on the site; the `small`
+ *                               reviews, the fixed Call / Text Now bar),
+ *                               committed 2026-09-02 in 17b2b8c; its capture
+ *                               date is not recorded, so the quote under it
+ *                               names no figure. The only portrait asset on
+ *                               the site; the `small`
  *                               slot caps it at ~990px tall, whereas
  *                               `BlockImageFull` would render it 2,690px tall
  *                               at 1440. Not re-captured: a local boot has no
@@ -110,19 +117,23 @@ export const PROJECT_CANONICAL = "/work/new-york-mobile-mechanic/";
  * repo measures field CWV. The Lighthouse score is what exists.
  */
 export const PROJECT_DESCRIPTION =
-  "A Next.js site for a 24/7 NYC mobile mechanic: 117 pages from one config file, a service-by-borough matrix, JSON-LD on every service page, Lighthouse at 100.";
+  "A Next.js site for a 24/7 NYC mobile mechanic: 117 pages keyed off one config file, a service-by-borough matrix, JSON-LD on every service page, Lighthouse at 100.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/nymm.jpg`;
 
 /**
  * Header. `lead` is the project's OUTCOME, not its brief: the brief is the
  * `BlockIntroDouble` statement below. 117 is the sitemap's URL count
- * (10 static + 11 services + 30 topics + 17 areas + 4 posts + 45 combos), and
- * "one config file" is `content/site.config.ts`, which the sitemap, both
- * llms.txt routes and every page read.
+ * (10 static + 11 services + 30 topics + 17 areas + 4 posts + 45 combos).
+ * "Keyed off one config file": `content/site.config.ts` supplies the services,
+ * areas and static routes that every URL is built from, and the sitemap and
+ * both llms.txt routes read it; the CONTENT of the topic, combo and area pages
+ * lives in `lib/service-topics.ts`, `lib/service-area-combos.ts`,
+ * `lib/area-content.ts` and four MDX files, which is why the sentence says
+ * "keyed off" and not "became".
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "New York Mobile Mechanic",
-  lead: "One config file became 117 pages, every service page an answer to a search a stranded driver types, and the phone one tap away on all of them.",
+  lead: "117 pages keyed off one config file, every service page an answer to a search a stranded driver types, and the phone one tap away on all of them.",
   location: "2026 · Web",
   service: "Web Development",
   breadcrumbLabel: "Work",
@@ -199,7 +210,7 @@ export const PROJECT_TOPICS: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "The four blog posts earned 31 impressions and no clicks in the 90 days to 17 August 2026. The eleven service pages earned 1,918 impressions and 10 clicks from positions 24 to 58. Google was showing them on pages three to six and ten people clicked, because a 560-word service page does not answer the question a driver typed.",
+      text: "The four blog posts earned 31 impressions and no clicks in the 90 days to 17 August 2026. The eleven service pages earned 1,918 impressions and 10 clicks from positions in the mid-twenties to the high fifties. Google was showing them on pages three to six and ten people clicked, because a 560-word service page does not answer the question a driver typed.",
     },
     {
       type: "paragraph",
@@ -229,7 +240,7 @@ export const PROJECT_COPY_TEST: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "An outside reviewer said the copy read as AI-generated. The rewrite pinned eight patterns in a test, from “peace of mind” and “no surprises” down to the em dash. The test walks every service description, FAQ, process step, borough paragraph, topic section, table cell and the raw text of every blog post. Customer reviews are the one thing it skips, because they are quoted verbatim. When two “no surprises” lines sat live for six weeks in posts the test had not covered, the posts were added to it.",
+      text: "An outside reviewer said the copy read as AI-generated. The rewrite pinned eight patterns in a test, from “peace of mind” and “no surprises” down to the em dash. The test walks every service description, FAQ, process step, borough paragraph, topic section, table cell and the raw text of every blog post. Customer reviews are excluded on purpose, because they are quoted verbatim. When two “no surprises” lines sat live for six weeks in posts the test had not covered, the posts were added to it.",
     },
   ],
 };
@@ -312,7 +323,7 @@ export const PROJECT_MEDIA_LIVE: BlockMediaDoubleQuoteProps = {
     width: 1179,
     height: 2203,
   },
-  quote: "4.9 from 147 Google reviews, and the phone one tap away.",
+  quote: "The reviews page, and the phone one tap away.",
 };
 
 /**
@@ -343,14 +354,14 @@ export const PROJECT_MEDIA_AI: BlockMediaDoubleQuoteProps = {
     src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-nyc.jpg`,
     alt: "ChatGPT on 28 July 2026, asked for the top 5 mobile mechanics in New York City: a map card for Adam Mobile Mechanic at 4.9, and the business listed first in the numbered answer with 133 reviews.",
     width: 1600,
-    height: 1156,
+    height: 1000,
   },
   small: {
     type: "image",
     src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-queens.jpg`,
     alt: "ChatGPT on 7 August 2026, asked for the best mobile mechanic in Queens: the map card at 4.9 and the business listed first in the answer.",
     width: 1600,
-    height: 1174,
+    height: 1000,
   },
   quote: "Asked twice, ten days apart, the business came first both times.",
 };

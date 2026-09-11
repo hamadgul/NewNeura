@@ -300,19 +300,21 @@ shot. Nothing else: the site is public and names its own business.
 | --- | --- | --- |
 | `new-york-mobile-mechanic-combo.jpg` (1600x1000, runner) | `/service-areas/queens/brake-jobs` | "Nine services crossed with five boroughs make 45 pages … each one composed from a service angle and a borough paragraph" — the H1 `Mobile Brake Repair in Queens, NY`, the service's "near me" intro, and the two crossed sections ("Why get brake repair done on-site in Queens", "Mobile mechanic service in Queens") |
 | `new-york-mobile-mechanic-topic.jpg` (1600x1000, runner) | `/services/starter-alternator/alternator-replacement` | "thirty pages that each take one question … with its own price chip and the note scoping what the price covers" — `Diagnosis from $95`, the answer-first lead, the section headings |
-| `new-york-mobile-mechanic-lighthouse.jpg` (1600x841, from the 2026-07-09 screenshot) | `~/Desktop/NYMM Results/Screenshot 2026-07-09 at 2.35.19 PM.png`, resized whole | "Lighthouse scored the home page 100 for performance, accessibility, best practices and SEO, and 3 of 3 for agentic browsing" |
-| `new-york-mobile-mechanic-chatgpt-nyc.jpg` (1600x1156, from the 2026-07-28 screenshot) | `…/Screenshot 2026-07-28 at 3.54.30 PM.png`, resized whole | "asked for the top five mobile mechanics in New York City, ChatGPT listed the business first" |
-| `new-york-mobile-mechanic-chatgpt-queens.jpg` (1600x1174, from the 2026-08-07 screenshot) | `…/Screenshot 2026-08-07 at 5.17.18 PM.png`, resized whole | "asked for the best mobile mechanic in Queens ten days later, it did the same" |
+| `new-york-mobile-mechanic-lighthouse.jpg` (1600x841, from the 2026-07-09 screenshot) | `~/Desktop/NYMM Results/Screenshot 2026-07-09 at 2.35.19 PM.png`, 2556x1344, resized whole; cannot be cropped up to 1000 tall, waived by the controller (review round 1) | "Lighthouse scored the home page 100 for performance, accessibility, best practices and SEO, and 3 of 3 for agentic browsing" |
+| `new-york-mobile-mechanic-chatgpt-nyc.jpg` (1600x1000, from the 2026-07-28 screenshot) | `…/Screenshot 2026-07-28 at 3.54.30 PM.png`, 2150x1554, resized to 1600x1156 then cropped to y 60..1060 (60px off the top, 96px off the bottom); the prompt, the 4.9 card, "1. Adam Mobile Mechanic" and "4.9/5 (133 reviews)" all survive | "asked for the top five mobile mechanics in New York City, ChatGPT listed the business first" |
+| `new-york-mobile-mechanic-chatgpt-queens.jpg` (1600x1000, from the 2026-08-07 screenshot) | `…/Screenshot 2026-08-07 at 5.17.18 PM.png`, 2180x1600, resized to 1600x1174 then cropped to y 60..1060 (60px off the top, 114px off the bottom); the prompt, the 4.9 card and "1. Adam Mobile Mechanic" survive; the Reddit line (y≈1127) does not, so the copy's Reddit mention is sourced to the original file, not this frame | "asked for the best mobile mechanic in Queens ten days later, it did the same" |
 | `nymm.jpg` (frozen cover, 1200x750) | NOT re-captured | Shared by `/`, `/work/`, `/process/` and `/services/web-development/` (twice) with alt "The New York Mobile Mechanic home page"; captured from the LIVE site on 2026-09-07 with the live `158+` dial. A local re-capture would show `144+`. The header renders it under the title, so the hero, the four dials and the two call buttons are the page's opening image. |
 | `mechanicseo.png` (frozen, 512x265) | NOT re-captured; no longer placed on this page | The same Lighthouse report, downscaled. It stays on disk for `/services/web-development/` (alt "…scoring 100 for performance and accessibility"). This page uses the 1600-wide version above instead, so the numbers are legible. |
-| `conversion.png` (frozen, 1179x2203) | NOT re-captured | The `/reviews` page on a phone from the live site: `4.9`, `147 Google reviews`, two review cards, and the fixed `Call` / `Text Now` bar. Evidence for the live-rating sentence AND the one-tap-away sentence. Only this page references it. |
+| `conversion.png` (frozen, 1179x2203) | NOT re-captured. Provenance: committed to NewNeura on 2026-09-02 in `17b2b8c` ("Port neuragul.com onto the cloned studio layout"); a capture of the live `/reviews` page on a phone, capture date not recorded; it shows the post-rebrand `ADAM` wordmark, so it post-dates the client's hero rebuild. | `4.9`, `147 Google reviews` (the live count on its undated capture day; the cover's `158+` is 2026-09-07 and ChatGPT's `133` is 2026-07-28, so no figure from it is quoted on the page), two review cards, and the fixed `Call` / `Text Now` bar. Evidence for the fixed-bar sentence. Only this page references it. |
 
 **The Desktop-derived images are not runner shots.** `capture-case-study-shots.mjs` iterates
 every entry in a slug's config and deletes the destination of any shot that fails, so a
 non-URL entry cannot sit in the config beside real routes without breaking (and destroying)
-the run. The three are therefore produced by a scratch script (`$SCRATCH/nymm-resize.mjs`,
-reproduced in task-11-report.md) with `sharp` from NewNeura's own `node_modules`, resized
-whole with no crop and no edit, and documented in the config's header. `check-assets.mjs`
+the run. The three are therefore produced by scratch scripts (`$SCRATCH/nymm-resize.mjs`,
+`$SCRATCH/nymm-crop.mjs`, both reproduced in task-11-report.md) with `sharp` from NewNeura's
+own `node_modules`: the Lighthouse report resized whole, the two ChatGPT frames resized then
+cropped to 1600x1000 as the rows above record. Nothing inside any frame is edited. The crop
+and the Lighthouse waiver are the controller's review-round-1 rulings. `check-assets.mjs`
 still asserts, for each, that the file exists, that its declared width/height match the
 pixels, and that its alt is non-empty; only `minBytes` is unchecked for them.
 
@@ -356,7 +358,7 @@ five boroughs" (intent, not a ranking claim); `:212`, `:341` and the other cover
 
 ### Other files
 
-6. `{file: "public/llms.txt", line: 29, anchor: "A local SEO site for a 24/7 mobile mechanic — a landing page for every service crossed with every borough, schema on every route, Core Web Vitals in the green.", replacement: "A Next.js site for a 24/7 mobile mechanic: 117 pages generated from one config file, a service-by-borough matrix of forty-five pages plus thirty single-question pages, JSON-LD on every one of them, Lighthouse at 100 across all four categories.", reason: "(b) (c); llms.txt is orchestrator-owned"}`
+6. `{file: "public/llms.txt", line: 29, anchor: "A local SEO site for a 24/7 mobile mechanic — a landing page for every service crossed with every borough, schema on every route, Core Web Vitals in the green.", replacement: "A Next.js site for a 24/7 mobile mechanic: 117 pages keyed off one config file, a service-by-borough matrix of forty-five pages plus thirty single-question pages, JSON-LD on every one of them, Lighthouse at 100 across all four categories.", reason: "(b) (c); llms.txt is orchestrator-owned"}`
 7. `{file: "public/llms.txt", line: 44, anchor: "The stack is TypeScript, Next.js, React, Tailwind CSS and Framer Motion, with Shopify and custom Liquid where a storefront calls for it, and Python where a pipeline does.", replacement: "The stack is TypeScript, Next.js, React, Tailwind CSS and GSAP, with Shopify and custom Liquid where a storefront calls for it, and Python where a pipeline does.", reason: "(a); mirrors delta 4"}`
 
 **Notes for the controller (no anchor, nothing to apply):** `public/site/videos/nymm-hero.mp4`
@@ -371,15 +373,18 @@ home/work/process/web-development alts "The New York Mobile Mechanic home page" 
 
 Checked at `62402fd` on 2026-09-11 with `grep -cF -- "<anchor>" <file>`:
 
-| # | File | `grep -cF` |
-| --- | --- | --- |
-| 1 | `src/components/site/services/web-development/content.ts` | 1 |
-| 2 | `src/components/site/services/web-development/content.ts` | 1 |
-| 3 | `src/components/site/services/web-development/content.ts` | 1 |
-| 4 | `src/components/site/services/web-development/content.ts` | 1 |
-| 5 | `src/components/site/services/web-development/content.ts` | 1 |
-| 6 | `public/llms.txt` | 1 |
-| 7 | `public/llms.txt` | 1 |
+All seven are single-line anchors. Every anchor occurs exactly once and at the cited line.
+Re-run the same check before applying if any of these files has moved on.
+
+| Delta | File | Lines | Check | Occurrences | At cited line |
+| --- | --- | --- | --- | --- | --- |
+| 1 | `services/web-development/content.ts` | 114 | single-line `grep -cF` | 1 | yes |
+| 2 | `services/web-development/content.ts` | 166 | single-line `grep -cF` | 1 | yes |
+| 3 | `services/web-development/content.ts` | 209 | single-line `grep -cF` | 1 | yes |
+| 4 | `services/web-development/content.ts` | 259 | single-line `grep -cF` | 1 | yes |
+| 5 | `services/web-development/content.ts` | 293 | single-line `grep -cF` | 1 | yes |
+| 6 | `public/llms.txt` | 29 | single-line `grep -cF` | 1 | yes |
+| 7 | `public/llms.txt` | 44 | single-line `grep -cF` | 1 | yes |
 
 Deltas 3, 4 and 7 are the only three occurrences of "Framer Motion" outside this page
 (`grep -rn "Framer Motion" src/ public/llms.txt` → 3 after this task's rewrite).

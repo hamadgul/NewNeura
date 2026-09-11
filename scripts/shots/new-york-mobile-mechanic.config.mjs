@@ -29,12 +29,27 @@ import { defineShots } from "./_schema.mjs";
  * ── The three images that are NOT runner captures ───────────────────────────
  *
  * `new-york-mobile-mechanic-lighthouse.jpg`, `-chatgpt-nyc.jpg` and `-chatgpt-queens.jpg`
- * are the user's own screenshots from `~/Desktop/NYMM Results`, resized whole with `sharp`
- * (lanczos3, JPEG q82) and nothing else — no crop, no edit:
+ * are the user's own screenshots from `~/Desktop/NYMM Results`, resized to 1600 wide with
+ * `sharp` (lanczos3, JPEG q82); nothing inside any of them is edited:
  *
- *   Screenshot 2026-07-09 at 2.35.19 PM.png  2556x1344 → 1600x841   Lighthouse report
- *   Screenshot 2026-07-28 at 3.54.30 PM.png  2150x1554 → 1600x1156  ChatGPT, "top 5 … New York city"
- *   Screenshot 2026-08-07 at 5.17.18 PM.png  2180x1600 → 1600x1174  ChatGPT, "best … in queens?"
+ *   Screenshot 2026-07-09 at 2.35.19 PM.png  2556x1344 → 1600x841, whole (no crop)
+ *   Screenshot 2026-07-28 at 3.54.30 PM.png  2150x1554 → 1600x1156, then cropped to 1600x1000:
+ *                                            60px off the top, 96px off the bottom (y 60..1060)
+ *   Screenshot 2026-08-07 at 5.17.18 PM.png  2180x1600 → 1600x1174, then cropped to 1600x1000:
+ *                                            60px off the top, 114px off the bottom (y 60..1060)
+ *
+ * Crop ruling (review round 1): the two ChatGPT frames are cropped to the runner's 1600x1000.
+ * A full 156 / 174px top crop would have cut the typed prompt (its bubble sits at y≈94-143 and
+ * y≈84-132 of the resized frames), so 60px comes off the top and the remainder off the bottom.
+ * What survives in each: the prompt, the map with its 4.9 card, and "1. Adam Mobile Mechanic".
+ * The NYC frame also keeps "4.9/5 (133 reviews)" (y≈993 → 933). The Queens frame's Reddit
+ * line (y≈1127 of 1174) falls outside the crop; the body copy's "in the second case, Reddit"
+ * is sourced to the original screenshot in the dossier, not to this frame.
+ *
+ * The Lighthouse frame is 1600x841 and cannot be cropped UP to 1000 tall: the report is that
+ * shape, and cropping it to 1600x1000 is impossible without adding pixels. WAIVED by the
+ * controller (review round 1); `content.ts` declares it 1600x841 and check-assets verifies
+ * that.
  *
  * They are deliberately NOT entries in this config: the runner iterates every entry, treats
  * `route` as a URL, and deletes the destination of any shot that fails, so a non-URL entry
