@@ -57,12 +57,12 @@ export const PORTFOLIO_CANONICAL = "/work/";
 /**
  * The meta description. The list of what is in the feed is the source's own;
  * what is added is the count (a number in a snippet is the single most
- * clickable thing you can put in one), the city, and the fact that every entry
- * links to something live — which is the reason to click through rather than
- * read the snippet and leave.
+ * clickable thing you can put in one) and the fact that every entry links to
+ * something live — which is the reason to click through rather than read the
+ * snippet and leave. Held under 160 characters, so the city went.
  */
 export const PORTFOLIO_DESCRIPTION =
-  "Ten NeuraGul case studies: dispatch software, an iOS app, an e-commerce storefront, a wine trade portal, data pipelines and New York client sites, each linking to the live build.";
+  "Ten NeuraGul case studies: dispatch software, an iOS app, a Shopify storefront, a wine trade portal, data pipelines, client sites, each linked to a live build.";
 /**
  * `hero-poster.jpg` is the only 1920x1080 asset we have and the only one that
  * is not a specific project's screenshot, so it is the one image that can back

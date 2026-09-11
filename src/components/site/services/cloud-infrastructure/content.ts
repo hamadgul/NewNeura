@@ -85,8 +85,8 @@ export const HEADER: BlockHeaderServicesProps = {
   title: "Cloud & Infrastructure",
   titleSize: "3XL",
   image: {
-    // The restaurant ordering portal — one of the two projects tagged to this
-    // line, and the one whose hosting story is the plainest.
+    // The restaurant ordering portal — the one project tagged to this line
+    // since Vintus was retagged (2026-09-11), and the plainest hosting story.
     src: `${IMG}/pizzeria.jpg`,
     alt: "",
     width: 1200,
@@ -217,8 +217,8 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      lead: "Trade operations:",
-      text: "Vintus runs a national wine importer's catalogue, 703 wines and 1,600 vintage pages under 161 producers, with the trade's tools and a login behind it.",
+      lead: "Edge and operations:",
+      text: "The operations layer in front of the WordPress trade portal we maintain for a national wine importer: nginx, HSTS, a full content-security policy, a permissions policy.",
     },
     {
       type: "paragraph",
@@ -278,7 +278,10 @@ export const WYSIWYG_IT_SECURITY: BlockWysiwygProps = {
  * Highlighted projects — two tiles in one `layoutFour`
  * ------------------------------------------------------------------ *
  *
- * Two projects carry the Cloud & Infrastructure tag, and `layoutFour` takes
+ * Two projects sit here — the restaurant portal, which carries the Cloud &
+ * Infrastructure tag, and Vintus, which no longer does (retagged
+ * `web-development` only, 2026-09-11) but stays as the edge layer we maintain
+ * in front of an inherited WordPress portal — and `layoutFour` takes
  * exactly two: a plain card on the left, a corner-notched one on the right,
  * side by side from 1280 up and stacked below it. Every other variant wants
  * three tiles, which would mean borrowing work from another service line, so

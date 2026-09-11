@@ -132,7 +132,6 @@ export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
     children: [
       { label: "All", slug: "applied-ai" },
       { label: "AI Strategy", slug: "ai-strategy", count: 1 },
-      { label: "Custom Models", slug: "custom-models", count: 0 },
       { label: "Retrieval & Agents", slug: "retrieval-agents", count: 1 },
       {
         label: "Evaluation & Guardrails",
