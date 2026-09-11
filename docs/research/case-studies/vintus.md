@@ -38,6 +38,7 @@ Read from the served HTML of `/` on 2026-09-11 18:55 UTC (`$SCRATCH/vintus/home.
 | WooCommerce / cart | **None.** The only `woocommerce` string on any route is the Ajax Search Pro add-on's script registration; no `wc-`, `add-to-cart`, `cart`, checkout or price-list markup; the only price on a wine page is `Suggested Retail Price $35` | `grep -c -i woocommerce home.html` → 1 (the ASP addon path); `grep -oE 'wc-[a-z-]+' *.html` → nothing |
 | Measurement | Google Analytics 4 `G-6YHJEHXH69` (38 occurrences across the fetched routes); no GTM container, no `AW-`, no `UA-` | `grep -ohE '(GTM-[A-Z0-9]+\|G-[A-Z0-9]{8,}\|UA-[0-9]+-[0-9]+\|AW-[0-9]{6,})' *.html \| sort \| uniq -c` |
 | Fonts / media | Adobe Typekit `use.typekit.net/urr0vod.css` (`museo-sans` in `style.css`); Cloudinary `res.cloudinary.com/dzo0tmplh` in the CSP and on the home page | `grep -ohE 'use\.typekit\.net/[a-z0-9]+\.css\|res\.cloudinary\.com/[a-z0-9_-]+' home.html` |
+| Web push | **WonderPush** loader `cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js`, registered through the Brevo (`mailin`) plugin's push config (`service_worker_url: wonderpush-worker-loader.min.js?webKey=…`); 3 `wonderpush` occurrences in the saved `/` (the reviewer's 19:45 UTC fetch counted 4), 3 on each other route sampled (`/subscribe/`, the wine page, `/browse-news`). No push prompt renders to the runner (no fixed element with a box, Shot list) | `grep -o 'cdn.by.wonderpush.com[^"'\'' ]*' home.html \| sort \| uniq -c`; `grep -c wonderpush *.html` |
 | Edge | `server: nginx`; `strict-transport-security: max-age=31536000; includeSubDomains`; `x-frame-options: SAMEORIGIN`; `x-content-type-options: nosniff`; `referrer-policy: strict-origin-when-cross-origin`; a full `content-security-policy` (`default-src 'self'`, allow-lists for jsDelivr, unpkg, Google, Brevo, Typekit, Cloudinary, Vimeo, SoundCloud; `form-action 'self'`; `base-uri 'self'`); a `permissions-policy` that disables geolocation, camera, microphone, payment, USB and sensors | `curl -sS -D home.headers -o home.html https://vintus.com/` (18:55 UTC) |
 | Hosts | apex is canonical: `https://www.vintus.com/` → 301 → `https://vintus.com/`; `http://` → 301 → `https://`; `<link rel="canonical" href="https://vintus.com/">` | `curl -sS -o /dev/null -w '%{http_code} -> %{redirect_url}\n' <url>` |
 | Sitemap | WordPress core sitemap (`/wp-sitemap.xml`, `robots.txt` → `Sitemap: https://vintus.com/wp-sitemap.xml`); 12 children; `/sitemap.xml` 301s, `/sitemap_index.xml` 404s (no SEO plugin) | `curl -sS https://vintus.com/wp-sitemap.xml` (19:00 UTC) |
@@ -51,8 +52,8 @@ the site serves. No test count exists for this project and none is stated anywhe
 ## Architecture decisions
 
 Five a reader can check against the live site rather than an adjective. This section
-describes each thing as it exists; who built which part is Unverifiable 1 and is not asserted
-in the copy.
+describes each thing as it exists; per the user's ruling (Unverifiable 1) the copy says the
+theme is inherited and maintained by us and attributes no specific feature to us.
 
 **1. A catalogue of 703 wines and 1,600 vintage pages under 161 producers, one URL per
 vintage.** The REST index labels the `wines` type *Products* and counts 2,304 published (19:18
@@ -76,7 +77,7 @@ sit under producers in the URL (`/wines/<wine>/<vintage>/`, `/producers/<produce
 two browse pages filter the same objects: `/browse-producers` by country (6 options), the
 labels and materials pages by producer and by wine (decision 2).
 
-**2. Every post, label image and trade material is keyed to a producer and a wine.** Four
+**2. Posts, label images and trade materials are filed against a producer and a wine.** Four
 Search & Filter Pro forms: `/browse-producers` (form 9, `_sfm_estate_location[]`, All
 Countries / Argentina / France / Italy / New Zealand / Spain / United States; 57 producer
 cards); `/browse-labels` (form 113866, `_sfm_wine_producer[]` **59** producer options,
@@ -85,10 +86,13 @@ Shot / Labels; rows dated to the day, the newest *Far Mountain Monte Rosso Viney
 Shot, September 11, 2026*); `/browse-materials` (form 50, `_sfm_post_related_producer[]` 54
 producers, `_sfm_post_related_wines[]` **1,029** wines); `/browse-news` (form 34, the same two
 related-producer / related-wine facets, *Toggle View: Grid / List (filterable)*, the newest
-post *Standing Up for Cabernet Sauvignon, September 09, 2026*). The facet names are the
-mechanism: posts carry `post_related_producer` and `post_related_wines` fields, labels carry
+post *Standing Up for Cabernet Sauvignon, September 09, 2026*). The facet names show the
+fields: posts carry `post_related_producer` and `post_related_wines`, labels carry
 `wine_producer` and a wine title, producers carry `estate_location`. The 6,039 posts are the
-news layer, and each wine page's *News* section is that join run the other way (decision 1).
+news layer. What was read is the filter markup and one wine page, whose `#news` section holds
+the two posts filed against it (decision 1); that every post carries both fields is not
+asserted anywhere, and the copy says "posts are filed against a producer and a wine" and no
+more.
 `/producers-summary/` is the portfolio as one page grouped by country and region (United
 States → Napa Valley …; France → Champagne, Bordeaux, Burgundy, Beaujolais, Loire, Rhône,
 Languedoc, Provence; Italy → Tuscany, Piedmont, Veneto, Friuli, Abruzzo, Basilicata, Puglia,
@@ -113,9 +117,11 @@ Ponzi-Vineyards-Pinot-Gris-2024-Shelf-Talker.pdf` …).
 
 **4. A login with a dashboard, orders and notes behind it, and a sign-up.** The header's
 *Sign in* is `wp-login.php?redirect_to=%2Fmy-dashboard`; *Sign Up* is `/subscribe`. Three
-pages answer `You must be logged in to view this page.` to a visitor: `/my-dashboard`
-("My personal dashboard with the latest updates from the producers I follow."), `/my-orders/`
-(`<title>My Orders</title>`), `/my-notes/` (in the pages sitemap; not fetched). The pages
+pages ask a visitor to log in, in two wordings: `/my-dashboard` ("My personal dashboard with
+the latest updates from the producers I follow.") and `/my-orders/` (`<title>My Orders</title>`)
+print `You must be logged in to view this page.` (19:11 UTC); `/my-notes/` (`<title>My
+Notes</title>`, 200, 89,473 bytes, fetched 19:52:42 UTC; the reviewer's fetch at 19:45:12 UTC
+saw the same) prints `Please log in to view this page.` The pages
 sitemap also lists `/update-profile/`, `/unsubscribe/`, `/marketing-requests/`,
 `/container-report/`, `/scoresearcher/` (`VINTUS Directory Bot`, one button *Open Request
 Hub*) and `/chatbot/`. What any of these do for a signed-in user is not in the served HTML
@@ -125,7 +131,11 @@ Hub*) and `/chatbot/`. What any of these do for a signed-in user is not in the s
 Email, First Name, Last Name, Company, State, *I am a* (Distributor / Restaurant / Retail /
 Press / Consumer), two newsletter preferences (*Weekly Automated Newsletter — Every Monday,
 scores, news and releases*; *Special Announcements*), a consent checkbox. WP SMS registers
-subscribe / verify / unsubscribe `admin-ajax` actions on every route. The `distributors` type
+subscribe / verify / unsubscribe `admin-ajax` actions on every route, but no fetched route
+renders an SMS form (`grep -ciE '<form[^>]*sms'` → 0 on `/`, `/subscribe/`, the wine page,
+`/my-notes/`), so the copy names the plugin only in the stack tab, as registered endpoints,
+the same evidence class as the Ajax Search Pro WooCommerce add-on. A WonderPush web-push
+loader is registered by the Brevo plugin's push config on every route (Stack). The `distributors` type
 holds 379 posts; the one fetched (`/distributors/tryon-distributing-nc/`, 19:18 UTC) is an
 event sign-up card: *Event Details*, *Sign Up*, the distributor's name, *Direct (410)
 980-8370*. The footer on every route: *Vintus on Instagram*, *Interested in NY
@@ -140,6 +150,16 @@ Distribution?*, `© VINTUS LLC, 2026`, Contact Us, Privacy Policy, Alcohol Discl
   Rarities, Trésor Hunting, the newsletter, Gift Packs & Large Formats), *Producers* with the
   sentence **"We represent 40 benchmark producers in leading and emerging wine regions across
   10 countries and 4 continents."** and 57 producer `<h2>`s with a paragraph each.
+- **`/producers-summary/`** (19:11 UTC; text extraction of `producers-summary_.html`): country
+  headings United States, France, Italy, Spain, Argentina, New Zealand, Spirits; region
+  headings include NAPA VALLEY, CHAMPAGNE, BORDEAUX, BURGUNDY, RHÔNE VALLEY, TUSCANY,
+  PIEDMONT, **RIOJA** (Marqués de Riscal), **MENDOZA** (Finca Decero, Flight of the Condor),
+  **MARLBOROUGH** (Dog Point Vineyard, Settlement) — the copy's "Rioja, Mendoza and
+  Marlborough".
+- **`/subscribe/`** (19:11 UTC): the two preference labels read `Weekly Automated Newsletter —
+  Every Monday, scores, news and releases` and `Special Announcements — Producer Profiles,
+  events, and announcements` — the copy's "a weekly Monday digest of scores, news and
+  releases, and producer profiles, events and announcements".
 - **The about page**: founded April 2004 by Michael Quinttus; "sold through a network of
   distributors in all 50 states and the Caribbean"; **"Wine Enthusiast Importer of the Year
   2017"**; an executive team list. The client's copy; quoted on our page only with
@@ -198,8 +218,9 @@ page argues *mechanism*, never adjectives and never a sales figure.
 situation: a catalogue that has outgrown the site that holds it.
 
 **What the page must not do:** claim e-commerce, a cart, inventory or order processing (none
-is served); claim any service outside WordPress (Unverifiable 2); say which parts we built
-(Unverifiable 1); quote a traffic, sales or ranking figure; say anything about the wines'
+is served); claim any service outside WordPress (Unverifiable 2); attribute any specific feature to us
+(the user's ruling, Unverifiable 1: an inherited theme we maintain and extend, no named
+features); quote a traffic, sales or ranking figure; say anything about the wines'
 quality in our voice; restate the client's *40 benchmark producers*, *50 states*, *Importer of
 the Year* as ours (they are quoted as the client's copy); quote a price or a timeline for our
 work; claim a headcount; say "I".
@@ -214,9 +235,9 @@ Each with the command that proves it, run over `$SCRATCH/vintus/` (the HTML save
 | Number | Command / location |
 | --- | --- |
 | **2,304** `wines` posts · **161** producers · **6,039** posts · **43** pages · **19,017** media · **10** users · **0** public accounts | `for t in wines producers posts pages media users accounts; do curl -sS -A "$UA" -D - -o /dev/null "https://vintus.com/wp-json/wp/v2/$t?per_page=1" \| grep -i x-wp-total; done` (19:18 UTC) |
-| Wines by URL depth: **703** parents · **1,600** vintage children · **1** deeper; **650** parents with children; max **12** children | `cat wp-sitemap-posts-wines-1.xml wp-sitemap-posts-wines-2.xml \| grep -oE '<loc>[^<]*' \| cut -c6- > wines.txt; awk -F/ 'NF==6' wines.txt \| wc -l; awk -F/ 'NF==7' wines.txt \| wc -l; awk -F/ 'NF==7' wines.txt \| grep -oE 'https://vintus.com/wines/[^/]+/' \| sort \| uniq -c \| sort -rn \| head -3` |
-| **379** distributors; sitemap children **12**; posts 2,000 + 2,000 + 2,000 + 39; wines 2,000 + 304; pages 43; producers 161; categories 7; tags 82; users 10 → **9,025** URLs | `for f in wp-sitemap-*.xml; do echo "$f $(grep -o '<url>' $f \| wc -l)"; done`; `grep -c '<sitemap>' wp-sitemap.xml` |
-| Latest `<lastmod>`: producers **2026-09-11T10:58:59-04:00**, wines **2026-09-11T11:08:57-04:00**, posts **2026-09-09T13:46:54-04:00** | `grep -oE '<lastmod>[^<]*' wp-sitemap-posts-<type>-1.xml \| sort \| tail -1` |
+| Wines by URL depth: **703** parents · **1,600** vintage children · **1** deeper; **650** parents with children; max **12** children | `cat wp-sitemap-posts-wines-1.xml wp-sitemap-posts-wines-2.xml \| grep -oE '<loc>[^<]*' \| cut -c6- > wines.txt; awk -F/ 'NF==6' wines.txt \| wc -l; awk -F/ 'NF==7' wines.txt \| wc -l; awk -F/ 'NF==7' wines.txt \| grep -oE 'https://vintus.com/wines/[^/]+/' \| sort \| uniq -c \| sort -rn \| head -3`; the 650: `comm -12 <(awk -F/ 'NF==6' wines.txt \| sort) <(awk -F/ 'NF==7' wines.txt \| grep -oE 'https://vintus.com/wines/[^/]+/' \| sort -u) \| wc -l`; 703 + 1,600 + 1 nested = 2,304 |
+| **379** distributors; sitemap children **12**; posts 2,000 + 2,000 + 2,000 + 39; wines 2,000 + 304; pages 43; producers 161; categories 7; tags 82; users 10 → **9,025** URLs | `for f in wp-sitemap-*.xml; do echo "$f $(grep -o '<url>' $f \| wc -l)"; done`; `grep -o '<sitemap>' wp-sitemap.xml \| wc -l` → 12 (the index is one line, so `grep -c` returns 1) |
+| Latest `<lastmod>`: producers **2026-09-11T10:58:59-04:00**, wines **2026-09-11T11:08:57-04:00**, posts **2026-09-09T13:46:54-04:00** | `grep -oE '<lastmod>[^<]*' wp-sitemap-posts-producers-1.xml \| sort \| tail -1`; wines: `… wp-sitemap-posts-wines-2.xml …` (the newest wine lastmod is in the second child; `-1` tops out at 2026-09-10T09:18:19-04:00); posts: `… wp-sitemap-posts-post-4.xml …` |
 | WordPress **7.1** on 15/15 routes; theme `vintus` **167** asset references, no other theme | `grep -ohE '<meta name="generator"[^>]*>' *.html \| sort \| uniq -c`; `grep -ohE 'wp-content/themes/[a-z0-9_-]+' *.html \| sort \| uniq -c` |
 | `style.css` header: `Author: EventCreate`, `Version: 1.0`, `Tags: wine, events` | `curl -sS https://vintus.com/wp-content/themes/vintus/style.css \| sed -n 1,10p` |
 | REST custom types **3** (`accounts`, `producers`, `wines`/Products) | `curl -sS https://vintus.com/wp-json/wp/v2/types \| python3 -c 'import json,sys; [print(k) for k in json.load(sys.stdin)]'` |
@@ -229,7 +250,7 @@ Each with the command that proves it, run over `$SCRATCH/vintus/` (the HTML save
 | Tech-sheet form fields: `pricing`, `price` (`maxlength="80"`), `pricing1`, hidden `wine_id`, `post_price_prod`, `parent_slug` | `python3`: `h[h.find('Add Pricing')-500 : +300]` over `producers_chateau-margaux_.html` |
 | Share Trade Material options **4** (Technical Sheet, Case Card, Shelf Talker, Staff Training Card) | text extraction of `producers_chateau-margaux_.html` after `Select Material` |
 | Subscribe: **8** visible fields, *I am a* **5** options, **2** newsletter preferences | text extraction of `subscribe_.html` |
-| Gated pages **3** fetched-or-listed (`/my-dashboard`, `/my-orders/`, `/my-notes/`); the two fetched print `You must be logged in to view this page.` | `grep -c 'You must be logged in' my-dashboard.html my-orders_.html` → 1, 1 |
+| Gated pages **3** fetched (`/my-dashboard`, `/my-orders/`, `/my-notes/`); two print `You must be logged in to view this page.`, `/my-notes/` prints `Please log in to view this page.` | `grep -c 'You must be logged in' my-dashboard.html my-orders_.html my-notes_.html` → 1, 1, 0; `grep -c 'Please log in to view this page' my-notes_.html` → 1 |
 | Plugins **6** (wp-sms 90, gravityforms 60, mailin 45, search-filter-pro 23, cgt-blocks 15, ajax-search-pro 15) | `grep -ohE 'wp-content/plugins/[a-z0-9_-]+' *.html \| sort \| uniq -c \| sort -rn` |
 | GA4 `G-6YHJEHXH69` **38**; GTM/AW/UA **0** | `grep -ohE '(GTM-[A-Z0-9]+\|G-[A-Z0-9]{8,}\|UA-[0-9]+-[0-9]+\|AW-[0-9]{6,})' *.html \| sort \| uniq -c` |
 | JSON-LD **0** on 15/15 routes; empty `<title></title>` on **6** of 20 fetched HTML documents (`/`, `/browse-producers`, `/browse-labels`, `/browse-materials`, `/browse-news`, `/my-dashboard`) | `for f in *.html; do grep -oE '<title>[^<]*</title>' $f \| head -1; done` |
@@ -256,12 +277,17 @@ For the user. **Not written on the page**, and no later task should promote one 
    uploaded in 2018/07–2018/08; the newest uploads are 2026/09 and the sitemap's latest
    `lastmod` is today. The served HTML cannot say who wrote the theme's templates, the
    post-type registrations, the filter forms, the tech-sheet and sell-sheet code, or the
-   gated pages, nor when. **The copy therefore describes each mechanism as it exists and
-   makes no "we built" claim about any part of it** — the same rendered state as the
-   2026-09-07 page, whose only "we" was a tab label that `projectIntroTabs` overwrites. If
-   the user's record says which parts are ours (the catalogue structure, the trade tools,
-   the login area, the hosting, or the whole site since a given date), that is the sentence
-   to add, and the report names the slot.
+   gated pages, nor when. **User's ruling, 2026-09-11 (relayed by the controller, fix round
+   1): "Ongoing maintenance / features on an inherited theme."** The user did not name which
+   features are theirs. So the page says once, in the stack tab, that the theme is an
+   inherited build we maintain and extend ("its stylesheet still credits the studio that
+   first built it" — the `Author: EventCreate` header above, observed 19:17 UTC), the Theme
+   row reads "Inherited custom theme · WordPress 7.1", and **no specific feature is
+   attributed to us**: the filters, the sell-sheet generator, the tech sheet, the gated
+   pages and the edge headers are described as what the portal does. Nothing on the page
+   reads "we built X"; nothing implies a from-scratch build (the meta description and the
+   lead name the portal and its counts only). The home and about pages' "a wine importer's
+   storefront" list items are deltas 11–12, reworded to the ruling.
 2. **"Python services doing the work underneath"** (the old `PROJECT_INTRO.body` and the
    `Stack` row; also `services/cloud-infrastructure/content.ts:114, 216`). No route serves a
    trace of anything outside WordPress: every dynamic endpoint on the fetched pages is
@@ -349,8 +375,14 @@ story and are the user's call; delta 6 is a word choice the user may keep.
 2. `{file: "src/components/site/work/content.ts", line: 226, anchor: "    location: \"2026 · E-commerce\",", replacement: "    location: \"2026 · WordPress\",", reason: "the /work/ tile's location string names a category the live site does not serve; every other tile names its platform (Shopify, Fly.io …), and this page's own header now reads 2026 · WordPress; the string occurs once in the file (no other tile uses the E-commerce word), verified below"}`
 3. `{file: "src/components/site/home/content.ts", line: 284, anchor: "    location: \"2026 · E-commerce\",", replacement: "    location: \"2026 · WordPress\",", reason: "the home grid's Vintus tile carries the same retired category word; same replacement as delta 2"}`
 4. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 114, anchor: "The Vintus storefront carries a national wine importer's catalog, with inventory management, order processing and customer-relationship tooling behind it. WordPress and PHP on the surface, Python services doing the work underneath.", replacement: "The Vintus site carries a national wine importer's catalogue of 703 wines and 1,600 vintage pages under 161 producers on WordPress, with a login, a sell-sheet generator and a tech sheet that takes a rep's own price behind it.", reason: "'inventory management, order processing and customer-relationship tooling' and 'Python services' are not served by any route (dossier, Unverifiable 2–3); the replacement names what the live site shows. The paragraph continues with the restaurant portal sentence, which is untouched"}`
-5. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 216, anchor: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress and PHP with Python services under the Vintus storefront. The host follows the workload.", replacement: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress behind nginx with a strict content-security policy under the Vintus site. The host follows the workload.", reason: "'Python services' is Unverifiable 2; 'nginx' and the CSP are the served headers (dossier, Stack → Edge), which is the cloud-and-infrastructure evidence this project actually offers"}`
+5. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 216, anchor: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress and PHP with Python services under the Vintus storefront. The host follows the workload.", replacement: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress behind nginx with a full content-security policy under the Vintus site. The host follows the workload.", reason: "'Python services' is Unverifiable 2; 'nginx' and the CSP are the served headers (dossier, Stack → Edge), which is the cloud-and-infrastructure evidence this project actually offers; 'full', not 'strict': the served CSP allows 'unsafe-inline' and 'unsafe-eval'"}`
 6. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 221, anchor: "Vintus runs a national wine import catalog with inventory management, order processing and customer-relationship tooling behind it.", replacement: "Vintus runs a national wine importer's catalogue, 703 wines and 1,600 vintage pages under 161 producers, with the trade's tools and a login behind it.", reason: "same three unsupported nouns as delta 4, in the service page's project-card lead"}`
+7. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 300, anchor: "  location: \"2026 · E-commerce\",", replacement: "  location: \"2026 · WordPress\",", reason: "the service page's Vintus card carries the retired category word; same replacement as deltas 2–3 (two-space indent, the only such line in the file)"}`
+8. `{file: "src/components/site/services/web-development/content.ts", line: 366, anchor: "  location: \"2026 · E-commerce\",", replacement: "  location: \"2026 · WordPress\",", reason: "the web-development page's Vintus card, same word, same replacement"}`
+9. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 220, anchor: "      lead: \"E-commerce operations:\",", replacement: "      lead: \"Trade operations:\",", reason: "the bold lead-in of the paragraph delta 6 rewrites; the portal serves the trade and has no cart (Unverifiable 4)"}`
+10. `{file: "src/components/site/work/content.ts", line: 65, anchor: "e-commerce storefronts, data pipelines", replacement: "an e-commerce storefront, a wine trade portal, data pipelines", reason: "the /work/ meta description counts storefronts in the plural; with Vintus reclassified only Landscape Drainage Proz remains. The line grows by 23 characters (155 → 178); if the orchestrator wants it under 160, drop 'New York client sites' → 'client sites'"}`
+11. `{file: "src/components/site/home/content.ts", line: 210, anchor: "a wine importer's storefront.", replacement: "a wine importer's trade portal we maintain.", reason: "the home page's 'we mostly build operational software' list reads as authorship of a storefront; the user's ruling is ongoing maintenance and feature work on an inherited theme, and the site has no cart. 14 characters longer in a paragraph, not a measured slot"}`
+12. `{file: "src/components/site/about/content.ts", line: 219, anchor: "A wine importer's storefront.", replacement: "A wine importer's trade portal we maintain.", reason: "the about page's copy of the same list; same ruling, same replacement"}`
 
 **Alt strings — a note, not a delta.** Five files carry `alt: "The Vintus wine importer
 storefront"` (`home/content.ts:288`, `work/content.ts:231`,
@@ -359,14 +391,23 @@ storefront"` (`home/content.ts:288`, `work/content.ts:231`,
 description of the frame; "storefront" is loose for a site with no cart. If the user wants
 the word changed, `"The Vintus wine importer's home page"` is true in all five, and each
 anchor occurs once per file (`grep -cF 'alt: "The Vintus wine importer storefront"'` → 1 in
-each). Not filed as a delta because the current string is not false, only imprecise.
+each). Not filed as a delta because the current string is not false, only imprecise; the ruling
+does not change that (an alt describes the picture, not the engagement).
 
 **Sweep accounting** (`grep -rn -i "vintus" src/ public/llms.txt .agents/product-marketing.md
-scripts/ docs/`, excluding `work/vintus/` and this dossier), every hit:
+scripts/ docs/`, widened in fix round 1 to `grep -rn -i "wine importer\|wine import\|e-commerce" src/
+public/llms.txt`, excluding `work/vintus/` and this dossier), every hit:
 `src/app/sitemap.ts:63` → the route in the sitemap, correct;
 `src/components/site/home/content.ts:51` → a comment ("Vintus is a national importer", the
-about page's *all 50 states*), correct; `:283-288` → the home grid tile: **delta 3** for the
-location, alt noted above; `src/components/site/shared/blocks/BlockHeaderProjects.tsx:15-18`
+about page's *all 50 states*), correct; `:210` → "a wine importer's storefront" in the
+"we mostly build" list: **delta 11**; `:283-288` → the home grid tile: **delta 3** for the
+location, alt noted above; `src/components/site/about/content.ts:219` → the same list item:
+**delta 12**; `src/components/site/work/content.ts:65` → the /work/ meta description's
+"e-commerce storefronts": **delta 10**; `services/cloud-infrastructure/content.ts:220` →
+`lead: "E-commerce operations:"`: **delta 9**; `:300` → the card's location: **delta 7**;
+`services/web-development/content.ts:366` → the card's location: **delta 8**;
+`src/components/site/shared/blocks/BlockHeaderProjects.tsx:177` → a comment quoting the old
+"2026 · E-commerce" as a wrapping example, historical, unchanged; `src/components/site/shared/blocks/BlockHeaderProjects.tsx:15-18`
 → a comment describing the cover's nav collision, still accurate (the nav reads PRODUCERS ·
 TRADE TOOLS · NEWS · REVIEWS · ABOUT today), no change; `src/components/site/about/content.ts:147`
 → a comment ("the wine importer's storefront"), `:167` → the large media slot with `alt: ""`,
@@ -391,9 +432,9 @@ sales, traffic or ranking figure for this project (`grep -rn -i "vintus" src/ pu
 
 **Notes for the user (no anchor, nothing to apply):**
 
-- **The theme header credits EventCreate** (Unverifiable 1). The page is written without a
-  "we built" claim; if the user's record names our part, the slot is `PROJECT_INTRO.body`'s
-  first sentence and the storefront section's first sentence (report §5).
+- **The theme header credits EventCreate** (Unverifiable 1) — settled by the user's ruling
+  (inherited theme, ongoing maintenance and feature work, no named features); the page and
+  deltas 11–12 follow it.
 - **Service filters.** The `PORTFOLIO_PROJECTS` entry lists `cloud-infrastructure` and
   `web-development`. What the live site offers as cloud-and-infrastructure evidence is the
   edge: nginx, HSTS, a full CSP and permissions policy, Cloudinary and Typekit. The page's
@@ -416,7 +457,7 @@ sales, traffic or ranking figure for this project (`grep -rn -i "vintus" src/ pu
 
 ### Anchor uniqueness (so the controller can apply by exact replacement)
 
-Checked at `7899882` on 2026-09-11 with `grep -cF -- "<anchor>" <file>` and `grep -nF` for
+Deltas 1–6 checked at `7899882`, 7–12 at `03ed437`, all re-checked before the fix-round commit, on 2026-09-11 with `grep -cF -- "<anchor>" <file>` and `grep -nF` for
 the line:
 
 | Delta | File | Line | Check | Occurrences | At cited line |
@@ -427,5 +468,11 @@ the line:
 | 4 | `src/components/site/services/cloud-infrastructure/content.ts` | 114 | single-line `grep -cF` | 1 | yes |
 | 5 | `src/components/site/services/cloud-infrastructure/content.ts` | 216 | single-line `grep -cF` | 1 | yes |
 | 6 | `src/components/site/services/cloud-infrastructure/content.ts` | 221 | single-line `grep -cF` | 1 | yes |
+| 7 | `src/components/site/services/cloud-infrastructure/content.ts` | 300 | single-line `grep -cF` (two-space indent) | 1 | yes |
+| 8 | `src/components/site/services/web-development/content.ts` | 366 | single-line `grep -cF` (two-space indent) | 1 | yes |
+| 9 | `src/components/site/services/cloud-infrastructure/content.ts` | 220 | single-line `grep -cF` | 1 | yes |
+| 10 | `src/components/site/work/content.ts` | 65 | substring `grep -cF` | 1 | yes |
+| 11 | `src/components/site/home/content.ts` | 210 | substring `grep -cF` (lower-case "a", full stop) | 1 | yes |
+| 12 | `src/components/site/about/content.ts` | 219 | substring `grep -cF` (capital "A", full stop) | 1 | yes |
 
 Re-run the same check before applying if the file has moved on.

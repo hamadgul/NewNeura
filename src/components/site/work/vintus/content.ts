@@ -17,13 +17,15 @@
  * (1200x750 for the frozen cover, 1600x1000 for the three runner captures),
  * because `next/image` reserves the aspect ratio from them.
  *
- * VOICE — "we", never "I"; no headcount. This page carries no "we built"
- * sentence at all: the served HTML cannot sign an author and the theme header
- * names a third party (dossier, Unverifiable 1), so every section describes a
- * mechanism as it exists today. That is also the rendered state of the
- * 2026-09-07 page, whose only "we" was the "What we built" tab label that
- * `projectIntroTabs` overwrites to "The tech stack". If the user's record
- * names our part, the sentence belongs at the head of `PROJECT_INTRO.body`.
+ * VOICE — "we", never "I"; no headcount. ATTRIBUTION, per the user's ruling
+ * of 2026-09-11 ("Ongoing maintenance / features on an inherited theme",
+ * dossier Unverifiable 1): the page says once, in the stack tab, that the
+ * theme is an inherited build we maintain and extend (the served
+ * `style.css` header credits EventCreate; the earliest uploads are 2018/06),
+ * and attributes NO specific feature to us — the filters, the sell-sheet
+ * generator, the tech sheet, the gated pages and the edge headers are all
+ * described as what the portal does, because the HTML cannot sign them and
+ * the user did not name them. No sentence on the page reads "we built X".
  * The client's own figures (40 benchmark producers, all 50 states, Importer
  * of the Year 2017, every review score) appear only as quoted client copy or
  * inside alt text describing a frame, never restated as ours.
@@ -33,7 +35,7 @@
  * four of its nouns get no support from the live site: "e-commerce" (no cart,
  * checkout, price list or payment integration on any route), "inventory
  * management, order processing, and customer-relationship tooling" (nothing
- * served; three pages answer "You must be logged in"), "Python services"
+ * served; three pages ask a visitor to log in), "Python services"
  * (every dynamic endpoint is admin-ajax.php or wp-json) and "leading" (no
  * one on the site ranks the importer). All four are gone. What replaces them
  * is measured: 703 wines and 1,600 vintage pages under 161 producers, four
@@ -105,7 +107,7 @@ export const PROJECT_LIVE = {
  * all three. Do not lengthen it without re-measuring at 320. Known and
  * pre-existing on this page only: the eyebrow row below the lead puts
  * `location` and `service` in one shared cell under `md`, and this page's
- * 41-character service line (the longest of the ten) overlaps the location
+ * 40-character service line (the longest of the ten) overlaps the location
  * text by 42 px at 390 and 112 px at 320 (54 / 124 px with the old
  * "2026 · E-commerce"); it clears at 431 px. The fix is in
  * `BlockHeaderProjects`, outside this page (report, concerns). The cover is the live home page as of
@@ -138,9 +140,12 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  * restaurants, retailers and press" is the subscribe form's "I am a" list;
  * the counts are the producers REST header and the wines sitemap; "a tech sheet, a sell sheet or a bottle
  * shot" are the Trade Tools menu's Product Images, Trade Materials and
- * Create Sell Sheet items (dossier, decision 3). `body` is the stack as the
- * served HTML shows it (dossier, Stack): the generator meta, the theme
- * directory, the REST type index (accounts, producers, wines), the
+ * Create Sell Sheet items (dossier, decision 3). `body` opens with the
+ * one attribution sentence the user's ruling allows (an inherited theme we
+ * maintain and extend; "its stylesheet still credits the studio that first
+ * built it" is the `Author: EventCreate` header, dossier Stack → Theme), then
+ * the stack as the served HTML shows it (dossier, Stack): the generator meta,
+ * the theme directory, the REST type index (accounts, producers, wines), the
  * distributors sitemap, the six plugin paths, the GA4 tag, Typekit,
  * Cloudinary, and the response headers. `projectIntroTabs` overwrites both
  * labels to "The brief" / "The tech stack".
@@ -150,7 +155,7 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
   activeLabel: 0,
   statement:
     "A national wine importer whose portfolio runs to 161 producers and 703 wines, whose customers are distributors, restaurants, retailers and press, and whose sales reps need a tech sheet, a sell sheet or a bottle shot for any wine on any day.",
-  body: "WordPress 7.1 on a custom theme, with three custom post types, producers, wines and accounts, and a directory of 379 distributors. Search & Filter Pro runs the four filter forms, Ajax Search Pro the header search and the sell-sheet search, Gravity Forms the share-by-e-mail form, Brevo the newsletter and WP SMS the text list. Google Analytics 4, Adobe Typekit and Cloudinary. nginx in front, with HSTS, a strict content-security policy and a permissions policy that switches off geolocation, camera, microphone and payment. No repository and no test suite: everything on this page is read from the live site.",
+  body: "WordPress 7.1 on a custom theme we inherited and now maintain and extend; its stylesheet still credits the studio that first built it. Four custom post types: producers, wines, accounts and distributors, the last a directory of 379 entries. Search & Filter Pro runs the four filter forms, Ajax Search Pro the header search and the sell-sheet search, Gravity Forms the share-by-e-mail form and Brevo the newsletter; the WP SMS plugin's subscribe endpoints and a WonderPush web-push loader are registered on every route. Google Analytics 4, Adobe Typekit and Cloudinary. nginx in front, with HSTS, a full content-security policy and a permissions policy that switches off geolocation, camera, microphone and payment. No repository and no test suite: everything on this page is read from the live site.",
 };
 
 /**
@@ -178,7 +183,7 @@ export const PROJECT_CATALOGUE: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "The catalogue is 161 producers, 703 wines and 1,600 vintage pages, 2,304 wine pages in all. A wine's bare address redirects to its current vintage, and the page's hero is three drop-downs, producer, wine and vintage, so a rep can move from E. Guigal to any of the house's 26 wines to any of a wine's six vintages without leaving the page. Below the hero the page runs in five sections. The overview holds the vineyard, the winemaking, the vintage and a tasting note, then four spec lines: colour, appellation, alcohol and suggested retail price. After it come the scored reviews with their publication and date, the news posts about that wine, its trade materials, and the producer's other wines. The producer page is the same shape one level up, with a card per wine.",
+      text: "The catalogue is 161 producers, 703 wines and 1,600 vintage pages, 2,304 wine pages in all. A wine's bare address redirects to its current vintage, and the page's hero is three drop-downs, producer, wine and vintage, so a rep can move from E. Guigal to any of the house's 26 wines to any of a wine's six vintages, each choice loading that page. Below the hero the page runs in five sections. The overview holds the vineyard, the winemaking, the vintage and a tasting note, then four spec lines: colour, appellation, alcohol and suggested retail price. After it come the scored reviews with their publication and date, the news posts about that wine, its trade materials, and the producer's other wines. The producer page is the same shape one level up, with a card per wine.",
     },
     {
       type: "paragraph",
@@ -208,18 +213,20 @@ export const PROJECT_IMAGE_PRODUCERS: BlockImageFullProps = {
  * their facet names: `_sfm_estate_location[]` (producers),
  * `_sfm_wine_producer[]` + `_sfm_all_title_clone[]` (labels, 59 / 1,060
  * options), `_sfm_post_related_producer[]` + `_sfm_post_related_wines[]`
- * (materials 54 / 1,029; news). Post count: `X-WP-Total` 6039. The labels
- * page's newest row is dated the day of capture (September 11, 2026); the
- * news page's newest post September 09, 2026. A wine page's `#news` section
- * holds the posts related to it (dossier, decision 2).
+ * (materials 54 / 1,029; news). Post count: `X-WP-Total` 6039. "Filed
+ * against" is what the facet names show and no more: the copy does not say
+ * every post carries both fields, because only the filter markup and one
+ * wine page's `#news` section (two posts) were read (dossier, decision 2).
+ * The labels page is not one of the three frames, so its same-day row is a
+ * dossier fact, not a sentence here.
  */
 export const PROJECT_RELATIONS: BlockWysiwygProps = {
   tagline: "Relations",
-  title: "Every post is keyed to a producer and a wine.",
+  title: "Posts are filed against a producer and a wine.",
   body: [
     {
       type: "paragraph",
-      text: "The site holds 6,039 posts, and each one carries a related producer and a related wine. That is what the four filter pages run on. The news page filters by producer and by wine; the bottle-shot and label page by producer, by wine and by material type; the trade-materials page by producer and by wine; the producers page by country. The wine drop-down on the label page offers 1,060 titles and the one on the materials page 1,029, and on the day these frames were taken the newest label row carried that day's date. The same join runs the other way on every wine page, whose news section is the posts filed against that wine.",
+      text: "The site holds 6,039 posts, and posts are filed against a producer and a wine. That is what the four filter pages run on. The news page filters by producer and by wine; the bottle-shot and label page by producer, by wine and by material type; the trade-materials page by producer and by wine; the producers page by country. The wine drop-down on the label page offers 1,060 titles and the one on the materials page 1,029. On the one wine page fetched, the news section holds the two posts filed against that wine.",
     },
   ],
 };
@@ -259,7 +266,7 @@ export const PROJECT_TOOLS: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      text: "Every wine card on a producer page carries a tech-sheet control with two options: add pricing, which opens a field for the rep's own price, and show onboarding specs. Beside it, a share form sends any of four documents, the technical sheet, the case card, the shelf talker or the staff training card, to an address the rep enters. The trade-materials page lists those documents as PDFs with a producer and a wine filter, and the Trade Tools menu is nine items long: product images, point-of-sale, media, producers, the producers summary, trade materials, about, reviews and create sell sheet.",
+      text: "On the one producer page fetched, a wine card carries a tech-sheet control with two options: add pricing, which opens a field for the rep's own price, and show onboarding specs. Beside it, a share form sends any of four documents, the technical sheet, the case card, the shelf talker or the staff training card, to an address the rep enters. The trade-materials page lists those documents as PDFs with a producer and a wine filter, and the Trade Tools menu is nine items long: product images, point-of-sale, media, producers, the producers summary, trade materials, about, reviews and create sell sheet.",
     },
   ],
 };
@@ -285,11 +292,14 @@ export const PROJECT_IMAGE_SELL_SHEET: BlockImageFullProps = {
  *
  * Sign in: `wp-login.php?redirect_to=%2Fmy-dashboard`; `/my-dashboard` and
  * `/my-orders/` print "You must be logged in to view this page." (19:11 UTC);
- * `/my-notes/` is in the pages sitemap. The dashboard's one sentence: "My
+ * `/my-notes/` prints "Please log in to view this page." (19:52 UTC). The dashboard's one sentence: "My
  * personal dashboard with the latest updates from the producers I follow."
  * Subscribe: the Brevo form's fields, the five "I am a" options and the two
- * newsletter preferences (`subscribe_.html`). SMS: the `wp_sms_subscribe`
- * admin-ajax actions on every route. Distributors: 379 sitemap URLs; the one
+ * newsletter preferences (`subscribe_.html`; the second list's live label is
+ * "Special Announcements — Producer Profiles, events, and announcements").
+ * No route renders an SMS form (`<form[^>]*sms` → 0), so the text list is
+ * not a sentence here; WP SMS and WonderPush are named in the stack tab as
+ * registered endpoints and a loader, which is all the HTML shows. Distributors: 379 sitemap URLs; the one
  * fetched is an event sign-up card (dossier, decisions 4–5, Unverifiable 3
  * and 8).
  */
@@ -299,7 +309,7 @@ export const PROJECT_LOGIN: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "Sign in leads to a personal dashboard that the site describes as the latest updates from the producers a user follows, and beside it sit a My Orders page and a My Notes page. To a visitor all three answer with one line, that they must be logged in, and what they hold for a signed-in user is not in the served pages, so it is not on this one. Sign up is a newsletter form that asks whether the reader is a distributor, a restaurant, a retailer, press or a consumer. It offers two lists, a weekly Monday digest of scores, news and releases, and producer profiles and announcements, and a text-message list runs alongside it. A directory of 379 distributor entries completes the set.",
+      text: "Sign in leads to a personal dashboard that the site describes as the latest updates from the producers a user follows, and beside it sit a My Orders page and a My Notes page. To a visitor each answers with a single line asking them to log in, and what they hold for a signed-in user is not in the served pages, so it is not on this one. Sign up is a newsletter form that asks whether the reader is a distributor, a restaurant, a retailer, press or a consumer. It offers two lists, a weekly Monday digest of scores, news and releases, and producer profiles, events and announcements. A directory of 379 distributor entries completes the set.",
     },
   ],
 };
@@ -307,15 +317,15 @@ export const PROJECT_LOGIN: BlockWysiwygProps = {
 /**
  * Block 10 — `BlockProjectDetails`. `Stack` feeds the intro's second tab and
  * is dropped from this block by `projectDetailsWithoutStack`. `Catalogue` is
- * the producers REST header and the wines sitemap split by depth; `Theme` is the generator meta and the theme
- * directory. No Tests row: no test suite exists. The block auto-places pairs,
+ * the producers REST header and the wines sitemap split by depth; `Theme` is the generator meta, the theme
+ * directory and the user's ruling (inherited). No Tests row: no test suite exists. The block auto-places pairs,
  * so the five rendered rows read (Catalogue | Theme), (Year | Platform),
  * (Live site | empty).
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
   { label: "Stack", value: "WordPress 7.1, PHP, Search & Filter Pro, Gravity Forms, Brevo, GA4" },
   { label: "Catalogue", value: "161 producers · 703 wines · 1,600 vintages" },
-  { label: "Theme", value: "Custom theme on WordPress 7.1" },
+  { label: "Theme", value: "Inherited custom theme · WordPress 7.1" },
   { label: "Year", value: "2026" },
   { label: "Platform", value: "WordPress" },
   { label: PROJECT_LIVE.label, value: PROJECT_LIVE.display, href: PROJECT_LIVE.url },

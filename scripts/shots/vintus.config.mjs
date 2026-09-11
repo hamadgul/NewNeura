@@ -60,7 +60,7 @@ export default defineShots("vintus", [
     waitFor: "form.searchandfilter",
   },
   {
-    // Evidence for: "Every post is keyed to a producer and a wine." — `/browse-news`: the H1
+    // Evidence for: "Posts are filed against a producer and a wine." — `/browse-news`: the H1
     // `News`, `Toggle View: Grid / List (filterable)`, the `PRODUCER / WINE` filter panel
     // (Search & Filter Pro form 34, facets `_sfm_post_related_producer[]` and
     // `_sfm_post_related_wines[]`), and the first three dated posts, the newest `Standing Up
