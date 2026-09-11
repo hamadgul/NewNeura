@@ -283,7 +283,8 @@ entry names the sentence in `content.ts` it is evidence for.
 copy), never the repo itself — the repo carries a 636 MB pre-existing `.next`. Through
 `scripts/guarded-dev.sh` (4 GB / 15 % free / 1 h limits) with `NEXT_PUBLIC_FORMSPREE_ENDPOINT=`
 set empty: `npx next dev --port 3102`. Group RSS: 569 MB at ready, 1,306 MB after four routes,
-1,767 MB after the captures (all of it `next-server`); wrapper peak in task-12-report.md §3.
+1,767 MB after the captures (all of it `next-server`); the wrapper's own peak on clean exit
+**1,769 MB**.
 
 **What must be hidden.** `nextjs-portal` (Next's dev badge) on every shot. Nothing else: the
 site is public and names its own business; the phone number on every hero is the client's
@@ -292,8 +293,8 @@ published line, present in their JSON-LD.
 | `out` | Route | Evidence for |
 | --- | --- | --- |
 | `new-york-fine-foods-brooklyn.jpg` (1600x1000) | `/catering/brooklyn` | "Ten catering pages, one per borough or region, each written around a fact that is only true there" — the H1 `Brooklyn Catering`, the breadcrumb, the subtitle naming Bushwick and Williamsburg, the angle heading `Catering That Can Handle Your Brooklyn Walk-Up` and its first two paragraphs |
-| `new-york-fine-foods-weddings.jpg` (1600x1000) | `/pizza-trucks/weddings` | "Four pizza-truck pages hang under the hub the site already ranked with" — `Pizza Truck Weddings`, the breadcrumb back to Pizza Trucks, `From $1,500`, the hook `The Best-Reviewed Thing at Your Wedding Won't Be the Cake` |
-| `new-york-fine-foods-corporate.jpg` (1600x1000) | `/corporate-catering` | "The corporate page is written for the person who has to get a vendor past building management" — `For Companies`, `Corporate Catering NYC`, the hero paragraph naming the certificate of insurance and the invoicing, the section `Corporate Catering That Shows Up On Time` with the PO-number sentence |
+| `new-york-fine-foods-weddings.jpg` (1600x1000) | `/pizza-trucks/weddings` | "Four pages now hang under it, one per occasion or region: weddings, parties, Long Island and Connecticut" — `Pizza Truck Weddings`, the breadcrumb back to Pizza Trucks, `From $1,500`, the hook `The Best-Reviewed Thing at Your Wedding Won't Be the Cake` |
+| `new-york-fine-foods-corporate.jpg` (1600x1000) | `/corporate-catering` | "The corporate page is written for whoever gets blamed if lunch is late: a certificate of insurance sent to building management before the date, a confirmed delivery window, an invoice with a PO number on it" — `For Companies`, `Corporate Catering NYC`, the hero paragraph naming the certificate of insurance and the invoicing, the section `Corporate Catering That Shows Up On Time` with the PO-number sentence |
 | `new-york-fine-foods-contact.jpg` (1600x1000) | `/contact` | "The contact form asks which of the three services you want before it asks anything else" — `Get in Touch`, then the card `What are you looking for?` with Catering / Pizza Truck / Mobile Bar. The hero photograph behind it is a remote Unsplash image (Unverifiable 2's stock-image family), which the alt does not describe as the client's food |
 | `nyff.jpg` (frozen cover, 1200x750) | NOT re-captured | Refreshed 2026-09-10 from the LIVE site; shared by `/`, `/work/`, `/process/` and `/services/web-development/` with alt "The New York Fine Foods catering site". The header renders it under the title, so the hero — the wordmark, the seven-item nav, the headline `Exceptional Food / Unforgettable Events`, the two menu buttons — is the page's opening image. |
 | `nyff-hero.mp4` (orchestrator-owned, 1200x750, 9.1 s, 812 KB) | kept, not touched | The evidence for the poster-then-video sentence, which a still cannot carry: the frame is the cover, and the background cuts through four scenes under a headline that never moves. Poster `nyff.jpg`. |

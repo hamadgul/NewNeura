@@ -64,8 +64,8 @@ export default defineShots("new-york-fine-foods", [
     hideSelectors: ["nextjs-portal"],
   },
   {
-    // Evidence for: "Four pizza-truck pages hang under the hub the site already ranked
-    // with, one per occasion or region" — `Pizza Truck Weddings`, the breadcrumb back to
+    // Evidence for: "Four pages now hang under it, one per occasion or region: weddings,
+    // parties, Long Island and Connecticut" — `Pizza Truck Weddings`, the breadcrumb back to
     // Pizza Trucks, `From $1,500` (the client's published starting price, also the
     // `minPrice` in the page's Service schema), and the hook heading "The Best-Reviewed
     // Thing at Your Wedding Won't Be the Cake".
@@ -77,10 +77,10 @@ export default defineShots("new-york-fine-foods", [
     hideSelectors: ["nextjs-portal"],
   },
   {
-    // Evidence for: "The corporate page is written for the person who has to get a vendor
-    // past building management: a certificate of insurance sent ahead, an invoice with a
-    // PO number on it, a written confirmation 48 hours out" — the H1 `Corporate Catering
-    // NYC`, the eyebrow `For Companies`, and the hero paragraph naming the certificate of
+    // Evidence for: "The corporate page is written for whoever gets blamed if lunch is
+    // late: a certificate of insurance sent to building management before the date, a
+    // confirmed delivery window, an invoice with a PO number on it" — the H1 `Corporate
+    // Catering NYC`, the eyebrow `For Companies`, and the hero paragraph naming the certificate of
     // insurance and the invoicing.
     //
     // NOT `/pizza-trucks` (the hub), which was the first choice: its truck carousel is a
