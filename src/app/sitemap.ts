@@ -11,7 +11,7 @@ import { SITE_URL } from "@/lib/seo";
  * stop reading the field at all. Bump this constant when the copy actually
  * changes.
  */
-const LAST_MODIFIED = new Date("2026-09-04");
+const LAST_MODIFIED = new Date("2026-09-11");
 
 /**
  * Routes are grouped by priority tier rather than listed flat, because the
