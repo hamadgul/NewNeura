@@ -2,19 +2,29 @@ import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
+import { BlockImageFull } from "@/components/site/shared/blocks/BlockImageFull";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
 import {
   projectDetailsWithoutStack,
   projectIntroTabs,
 } from "@/components/site/shared/blocks/projectIntroTabs";
 import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjectDetails";
+import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
+import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import {
+  PROJECT_BEFORE,
   PROJECT_CANONICAL,
+  PROJECT_CTA,
   PROJECT_DESCRIPTION,
   PROJECT_DETAILS,
   PROJECT_HEADER,
+  PROJECT_IMAGE_DATAFLOW,
   PROJECT_INTRO,
+  PROJECT_MODEL,
   PROJECT_OG_IMAGE,
+  PROJECT_OUTCOME,
+  PROJECT_RUN,
+  PROJECT_STAGES,
   PROJECT_TITLE,
 } from "@/components/site/work/rwd-pipeline/content";
 
@@ -26,8 +36,7 @@ import type { Metadata } from "next";
  * `title` is the plain stem, so the root layout's "%s — NeuraGul" template
  * supplies the suffix. Both `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are
  * search-facing strings that appear nowhere on the page — the `<h1>` and the
- * brief are separate constants and are unchanged. See their notes in
- * `content.ts`.
+ * brief are separate constants. See their notes in `content.ts`.
  */
 export const metadata: Metadata = {
   title: PROJECT_TITLE,
@@ -69,26 +78,46 @@ const SCHEMA = [
 /**
  * `/work/rwd-pipeline/`.
  *
- * Three blocks, in the order the source page runs its sections:
+ * Ten blocks:
  *
- *   BlockHeaderProjects → BlockIntroDouble (the brief / what Hamad led)
- *   → BlockProjectDetails
+ *   BlockHeaderProjects → BlockIntroDouble (the brief / the tech stack)
+ *   → BlockWysiwyg (Before the pipeline)
+ *   → BlockWysiwyg (Four stages) → BlockImageFull (the deck's data-flow diagram)
+ *   → BlockWysiwyg (One model: OMOP) → BlockWysiwyg (How it was run)
+ *   → BlockWysiwyg (Measured after launch)
+ *   → BlockProjectDetails → GeneralCta
  *
- * Three, not the eleven this shell was built for: eleven blocks existed to
- * carry eighteen photographs, and this project has one. That image is the
- * header's full-bleed backdrop, so there is no `BlockImageFull` and no media
- * block — every one of them would have to re-render the picture the reader has
- * just scrolled past, which reads as padding because it is. The rest of the
- * evidence for this project lives in the case-study deck the details table
- * points at. There is also no `BlockWysiwyg` outcome section: the source's
- * outcome sentence was character-identical to `PROJECT_HEADER.lead`, so it was
- * deleted rather than printed twice.
+ * The composition is argued from the evidence, and the evidence here is a
+ * 38-slide deck rather than a running app, so the page is text-forward on
+ * purpose: this project has no UI, no site and no repository, and no
+ * screenshot is invented for it. The one picture is the deck's own data-flow
+ * diagram (slide 36), and it sits directly under the two paragraphs that walk
+ * its boxes in order. Every other block is prose cited slide by slide in
+ * `docs/research/case-studies/rwd-pipeline.md`.
+ *
+ * Order: the before-state first, because the brief argues against it; then
+ * what the pipeline does, then what it produces (the model), then how the
+ * product was run, then what the deck measured. "Measured after launch" is
+ * last among the prose so the four figures land next to the details table
+ * and the CTA, and so the reader meets them after the mechanism they claim
+ * to have changed.
+ *
+ * `BlockWysiwyg` appears five times; it repeats on the source's own project
+ * pages and on every other case study here, so the repetition is not new.
+ * `BlockImageFull` gets `priority`: it is the first image after the header's
+ * own and the only one on the page. `BlockImageSlider`, `BlockMediaDouble`
+ * and `BlockMediaDoubleQuote` are not used: each needs a second asset or a
+ * portrait slot, and re-rendering the cover through one would be padding.
+ *
+ * `GeneralCta` closes the page: a case study with no call to action ends on
+ * a spec table.
  *
  * Client-boundary note: every constant above comes from this project's plain
- * `content.ts`. `BlockIntroDouble` carries `"use client"`, so a value imported
- * from it would reach this server component as a client-reference proxy and
- * kill the prerender — only its TYPES cross that boundary, and they do it in
- * `content.ts`.
+ * `content.ts`. `BlockWysiwyg`, `BlockIntroDouble` and `GeneralCta` carry
+ * `"use client"`, so a VALUE imported from one of them would reach this
+ * server component as a client-reference proxy and spread to undefined props
+ * — with no type or build error to catch it. Only their TYPES cross that
+ * boundary, and they do it in `content.ts`.
  */
 export default function RwdPipelinePage() {
   return (
@@ -99,7 +128,18 @@ export default function RwdPipelinePage() {
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
+
+        <BlockWysiwyg {...PROJECT_BEFORE} />
+
+        <BlockWysiwyg {...PROJECT_STAGES} />
+        <BlockImageFull {...PROJECT_IMAGE_DATAFLOW} priority />
+
+        <BlockWysiwyg {...PROJECT_MODEL} />
+        <BlockWysiwyg {...PROJECT_RUN} />
+        <BlockWysiwyg {...PROJECT_OUTCOME} />
+
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
+        <GeneralCta {...PROJECT_CTA} />
       </main>
 
       <NavigationFooter />

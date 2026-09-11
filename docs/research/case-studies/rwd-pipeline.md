@@ -361,6 +361,16 @@ glyphs, a third-party RWD-sources infographic (slide 6, `image26.png`), a five-s
 (slide 27, `image46.png`), the Freenome mark (slide 3, `image1.png`) and four vendor logos (slide
 38); none proves a sentence and a client's or vendor's logo is not ours to place.
 
+**The page, looked at** (the user's own `:3000`, `$SCRATCH/rwd-look.mjs`, viewport frames only,
+`.preloader` detached first): 320 / 360 / 390 / 768 / 1440, every block in order, no horizontal
+scroll (`scrollWidth` = viewport at all five), `main` innerText carries 0 first-person tokens, 0
+"we" (the only "we" on the route is the nav's "How we work") and 0 "dozens". The header lead was
+measured in the live slot with candidate strings swapped into it (`$SCRATCH/rwd-lead.mjs`): the
+shipped 80 characters is four lines at 320 (h1 bottom 494 against the cover's 500), four at 360
+(448) and three at 390 (417), overlap 0; a 94-character draft was five lines at 320 and ran 25 px
+into the cover, and was cut. The old 56-character lead was three lines at 320 (463). The stack
+tab prints slide 38's list; the details table renders six rows in three pairs.
+
 **Frozen cover `rwd-pipeline.jpg`:** NOT re-captured, not touched (Unverifiable 9). Referenced by
 `work/content.ts:256` (alt "The real-world clinical data pipeline"), `home/content.ts:189` ("The
 real-world data pipeline case study"), `about/content.ts:174`, `process/content.ts:210` ("The

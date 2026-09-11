@@ -2,43 +2,55 @@
  * Content for `/work/rwd-pipeline/`.
  *
  * Provenance for every string here is recorded in
- * `docs/research/case-studies/rwd-pipeline.md`.
+ * `docs/research/case-studies/rwd-pipeline.md`, which cites the slide number
+ * and the exact text in `~/Projects/NeuraGul/assets/docs/rwd-pipeline-portfolio.pptx`
+ * behind each claim. That deck is the only source: the project has no
+ * repository, no UI and no live site. Nothing below is written from memory,
+ * and the dossier's "Unverifiable claims" section lists what was deliberately
+ * NOT written (a year, a duration, a job title, the data vendor's name, the
+ * deck's own "1 month -> 1 week" beside its "60%").
  *
- * Image sizing note: `width`/`height` are the file's true decoded pixels
- * (1200x750), because `next/image` reserves the aspect ratio from them and the
- * header sizes its crop from that ratio rather than from a fixed height.
+ * Image sizing note: `width`/`height` are the files' true decoded pixels
+ * (1200x750 for the cover, 1600x1000 for the diagram), because `next/image`
+ * reserves the aspect ratio from them and every block here sizes itself from
+ * that ratio rather than from a fixed height.
  *
- * Block-count note: this project has exactly one image and the header already
- * paints it full-bleed, so the page runs three blocks rather than the eleven
- * the inherited template was built for — that sequence existed to carry
- * eighteen architecture photographs. There is deliberately no media block:
- * every one of them needs either a second asset (`BlockMediaDouble`,
- * `BlockMediaDoubleQuote`) or a picture the header has not already shown
- * (`BlockImageFull`), and re-rendering `rwd-pipeline.jpg` through one would be
- * padding rather than evidence. There is also no `BlockWysiwyg` outcome
- * section — see the note on `PROJECT_INTRO` below. No constant needs
- * numbering, because no block appears twice.
+ * The one in-page image is the deck's own data-flow diagram (slide 36),
+ * letterboxed onto the site's cover ground; nothing in it is edited. No
+ * screenshot exists for this project and none is invented, so the page is
+ * text-forward on purpose: five prose blocks, one diagram, the details
+ * table, the CTA.
  *
- * This is also the one project of the nine with no year: its `meta` is
- * "Product · 0-to-1", so the details table below prints a stage where the
- * others print 2026, and no date is inferred.
+ * NUMBERS — every figure on this page is a figure the deck states, with its
+ * slide cited in the dossier. None was re-measured, because there is nothing
+ * to measure against, and the copy says so where the KPIs are printed. No
+ * patient-level figure, cohort size or institution's private data appears
+ * anywhere in the deck or here.
  *
- * VOICE — the source site is written in the first person singular, because it
- * was one person. It is a team, so this site says "we" everywhere else. This
- * project is the exception: the pipeline is Hamad Gul's own work, done as a
- * product manager at Freenome before NeuraGul existed, so it is attributed to
- * him by name in the third person rather than absorbed into a team "we". The
- * facts of the project are exactly as the source records them.
+ * VOICE — the site says "we", never "I", and nothing here claims a headcount.
+ * This page is the site's one deliberate exception to "we": the pipeline is
+ * Hamad Gul's own work as a product manager at Freenome before NeuraGul
+ * existed, so a team "we" would be false and the copy attributes it to him by
+ * name in the third person (the standing ruling recorded in
+ * `neuragul-team-voice.md`, rule 4). Where the deck says "we" about the RWD
+ * team at Freenome, this page says "the team". "We" never appears in the
+ * rendered copy of this page.
+ *
+ * Freenome is named because the deck names it (slide 11) and `/about/` and
+ * two service pages already do. The external data vendor the deck names once
+ * (slide 24) is not named here or anywhere on the site; the copy says "one
+ * external partner", the deck's own word for outside parties.
  *
  * ── What the SEO pass changed ───────────────────────────────────────────────
- * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are no longer the source's
- * strings. Both are metadata only — the `<title>` stem and the meta
- * description — and both were rewritten to compete in a result list rather
- * than to open a page; see the notes on each. Some `alt` strings were also
- * lengthened from a bare project name to a description of the screenshot.
+ * `PROJECT_TITLE` and `PROJECT_DESCRIPTION` are metadata only — the `<title>`
+ * stem and the meta description — written to compete in a result list rather
+ * than to open a page; see the notes on each.
  */
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
+import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
+import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
+import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 import type { ProjectDetail } from "@/components/site/shared/blocks/BlockProjectDetails";
 
 const IMAGES = "/site/images";
@@ -47,33 +59,35 @@ const IMAGES = "/site/images";
  * The `<title>` stem, suffixed by the root layout's `"%s — NeuraGul"` template.
  *
  * This is NOT the project's display name — `PROJECT_HEADER.title` is, and it
- * still reads "Real-World Data Pipeline" on the page and in the breadcrumb. The two diverge on
- * purpose: an `<h1>` sits under a header that has already established what the
- * page is, while a `<title>` is read cold in a result list, so it has to name
- * the category of work as well as the client. `PROJECT_TITLE` is referenced
- * only by `metadata` in the route file, so nothing visible moves with it.
+ * still reads "Real-World Data Pipeline" on the page and in the breadcrumb.
+ * The two diverge on purpose: an `<h1>` sits under a header that has already
+ * established what the page is, while a `<title>` is read cold in a result
+ * list, so it has to name the category of work as well as the domain.
+ * "for Cancer Research" is slide 5's stated purpose ("accelerating research
+ * in early cancer detection"). `PROJECT_TITLE` is referenced only by
+ * `metadata` in the route file, so nothing visible moves with it.
  */
 export const PROJECT_TITLE = "Real-World Data Pipeline for Cancer Research";
 export const PROJECT_CANONICAL = "/work/rwd-pipeline/";
 /**
- * The meta description. It was the project's `brief` verbatim, which reads as
- * the opening of a story rather than as a search result: the brief sets a scene
- * and names no technology, so the snippet said nothing a searcher could match.
- * This states what was built and what it was built with, in ~150 characters.
- * The brief itself is untouched and still opens the page.
+ * The meta description. It states what was built and what it was built with,
+ * in ~175 characters. The previous version counted "dozens of sources", which
+ * the deck never does (it says "diverse sources & formats", slide 5, and
+ * names four source types, slide 6); the source types and the model are
+ * what the deck states.
  */
 export const PROJECT_DESCRIPTION =
-  "A 0-to-1 ETL pipeline pulling messy real-world clinical data from dozens of sources into one common model. Early cancer detection research ran on top of it.";
+  "A 0-to-1 ETL pipeline normalising real-world clinical data from hospital records, claims and wearables into one OMOP model on Google Cloud, for early cancer detection research.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/rwd-pipeline.jpg`;
 
 /**
- * `live_url` / `live_label` from the source entry, kept exact.
+ * The case-study deck, kept exact.
  *
- * This one is not a site: it is the Office web viewer opening a `.pptx`
- * case-study deck, which is why the label reads "View the case-study deck".
- * `BlockProjectDetails` renders its values as plain `<span>`s with no anchor,
- * so `display` prints the deck the viewer opens rather than the 130-character
- * viewer URL, and `url` — the exact string the source ships — survives here.
+ * This project has no site: the link is the Office web viewer opening the
+ * `.pptx` this whole page is written from. `BlockProjectDetails` renders its
+ * values as plain text, so `display` prints the file the viewer opens rather
+ * than the 130-character viewer URL, and `url` — the exact string the source
+ * ships — survives here.
  */
 export const PROJECT_LIVE = {
   url: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fneuragul.com%2Fassets%2Fdocs%2Frwd-pipeline-portfolio.pptx",
@@ -82,13 +96,28 @@ export const PROJECT_LIVE = {
 } as const;
 
 /**
- * Header. `lead` is the project's OUTCOME, not its brief: the brief is the
- * `BlockIntroDouble` statement two blocks down, and printing it in both slots
- * repeated the same sentence inside two screens on every case study.
+ * Header. `lead` is the project's arc, not its brief: the brief is the
+ * `BlockIntroDouble` statement below. "MVP to V1" is the deck's own sequence
+ * (slide 24: "Launched MVP … prepared for V1 release"; slide 27: "iterated to
+ * deliver a refined V1 product"); "one OMOP model" is slide 37.
+ * LENGTH IS MEASURED: this title is three words and wraps to three lines at
+ * 320 px, so the lead slot is a line tighter than a one-word title's.
+ * Measured in the live slot on the user's :3000 (`$SCRATCH/rwd-lead.mjs`,
+ * task-17-report.md §6): the shipped 80 characters is four lines at 320
+ * (h1 bottom 494 against the cover's 500), four at 360 (448) and three at
+ * 390 (417), overlap 0 at all three. A 94-character draft was five lines at
+ * 320 and ran 25 px into the cover. Do not lengthen it without re-measuring
+ * at 320.
+ *
+ * `location` has no year, and this is the one case study header without one:
+ * the deck carries no date for the engagement (its only date is a 2019
+ * third-party survey it cites), and the site convention `2026 · …` would put
+ * a year on this page that nothing supports. The `/work/` tile prints the
+ * same string. See the dossier, Unverifiable 1.
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Real-World Data Pipeline",
-  lead: "A 0-to-1 data pipeline taken from concept to production.",
+  lead: "A 0-to-1 pipeline normalising clinical data into one OMOP model, from MVP to V1.",
   location: "Product · 0-to-1",
   service: "Data Intelligence",
   breadcrumbLabel: "Work",
@@ -103,45 +132,213 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
 };
 
 /**
- * Block 2 — `BlockIntroDouble`, the two-label variant.
+ * Block 2 — `BlockIntroDouble`, run through `projectIntroTabs`, which relabels
+ * the tabs to "The brief" / "The tech stack" and fills the second panel from
+ * the `Stack` row of `PROJECT_DETAILS`. So only `statement` and `body` below
+ * reach the page; `labels` and `activeLabel` are overwritten by that helper.
+ * (An earlier version of this file set the second label to "What Hamad led";
+ * the helper never rendered it, and the attribution now lives in `body`.)
  *
- * The source page runs three headed sections: "The brief", "What I built" and
- * "Outcome". The first two map onto this block exactly — the active label sits
- * over the `font-L` statement (the brief) and the muted one over the body copy.
- * The third, "Outcome", is not a separate block on this page: it was
- * character-identical to `PROJECT_HEADER.lead`, so it was deleted rather than
- * printed twice.
- *
- * The second heading reads "What Hamad led" here, not the "What we built" the
- * other eight case studies carry. This work predates NeuraGul and belongs to one
- * named person, and the heading has to agree with the body underneath it.
+ * `statement` is the brief as a problem: slides 5, 6, 7 and 9. The source
+ * types are slide 6's list; "in different formats" is slide 7 ("Too many data
+ * formats"). `body` is slides 11 (Freenome), 5 (one unified CDM), 37 (OMOP),
+ * 38 (Google Cloud) and 9 (who consumed it).
  */
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
-  labels: ["The brief", "What Hamad led"],
+  labels: ["The brief", "The tech stack"],
   activeLabel: 0,
   statement:
-    "Early cancer detection depends on real-world clinical data, and real-world clinical data arrives messy and inconsistent from dozens of sources.",
-  body: "Hamad Gul led product management at Freenome for a 0-to-1 ETL pipeline that standardized all of it into a single Common Data Model. Downstream research and models were built on that foundation.",
+    "Early cancer detection research runs on real-world clinical data, and real-world clinical data arrives inconsistent and in different formats from hospital records, claims and billing systems, wearables and other sources.",
+  body: "Hamad Gul led product management at Freenome for a 0-to-1 ETL pipeline that normalises all of it into one common data model, OMOP, on Google Cloud. Research and machine-learning teams built on that one model instead of on each raw dataset.",
 };
 
 /**
- * Block 3 — `BlockProjectDetails`. The real facts only.
+ * Block 3 — `BlockWysiwyg`: the before-state.
  *
- * "Stack" holds the source's `stack` list unchanged even though this project's
- * entries are disciplines rather than technologies — that is what the source
- * ships and what its own page renders as the chip row. The two halves of the
- * `meta` string become the platform and the stage; there is no year to print.
+ * Every sentence is slide 13 or 14, which are the deck's own account of the
+ * manual process: queries rewritten per dataset, no version control, no
+ * written procedure, corrections carried back by hand between steps, bugs
+ * with no traceability, ML scientists waiting, partners without the
+ * resources to standardise. The page argues against this paragraph.
+ */
+export const PROJECT_BEFORE: BlockWysiwygProps = {
+  title: "Before the pipeline",
+  body: [
+    {
+      type: "paragraph",
+      text: "Each new dataset meant an analyst writing queries by hand to get it into the common model, then rewriting them for the next one. There was no version control and no written procedure, so a correction at one normalisation step had to be carried back by hand into the others. A bug that reached a machine-learning team could not be traced to the step that made it. The ML scientists waited on that manual work and sent the data problems back to the analysts who had done it. External partners without the resources to standardise their own data were left analysing it by hand, and sensitive data went through the same manual steps.",
+    },
+  ],
+};
+
+/**
+ * Block 4 — `BlockWysiwyg`: what the pipeline does, stage by stage.
  *
- * `Stack` stays in this array — `projectIntroTabs` (in `page.tsx`) still reads
- * it to build the second intro tab — but `projectDetailsWithoutStack` filters
- * it out before this array reaches `BlockProjectDetails`, so the rendered
- * table only ever sees the other three rows. The block auto-places pairs, so
- * those three rows read (Platform | Stage) then (the deck | —, its column
- * empty, since there is no fourth row to pair with it).
+ * Slide 35's "Pipeline Data Flow" list, in its order, with slide 36's diagram
+ * (the block below) as the picture of it. "Pauses until an engineer or
+ * informaticist" is slide 35's own rule. The DataHub sentence is slides 29
+ * and 36; automatic runs and non-technical configuration are slide 29.
+ */
+export const PROJECT_STAGES: BlockWysiwygProps = {
+  title: "Four stages, paused on any failed check",
+  body: [
+    {
+      type: "paragraph",
+      text: "The pipeline reads a dataset in memory from a landing bucket and runs it through four stages. Syntactic normalisation fixes formatting: a misplaced comma, a mismatched type. Semantic normalisation maps the dataset's own codes to standard vocabularies through a terminology management system. Structural normalisation reshapes the result into the common data model and writes it to BigQuery, and post-processing derives further values from business rules and adds them alongside.",
+    },
+    {
+      type: "paragraph",
+      text: "Quality checks run throughout. If one fails, processing pauses until an engineer or informaticist corrects the data, and a final quality assessment runs on the processed output with OMOP's own open-source tools. Each stage emits metadata to DataHub, which holds the record of what happened to a dataset at every step. A run starts on its own when data refreshes, and the pipeline's settings and configurations can be changed by non-technical users.",
+    },
+  ],
+};
+
+/**
+ * Block 5 — `BlockImageFull`: the deck's data-flow diagram, slide 36.
+ *
+ * The evidence for the two paragraphs above it: every box and arrow label in
+ * the alt is the diagram's own. The diagram is `ppt/media/image51.png`
+ * (2048x963) scaled to 1520x715 and centred on the site's cover ground;
+ * provenance and the compose script are in the dossier's Shot list. It is
+ * the first image after the header's own, so the page passes it `priority`.
+ * The diagram's own spelling of the first stage is kept in the picture; the
+ * alt describes the stages, it does not transcribe the typo.
+ */
+export const PROJECT_IMAGE_DATAFLOW: BlockImageFullProps = {
+  image: {
+    src: `${IMAGES}/rwd-pipeline-dataflow.jpg`,
+    alt: "The deck's data-flow diagram: a data landing bucket read in memory, then syntactic, semantic and structural normalisation and post-processing inside the RWD pipeline, a terminology management system read and written at the semantic step, BigQuery written at the end, and metadata emitted to DataHub after each step.",
+    width: 1600,
+    height: 1000,
+  },
+};
+
+/**
+ * Block 6 — `BlockWysiwyg`: the model and the stack.
+ *
+ * Slide 37 (OMOP, its tables and vocabularies), slide 9 (who consumes it and
+ * why; "without the need to constantly rewrite models for every single raw
+ * dataset" is the slide's own sentence), slide 29 (the CDM library with an
+ * API) and slide 38 (the technology list, verbatim in the dossier's Stack
+ * table).
+ */
+export const PROJECT_MODEL: BlockWysiwygProps = {
+  title: "One model: OMOP",
+  body: [
+    {
+      type: "paragraph",
+      text: "The common data model is OMOP, the Observational Medical Outcomes Partnership model: a fixed set of tables such as Person, Drug Exposure and Measurement, with values mapped to the standard vocabularies SNOMED, LOINC and RxNorm. The point of a fixed model is what sits downstream. Research teams query one standardised dataset to form hypotheses for early cancer detection, machine-learning teams train against one schema without rewriting a model for every raw dataset, and a CDM library holds every OMOP data model with an API for users to read from.",
+    },
+    {
+      type: "paragraph",
+      text: "The pipeline itself is Python, with Pandas, Polars and SQLGlot, orchestrated by Flyte, running on Google Cloud with BigQuery as the data lake for the OMOP data and DataHub as the metadata store. Its front end is React.",
+    },
+  ],
+};
+
+/**
+ * Block 7 — `BlockWysiwyg`: how the product was run.
+ *
+ * This is the site's one product-management case study, so the management
+ * record is the argument. Slides 17–27, in order: KPIs before development
+ * and OKRs (17); interviews, the biweekly sync, the one-on-ones (18);
+ * MoSCoW, RICE and the PRD (19); epics named for the stages, quarterly story
+ * mapping, estimation (21); the four ceremonies (22); tech-debt tickets each
+ * quarter (23); the A/B-tested library dispute (20); governance, privacy and
+ * IP approvals (23) and the HIPAA changes (26); UAT, synthetic then real
+ * data, MVP to V1, load/integration/beta testing (24); monitoring, the lake
+ * to lakehouse move, the later features (25, 26).
+ *
+ * "One external partner" replaces the vendor the deck names on slide 24; see
+ * the header note. "A selected group" is slide 24's "select RWD Informatics
+ * users"; no size is stated and none is written.
+ */
+export const PROJECT_RUN: BlockWysiwygProps = {
+  title: "How it was run",
+  body: [
+    {
+      type: "paragraph",
+      text: "Success metrics and KPIs were set before development started, and OKRs tied to company goals tracked progress against them. Requirements came from interviews with the RWD informatics analysts who would run the pipeline, from a biweekly sync between them and engineering, and from one-on-ones with the engineering managers, the director of RWD informatics and the product managers upstream and downstream. MVP features were ranked with MoSCoW and RICE and recorded in a PRD alongside deadlines and major decisions.",
+    },
+    {
+      type: "paragraph",
+      text: "Work was broken into JIRA epics named for the pipeline's own stages, story-mapped each quarter and estimated with engineering. Hamad ran the daily standups, backlog grooming, sprint planning and retrospectives, and each quarter's plan carried tickets to pay down technical debt. When the analysts and the engineers disagreed on which Python library a stage should be built on, both were A/B tested and the team chose on the result. Any process touching sensitive data needed sign-off from data governance, privacy and IP, and when new governance policies arrived the pipeline's infrastructure was changed to stay HIPAA compliant.",
+    },
+    {
+      type: "paragraph",
+      text: "The MVP went to a selected group of RWD informatics users, tested first on synthetic data and then on real-world data from one external partner. Their feedback shaped the V1, which shipped after load, integration and beta testing. After launch the pipeline was monitored against its KPIs in GCP Cloud Log, BigQuery and DataHub, its output moved from the BigQuery data lake to an in-house lakehouse, and later releases added NLP extraction from patient reports, a metadata solution and ML-powered anomaly detection.",
+    },
+  ],
+};
+
+/**
+ * Block 8 — `BlockWysiwyg`: the four KPIs the deck records, slide 30.
+ *
+ * Each figure is the slide's, with its wording kept close: "60% decrease in
+ * TAT for RWD Normalization"; "40% less bugs reported by internal teams &
+ * external partners for data (based on completeness, accuracy, file
+ * formatting)"; "12% increase in ML Model Risk Prediction accuracy"; "100%
+ * Adoption by RWD Analysts, no longer relying on manual methods".
+ *
+ * The slide also prints "From 1 month -> 1 week" beside the 60%, and the two
+ * do not agree with each other (a month to a week is roughly 75%). The page
+ * prints the headline figure only and the dossier flags the pair for the
+ * user (Unverifiable 4). The 12% belongs to the ML teams' models and the
+ * research behind them, and the sentence says so. The last sentence makes
+ * the provenance explicit on the page, because nothing here was re-measured.
+ */
+export const PROJECT_OUTCOME: BlockWysiwygProps = {
+  title: "Measured after launch",
+  body: [
+    {
+      type: "paragraph",
+      text: "Against the KPIs set at the start, the turnaround for normalising a real-world dataset fell 60%. Data bugs reported by internal teams and external partners, counted on completeness, accuracy and file formatting, fell 40%. The internal ML teams' risk-prediction models gained 12% in accuracy on the standardised data, a result that belongs to those models and the research behind them. Adoption among the RWD analysts reached 100%, with none still on the manual method. All four are the figures the case-study deck records.",
+    },
+  ],
+};
+
+/**
+ * Block 9 — `BlockProjectDetails`. The real facts only.
+ *
+ * `Stack` is slide 38's "Technology Used" list, which is what the second
+ * intro tab prints under "The tech stack". It used to hold three disciplines
+ * ("Product Management, Agile, Planning"), which read oddly under that
+ * heading; the disciplines are now the `Role` row. `Model` is slide 37;
+ * `Cloud` and `Orchestration` are slide 38; `Stage` is slide 3 ("0 - 1") and
+ * slides 24/27 (MVP → V1). There is no `Year` row: the deck gives no date
+ * (see `PROJECT_HEADER`).
+ *
+ * `Stack` stays in this array — `projectIntroTabs` (in `page.tsx`) reads it
+ * to build the second intro tab — but `projectDetailsWithoutStack` filters it
+ * out before this array reaches `BlockProjectDetails`, so the rendered table
+ * sees the other six rows, an even count, so no row's right-hand column
+ * renders empty.
  */
 export const PROJECT_DETAILS: ProjectDetail[] = [
-  { label: "Stack", value: "Product Management, Agile, Planning" },
-  { label: "Platform", value: "Product" },
-  { label: "Stage", value: "0-to-1" },
+  { label: "Stack", value: "Python, Pandas, Polars, SQLGlot, Flyte, Google Cloud, BigQuery, DataHub, React" },
+  { label: "Role", value: "Product management" },
+  { label: "Stage", value: "0-to-1 · MVP to V1" },
+  { label: "Model", value: "OMOP common data model" },
+  { label: "Cloud", value: "Google Cloud · BigQuery" },
+  { label: "Orchestration", value: "Flyte" },
   { label: PROJECT_LIVE.label, value: PROJECT_LIVE.display, href: PROJECT_LIVE.url },
 ];
+
+/**
+ * Block 10 — `GeneralCta`, the site's call-to-action band.
+ *
+ * Declared here rather than imported from `GeneralCta.tsx`: that block is a
+ * `"use client"` module, so a plain value imported from it into a server
+ * component arrives as a client-reference proxy and spreads to undefined
+ * props. This file has no `"use client"`, so the value stays real in the
+ * server graph.
+ *
+ * The line is this project's own problem, per `.agents/product-marketing.md`
+ * §1: slide 13's "rewrite ETL queries for new each dataset", as the question
+ * a reader with the same process would recognise.
+ */
+export const PROJECT_CTA: GeneralCtaProps = {
+  text: "Still rewriting the ETL for every new dataset?",
+  label: "Contact",
+  href: "/contact/",
+};
