@@ -209,7 +209,8 @@ never adjectives and never a sales figure.
 (`/work/` puts a Shopify dealer beside a routing solver) and by the specificity here.
 
 **The primary action** is `/contact/` via `GeneralCta`. The CTA line names this reader's own
-situation: a catalogue that still lives in a spreadsheet and a phone.
+situation: "Do your biggest orders still start with a phone call?" — the buyer the municipal
+page was built for.
 
 **What the page must not do:** restore any sales, traffic or ranking figure (Task 5); claim a
 Google Ads campaign ran or what it returned; claim we wrote a specific section (the HTML does
@@ -315,8 +316,9 @@ page carries the same form-or-call loop and the same two-way link to contact.
 
 ## Cross-page deltas
 
-Three consistency edits, none applied by this task. Each is `{file, anchor, replacement,
-reason}`; anchors are exact current strings, each verified to occur exactly once in its file
+Two consistency edits, none applied by this task (the same retired wording in this page's
+own `PROJECT_DESCRIPTION`, `PROJECT_HEADER.lead` and `PROJECT_INTRO.body` was rewritten in
+Stage B). Each is `{file, anchor, replacement, reason}`; anchors are exact current strings, each verified to occur exactly once in its file
 by `grep -cF` (table at the end). The rule behind all three: the retired wording "custom
 Liquid, CTA design, Google Ads, and SEO" lists two service claims (Google Ads, SEO) that the
 live site supports only as a conversion tag and a structured-data layer, so the echoes are
@@ -324,7 +326,6 @@ brought to the same evidence the page now uses.
 
 1. `{file: "public/llms.txt", line: 32, anchor: "- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Shopify storefront for a drainage-products retailer, built with custom Liquid, CTA design, Google Ads, and SEO.", replacement: "- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Dawn storefront for an NDS drainage dealer: eleven products in two collections, two hand-written Custom Liquid sections, a municipal quote path, Google Ads conversion labels on seven checkout events, and structured data on every route.", reason: "the current line repeats the retired wording; the replacement is the new PROJECT_DESCRIPTION's facts in the llms.txt entry shape (llms.txt is orchestrator-owned)"}`
 2. `{file: "src/components/site/services/web-development/content.ts", line: 254, anchor: "A national wine importer's catalog on Vintus, and a Shopify buildout for Landscape Drainage Proz with custom Liquid, CTA design, Google Ads, and SEO.", replacement: "A national wine importer's catalog on Vintus, and a Dawn storefront for Landscape Drainage Proz with two hand-written Custom Liquid sections, a municipal quote path and Google Ads conversion labels on the checkout events.", reason: "the service page's Storefronts paragraph carries the retired 'Google Ads, and SEO' service wording; 'SEO' as a bare claim is replaced by nothing (the storefront's structured data is an app's output) and 'Google Ads' by what the HTML shows"}`
-3. `{file: "src/components/site/work/landscape-drainage-proz/content.ts", anchor: "(none — owned by this task; listed so the sweep below is complete)", replacement: "(applied in Stage B)", reason: "the same wording lived in PROJECT_DESCRIPTION, PROJECT_HEADER.lead and PROJECT_INTRO.body; all rewritten here"}`
 
 **Sweep accounting** (`grep -rn -i "landscape\|drainage\|landscapedrainage" src/ public/llms.txt
 .agents/product-marketing.md scripts/ docs/`, excluding `work/landscape-drainage-proz/` and this
