@@ -107,13 +107,24 @@ export const PROJECT_LIVE = {
  * Header. `lead` is the project's OUTCOME, not its brief: the brief is the
  * `BlockIntroDouble` statement below. 6 and 26 are the sitemap's URL counts
  * before and after the 2026-08-27 commits (`git show 1ab1de5^:src/app/sitemap.ts`
- * → 6 entries; `/sitemap.xml` on the booted copy → 26). 29 keywords and ~85
- * visits are the DataForSEO baseline recorded in `docs/seo-page-plan-2026-08.md`
- * on that date, a dated record in the source (dossier, Verifiable numbers).
+ * → 6 entries; `/sitemap.xml` on the booted copy → 26). "Most" = 10 borough
+ * and regional area pages + 4 pizza-truck spokes + corporate + bartenders, 16
+ * of the 26 (dossier, Verifiable numbers).
+ *
+ * LENGTH IS MEASURED, NOT CHOSEN. The header's text band is a fixed 500px
+ * from `md` up and the lead shares its columns with the service line; the
+ * lead's slot is three lines at 1280 (xl: lines 12-19, ~27 chars/line), five
+ * at 320. The previous 190-char lead ran seven lines at 768 and printed over
+ * "Web Development" by 106x14px there and 109x18px at 1024, and passed the
+ * meta row by 108px at 1280. This 83-char lead measures 3 lines at 768/1024/
+ * 1280/1440 with the block's own 35px gap intact (lead.bottom - meta.top =
+ * -110.7 / -66.3 / -37.3 / -37.3), 3 lines at 390 and 4 at 320. The 29-keyword
+ * / 85-visit baseline it used to carry is still on the page, in the
+ * `BlockWysiwyg` baseline paragraph below.
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "New York Fine Foods",
-  lead: "Six indexable pages became twenty-six, most of them built for a search from a specific borough or occasion, from a measured baseline of 29 ranked keywords and an estimated 85 visits a month.",
+  lead: "Six indexable pages became twenty-six, most built for a borough or occasion search.",
   location: "2026 · Web",
   service: "Web Development",
   breadcrumbLabel: "Work",
