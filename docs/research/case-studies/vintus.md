@@ -33,7 +33,7 @@ Read from the served HTML of `/` on 2026-09-11 18:55 UTC (`$SCRATCH/vintus/home.
 | Platform | **WordPress 7.1** (`<meta name="generator" content="WordPress 7.1" />` on 15/15 fetched routes); `wp-json`, `xmlrpc.php?rsd`, `wp-login.php`, `admin-ajax.php` endpoints | `grep -ohE '<meta name="generator"[^>]*>' *.html \| sort \| uniq -c` → 15 |
 | Theme | **`vintus`**, a custom theme: `wp-content/themes/vintus/style.css` header reads `Theme Name: Vintus` / `Theme URI: vintus.com` / `Description: Custom WordPress theme for Vintus` / **`Author: EventCreate`** / `Author URI: https://www.eventcreate.com` / `Version: 1.0` / `Tags: wine, events`. Bootstrap 3 (`assets/bootstrap.min.css`, `navbar navbar-default`, `col-md-8 col-md-offset-2`, `modal fade`) and Font Awesome 4 (`fa fa-instagram`) under the theme; no other theme directory referenced on any route | `curl -sS https://vintus.com/wp-content/themes/vintus/style.css \| head -10` (19:17 UTC); `grep -ohE 'wp-content/themes/[a-z0-9_-]+' *.html \| sort \| uniq -c` → `vintus` 167, nothing else |
 | Content types | REST index `/wp-json/wp/v2/types` (19:17 UTC) lists three custom types beside WordPress's own: **`accounts`** (`Accounts`), **`producers`** (`Producers`), **`wines`** (labelled **`Products`**, `rest_base: wines`). A fourth, **`distributors`**, is in the sitemap index but not in the REST index (not `show_in_rest`) | `python3 -c 'import json; …'` over `$SCRATCH/vintus/wp-types.json` |
-| Counts (published, public) | **2,304 wines · 161 producers · 6,039 posts · 43 pages · 19,017 media items · 10 users · 0 public accounts**; **379 distributors** (sitemap only) | `curl -sS -D - -o /dev/null 'https://vintus.com/wp-json/wp/v2/<type>?per_page=1' \| grep -i x-wp-total` (19:18 UTC); `grep -o '<url>' wp-sitemap-posts-distributors-1.xml \| wc -l` |
+| Counts (published, public) | **2,304 `wines` posts (703 wines + 1,600 vintage pages + 1 nested, by sitemap URL depth) · 161 producers · 6,039 posts · 43 pages · 19,017 media items · 10 users · 0 public accounts**; **379 distributors** (sitemap only) | `curl -sS -D - -o /dev/null 'https://vintus.com/wp-json/wp/v2/<type>?per_page=1' \| grep -i x-wp-total` (19:18 UTC); `grep -o '<url>' wp-sitemap-posts-distributors-1.xml \| wc -l` |
 | Plugins (by asset path) | **Search & Filter Pro** (`search-filter-pro`, four forms: ids `9` producers, `113866` labels, `50` materials, `34` news); **Ajax Search Pro** (`ajax-search-pro`, the header search and the sell-sheet wine search; its WooCommerce add-on script is registered but there is no WooCommerce on the site); **Gravity Forms** (`gravityforms`, the *Share Trade Material* form and the reCAPTCHA iframes on the sell-sheet and subscribe pages); **Brevo** (`mailin`, the newsletter); **WP SMS** (`wp-sms`, `admin-ajax.php?action=wp_sms_subscribe` / `_verify_subscribe` / `_unsubscribe` endpoints); **`cgt-blocks`** | `grep -ohE 'wp-content/plugins/[a-z0-9_-]+' *.html \| sort \| uniq -c` → wp-sms 90, gravityforms 60, mailin 45, search-filter-pro 23, cgt-blocks 15, ajax-search-pro 15 |
 | WooCommerce / cart | **None.** The only `woocommerce` string on any route is the Ajax Search Pro add-on's script registration; no `wc-`, `add-to-cart`, `cart`, checkout or price-list markup; the only price on a wine page is `Suggested Retail Price $35` | `grep -c -i woocommerce home.html` → 1 (the ASP addon path); `grep -oE 'wc-[a-z-]+' *.html` → nothing |
 | Measurement | Google Analytics 4 `G-6YHJEHXH69` (38 occurrences across the fetched routes); no GTM container, no `AW-`, no `UA-` | `grep -ohE '(GTM-[A-Z0-9]+\|G-[A-Z0-9]{8,}\|UA-[0-9]+-[0-9]+\|AW-[0-9]{6,})' *.html \| sort \| uniq -c` |
@@ -54,9 +54,13 @@ Five a reader can check against the live site rather than an adjective. This sec
 describes each thing as it exists; who built which part is Unverifiable 1 and is not asserted
 in the copy.
 
-**1. A catalogue of 2,304 wines under 161 producers, one URL per vintage.** The REST index
-labels the `wines` type *Products* and counts 2,304 published (19:18 UTC); the sitemap's two
-wine children carry 2,000 + 304 URLs. A wine's bare URL redirects to its current vintage:
+**1. A catalogue of 703 wines and 1,600 vintage pages under 161 producers, one URL per
+vintage.** The REST index labels the `wines` type *Products* and counts 2,304 published (19:18
+UTC); the sitemap's two wine children carry 2,000 + 304 URLs, and split by URL depth those are
+**703** parent wines (`/wines/<wine>/`), **1,600** vintage children (`/wines/<wine>/<vintage>/`)
+and one nested a level deeper; **650** of the parents have at least one vintage under them,
+and the largest have 12 (Ornellaia Bianco, Château La Fleur-Pétrus). "2,304 wines" on its own
+would overstate the catalogue by counting vintages as wines; the page says 703 and 1,600. A wine's bare URL redirects to its current vintage:
 `/wines/crozes-hermitage/` → 302 → `/wines/crozes-hermitage/e-guigal-crozes-hermitage-2020/`
 (19:11 UTC). That page's hero is three `<select>`s: **57** producers, **26** E. Guigal wines,
 **6** vintages (2015–2020), each option a URL. Its left rail is five in-page anchors
@@ -154,8 +158,9 @@ The 2026-09-07 page had three blocks and six words of substance ("e-commerce", "
 structured catalog", "inventory management, order processing, and customer-relationship
 tooling", "WordPress and PHP … Python services"). Checkable capability it said nothing about:
 
-1. **What the catalogue is** (decision 1): the counts, the URL shape, one URL per vintage, the
-   three hero selects, the wine page's sections.
+1. **What the catalogue is** (decision 1): the counts (703 wines, 1,600 vintage pages, 161
+   producers), the URL shape, one URL per vintage, the three hero selects, the wine page's
+   sections.
 2. **What "structured" means** (decision 2): four filter forms over related-producer and
    related-wine fields; posts, labels and materials keyed to the catalogue.
 3. **The trade tools** (decision 3): the tech sheet with a rep's own price, the sell-sheet
@@ -187,7 +192,7 @@ sheet that takes the rep's price; a sell sheet from a search; the pages behind t
 page argues *mechanism*, never adjectives and never a sales figure.
 
 **Secondary objection**, per §2: *"is this their one good project?"* — answered by the range
-(`/work/` puts a 2,304-wine catalogue beside a routing solver) and by the specificity here.
+(`/work/` puts a 2,304-page wine catalogue beside a routing solver) and by the specificity here.
 
 **The primary action** is `/contact/` via `GeneralCta`. The CTA line names this reader's own
 situation: a catalogue that has outgrown the site that holds it.
@@ -208,7 +213,8 @@ Each with the command that proves it, run over `$SCRATCH/vintus/` (the HTML save
 
 | Number | Command / location |
 | --- | --- |
-| **2,304** wines · **161** producers · **6,039** posts · **43** pages · **19,017** media · **10** users · **0** public accounts | `for t in wines producers posts pages media users accounts; do curl -sS -A "$UA" -D - -o /dev/null "https://vintus.com/wp-json/wp/v2/$t?per_page=1" \| grep -i x-wp-total; done` (19:18 UTC) |
+| **2,304** `wines` posts · **161** producers · **6,039** posts · **43** pages · **19,017** media · **10** users · **0** public accounts | `for t in wines producers posts pages media users accounts; do curl -sS -A "$UA" -D - -o /dev/null "https://vintus.com/wp-json/wp/v2/$t?per_page=1" \| grep -i x-wp-total; done` (19:18 UTC) |
+| Wines by URL depth: **703** parents · **1,600** vintage children · **1** deeper; **650** parents with children; max **12** children | `cat wp-sitemap-posts-wines-1.xml wp-sitemap-posts-wines-2.xml \| grep -oE '<loc>[^<]*' \| cut -c6- > wines.txt; awk -F/ 'NF==6' wines.txt \| wc -l; awk -F/ 'NF==7' wines.txt \| wc -l; awk -F/ 'NF==7' wines.txt \| grep -oE 'https://vintus.com/wines/[^/]+/' \| sort \| uniq -c \| sort -rn \| head -3` |
 | **379** distributors; sitemap children **12**; posts 2,000 + 2,000 + 2,000 + 39; wines 2,000 + 304; pages 43; producers 161; categories 7; tags 82; users 10 → **9,025** URLs | `for f in wp-sitemap-*.xml; do echo "$f $(grep -o '<url>' $f \| wc -l)"; done`; `grep -c '<sitemap>' wp-sitemap.xml` |
 | Latest `<lastmod>`: producers **2026-09-11T10:58:59-04:00**, wines **2026-09-11T11:08:57-04:00**, posts **2026-09-09T13:46:54-04:00** | `grep -oE '<lastmod>[^<]*' wp-sitemap-posts-<type>-1.xml \| sort \| tail -1` |
 | WordPress **7.1** on 15/15 routes; theme `vintus` **167** asset references, no other theme | `grep -ohE '<meta name="generator"[^>]*>' *.html \| sort \| uniq -c`; `grep -ohE 'wp-content/themes/[a-z0-9_-]+' *.html \| sort \| uniq -c` |
@@ -339,12 +345,12 @@ services" are not supported by anything the live site serves (Unverifiable 2–4
 echoes are brought to the same evidence the page now uses. Deltas 4–5 change a service page's
 story and are the user's call; delta 6 is a word choice the user may keep.
 
-1. `{file: "public/llms.txt", line: 31, anchor: "- [Vintus](https://neuragul.com/work/vintus/): E-commerce for a leading wine importer — a large structured catalogue and the operations behind it.", replacement: "- [Vintus](https://neuragul.com/work/vintus/): A wine importer's trade portal on WordPress: 2,304 wines under 161 producers, one URL per vintage, four filter forms keyed to producer and wine, a tech sheet with the rep's own price and a sell-sheet generator.", reason: "the current line repeats the retired 'e-commerce' and 'leading'; the replacement is the new PROJECT_DESCRIPTION's facts in the llms.txt entry shape (llms.txt is orchestrator-owned)"}`
+1. `{file: "public/llms.txt", line: 31, anchor: "- [Vintus](https://neuragul.com/work/vintus/): E-commerce for a leading wine importer — a large structured catalogue and the operations behind it.", replacement: "- [Vintus](https://neuragul.com/work/vintus/): A wine importer's trade portal on WordPress: 703 wines and 1,600 vintage pages under 161 producers, four filter forms keyed to producer and wine, a tech sheet with the rep's own price and a sell-sheet generator.", reason: "the current line repeats the retired 'e-commerce' and 'leading'; the replacement is the new PROJECT_DESCRIPTION's facts in the llms.txt entry shape (llms.txt is orchestrator-owned)"}`
 2. `{file: "src/components/site/work/content.ts", line: 226, anchor: "    location: \"2026 · E-commerce\",", replacement: "    location: \"2026 · WordPress\",", reason: "the /work/ tile's location string names a category the live site does not serve; every other tile names its platform (Shopify, Fly.io …), and this page's own header now reads 2026 · WordPress; the string occurs once in the file (no other tile uses the E-commerce word), verified below"}`
 3. `{file: "src/components/site/home/content.ts", line: 284, anchor: "    location: \"2026 · E-commerce\",", replacement: "    location: \"2026 · WordPress\",", reason: "the home grid's Vintus tile carries the same retired category word; same replacement as delta 2"}`
-4. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 114, anchor: "The Vintus storefront carries a national wine importer's catalog, with inventory management, order processing and customer-relationship tooling behind it. WordPress and PHP on the surface, Python services doing the work underneath.", replacement: "The Vintus site carries a national wine importer's catalogue of 2,304 wines under 161 producers on WordPress, with a login, a sell-sheet generator and a tech sheet that takes a rep's own price behind it.", reason: "'inventory management, order processing and customer-relationship tooling' and 'Python services' are not served by any route (dossier, Unverifiable 2–3); the replacement names what the live site shows. The paragraph continues with the restaurant portal sentence, which is untouched"}`
+4. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 114, anchor: "The Vintus storefront carries a national wine importer's catalog, with inventory management, order processing and customer-relationship tooling behind it. WordPress and PHP on the surface, Python services doing the work underneath.", replacement: "The Vintus site carries a national wine importer's catalogue of 703 wines and 1,600 vintage pages under 161 producers on WordPress, with a login, a sell-sheet generator and a tech sheet that takes a rep's own price behind it.", reason: "'inventory management, order processing and customer-relationship tooling' and 'Python services' are not served by any route (dossier, Unverifiable 2–3); the replacement names what the live site shows. The paragraph continues with the restaurant portal sentence, which is untouched"}`
 5. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 216, anchor: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress and PHP with Python services under the Vintus storefront. The host follows the workload.", replacement: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress behind nginx with a strict content-security policy under the Vintus site. The host follows the workload.", reason: "'Python services' is Unverifiable 2; 'nginx' and the CSP are the served headers (dossier, Stack → Edge), which is the cloud-and-infrastructure evidence this project actually offers"}`
-6. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 221, anchor: "Vintus runs a national wine import catalog with inventory management, order processing and customer-relationship tooling behind it.", replacement: "Vintus runs a national wine importer's catalogue, 2,304 wines under 161 producers, with the trade's tools and a login behind it.", reason: "same three unsupported nouns as delta 4, in the service page's project-card lead"}`
+6. `{file: "src/components/site/services/cloud-infrastructure/content.ts", line: 221, anchor: "Vintus runs a national wine import catalog with inventory management, order processing and customer-relationship tooling behind it.", replacement: "Vintus runs a national wine importer's catalogue, 703 wines and 1,600 vintage pages under 161 producers, with the trade's tools and a login behind it.", reason: "same three unsupported nouns as delta 4, in the service page's project-card lead"}`
 
 **Alt strings — a note, not a delta.** Five files carry `alt: "The Vintus wine importer
 storefront"` (`home/content.ts:288`, `work/content.ts:231`,
