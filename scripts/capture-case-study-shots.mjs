@@ -114,10 +114,17 @@ try {
       // at it. So wait on real signals instead of a blind timeout.
       //
       // This gates exactly three things: web fonts, every <img> element, and
-      // every CSS background-image url(...) found via computed style. It
-      // does NOT gate: <video> first-frame paint, SVG <image> hrefs, or
-      // anything injected into the DOM after these waits complete — a shot
-      // that depends on one of those needs its own `waitFor` selector in its
+      // every url(...) found in each element's OWN computed background-image
+      // (via getComputedStyle(el) with no pseudo-element argument). It does
+      // NOT gate: <video> first-frame paint, SVG <image> hrefs, anything
+      // injected into the DOM after these waits complete, ::before/::after
+      // pseudo-element background-image (getComputedStyle without a second
+      // argument never returns pseudo-element styles — neither pattern
+      // exists in src/ today, so this is a documented boundary, not a known
+      // bug; walking pseudo-elements for every node would cost real time for
+      // a case that doesn't exist here), or content inside a shadow root
+      // (querySelectorAll("*") does not pierce shadow roots). A shot that
+      // depends on one of those needs its own `waitFor` selector in its
       // config. Do not read the gates below as "the page is fully settled";
       // read them as "these three specific things are settled."
       //   1. document.fonts.ready — no more font-swap layout shift.
