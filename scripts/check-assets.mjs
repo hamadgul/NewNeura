@@ -4,7 +4,8 @@
  *   2. every `out` in every shot config exists
  *   3. per-slug minimum shot count — zero captures is a hard failure
  *   4. declared width/height literals match actual pixels
- *   5. every <slug>-* image is referenced with a non-empty alt
+ *   5. every image referenced under src/components/site/work/ carries a
+ *      non-empty alt, except the frozen covers listed in FROZEN_COVERS
  *
  * Two passes happen before any assertion runs, per file:
  *
@@ -149,13 +150,33 @@ for (const [asset, where] of referenced) {
 }
 
 // (4) declared width/height match actual pixels
+//
+// `sips` is macOS-only (it ships with the OS; there is no Linux or Windows
+// build). This script deliberately takes no image-parsing dependency, so on
+// any other platform assertion (4) cannot run: the first call records ONE
+// clear failure naming the limitation instead of an opaque ENOENT stack, and
+// every later call is skipped so the failure list is not flooded.
+let sipsUnavailable = false;
 function pixels(file) {
-  const out = execFileSync("sips", ["-g", "pixelWidth", "-g", "pixelHeight", file], {
-    encoding: "utf8",
-  });
-  const w = /pixelWidth:\s*(\d+)/.exec(out);
-  const h = /pixelHeight:\s*(\d+)/.exec(out);
-  return w && h ? { width: +w[1], height: +h[1] } : null;
+  if (sipsUnavailable) return null;
+  try {
+    const out = execFileSync("sips", ["-g", "pixelWidth", "-g", "pixelHeight", file], {
+      encoding: "utf8",
+    });
+    const w = /pixelWidth:\s*(\d+)/.exec(out);
+    const h = /pixelHeight:\s*(\d+)/.exec(out);
+    return w && h ? { width: +w[1], height: +h[1] } : null;
+  } catch (e) {
+    if (e && e.code === "ENOENT") {
+      sipsUnavailable = true;
+      fail(
+        `assertion (4) skipped: \`sips\` not found — it is a macOS-only tool, so ` +
+          `declared-vs-actual pixel checks run only on macOS (platform: ${process.platform})`
+      );
+      return null;
+    }
+    throw e;
+  }
 }
 // `url:` alongside `src:` because the same declared-dimension convention is
 // used both by component image props (`src`) and by `metadata.openGraph.images`
@@ -180,7 +201,7 @@ for (const { f, resolved } of fileTexts) {
   }
 }
 
-// (5) non-empty alt on every <slug>-* screenshot
+// (5) non-empty alt on every image referenced under src/components/site/work/
 //
 // FROZEN_COVERS are pre-existing project/header cover images that this site
 // legitimately ships with alt="" by convention (decorative backdrop behind an
@@ -189,6 +210,17 @@ for (const { f, resolved } of fileTexts) {
 // silence a real finding — a screenshot with an empty alt is exactly the
 // defect assertion (5) exists to catch. This list only exempts the frozen set
 // below; anything else with an empty alt under /site/work/ is a real failure.
+//
+// ALT_RE matches ANY /site/images/<name>.(jpg|png), hyphenated or not. An
+// earlier version required a hyphen in the name (the "<slug>-<shot>" shape
+// the runner writes), which meant twelve of the seventeen entries below —
+// every single-word cover such as `vintus.jpg` or `nyff.jpg` — could never
+// reach the FROZEN_COVERS lookup at all, so the list only LOOKED like it was
+// exempting them and a future non-hyphenated screenshot with an empty alt
+// would have passed unseen. The ledger's "5 inert entries" note had the
+// count backwards for the same reason: the five hyphenated names were the
+// only ones that were ever checked. Now every name in the list is reachable
+// and every committed cover is checked.
 const FROZEN_COVERS = new Set([
   "packship.jpg",
   "delivery-routing.jpg",
@@ -209,8 +241,17 @@ const FROZEN_COVERS = new Set([
   "packship-stacked.jpg",
 ]);
 const ALT_RE =
-  /src:\s*[`"'](\/site\/images\/[a-z0-9-]+-[a-z0-9-]+\.(?:jpg|png))[`"'][\s\S]{0,200}?alt:\s*(""|"[^"]+")/g;
+  /src:\s*[`"'](\/site\/images\/[a-z0-9_-]+\.(?:jpg|png))[`"'][\s\S]{0,200}?alt:\s*(""|"[^"]+")/g;
 for (const { f, resolved } of fileTexts) {
+  // Scoped to src/components/site/work/ on purpose, narrower than the plan's
+  // unscoped wording. The case-study screenshots this plan captures are
+  // referenced only from the work pages (the per-project content.ts files
+  // and the /work/ index), so that is where an empty alt on one of them can
+  // appear. Outside work/ — home, about, process and the services pages —
+  // the same cover files are used as decorative card/backdrop media with
+  // alt="" by the source site's convention, and asserting on them there
+  // would flag that convention, not a defect. Widen this only if a captured
+  // screenshot is ever referenced from outside work/.
   if (!f.includes("/site/work/")) continue;
   for (const m of resolved.matchAll(ALT_RE)) {
     const name = m[1].split("/").pop();

@@ -39,7 +39,11 @@ import { defineShots } from "./_schema.mjs";
  * The `storageState` key is only attached when NG_SHOTS_STORAGE_STATE is set, so
  * `check-assets.mjs` (which imports this file in CI, where no such file exists) sees a
  * plain config. Without it every admin shot would capture the login page instead —
- * `proxy.ts` redirects any /admin/:path* without a session.
+ * `proxy.ts` redirects any /admin/:path* without a session. So under the RUNNER the
+ * variable is mandatory: `capture-case-study-shots.mjs` sets NG_SHOTS_RUNNER=1 before
+ * importing a config, and this file throws at load when that flag is present and
+ * NG_SHOTS_STORAGE_STATE is not, so a forgotten export fails by name before a browser
+ * launches rather than after five login-page JPEGs have overwritten the real ones.
  *
  * ── What is hidden, and why ─────────────────────────────────────────────────
  *
@@ -61,6 +65,14 @@ import { defineShots } from "./_schema.mjs";
  * catalog item — never the shell.
  */
 const STATE = process.env.NG_SHOTS_STORAGE_STATE;
+if (process.env.NG_SHOTS_RUNNER && !STATE) {
+  throw new Error(
+    "restaurant-ordering-portal.config.mjs: NG_SHOTS_STORAGE_STATE is not set. Every shot " +
+      "in this config is behind /admin/login or needs the localStorage cart, so running the " +
+      "capture without a Playwright storageState file would capture login pages. See the " +
+      "'Reproducing these captures' steps at the top of this file."
+  );
+}
 const authed = STATE ? { storageState: STATE } : {};
 
 export default defineShots("restaurant-ordering-portal", [

@@ -37,8 +37,13 @@ export function defineShots(slug, shots) {
     // (`/admin/*` behind a login) or a page that needs client state (a cart in
     // localStorage) can be captured without the runner knowing how to log in.
     // The file is produced by a scratch script outside the repo and is never
-    // committed; it must be an absolute path so a config never points into
-    // the repo by accident. Shots without the key behave exactly as before.
+    // committed. It must be an absolute path: the runner is invoked from the
+    // repo root but a config may be imported from anywhere (check-assets
+    // does), so a relative path would resolve differently per caller. This
+    // guarantees "no relative path", nothing more — an absolute path can
+    // still name a file inside the repo, and keeping the state file out of
+    // the tree is the author's responsibility, not this check's.
+    // Shots without the key behave exactly as before.
     if ("storageState" in s) {
       if (typeof s.storageState !== "string" || !s.storageState.startsWith("/")) {
         throw new Error(

@@ -41,6 +41,13 @@ if (!base) {
   process.exit(1);
 }
 
+// Announce the runner to the config before importing it. A config whose
+// shots need out-of-band input (restaurant-ordering-portal's storageState,
+// passed through NG_SHOTS_STORAGE_STATE) can then refuse to load under the
+// runner when that input is missing — instead of silently capturing login
+// pages — while still importing cleanly under check-assets.mjs, which never
+// sets this and only reads the shot list.
+process.env.NG_SHOTS_RUNNER = "1";
 const { default: cfg } = await import(`./shots/${slug}.config.mjs`);
 const outDir = resolve(process.cwd(), "public", "site", "images");
 mkdirSync(outDir, { recursive: true });
@@ -77,6 +84,13 @@ try {
     }
 
     let context;
+    // Set only at the moment `page.screenshot` is called. Every failure
+    // before that point — a `goto` timeout, a missing `waitFor` selector, a
+    // font/image gate timing out — leaves the file on disk exactly as it
+    // was, which matters when `dest` is a tracked, frozen cover that a
+    // `cover:` shot would overwrite: deleting it on a mere navigation
+    // failure would take a committed asset off disk.
+    let screenshotStarted = false;
     try {
       // Optional per-shot `storageState` (validated as an absolute path in
       // _schema.mjs): a Playwright cookies+localStorage file produced by a
@@ -198,6 +212,10 @@ try {
         // page.evaluate's returned promise races a plain setTimeout, so the
         // 15s bound applies to the whole batch regardless of how many URLs
         // there are.
+        // The reject timer is cleared in `finally` so it cannot keep the
+        // event loop alive (or reject into nowhere) after the evaluate
+        // settles first — without that, node lingers up to 15s per shot.
+        let bgTimer;
         await Promise.race([
           page.evaluate(
             (urls) =>
@@ -220,13 +238,13 @@ try {
               ),
             bgUrls
           ),
-          new Promise((_, reject) =>
-            setTimeout(
+          new Promise((_, reject) => {
+            bgTimer = setTimeout(
               () => reject(new Error(`background-image wait timed out (15000ms): ${bgUrls.length} url(s)`)),
               15000
-            )
-          ),
-        ]);
+            );
+          }),
+        ]).finally(() => clearTimeout(bgTimer));
       }
 
       // Short settle delay as a fallback only — not the primary mechanism —
@@ -234,15 +252,19 @@ try {
       // still finishing after scroll-to-top).
       await page.waitForTimeout(150);
 
+      screenshotStarted = true;
       await page.screenshot({ path: dest, type: "jpeg", quality: 82, scale: "css" });
       console.log(`  ✓ ${name}  ${shot.viewport.width}x${shot.viewport.height}`);
       captured += 1;
     } catch (e) {
       failure = { name: shot.out, reason: e.message.split("\n")[0] };
-      // A failed shot may have left a partial/corrupt file from a screenshot
-      // that started but didn't finish being reported — remove it so a later
-      // check-assets.mjs run never validates a half-written capture.
-      if (existsSync(dest)) unlinkSync(dest);
+      // Only a screenshot call that was actually reached can leave a
+      // partial/corrupt file at `dest` — remove that so a later
+      // check-assets.mjs run never validates a half-written capture. A
+      // failure anywhere earlier (navigation, `waitFor`, the readiness
+      // gates) never touched the file, so whatever was there — possibly a
+      // tracked frozen cover — stays.
+      if (screenshotStarted && existsSync(dest)) unlinkSync(dest);
       break;
     } finally {
       // Always close the context, success or failure, so a mid-loop throw
