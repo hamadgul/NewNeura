@@ -74,7 +74,7 @@ export default defineShots("hasina-hijama-cupping", [
     hideSelectors: ["nextjs-portal"],
   },
   {
-    // Evidence for: "the cost page's H1 is the question itself" — `/cupping-therapy-cost`:
+    // Evidence for: "What cupping therapy costs, where the H1 is the question itself." — `/cupping-therapy-cost`:
     // the breadcrumb `What cupping therapy costs`, the H1 `How much does cupping therapy
     // cost?`, the lede's `$60 and $150` against `$10 per cup`, and the price grid (THE ONLY
     // CHARGE $10 · three INCLUDED FREE cells). The page's header comment records why it
@@ -88,8 +88,8 @@ export default defineShots("hasina-hijama-cupping", [
     hideSelectors: ["nextjs-portal"],
   },
   {
-    // Evidence for: "the guide's visible byline, its Article dateModified and its sitemap
-    // lastmod are one constant" — `/what-is-hijama`: the H1 `What is hijama, or wet cupping
+    // Evidence for: "The guides' visible Last updated line, their Article dateModified and the
+    // sitemap's lastmod are one constant each" — `/what-is-hijama`: the H1 `What is hijama, or wet cupping
     // therapy?`, the lede, the byline `Written by Hasina, certified hijama practitioner ·
     // Last updated August 23, 2026` rendered from `GUIDE_UPDATED`
     // (`app/what-is-hijama/page.tsx:186-195`; `lib/schema.ts:255-262, 301-302`;
