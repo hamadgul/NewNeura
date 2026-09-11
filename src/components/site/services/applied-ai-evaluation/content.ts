@@ -109,7 +109,7 @@ export const INTRO: BlockIntroDoubleProps = {
   body: [
     "AI evaluation and guardrails engineering, out of New York. Guardrails ship with the system. They are the part that decides whether the thing survives contact with a real Tuesday, and they are cheapest to build while the code is still being written.",
     "On the routing platform that means three things you can check. Geocoding fails closed, so a location the app cannot trust becomes a flagged task for a human. A per-solve travel-matrix budget makes a runaway maps bill structurally impossible. And 1,278 tests cover the business rules, which is what lets a dispatcher trust a sheet they did not plan themselves.",
-    "The same discipline applies well outside models. The food-truck site carries 141 Vitest tests guarding its URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster. Its JSON-LD Service, FAQ, and LocalBusiness data is generated from a single pricing module, so a published price can never drift away from the page it sits on.",
+    "The same discipline applies well outside models. The food-truck site carries 141 Vitest tests guarding its URL structure, including one that fails the run if a second page claims the New York rental query the owner page holds. Its published prices live in one module that generates the price sheet, both llms files and the JSON-LD offers on seven pages, with another test scanning every page for a superseded price.",
   ],
 };
 
@@ -168,7 +168,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       number: "03",
       title: "Tests that block the build",
       caption: "1,278 and 141",
-      text: "1,278 tests cover the routing rules. The food-truck site carries 141 Vitest tests, one of which fails the build outright when two pages start competing for the same keyword cluster. A guardrail nobody can merge past is the only kind that holds.",
+      text: "1,278 tests cover the routing rules. The food-truck site carries 141 Vitest tests, one of which fails the run when a second page claims the search query the owner page holds. A guardrail nobody can merge past is the only kind that holds.",
       image: {
         src: `${IMG}/foodtruckrentals-work.jpg`,
         alt: "The work index: every activation, with the client, the borough, and the year",
@@ -180,7 +180,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       number: "04",
       title: "Put the budget in the structure",
       caption: "A bill that cannot run away",
-      text: "A per-solve travel-matrix budget makes a runaway maps bill structurally impossible. On the food-truck site, JSON-LD generated from a single pricing module means a published price can never drift away from the page it sits on. Limits belong in the code, well upstream of a runbook nobody reads.",
+      text: "A per-solve travel-matrix budget makes a runaway maps bill structurally impossible. On the food-truck site, one pricing module generates the price sheet, both llms files and the JSON-LD offers on seven pages, and a test fails the run if a superseded price reappears in any page's copy. Limits belong in the code, well upstream of a runbook nobody reads.",
       image: {
         src: `${IMG}/foodtruckrentals-home.jpg`,
         alt: "The Food Truck Rentals home page",
@@ -228,12 +228,12 @@ export const WYSIWYG_GUARDRAILS: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Tests that block the merge:",
-      text: "1,278 tests cover the routing rules. On the food-truck site, 141 Vitest tests guard the URL structure, including one that fails the build outright if two pages start competing for the same keyword cluster.",
+      text: "1,278 tests cover the routing rules. On the food-truck site, 141 Vitest tests guard the URL structure, including one that fails the run if a second page claims the search query the owner page holds.",
     },
     {
       type: "paragraph",
       lead: "One source for a published number:",
-      text: "Every commercial page on that site carries JSON-LD Service, FAQ, and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on.",
+      text: "Published prices on that site live in one module that generates the price sheet, both llms files and the JSON-LD offers on seven pages, and a test fails the run if a superseded price reappears in any page's copy.",
     },
   ],
 };

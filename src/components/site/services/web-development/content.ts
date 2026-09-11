@@ -109,9 +109,9 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Sites that load fast, rank, and stay maintainable long after we hand them over.",
   body: [
-    "We are a web development company in New York. SEO and performance are part of the first commit rather than a phase somebody bolts on at the end. Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a full-bleed activation hero, a truck roster that animates along a variable-width axis, and a dedicated page for every way a truck actually gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets.",
-    "Every commercial page on that site carries JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. Keyword research shapes the URL structure, and 141 Vitest tests guard it, including one that fails the build outright if two pages start competing for the same keyword cluster.",
-    "New York Mobile Mechanic points the same discipline at a stranded driver: a landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green. Stat gauges count up as they scroll into view, live Google reviews carry the credibility, and a one-tap call-to-book follows you down the page. When your car dies on the BQE you call whoever ranks. Nobody comparison-shops from the shoulder.",
+    "We are a web development company in New York. SEO and performance are part of the first commit rather than a phase somebody bolts on at the end. Foodtruckrentals.com is twenty-four pages of Next.js 16 and React 19 built that way: a hero that shows three wrapped trucks at once, a client roster whose active name widens on the typeface's width axis without reflowing a row, and a dedicated page for every way a truck actually gets rented. Weddings. Product launches. Film production, corporate events, ice cream, coffee carts, and the tri-state markets.",
+    "Every published price on that site lives in one module: the machine-readable price sheet and both llms files are generated from it, seven pages build their JSON-LD offers from it, and one of the site's 141 Vitest tests fails the run if a superseded price reappears in any page's copy. Another names the one page allowed to own the New York rental query and fails if a second page claims it.",
+    "New York Mobile Mechanic points the same discipline at a stranded driver: forty-five pages of service crossed with borough and thirty more that each answer one question, JSON-LD on every one of them, and a Lighthouse 100 for performance, accessibility, best practices and SEO. Stat dials rev as they scroll into view, the Google rating is pulled live with the real reviews as its fallback, and on a phone a Call and Text bar follows you down the page. When your car dies on the BQE you call whoever ranks. Nobody comparison-shops from the shoulder.",
   ],
 };
 
@@ -150,7 +150,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       dark: false,
       title: "Fast, accessible front-ends",
       caption: "Every screen size",
-      text: "Front-ends that behave on every screen size. Food Truck Rentals runs twenty-four pages of Next.js 16 and React 19, from the full-bleed activation hero down to the truck roster that animates along a variable-width axis.",
+      text: "Front-ends that behave on every screen size. Food Truck Rentals runs twenty-four pages of Next.js 16 and React 19, from a hero that shows three wrapped trucks at once down to a client roster whose active name widens on the typeface's width axis without reflowing a single row.",
       image: {
         src: `${IMG}/foodtruckrentals-home.jpg`,
         alt: "The Food Truck Rentals home page",
@@ -163,7 +163,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       dark: true,
       title: "SEO from the first commit",
       caption: "Built to rank",
-      text: "Keyword research shapes the URL structure before a page exists. New York Mobile Mechanic ships a landing-page matrix of service crossed with borough, schema markup on every route, and Core Web Vitals in the green.",
+      text: "Keyword research shapes the URL structure before a page exists. New York Mobile Mechanic ships forty-five pages of service crossed with borough, thirty pages that each answer one question a driver types, JSON-LD on every one of them, and a Lighthouse 100 across all four categories.",
       image: {
         // A Lighthouse report: a row of five scores across the top, the big
         // 100 Performance ring on the left, the site's own screenshot on the
@@ -193,7 +193,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       dark: true,
       title: "Structured data that cannot drift",
       caption: "One source, every page",
-      text: "JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on. 141 Vitest tests guard the structure.",
+      text: "Published prices live in one module that generates the price sheet, both llms files and the JSON-LD offers on seven pages; 141 Vitest tests guard the structure, one of them scanning every page for a superseded price.",
       image: {
         src: `${IMG}/foodtruckrentals-work.jpg`,
         alt: "The work index: every activation, with the client, the borough, and the year",
@@ -206,7 +206,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       dark: false,
       title: "A stack your team can hire for",
       caption: "TypeScript all the way down",
-      text: "TypeScript, Next.js, React and Tailwind CSS, with Framer Motion where a page earns it. Nothing exotic, so the next person to open the repo is not the only person who can.",
+      text: "TypeScript, Next.js, React and Tailwind CSS, with GSAP where a page earns it. Nothing exotic, so the next person to open the repo is not the only person who can.",
       image: {
         src: `${IMG}/nymm.jpg`,
         alt: "The New York Mobile Mechanic home page",
@@ -236,7 +236,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Marketing sites built to rank:",
-      text: "Twenty-four pages for Food Truck Rentals, indexed and structured to compete well past its first city.",
+      text: "Twenty-four pages for Food Truck Rentals, with one page allowed to own the New York query and a test that keeps it that way.",
     },
     {
       type: "paragraph",
@@ -246,17 +246,17 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Brand and booking sites:",
-      text: "New York Fine Foods, a cinematic Next.js build with full-bleed motion, media galleries, service menus, and a booking inquiry flow that catches people while the impression is still fresh.",
+      text: "New York Fine Foods, a Next.js site grown from six indexable pages to twenty-six: ten borough and regional catering pages each written around a fact that is only true there, four pizza-truck pages under the hub that already ranked, and a contact form that asks which service you want before anything else.",
     },
     {
       type: "paragraph",
       lead: "Storefronts:",
-      text: "A national wine importer's catalog on Vintus, and a Shopify buildout for Landscape Drainage Proz with custom Liquid, CTA design, Google Ads, and SEO.",
+      text: "A national wine importer's catalog on Vintus, and a Dawn storefront for Landscape Drainage Proz with two hand-written Custom Liquid sections, a municipal quote path and Google Ads conversion labels on the checkout events.",
     },
     {
       type: "paragraph",
       lead: "The stack:",
-      text: "TypeScript, Next.js, React, Tailwind CSS and Framer Motion, with Shopify and custom Liquid where a storefront calls for it.",
+      text: "TypeScript, Next.js, React, Tailwind CSS and GSAP, with Shopify and custom Liquid where a storefront calls for it.",
     },
   ],
 };
@@ -290,7 +290,7 @@ export const WYSIWYG_WHY: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "We rank New York businesses:",
-      text: "Local SEO is part of the build rather than an upsell afterwards. The mobile mechanic we built ranks across all five boroughs for on-demand repair searches.",
+      text: "Local SEO is part of the build rather than an upsell afterwards. The mobile mechanic we built has a page for every service in every borough, and on 28 July 2026 ChatGPT, asked for the top five mobile mechanics in New York City, listed it first.",
     },
     {
       type: "paragraph",
@@ -363,7 +363,7 @@ const NEW_YORK_FINE_FOODS: ProjectCard = {
 /** Both `layoutFour` tiles take the 665×415.63 large aspect, not the 328×205 one. */
 const VINTUS: ProjectCard = {
   title: "Vintus",
-  location: "2026 · E-commerce",
+  location: "2026 · WordPress",
   href: "/work/vintus/",
   image: {
     src: `${IMG}/vintus.jpg`,

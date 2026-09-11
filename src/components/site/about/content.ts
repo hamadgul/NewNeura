@@ -132,7 +132,7 @@ export const ABOUT_INTRO: BlockIntroDoubleProps = {
   statement:
     "Hamad Gul is your primary point of contact and one of the developers on your project.",
   body: [
-    "Before NeuraGul, Hamad was a product manager at Freenome, building a 0-to-1 ETL pipeline that pulled messy real-world clinical data from dozens of sources into a single common model. Early cancer detection research ran on top of it.",
+    "Before NeuraGul, Hamad was a product manager at Freenome, building a 0-to-1 ETL pipeline that normalised messy real-world clinical data from hospital records, claims and wearables into one common data model, OMOP. Early cancer detection research ran on top of it.",
   ],
 };
 
@@ -216,7 +216,7 @@ export const ABOUT_WYSIWYG: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "These days we mostly build operational software. The dispatch app that plans those six vans. An ordering portal that lets a pizzeria skip delivery-app commissions. A wine importer's storefront. We also build the marketing sites that sell that kind of work, because most of our clients need both.",
+      text: "These days we mostly build operational software. The dispatch app that plans those six vans. An ordering portal that lets a pizzeria skip delivery-app commissions. A wine importer's trade portal we maintain. We also build the marketing sites that sell that kind of work, because most of our clients need both.",
     },
     {
       type: "paragraph",

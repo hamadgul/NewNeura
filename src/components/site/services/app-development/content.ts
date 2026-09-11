@@ -103,8 +103,8 @@ export const INTRO: BlockIntroDoubleProps = {
     "Native-quality mobile apps for iOS and Android, built to stay maintainable long after we hand them over.",
   body: [
     "We build iOS and Android apps out of New York. PackShip is the one that is live on the App Store. Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. The app answers all three from a single photograph.",
-    "A model running on the phone estimates an item's dimensions from that photograph, with no LiDAR involved. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway. A live Three.js scene then fits your items into candidate boxes while you watch, inside React Native. Rotate it. Swap the box. See exactly how much empty air you were about to pay to ship across the country.",
-    "Behind that, UPS, FedEx and USPS rates sit side by side and re-quote themselves every time the box changes. Postgres and Redis keep the lookups fast enough to feel instant, so the cheapest safe option surfaces while you are still holding the parcel. A multi-step, error-prone chore became one photo and a tap.",
+    "The item's dimensions come from the phone's LiDAR scanner, or from a lookup by name or photo that refuses a low-confidence answer. A live Three.js scene then fits the items into the smallest carrier box that takes them, inside React Native. Rotate it. Swap the box. See how much empty air you were about to pay to ship.",
+    "Behind that, UPS, FedEx and USPS rates sit side by side and re-quote themselves every time the box changes. Each quote is cached in Redis for 15 minutes on the exact box and route, and the list comes back sorted cheapest first with the cheapest and the fastest marked.",
   ],
 };
 
@@ -138,9 +138,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     {
       number: "01",
       dark: false,
-      title: "One photo, measured",
-      caption: "On-device model",
-      text: "A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.",
+      title: "Measured, or looked up",
+      caption: "LiDAR and a lookup",
+      text: "Dimensions come in three ways: typed, measured with the phone's LiDAR scanner through ARKit, or looked up by name or photo through a server call that comes back with a confidence level and refuses anything below medium.",
       image: { src: `${IMG}/packship.jpg`, alt: "The PackShip parcel-sizing app on iOS", width: 1200, height: 750 },
     },
     {
@@ -156,7 +156,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       dark: false,
       title: "Three carriers, racing",
       caption: "Carrier APIs on Redis",
-      text: "UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.",
+      text: "UPS, FedEx and USPS rates are fetched in parallel through the backend, cached in Redis for 15 minutes on the exact box and route, and listed cheapest first with the cheapest and the fastest marked.",
       image: { src: `${IMG}/packship.jpg`, alt: "The PackShip parcel-sizing app on iOS", width: 1200, height: 750 },
     },
     {
@@ -193,8 +193,8 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     },
     {
       type: "paragraph",
-      lead: "On-device models:",
-      text: "PackShip sizes an item from one photograph to about a centimetre, with the model running on the phone and no LiDAR involved.",
+      lead: "On the device:",
+      text: "PackShip's packing solver and its 3D view run on the phone, with 18 of the app's 31 Jest test files on the solver; measuring is ARKit with the LiDAR scanner, and the dimension lookup is a server call with a seven-day cache and a confidence gate.",
     },
     {
       type: "paragraph",
@@ -204,7 +204,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Third-party integrations:",
-      text: "UPS, FedEx and USPS rates racing each other on screen, with Postgres and Redis behind them so a re-quote comes back fast enough to feel instant.",
+      text: "UPS, FedEx and USPS rates fetched in parallel through the backend, with each quote cached in Redis for 15 minutes on the exact box and route.",
     },
     {
       type: "paragraph",

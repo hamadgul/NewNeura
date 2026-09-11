@@ -106,7 +106,7 @@ export const INTRO: BlockIntroDoubleProps = {
     "Models and agents wired into a workflow you already have, scoped to one problem you can measure.",
   body: [
     "We build applied AI systems for small companies in New York. The first thing you get from us is a straight answer about where AI helps you and where it would be theatre. That answer is free and it is sometimes no. When it is yes, the work goes inside the tools your team already opens every day rather than beside them, because a system nobody opens is a system nobody uses.",
-    "What that looks like in practice: a model on a phone that sizes a parcel from one photograph to about a centimetre. A solver that takes a messy delivery log, applies every business rule a dispatcher used to carry in their head, and returns routes a driver can actually drive. Both of those are running in production, and both of them are aimed at one number somebody was already tracking.",
+    "What that looks like in practice: a solver on a phone that fits a parcel into the smallest of 149 carrier boxes, with the item measured by LiDAR or looked up by name. A solver that takes a messy delivery log, applies every business rule a dispatcher used to carry in their head, and returns routes a driver can actually drive. Both of those are running in production, and both of them are aimed at one number somebody was already tracking.",
     "Evaluations and guardrails ship with the system, not after it. The routing platform fails closed on a geocode it cannot trust and flags the row for a human instead of inventing an address, and 1,278 tests cover the rules. That is the part that decides whether the thing survives contact with real users.",
   ],
 };

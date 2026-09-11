@@ -111,7 +111,7 @@ export const INTRO: BlockIntroDoubleProps = {
   body: [
     "We run cloud infrastructure and DevOps for small companies in New York. Cost control is an architectural decision. The delivery routing platform runs on Fly.io with a per-solve travel-matrix budget, which is what makes a runaway maps bill structurally impossible rather than merely unlikely. Nobody has to remember to check it.",
     "Under that sit the unglamorous parts that keep the doors open: networks, servers and firewalls set up properly the first time, security hardening and patch management on a schedule, monitoring that surfaces a problem before your customers find it, and documentation your team can actually follow.",
-    "The Vintus storefront carries a national wine importer's catalog, with inventory management, order processing and customer-relationship tooling behind it. WordPress and PHP on the surface, Python services doing the work underneath. The restaurant ordering portal plugs straight into a restaurant's existing Square POS, so orders, payments and SMS updates all flow through with nobody skimming the check.",
+    "The Vintus site carries a national wine importer's catalogue of 703 wines and 1,600 vintage pages under 161 producers on WordPress, with a login, a sell-sheet generator and a tech sheet that takes a rep's own price behind it. The restaurant ordering portal plugs straight into a restaurant's existing Square POS, so orders, payments and SMS updates all flow through with nobody skimming the check.",
   ],
 };
 
@@ -213,12 +213,12 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Application hosting:",
-      text: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress and PHP with Python services under the Vintus storefront. The host follows the workload.",
+      text: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress behind nginx with a full content-security policy under the Vintus site. The host follows the workload.",
     },
     {
       type: "paragraph",
-      lead: "E-commerce operations:",
-      text: "Vintus runs a national wine import catalog with inventory management, order processing and customer-relationship tooling behind it.",
+      lead: "Trade operations:",
+      text: "Vintus runs a national wine importer's catalogue, 703 wines and 1,600 vintage pages under 161 producers, with the trade's tools and a login behind it.",
     },
     {
       type: "paragraph",
@@ -297,7 +297,7 @@ export const WYSIWYG_IT_SECURITY: BlockWysiwygProps = {
 
 const VINTUS: ProjectCard = {
   title: "Vintus",
-  location: "2026 · E-commerce",
+  location: "2026 · WordPress",
   href: "/work/vintus/",
   image: {
     src: `${IMG}/vintus.jpg`,

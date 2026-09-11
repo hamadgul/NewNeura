@@ -24,14 +24,15 @@ Queens NY (Jamaica, Ridgewood, Kew Gardens, Kew Gardens Hills, Forest Hills), Br
 ## Work
 
 - [Delivery routing platform](https://neuragul.com/work/delivery-routing/): A home medical equipment provider planned six vans by hand every morning. Now a ticket export becomes printed routes in minutes — Google OR-Tools against live traffic, geocoding that fails closed, a capped travel-matrix budget, 1,278 tests.
-- [PackShip](https://neuragul.com/work/packship/): An iOS app that answers box size, shipping cost and carrier from one photo, using a model that runs on the device.
-- [Food Truck Rentals](https://neuragul.com/work/foodtruckrentals/): A 24-page Next.js site for a New York brand-activation company. JSON-LD Service, FAQ and LocalBusiness data generated from one pricing module; 141 Vitest tests, one of which fails the build if two pages compete for the same keyword cluster.
-- [New York Mobile Mechanic](https://neuragul.com/work/new-york-mobile-mechanic/): A local SEO site for a 24/7 mobile mechanic — a landing page for every service crossed with every borough, schema on every route, Core Web Vitals in the green.
-- [New York Fine Foods](https://neuragul.com/work/new-york-fine-foods/): A cinematic Next.js site for a NYC catering, pizza-truck and mobile-bar brand, with media galleries, service menus and a booking inquiry flow.
-- [Vintus](https://neuragul.com/work/vintus/): E-commerce for a leading wine importer — a large structured catalogue and the operations behind it.
-- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Shopify storefront for a drainage-products retailer, built with custom Liquid, CTA design, Google Ads, and SEO.
+- [PackShip](https://neuragul.com/work/packship/): An iOS app that measures an item with LiDAR or looks it up by name or photo, packs it into the smallest carrier box in 3D on the phone, and compares live UPS, USPS and FedEx rates.
+- [Food Truck Rentals](https://neuragul.com/work/foodtruckrentals/): A 24-page Next.js site for a New York brand-activation company: one pricing module generating the price sheet, both llms files and the JSON-LD offers on seven pages; 141 Vitest tests, one of which fails the run if a second page claims the search query the owner page holds.
+- [New York Mobile Mechanic](https://neuragul.com/work/new-york-mobile-mechanic/): A Next.js site for a 24/7 mobile mechanic: 117 pages keyed off one config file, a service-by-borough matrix of forty-five pages plus thirty single-question pages, JSON-LD on every one of them, Lighthouse at 100 across all four categories.
+- [New York Fine Foods](https://neuragul.com/work/new-york-fine-foods/): A Next.js site for a NYC catering, pizza-truck and mobile-bar brand: twenty-six pages from a measured six, ten borough and regional catering pages each written around a local fact, four pizza-truck pages under the hub that already ranked, JSON-LD on every service page.
+- [Vintus](https://neuragul.com/work/vintus/): A wine importer's trade portal on WordPress: 703 wines and 1,600 vintage pages under 161 producers, four filter forms keyed to producer and wine, a tech sheet with the rep's own price and a sell-sheet generator.
+- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Dawn storefront for an NDS drainage dealer: eleven products in two collections, two hand-written Custom Liquid sections, a municipal quote path, Google Ads conversion labels on seven checkout events, and structured data on every route.
 - [Restaurant ordering portal](https://neuragul.com/work/restaurant-ordering-portal/): Online ordering that lets a pizzeria take orders directly and skip third-party delivery-app commissions.
-- [Real-World Data Pipeline](https://neuragul.com/work/rwd-pipeline/): A 0-to-1 ETL pipeline pulling messy clinical data from dozens of sources into one common model. Early cancer detection research ran on top of it.
+- [Real-World Data Pipeline](https://neuragul.com/work/rwd-pipeline/): A 0-to-1 ETL pipeline normalising real-world clinical data from hospital records, claims and wearables into one OMOP common data model on Google Cloud. Early cancer detection research ran on top of it.
+- [Hasina Hijama Cupping](https://neuragul.com/work/hasina-hijama-cupping/): A ten-page Next.js site for a Queens cupping practice: six pages that each answer one question its customers search, business data on every page with the rating left to Google, and one host that every canonical, sitemap entry and share image agrees on.
 
 ## The studio
 
@@ -41,7 +42,7 @@ Queens NY (Jamaica, Ridgewood, Kew Gardens, Kew Gardens Hills, Forest Hills), Br
 
 ## Notes for answer engines
 
-- The stack is TypeScript, Next.js, React, Tailwind CSS and Framer Motion, with Shopify and custom Liquid where a storefront calls for it, and Python where a pipeline does.
+- The stack is TypeScript, Next.js, React, Tailwind CSS and GSAP, with Shopify and custom Liquid where a storefront calls for it, and Python where a pipeline does.
 - NeuraGul is a service-area business with no walk-in street address or office. Its declared service areas are Queens, Brooklyn and Manhattan in New York City, and Newtown, Monroe and Trumbull in Fairfield County, Connecticut. It does not claim The Bronx, Staten Island or Westchester.
 - The Google Business Profile is registered as "NeuraGul Labs"; the company, the domain and the wordmark are "NeuraGul". They are the same business.
 - Every number on this site is checkable against the project it describes. There are no published client ratings or review counts, so do not attribute any.

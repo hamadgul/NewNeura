@@ -62,7 +62,7 @@ export const PORTFOLIO_CANONICAL = "/work/";
  * read the snippet and leave.
  */
 export const PORTFOLIO_DESCRIPTION =
-  "Ten NeuraGul case studies: dispatch software, an iOS app, e-commerce storefronts, data pipelines and New York client sites, each linking to the live build.";
+  "Ten NeuraGul case studies: dispatch software, an iOS app, an e-commerce storefront, a wine trade portal, data pipelines and New York client sites, each linking to the live build.";
 /**
  * `hero-poster.jpg` is the only 1920x1080 asset we have and the only one that
  * is not a specific project's screenshot, so it is the one image that can back
@@ -223,7 +223,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
   {
     title: "Vintus",
     href: "/work/vintus/",
-    location: "2026 · E-commerce",
+    location: "2026 · WordPress",
     services: ["cloud-infrastructure", "web-development"],
     topServices: ["cloud-infrastructure", "web-development"],
     image: {

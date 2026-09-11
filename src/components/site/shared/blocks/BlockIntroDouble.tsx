@@ -48,10 +48,10 @@
  * pages ship a single 143-287 character paragraph, and /about/ ships 232.
  * At 800px wide that is barely three lines, so `columns: 2` balances it into
  * two three-line stacks and the break lands *mid-sentence*: the reader
- * finishes "...clinical data from dozens of" at the bottom of column one and
- * has to jump back up to find "sources into a single common model". The
- * source never rendered that because the source never fed this slot a short
- * paragraph. `BODY_COLUMN_THRESHOLD` restores one column below the length
+ * finishes "...a 0-to-1 ETL pipeline that normalises" at the bottom of column
+ * one and has to jump back up to find "all of it into one common data model".
+ * The source never rendered that because the source never fed this slot a
+ * short paragraph. `BODY_COLUMN_THRESHOLD` restores one column below the length
  * where a second one starts paying for itself; every service page (910-1355
  * chars) and the two long project bodies (680/692) stay two-column and are
  * pixel-unchanged. The measured gap between the two populations is wide —

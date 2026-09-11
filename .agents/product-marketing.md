@@ -98,7 +98,8 @@ the homepage or About):
   production deployment, a live App Store listing) rather than by adjectives.
 - *"Will they understand a business like mine, not just a tech company?"*
   — answered by the range itself: the same studio shipped a Shopify
-  storefront for a landscaper and a Python/OR-Tools solver for a dispatcher.
+  storefront for a drainage-products dealer and a Python/OR-Tools solver for
+  a dispatcher.
   A case study should not hide this range or apologize for it; state the
   specific project's specific domain confidently.
 - *"What does this cost, and how long does it take?"* — the honest, already
@@ -163,9 +164,10 @@ case study already does this in its header `lead`; match that pattern.
   test files cover it; 349 tests across the app) with a live 3D view, a
   name-or-photo dimension lookup with a confidence gate, three-carrier live rate
   comparison.
-- Food Truck Rentals: 141 Vitest tests, JSON-LD generated from a single
-  pricing module (so a published price can never drift from the page it
-  sits on), a national, technical-SEO-driven Next.js build.
+- Food Truck Rentals: 141 Vitest tests, a price module that generates the
+  machine-readable price sheet and the JSON-LD offers on seven pages (with a
+  test that fails on any superseded price in page copy), one owner page per
+  search query, a Next.js 16 build.
 - The other seven projects (New York Fine Foods, New York Mobile Mechanic,
   the restaurant ordering portal, Vintus, Landscape Drainage Proz, the
   real-world-data pipeline, Hasina Hijama Cupping): read that project's own

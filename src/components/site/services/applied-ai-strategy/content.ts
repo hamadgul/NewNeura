@@ -230,17 +230,17 @@ export const WYSIWYG_WHEN_IT_HELPS: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "A chore with a model-shaped hole in it:",
-      text: "Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. PackShip answers all three from one photograph, with the model running on the phone that was going to take the photograph anyway. Also a yes.",
+      text: "Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. PackShip answers all three from a name, a photo or a LiDAR scan, with the packing solver running on the phone and the lookup behind a confidence gate. Also a yes.",
     },
     {
       type: "paragraph",
       lead: "A pile of data nobody has turned into an answer:",
-      text: "Real-world clinical data arrives messy and inconsistent from dozens of sources. Before NeuraGul, Hamad Gul led a 0-to-1 ETL pipeline at Freenome that standardised all of it into a single Common Data Model, and the research ran on top of that. The work there was plumbing before it was anything cleverer.",
+      text: "Real-world clinical data arrives messy and inconsistent, in different formats from hospital records, claims and wearables. Before NeuraGul, Hamad Gul led a 0-to-1 ETL pipeline at Freenome that standardised all of it into a single Common Data Model, and the research ran on top of that. The work there was plumbing before it was anything cleverer.",
     },
     {
       type: "paragraph",
       lead: "A problem AI would only decorate:",
-      text: "A brand-activation company was wrapping, staffing, and permitting food trucks for fashion houses and selling all of it without a website. The fix was 24 pages, keyword research shaping the URL structure, and 141 tests holding it in place. No model would have rented a single truck.",
+      text: "A brand-activation company was wrapping, staffing, and permitting food trucks for fashion houses and selling all of it without a website. The fix was 24 pages, one page allowed to own the New York query, and 141 tests holding it in place. No model would have rented a single truck.",
     },
   ],
 };

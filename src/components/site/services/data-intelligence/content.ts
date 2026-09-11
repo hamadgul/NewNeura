@@ -105,7 +105,7 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Pipelines, dashboards, and migrations that turn a pile of data into a decision.",
   body: [
-    "We do data engineering out of New York: ETL pipelines, dashboards, and the database migrations underneath them. Before NeuraGul, Hamad Gul was a product manager at Freenome, leading a 0-to-1 ETL pipeline that pulled messy real-world clinical data from dozens of sources into a single Common Data Model. Early cancer detection research was built on that foundation, and the pipeline went from concept to production.",
+    "We do data engineering out of New York: ETL pipelines, dashboards, and the database migrations underneath them. Before NeuraGul, Hamad Gul was a product manager at Freenome, leading a 0-to-1 ETL pipeline that normalised messy real-world clinical data from hospital records, claims and wearables into one Common Data Model, OMOP. Early cancer detection research was built on that foundation, and the pipeline went from concept to production.",
     "The same discipline shows up at a much smaller scale. The delivery routing platform parses a messy delivery log and refuses to invent anything it cannot read with confidence; an unreadable row becomes a flagged task for a human rather than a quietly wrong address on a driver's sheet. Geocoding fails closed for the same reason. 1,278 tests cover the rules.",
     "What comes out the other end is whatever the office actually opens. On that project it is a printed cut sheet designed for a clipboard and a pen, plus an Excel and CSV log. Dashboards your team will open more than once, and reporting that answers the question you actually asked.",
   ],
@@ -145,7 +145,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       dark: false,
       title: "One clean model",
       caption: "Scattered sources, consolidated",
-      text: "Pipelines that consolidate scattered sources into one clean model. At Freenome that meant messy real-world clinical data from dozens of sources standardized into a single Common Data Model.",
+      text: "Pipelines that consolidate scattered sources into one clean model. At Freenome that meant messy real-world clinical data from hospital records, claims and wearables standardized into one Common Data Model, OMOP.",
       image: { src: `${IMG}/rwd-pipeline.jpg`, alt: "The real-world clinical data pipeline", width: 1200, height: 750 },
     },
     {
@@ -209,7 +209,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "ETL pipelines:",
-      text: "The 0-to-1 pipeline Hamad led at Freenome standardized real-world clinical data from dozens of sources into one Common Data Model, taken from concept to production.",
+      text: "The 0-to-1 pipeline Hamad led at Freenome standardized real-world clinical data from hospital records, claims and wearables into one OMOP Common Data Model, taken from MVP to V1.",
     },
     {
       type: "paragraph",
@@ -229,7 +229,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Generated structured data:",
-      text: "On Food Truck Rentals, JSON-LD Service, FAQ and LocalBusiness data generated from a single pricing module, so a published price can never drift away from the page it sits on.",
+      text: "On Food Truck Rentals, one pricing module generates the machine-readable price sheet, both llms files and the JSON-LD offers on seven pages, and a test fails the run if a superseded price reappears in any page's copy.",
     },
   ],
 };

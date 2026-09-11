@@ -207,7 +207,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
 export const INTRO_BLOCK = {
   title: "A team that holds the whole system, and one number that always answers.",
   tagline: "Talk. Scope. Build. Stay.",
-  text: "NeuraGul is a software development team in New York: developers, designers and engineers. We mostly build operational software: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's storefront. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
+  text: "NeuraGul is a software development team in New York: developers, designers and engineers. We mostly build operational software: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's trade portal we maintain. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
   /*
     The anchor text was "More about us", which describes the click and not the
     destination. Internal anchor text is one of the few on-page signals that
@@ -281,7 +281,7 @@ export const PROJECTS_ROW_ONE: ProjectCard[] = [
 export const PROJECTS_ROW_TWO: ProjectCard[] = [
   {
     title: "Vintus",
-    location: "2026 · E-commerce",
+    location: "2026 · WordPress",
     href: "/work/vintus/",
     image: {
       src: `${IMG}/vintus.jpg`,

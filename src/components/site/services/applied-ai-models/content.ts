@@ -100,9 +100,9 @@ export const INTRO: BlockIntroDoubleProps = {
   statement:
     "Custom models and integrations that live inside the tools your team already opens every day.",
   body: [
-    "Custom AI model development, from a New York team. A model on its own is a demo. What makes it useful is where it sits. PackShip's sizing model runs on the phone that was going to take the photograph anyway, so nobody has to open a second app, upload anything, or wait on a round trip to a server.",
-    "It estimates an item's dimensions from a single photograph, with no LiDAR. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in the box anyway. From there a live 3D scene fits the item into candidate boxes while you watch, and UPS, FedEx, and USPS rates re-quote themselves every time the box changes.",
-    "The integration work is the unglamorous half and it is most of the job. React Native on the front, Postgres and Redis behind it so the rate lookups come back fast enough to feel instant, and a stack your team can hire for. The code is clean and documented, and it is yours to take over whenever you want it.",
+    "Custom AI model development, from a New York team. A model on its own is a demo. What makes it useful is where it sits. PackShip's packing solver runs on the phone, so choosing a box never waits on a server; the dimension lookup is a server call with a seven-day cache and a confidence gate.",
+    "Measuring is ARKit with the LiDAR scanner on Pro iPhones; the lookup by name or photo comes back with a confidence level, and anything below medium is refused. From there a live 3D scene fits the items into the smallest carrier box while you watch, and UPS, FedEx and USPS rates are fetched in parallel and listed cheapest first.",
+    "The integration work is the unglamorous half and it is most of the job. React Native on the front, an Express backend on Railway with Postgres and Redis behind it, a 15-minute Redis cache on every rate quote, and a stack your team can hire for. The code is clean and documented, and it is yours to take over whenever you want it.",
   ],
 };
 
@@ -136,7 +136,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       number: "01",
       title: "Find the screen they already look at",
       caption: "No second app",
-      text: "Before any model, we find the tool your team already opens. PackShip's whole job happens inside the camera flow somebody was going to use regardless. A model that needs a new habit around it is a model that gets used twice.",
+      text: "Before any model, we find the tool your team already opens. PackShip's whole job happens inside the form somebody fills to ship a parcel: a name, a photo or a LiDAR scan, and the box and rate follow. A model that needs a new habit around it is a model that gets used twice.",
       image: {
         src: `${IMG}/packship.jpg`,
         alt: "The PackShip parcel-sizing app on iOS",
@@ -146,9 +146,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
     },
     {
       number: "02",
-      title: "One photo, measured",
-      caption: "On-device model",
-      text: "A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.",
+      title: "Measured, or looked up",
+      caption: "LiDAR and a lookup",
+      text: "Dimensions come in three ways: typed, measured with the phone's LiDAR scanner through ARKit, or looked up by name or photo through a server call that comes back with a confidence level and refuses anything below medium.",
       image: {
         src: `${IMG}/packship.jpg`,
         alt: "The PackShip parcel-sizing app on iOS",
@@ -160,7 +160,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
       number: "03",
       title: "Three carriers, racing",
       caption: "Carrier APIs on Redis",
-      text: "UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.",
+      text: "UPS, FedEx and USPS rates are fetched in parallel through the backend, cached in Redis for 15 minutes on the exact box and route, and listed cheapest first with the cheapest and the fastest marked.",
       image: {
         src: `${IMG}/delivery-routing-export.jpg`,
         alt: "Export: printable driver cut sheets for the van, Excel and CSV for the office",
@@ -210,23 +210,23 @@ export const WYSIWYG_HOW_IT_FITS: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      lead: "On-device model:",
-      text: "A model running on the phone estimates an item's dimensions from a single photograph. No LiDAR needed. Typical error lands around a centimetre, which is less than the padding most people were going to stuff in anyway.",
+      lead: "On the device:",
+      text: "The packing solver: 149 boxes, envelopes and mailers across USPS, FedEx, UPS and retail sizes, six item orderings by six rotations, first fit wins, all on the phone, with 18 of the app's 31 Jest test files on the solver. Measuring is ARKit with the LiDAR scanner.",
     },
     {
       type: "paragraph",
       lead: "Three.js in React Native:",
-      text: "A live 3D scene fits your items into candidate boxes while you watch. Rotate it. Swap the box. See exactly how much empty air you were about to pay to ship across the country.",
+      text: "A live 3D scene draws the chosen box with the used volume against the box volume. Rotate it. Swap the box or the carrier and it re-packs.",
     },
     {
       type: "paragraph",
       lead: "Carrier APIs on Redis:",
-      text: "UPS, FedEx, and USPS rates sit side by side and re-quote themselves every time the box changes. The cheapest safe option wins, usually by a wider margin than people expect.",
+      text: "UPS, FedEx and USPS rates are fetched in parallel through the backend, cached in Redis for 15 minutes on the exact box and route, and listed cheapest first with the cheapest and the fastest marked.",
     },
     {
       type: "paragraph",
       lead: "Where it ended up:",
-      text: "Live on the App Store as a consumer product. A multi-step, error-prone chore became one photo and a tap.",
+      text: "Live on the App Store as a consumer product, at version 1.2.0: measure or look up the item, get the smallest box that fits, see three carriers' rates on one screen.",
     },
   ],
 };
