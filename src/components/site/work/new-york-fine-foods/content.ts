@@ -107,9 +107,16 @@ export const PROJECT_LIVE = {
  * Header. `lead` is the project's OUTCOME, not its brief: the brief is the
  * `BlockIntroDouble` statement below. 6 and 26 are the sitemap's URL counts
  * before and after the 2026-08-27 commits (`git show 1ab1de5^:src/app/sitemap.ts`
- * → 6 entries; `/sitemap.xml` on the booted copy → 26). "Most" = 10 borough
- * and regional area pages + 4 pizza-truck spokes + corporate + bartenders, 16
- * of the 26 (dossier, Verifiable numbers).
+ * → 6 entries; `/sitemap.xml` on the booted copy → 26). "Most" = 10 area
+ * pages + 4 pizza-truck spokes + corporate + bartenders, 16 of the 26
+ * (dossier, Verifiable numbers). The 10 area pages are 5 boroughs + 5
+ * regions (Long Island, Westchester, ...), so "borough or occasion" counts
+ * the five regional pages as "borough" — a search from Long Island is a
+ * place search of the same kind, and "borough or region or occasion" does
+ * not fit the 85-character slot ("borough or region or occasion" makes the
+ * lead 93 characters, "borough, region or occasion" 91; the slot is three
+ * lines at 1280, about 85). Settled here so it is not re-litigated: the
+ * shorthand is deliberate and the precise split is one line below.
  *
  * LENGTH IS MEASURED, NOT CHOSEN. The header's text band is a fixed 500px
  * from `md` up and the lead shares its columns with the service line; the

@@ -88,9 +88,15 @@ export const PROJECT_LIVE = {
  * lines there. Candidates were swapped into the live slot with `textContent`
  * (`$SCRATCH/ldp-lead.mjs`, task-15-report.md §5): the 92-character draft
  * ("…for an NDS drainage dealer…") was five lines at 320 and overlapped the
- * cover by 25 px there; the shipped 87 characters is four lines at 320, 360
- * and 390 (h1 bottom 494 / 448 / 448 against the cover's 500). Do not
- * lengthen it without re-measuring at 320. The cover is the live home page as of
+ * cover by 25 px there (measured before 5ab9d32); the shipped 87 characters
+ * is four lines at 320, 360 and 390 (h1 bottom 494 / 448 / 448 inside the
+ * 500px band). Since 5ab9d32 the band is `minmax(500px, auto)` below `md`,
+ * so a longer lead can no longer run the `<h1>` into the cover there; it
+ * pushes the cover down instead. The band is still a fixed 500px from `md`
+ * up, and the xl lead column (1280, ~27 chars/line) is the tightest slot:
+ * this lead is four lines there with the 35px design gap fully consumed
+ * (lead.bottom - meta.top = -0.9 at 1280, task-19-report.md). Re-measure at
+ * 1280 as well as 320 before lengthening. The cover is the live home page as of
  * 2026-09-11: the announcement bar, the six-item header, the blue Custom
  * Liquid strip, slide 2 of 3 with its one button, and the rich-text opener.
  */

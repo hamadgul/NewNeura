@@ -130,9 +130,17 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/nymm.jpg`;
  * lives in `lib/service-topics.ts`, `lib/service-area-combos.ts`,
  * `lib/area-content.ts` and four MDX files, which is why the sentence says
  * "keyed off" and not "became". "Call and Text one tap away on every page":
- * the mobile-only fixed bottom bar with `Call` (`tel:`) and `Text Now`
- * (`sms:`) rendered on every route (dossier, "Book and Call are one tap away
- * on every page"; `conversion.png` is its evidence).
+ * the ACTIONS are, not one component. The fixed bottom bar with `Call`
+ * (`tel:`) and `Text Now` (`sms:`) is mobile-only, hidden by an
+ * `IntersectionObserver` while the hero (which has its own call button) is
+ * on screen, and suppressed on `/contact`, where the same two actions are
+ * in-page (dossier "Book and Call are one tap away on every page",
+ * `components/layout/Nav.tsx:32-44, 438-483`; the `BlockWysiwyg` paragraph
+ * below says "on every page but the contact page"). So the claim holds for
+ * tel:/sms: on every page; the bar is the mobile mechanism on all but one.
+ * A "mobile" qualifier was tried in the lead and does not fit 85 characters
+ * without dropping "every page" or "one config file", so the lead keeps the
+ * dossier's headline wording and this comment carries the qualification.
  *
  * LENGTH IS MEASURED, NOT CHOSEN. The header's text band is a fixed 500px
  * from `md` up and the lead shares its columns with the service line; the

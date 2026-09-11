@@ -104,10 +104,15 @@ export const PROJECT_LIVE = {
  * 320 px, so the lead slot is a line tighter than a one-word title's.
  * Measured in the live slot on the user's :3000 (`$SCRATCH/rwd-lead.mjs`,
  * task-17-report.md §6): the shipped 80 characters is four lines at 320
- * (h1 bottom 494 against the cover's 500), four at 360 (448) and three at
- * 390 (417), overlap 0 at all three. A 94-character draft was five lines at
- * 320 and ran 25 px into the cover. Do not lengthen it without re-measuring
- * at 320.
+ * (h1 bottom 494), four at 360 (448) and three at 390 (417), all inside the
+ * 500px band. A 94-character draft was five lines at 320 and ran 25 px into
+ * the cover (measured before 5ab9d32). Since 5ab9d32 the band is
+ * `minmax(500px, auto)` below `md`, so a longer lead can no longer run the
+ * `<h1>` into the cover there; it pushes the cover down instead. The band is
+ * still a fixed 500px from `md` up, and the xl lead column (1280, ~27
+ * chars/line, three lines) is the tightest slot (this lead is three lines
+ * there, gap -37.3), so re-measure at 1280 as well as 320 before
+ * lengthening.
  *
  * `location` has no year, and this is the one case study header without one:
  * the deck carries no date for the engagement (its only date is a 2019

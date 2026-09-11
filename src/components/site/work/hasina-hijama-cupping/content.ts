@@ -86,10 +86,16 @@ export const PROJECT_LIVE = {
  * this project's three-word title wraps once more, which leaves FOUR lines
  * (125 px). Candidates were swapped into the live slot with `textContent`
  * (`$SCRATCH/hh-lead.mjs`, task-14-report.md §5): every candidate over 90
- * characters was five lines at 320 and overlapped the cover by 25 px there;
- * the shipped 90 characters is four lines at 320, 360 and 390 (h1 bottom
- * 494 / 448 / 448 against the cover's 500). Do not lengthen it without
- * re-measuring at 320. The cover
+ * characters was five lines at 320 and overlapped the cover by 25 px there
+ * (measured before 5ab9d32); the shipped 90 characters is four lines at 320,
+ * 360 and 390 (h1 bottom 494 / 448 / 448 inside the 500px band). Since
+ * 5ab9d32 the band is `minmax(500px, auto)` below `md`, so a longer lead can
+ * no longer run the `<h1>` into the cover there; it pushes the cover down
+ * instead. The band is still a fixed 500px from `md` up, and the xl lead
+ * column (1280, ~27 chars/line) is the tightest slot: this lead is four
+ * lines there with the 35px design gap fully consumed (lead.bottom -
+ * meta.top = -0.9 at 1280, task-19-report.md). Re-measure at 1280 as well
+ * as 320 before lengthening. The cover
  * is the site's home page at HEAD: the single photograph on the ink field
  * with the $10-a-cup offer strip (the 2026-08-29 hero).
  */

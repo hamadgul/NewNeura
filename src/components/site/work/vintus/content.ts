@@ -102,15 +102,21 @@ export const PROJECT_LIVE = {
  * one-word title never wraps, so the slot is a line more forgiving than the
  * three-word titles in Tasks 14–15. Measured in the live slot on the user's
  * :3000 (`$SCRATCH/vintus-look.mjs`, task-16-report.md §5): the shipped 81
- * characters is three lines at 390 (h1 bottom 371 against the cover's 500)
- * and four lines at 320 and 360 (h1 bottom 402 against 500), overlap 0 at
- * all three. Do not lengthen it without re-measuring at 320. Known and
- * pre-existing on this page only: the eyebrow row below the lead puts
- * `location` and `service` in one shared cell under `md`, and this page's
- * 40-character service line (the longest of the ten) overlaps the location
- * text by 42 px at 390 and 112 px at 320 (54 / 124 px with the old
- * "2026 · E-commerce"); it clears at 431 px. The fix is in
- * `BlockHeaderProjects`, outside this page (report, concerns). The cover is the live home page as of
+ * characters is three lines at 390 (h1 bottom 371) and four lines at 320
+ * and 360 (h1 bottom 402), all inside the 500px band. Since 5ab9d32 the
+ * band is `minmax(500px, auto)` below `md`, so a longer lead can no longer
+ * run the `<h1>` into the cover there; it pushes the cover down instead.
+ * The band is still a fixed 500px from `md` up, and the xl lead column
+ * (1280, ~27 chars/line, three lines) is the tightest slot, so re-measure
+ * at 1280 as well as 320 before lengthening. The eyebrow row: under `md`
+ * `location` and `service` share one cell, and this page's 40-character
+ * service line (the longest of the ten) overprinted the location text by
+ * 42 px at 390 and 112 px at 320 (54 / 124 px with the old
+ * "2026 · E-commerce"). Fixed in `BlockHeaderProjects` (5ab9d32): the pair
+ * is a wrapping flex row below `md`, and the service line drops to its own
+ * right-aligned line here at 320-430 (text overlap 0 at 320/360/390/414/
+ * 430, measured on the production build; unchanged at 767+ where it never
+ * overlapped). The cover is the live home page as of
  * 2026-09-11: the seven-item header, the H1 "Building a National Wine Import
  * Business From Scratch" over a vineyard, the search box, the SevenFiftyDaily
  * teaser and READ MORE.
