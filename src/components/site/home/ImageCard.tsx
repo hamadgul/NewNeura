@@ -17,7 +17,7 @@
  */
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { CardMedia, posterBackdrop } from "@/components/site/shared/CardMedia";
+import { CARD_SIZES, CardMedia, posterBackdrop } from "@/components/site/shared/CardMedia";
 import type { ProjectCard } from "@/types/site";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { REVEAL_OBSERVER_INIT } from "../shared/reveal";
@@ -85,6 +85,7 @@ export function ImageCard({ project, className }: ImageCardProps) {
       >
         <CardMedia
           media={project}
+          sizes={isLarge ? CARD_SIZES.large : CARD_SIZES.small}
           className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
         />
       </div>

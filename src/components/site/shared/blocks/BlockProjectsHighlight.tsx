@@ -46,7 +46,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ButtonArrow } from "@/components/site/shared/buttons";
-import { CardMedia, posterBackdrop } from "@/components/site/shared/CardMedia";
+import { CARD_SIZES, CardMedia, posterBackdrop } from "@/components/site/shared/CardMedia";
 // Reused as-is: it already gets the two-element animation split right (reveal on
 // the wrapper, hover zoom on the <img>) and observes an unclipped ancestor.
 import { ImageCard } from "@/components/site/home/ImageCard";
@@ -225,6 +225,7 @@ function NotchedImageCard({
         >
           <CardMedia
             media={project}
+            sizes={isLarge ? CARD_SIZES.large : CARD_SIZES.small}
             className="imageCard__image h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.04]"
           />
         </div>
@@ -398,7 +399,11 @@ function Layout({ layout, isLast }: LayoutProps) {
             className="blockProjectsHighlight__layoutFiveImage col-span-full md:row-start-1"
             style={posterBackdrop(project)}
           >
-            <CardMedia media={project} className="h-auto w-full object-cover" />
+            <CardMedia
+              media={project}
+              sizes={CARD_SIZES.fullBleed}
+              className="h-auto w-full object-cover"
+            />
           </div>
           {/*
             0.85, not the measured 0.6. The panel is a frosted caption card and

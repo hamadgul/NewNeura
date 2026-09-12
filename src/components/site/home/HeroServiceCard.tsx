@@ -68,6 +68,52 @@ interface HeroServiceCardProps {
  * measured 771px width at a 900px viewport. `margin-right: -2px` closes the
  * seam so the five cards read as one continuous band rather than as tiles.
  */
+/**
+ * `sizes` for the strip image, computed per card because this slot CROPS.
+ *
+ * Without any `sizes`, `next/image` emits a DPR-descriptor `srcset` off the
+ * declared file width, so the browser asked for `w=3840` — and because
+ * `card.index === 1` is `priority`, that URL also went into a
+ * `<link rel="preload">` at the highest priority the browser has, in front of
+ * the hero video's own poster.
+ *
+ * Asking for 3840 was the wrong REQUEST, not (mostly) wasted bytes: the
+ * optimiser never upscales, so `w=1200`, `w=1920` and `w=3840` all return the
+ * same 99,283 bytes of a 1200x750 source. Measured, because the first attempt
+ * here was `29vw` — the strip's measured box width — which cut those four
+ * images to `w=384`, a 232 KiB "saving" that was really a 3.9x upscale.
+ *
+ * The slot is 110x275 on a phone and the stills are 1200x750, so
+ * `object-cover` scales the source until its HEIGHT fills 275px and then
+ * crops the width: the visible sliver is 110px wide but the image is being
+ * rendered 440px wide, and `sizes` has to describe that, not the box. A
+ * `sizes` derived from the box is exactly how a cropped slot goes soft while
+ * every automated check stays green.
+ *
+ *   needed = max(boxWidth, boxHeight x imageRatio)
+ *
+ * Box geometry measured off the built page at fourteen widths (the RECT, so
+ * the `scale(imageScale)` below is already in it):
+ *
+ *     320   393   480   767 | 768   960  1023 | 1024+
+ *      90   110   134   215 | 799   998  ~1064|  1003   width  (28vw, 104vw, capped)
+ *     275   275   275   275 | 585   585   585 |   585   height (fixed per band)
+ *
+ * At ratio 1.6 the crop term wins below 768 (440px against a 215px box) and
+ * the box wins above it. A portrait still such as `packship-stacked` (480x750,
+ * ratio 0.64) barely crops and lands on the box term instead, which is the
+ * whole reason this is a function of the image rather than one string.
+ */
+function stripSizes(image: { width: number; height: number }) {
+  const ratio = image.width / image.height;
+  const px = (n: number) => `${Math.ceil(n)}px`;
+  return [
+    `(min-width: 1024px) ${px(Math.max(1003, 585 * ratio))}`,
+    `(min-width: 768px) ${px(Math.max(1064, 585 * ratio))}`,
+    px(Math.max(215, 275 * ratio)),
+  ].join(", ");
+}
+
 export function HeroServiceCard({
   card,
   progress,
@@ -283,6 +329,7 @@ export function HeroServiceCard({
           alt={stripImage.alt}
           width={stripImage.width}
           height={stripImage.height}
+          sizes={stripSizes(stripImage)}
           priority={card.index === 1}
           className="h-full w-full object-cover"
           style={{ transform: `scale(${imageScale})`, transformOrigin: "center" }}

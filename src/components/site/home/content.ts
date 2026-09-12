@@ -41,7 +41,28 @@ const VIDEO = "/site/videos";
  */
 export const HERO_VIDEO = {
   src: `${VIDEO}/office.mp4`,
-  poster: `${VIDEO}/office-poster.jpg`,
+  /*
+   * WebP, not the `.jpg` beside it, and deliberately a *different* file rather
+   * than a re-encode of it.
+   *
+   * The poster is the homepage's LCP element (PageSpeed named this `<video>`
+   * under both LCP and FCP), and it is the only place the raw bitmap reaches a
+   * browser: `/contact/` and `/process/` use the same still through
+   * `next/image`, which serves its own WebP/AVIF derivatives from the JPEG and
+   * never ships the original. So the JPEG stays — it is the optimiser's source
+   * and the `og:image`, where a WebP is still a coin flip with link scrapers —
+   * and only the `poster` attribute moves.
+   *
+   * 1600x900 at cwebp `-q 66 -sharp_yuv`: 85,114 bytes against the JPEG's
+   * 157,248 (-46%). The JPEG was already progressive 4:2:0 at quality 61, so
+   * there was nothing left to win by re-compressing it as a JPEG; the size is
+   * in the detail, not the encoder settings. Checked at 1:1 against the
+   * original with the hero's own `brightness(0.5)` applied, upscaled back to
+   * 1920 as the browser will: the brick texture is a shade smoother and
+   * nothing else reads as different. It is a darkened backdrop behind white
+   * type for the moment before the video paints, so 1600 is ample.
+   */
+  poster: `${VIDEO}/office-poster.webp`,
 };
 
 export const HERO_INTRO = {

@@ -40,6 +40,34 @@ const nextConfig: NextConfig = {
    * source exactly, and removes the redirect hop.
    */
   trailingSlash: true,
+  experimental: {
+    /*
+     * Emit the stylesheet as a `<style>` block in the document head instead of
+     * a `<link>`, removing the only render-blocking request the site had.
+     *
+     * PageSpeed measured that link as the whole critical path: 14.7 KiB over
+     * 300ms, and a "maximum critical path latency" of 736ms made up of the
+     * navigation (287ms) *plus* the CSS fetch that could not start until the
+     * HTML had been parsed. Nothing about the CSS itself was the problem —
+     * 14.7 KiB transferred is already small — it was the extra round trip.
+     *
+     * This is the documented "enable" case, verbatim from
+     * `next/dist/docs/01-app/03-api-reference/05-config/01-next-config-js/inlineCss.md`:
+     * atomic CSS (Tailwind) that stays compact regardless of how much UI is
+     * built, and a site whose visitors mostly arrive cold from search. The
+     * trade the docs name is that inlined CSS cannot be cached separately, so
+     * a returning visitor re-downloads it with every HTML response; at 14.7
+     * KiB against a 33 MB-turned-7 MB hero video that is not the number worth
+     * optimising for. Client-side navigations to prerendered routes still use
+     * `<link>`, so the cross-page case keeps its cache.
+     *
+     * Two known limitations from the same doc, neither of which bites here:
+     * it is global (we want it on every route anyway) and it does nothing in
+     * `next dev` — so this is only ever observable in a production build, and
+     * a local QA pass has to go through `next build && next start`.
+     */
+    inlineCss: true,
+  },
 };
 
 export default nextConfig;
