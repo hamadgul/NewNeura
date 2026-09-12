@@ -354,7 +354,24 @@ export function HeroServiceCard({
             href={card.href}
             color="service"
             label={`Explore ${card.title.replace(/\s+/g, " ")}`}
-            className="z-[3] col-start-2 row-start-1 ml-auto transition-opacity duration-300"
+            className={cn(
+              "z-[3] col-start-2 row-start-1 ml-auto transition-opacity duration-300",
+              /*
+                On the stacked band the second column IS the image strip, so
+                the plus sits over the photograph, not the band — and it is
+                painted in `contentColor`, which was picked to contrast with
+                the band. Three of five cards lost it: white on the dispatch
+                UI (Applied AI), `#111` on the dark PackShip and pipeline shots
+                (App Development, Data Intelligence). The other two read only
+                because their screenshots happen to be dark.
+
+                A disc of the card's own accent behind the ring gives it a
+                ground the photo cannot change; `mainColor` / `contentColor`
+                are already a contrast pair. The hover fill still rises in
+                `contentColor` over it, so the flip is unchanged.
+              */
+              !horizontal && "bg-(--serviceMainColor)",
+            )}
             // Scrubbed rather than latched: the plus fades in gradually with travel.
             style={{ opacity: horizontal ? Math.min(1, progress * 1.35) : 1 }}
           />
