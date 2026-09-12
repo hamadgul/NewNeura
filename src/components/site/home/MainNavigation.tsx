@@ -6,7 +6,14 @@
  *
  * IMPORTANT: `.navigationMain` never changes class, background, height or
  * shadow on scroll. It stays fixed and fully transparent at every scroll
- * position. Do NOT add scroll listeners or shrink/recolor behavior here.
+ * position. Do NOT add shrink/recolor/background behavior to the BAR.
+ *
+ * The one thing that does move on scroll is the wordmark, which fades out the
+ * moment the page leaves the top — see `WORDMARK_SCROLL_*` below. That was
+ * missed on the first pass because `.navigationMain` itself is inert, and the
+ * cost was two wordmarks on screen at once: the footer's own 22px wordmark
+ * pins near the top of the viewport at the end of a page, and on a phone
+ * around 780px tall it landed exactly on top of this one.
  */
 import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
@@ -165,6 +172,32 @@ const CLOSE_UNMOUNT_MS = CLOSE_SLIDE_DELAY_MS + CLOSE_SLIDE_MS + ms(50);
  */
 const WORDMARK_TONE_MS = 400;
 
+/**
+ * The wordmark is visible only while the page is at the top. The source fades
+ * it out — `opacity: 0` plus `pointer-events: none`, both set inline by its
+ * own JS — as soon as the document has scrolled, and back in only when it
+ * returns to the top. It does NOT come back on scroll-up mid-page, and it
+ * stays hidden when the menu is opened mid-page. The bar itself, the Menu
+ * button and the services strip are unaffected.
+ *
+ * Measured on the source at 393x852 and 1440x900 (identical at both, so the
+ * threshold is a pixel count and not viewport-relative):
+ *
+ *   threshold   opacity 1 at scrollY 10, 0 at 11  ->  hidden while scrollY > 10
+ *   fade        200ms, GSAP `power2.out`
+ *
+ * The easing was fitted to the sampled tween, not guessed: taking the fade-out
+ * frames (0.689 at 12ms, 0.250 at 78ms, 0.029 at 144ms, 0 at 210ms) and
+ * solving for `1 - (1 - x)^2` over 200ms reproduces all three to the fourth
+ * decimal, and the same curve then predicted the fade-in samples (0.3194 and
+ * 0.8911) exactly. `power2.out` is `1 - (1 - x)^2`, which as a cubic Bezier is
+ * exactly (1/3, 2/3, 2/3, 1) — not an approximation of it.
+ */
+const WORDMARK_SCROLL_HIDE_PX = 10;
+const WORDMARK_SCROLL_MS = 200;
+/** GSAP `power2.out`, exactly: see the derivation above. */
+const WORDMARK_SCROLL_EASE = "cubic-bezier(0.333, 0.667, 0.667, 1)";
+
 export interface MainNavigationProps {
   /**
    * Type colour for the wordmark, matching whatever this page paints behind
@@ -243,6 +276,11 @@ export function MainNavigation({
   const [open, setOpen] = useState(false);
   const [render, setRender] = useState(false);
   const [animateIn, setAnimateIn] = useState(false);
+  // `true` once the document has left the top, which is the only thing that
+  // hides the wordmark. Starts `false` so the server and the first client
+  // render agree; the effect below corrects it on mount, which also covers a
+  // reload that restores a scrolled position.
+  const [scrolled, setScrolled] = useState(false);
 
   const overlayRef = useRef<HTMLElement | null>(null);
   const toggleRef = useRef<HTMLButtonElement | null>(null);
@@ -335,6 +373,22 @@ export function MainNavigation({
     };
   }, [open]);
 
+  /*
+    Passive because it only reads `scrollY` and sets a boolean — nothing here
+    can cancel the scroll, and marking it passive keeps it off the critical
+    path of a gesture on a phone. The comparison is against a threshold rather
+    than `scrollY > 0` so a rubber-band or a 1px trackpad twitch does not
+    flicker the wordmark; the source uses the same 10px dead zone.
+  */
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > WORDMARK_SCROLL_HIDE_PX);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   useEffect(() => {
     if (!open) return;
     const onKeyDown = (event: KeyboardEvent) => {
@@ -378,15 +432,33 @@ export function MainNavigation({
           href="/"
           aria-label="NeuraGul home"
           className={cn(
-            "navigationMain__topBarLogo col-start-[main-start] col-end-[main-end] row-start-1 flex h-[30px] items-center justify-self-start transition-colors ease-in-out",
+            "navigationMain__topBarLogo col-start-[main-start] col-end-[main-end] row-start-1 flex h-[30px] items-center justify-self-start",
             // The top bar is `z-10` and the overlay is not, so the wordmark
             // paints *over* the open menu's black/80 ground — a dark wordmark
             // would disappear the moment the menu opened. While `open`, it is
             // always white, and the 400ms matches the overlay's own fade so the
             // two changes travel together in both directions.
             open || tone === "light" ? "text-white" : "text-[#111111]",
+            // Only at the top of the page, exactly like the source. Below
+            // that the footer's own wordmark owns that corner.
+            scrolled ? "pointer-events-none opacity-0" : "opacity-100",
           )}
-          style={{ transitionDuration: `${WORDMARK_TONE_MS}ms` }}
+          // The colour and the fade are two different tweens on two different
+          // triggers — 400ms ease-in-out tracking the menu, 200ms power2.out
+          // tracking the scroll — so they cannot share `transition-colors` and
+          // one `transitionDuration`. Written out as one inline shorthand
+          // because an inline `transition` beats a utility's
+          // `transition-property`, and a half-inline pair reads as a bug.
+          style={{
+            transition: [
+              `color ${WORDMARK_TONE_MS}ms ease-in-out`,
+              `opacity ${WORDMARK_SCROLL_MS}ms ${WORDMARK_SCROLL_EASE}`,
+            ].join(", "),
+          }}
+          // Invisible and unclickable, so it must not be a tab stop either —
+          // otherwise keyboard focus lands on nothing in the top-left corner.
+          tabIndex={scrolled ? -1 : undefined}
+          aria-hidden={scrolled || undefined}
         >
           <Wordmark className="text-[17px]" />
         </Link>
