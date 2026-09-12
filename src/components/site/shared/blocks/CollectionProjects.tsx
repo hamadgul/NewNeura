@@ -589,7 +589,16 @@ export function CollectionProjects({
     <section
       data-control="CollectionProjects"
       className={cn(
-        "collectionProjects ng-grid min-h-[900px] text-[#111111]",
+        /*
+          `content-start` because of `min-h-[900px]`. A filter with one project
+          leaves ~630px of grid inside a 900px box, and grid's default
+          `align-content: normal` STRETCHES the auto rows to fill it — the
+          filter row went 92px -> 317px and the lone card sat 225px lower than
+          the first card does under "All". Measured at 390px, App Development.
+          Packing the rows at the start keeps the slack below the last card,
+          where the min-height meant it to be.
+        */
+        "collectionProjects ng-grid min-h-[900px] content-start text-[#111111]",
         className,
       )}
     >
