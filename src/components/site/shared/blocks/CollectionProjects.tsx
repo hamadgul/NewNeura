@@ -600,7 +600,12 @@ export function CollectionProjects({
       */}
       <div
         ref={filterRef}
-        className="filterApi col-start-1 col-end-[-1] mt-[150px] xl:col-start-2 xl:col-end-[-2]"
+        // DELIBERATE DIVERGENCE below 768px: 40px, not the source's 150. The
+        // header is 50vh there (~420px on a phone), so 150px of white before
+        // the pill row was a third of a screen of nothing between the title
+        // and the first control. The user: "close this gap between the header
+        // and the filter on this page. it looks ugly". Desktop keeps 150.
+        className="filterApi col-start-1 col-end-[-1] mt-[40px] md:mt-[150px] xl:col-start-2 xl:col-end-[-2]"
       >
         <div id="filterHeader" className="filterApi__filterWrapper">
           {/* 37.594px = 21.6px line + 15px pill padding + the 1px underline. */}
