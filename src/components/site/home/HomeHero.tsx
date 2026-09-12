@@ -206,10 +206,20 @@ export function HomeHero() {
         </div>
         <div className="homeHero__categories flex w-full flex-col">
           {cards}
-          {/* The source keeps the trailing white panel at both widths — 200px
-              tall under the last stacked card, a full card-width of run-off on
-              the strip. It used to live only in the horizontal branch. */}
-          <div className="homeHero__cardLast h-[200px] w-full shrink-0 bg-white" aria-hidden="true" />
+          {/*
+            The source keeps the trailing white panel at both widths — 200px
+            tall under the last stacked card, a full card-width of run-off on
+            the strip. It used to live only in the horizontal branch.
+
+            DELIBERATE DIVERGENCE — 50px here, not the source's 200. On the
+            strip the panel is horizontal run-off past the last card; stacked,
+            it is just white, and with the intro block's own 50px on top of it
+            the last accent band sat 250px above the next title on a phone —
+            two-thirds of a viewport of nothing. The user: "on mobile can you
+            reduce the white space here in this section". 50 + 50 keeps a
+            beat between the band and the heading without the dead scroll.
+          */}
+          <div className="homeHero__cardLast h-[50px] w-full shrink-0 bg-white" aria-hidden="true" />
         </div>
       </section>
     );
