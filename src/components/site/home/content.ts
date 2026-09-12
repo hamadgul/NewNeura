@@ -301,15 +301,22 @@ export const PROJECTS_ROW_ONE: ProjectCard[] = [
 /** Row two mirrors row one: two small tiles left, one large tile right. */
 export const PROJECTS_ROW_TWO: ProjectCard[] = [
   {
-    title: "Vintus",
-    location: "2026 · WordPress",
-    href: "/work/vintus/",
+    title: "New York Fine Foods",
+    location: "2026 · Web",
+    href: "/work/new-york-fine-foods/",
     image: {
-      src: `${IMG}/vintus.jpg`,
-      alt: "The Vintus wine importer trade portal",
+      src: `${IMG}/nyff.jpg`,
+      alt: "The New York Fine Foods catering site",
       width: 1200,
       height: 750,
     },
+    /*
+      Replaced Vintus here on 2026-09-12: "replace vintus with newyorkfinefoods
+      on the homepage under selected work section. make sure its the moving
+      video we have". Same 9s hero capture the case study and the Work index
+      play; `nyff.jpg` is its poster frame.
+    */
+    video: { src: `${VIDEOS}/nyff-hero.mp4` },
     size: "small",
   },
   {
@@ -339,9 +346,9 @@ export const PROJECTS_ROW_TWO: ProjectCard[] = [
       poster and the reduced-motion fallback — it is a frame of this very clip,
       so nothing flashes before the first frame decodes.
 
-      Only this tile moves, and that is the point: six identical still tiles
-      with one that plays reads as the one worth clicking. Six that all play
-      would read as a page that will not sit still.
+      Two of the six tiles move — this one and New York Fine Foods above — the
+      same two that play on the Work index. Six that all play would read as a
+      page that will not sit still.
     */
     video: { src: `${VIDEOS}/nymm-hero-loop.mp4` },
     size: "large",
