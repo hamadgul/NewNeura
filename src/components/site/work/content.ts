@@ -96,6 +96,9 @@ export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
     width: 1920,
     height: 1080,
   },
+  // The still above is frame 0 of this clip, so the poster-to-video hand-off
+  // is seamless and the reduced-motion / pre-paint state is the same shot.
+  video: { src: `${VIDEOS}/hero.mp4` },
 };
 
 /**

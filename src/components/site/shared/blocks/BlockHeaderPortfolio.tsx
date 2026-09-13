@@ -36,6 +36,11 @@ export interface BlockHeaderPortfolioImage {
   height: number;
 }
 
+export interface BlockHeaderPortfolioVideo {
+  /** Local path, e.g. `/site/videos/foo.mp4`. */
+  src: string;
+}
+
 export interface BlockHeaderPortfolioProps {
   /** Left-hand eyebrow — "Our Work" / "Stay in the know". Cased as authored. */
   eyebrow: string;
@@ -53,6 +58,13 @@ export interface BlockHeaderPortfolioProps {
   title: string | readonly string[];
   /** The full-bleed backdrop. Both pages ship one; paths differ per page. */
   image: BlockHeaderPortfolioImage;
+  /**
+   * Optional motion version of `image`. When set, the block renders a muted
+   * looping `<video>` in the image's slot with `image.src` as its poster, so
+   * the still is the first paint and the reduced-motion fallback — the two
+   * must be the same shot for the hand-off to be invisible.
+   */
+  video?: BlockHeaderPortfolioVideo;
   /** This image is the page's LCP element on both pages. */
   priority?: boolean;
   className?: string;
@@ -63,6 +75,7 @@ export function BlockHeaderPortfolio({
   label,
   title,
   image,
+  video,
   priority = true,
   className,
 }: BlockHeaderPortfolioProps) {
@@ -101,15 +114,29 @@ export function BlockHeaderPortfolio({
             preflight's `img { max-width: 100% }` would otherwise cancel the
             110% width.
           */}
-          <Image
-            src={image.src}
-            alt={image.alt ?? ""}
-            width={image.width}
-            height={image.height}
-            priority={priority}
-            sizes="100vw"
-            className="image absolute left-0 top-0 h-[110%] w-[110%] max-w-none object-cover"
-          />
+          {video ? (
+            <video
+              src={video.src}
+              poster={image.src}
+              autoPlay
+              loop
+              muted
+              // Required alongside `muted` for autoplay to start on iOS Safari.
+              playsInline
+              aria-label={image.alt || undefined}
+              className="image absolute left-0 top-0 h-[110%] w-[110%] max-w-none object-cover"
+            />
+          ) : (
+            <Image
+              src={image.src}
+              alt={image.alt ?? ""}
+              width={image.width}
+              height={image.height}
+              priority={priority}
+              sizes="100vw"
+              className="image absolute left-0 top-0 h-[110%] w-[110%] max-w-none object-cover"
+            />
+          )}
           {/*
             Sampling the reference captures against the raw assets gives a flat
             0.50 multiplier on every channel across the whole block — a 50%
