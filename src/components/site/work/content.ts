@@ -81,14 +81,13 @@ export const PORTFOLIO_OG_IMAGE = `${IMAGES}/hero-poster.jpg`;
  * instead of letting the measure decide. The two lines stay within a word of
  * each other's length, which is what the source's own break was doing.
  *
- * Both small labels are strings the source already uses: "Work" is the nav and
- * breadcrumb label, "Selected work" opens the page's own meta description. The
- * block lowercases the right-hand label and re-capitalises its first letter, so
- * it renders as authored.
+ * The block's two small labels ("Work" / "Selected work") were dropped on
+ * 2026-09-12 at the user's request; the video backdrop and the title carry the
+ * header alone.
  */
 export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
-  eyebrow: "Work",
-  label: "Selected work",
+  // No eyebrow or label: the video backdrop and the title carry the header on
+  // their own; the block's label band stays in the grid so nothing shifts.
   title: ["Everything", "we've shipped"],
   image: {
     src: `${IMAGES}/hero-poster.jpg`,

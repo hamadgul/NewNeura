@@ -42,14 +42,18 @@ export interface BlockHeaderPortfolioVideo {
 }
 
 export interface BlockHeaderPortfolioProps {
-  /** Left-hand eyebrow — "Our Work" / "Stay in the know". Cased as authored. */
-  eyebrow: string;
+  /**
+   * Left-hand eyebrow — "Our Work" / "Stay in the know". Cased as authored.
+   * Optional: omit it and the 27px label band stays empty, so the title and
+   * chip keep their measured positions.
+   */
+  eyebrow?: string;
   /**
    * Right-hand label — "Overview" / "inspiration and knowledge". The source
    * lowercases it and re-capitalises the first letter, so either casing in
-   * equals the same rendering out.
+   * equals the same rendering out. Optional, as `eyebrow`.
    */
-  label: string;
+  label?: string;
   /**
    * The `<h1>`. The source hard-breaks it with `<br>` rather than relying on
    * wrapping (`/latest/` is `Latest` + `Updates`, and "Latest Updates" would
@@ -145,9 +149,11 @@ export function BlockHeaderPortfolio({
           <div aria-hidden="true" className="absolute inset-0 bg-black/50" />
         </div>
 
-        <span className="blockHeaderPortfolio__textLeft font-S row-start-2 block self-center text-white [grid-column:main-start/span_3]">
-          {eyebrow}
-        </span>
+        {eyebrow ? (
+          <span className="blockHeaderPortfolio__textLeft font-S row-start-2 block self-center text-white [grid-column:main-start/span_3]">
+            {eyebrow}
+          </span>
+        ) : null}
 
         {/*
           `justify-self-end` shrink-wraps the label so it hugs `main-end`; the
@@ -156,9 +162,11 @@ export function BlockHeaderPortfolio({
           "Inspiration and knowledge". Two main columns below 768px (165px) is
           what forces the two-line wrap seen in the 390px capture; three above.
         */}
-        <span className="blockHeaderPortfolio__textRight font-S row-start-2 block self-center justify-self-end text-right lowercase text-white first-letter:uppercase [grid-column:span_2/main-end] md:[grid-column:span_3/main-end]">
-          {label}
-        </span>
+        {label ? (
+          <span className="blockHeaderPortfolio__textRight font-S row-start-2 block self-center justify-self-end text-right lowercase text-white first-letter:uppercase [grid-column:span_2/main-end] md:[grid-column:span_3/main-end]">
+            {label}
+          </span>
+        ) : null}
 
         {/*
           `items-end` + `pb-[35px]`: the last baseline sits 35px above the row's
