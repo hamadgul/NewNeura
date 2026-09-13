@@ -78,10 +78,16 @@ export interface BlockWysiwygProps {
   title?: string;
   /** The rich-text body: headings and paragraphs, in source order. */
   body: readonly WysiwygNode[];
+  /**
+   * Fragment target, so a link elsewhere can land on this block
+   * (`/services/web-development/#websites`). Lands the tagline rule 100px
+   * down, clear of the fixed navigation bar.
+   */
+  id?: string;
   className?: string;
 }
 
-export function BlockWysiwyg({ tagline, title, body, className }: BlockWysiwygProps) {
+export function BlockWysiwyg({ tagline, title, body, id, className }: BlockWysiwygProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const [isRevealed, setIsRevealed] = useState(false);
 
@@ -111,10 +117,11 @@ export function BlockWysiwyg({ tagline, title, body, className }: BlockWysiwygPr
   return (
     <section
       ref={sectionRef}
+      id={id}
       className={cn(
         // 16px/21.6px is the block's own computed body type; Tailwind's preflight
         // would otherwise leave line-height at 1.5 (24px).
-        "blockWysiwyg ng-grid my-[50px] text-[16px] leading-[21.6px] text-[#111111] xl:my-[60px]",
+        "blockWysiwyg ng-grid my-[50px] scroll-mt-[100px] text-[16px] leading-[21.6px] text-[#111111] xl:my-[60px]",
         className,
       )}
     >

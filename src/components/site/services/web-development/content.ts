@@ -159,6 +159,9 @@ export const PROCESS: BlockProcessCardSliderProps = {
       },
     },
     {
+      // `/services/web-development/#seo` — the home card's "SEO" link lands
+      // the page on this slide. See `ProcessPhase.id` for why it is not a DOM id.
+      id: "seo",
       number: "02",
       dark: true,
       title: "SEO from the first commit",
@@ -228,8 +231,13 @@ export const PROCESS: BlockProcessCardSliderProps = {
  * `text`.
  */
 
-/** First instance — the kinds of web work that exist in the portfolio. */
+/**
+ * First instance — the kinds of web work that exist in the portfolio.
+ *
+ * `id: "websites"` is the home card's "Websites" link target.
+ */
 export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
+  id: "websites",
   tagline: "Sites, and what runs behind them",
   title: "What we build on the web",
   body: [
@@ -392,6 +400,8 @@ const LANDSCAPE_DRAINAGE_PROZ: ProjectCard = {
  * is part of the href, so the filter row on `/work/` picks it up on mount.
  */
 export const PROJECTS: BlockProjectsHighlightProps = {
+  // `/services/web-development/#work` — the home card's "Our work" link target.
+  id: "work",
   title: "Where this shipped",
   button: { title: "All Web Development", href: "/work/?service=web-development" },
   layouts: [

@@ -93,6 +93,8 @@ export interface BlockProjectsHighlightProps {
   /** The homepage's service pill row. Service pages pass nothing. */
   filters?: { title: string; items: PortfolioFilterItem[] };
   layouts: ProjectsHighlightLayout[];
+  /** Fragment target, so a link elsewhere can land on this block. */
+  id?: string;
   className?: string;
 }
 
@@ -453,12 +455,15 @@ export function BlockProjectsHighlight({
   button,
   filters,
   layouts,
+  id,
   className,
 }: BlockProjectsHighlightProps) {
   return (
     <section
+      id={id}
       className={cn(
-        "blockProjectsHighlight ng-grid my-[100px] text-[#111111]",
+        // `scroll-mt` keeps a fragment landing clear of the 100px fixed nav.
+        "blockProjectsHighlight ng-grid my-[100px] scroll-mt-[100px] text-[#111111]",
         className,
       )}
     >

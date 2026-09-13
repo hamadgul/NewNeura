@@ -74,6 +74,18 @@ const TITLE_FADE_END = 0.4;
 const clamp01 = (n: number) => (n < 0 ? 0 : n > 1 ? 1 : n);
 
 export interface ProcessPhase {
+  /**
+   * Fragment name that lands the page on this slide
+   * (`/services/web-development/#seo`).
+   *
+   * Deliberately NOT rendered as a DOM `id`. The card sits inside the sticky
+   * section, so a native fragment jump would put the *card* at the top of the
+   * viewport — a position the pin never produces. Instead the block reads
+   * `location.hash` itself and drives `goTo`, which is the only honest way to
+   * "show slide N": in the pinned branch that is a page scroll, in the
+   * unpinned branch a nav scroll plus the section brought into view.
+   */
+  id?: string;
   /** Two-digit ordinal, verbatim: "01" … "05". */
   number: string;
   /** Phase name — shown both in the left list and on the card. */
@@ -168,7 +180,7 @@ export function BlockProcessCardSlider({
    * which also keeps the header title and phase list in sync for free.
    */
   const goTo = useCallback(
-    (index: number) => {
+    (index: number, behavior: ScrollBehavior = "smooth") => {
       const target = Math.min(Math.max(index, 0), count - 1);
       const nav = navRef.current;
       const pin = pinRef.current;
@@ -176,22 +188,55 @@ export function BlockProcessCardSlider({
       if (!nav || !pin || !section) return;
 
       if (!prefersReducedMotion && window.matchMedia(DESKTOP_QUERY).matches) {
-        // Centre of slide `target`'s slice of the pin window.
+        // Centre of slide `target`'s slice of the pin window, as an absolute
+        // page offset: the pin engages when the wrapper's top reaches
+        // `viewport − section`, and each slide owns `pinDistance / count` of
+        // travel after that. Absolute rather than relative to the current
+        // progress, because the fragment landing below calls this from
+        // *outside* the pin, where a clamped progress would make a relative
+        // step land short (and, under StrictMode's double effect, twice).
         const wanted = (target + 0.5) / count;
         const pinStart = window.innerHeight - section.offsetHeight;
-        const current = clamp01((pinStart - pin.getBoundingClientRect().top) / pinDistance);
-        window.scrollTo({
-          top: window.scrollY + (wanted - current) * pinDistance,
-          behavior: "smooth",
-        });
+        const pinTop = pin.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: pinTop - pinStart + wanted * pinDistance, behavior });
         return;
       }
 
       const step = stepWidth();
-      if (step > 0) nav.scrollTo({ left: target * step, behavior: "smooth" });
+      if (step > 0) nav.scrollTo({ left: target * step, behavior });
     },
     [count, pinDistance, prefersReducedMotion],
   );
+
+  /*
+    Fragment landing. A hash naming a phase `id` — on first load, after a
+    client navigation, or from a later in-page hash change — jumps straight to
+    that slide. Instant rather than smooth: this is arrival, not a click, and
+    the page is still held transparent by the transition when it runs after a
+    navigation.
+
+    Ordering matters and works out: this is a passive effect, so it runs after
+    Next's own hash/focus handling (a layout-phase effect) has had its turn and
+    found nothing, the hash having no DOM target by design.
+
+    Below the pin breakpoint `goTo` only moves the nav, so the section itself
+    is brought into view first. Above it, the page scroll *is* the slide.
+  */
+  useEffect(() => {
+    const jump = () => {
+      const hash = decodeURIComponent(window.location.hash.slice(1));
+      if (!hash) return;
+      const index = phases.findIndex((phase) => phase.id === hash);
+      if (index < 0) return;
+      if (prefersReducedMotion || !window.matchMedia(DESKTOP_QUERY).matches) {
+        sectionRef.current?.scrollIntoView({ block: "start", behavior: "auto" });
+      }
+      goTo(index, "auto");
+    };
+    jump();
+    window.addEventListener("hashchange", jump);
+    return () => window.removeEventListener("hashchange", jump);
+  }, [phases, goTo, prefersReducedMotion]);
 
   useEffect(() => {
     const pin = pinRef.current;
@@ -316,6 +361,9 @@ export function BlockProcessCardSlider({
         data-control="BlockProcessCardSlider"
         className={cn(
           "blockProcessCardSlider ng-grid relative overflow-x-clip",
+          // Only read by the unpinned fragment landing above; keeps the header
+          // clear of the 100px fixed nav.
+          "scroll-mt-[100px]",
           // Measured section rows. <1280: header / 50 / 0 (the collapsed
           // phase list) / 700 (cards) / 50. ≥1280: header / 550 / 200, the
           // last row being the strip the 700px cards overhang into.
