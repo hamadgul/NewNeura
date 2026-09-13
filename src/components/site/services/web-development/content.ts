@@ -400,7 +400,7 @@ const LANDSCAPE_DRAINAGE_PROZ: ProjectCard = {
  * is part of the href, so the filter row on `/work/` picks it up on mount.
  */
 export const PROJECTS: BlockProjectsHighlightProps = {
-  // `/services/web-development/#work` — the home card's "Our work" link target.
+  // `/services/web-development/#work` — fragment target for cross-page links.
   id: "work",
   title: "Where this shipped",
   button: { title: "All Web Development", href: "/work/?service=web-development" },

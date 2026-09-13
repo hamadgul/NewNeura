@@ -149,7 +149,6 @@ export const HERO_CARDS: HeroServiceCard[] = [
     subPages: [
       { title: "Websites", href: "/services/web-development/#websites" },
       { title: "SEO", href: "/services/web-development/#seo" },
-      { title: "Our work", href: "/services/web-development/#work" },
     ],
     mainColor: "#925434",
     contentColor: "#ffffff",
