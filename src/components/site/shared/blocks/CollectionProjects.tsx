@@ -111,8 +111,12 @@ export const COLLECTION_PROJECTS_PER_PAGE = 14;
  * The filter tiers.
  *
  * The taxonomy is hierarchical: Applied AI's count is the number of projects
- * carrying it or any of its four sub-services, which is why those hang off it
- * rather than sitting in the top row.
+ * carrying it or any of its four sub-services. Its sub-service pills
+ * (AI Strategy / Retrieval & Agents / Evaluation & Guardrails, one project
+ * each) were dropped on 2026-09-12 at the user's request — a second row of
+ * three one-project pills was more chrome than content. The `children`
+ * machinery stays, so a service can grow a sub-row again; the projects still
+ * carry the sub-service slugs, so `?service=ai-strategy` still filters.
  *
  * A project routinely carries more than one service — the routing platform is
  * both Applied AI and Data Intelligence — so these counts deliberately sum to
@@ -125,21 +129,7 @@ export const COLLECTION_PROJECTS_PER_PAGE = 14;
  */
 export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
   { label: "All", slug: "" },
-  {
-    label: "Applied AI",
-    slug: "applied-ai",
-    count: 2,
-    children: [
-      { label: "All", slug: "applied-ai" },
-      { label: "AI Strategy", slug: "ai-strategy", count: 1 },
-      { label: "Retrieval & Agents", slug: "retrieval-agents", count: 1 },
-      {
-        label: "Evaluation & Guardrails",
-        slug: "evaluation-guardrails",
-        count: 1,
-      },
-    ],
-  },
+  { label: "Applied AI", slug: "applied-ai", count: 2 },
   { label: "Web Development", slug: "web-development", count: 6 },
   { label: "App Development", slug: "app-development", count: 1 },
   { label: "Cloud & Infrastructure", slug: "cloud-infrastructure", count: 1 },
