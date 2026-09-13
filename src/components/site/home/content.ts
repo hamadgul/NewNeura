@@ -128,8 +128,6 @@ export const HERO_CARDS: HeroServiceCard[] = [
     subPages: [
       { title: "AI Strategy", href: "/services/applied-ai/strategy/" },
       { title: "Custom Models", href: "/services/applied-ai/models/" },
-      { title: "Retrieval & Agents", href: "/services/applied-ai/agents/" },
-      { title: "Evaluation & Guardrails", href: "/services/applied-ai/evaluation/" },
     ],
   },
   {

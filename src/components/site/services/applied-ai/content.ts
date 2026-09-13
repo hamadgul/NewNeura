@@ -55,17 +55,20 @@ export const META = {
 } as const;
 
 /**
- * The four child pages, in the order the source lists the deliverables they
- * are drawn from.
+ * The child pages linked from the parent header and the home card, in the
+ * order the source lists the deliverables they are drawn from.
  *
- * Exported separately because all four sub-service pages render this same list
- * as their sibling nav, with one entry flagged `current: true`.
+ * Exported separately because every sub-service page renders this same list
+ * as its sibling nav, with one entry flagged `current: true`.
+ *
+ * "Retrieval & Agents" (`/agents/`) and "Evaluation & Guardrails"
+ * (`/evaluation/`) were unlinked on 2026-09-12 at the user's request. The
+ * routes still build and stay in the sitemap and `SERVICE_CATALOG`; they are
+ * simply not surfaced in this grid any more.
  */
 export const APPLIED_AI_SUB_PAGES: ServiceSubPageLink[] = [
   { title: "AI Strategy", href: "/services/applied-ai/strategy/" },
   { title: "Custom Models", href: "/services/applied-ai/models/" },
-  { title: "Retrieval & Agents", href: "/services/applied-ai/agents/" },
-  { title: "Evaluation & Guardrails", href: "/services/applied-ai/evaluation/" },
 ];
 
 /**

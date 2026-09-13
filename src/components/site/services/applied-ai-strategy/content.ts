@@ -67,7 +67,7 @@ export const META = {
 } as const;
 
 /**
- * The four Applied AI children, reusing the parent page's single source of
+ * The linked Applied AI children, reusing the parent page's single source of
  * truth so the DOM order can never drift between the five pages that render it.
  * This page's own entry carries the `current` dot; matching on `href` against
  * `META.canonical` keeps that automatic rather than hand-flagged.
