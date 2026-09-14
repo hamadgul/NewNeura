@@ -28,6 +28,7 @@ import {
   PROJECT_OWNER,
   PROJECT_PRICING,
   PROJECT_TITLE,
+  PROJECT_VOICE,
 } from "@/components/site/work/foodtruckrentals/content";
 
 import { breadcrumbSchema, caseStudySchema } from "@/lib/seo";
@@ -140,6 +141,7 @@ export default function FoodTruckRentalsPage() {
         <BlockWysiwyg {...PROJECT_FRONT_DOOR} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
+        <BlockWysiwyg {...PROJECT_VOICE} />
         <GeneralCta {...PROJECT_CTA} />
       </main>
 

@@ -329,6 +329,9 @@ For the user. **Not written on the page**, and no later task should promote one 
 5. **The 48-hour reply promise** is the client's commitment (`5aa61cc`), not ours; the page
    describes the guard that holds its wording, not the promise.
 6. **Form conversions.** Resend holds the deliveries; nothing is in the repo.
+7. **Whose review "Brian Murphy" is.** A Google review (August 2026) is quoted in `PROJECT_VOICE`
+   on the assumption it is this client: the inquiry inbox is `Brian@foodtruckrentals.com`
+   (`app/actions/inquiry.ts:9`). Inferred from the address, not confirmed by the user — flagged.
 7. **The prices** are the client's published guidance (`lib/pricing.ts:9`); the page cites
    them only as the numbers the module carries.
 

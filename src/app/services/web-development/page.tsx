@@ -6,6 +6,7 @@ import {
   PROCESS,
   PROJECTS,
   WYSIWYG_CAPABILITIES,
+  WYSIWYG_VOICE,
   WYSIWYG_WHY,
 } from "@/components/site/services/web-development/content";
 import { MainNavigation } from "@/components/site/home/MainNavigation";
@@ -104,6 +105,7 @@ export default function WebDevelopmentPage() {
         <BlockWysiwyg {...WYSIWYG_CAPABILITIES} />
         <BlockWysiwyg {...WYSIWYG_WHY} />
         <BlockProjectsHighlight {...PROJECTS} />
+        <BlockWysiwyg {...WYSIWYG_VOICE} />
         <GeneralCta {...CTA} />
       </main>
 

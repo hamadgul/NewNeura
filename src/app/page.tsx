@@ -1,9 +1,10 @@
 import { BlockIntroGeneral } from "@/components/site/home/BlockIntroGeneral";
 import { BlockProjectsHighlight } from "@/components/site/home/BlockProjectsHighlight";
-import { HOME_CTA } from "@/components/site/home/content";
+import { HOME_CTA, HOME_VOICE } from "@/components/site/home/content";
 import { HomeHero } from "@/components/site/home/HomeHero";
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
+import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
 import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 
 import type { Metadata } from "next";
@@ -68,6 +69,7 @@ export default function Home() {
         <HomeHero />
         <BlockIntroGeneral />
         <BlockProjectsHighlight />
+        <BlockWysiwyg {...HOME_VOICE} />
         <GeneralCta {...HOME_CTA} />
       </main>
 

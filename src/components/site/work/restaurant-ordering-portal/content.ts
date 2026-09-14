@@ -127,11 +127,19 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
  * does end to end and that there is a back office, because those are the two
  * things the sections below then show. Each section carries its own detail.
  */
+/*
+  The 20% is the client's own figure, supplied by the user on 2026-09-13; the
+  dossier's "Unverifiable claims" 1 had kept the brief at "a punishing cut"
+  because the repo only holds a third-party comparison table. It is printed
+  here only. "Only the card-processing fee it was already paying" is the
+  precise version of the lead's "no app in the middle taking a cut": Square
+  still charges its rate, and the page must never imply otherwise.
+*/
 export const PROJECT_INTRO: BlockIntroDoubleProps = {
   labels: ["The brief", "What we built"],
   activeLabel: 0,
   statement:
-    "Third-party delivery apps take a punishing cut of every restaurant order. This one removes the middleman.",
+    "The restaurant was paying a delivery app 20% of every online order. Now it pays only the card-processing fee it was already paying.",
   body: "A branded ordering site and a back office to run it. The menu is read live from the Square catalog, the order is created in Square, the card is charged by Square, and the customer gets a text when the kitchen marks the order ready. Hours, menu, delivery and every credential are edited from the admin, so nothing waits on a developer. Next.js on Vercel, Postgres for the settings, 154 tests.",
 };
 

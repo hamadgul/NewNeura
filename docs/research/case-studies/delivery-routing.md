@@ -228,7 +228,11 @@ For the user. **Not written on the page**, and no later task should promote one 
 2. **"In daily production use."** The repo evidences *deployed and in use*: live on Fly since
    2026-08-14, 33 runs and 383 item codes on the volume at deploy time (`CLAUDE.md:89`).
    It does not evidence *daily*. **Left in place**, flagged.
-3. **Time or money saved.** No before/after exists anywhere in the repo. Not written.
+3. **Time or money saved.** No before/after exists anywhere in the repo. **Answered by the user
+   on 2026-09-13**, not by the repo: planning took one person "like 5 hours", now "5 minutes".
+   Printed in `PROJECT_OUTCOME` only, as "about five hours … about five minutes, by the client's
+   own count". Do not restate the digits elsewhere. A Google review by Ahad Mumtaz (August 2026)
+   describing this project is quoted in `PROJECT_VOICE`; its other half is quoted on `/`.
 4. **Number of deliveries per day in real use.** The 47-ticket sheet in the screenshots is
    synthetic and was chosen by us, not sampled. Never presented as the client's volume.
 5. **Google API spend avoided by the element budget.** The mechanism is real and checkable;

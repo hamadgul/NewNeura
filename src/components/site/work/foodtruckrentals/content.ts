@@ -330,3 +330,22 @@ export const PROJECT_CTA: GeneralCtaProps = {
   label: "Ask us to check your pages",
   href: "/contact/",
 };
+
+/**
+ * A client's Google review, quoted verbatim (an ellipsis marks a cut, nothing
+ * is reworded) and attributed as the profile displays it. The `quote` node is
+ * the block's pull-quote shape (`<h4><em>`); the attribution is an ordinary
+ * paragraph. Placed directly above the CTA band, which is where a trust
+ * signal earns its keep. Reviews are in the client's voice, so "he" and
+ * "Hamad" are theirs and do not break the site's "we" rule.
+ */
+export const PROJECT_VOICE: BlockWysiwygProps = {
+  title: "In the client's words",
+  body: [
+    {
+      type: "quote",
+      text: "“He took my ideas and turned them into a clean, modern, fast-loading site that looks great on every device. Communication was clear, deadlines were met, and the final result exceeded my expectations.”",
+    },
+    { type: "paragraph", text: "Brian Murphy, Google review, August 2026" },
+  ],
+};

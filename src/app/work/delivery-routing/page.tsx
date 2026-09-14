@@ -28,6 +28,7 @@ import {
   PROJECT_PARSE,
   PROJECT_RULES,
   PROJECT_TITLE,
+  PROJECT_VOICE,
 } from "@/components/site/work/delivery-routing/content";
 
 import { breadcrumbSchema, caseStudySchema } from "@/lib/seo";
@@ -157,6 +158,7 @@ export default function DeliveryRoutingPage() {
         <BlockMediaDoubleQuote {...PROJECT_MEDIA_QUOTE} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
+        <BlockWysiwyg {...PROJECT_VOICE} />
         <GeneralCta {...PROJECT_CTA} />
       </main>
 

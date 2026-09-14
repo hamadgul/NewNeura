@@ -249,7 +249,9 @@ For the user. **Not written on the page**, and no later task should promote one 
 1. **"A punishing cut."** The brief's opening (`PROJECT_INTRO.statement`, pre-existing) does
    not quote a figure, which is right: the only numbers in the repo are `docs/features.md`'s
    comparison table (15–30%+), which is the author's own summary of third-party pricing, not
-   something the code proves. Left as written; never turned into a percentage.
+   something the code proves. **Answered by the user on 2026-09-13**: the client "used to pay 20%
+   now they just pay the payment processing fee that they were already paying". The brief now
+   says so, in `PROJECT_INTRO.statement` only; "punishing cut" is gone.
 2. **"Keep the full value of every order"** (the pre-existing header `lead`). Square still
    charges its processing fee — `docs/features.md:3` itself says "beyond Square's standard
    transaction fee." **Rewritten** in this task to a claim the repo supports: no commission,

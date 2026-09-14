@@ -27,6 +27,7 @@ import type {
   PortfolioFilterItem,
   ProjectCard,
 } from "@/types/site";
+import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
 import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 
 const IMG = "/site/images";
@@ -483,4 +484,23 @@ export const HOME_CTA: GeneralCtaProps = {
   text: "Running the business on spreadsheets and phone calls?",
   label: "Tell us what's broken",
   href: "/contact/",
+};
+
+/**
+ * A client's Google review, quoted verbatim (an ellipsis marks a cut, nothing
+ * is reworded) and attributed as the profile displays it. The `quote` node is
+ * the block's pull-quote shape (`<h4><em>`); the attribution is an ordinary
+ * paragraph. Placed directly above the CTA band, which is where a trust
+ * signal earns its keep. Reviews are in the client's voice, so "he" and
+ * "Hamad" are theirs and do not break the site's "we" rule.
+ */
+export const HOME_VOICE: BlockWysiwygProps = {
+  title: "In a client's words",
+  body: [
+    {
+      type: "quote",
+      text: "“Communication was excellent throughout. We always knew where the project stood and never had to chase him for an update. He also finished faster than we expected. Highly recommend if you need custom software built.”",
+    },
+    { type: "paragraph", text: "Ahad Mumtaz, Google review, August 2026" },
+  ],
 };

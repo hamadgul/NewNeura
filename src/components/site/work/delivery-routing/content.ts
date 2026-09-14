@@ -123,19 +123,22 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
  * heading and the wide right column the copy, which is the block's own
  * two-column shape. A tagline would add a second, duplicate label above it.
  *
- * What this block may claim: the accounting invariant (the review screenshot
- * shows it: `47 tickets → 46 will deliver · 1 need review`, and the held row
- * carries the app's own reason, `unknown code: RTS`). What it may not: any
- * time or money saved — no before/after exists in the source repo (dossier,
- * "Unverifiable claims" 3). "Runs on Fly.io" was here too and is already in
- * the intro body; printed once now.
+ * What this block may claim: the before/after — "about five hours" to "about
+ * five minutes" — is the client's figure, supplied by the user on 2026-09-13
+ * (dossier "Unverifiable claims" 3 is answered by that turn, not by the repo,
+ * hence "by the client's own count" and "about" on both numbers); and the
+ * accounting invariant (the review screenshot shows it: `47 tickets → 46 will
+ * deliver · 1 need review`, and the held row carries the app's own reason,
+ * `unknown code: RTS`). The figure is printed HERE ONLY — the lead keeps "in
+ * minutes", and no other page restates the digits. "Runs on Fly.io" was here
+ * too and is already in the intro body; printed once now.
  */
 export const PROJECT_OUTCOME: BlockWysiwygProps = {
   title: "Outcome",
   body: [
     {
       type: "paragraph",
-      text: "Every ticket on the sheet ends the morning in one of two places: on a driver's route, or on a short list of rows a human has to look at, each with the reason it was held. The app calls that delivery accounting, and the two counts have to add back up to the sheet, so a ticket cannot go missing between the export and the vans. The client is not named here, and the screenshots below run on synthetic data.",
+      text: "Planning the day used to take one person about five hours. It now takes about five minutes, by the client's own count. Every ticket on the sheet ends the morning in one of two places: on a driver's route, or on a short list of rows a human has to look at, each with the reason it was held. The app calls that delivery accounting, and the two counts have to add back up to the sheet, so a ticket cannot go missing between the export and the vans. The client is not named here, and the screenshots below run on synthetic data.",
     },
   ],
 };
@@ -310,4 +313,23 @@ export const PROJECT_CTA: GeneralCtaProps = {
   text: "Still planning the day by hand?",
   label: "Tell us how your morning runs",
   href: "/contact/",
+};
+
+/**
+ * A client's Google review, quoted verbatim (an ellipsis marks a cut, nothing
+ * is reworded) and attributed as the profile displays it. The `quote` node is
+ * the block's pull-quote shape (`<h4><em>`); the attribution is an ordinary
+ * paragraph. Placed directly above the CTA band, which is where a trust
+ * signal earns its keep. Reviews are in the client's voice, so "he" and
+ * "Hamad" are theirs and do not break the site's "we" rule.
+ */
+export const PROJECT_VOICE: BlockWysiwygProps = {
+  title: "In the client's words",
+  body: [
+    {
+      type: "quote",
+      text: "“NeuraGul Labs built us a custom program that plans out our daily delivery routes, and it's been a big improvement over how we were handling it before. Our routing has a lot of moving parts from different vehicle sizes, time windows, priority orders, and rules that vary from driver to driver. He took the time to understand all of it up front instead of handing us something generic.”",
+    },
+    { type: "paragraph", text: "Ahad Mumtaz, Google review, August 2026" },
+  ],
 };
