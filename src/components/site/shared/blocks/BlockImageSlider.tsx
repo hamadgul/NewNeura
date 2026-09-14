@@ -193,7 +193,11 @@ export function BlockImageSlider({ images, className }: BlockImageSliderProps) {
         onPointerMove={onPointerMove}
         onPointerUp={endDrag}
         onPointerCancel={endDrag}
-        className="blockImageSlider__slider col-start-[1] col-end-[-1] row-start-2 flex touch-pan-y items-start gap-[10px] overflow-x-auto overscroll-x-contain select-none cursor-grab active:cursor-grabbing"
+        // No `touch-pan-y`: it forbade horizontal touch panning, so the strip
+        // could not be swiped on a phone at all (found 2026-09-14 via the
+        // review carousel, which had copied it). Touch is the browser's own,
+        // as the note above says — it just was not allowed to be.
+        className="blockImageSlider__slider col-start-[1] col-end-[-1] row-start-2 flex items-start gap-[10px] overflow-x-auto overscroll-x-contain select-none cursor-grab active:cursor-grabbing"
         style={{ scrollbarWidth: "none" }}
       >
         {/* Swiper's slidesOffsetBefore below 1280: the 15/30px page edge plus the

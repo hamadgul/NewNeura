@@ -144,13 +144,22 @@ export function BlockQuoteSlider({ title, quotes, className }: BlockQuoteSliderP
       >
         {/* The scroll port IS the flex container, so `w-full` on each slide
             resolves against a definite box. `scrollbarWidth` hides the bar
-            without touching globals.css. */}
+            without touching globals.css.
+
+            No `touch-pan-y`. It was here (copied from the image strip) and it
+            is exactly the wrong declaration for a horizontal scroller:
+            `touch-action: pan-y` tells the browser that touch may only pan
+            this element vertically, so a finger swipe across the reviews did
+            nothing — a synthesized touch swipe of 220px moved `scrollLeft` 0
+            on the phone while the same page scrolled vertically fine. With the
+            default `auto` the browser decides per gesture: a sideways swipe
+            scrolls the track, a downward one scrolls the page. */}
         <div
           ref={trackRef}
           role="region"
           aria-roledescription="carousel"
           aria-label={title}
-          className="blockQuoteSlider__track flex snap-x snap-mandatory touch-pan-y overflow-x-auto overscroll-x-contain"
+          className="blockQuoteSlider__track flex snap-x snap-mandatory overflow-x-auto overscroll-x-contain"
           style={{ scrollbarWidth: "none" }}
         >
           {quotes.map((slide, index) => (
