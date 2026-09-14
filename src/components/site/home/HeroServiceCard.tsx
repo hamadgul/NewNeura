@@ -409,6 +409,22 @@ export function HeroServiceCard({
                 </Link>
               ))}
             </div>
+          ) : card.blurb ? (
+            // The plain-language line that takes the links' slot on the one
+            // card that has it. Same row, same reveal, same `font-S`; on the
+            // strip it stops short of the plus in column 2, on the band it
+            // takes the links' 222px column under the title.
+            <p
+              className={cn(
+                "homeHero__cardBlurb font-S row-start-1 transition-opacity duration-500",
+                horizontal
+                  ? "col-start-1 max-w-[420px] self-start"
+                  : "col-start-1 mb-[10px] w-[222px] self-end",
+                contentRevealed ? "opacity-100" : "opacity-0",
+              )}
+            >
+              {card.blurb}
+            </p>
           ) : null}
 
           {/*
@@ -451,7 +467,8 @@ export function HeroServiceCard({
             `homeHero__cardSubtitle--none`: the source hides the subtitle below
             768px on the one card that carries sub-page links, and only there —
             measured 0×0 at 390px but 77×43 at 1440px. Without this the band
-            has no room left and the title lands on top of the links.
+            has no room left and the title lands on top of the links. The
+            `blurb` card takes the same slot, so it hides the subtitle too.
           */}
           <p
             className={cn(
@@ -459,7 +476,7 @@ export function HeroServiceCard({
               horizontal
                 ? "col-start-2 max-w-[160px] justify-self-end self-end text-right"
                 : "col-start-1 mt-[30px] justify-self-start self-end text-left",
-              !horizontal && card.subPages && "hidden",
+              !horizontal && (card.subPages || card.blurb) && "hidden",
               contentRevealed ? "opacity-100 blur-none" : "translate-y-[10px] opacity-0 blur-[10px]",
             )}
           >

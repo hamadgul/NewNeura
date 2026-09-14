@@ -52,8 +52,14 @@ export interface HeroServiceCard {
   mainColor: string;
   /** Text/icon colour on that ground. */
   contentColor: string;
-  /** Only Applied AI has these; every other card renders none. */
+  /** Only Web Development has these; every other card renders none. */
   subPages?: Array<{ title: string; href: string }>;
+  /**
+   * A plain-language line in the slot `subPages` would otherwise fill. Only
+   * Applied AI has one: a small-business reader does not know what "Applied
+   * AI" means for them, and two child-page links did not tell them.
+   */
+  blurb?: string;
 }
 
 /**

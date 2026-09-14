@@ -119,12 +119,16 @@ export const HERO_INTRO = {
 /**
  * The five service lines, in strip order.
  *
- * Two cards carry `subPages`. Applied AI's are real child routes (the two
- * that survived the 2026-09-12 trim). Web Development has no child routes, so
- * its three are fragment links into the parent page — a block for the first
- * and third, a slide of the pinned deliverables slider for "SEO" (see
+ * One card carries `subPages`. Web Development has no child routes, so its
+ * three are fragment links into the parent page — a block for the first and
+ * third, a slide of the pinned deliverables slider for "SEO" (see
  * `ProcessPhase.id`). Added 2026-09-13; "Web Apps" was floated for the middle
  * slot but nothing on that page is about web apps, so it was not linked to.
+ *
+ * Applied AI used to carry its two child routes (AI Strategy, Custom Models)
+ * in that slot. Replaced 2026-09-14 with a `blurb`, at the user's request:
+ * "get rid of the links and add some text there that a customer can relate
+ * to". The child pages are still reachable from the Applied AI page itself.
  *
  * Each card's image is a real screenshot of the project that best evidences
  * that line, so the strip doubles as proof rather than decoration.
@@ -153,10 +157,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     },
     mainColor: "#625653",
     contentColor: "#ffffff",
-    subPages: [
-      { title: "AI Strategy", href: "/services/applied-ai/strategy/" },
-      { title: "Custom Models", href: "/services/applied-ai/models/" },
-    ],
+    blurb: "Let AI make the everyday work easier, one job at a time.",
   },
   {
     slug: "web-development",
