@@ -103,13 +103,17 @@ export const HERO_INTRO = {
     The "for example" under the headline. Before this, the first concrete
     sentence on the page was the about block's, ~4300px of pinned scroll below
     — a reader who did not already know what Applied AI or Data Intelligence
-    meant for their business spent the whole card strip guessing. One em dash;
-    no "X, not Y". Adds one `font-SM` paragraph to the headline's grid row,
+    meant for their business spent the whole card strip guessing. The first
+    draft listed our own projects ("The dispatch app, the ordering site, the
+    back office"); the user asked for something "more general and relateable
+    and straightforward for prospective clients", so it now names the three
+    things a prospect can hire us for in their words, and the outcome. No em
+    dash; no "X, not Y". Adds one paragraph to the headline's grid row,
     which on phones is a `1fr` track that floors at content height — check
     320x568 as well as 390x844 if this string grows.
   */
   subheading:
-    "The dispatch app, the ordering site, the back office — the part of the business you still run by hand.",
+    "Websites, apps and custom tools that take the manual work off your plate.",
 };
 
 /**
