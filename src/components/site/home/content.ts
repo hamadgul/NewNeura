@@ -27,7 +27,7 @@ import type {
   PortfolioFilterItem,
   ProjectCard,
 } from "@/types/site";
-import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
+import type { BlockQuoteSliderProps } from "@/components/site/shared/blocks/BlockQuoteSlider";
 import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 
 const IMG = "/site/images";
@@ -509,20 +509,35 @@ export const HOME_CTA: GeneralCtaProps = {
 };
 
 /**
- * A client's Google review, quoted verbatim (an ellipsis marks a cut, nothing
- * is reworded) and attributed as the profile displays it. The `quote` node is
- * the block's pull-quote shape (`<h4><em>`); the attribution is an ordinary
- * paragraph. Placed directly above the CTA band, which is where a trust
- * signal earns its keep. Reviews are in the client's voice, so "he" and
+ * The clients' Google reviews, one per slide of `BlockQuoteSlider`. Quoted
+ * verbatim (an ellipsis marks a cut, nothing is reworded) and attributed as
+ * the profile displays them. Reviews are in the client's voice, so "he" and
  * "Hamad" are theirs and do not break the site's "we" rule.
+ *
+ * This was a single `BlockWysiwyg` quote (Ahad's) until 2026-09-14, when the
+ * user asked for "a carousel with the other reviews as well so more than 1
+ * review is here on the home page". Order: the software client, then the two
+ * website clients. Each review is also quoted, in whole or in part, on the
+ * page of the project it is about — a quote repeated across pages does not
+ * drift the way a figure does, so that duplication is deliberate.
  */
-export const HOME_VOICE: BlockWysiwygProps = {
-  title: "In a client's words",
-  body: [
+export const HOME_VOICES: BlockQuoteSliderProps = {
+  title: "In clients' words",
+  quotes: [
     {
-      type: "quote",
-      text: "“Communication was excellent throughout. We always knew where the project stood and never had to chase him for an update. He also finished faster than we expected. Highly recommend if you need custom software built.”",
+      quote:
+        "“Communication was excellent throughout. We always knew where the project stood and never had to chase him for an update. He also finished faster than we expected. Highly recommend if you need custom software built.”",
+      attribution: "Ahad Mumtaz, Google review, August 2026",
     },
-    { type: "paragraph", text: "Ahad Mumtaz, Google review, August 2026" },
+    {
+      quote:
+        "“Working with Hamad was professional, creative, and incredibly responsive. He took my ideas and turned them into a clean, modern, fast-loading site that looks great on every device.”",
+      attribution: "Brian Murphy, Google review, August 2026",
+    },
+    {
+      quote:
+        "“I used NeuraGul Labs for my local mechanic business. … My business the same week got an increase in calls.”",
+      attribution: "Ismaeel Weish, Google review, August 2026",
+    },
   ],
 };

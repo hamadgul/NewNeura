@@ -36,8 +36,7 @@
  */
 import Image from "next/image";
 import { type PointerEvent as ReactPointerEvent, useCallback, useEffect, useRef, useState } from "react";
-import { ButtonCircle } from "@/components/site/shared/buttons";
-import { ArrowIcon } from "@/components/site/shared/icons";
+import { SliderNavButton } from "@/components/site/shared/blocks/SliderNavButton";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { cn } from "@/lib/utils";
 
@@ -167,13 +166,20 @@ export function BlockImageSlider({ images, className }: BlockImageSliderProps) {
         </div>
 
         <div className="blockImageSlider__navigation--buttonContainer flex gap-[10px]">
-          <NavButton
+          <SliderNavButton
             label="Previous image"
             direction="prev"
             disabled={atStart}
             onClick={() => step(-1)}
+            className="buttonCircle--blockImageSlider__arrow--prev"
           />
-          <NavButton label="Next image" direction="next" disabled={atEnd} onClick={() => step(1)} />
+          <SliderNavButton
+            label="Next image"
+            direction="next"
+            disabled={atEnd}
+            onClick={() => step(1)}
+            className="buttonCircle--blockImageSlider__arrow--next"
+          />
         </div>
       </div>
 
@@ -218,47 +224,5 @@ export function BlockImageSlider({ images, className }: BlockImageSliderProps) {
         ))}
       </div>
     </div>
-  );
-}
-
-/**
- * `ButtonCircle` renders a non-interactive span when it has no `href`, so the
- * real `<button>` wraps it (`asStatic` marks the visual chip `aria-hidden`).
- * The source's slate tone — a #d6d6d6 fill that drops away when the button is
- * disabled — isn't one of ButtonCircle's variants, so it comes in by class;
- * the rising #262626 hover disc is ButtonCircle's own `black` fill.
- */
-function NavButton({
-  label,
-  direction,
-  disabled,
-  onClick,
-}: {
-  label: string;
-  direction: "prev" | "next";
-  disabled: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      disabled={disabled}
-      aria-label={label}
-      className="rounded-full disabled:cursor-default"
-    >
-      <ButtonCircle
-        asStatic
-        label={label}
-        className={cn(
-          "border-[#d6d6d6] text-[#262626]",
-          !disabled && "bg-[#d6d6d6]",
-          `buttonCircle--blockImageSlider__arrow--${direction}`,
-        )}
-        icon={
-          <ArrowIcon className={cn("h-[19px] w-[19px]", direction === "prev" && "rotate-180")} />
-        }
-      />
-    </button>
   );
 }
