@@ -31,6 +31,7 @@ import {
   PROJECT_OG_IMAGE,
   PROJECT_PERFORMANCE,
   PROJECT_TITLE,
+  PROJECT_VOICE,
   PROJECT_TOPICS,
 } from "@/components/site/work/new-york-mobile-mechanic/content";
 
@@ -161,6 +162,7 @@ export default function NewYorkMobileMechanicPage() {
         <BlockMediaDoubleQuote {...PROJECT_MEDIA_AI} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
+        <BlockWysiwyg {...PROJECT_VOICE} />
         <GeneralCta {...PROJECT_CTA} />
       </main>
 

@@ -337,7 +337,9 @@ export const PROJECT_CTA: GeneralCtaProps = {
  * the block's pull-quote shape (`<h4><em>`); the attribution is an ordinary
  * paragraph. Placed directly above the CTA band, which is where a trust
  * signal earns its keep. Reviews are in the client's voice, so "he" and
- * "Hamad" are theirs and do not break the site's "we" rule.
+ * "Hamad" are theirs and do not break the site's "we" rule. The user confirmed
+ * (2026-09-13) that this reviewer is this client; his opening sentence is on
+ * the Web Development service page.
  */
 export const PROJECT_VOICE: BlockWysiwygProps = {
   title: "In the client's words",

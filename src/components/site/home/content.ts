@@ -99,6 +99,17 @@ export const HERO_INTRO = {
   /** Shown <768px. */
   scrollCueMobile: "Swipe up to explore",
   heading: "We build the software that small companies run on",
+  /*
+    The "for example" under the headline. Before this, the first concrete
+    sentence on the page was the about block's, ~4300px of pinned scroll below
+    — a reader who did not already know what Applied AI or Data Intelligence
+    meant for their business spent the whole card strip guessing. One em dash;
+    no "X, not Y". Adds one `font-SM` paragraph to the headline's grid row,
+    which on phones is a `1fr` track that floors at content height — check
+    320x568 as well as 390x844 if this string grows.
+  */
+  subheading:
+    "The dispatch app, the ordering site, the back office — the part of the business you still run by hand.",
 };
 
 /**
@@ -113,12 +124,20 @@ export const HERO_INTRO = {
  *
  * Each card's image is a real screenshot of the project that best evidences
  * that line, so the strip doubles as proof rather than decoration.
+ *
+ * The sublines are written for a small-business owner who does not know what
+ * the five titles mean for them (2026-09-13, from a reader's feedback: "they
+ * may be trying to learn how to navigate the site while also figuring out
+ * what they can hire you for"). The titles stay — they are the nav, the URLs
+ * and the /work/ filter — but each subline now names the outcome in the
+ * customer's words, and no line is longer than the one it replaced: the slot
+ * is `font-S` in `max-w-[160px]`, and a third line would be a defect.
  */
 export const HERO_CARDS: HeroServiceCard[] = [
   {
     slug: "applied-ai",
     title: "Applied AI",
-    subtitle: ["Models in", "a real workflow"],
+    subtitle: ["AI on one job", "you can measure"],
     index: 1,
     total: 5,
     href: "/services/applied-ai/",
@@ -138,7 +157,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
   {
     slug: "web-development",
     title: "Web Development",
-    subtitle: ["Sites that load,", "rank and last"],
+    subtitle: ["A site that", "brings the calls"],
     index: 2,
     total: 5,
     href: "/services/web-development/",
@@ -158,7 +177,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
   {
     slug: "app-development",
     title: "App Development",
-    subtitle: ["Native quality,", "iOS and Android"],
+    subtitle: ["Your service,", "in the App Store"],
     index: 3,
     total: 5,
     href: "/services/app-development/",
@@ -193,7 +212,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
   {
     slug: "cloud-infrastructure",
     title: "Cloud & Infrastructure",
-    subtitle: ["Sized to load,", "priced to match"],
+    subtitle: ["A hosting bill", "that stays flat"],
     index: 4,
     total: 5,
     href: "/services/cloud-infrastructure/",
@@ -209,7 +228,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
   {
     slug: "data-intelligence",
     title: "Data Intelligence",
-    subtitle: ["Pipelines that", "end in a decision"],
+    subtitle: ["One number", "that always answers"],
     index: 5,
     total: 5,
     href: "/services/data-intelligence/",
@@ -231,11 +250,17 @@ export const HERO_CARDS: HeroServiceCard[] = [
  *
  * This is the one place on the homepage where Hamad is named — the "who you'd
  * be working with" beat. Everywhere else on this page the voice is "we".
+ *
+ * Paragraph order (2026-09-13): the reader's situation first, then who we are,
+ * then the three examples, then how a project starts — the four steps that
+ * `tagline` abbreviates, spelled out here because a reader said the process
+ * line on /process/ was where the site finally "clicked", and it should not
+ * take a click to reach. Hamad last.
  */
 export const INTRO_BLOCK = {
   title: "A team that holds the whole system, and one number that always answers.",
   tagline: "Talk. Scope. Build. Stay.",
-  text: "NeuraGul is a software development team in New York: developers, designers and engineers. We mostly build operational software: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's trade portal we maintain. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
+  text: "If part of your business still runs on a spreadsheet, a phone and one person's memory, that is what we build software for. We are a software development team in New York, and most of what we build is operational: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's trade portal we maintain. It starts with a half-hour call, then a written scope with a fixed price and a date, then working software in the first couple of weeks and every week after. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
   /*
     The anchor text was "More about us", which describes the click and not the
     destination. Internal anchor text is one of the few on-page signals that

@@ -440,14 +440,19 @@ export const CTA: GeneralCtaProps = {
  * paragraph. Placed directly above the CTA band, which is where a trust
  * signal earns its keep. Reviews are in the client's voice, so "he" and
  * "Hamad" are theirs and do not break the site's "we" rule.
+ *
+ * This is the opening sentence of the Food Truck Rentals client's review; the
+ * rest of it is quoted on /work/foodtruckrentals/. The mechanic client's
+ * review used to sit here and moved to /work/new-york-mobile-mechanic/ once
+ * the user confirmed whose it was (2026-09-13).
  */
 export const WYSIWYG_VOICE: BlockWysiwygProps = {
   title: "In a client's words",
   body: [
     {
       type: "quote",
-      text: "“I used NeuraGul Labs for my local mechanic business. … My business the same week got an increase in calls.”",
+      text: "“Working with Hamad was professional, creative, and incredibly responsive.”",
     },
-    { type: "paragraph", text: "Ismaeel Weish, Google review, August 2026" },
+    { type: "paragraph", text: "Brian Murphy, Google review, August 2026" },
   ],
 };

@@ -269,7 +269,13 @@ For the user. **Not written on the page**, and no later task should promote one 
 6. **Time or money the client saved, calls or bookings the site produced.** No analytics
    export exists in the repo (`analytics.googleAnalyticsId` is configured; no data is
    committed). Not written.
-7. **"Certified Technician", "Licensed & Insured".** The config comment says "verify each with
+7. **Ismaeel Weish's Google review** ("I used NeuraGul Labs for my local mechanic business …
+   My business the same week got an increase in calls", August 2026) is quoted in
+   `PROJECT_VOICE`. It was first kept off this page because the config names the owner as
+   Adam and carries no "786 Motosport"; **the user confirmed on 2026-09-13**: "ismaeel is the
+   mechanic". The causal caveat in 3 still stands — the review is his experience, printed as
+   such, not a measurement.
+8. **"Certified Technician", "Licensed & Insured".** The config comment says "verify each with
    Adam before launch" (`site.config.ts:107-108`). Not repeated on our page.
 
 ---

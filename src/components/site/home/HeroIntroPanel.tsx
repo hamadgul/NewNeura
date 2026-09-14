@@ -250,6 +250,18 @@ export function HeroIntroPanel() {
           here. It does nothing."
         */}
         <h1 className="font-3XL text-white">{HERO_INTRO.heading}</h1>
+        {/*
+          The concrete line under the headline — see `HERO_INTRO.subheading`.
+          Not `font-SM`: that class is unlayered in globals.css, so no responsive
+          utility can override it, and at its 20px phone size this line ran to
+          four lines at 320x568 and pushed the scroll cue 22px below the fold.
+          The utilities below are font-SM's own metrics from `md` up
+          (20px/27px, 24px/32.4px from 992px) and 16px/135% on phones, where the
+          row is a `1fr` track that floors at content height.
+        */}
+        <p className="mt-[15px] max-w-[620px] text-[16px] leading-[135%] text-white md:mt-[20px] md:text-[20px] md:leading-[27px] min-[992px]:text-[24px] min-[992px]:leading-[32.4px]">
+          {HERO_INTRO.subheading}
+        </p>
       </header>
     </div>
   );

@@ -331,7 +331,7 @@ For the user. **Not written on the page**, and no later task should promote one 
 6. **Form conversions.** Resend holds the deliveries; nothing is in the repo.
 7. **Whose review "Brian Murphy" is.** A Google review (August 2026) is quoted in `PROJECT_VOICE`
    on the assumption it is this client: the inquiry inbox is `Brian@foodtruckrentals.com`
-   (`app/actions/inquiry.ts:9`). Inferred from the address, not confirmed by the user — flagged.
+   (`app/actions/inquiry.ts:9`). **Confirmed by the user, 2026-09-13**: "brian is food truck".
 7. **The prices** are the client's published guidance (`lib/pricing.ts:9`); the page cites
    them only as the numbers the module carries.
 
