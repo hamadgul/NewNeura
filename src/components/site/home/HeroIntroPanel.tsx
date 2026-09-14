@@ -13,10 +13,12 @@ import { HERO_INTRO, HERO_VIDEO } from "./content";
  * relative to the frame the preloader reaches `opacity: 0`:
  *
  *   0.00 – 1.00s  the video lifts out of the dark: `brightness(1) → 0.5`.
- *   0.50 – 1.35s  eyebrow one arrives — `opacity 0 → 1`, `translateY(20px) → 0`.
- *   0.70 – 1.55s  eyebrow two, 200ms behind it.
- *   0.90 – 1.75s  the scroll cue, 200ms behind that.
- *   1.10 – 1.95s  the headline, same again, and it alone also unblurs from 10px.
+ *   0.50 – 1.35s  the eyebrow arrives — `opacity 0 → 1`, `translateY(20px) → 0`.
+ *   0.70 – 1.55s  the scroll cue, 200ms behind it.
+ *   0.90 – 1.75s  the headline, same again, and it alone also unblurs from 10px.
+ *
+ * (A second eyebrow used to sit between the first and the cue; removed
+ * 2026-09-14, and the two after it moved up one 200ms step.)
  *
  * Without this the hero simply existed the instant the overlay lifted, which is
  * most obvious on a phone: the preloader is the only thing that moves on the
@@ -38,11 +40,10 @@ const ENTER_EASE = "cubic-bezier(0.165, 0.84, 0.44, 1)";
 const LIFT_PX = 20;
 /** The headline's extra defocus, released on the same progress as its opacity. */
 const TITLE_BLUR_PX = 10;
-/** The 200ms stagger: two eyebrows, the scroll cue, then the headline. */
+/** The 200ms stagger: the eyebrow, the scroll cue, then the headline. */
 const DETAIL_ONE_DELAY_MS = 500;
-const DETAIL_TWO_DELAY_MS = 700;
-const DETAIL_THREE_DELAY_MS = 900;
-const TITLE_DELAY_MS = 1100;
+const DETAIL_THREE_DELAY_MS = 700;
+const TITLE_DELAY_MS = 900;
 /** ms for the video's brightness lift. */
 const BACKDROP_MS = 1000;
 /**
@@ -75,7 +76,7 @@ function enter(revealed: boolean, delayMs: number, blurPx = 0): CSSProperties {
 }
 
 /**
- * The fixed left-hand panel of the hero: office video, two eyebrow labels, a
+ * The fixed left-hand panel of the hero: office video, one eyebrow label, a
  * scroll cue, and the headline.
  *
  * It is `calc(100vw - 200px)` wide rather than full-bleed, which is what leaves
@@ -193,39 +194,12 @@ export function HeroIntroPanel() {
         {HERO_INTRO.eyebrowLeft}
       </span>
 
-      <span
-        // Ends on `main-end`, not `full-end`. Our eyebrow copy is longer than
-        // the layout's ("Built and maintained by the same team" against "A
-        // Market-Focused Approach"), so it wraps to two lines on a phone — and
-        // running to `-1` put that wrap hard against the screen edge with no
-        // margin at all. The source's own second eyebrow stops 10px short of
-        // the edge; `main-end` is 15px short, which is this site's gutter and
-        // the line every other element here already respects.
-        //
-        // <768 it STACKS under eyebrow one rather than sitting beside it, and
-        // that is a deliberate divergence from the source. The source puts both
-        // eyebrows on `grid-row: 3` with overlapping columns — `2/8` for one
-        // and `4/-1` for two — and gets away with it only because its strings
-        // are short enough that the first stops before the second's start line
-        // ("Architecture + Interiors", 24 characters). Ours is 32 and runs
-        // straight through it, so the two labels painted on top of each other
-        // on every phone. Same column span as eyebrow one (`2/-2`), and offset
-        // by exactly one line (`1lh` = 14px x 135% = 18.9px) plus a 6px gap, so
-        // the two read as one pair.
-        //
-        // It is `self-start` + a margin rather than `self-end`, which was the
-        // first attempt: `self-end` does clear the overlap, but it parks the
-        // second label at the bottom of the 100px band, 62px below the first
-        // and hard against the headline — so it read as the headline's kicker
-        // rather than as eyebrow one's partner. The source's own eyebrows sit
-        // at the band's TOP edge (they inherit `stretch`, so the text renders
-        // from the top), and the ~80px of air beneath them is what separates
-        // the pair from the headline. Anchoring both to the top keeps that.
-        className="homeHero__detail--two font-S relative z-10 row-start-2 self-center text-white [grid-column:7/span_6] max-md:row-start-3 max-md:mt-[calc(1lh_+_6px)] max-md:self-start max-md:[grid-column:2/-2]"
-        style={animate ? enter(revealed, DETAIL_TWO_DELAY_MS) : undefined}
-      >
-        {HERO_INTRO.eyebrowRight}
-      </span>
+      {/*
+        There used to be a second eyebrow here ("Built and maintained by the
+        same team"), stacked under the first on phones. Removed at the user's
+        request on 2026-09-14: "get rid of this text on the hero". The cue and
+        the headline moved 200ms earlier so the 200ms stagger is unbroken.
+      */}
 
       <div
         className="homeHero__detail--three font-S relative z-10 row-start-2 flex items-center justify-end gap-[10px] justify-self-end self-start text-white [grid-column:-5/-1] max-md:row-start-5 max-md:w-fit max-md:justify-start max-md:justify-self-start max-md:self-end max-md:border-b max-md:border-white max-md:pb-[8px] max-md:[grid-column:2/-1]"

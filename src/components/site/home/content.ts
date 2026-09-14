@@ -77,23 +77,17 @@ export const HERO_INTRO = {
     the fact, and it is the first geographic signal above the fold.
 
     Slot check, swept 320-1728px: one line everywhere except the 768-900px
-    band, where `[grid-column:1/7]` is only ~196px and it wraps to two. That is
-    not a defect there — `eyebrowRight` ("Built and maintained by the same
-    team") and the scroll cue already wrap to two lines at those widths, so the
-    row is two lines tall regardless and all three now align. Measured: the
-    title's top is unmoved (748px at 768, 744px at 800).
+    band, where `[grid-column:1/7]` is only ~196px and it wraps to two. The
+    scroll cue wraps to two there as well, so the row is two lines tall
+    regardless. Must still fit ONE line inside `main-start`/`main-end` at
+    320px, which is 270px; it does, with little to spare.
 
-    Below 768 these two STACK — see the note on `homeHero__detail--two` in
-    `HeroIntroPanel.tsx`. The source lays them out as overlapping grid areas on
-    one row and relies on its own strings being short enough not to meet
-    ("Architecture + Interiors" / "A Market-Focused Approach"); both of ours are
-    longer and collided on every phone until they were stacked. So if you
-    lengthen either string, check the phone widths, not just the desktop slot —
-    and each must still fit ONE line inside `main-start`/`main-end` at 320px,
-    which is 270px. Both currently do, with little to spare.
+    `eyebrowRight` ("Built and maintained by the same team") used to sit
+    beside this one and stack under it on phones. Removed 2026-09-14 at the
+    user's request; the panel's `max-md` grid rows are unchanged, so the
+    eyebrow band is simply shorter on phones now.
   */
   eyebrowLeft: "Software + Applied AI · New York",
-  eyebrowRight: "Built and maintained by the same team",
   /** Shown ≥768px. */
   scrollCueDesktop: "Scroll to explore",
   /** Shown <768px. */
