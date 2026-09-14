@@ -3,12 +3,14 @@ import {
   ABOUT_HEADER,
   ABOUT_INTRO,
   ABOUT_MEDIA,
+  ABOUT_VOICES,
   ABOUT_WYSIWYG,
   META,
 } from "@/components/site/about/content";
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { BlockQuoteSlider } from "@/components/site/shared/blocks/BlockQuoteSlider";
 import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import { BlockHeaderGeneral } from "@/components/site/shared/blocks/BlockHeaderGeneral";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -96,6 +98,7 @@ export default function AboutPage() {
         <BlockIntroDouble {...ABOUT_INTRO} />
         <BlockMediaDoubleQuote {...ABOUT_MEDIA} />
         <BlockWysiwyg {...ABOUT_WYSIWYG} />
+        <BlockQuoteSlider {...ABOUT_VOICES} />
         <GeneralCta {...ABOUT_CTA} />
       </main>
 

@@ -40,6 +40,7 @@ import type { BlockHeaderGeneralProps } from "@/components/site/shared/blocks/Bl
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
 import type { BlockMediaDoubleQuoteProps } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
 import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
+import { HOME_VOICES } from "@/components/site/home/content";
 import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 
 const IMG = "/site/images";
@@ -243,3 +244,14 @@ export const ABOUT_CTA: GeneralCtaProps = {
   label: "Write to Hamad",
   href: "/contact/",
 };
+
+/**
+ * The same three Google reviews the homepage carousel shows, in the same
+ * order. One list, not a copy: a review is quoted verbatim, so two copies
+ * could only ever diverge by mistake. Added 2026-09-14 at the user's request
+ * ("add the reviews carousel to the about page too") — About is the "who
+ * you'd be working with" page, and the reviews are what working with us was
+ * like, so it sits between that copy and the contact band.
+ */
+export const ABOUT_VOICES = HOME_VOICES;
+
