@@ -119,16 +119,17 @@ export const HERO_INTRO = {
 /**
  * The five service lines, in strip order.
  *
- * One card carries `subPages`. Web Development has no child routes, so its
- * three are fragment links into the parent page — a block for the first and
- * third, a slide of the pinned deliverables slider for "SEO" (see
- * `ProcessPhase.id`). Added 2026-09-13; "Web Apps" was floated for the middle
- * slot but nothing on that page is about web apps, so it was not linked to.
+ * No card carries `subPages` any more; two carry a `blurb` in that slot.
  *
- * Applied AI used to carry its two child routes (AI Strategy, Custom Models)
- * in that slot. Replaced 2026-09-14 with a `blurb`, at the user's request:
- * "get rid of the links and add some text there that a customer can relate
- * to". The child pages are still reachable from the Applied AI page itself.
+ * Applied AI used to list its two child routes (AI Strategy, Custom Models)
+ * there, and Web Development two fragment links into its own page
+ * ("Websites" → `#websites`, "SEO" → `#seo`, a slide of the pinned
+ * deliverables slider — see `ProcessPhase.id`). Both replaced 2026-09-14 at
+ * the user's request: "get rid of the links and add some text there that a
+ * customer can relate to", and for Web Development "include SEO and websites
+ * but make it understandable to anyone aka seo would be like get your site
+ * more visibility". So the blurb says "found on Google" and never "SEO". The
+ * child pages and fragments are still reachable from the service pages.
  *
  * Each card's image is a real screenshot of the project that best evidences
  * that line, so the strip doubles as proof rather than decoration.
@@ -172,10 +173,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
       width: 1200,
       height: 750,
     },
-    subPages: [
-      { title: "Websites", href: "/services/web-development/#websites" },
-      { title: "SEO", href: "/services/web-development/#seo" },
-    ],
+    blurb: "A website built around your business, and the work that gets it found on Google.",
     mainColor: "#925434",
     contentColor: "#ffffff",
   },

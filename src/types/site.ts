@@ -52,12 +52,13 @@ export interface HeroServiceCard {
   mainColor: string;
   /** Text/icon colour on that ground. */
   contentColor: string;
-  /** Only Web Development has these; every other card renders none. */
+  /** Sub-page links in the band above the title. No card carries them now. */
   subPages?: Array<{ title: string; href: string }>;
   /**
-   * A plain-language line in the slot `subPages` would otherwise fill. Only
-   * Applied AI has one: a small-business reader does not know what "Applied
-   * AI" means for them, and two child-page links did not tell them.
+   * A plain-language line in the slot `subPages` would otherwise fill.
+   * Applied AI and Web Development have one: a small-business reader does not
+   * know what "Applied AI" or "SEO" means for them, and links did not tell
+   * them.
    */
   blurb?: string;
 }
