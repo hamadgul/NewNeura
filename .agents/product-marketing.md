@@ -23,10 +23,16 @@ hasina-hijama-cupping}`.
 
 **The one primary action:** get the reader to `/contact/`. Concretely, the
 `GeneralCta` block (`src/components/site/shared/blocks/GeneralCta.tsx`),
-which today renders on exactly one route, `/process/`, with the copy "Tell
-us what's broken." → Contact → `/contact/`
-(`src/components/site/process/content.ts:251-255`). Ten later tasks add this
-same block to the foot of every case study. A case study is not the close —
+which closes every case study, every linked service page, `/`, `/about/`,
+`/work/` and `/process/` (2026-09-13). Each band is a pair: the line names
+the reader's own problem as a question ("Still planning the day by hand?"),
+and the button label names the next step in plain words ("Tell us how your
+morning runs", "Start with a half-hour call"). The label is never the bare
+noun "Contact": a question answered with a page name converts worse than one
+answered with an action, and every label has to stay true to what
+`/contact/` actually is — an email address and a phone number, read by
+Hamad, so "Send us last month's bill" is honest and "Book a call" (there is
+no scheduler) is not. A case study is not the close —
 it is the proof that de-risks the close. Its job is to get a reader who does
 not yet trust this studio to click through to `/contact/`, not to sell them
 on the page itself.

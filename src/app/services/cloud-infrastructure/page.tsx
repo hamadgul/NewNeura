@@ -1,4 +1,5 @@
 import {
+  CTA,
   HEADER,
   INTRO,
   META,
@@ -10,6 +11,7 @@ import {
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import { BlockHeaderServices, SERVICE_TONE } from "@/components/site/shared/blocks/BlockHeaderServices";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
 import { BlockProcessCardSlider } from "@/components/site/shared/blocks/BlockProcessCardSlider";
@@ -105,6 +107,7 @@ export default function CloudInfrastructurePage() {
         <BlockWysiwyg {...WYSIWYG_CAPABILITIES} />
         <BlockWysiwyg {...WYSIWYG_IT_SECURITY} />
         <BlockProjectsHighlight {...PROJECTS} />
+        <GeneralCta {...CTA} />
       </main>
 
       <NavigationFooter />

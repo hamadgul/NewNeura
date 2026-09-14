@@ -1,8 +1,10 @@
 import { BlockIntroGeneral } from "@/components/site/home/BlockIntroGeneral";
 import { BlockProjectsHighlight } from "@/components/site/home/BlockProjectsHighlight";
+import { HOME_CTA } from "@/components/site/home/content";
 import { HomeHero } from "@/components/site/home/HomeHero";
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
+import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 
 import type { Metadata } from "next";
 
@@ -52,8 +54,9 @@ export const metadata: Metadata = {
  * spacer being present and correctly sized.
  *
  * The layout this is adapted from closed with a social-feed section under the
- * project grid. There is no feed to render, so the page ends on the work and
- * hands off to the footer.
+ * project grid. There is no feed to render; the page ends on the work and then
+ * the contact band (`HOME_CTA`), so a reader who has just scrolled six projects
+ * is offered the next step before the footer takes over.
  */
 export default function Home() {
   return (
@@ -65,6 +68,7 @@ export default function Home() {
         <HomeHero />
         <BlockIntroGeneral />
         <BlockProjectsHighlight />
+        <GeneralCta {...HOME_CTA} />
       </main>
 
       <NavigationFooter />

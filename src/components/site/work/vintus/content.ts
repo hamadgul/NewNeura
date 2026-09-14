@@ -351,6 +351,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Has your catalogue outgrown the site that holds it?",
-  label: "Contact",
+  label: "Tell us about your catalogue",
   href: "/contact/",
 };

@@ -40,6 +40,7 @@ import type { BlockHeaderGeneralProps } from "@/components/site/shared/blocks/Bl
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
 import type { BlockMediaDoubleQuoteProps } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
 import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
+import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 
 const IMG = "/site/images";
 
@@ -227,4 +228,18 @@ export const ABOUT_WYSIWYG: BlockWysiwygProps = {
       text: "Whoever writes your scope is one of the people who builds it. Six months after launch, that is still the person who answers when something breaks.",
     },
   ],
+};
+
+/**
+ * `GeneralCta` — the contact band that closes the page. Declared here, not
+ * imported from `GeneralCta.tsx`: that block is `"use client"`, so a value
+ * imported from it into a server component arrives as a client-reference
+ * proxy and spreads to undefined props with no build error. The line names
+ * the reader's own problem; the label names the next step, never a page name
+ * ("Contact"). Every CTA band on the site follows that pair.
+ */
+export const ABOUT_CTA: GeneralCtaProps = {
+  text: "Want to talk to the person who would build it?",
+  label: "Write to Hamad",
+  href: "/contact/",
 };

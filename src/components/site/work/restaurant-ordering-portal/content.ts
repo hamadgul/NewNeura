@@ -333,6 +333,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Still paying an app a cut of your own customers' orders?",
-  label: "Contact",
+  label: "Tell us what you pay per order",
   href: "/contact/",
 };

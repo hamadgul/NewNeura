@@ -122,13 +122,20 @@ export const PROJECT_INTRO: BlockIntroDoubleProps = {
  * `title` only, no `tagline`: the narrow left column becomes the "Outcome"
  * heading and the wide right column the copy, which is the block's own
  * two-column shape. A tagline would add a second, duplicate label above it.
+ *
+ * What this block may claim: the accounting invariant (the review screenshot
+ * shows it: `47 tickets → 46 will deliver · 1 need review`, and the held row
+ * carries the app's own reason, `unknown code: RTS`). What it may not: any
+ * time or money saved — no before/after exists in the source repo (dossier,
+ * "Unverifiable claims" 3). "Runs on Fly.io" was here too and is already in
+ * the intro body; printed once now.
  */
 export const PROJECT_OUTCOME: BlockWysiwygProps = {
   title: "Outcome",
   body: [
     {
       type: "paragraph",
-      text: "Every ticket on the sheet ends the morning in one of two places: on a driver's route, or on a short list of rows a human has to look at. The app calls that delivery accounting, and the two numbers have to add back up to the sheet. It runs in production on Fly.io. The client is not named here, and the screenshots below run on synthetic data.",
+      text: "Every ticket on the sheet ends the morning in one of two places: on a driver's route, or on a short list of rows a human has to look at, each with the reason it was held. The app calls that delivery accounting, and the two counts have to add back up to the sheet, so a ticket cannot go missing between the export and the vans. The client is not named here, and the screenshots below run on synthetic data.",
     },
   ],
 };
@@ -301,6 +308,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Still planning the day by hand?",
-  label: "Contact",
+  label: "Tell us how your morning runs",
   href: "/contact/",
 };

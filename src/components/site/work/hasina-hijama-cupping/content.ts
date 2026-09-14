@@ -317,6 +317,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Does your Google listing point somewhere it should not?",
-  label: "Contact",
+  label: "Ask us to check your listing",
   href: "/contact/",
 };

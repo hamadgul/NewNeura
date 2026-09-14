@@ -327,6 +327,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Do two of your pages compete for the same search?",
-  label: "Contact",
+  label: "Ask us to check your pages",
   href: "/contact/",
 };

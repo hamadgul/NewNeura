@@ -1,4 +1,5 @@
 import {
+  ABOUT_CTA,
   ABOUT_HEADER,
   ABOUT_INTRO,
   ABOUT_MEDIA,
@@ -8,6 +9,7 @@ import {
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import { BlockHeaderGeneral } from "@/components/site/shared/blocks/BlockHeaderGeneral";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
 import { BlockMediaDoubleQuote } from "@/components/site/shared/blocks/BlockMediaDoubleQuote";
@@ -94,6 +96,7 @@ export default function AboutPage() {
         <BlockIntroDouble {...ABOUT_INTRO} />
         <BlockMediaDoubleQuote {...ABOUT_MEDIA} />
         <BlockWysiwyg {...ABOUT_WYSIWYG} />
+        <GeneralCta {...ABOUT_CTA} />
       </main>
 
       <NavigationFooter />

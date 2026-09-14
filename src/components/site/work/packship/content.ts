@@ -312,6 +312,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Have an app that needs to reach the App Store?",
-  label: "Contact",
+  label: "Tell us about your app",
   href: "/contact/",
 };

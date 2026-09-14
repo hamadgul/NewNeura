@@ -419,6 +419,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Is your site bringing the calls?",
-  label: "Contact",
+  label: "Ask us to look at your site",
   href: "/contact/",
 };

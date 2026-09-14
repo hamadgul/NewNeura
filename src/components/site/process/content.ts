@@ -247,9 +247,14 @@ export const PROCESS_FULL_IMAGE: BlockImageFullImage = {
  * The old target was `/careers/`. There is no careers page and there must not be
  * one, so the CTA points at `/contact/` and the copy is the source's own
  * `contact_lead`.
+ *
+ * The button label names what the reader gets, which is step 01 above: a
+ * half-hour call. It was the bare noun "Contact", which answered the line's
+ * question with a page name. Every CTA band on the site now follows the same
+ * rule: the line names the reader's problem, the label names the next step.
  */
 export const PROCESS_GENERAL_CTA: GeneralCtaProps = {
   text: "Tell us what's broken.",
-  label: "Contact",
+  label: "Start with a half-hour call",
   href: "/contact/",
 };

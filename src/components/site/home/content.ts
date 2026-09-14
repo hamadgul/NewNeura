@@ -27,6 +27,7 @@ import type {
   PortfolioFilterItem,
   ProjectCard,
 } from "@/types/site";
+import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 
 const IMG = "/site/images";
 const VIDEOS = "/site/videos";
@@ -469,3 +470,17 @@ export const PRELOADER_WORDS: Array<[string, string]> = [
 
 export const FOOTER_COPYRIGHT = "© 2026 NeuraGul. All rights reserved.";
 export const FOOTER_BACK_TO_TOP = "Back to top";
+
+/**
+ * `GeneralCta` — the contact band that closes the page. Declared here, not
+ * imported from `GeneralCta.tsx`: that block is `"use client"`, so a value
+ * imported from it into a server component arrives as a client-reference
+ * proxy and spreads to undefined props with no build error. The line names
+ * the reader's own problem; the label names the next step, never a page name
+ * ("Contact"). Every CTA band on the site follows that pair.
+ */
+export const HOME_CTA: GeneralCtaProps = {
+  text: "Running the business on spreadsheets and phone calls?",
+  label: "Tell us what's broken",
+  href: "/contact/",
+};

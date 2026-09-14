@@ -37,6 +37,7 @@ import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/Bloc
 import type { BlockProcessCardSliderProps } from "@/components/site/shared/blocks/BlockProcessCardSlider";
 import type { BlockProjectsHighlightProps } from "@/components/site/shared/blocks/BlockProjectsHighlight";
 import type { BlockWysiwygProps } from "@/components/site/shared/blocks/BlockWysiwyg";
+import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 import type { ProjectCard } from "@/types/site";
 
 const IMG = "/site/images";
@@ -325,4 +326,18 @@ export const PROJECTS: BlockProjectsHighlightProps = {
       large: PACKSHIP,
     },
   ],
+};
+
+/**
+ * `GeneralCta` — the contact band that closes the page. Declared here, not
+ * imported from `GeneralCta.tsx`: that block is `"use client"`, so a value
+ * imported from it into a server component arrives as a client-reference
+ * proxy and spreads to undefined props with no build error. The line names
+ * the reader's own problem; the label names the next step, never a page name
+ * ("Contact"). Every CTA band on the site follows that pair.
+ */
+export const CTA: GeneralCtaProps = {
+  text: "Want a model inside the tool your team already uses?",
+  label: "Tell us which tool",
+  href: "/contact/",
 };

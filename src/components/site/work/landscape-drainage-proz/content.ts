@@ -314,6 +314,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Do your biggest orders still start with a phone call?",
-  label: "Contact",
+  label: "Tell us how you take orders",
   href: "/contact/",
 };

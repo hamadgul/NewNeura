@@ -1,10 +1,12 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import { BlockHeaderPortfolio } from "@/components/site/shared/blocks/BlockHeaderPortfolio";
 import { CollectionProjects } from "@/components/site/shared/blocks/CollectionProjects";
 import {
   PORTFOLIO_CANONICAL,
+  PORTFOLIO_CTA,
   PORTFOLIO_DESCRIPTION,
   PORTFOLIO_HEADER,
   PORTFOLIO_OG_IMAGE,
@@ -92,6 +94,7 @@ export default function WorkPage() {
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderPortfolio {...PORTFOLIO_HEADER} />
         <CollectionProjects projects={PORTFOLIO_PROJECTS} />
+        <GeneralCta {...PORTFOLIO_CTA} />
       </main>
 
       <NavigationFooter />

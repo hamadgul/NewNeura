@@ -40,6 +40,7 @@ import type {
   CollectionProjectsProject,
 } from "@/components/site/shared/blocks/CollectionProjects";
 import type { BlockHeaderPortfolioProps } from "@/components/site/shared/blocks/BlockHeaderPortfolio";
+import type { GeneralCtaProps } from "@/components/site/shared/blocks/GeneralCta";
 
 const IMAGES = "/site/images";
 const VIDEOS = "/site/videos";
@@ -312,3 +313,17 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     },
   },
 ];
+
+/**
+ * `GeneralCta` — the contact band that closes the page. Declared here, not
+ * imported from `GeneralCta.tsx`: that block is `"use client"`, so a value
+ * imported from it into a server component arrives as a client-reference
+ * proxy and spreads to undefined props with no build error. The line names
+ * the reader's own problem; the label names the next step, never a page name
+ * ("Contact"). Every CTA band on the site follows that pair.
+ */
+export const PORTFOLIO_CTA: GeneralCtaProps = {
+  text: "Have a problem that looks like one of these?",
+  label: "Tell us about it",
+  href: "/contact/",
+};

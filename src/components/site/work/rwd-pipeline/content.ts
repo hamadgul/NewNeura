@@ -350,6 +350,6 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
  */
 export const PROJECT_CTA: GeneralCtaProps = {
   text: "Still rewriting the ETL for every new dataset?",
-  label: "Contact",
+  label: "Tell us about your pipeline",
   href: "/contact/",
 };
