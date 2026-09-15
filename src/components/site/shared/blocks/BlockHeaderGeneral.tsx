@@ -108,7 +108,12 @@ export function BlockHeaderGeneral({
         // 70vh/50vh (630/450 at 900; 590.8/422 at 844). At xl it collapses to a
         // single 80vh row with a 600px floor — which is what makes the children's
         // `xl:min-h-[600px]` live rather than dead code.
-        "blockHeaderGeneral ng-grid mb-[100px] h-[120vh] grid-rows-[7fr_5fr]",
+        // `mb`: the source's 100px at every width; 60px from xl since
+        // 2026-09-15 (user: "also close the gap on the about page", the day
+        // after the same ask on /work/). 60 is the site's own xl block rhythm,
+        // so the intro's tagline now sits one block-step under the banner. The
+        // block is shared with /process/, which moves with it.
+        "blockHeaderGeneral ng-grid mb-[100px] h-[120vh] grid-rows-[7fr_5fr] xl:mb-[60px]",
         "bg-[#ececec] text-[16px] leading-[21.6px] text-[#111111]",
         "xl:h-[80vh] xl:min-h-[600px] xl:grid-rows-[1fr]",
         className,
