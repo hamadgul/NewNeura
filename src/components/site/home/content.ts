@@ -113,7 +113,13 @@ export const HERO_INTRO = {
 /**
  * The five service lines, in strip order.
  *
- * No card carries `subPages` any more; two carry a `blurb` in that slot.
+ * No card carries `subPages` any more; every card carries a `blurb` in that
+ * slot — the customer-voice sentence — beside the two-line `subtitle`. On the
+ * desktop strip both show; on the phone band only the blurb does (user,
+ * 2026-09-14: "Keep the best ones for mobile but both for desktop"). The
+ * three later blurbs (App, Cloud, Data) were added the same day so the strip
+ * stops alternating between cards that explain themselves and cards that do
+ * not.
  *
  * Applied AI used to list its two child routes (AI Strategy, Custom Models)
  * there, and Web Development two fragment links into its own page
@@ -175,6 +181,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     slug: "app-development",
     title: "App Development",
     subtitle: ["Your service,", "in the App Store"],
+    blurb: "An app your customers can download, on iPhone and Android.",
     index: 3,
     total: 5,
     href: "/services/app-development/",
@@ -210,6 +217,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     slug: "cloud-infrastructure",
     title: "Cloud & Infrastructure",
     subtitle: ["A hosting bill", "that stays flat"],
+    blurb: "Hosting that stays up and fast, with a bill that doesn't surprise you.",
     index: 4,
     total: 5,
     href: "/services/cloud-infrastructure/",
@@ -226,6 +234,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     slug: "data-intelligence",
     title: "Data Intelligence",
     subtitle: ["One number", "that always answers"],
+    blurb: "Your numbers in one place, so you can see what's working without chasing anyone.",
     index: 5,
     total: 5,
     href: "/services/data-intelligence/",

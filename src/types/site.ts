@@ -55,10 +55,10 @@ export interface HeroServiceCard {
   /** Sub-page links in the band above the title. No card carries them now. */
   subPages?: Array<{ title: string; href: string }>;
   /**
-   * A plain-language line in the slot `subPages` would otherwise fill.
-   * Applied AI and Web Development have one: a small-business reader does not
-   * know what "Applied AI" or "SEO" means for them, and links did not tell
-   * them.
+   * A plain-language line in the slot `subPages` would otherwise fill — the
+   * customer-voice sentence under the card's name. Every card has one; on the
+   * phone band it is the only caption (the `subtitle` hides), on the desktop
+   * strip both show.
    */
   blurb?: string;
 }
