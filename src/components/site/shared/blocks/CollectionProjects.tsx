@@ -614,8 +614,17 @@ export function CollectionProjects({
       >
         <div id="filterHeader" className="filterApi__filterWrapper">
           {/* 37.594px = 21.6px line + 15px pill padding + the 1px underline. */}
+          {/*
+            Swipes on the pills scroll the row only, never the page (the user,
+            on the homepage filter: "it should only be horizontal"). Without
+            `touch-pan-x`, a mostly-down swipe was read as vertical. The row
+            overflows below ~962px (932px of pills at 393, 962 at 768) and fits
+            from 1024, so `lg:touch-auto` returns the page its vertical swipes
+            there. `overscroll-x-contain` stops a swipe past either end from
+            becoming a back/forward gesture.
+          */}
           <div className="filterApi__Overflow filterApi__Overflow--one relative h-[37.594px] overflow-hidden">
-            <div className="filterApi__Wrapper flex gap-[30px] overflow-x-auto whitespace-nowrap px-[15px] [scrollbar-width:none] md:px-[30px] xl:px-0">
+            <div className="filterApi__Wrapper flex touch-pan-x gap-[30px] overflow-x-auto overscroll-x-contain whitespace-nowrap px-[15px] [scrollbar-width:none] md:px-[30px] lg:touch-auto xl:px-0">
               {filters.map((filter) => (
                 <FilterButton
                   key={filter.slug || "all"}
@@ -634,8 +643,13 @@ export function CollectionProjects({
             with children is picked.
           */}
           <div className="filterApi__Overflow relative h-[55px] overflow-hidden">
-            <div className="filterApi__Wrapper flex gap-[30px] overflow-x-auto whitespace-nowrap px-[15px] [scrollbar-width:none] md:px-[30px] xl:px-0">
-              <div className="filterApi__itemWrapper flex h-[55px] items-start gap-[30px]">
+            <div className="filterApi__Wrapper flex gap-[30px] overflow-x-auto overscroll-x-contain whitespace-nowrap px-[15px] [scrollbar-width:none] md:px-[30px] xl:px-0">
+              {/* The lock sits on the pills, not the band: the band is 55px
+                tall and full width even when empty (it is empty for every
+                service today), and `touch-pan-x` there would make a vertical
+                swipe across that strip of white do nothing. The item wrapper
+                is only as wide as its pills. */}
+              <div className="filterApi__itemWrapper flex h-[55px] touch-pan-x items-start gap-[30px] lg:touch-auto">
                 {subFilters.map((child) => (
                   // The sub-row's "All" carries the parent's own slug, so a
                   // plain slug comparison marks it active for the whole service.
