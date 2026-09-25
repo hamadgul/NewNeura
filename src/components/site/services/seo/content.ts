@@ -63,8 +63,9 @@ export const META = {
  * Parent-service header. `service: "seo"` selects `--ng-seo` (#4d5e52), a
  * dark ground the tone table pairs with white type.
  *
- * The backdrop is the Yankocy rebuild's home page: the one project on this
- * page that is both a new site and an SEO job.
+ * The backdrop is the New York Mobile Mechanic home page, the site built to
+ * rank service by service and borough by borough. It was the Yankocy rebuild
+ * until 2026-09-25, when the user swapped it to match the homepage SEO card.
  */
 export const HEADER: BlockHeaderServicesProps = {
   service: "seo",
@@ -73,7 +74,7 @@ export const HEADER: BlockHeaderServicesProps = {
   title: "SEO",
   titleSize: "3XL",
   image: {
-    src: `${IMG}/yankocy.jpg`,
+    src: `${IMG}/nymm.jpg`,
     alt: "",
     width: 1200,
     height: 750,

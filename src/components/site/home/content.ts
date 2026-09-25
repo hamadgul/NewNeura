@@ -192,8 +192,8 @@ export const HERO_CARDS: HeroServiceCard[] = [
     total: 6,
     href: "/services/seo/",
     image: {
-      src: `${IMG}/yankocy.jpg`,
-      alt: "The rebuilt Yankocy wholesale building materials site",
+      src: `${IMG}/nymm.jpg`,
+      alt: "The New York Mobile Mechanic home page",
       width: 1200,
       height: 750,
     },

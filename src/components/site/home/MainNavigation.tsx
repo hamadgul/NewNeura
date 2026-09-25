@@ -18,6 +18,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { usePathname } from "next/navigation";
 import { ServicesMenu } from "@/components/site/shared/ServicesMenu";
 import { MenuIcon, Wordmark } from "@/components/site/shared/icons";
@@ -150,8 +151,20 @@ function isCurrentSection(pathname: string | null, href: string) {
  */
 /** Each column's own length, headings included — they animate too. */
 const SERVICE_COLUMN_COUNT = SERVICE_LINKS.length + 1;
-const LINK_COLUMN_COUNT =
-  EXPLORE_GROUP.items.length + COMPANY_GROUP.items.length + 2;
+
+/**
+ * Below 768 the Studio group leads with a Home link. The wordmark is the only
+ * other way home, and on a phone it is gone the moment the page scrolls (see
+ * `WORDMARK_SCROLL_HIDE_PX`), so a visitor who opens the menu mid-page had no
+ * route back to the home page. Desktop is left as measured.
+ *
+ * Menu-only: the footer renders the same groups and keeps its own list.
+ */
+const MOBILE_MENU_QUERY = "(max-width: 767px)";
+const MOBILE_COMPANY_GROUP: NavGroup = {
+  ...COMPANY_GROUP,
+  items: [{ label: "Home", href: "/" }, ...COMPANY_GROUP.items],
+};
 
 /**
  * When the panel may leave the DOM: after the last thing inside it has gone.
@@ -281,6 +294,10 @@ export function MainNavigation({
   // render agree; the effect below corrects it on mount, which also covers a
   // reload that restores a scrolled position.
   const [scrolled, setScrolled] = useState(false);
+  const mobileMenu = useMediaQuery(MOBILE_MENU_QUERY);
+  const companyGroup = mobileMenu ? MOBILE_COMPANY_GROUP : COMPANY_GROUP;
+  const linkColumnCount =
+    EXPLORE_GROUP.items.length + companyGroup.items.length + 2;
 
   const overlayRef = useRef<HTMLElement | null>(null);
   const toggleRef = useRef<HTMLButtonElement | null>(null);
@@ -721,13 +738,15 @@ export function MainNavigation({
                 <NavGroupColumn
                   group={EXPLORE_GROUP}
                   startIndex={0}
+                  count={linkColumnCount}
                   animateIn={animateIn}
                   onNavigate={close}
                   pathname={pathname}
                 />
                 <NavGroupColumn
-                  group={COMPANY_GROUP}
+                  group={companyGroup}
                   startIndex={EXPLORE_GROUP.items.length + 1}
+                  count={linkColumnCount}
                   animateIn={animateIn}
                   onNavigate={close}
                   pathname={pathname}
@@ -766,6 +785,8 @@ export function MainNavigation({
 interface NavGroupColumnProps {
   group: NavGroup;
   startIndex: number;
+  /** Items in the whole link column, headings included — closing runs backwards. */
+  count: number;
   animateIn: boolean;
   onNavigate: () => void;
   pathname: string | null;
@@ -774,6 +795,7 @@ interface NavGroupColumnProps {
 function NavGroupColumn({
   group,
   startIndex,
+  count,
   animateIn,
   onNavigate,
   pathname,
@@ -781,7 +803,7 @@ function NavGroupColumn({
   const headingProps = staggerProps(
     startIndex,
     animateIn,
-    LINK_COLUMN_COUNT,
+    count,
     OPEN_LINK_STAGGER_MS,
   );
   return (
@@ -800,7 +822,7 @@ function NavGroupColumn({
           const props = staggerProps(
             startIndex + 1 + i,
             animateIn,
-            LINK_COLUMN_COUNT,
+            count,
             OPEN_LINK_STAGGER_MS,
           );
           return (
