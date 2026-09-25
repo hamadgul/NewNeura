@@ -2,7 +2,7 @@
 
 *Also listed as NeuraGul Labs.*
 
-> NeuraGul is a software development team serving New York City and Fairfield County, Connecticut. We build custom software, websites, iOS and Android apps, cloud infrastructure, data pipelines and applied AI systems for small companies. The people who scope a project are the people who write it, and the same people are still reachable six months after launch.
+> NeuraGul is a software development team serving New York City and Fairfield County, Connecticut. We build custom software, websites, SEO, iOS and Android apps, cloud infrastructure, data pipelines and applied AI systems for small companies. The people who scope a project are the people who write it, and the same people are still reachable six months after launch.
 
 Contact: Hamad Gul — hamad@neuragul.com — (203) 685 9193
 Google Business Profile: https://www.google.com/maps?cid=6246670277837173462
@@ -17,6 +17,7 @@ Queens NY (Jamaica, Ridgewood, Kew Gardens, Kew Gardens Hills, Forest Hills), Br
 - [Retrieval & Agents](https://neuragul.com/services/applied-ai/agents/): RAG and agent workflows aimed at a single measurable outcome.
 - [Evaluation & Guardrails](https://neuragul.com/services/applied-ai/evaluation/): Test sets, regression suites and safety limits, so a system holds up once real users touch it.
 - [Web Development](https://neuragul.com/services/web-development/): Next.js and Shopify sites that load fast, rank across the five boroughs, and stay maintainable after handover.
+- [SEO](https://neuragul.com/services/seo/): Audits that end in fixes, site moves that keep their rankings, Shopify SEO, structured data, and pages written for what customers actually search.
 - [App Development](https://neuragul.com/services/app-development/): Native-quality iOS and Android apps.
 - [Cloud & Infrastructure](https://neuragul.com/services/cloud-infrastructure/): Hosting, CI/CD and monitoring sized to real load, with a predictable bill.
 - [Data Intelligence](https://neuragul.com/services/data-intelligence/): ETL pipelines, dashboards and database migrations that end in a decision.
@@ -28,8 +29,9 @@ Queens NY (Jamaica, Ridgewood, Kew Gardens, Kew Gardens Hills, Forest Hills), Br
 - [Food Truck Rentals](https://neuragul.com/work/foodtruckrentals/): A 24-page Next.js site for a New York brand-activation company: one pricing module generating the price sheet, both llms files and the JSON-LD offers on seven pages; 141 Vitest tests, one of which fails the run if a second page claims the search query the owner page holds.
 - [New York Mobile Mechanic](https://neuragul.com/work/new-york-mobile-mechanic/): A Next.js site for a 24/7 mobile mechanic: 117 pages keyed off one config file, a service-by-borough matrix of forty-five pages plus thirty single-question pages, JSON-LD on every one of them, Lighthouse at 100 across all four categories.
 - [New York Fine Foods](https://neuragul.com/work/new-york-fine-foods/): A Next.js site for a NYC catering, pizza-truck and mobile-bar brand: twenty-six pages from a measured six, ten borough and regional catering pages each written around a local fact, four pizza-truck pages under the hub that already ranked, JSON-LD on every service page.
-- [Vintus](https://neuragul.com/work/vintus/): A wine importer's trade portal on WordPress: 703 wines and 1,600 vintage pages under 161 producers, four filter forms keyed to producer and wine, a tech sheet with the rep's own price and a sell-sheet generator.
-- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Dawn storefront for an NDS drainage dealer: eleven products in two collections, two hand-written Custom Liquid sections, a municipal quote path, Google Ads conversion labels on seven of its eleven storefront events, from page view to purchase, and structured data on every route.
+- [Yankocy](https://neuragul.com/work/yankocy/): A 26-page rebuild of a Connecticut wholesale building materials distributor's nine-page GoDaddy site, being switched over now: thirteen catalogue pages with spec tables, 37 old addresses each redirected in one hop, structured data on every page, and a Steeltex product page that went from 47 to 88 in Lighthouse on mobile.
+- [Landscape Drainage Proz](https://neuragul.com/work/landscape-drainage-proz/): A Dawn storefront for an NDS drainage dealer, then an SEO audit and repair: structured data moved into the theme, 70 redirects each landing in one hop, one H1 per page, a fake review rating and unsourced product claims removed, and seven guides with specs from NDS documents. Also a municipal quote path and Google Ads conversion labels on seven of eleven storefront events.
+- [Halal Bridal](https://neuragul.com/work/halal-bridal/): SEO for a made-to-measure Shopify bridal store: 33 product titles rewritten, collections from 2 to 10, 17 new posts and structured data on every page type, shipped as 524 logged Admin API changes.
 - [Restaurant ordering portal](https://neuragul.com/work/restaurant-ordering-portal/): Online ordering that lets a pizzeria take orders directly and skip third-party delivery-app commissions.
 - [Real-World Data Pipeline](https://neuragul.com/work/rwd-pipeline/): A 0-to-1 ETL pipeline normalising real-world clinical data from hospital records, claims and wearables into one OMOP common data model on Google Cloud. Early cancer detection research ran on top of it.
 - [Hasina Hijama Cupping](https://neuragul.com/work/hasina-hijama-cupping/): A ten-page Next.js site for a Queens cupping practice: six pages that each answer one question its customers search, business data on every page with the rating left to Google, and one host that every canonical, sitemap entry and share image agrees on.

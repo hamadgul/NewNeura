@@ -9,7 +9,7 @@ import type { ServiceSlug } from "@/types/site";
 
 /**
  * "Shift your focus" — the accent strip beside the Menu button on a service
- * page. The current service reads as a named pill; the other four are 20px
+ * page. The current service reads as a named pill; the other five are 20px
  * swatches of their own accent. Hovering (or tabbing to) a swatch opens it and
  * closes whichever was open, so the strip's overall width never changes.
  *
@@ -34,6 +34,7 @@ import type { ServiceSlug } from "@/types/site";
 const SERVICES: Array<{ slug: ServiceSlug; label: string; ground: string }> = [
   { slug: "applied-ai", label: "Applied AI", ground: "bg-ng-applied-ai" },
   { slug: "web-development", label: "Web Development", ground: "bg-ng-web-development" },
+  { slug: "seo", label: "SEO", ground: "bg-ng-seo" },
   { slug: "app-development", label: "App Development", ground: "bg-ng-app-development" },
   {
     slug: "cloud-infrastructure",

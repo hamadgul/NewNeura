@@ -146,8 +146,9 @@ export const ABOUT_INTRO: BlockIntroDoubleProps = {
  * Two problems once the header stopped being stock: the header is now a frame
  * of that same building, so the page showed the loft twice and the work once;
  * and a crane sign says nothing on a page whose next paragraph names three
- * specific projects. It is `vintus.jpg` instead — the wine importer's
- * storefront, which the `BlockWysiwyg` copy directly below names. With the
+ * specific projects. It is `yankocy.jpg` instead — the building-materials
+ * supplier's rebuilt site, which the `BlockWysiwyg` copy directly below names
+ * (it was `vintus.jpg` until Vintus was deleted, 2026-09-25). With the
  * header's routing map and the small slot's pipeline, the page's four images
  * are now one real place and three different real projects, none repeated.
  *
@@ -166,7 +167,7 @@ export const ABOUT_INTRO: BlockIntroDoubleProps = {
 export const ABOUT_MEDIA: BlockMediaDoubleQuoteProps = {
   large: {
     type: "image",
-    src: `${IMG}/vintus.jpg`,
+    src: `${IMG}/yankocy.jpg`,
     alt: "",
     width: 1200,
     height: 750,
@@ -218,7 +219,7 @@ export const ABOUT_WYSIWYG: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "These days we mostly build operational software. The dispatch app that plans those six vans. An ordering portal that lets a pizzeria skip delivery-app commissions. A wine importer's trade portal we maintain. We also build the marketing sites that sell that kind of work, because most of our clients need both.",
+      text: "These days we mostly build operational software. The dispatch app that plans those six vans. An ordering portal that lets a pizzeria skip delivery-app commissions. We also build the sites that bring that kind of business its customers, and do the SEO that gets them found: a twenty-six-page rebuild for a building-materials supplier in Monroe, Connecticut, and search fixes for two Shopify stores.",
     },
     {
       type: "paragraph",

@@ -32,6 +32,7 @@
   --color-ng-line: var(--ng-line);
   --color-ng-applied-ai: var(--ng-applied-ai);
   --color-ng-web-development: var(--ng-web-development);
+  --color-ng-seo: var(--ng-seo);
   --color-ng-app-development: var(--ng-app-development);
   --color-ng-cloud-infrastructure: var(--ng-cloud-infrastructure);
   --color-ng-data-intelligence: var(--ng-data-intelligence);
@@ -190,10 +191,11 @@
   --ng-line: #d6d6d6; /* hairline rules and dividers */
 
   /* Service accent colours — one per hero card, in strip order.
-     Three dark grounds take white type, two light grounds take #262626;
+     Four dark grounds take white type, two light grounds take #262626;
      `SERVICE_TONE` in BlockHeaderServices.tsx is the table that pairs them. */
   --ng-applied-ai: #625653; /* warm graphite */
   --ng-web-development: #925434; /* terracotta */
+  --ng-seo: #4d5e52; /* forest slate */
   --ng-app-development: #c9d3df; /* pale slate */
   --ng-cloud-infrastructure: #707569; /* olive grey */
   --ng-data-intelligence: #e3c1aa; /* sand */

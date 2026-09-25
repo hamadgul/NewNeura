@@ -28,6 +28,17 @@ const HORIZONTAL_MIN_WIDTH = 768;
  */
 const PIN_DISTANCE_PER_VW = 3;
 const TRAVEL_PER_CARD = 5.2;
+
+/*
+  Both laws were measured on the source's FIVE-card strip. The 5.2 is "every
+  card, plus a fifth of one" — the last card lands the same distance short of
+  the end whatever the count — so a sixth card (SEO, 2026-09-25) adds one card
+  width of travel. The pin grows by the same factor, so the strip keeps the
+  measured ratio of travel to scroll instead of running 19% faster.
+*/
+const MEASURED_CARD_COUNT = 5;
+const CARD_COUNT_SCALE =
+  (HERO_CARDS.length + TRAVEL_PER_CARD - MEASURED_CARD_COUNT) / TRAVEL_PER_CARD;
 const INTRO_INSET_MIN_WIDTH = 1280;
 const INTRO_INSET = 200;
 
@@ -70,8 +81,8 @@ function measure(): StripMetrics {
     // compute: the source's end position is not a fixed place in the viewport
     // (the last card lands at x=306 at 1440x900 but x=146 at 1280x900). It is a
     // fixed distance, and the distance is 5.2 card widths.
-    travel: TRAVEL_PER_CARD * cardWidth,
-    pinDistance: PIN_DISTANCE_PER_VW * viewportWidth,
+    travel: TRAVEL_PER_CARD * CARD_COUNT_SCALE * cardWidth,
+    pinDistance: PIN_DISTANCE_PER_VW * CARD_COUNT_SCALE * viewportWidth,
     introWidth,
     cardAdvance,
     viewportWidth,

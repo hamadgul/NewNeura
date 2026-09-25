@@ -11,7 +11,7 @@ import { SITE_URL } from "@/lib/seo";
  * stop reading the field at all. Bump this constant when the copy actually
  * changes.
  */
-const LAST_MODIFIED = new Date("2026-09-11");
+const LAST_MODIFIED = new Date("2026-09-25");
 
 /**
  * Routes are grouped by priority tier rather than listed flat, because the
@@ -29,11 +29,12 @@ const TIERS: Array<{
 }> = [
   { paths: ["/"], priority: 1, changeFrequency: "monthly" },
   {
-    // The five service lines and the contact page: the routes a commercial
+    // The six service lines and the contact page: the routes a commercial
     // search should land on.
     paths: [
       "/services/applied-ai/",
       "/services/web-development/",
+      "/services/seo/",
       "/services/app-development/",
       "/services/cloud-infrastructure/",
       "/services/data-intelligence/",
@@ -54,13 +55,14 @@ const TIERS: Array<{
     changeFrequency: "monthly",
   },
   {
-    // The ten case studies. These are the pages that carry the evidence, so
+    // The eleven case studies. These are the pages that carry the evidence, so
     // they sit above the two studio pages.
     paths: [
       "/work/delivery-routing/",
       "/work/packship/",
       "/work/foodtruckrentals/",
-      "/work/vintus/",
+      "/work/yankocy/",
+      "/work/halal-bridal/",
       "/work/landscape-drainage-proz/",
       "/work/new-york-mobile-mechanic/",
       "/work/new-york-fine-foods/",

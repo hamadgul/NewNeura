@@ -35,7 +35,7 @@ const projectServicesMatches = [...work.matchAll(/services:\s*\[([^\]]*)\]/g)];
 // `services: [` added outside PORTFOLIO_PROJECTS) fails loudly instead of silently
 // under-counting. This project has already shipped three "green but wrong" scans caused
 // by exactly this kind of unchecked assumption.
-const EXPECTED_PROJECT_COUNT = 10;
+const EXPECTED_PROJECT_COUNT = 11;
 if (projectServicesMatches.length !== EXPECTED_PROJECT_COUNT) {
   console.error(
     `check-filter-counts: expected ${EXPECTED_PROJECT_COUNT} project \`services\` arrays in ` +

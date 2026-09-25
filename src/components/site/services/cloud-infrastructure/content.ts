@@ -7,8 +7,8 @@
  * deliverables and the `who_for` line, and `it-infrastructure`, which has no
  * page of its own in this port and so folds in here — networks, firewalls,
  * hardening, patching, monitoring and documentation. The evidence comes from
- * the delivery routing platform on Fly.io, the Vintus storefront and the
- * restaurant ordering portal on Square.
+ * the delivery routing platform on Fly.io and the restaurant ordering portal
+ * on Square. (Vintus was cited here until it was deleted, 2026-09-25.)
  *
  * VOICE — the source is written in the first person singular, because it was
  * written by one person. NeuraGul is a team, so this page says "we". Hamad Gul
@@ -86,8 +86,8 @@ export const HEADER: BlockHeaderServicesProps = {
   title: "Cloud & Infrastructure",
   titleSize: "3XL",
   image: {
-    // The restaurant ordering portal — the one project tagged to this line
-    // since Vintus was retagged (2026-09-11), and the plainest hosting story.
+    // The restaurant ordering portal — the one project tagged to this line,
+    // and the plainest hosting story.
     src: `${IMG}/pizzeria.jpg`,
     alt: "",
     width: 1200,
@@ -112,7 +112,7 @@ export const INTRO: BlockIntroDoubleProps = {
   body: [
     "We run cloud infrastructure and DevOps for small companies in New York. Cost control is an architectural decision. The delivery routing platform runs on Fly.io with a per-solve travel-matrix budget, which is what makes a runaway maps bill structurally impossible rather than merely unlikely. Nobody has to remember to check it.",
     "Under that sit the unglamorous parts that keep the doors open: networks, servers and firewalls set up properly the first time, security hardening and patch management on a schedule, monitoring that surfaces a problem before your customers find it, and documentation your team can actually follow.",
-    "The Vintus site carries a national wine importer's catalogue of 703 wines and 1,600 vintage pages under 161 producers on WordPress, with a login, a sell-sheet generator and a tech sheet that takes a rep's own price behind it. The restaurant ordering portal plugs straight into a restaurant's existing Square POS, so orders, payments and SMS updates all flow through with nobody skimming the check.",
+    "The restaurant ordering portal plugs straight into a restaurant's existing Square POS, so orders, payments and SMS updates all flow through with nobody skimming the check.",
   ],
 };
 
@@ -214,12 +214,7 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Application hosting:",
-      text: "Fly.io for the routing platform, Square's own infrastructure behind the ordering portal, WordPress behind nginx with a full content-security policy under the Vintus site. The host follows the workload.",
-    },
-    {
-      type: "paragraph",
-      lead: "Edge and operations:",
-      text: "The edge layer observed in front of the WordPress trade portal we maintain for a national wine importer: nginx, HSTS, a full content-security policy, a permissions policy.",
+      text: "Fly.io for the routing platform, and Square's own infrastructure behind the ordering portal. The host follows the workload.",
     },
     {
       type: "paragraph",
@@ -280,13 +275,12 @@ export const WYSIWYG_IT_SECURITY: BlockWysiwygProps = {
  * ------------------------------------------------------------------ *
  *
  * Two projects sit here — the restaurant portal, which carries the Cloud &
- * Infrastructure tag, and Vintus, which no longer does (retagged
- * `web-development` only, 2026-09-11) but stays as the edge layer we maintain
- * in front of an inherited WordPress portal — and `layoutFour` takes
- * exactly two: a plain card on the left, a corner-notched one on the right,
- * side by side from 1280 up and stacked below it. Every other variant wants
- * three tiles, which would mean borrowing work from another service line, so
- * the sequence is shortened instead of padded.
+ * Infrastructure tag, and the delivery routing platform, which does not but
+ * runs on the Fly.io deployment and the per-solve cost ceiling this page's
+ * copy describes (it replaced Vintus here when Vintus was deleted,
+ * 2026-09-25). `layoutFour` takes exactly two, side by side from 1280 up and
+ * stacked below it. Every other variant wants three tiles, so the sequence
+ * is shortened instead of padded.
  *
  * The cost of that choice is `layoutThree`'s "View all" footer, which only that
  * variant carries; the header button is therefore the single route out to the
@@ -299,13 +293,13 @@ export const WYSIWYG_IT_SECURITY: BlockWysiwygProps = {
  * the layout reserves for a city.
  */
 
-const VINTUS: ProjectCard = {
-  title: "Vintus",
-  location: "2026 · WordPress",
-  href: "/work/vintus/",
+const DELIVERY_ROUTING: ProjectCard = {
+  title: "Delivery routing platform",
+  location: "2026 · Web app",
+  href: "/work/delivery-routing/",
   image: {
-    src: `${IMG}/vintus.jpg`,
-    alt: "The Vintus wine importer trade portal",
+    src: `${IMG}/delivery-routing.jpg`,
+    alt: "The delivery routing platform, showing six drivers' solved routes",
     width: 1200,
     height: 750,
   },
@@ -338,7 +332,7 @@ export const PROJECTS: BlockProjectsHighlightProps = {
   layouts: [
     {
       variant: "four",
-      left: VINTUS,
+      left: DELIVERY_ROUTING,
       right: RESTAURANT_ORDERING_PORTAL,
     },
   ],

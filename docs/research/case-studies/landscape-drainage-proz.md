@@ -383,3 +383,276 @@ the line:
 | 2 | `src/components/site/services/web-development/content.ts` | 254 | single-line `grep -cF` | 1 | yes |
 
 Re-run the same check before applying if the file has moved on.
+
+---
+
+## SEO engagement (2026-09 audit + phases)
+
+Added 2026-09-25. **Source of record for this section:** the local engagement folder
+`/Users/hamadgul/Projects/LDP /landscapedrainageproz.com-audit/` (the directory name ends in a
+space; written as `$LDP/` below), read-only, plus the live store as fetched with `curl`
+2026-09-25 ~19:15–19:25 UTC (desktop UA; saved to this session's scratchpad `ldp/page_*.html`).
+`.env` and `phase1/.token` were not opened. Unlike everything above this line, this work *does*
+have a local record: dated change logs, before/after backups and verification output. That
+settles two items in *Unverifiable claims* for the SEO work only: **when** (2026-09-21 →
+2026-09-24) and **who** (every change log is written by the operator making the Admin API /
+theme edits, i.e. us). It does not settle them for the original build.
+
+### What was deployed (change logs), and what is verified live today
+
+"Verified live" = observed in the served HTML on 2026-09-25. "Log only" = the change log says it
+shipped but curl cannot see it (visual, cart or admin-side).
+
+| # | Change (date, source) | Live check 2026-09-25 |
+| --- | --- | --- |
+| 1 | **Redirect map repaired** (09-22, `$LDP/phase1/PHASE1-CHANGELOG.md` 1.1–1.3): 13 legacy WordPress 404s now 301; 2 redirects into a DRAFT product repointed; 9 two-hop chains flattened. Monitor: 70 redirects, all 1 hop → 200 (`$LDP/phase4/MONITOR-REPORT-2026-09-22.md`) | **Verified**: `/municipal-accounts/`, `/resources/`, `/ez-roll-grass-pavers-2/`, `/product-category/ancillary-products/`, `/collections/paver-solutions`, `/ez-roll-grass-pavers`, `/products/nds-864-pro-channel-kit-3-pack` each → one 301 to a live URL. `/blog` → home (the 09-24 plan's P2-22 still open) |
+| 2 | **Dead tags removed** (09-22, 1.4): Universal Analytics `UA-101865123-1` opt-out + analytics.js, dead Google Customer Reviews badge | **Verified**: `UA-101865123` 0 occurrences on `/` (was 2 on 2026-09-11). GTM-W9LGV4T still 1; AW-845953007 still 7 |
+| 3 | **Fake review widget removed** (09-22, 1.6): "Rated 4.6 / 5 based on 1289 reviews" + hard-coded "15 hours ago" timestamps; later "Verified" tag off and Trustpilot green → brand blue (`$LDP/cro/P0-CHANGELOG.md` #8) | **Verified**: "1289", "15 hours ago", "Verified", `#00B67A` absent on 4×150, Flo-Well, Tufftrack |
+| 4 | **Collection renamed** "Paver Solutions" → **Grass Pavers**, hidden "Collection:" H1 prefix removed (1.7); Gravel Pavers collection created (2.4); Channel Drains + Catch Basins sub-collections (09-24, `$LDP/audit-2026-09-24/implementation/IMPLEMENTATION-SUMMARY.md` P1-13) | **Verified**: H1 `Grass Pavers`; sitemap collections = drainage-solutions, grass-pavers, top-sellers, gravel-pavers, channel-drains, catch-basins |
+| 5 | **Titles/metas on every product and page** (09-22, 2.5, 4 §2): plain-ASCII NDS-branded titles, metas ≤160; home title set in theme | **Verified**: `/` = `NDS Grass Pavers & Drainage Products \| Landscape Drainage Proz`, meta 146 chars; 4×150 = `NDS EZ Roll Grass Pavers EZ4X150 4'x150' \| Free Shipping`; EZ-Flow = `NDS EZ-Flow French Drain \| Gravel-Free Prefab French Drain`; all 19 probed routes have 1 `<h1>` and a meta description |
+| 6 | **One H1 per page** (2.11): logo `<h1>` → `<div>`, pasted body H1s demoted | **Verified**: 19/19 probed routes have exactly 1 `<h1>` (dossier above recorded 2 on four routes) |
+| 7 | **Schema consolidated, then moved into the theme** (09-22 2.6/2.10/1.8/1.9/1.10; 09-24 `$LDP/audit-2026-09-24/implementation/theme/CHANGELOG.md`): duplicate Dawn Product node off; TinySEO store / product / website / breadcrumb / article embeds turned off; a new theme snippet `snippets/ldp-schema.liquid` emits WebSite, BreadcrumbList and Product with one Offer per variant incl. `shippingDetails` + `hasMerchantReturnPolicy`; one Organization `@id` with telephone + contactPoint + MerchantReturnPolicy; the wrong phone (203) 261-4955 in TinySEO's `WholesaleStore` removed with that node; municipal page `Article` → `Service`; case study 3 Article/BlogPosting nodes → 1; "NDS" removed from WebSite `alternateName` | **Verified** (JSON-LD parsed, 0 parse errors on 20 routes): `/` = WebSite + Organization + MerchantReturnPolicy, **no WholesaleStore**; products = Product, Offer, OfferShippingDetails, MerchantReturnPolicy, BreadcrumbList ×1, FAQPage; `/pages/municipal-accounts` = Service; case study = BreadcrumbList, Organization, 1 Article, no BlogPosting microdata; `alternateName` = `["LDP","LandscapeDrainageProz"]`; telephone `+1-203-951-9409`; "261-4955" 0 hits. TinySEO survives only as `tinyimg-collection-json-ld` on collections (CollectionPage + ItemList), kept on purpose |
+| 8 | **Index hygiene** (2.10): 7 archived duplicate products deleted + 301'd; empty blogs and `/collections/frontpage` hidden from the sitemap; `/collections/all` `noindex, follow` | **Verified**: `/collections/all` robots `noindex, follow`; 33 sitemap `<loc>`s (incl. Shopify's `/agents.md`), no empty blogs |
+| 9 | **Seven content pages written and published**: 3 paver guides (09-22, `$LDP/phase3/PHASE3-CHANGELOG.md` 3.1–3.3) and 4 drainage installation guides (09-24, `…/implementation/guides-a/CHANGELOG.md`, `guides-b/CHANGELOG.md`), each with TOC, spec tables sourced to NDS documents, FAQ + FAQPage + Article JSON-LD, team byline and "Last updated" | **Verified**: all 7 return 200 with the logged titles — `/pages/grass-driveway-pavers`, `/pages/permeable-driveway-pavers`, `/pages/fire-lane-overflow-parking-pavers`, `/pages/french-drain-installation-guide`, `/pages/dry-well-installation-guide`, `/pages/catch-basin-installation-guide`, `/pages/channel-drain-installation-guide`; each carries FAQPage + Article; byline "By the Landscape Drainage Proz team, an authorized NDS dealer. Product specs from NDS technical documents." |
+| 10 | **Collection + product copy** (3.10, 2.3, 4 §1): below-grid content (`ldp-collection-content` section, `custom.seo_body` metafield) on Grass, Gravel, Drainage; 11 product descriptions restructured (spec tables, keyword H2s, FAQ); 7 drainage products rewritten | **Verified**: FAQPage on every collection probed and on 4×150 + EZ-Flow; spec text `53,683 psf` on 4×150 |
+| 11 | **Spec and claim corrections against NDS documents** (3 "Spec fixes"; 4 §1; 09-24 P0-3): EZ Roll 57,890 → 53,683 psf; unsourced "100-year lifespan" and "crush-proof" removed from EZ-Flow; Flo-Well "50% more than peastone" → NDS's "250% more detention volume"; FAQ "58,000 lbs/sq ft" corrected; "Free Shipping" removed from titles where a cart test showed it was false; Tufftrack GTIN `05206300482` (11 digits) → `052063004822` (`$LDP/phase4/PHASE4-CHANGELOG.md`) | **Verified**: "100-year" / "crush-proof" 0 hits; "58,000" 0 on FAQs; Flo-Well prints "250% more detention volume than a gravel dry well"; Tufftrack page carries `052063004822` |
+| 12 | **Internal linking** (2.8, 2.12, 09-24 P1-16): rebuilt footer, `ldp-related-links` section on products/collections, Guides + Drainage dropdowns in the main menu, case study linked from paver pages | **Verified** in part: the Guides dropdown (`Grass Driveway Guide` in the `/` HTML); the Drainage dropdown is in `…/implementation/final/screens/menu-drainage.png` |
+| 13 | **Site-wide invisible links fixed** (2 follow-ups): Dawn set `--color-link` to `#ffffff` on white; 29 invisible links on 16 pages → 0 (`$LDP/phase2/invis_before.json` → `invis_after.json`); re-scanned 0 after every later pass | **Log only** (colour; not visible to curl). This is the root cause of the white-on-white `tel:` link the *Shot list* above refused to capture |
+| 14 | **Speed work** (2.9; `$LDP/phase4/pagespeed-fixes/PAGESPEED-FIXES.md`; 09-24 theme #4–5): hero `fetchpriority`/preload, Swiper non-blocking, YouTube click-to-load facade, conditional announcement-bar CSS, homepage images re-encoded to WebP, phones no longer download the hidden desktop slide | **Verified** in part: instaindex `speculationrules` still present (1). The rest is log only |
+| 15 | **Homepage "Authorized NDS Dealer" section** (09-24, `$LDP/nds-section/CHANGELOG.md`): H2 + six NDS product-line H3 tiles with keyword anchors, replacing a TinySEO heading block | **Verified**: `ldp_nds_dealer` section id on `/` |
+| 16 | **Compare-at prices cleared** on all 22 variants (09-23, `$LDP/ez-roll-serp/fixes/FIXES-CHANGELOG.md`) because TinyIMG's StrikethroughPrice made Google show $2,532 instead of $2,110; grass/gravel collection intros de-duplicated (cannibalisation) | **Verified**: `StrikethroughPrice` 0 on 4×150 |
+
+Also shipped in the same window but **not SEO** (listed so the page does not blur them in): CRO
+cart/product changes (`$LDP/cro/P0-CHANGELOG.md`), per-item weight-tier shipping rates
+(`$LDP/shipping/SHIPPING-CHANGELOG.md`), a UI/accessibility pass (axe 0 violations on 6 pages,
+`$LDP/ui-review/UI-CHANGELOG.md`), a spacing pass (`$LDP/audit-2026-09-24/spacing/CHANGELOG.md`),
+a desktop-hero change that disabled the home "60 Years" Custom Liquid strip
+(`$LDP/ui-review/frontend-pass-2026-09-23/IMPL-CHANGELOG.md` #10).
+
+**Only recommended / blocked (not deployed):** Search Console verification, sitemap submit and
+request-indexing (owner; `$LDP/phase4/OWNER-CHECKLIST.md`); Merchant Center auto-tagging off
+(`?srsltid=` duplicates) and diagnostics (LDP in 0 of the Popular Products carousels); a real
+reviews app (no AggregateRating anywhere); Google Business Profile / Bing Places and `sameAs`
+(only Facebook today); a named author; removing the privacy-policy address (auto-managed,
+blocked); GTM removal (fires a second Ads account, owner decision); link building from
+`$LDP/phase3/LINK-TARGETS.md` (123 gap domains, outreach manual, none done); `/llms.txt`
+(platform-locked); more case studies. Weekly rank tracking was set up as a cron on the local
+Mac (`$LDP/phase4/MONITORING.md`) but only the 2026-09-22 baseline run exists
+(`$LDP/phase4/monitor/runs/`).
+
+### Measured numbers, with date and source
+
+| Metric | Before | After | Source | Usable on our page? |
+| --- | --- | --- | --- | --- |
+| Invisible (white-on-white) text links, 16 pages | 29 (09-22) | 0 (09-22; 0 on 22–24 pages in every later scan) | `$LDP/phase2/PHASE2-CHANGELOG.md`, `invis_*.json` | **Yes** — our own reproducible scan, a defect count, not an outcome |
+| Legacy URLs returning 404 | 13 fixed; 9 chains flattened | 70 redirects, all 1 hop → 200 | `phase1/PHASE1-CHANGELOG.md`; `phase4/MONITOR-REPORT-2026-09-22.md` | **Yes** (spot-checked live) |
+| Routes with >1 `<h1>` | 4 (dossier above, 09-11) | 0 of 19 probed (09-25) | this section's curl probe | **Yes** |
+| JSON-LD on `/` | WholesaleStore (24/7 hours, wrong phone) + WebSite ×2 + empty `sameAs` ×9 | WebSite + one Organization with phone and return policy | dossier Stack (09-11) vs curl 09-25 | **Yes** |
+| Product description readability (4×150, Flesch) | 27.9 | 49.1–49.9 | `rerun-2026-09-22/FULL-AUDIT-REPORT.md` A8; `phase4/MONITOR-REPORT-2026-09-22.md` | Possible, low value |
+| axe WCAG A/AA contrast failures | 24 | 0 on 6 pages × 2 viewports | `ui-review/UI-CHANGELOG.md` | Not SEO; possible elsewhere |
+| Mobile Lighthouse, home | 66 / LCP 13.1 s (09-21) | 87 / 2.8 s (09-22, single run) | `phase2/PHASE2-CHANGELOG.md` | **No** — the store's own logs call single runs bimodal (~57 vs ~90 on the same page, `PHASE4-CHANGELOG.md`); 09-24 runs of the same page read 69–76 (`implementation/theme/CHANGELOG.md`) |
+| Mobile Lighthouse, 4×150 | 51 / 6.5 s | 78 / 3.3 s (09-22), 62–79 (09-24) | same | **No**, same reason |
+| "SEO health score" | 50/100 (09-21, `FULL-AUDIT-REPORT.md`) · 43/100 (09-21 re-scored in `rerun-2026-09-22`) | 72/100 rubric, 74 → 76 dashboard (09-22); fresh audits 09-24: **73** (claude-seo) and **54** (seo skill) | `rerun-2026-09-22/FULL-AUDIT-REPORT.md`; `audit-2026-09-24/COMBINED-ACTION-PLAN.md` | **No** — self-scored by our own tooling, two rubrics disagree by 19 points on the same day, and the "before" is 50 or 43 depending on file |
+| Ranked keywords / top-10 / est. traffic | 158 / 1 / ETV 59 (09-22 baseline) | 158 / 1 / ~59 visits (09-24) | `phase4/MONITOR-REPORT-2026-09-22.md`; `COMBINED-ACTION-PLAN.md` | **No** — no movement measured; the pages were published 09-22/24 and Google had not recrawled (`ez-roll-serp/FULL-AUDIT-REPORT.md` F1) |
+| Target-keyword positions | 1 of 27 in top 100 (#36 "12x12 catch basin") | "ez roll grass paver" #16 mobile / #20 desktop (09-23) | `MONITOR-REPORT-2026-09-22.md`; `ez-roll-serp/FULL-AUDIT-REPORT.md` | **No** — different tools and devices a day apart; not a before/after |
+| GSC clicks / impressions / positions | none | none | `phase4/OWNER-CHECKLIST.md` #6 (access never granted) | — no data exists |
+
+### Overlap with, and contradictions of, the current case-study page
+
+The 2026-09-11 page describes the store **before** this engagement. Much of it is now false on
+the live site:
+
+1. **`PROJECT_SEARCH` ("Structured data on every route")** — contradicted in five places:
+   (a) "A structured-data app emits JSON-LD by route type" — the theme (`ldp-schema.liquid`) now
+   emits it; TinySEO only does collections; (b) "The home page carries a WholesaleStore node" —
+   removed; (c) "the case study and the municipal page Article" — municipal is now `Service`;
+   (d) the quoted product titles ("EZ FLOW French Drain, Easy Water Drainage for Landscaping";
+   "EZ Roll Grass Paver, 4 by 150 foot Roll") are replaced; (e) "the questions page a
+   hand-placed FAQPage" — FAQPage is now on every guide, collection and product page, and the
+   FAQ page's schema covers 7 of 7 questions (was 2). The canonical / www → apex sentences
+   still hold.
+2. **Decision 1 / `PROJECT_INTRO` / `PROJECT_DESCRIPTION` / `PROJECT_HEADER.lead` / details
+   `Theme`** — "two hand-written Custom Liquid sections": the home strip `custom_liquid_CUM4JD`
+   is disabled; only the footer one (`custom_liquid_DmdrPT`) is served (1 on `/`, 09-25), and
+   the footer itself was rebuilt as a `<nav>` without the hexagon background.
+3. **Frozen cover `landscapedrainage.jpg`** — the dossier says "it IS today's home page": no
+   longer. The live home has a new H1 hero ("Grass pavers, gravel pavers and NDS drainage,
+   shipped to your job site"), no blue strip, a 5-item header + "Request a quote" button. The
+   alt text ("The Landscape Drainage Proz Shopify storefront") stays true; the dossier sentence
+   does not. Used on five pages, so re-capturing is a cross-page decision for the user.
+4. **Catalogue block** — "Paver Solutions four", "four collections", "four pages", "twenty-three
+   URLs", "Top Sellers is a two-product subset", "each card showing the compare-at price struck
+   through", "the header is six items", "the product handle the FAQ page still links to
+   redirects" — all changed (Grass Pavers; 6 collections; 12 pages; 33 sitemap URLs; Top Sellers
+   4; compare-at cleared; 5 items; FAQ link now direct).
+5. **Captures** — `landscape-drainage-proz-drainage.jpg` shows struck-through compare-at prices
+   that no longer exist; `landscape-drainage-proz-municipal.jpg` shows the body H1 that is now an
+   H2; `landscape-drainage-proz-faqs.jpg` predates the spec corrections.
+6. **Stack / `PROJECT_MEASUREMENT`** — the Stack table's UA snippet is gone (not on the page, but
+   in the dossier). The measurement block (7 AW labels on 11 events) still verifies.
+7. **Unverifiable 6–7** (the Section Store reviews, the Trustpilot-green stars) — the fake
+   aggregate line and timestamps were removed by us and the stars recoloured; three named
+   testimonials remain.
+
+### Screenshot candidates (in `$LDP/`)
+
+None is 1600x1000. All deployed-page shots are Playwright captures of the live store taken by
+the verification passes, so they show real pages — but at 1366/1440/1280 widths and with the
+state of that day. **Recommendation: re-capture the chosen routes with our runner at
+1600x1000**; use these as the reference for what to frame.
+
+| Path (under `$LDP/`) | px | Shows | Kind |
+| --- | --- | --- | --- |
+| `audit-2026-09-24/implementation/guides-a/screenshots/french-drain-installation-guide-desktop-top.png` | 1366x900 | Guide H1, team byline + "Last updated", quick answer, 10-item TOC | Real deployed page |
+| `…/guides-a/screenshots/dry-well-installation-guide-desktop-top.png` | 1366x900 | Same layout, dry well guide | Real deployed page |
+| `…/guides-b/screenshots/catch-basin-installation-guide-desktop-top.png`, `channel-drain-installation-guide-desktop-top.png` | 1280x900 | The two 09-24 drainage guides, top | Real deployed page |
+| `…/guides-a/screenshots/*-desktop-full.png`, `…/guides-b/screenshots/*-desktop-full.png` | 1280–1366 x 8,488–9,652 | Whole guides (tables, FAQ) | Real; crop source |
+| `nds-section/nds-desktop.png` | 1440x725 | Home "NDS Drainage Products…" H2 + six product-line tiles | Real deployed section |
+| `audit-2026-09-24/implementation/final/screens/menu-drainage.png` | 1366x450 | Open Drainage dropdown (sub-collections) over the new home hero | Real deployed page |
+| `audit-2026-09-24/implementation/content/screenshots/collections_drainage-solutions-desktop-full.png` | 1440x3588 | Drainage collection with the below-grid chooser table + FAQ | Real; crop source |
+| `audit-2026-09-24/implementation/theme/screenshots/desktop-home.png`, `home-1440.png` | 1440x900 | New home hero (H1) | Real deployed page |
+| `audit-2026-09-24/implementation/theme/screenshots/home-1920.png` | 1920x1000 | Same, wider | Real deployed page |
+| `ez-roll-serp/fixes/shots/4x150-price-section.png` | 1440x900 | 4×150 "EZ Roll Grass Paver Price & Cost" section | Real deployed page |
+| `audit-2026-09-24/spacing/final/desktop_*.png` (13 routes) | 1440x900 | Latest top-of-page state of home, collections, products, guides, FAQ, contact | Real deployed pages |
+| `ui-review/diagram/grass-paver-base-cross-section.png` (+ `base-section.svg`, 1200x620) | 1920x992 | Grass paver base cross-section diagram (4/6/8 in. #57 base), drawn from the NDS detail; uploaded to Shopify Files and used on two guides | Real deployed asset (a diagram, not a page) |
+| `phase4/images/nds-ez-roll-grass-paver-ez4x150-top-view.jpg`, `…-specs.jpg` | 2048x2048 | Product image + spec infographic built from NDS photography | Deployed product media (NDS's photography — not ours to show as our work) |
+| `phase2/image-contact-sheets/*.jpg` (11) | — | Alt-text working sheets | Working files, not for the page |
+| `SEO-REPORT-agentic.html`, `rerun-2026-09-22/SEO-REPORT-agentic-after-fixes.html` | HTML | Audit dashboards | Audit charts — do not use (self-scored) |
+| `audit-2026-09-24/claude-seo/screenshots/*`, `seo-skill/screenshots/*` | 1366x900 / 750x1624 | Auditors' page captures | Real pages, audit context |
+
+Not in the folder: `screenshots/` at the root is empty.
+
+### Unverifiable claims (SEO engagement)
+
+1. **Any ranking, traffic, click or impression gain.** No GSC access was ever granted; the only
+   rank data is a 09-22 baseline and a 09-24 re-read showing no movement. Nothing may say the
+   work "improved rankings".
+2. **Any sales or conversion effect.** The user's rule stands: no sales claims. (`$LDP/cro/`
+   contains a store-analytics baseline and `ui-review` a "2-year gross sales" ordering; neither
+   was opened for this section and neither goes on the page.)
+3. **The health scores** (50, 43, 72, 73, 54) — our own tools grading our own work, mutually
+   inconsistent.
+4. **Lighthouse before/after** — single lab runs the logs themselves call bimodal.
+5. **"~96% of organic visibility lost since January 2024 (est. 1,382 → 55 visits/mo)"**
+   (`FULL-AUDIT-REPORT.md` headline) — a DataForSEO estimate of the client's traffic; a traffic
+   figure, so out under the existing rule.
+6. **That the WordPress → Shopify migration (Aug/Sep 2024) caused the drop** — the audit's
+   inference from Wayback + estimates, not a measurement.
+7. **"Real-browser LCP 0.46–0.66 s"** — one Playwright run under throttling; not field data.
+8. **The competitor figures** (landscapediscount 2,978 keywords, etc.) — third-party
+   estimates about other businesses; not ours to print.
+9. **That the invisible-link fix, readability or schema changes affected search** — they are
+   verifiable as *changes*, not as *effects*.
+
+### Proposed page changes
+
+Facts only; copy to be written in the page's voice ("we", no headcount, no outcome).
+
+1. **Rewrite `PROJECT_SEARCH` (block 8)** as the audit-and-repair story. Points:
+   - We audited the live store on 2026-09-21 and shipped fixes over the next four days.
+   - Structured data now comes from one theme snippet, not three sources: one Organization with
+     the correct phone and return policy; Product with one Offer per variant, each carrying
+     shipping details and the return policy; a three-level breadcrumb; Service on the municipal
+     page; one Article on the case study.
+   - Removed: a store node that published 24/7 hours and a wrong phone number; a duplicate
+     Product node; a struck-through "compare-at" price that made Google show $2,532 for a $2,110
+     roll (quote only if the user agrees the client's price can appear as our fact; otherwise
+     "a higher crossed-out price").
+   - Keep the canonical / www sentences; keep "Nothing here claims a ranking."
+2. **New `BlockMediaDoubleQuote` or `BlockImageFull`: "Seven guides, specs from the
+   manufacturer's documents".** Points: 3 paver guides + 4 drainage installation guides; every
+   spec table sourced to an NDS document; FAQ blocks with matching FAQPage markup; team byline
+   and "Last updated" date. Capture: re-shoot `/pages/french-drain-installation-guide` at
+   1600x1000 (the top frame shows H1, byline, TOC).
+3. **New `BlockWysiwyg`: "What the migration left behind".** Points: 13 old WordPress URLs
+   returned 404, two redirects led to an unpublished product, nine chains took two hops; now 70
+   redirects, each one hop to a live page. One `<h1>` per route (four routes had two). Seven
+   archived duplicate products deleted and redirected; empty blogs out of the sitemap.
+4. **New `BlockWysiwyg` (or fold into 3): "Taking out what wasn't true".** Points: a hard-coded
+   "4.6 out of 5 from 1,289 reviews" line and fake "15 hours ago" timestamps removed; review
+   stars no longer styled as a third-party verified badge; claims not in the manufacturer's
+   documents removed ("100-year lifespan", "crush-proof") and spec figures corrected to NDS's
+   (53,683 psf); a "free shipping" title removed after a cart test showed it applied only over
+   $2,000; an 11-digit barcode corrected to a valid 12-digit UPC. This is the strongest
+   proof-shaped block available and needs no result figure.
+5. **Optional line in 3 or 4:** every text link on white was rendering white (a theme colour
+   variable); 29 invisible links across 16 pages → 0.
+6. **Update stale facts elsewhere** (see *Contradictions*): "two Custom Liquid sections" (×5
+   places), the catalogue block's counts, the details row (`Pages` → "11 products · 6
+   collections · 33 sitemap URLs"; `Theme` drop "two Custom Liquid sections"), `Stack` row may
+   add nothing new; `PROJECT_MEASUREMENT` still holds.
+7. **Captures:** the drainage and municipal captures no longer match the live store; re-capture
+   or replace (candidates: `/collections/drainage-solutions` below-grid chooser, the home NDS
+   dealer section). The frozen cover is shared by five pages — a user decision.
+8. **Do not add:** any score, Lighthouse number, ranking, traffic, click, sales or conversion
+   figure; the owner-blocked items as if done (reviews app, GBP, GSC, link building).
+
+### Implemented on the page (2026-09-25)
+
+Proposals 1–7 above are in `src/components/site/work/landscape-drainage-proz/content.ts` and
+`src/app/work/landscape-drainage-proz/page.tsx` (14 blocks now). New constants: `PROJECT_GUIDES`
++ `PROJECT_IMAGE_GUIDE`, `PROJECT_REPAIRS`, `PROJECT_CORRECTIONS`; `PROJECT_SEARCH` rewritten.
+Every sentence was re-checked by curl on 2026-09-25 (~19:35 UTC) except the 29 → 0
+invisible-link count (log only, `phase2/invis_*.json`) and the 70-redirect monitor result
+(`phase4/MONITOR-REPORT-2026-09-22.md`; seven legacy paths spot-checked live). Choices made:
+
+- The $2,532 strikethrough figure is **not** printed (proposal 1's condition); the page says
+  search results showed the compare-at price "in place of the price a buyer pays".
+- The "Free Shipping" title removal is **not** printed: log only. The 4×150 title still ends
+  `| Free Shipping`, which is true ($2,110 is over the $2,000 threshold); the logged removals
+  were on other products and were not re-checked by curl.
+- The quote page (`/pages/request-a-quote`) and the municipal page's four steps are CRO work
+  (`cro/P0-CHANGELOG.md` #9, `cro/p1/P1-CHANGELOG.md` "Municipal page"), described in the
+  existing quote-path block as live state, not in the SEO blocks.
+- New live facts used: six collections by `products.json` (drainage-solutions 7, grass-pavers
+  4 incl. the gravel roll, gravel-pavers 1, channel-drains 3, catch-basins 2, top-sellers 4);
+  every variant `compare_at_price: null`; footer `custom_liquid_DmdrPT` = 3 columns, `#0055a5`,
+  17 links (Shop 8, Resources 9), `max-width: 749px` → 1 column; four WordPress-suffixed
+  photo filenames (three `-e<2017 timestamp>`, one `-scaled`); FAQ page JSON-LD 7 Questions;
+  web pixel still 7 `AW-` labels, 3 `MC-`, `GTM-W9LGV4T`; two guide bylines word the NDS
+  source differently ("NDS technical documents" / "NDS catalogs, technical specifications and
+  installation details").
+- `PROJECT_TITLE` is now "Landscape Drainage Proz: Shopify Build and SEO";
+  `PROJECT_HEADER.service` is "Web Development · Data Intelligence · SEO" (probed in the live
+  slot: one line 360–1920, two lines at 320 with no collision).
+
+### Shot list addendum (2026-09-25)
+
+All five images re-shot from the live store with the runner's recipe under
+`channel: "chrome"` (scratch copy; `scripts/shots/landscape-drainage-proz.config.mjs` now lists
+all five, the cover as `cover:landscapedrainage.jpg`). No fixed overlay/popup on any route.
+
+| File | px | Bytes | Shows |
+| --- | --- | --- | --- |
+| `landscapedrainage.jpg` (cover, frozen name) | 1200x750 | 147,622 | New home: announcement bar, five-item header + Request a quote, hero panel "Grass pavers, gravel pavers and NDS drainage, shipped to your job site" over the parking-lot photo |
+| `landscape-drainage-proz-guide.jpg` (new) | 1600x1000 | 178,030 | `/pages/french-drain-installation-guide` top: H1, byline + "Last updated September 24, 2026", opening answer, 10-item TOC |
+| `landscape-drainage-proz-drainage.jpg` | 1600x1000 | 129,752 | Drainage Solutions: Shop by type line, `7 products`, four cards at one price each |
+| `landscape-drainage-proz-municipal.jpg` | 1600x1000 | 209,526 | Municipal page: flooded field, quote button + phone, "How Municipal Ordering Works" |
+| `landscape-drainage-proz-faqs.jpg` | 1600x1000 | 81,925 | FAQ page: new subheading, 7 questions under 4 headings (mostly white page, hence the low byte count) |
+
+The new guide file follows the page's existing `landscape-drainage-proz-*` naming (required by
+`scripts/shots/_schema.mjs`), not `landscapedrainage-guide.jpg`. The dossier's 2026-09-11 line
+"it IS today's home page" for the cover is superseded by this row.
+
+## Cross-page deltas (2026-09-25)
+
+Not applied (outside this task's file ownership). Supersedes the two deltas in *Cross-page
+deltas* above: `web-development/content.ts` no longer contains "two hand-written" (its line 265
+already reads "a hand-written Custom Liquid section" and is still true), and the `llms.txt` line
+has moved to 33. The six cover usages (`home/content.ts:391`, `work/content.ts:286`,
+`services/web-development/content.ts:399`, `services/data-intelligence/content.ts:333`,
+`process/content.ts:212`, `services/seo/content.ts:275`) keep alt "The Landscape Drainage Proz
+Shopify storefront", which stays true of the re-shot cover: no change.
+
+| # | File:line | Current text (exact) | Replace with (exact) | Why |
+| --- | --- | --- | --- | --- |
+| 1 | `public/llms.txt:33` | `A Dawn storefront for an NDS drainage dealer: eleven products in two collections, two hand-written Custom Liquid sections, a municipal quote path, Google Ads conversion labels on seven of its eleven storefront events, from page view to purchase, and structured data on every route.` | `A Dawn storefront for an NDS drainage dealer, then an SEO audit and repair: structured data moved into the theme, 70 redirects each landing in one hop, one H1 per page, a fake review rating and unsourced product claims removed, and seven guides with specs from NDS documents. Also a municipal quote path and Google Ads conversion labels on seven of eleven storefront events.` | Two collections → six; two Custom Liquid sections → one; the SEO work was missing |
+| 2 | `src/components/site/services/seo/content.ts:197` | `Seven installation guides for Landscape Drainage Proz with specifications from the manufacturer's own documents,` | `Seven guides for Landscape Drainage Proz, four of them installation guides, with specifications from the manufacturer's own documents,` | Three of the seven are paver guides (grass driveways, permeable driveways, fire lanes), not installation guides |
+| 3 | `src/components/site/services/seo/content.ts:182` | `Landscape Drainage Proz got an audit and then four days of repairs to the live store:` | `Landscape Drainage Proz got an audit and then three days of repairs to the live store:` | Audit 2026-09-21; every change log is dated 09-22, 09-23 or 09-24 (the window is four days *including* the audit day). Alternatively keep "four days" and drop "then" |
+| 4 | `src/components/site/services/seo/content.ts:117` | `Every item on the list gets fixed, not filed.` | `Every item on the list goes on a fix list with a date.` — or simply delete the sentence | Style only: an "X, not Y" antithesis, which `.agents/product-marketing.md:238` bans. The facts in the line (redirect chains, 29 invisible links, four pages with two headings) verify |
+
+**One-sentence summary for the SEO service page:** For Landscape Drainage Proz we audited a live
+Shopify store and repaired it over three days: structured data now comes from one theme snippet
+with the right phone number and shipping details, seventy redirects each land in one hop, every
+page checked has one H1, a hard-coded "4.6 out of 5 from 1,289 reviews" line and unsourced
+product claims are gone, and seven new guides take their specs from NDS documents.

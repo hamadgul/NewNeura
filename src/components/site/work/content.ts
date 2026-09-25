@@ -22,7 +22,7 @@
  *
  * Image sizing note: every `width`/`height` below is the asset's true decoded
  * size, because `next/image` reserves the aspect ratio from those two numbers.
- * All ten covers are 1200x750 (1.6), which is exactly the ratio
+ * All eleven covers are 1200x750 (1.6), which is exactly the ratio
  * `CollectionProjects` gives its cards (`aspect-[665/415.625]`), so no card
  * crops.
  *
@@ -63,7 +63,7 @@ export const PORTFOLIO_CANONICAL = "/work/";
  * snippet and leave. Held under 160 characters, so the city went.
  */
 export const PORTFOLIO_DESCRIPTION =
-  "Ten NeuraGul case studies: dispatch software, an iOS app, a Shopify storefront, a wine trade portal, data pipelines, client sites, each linked to a live build.";
+  "Eleven NeuraGul case studies: SEO for Shopify stores, site rebuilds, dispatch software, an iOS app, data pipelines and client sites for small businesses.";
 /**
  * `hero-poster.jpg` is the only 1920x1080 asset we have and the only one that
  * is not a specific project's screenshot, so it is the one image that can back
@@ -121,7 +121,8 @@ export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
 export const PORTFOLIO_HIGHLIGHTS: CollectionProjectsHighlight[] = [];
 
 /**
- * All ten projects: the source's nine in `CASE_STUDIES` order, then
+ * All eleven projects: the source's nine in `CASE_STUDIES` order (Vintus
+ * deleted and Yankocy in its slot, 2026-09-25), then Halal Bridal and
  * Hasina Hijama Cupping.
  *
  * `location` carries the project's `meta` string ("2026 · iOS"), because there
@@ -156,8 +157,8 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     title: "Food Truck Rentals",
     href: "/work/foodtruckrentals/",
     location: "2026 · Web",
-    services: ["web-development", "data-intelligence"],
-    topServices: ["web-development", "data-intelligence"],
+    services: ["web-development", "seo", "data-intelligence"],
+    topServices: ["web-development", "seo", "data-intelligence"],
     image: {
       src: `${IMAGES}/foodtruckrentals.jpg`,
       alt: "The Food Truck Rentals home page",
@@ -169,8 +170,8 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     title: "New York Fine Foods",
     href: "/work/new-york-fine-foods/",
     location: "2026 · Web",
-    services: ["web-development"],
-    topServices: ["web-development"],
+    services: ["web-development", "seo"],
+    topServices: ["web-development", "seo"],
     image: {
       src: `${IMAGES}/nyff.jpg`,
       alt: "The New York Fine Foods catering site",
@@ -190,8 +191,8 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     title: "New York Mobile Mechanic",
     href: "/work/new-york-mobile-mechanic/",
     location: "2026 · Web",
-    services: ["web-development"],
-    topServices: ["web-development"],
+    services: ["web-development", "seo"],
+    topServices: ["web-development", "seo"],
     image: {
       src: `${IMAGES}/nymm.jpg`,
       alt: "The New York Mobile Mechanic home page",
@@ -225,19 +226,21 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
       height: 750,
     },
   },
+  /*
+    Added 2026-09-25 in the slot Vintus held (deleted the same day at the
+    user's request). A rebuild AND an SEO job, so it carries both. The new
+    site is built but yankocy.com had not been switched over when this was
+    written — the case study says so and links nothing live.
+  */
   {
-    title: "Vintus",
-    href: "/work/vintus/",
-    location: "2026 · WordPress",
-    // `web-development` only (user ruling 2026-09-11): ongoing maintenance and
-    // feature work on an inherited theme. The nginx, HSTS and CSP headers the
-    // site serves are the host's, not infrastructure we built, so no
-    // `cloud-infrastructure`.
-    services: ["web-development"],
-    topServices: ["web-development"],
+    title: "Yankocy",
+    href: "/work/yankocy/",
+    location: "2026 · Web · SEO",
+    services: ["web-development", "seo"],
+    topServices: ["web-development", "seo"],
     image: {
-      src: `${IMAGES}/vintus.jpg`,
-      alt: "The Vintus wine importer trade portal",
+      src: `${IMAGES}/yankocy.jpg`,
+      alt: "The rebuilt Yankocy wholesale building materials home page",
       width: 1200,
       height: 750,
     },
@@ -276,11 +279,29 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     // Google Ads conversion labels on the web pixel's eleven checkout events,
     // GTM and GA4, and the Merchant Center link (kept by user ruling
     // 2026-09-11; see docs/research/case-studies/landscape-drainage-proz.md).
-    services: ["web-development", "data-intelligence"],
-    topServices: ["web-development", "data-intelligence"],
+    services: ["web-development", "seo", "data-intelligence"],
+    topServices: ["web-development", "seo", "data-intelligence"],
     image: {
       src: `${IMAGES}/landscapedrainage.jpg`,
       alt: "The Landscape Drainage Proz Shopify storefront",
+      width: 1200,
+      height: 750,
+    },
+  },
+  /*
+    Added 2026-09-25. SEO only — no site was built, the store is the
+    client's own Shopify theme. The case study claims only what was verified
+    live on the store that day.
+  */
+  {
+    title: "Halal Bridal",
+    href: "/work/halal-bridal/",
+    location: "2026 · Shopify SEO",
+    services: ["seo"],
+    topServices: ["seo"],
+    image: {
+      src: `${IMAGES}/halalbridal.jpg`,
+      alt: "The Halal Bridal Shopify store home page",
       width: 1200,
       height: 750,
     },
@@ -290,10 +311,10 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     `CASE_STUDIES` — added 2026-09-07. Appended rather than slotted in, because
     the feed order is the source's own and this one has no place in it.
 
-    `web-development` only. The build is a Next.js marketing site; the SEO and
-    the AI-crawler files are part of shipping a marketing site, not a second
-    service, and claiming `data-intelligence` for a keyword spreadsheet would
-    inflate a filter count with nothing behind it.
+    `web-development` + `seo`. The build is a Next.js marketing site, and its
+    six single-search pages are the SEO work the `seo` filter (added
+    2026-09-25) exists to show. Claiming `data-intelligence` for a keyword
+    spreadsheet would still inflate a filter count with nothing behind it.
 
     Cover is a 1200x750 screenshot of the live home page, captured at 1600x1000
     on a 2x device and downsampled — the same ratio as the other nine, which is
@@ -303,8 +324,8 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     title: "Hasina Hijama Cupping",
     href: "/work/hasina-hijama-cupping/",
     location: "2026 · Next.js",
-    services: ["web-development"],
-    topServices: ["web-development"],
+    services: ["web-development", "seo"],
+    topServices: ["web-development", "seo"],
     image: {
       src: `${IMAGES}/hasinahijama.jpg`,
       alt: "The Hasina Hijama Cupping site for a Queens cupping practice",

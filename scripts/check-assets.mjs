@@ -228,9 +228,12 @@ const FROZEN_COVERS = new Set([
   "nyff.jpg",
   "nymm.jpg",
   "pizzeria.jpg",
-  "vintus.jpg",
   "hasinahijama.jpg",
   "landscapedrainage.jpg",
+  // Added 2026-09-25: the two new case studies' header covers, which follow
+  // the same decorative-backdrop alt="" convention as every cover above.
+  "yankocy.jpg",
+  "halalbridal.jpg",
   "rwd-pipeline.jpg",
   "mechanicseo.png",
   "conversion.png",

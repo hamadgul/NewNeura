@@ -5,10 +5,11 @@
  * props stay close to the markup rather than inventing an abstraction.
  */
 
-/** The five service lines that drive the hero card strip. */
+/** The six service lines that drive the hero card strip. */
 export type ServiceSlug =
   | "applied-ai"
   | "web-development"
+  | "seo"
   | "app-development"
   | "cloud-infrastructure"
   | "data-intelligence";

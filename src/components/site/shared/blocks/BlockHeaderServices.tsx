@@ -92,13 +92,14 @@ export interface BlockHeaderServicesProps {
 const SERVICE_GROUND: Record<ServiceSlug, string> = {
   "applied-ai": "bg-ng-applied-ai",
   "web-development": "bg-ng-web-development",
+  seo: "bg-ng-seo",
   "app-development": "bg-ng-app-development",
   "cloud-infrastructure": "bg-ng-cloud-infrastructure",
   "data-intelligence": "bg-ng-data-intelligence",
 };
 
 /**
- * White type on the three dark grounds, #262626 on the two light ones. The
+ * White type on the four dark grounds, #262626 on the two light ones. The
  * pairing is a contrast fact about each accent, not a per-page choice, which
  * is why it lives here rather than in each content module.
  *
@@ -109,6 +110,7 @@ const SERVICE_GROUND: Record<ServiceSlug, string> = {
 export const SERVICE_TONE: Record<ServiceSlug, ServiceHeaderTone> = {
   "applied-ai": "light",
   "web-development": "light",
+  seo: "light",
   "cloud-infrastructure": "light",
   "app-development": "dark",
   "data-intelligence": "dark",

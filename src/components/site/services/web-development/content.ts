@@ -2,9 +2,11 @@
  * Content for `/services/web-development/` — the Web Development service page.
  *
  * Copy is drawn from the NeuraGul source site's `web-mobile` service
- * (`pages/content.py`), taking its **web** half, plus the four case studies
+ * (`pages/content.py`), taking its **web** half, plus the case studies
  * that evidence it: Food Truck Rentals, New York Mobile Mechanic, New York Fine
- * Foods and Landscape Drainage Proz.
+ * Foods, Landscape Drainage Proz and Yankocy. SEO has had its own page since
+ * 2026-09-25 (`services/seo/`); the SEO slide below stays because SEO is
+ * still part of every site we build.
  *
  * VOICE — the source is written in the first person singular, because it was
  * written by one person. NeuraGul is a team, so this page says "we". Hamad Gul
@@ -260,7 +262,12 @@ export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "Storefronts:",
-      text: "A national wine importer's catalog on Vintus, and a Dawn storefront for Landscape Drainage Proz with two hand-written Custom Liquid sections, a municipal quote path and Google Ads conversion labels on seven storefront events, from page view to purchase.",
+      text: "A Dawn storefront for Landscape Drainage Proz with a hand-written Custom Liquid section, a municipal quote path and Google Ads conversion labels on seven storefront events, from page view to purchase.",
+    },
+    {
+      type: "paragraph",
+      lead: "Rebuilds:",
+      text: "Yankocy, a wholesale building-materials supplier in Monroe, Connecticut, from a nine-page site to twenty-six, with every old address redirected so the move keeps what already ranks.",
     },
     {
       type: "paragraph",
@@ -370,13 +377,13 @@ const NEW_YORK_FINE_FOODS: ProjectCard = {
 };
 
 /** Both `layoutFour` tiles take the 665×415.63 large aspect, not the 328×205 one. */
-const VINTUS: ProjectCard = {
-  title: "Vintus",
-  location: "2026 · WordPress",
-  href: "/work/vintus/",
+const YANKOCY: ProjectCard = {
+  title: "Yankocy",
+  location: "2026 · Web · SEO",
+  href: "/work/yankocy/",
   image: {
-    src: `${IMG}/vintus.jpg`,
-    alt: "The Vintus wine importer trade portal",
+    src: `${IMG}/yankocy.jpg`,
+    alt: "The rebuilt Yankocy wholesale building materials home page",
     width: 1200,
     height: 750,
   },
@@ -413,7 +420,7 @@ export const PROJECTS: BlockProjectsHighlightProps = {
     },
     {
       variant: "four",
-      left: VINTUS,
+      left: YANKOCY,
       right: LANDSCAPE_DRAINAGE_PROZ,
     },
   ],

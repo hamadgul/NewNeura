@@ -15,10 +15,10 @@ that task's report, the same way this file does.
 
 ## 1. Page purpose
 
-**Page type:** case study (`/work/<slug>/`), one per shipped project. Ten
+**Page type:** case study (`/work/<slug>/`), one per shipped project. Eleven
 exist: `src/components/site/work/{delivery-routing, packship,
 foodtruckrentals, new-york-fine-foods, new-york-mobile-mechanic,
-restaurant-ordering-portal, vintus, landscape-drainage-proz, rwd-pipeline,
+restaurant-ordering-portal, yankocy, halal-bridal, landscape-drainage-proz, rwd-pipeline,
 hasina-hijama-cupping}`.
 
 **The one primary action:** get the reader to `/contact/`. Concretely, the
@@ -59,10 +59,10 @@ NeuraGul's shipped work spans three real audience segments, confirmed by
 service pages under `src/components/site/services/`:
 
 1. **Local service-business owners** — restaurants, mechanics, a landscaping
-   company, a wine importer, a cupping practice. Not software people. They
+   company, a building-materials wholesaler, a bridal store, a cupping practice. Not software people. They
    want a site or a small system that works, ranks, and does not need them to
    think about it again. Represented by New York Fine Foods, New York Mobile
-   Mechanic, the restaurant ordering portal, Vintus, Landscape Drainage Proz,
+   Mechanic, the restaurant ordering portal, Yankocy, Halal Bridal, Landscape Drainage Proz,
    Hasina Hijama Cupping.
 2. **Operationally-stretched small companies with a real production
    problem** — a business running a manual, error-prone process (a
@@ -175,7 +175,7 @@ case study already does this in its header `lead`; match that pattern.
   test that fails on any superseded price in page copy), one owner page per
   search query, a Next.js 16 build.
 - The other seven projects (New York Fine Foods, New York Mobile Mechanic,
-  the restaurant ordering portal, Vintus, Landscape Drainage Proz, the
+  the restaurant ordering portal, Yankocy, Halal Bridal, Landscape Drainage Proz, the
   real-world-data pipeline, Hasina Hijama Cupping): read that project's own
   `content.ts` and, once it exists, its dossier under
   `docs/research/case-studies/` for its specific verifiable numbers — do not
@@ -271,7 +271,7 @@ its argument, flag it in that task's report rather than filling it in.
    imply a specific answer either way; confirm.
 4. **Whether case studies should ever name a client.** Only the delivery
    routing platform explicitly withholds a client name; the other nine name
-   the business (New York Fine Foods, Vintus, etc.) but none states whether
+   the business (New York Fine Foods, Yankocy, etc.) but none states whether
    that's the actual legal/trade name and disclosed with permission, or an
    internal project label. Worth a one-line confirmation before ten pages
    go live citing named businesses.

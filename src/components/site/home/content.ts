@@ -71,7 +71,7 @@ export const HERO_INTRO = {
   /*
     The city is added here rather than to the `<h1>` below it. The headline
     ("the software that small companies actually run on") is true of clients in
-    and well outside New York — Vintus is a national importer and the Freenome
+    and well outside New York — Halal Bridal ships to 19 countries and the Freenome
     pipeline was not local work — so putting a city in it would narrow a claim
     that is currently accurate. The eyebrow states where the team is, which is
     the fact, and it is the first geographic signal above the fold.
@@ -111,7 +111,7 @@ export const HERO_INTRO = {
 };
 
 /**
- * The five service lines, in strip order.
+ * The six service lines, in strip order.
  *
  * No card carries `subPages` any more; every card carries a `blurb` in that
  * slot — the customer-voice sentence — beside the two-line `subtitle`. On the
@@ -148,7 +148,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "Applied AI",
     subtitle: ["AI on one job", "you can measure"],
     index: 1,
-    total: 5,
+    total: 6,
     href: "/services/applied-ai/",
     image: {
       src: `${IMG}/delivery-routing.jpg`,
@@ -165,7 +165,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "Web Development",
     subtitle: ["A site that", "brings the calls"],
     index: 2,
-    total: 5,
+    total: 6,
     href: "/services/web-development/",
     image: {
       src: `${IMG}/foodtruckrentals.jpg`,
@@ -173,8 +173,32 @@ export const HERO_CARDS: HeroServiceCard[] = [
       width: 1200,
       height: 750,
     },
-    blurb: "A website built around your business, and the work that gets it found on Google.",
+    blurb: "A website built around your business that loads fast on any phone.",
     mainColor: "#925434",
+    contentColor: "#ffffff",
+  },
+  /*
+    Added 2026-09-25 when SEO became its own service line ("put an emphasis
+    on SEO as a service on the site"). Until then the Web Development blurb
+    carried it as "the work that gets it found on Google"; that clause moved
+    here, and the word SEO is now the card's title. The subline is kept to the
+    length of the lines around it (`font-S` in `max-w-[160px]`).
+  */
+  {
+    slug: "seo",
+    title: "SEO",
+    subtitle: ["Found by people", "already searching"],
+    index: 3,
+    total: 6,
+    href: "/services/seo/",
+    image: {
+      src: `${IMG}/yankocy.jpg`,
+      alt: "The rebuilt Yankocy wholesale building materials site",
+      width: 1200,
+      height: 750,
+    },
+    blurb: "Show up on Google when customers search for what you sell.",
+    mainColor: "#4d5e52",
     contentColor: "#ffffff",
   },
   {
@@ -182,8 +206,8 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "App Development",
     subtitle: ["Your service,", "in the App Store"],
     blurb: "An app your customers can download, on iPhone and Android.",
-    index: 3,
-    total: 5,
+    index: 4,
+    total: 6,
     href: "/services/app-development/",
     image: {
       src: `${IMG}/packship.jpg`,
@@ -218,8 +242,8 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "Cloud & Infrastructure",
     subtitle: ["A hosting bill", "that stays flat"],
     blurb: "Hosting that stays up and fast, with a bill that doesn't surprise you.",
-    index: 4,
-    total: 5,
+    index: 5,
+    total: 6,
     href: "/services/cloud-infrastructure/",
     image: {
       src: `${IMG}/pizzeria.jpg`,
@@ -235,8 +259,8 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "Data Intelligence",
     subtitle: ["One number", "that always answers"],
     blurb: "Your numbers in one place, so you can see what's working without chasing anyone.",
-    index: 5,
-    total: 5,
+    index: 6,
+    total: 6,
     href: "/services/data-intelligence/",
     image: {
       src: `${IMG}/rwd-pipeline.jpg`,
@@ -266,7 +290,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
 export const INTRO_BLOCK = {
   title: "A team that holds the whole system, and one number that always answers.",
   tagline: "Talk. Scope. Build. Stay.",
-  text: "If part of your business still runs on a spreadsheet, a phone and one person's memory, that is what we build software for. We are a software development team in New York, and most of what we build is operational: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions, a wine importer's trade portal we maintain. It starts with a half-hour call, then a written scope with a fixed price and a date, then working software in the first couple of weeks and every week after. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
+  text: "If part of your business still runs on a spreadsheet, a phone and one person's memory, that is what we build software for. We are a software development team in New York, and most of what we build is operational: the dispatch app that plans six vans every morning, an ordering portal that lets a pizzeria skip delivery-app commissions. We also build websites and do the SEO that gets a business found, from a Connecticut building-materials supplier's rebuilt site to two Shopify stores. It starts with a half-hour call, then a written scope with a fixed price and a date, then working software in the first couple of weeks and every week after. Hamad Gul is your primary point of contact and one of the developers on your project, so the person who scopes the work is also one of the people writing it. You always know who is on your project, and the same people are still reachable six months after launch.",
   /*
     The anchor text was "More about us", which describes the click and not the
     destination. Internal anchor text is one of the few on-page signals that
@@ -278,10 +302,11 @@ export const INTRO_BLOCK = {
   cta: { label: "About our New York team", href: "/about/" },
 };
 
-/** Service pills with their project counts, sized off the nine real projects. */
+/** Service pills with their project counts, sized off the eleven real projects. */
 export const PORTFOLIO_FILTERS: PortfolioFilterItem[] = [
   { label: "Applied AI", count: 2, href: "/work/?service=applied-ai" },
   { label: "Web Development", count: 6, href: "/work/?service=web-development" },
+  { label: "SEO", count: 7, href: "/work/?service=seo" },
   { label: "App Development", count: 1, href: "/work/?service=app-development" },
   { label: "Cloud & Infrastructure", count: 1, href: "/work/?service=cloud-infrastructure" },
   { label: "Data Intelligence", count: 4, href: "/work/?service=data-intelligence" },
@@ -396,6 +421,7 @@ export const PROJECTS_ROW_TWO: ProjectCard[] = [
 export const SERVICE_LINKS: NavLink[] = [
   { label: "Applied AI", href: "/services/applied-ai/" },
   { label: "Web Development", href: "/services/web-development/" },
+  { label: "SEO", href: "/services/seo/" },
   { label: "App Development", href: "/services/app-development/" },
   { label: "Cloud & Infrastructure", href: "/services/cloud-infrastructure/" },
   { label: "Data Intelligence", href: "/services/data-intelligence/" },
