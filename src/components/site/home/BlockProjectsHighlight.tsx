@@ -54,8 +54,16 @@ export function BlockProjectsHighlight() {
             reads as a broken row rather than as something you can scroll.
             `min-w-0` stays: it is what lets the wrapper shrink to the space
             available so the inner row knows where to break.
+
+            `touch-pan-x` below 768: a swipe that starts on the row only ever
+            scrolls the row. Left to the browser, a slightly diagonal swipe
+            was read as vertical and scrolled the page instead (the user: "it
+            should only be horizontal"). `overscroll-x-contain` keeps a swipe
+            past either end from turning into a back/forward gesture. From
+            768 the row wraps and does not scroll, so `touch-auto` hands
+            vertical swipes back to the page there.
           */}
-          <div className="portfolioFilter__wrapperOverflow mx-[calc(50%-50vw)] w-screen min-w-0 overflow-x-auto px-[calc(50vw-50%)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:w-auto md:overflow-x-visible md:px-0">
+          <div className="portfolioFilter__wrapperOverflow mx-[calc(50%-50vw)] w-screen min-w-0 touch-pan-x overflow-x-auto overscroll-x-contain px-[calc(50vw-50%)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:w-auto md:touch-auto md:overflow-x-visible md:px-0">
             {/* A scroller's padding-right is not part of its scrollable width, so
               at the end of the swipe "Data Intelligence" sat flush against the
               screen edge. This spacer rides inside the scrolled row, where its
