@@ -217,8 +217,9 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
       "applied-ai",
       "retrieval-agents",
       "evaluation-guardrails",
+      "cloud-infrastructure",
     ],
-    topServices: ["applied-ai"],
+    topServices: ["applied-ai", "cloud-infrastructure"],
     image: {
       src: `${IMAGES}/delivery-routing.jpg`,
       alt: "The delivery routing platform, showing six drivers' solved routes",

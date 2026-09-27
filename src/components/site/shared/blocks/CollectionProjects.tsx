@@ -133,7 +133,7 @@ export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
   { label: "Web Development", slug: "web-development", count: 6 },
   { label: "SEO", slug: "seo", count: 7 },
   { label: "App Development", slug: "app-development", count: 1 },
-  { label: "Cloud & Infrastructure", slug: "cloud-infrastructure", count: 1 },
+  { label: "Cloud Apps & Infrastructure", slug: "cloud-infrastructure", count: 2 },
 ];
 
 /* ------------------------------------------------------------------ *

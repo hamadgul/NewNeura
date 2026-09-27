@@ -19,7 +19,7 @@ Queens NY (Jamaica, Ridgewood, Kew Gardens, Kew Gardens Hills, Forest Hills), Br
 - [Web Development](https://neuragul.com/services/web-development/): Next.js and Shopify sites that load fast, rank across the five boroughs, and stay maintainable after handover.
 - [SEO](https://neuragul.com/services/seo/): Audits that end in fixes, site moves that keep their rankings, Shopify SEO, structured data, and pages written for what customers actually search.
 - [App Development](https://neuragul.com/services/app-development/): Native-quality iOS and Android apps.
-- [Cloud & Infrastructure](https://neuragul.com/services/cloud-infrastructure/): Hosting, CI/CD and monitoring sized to real load, with a predictable bill.
+- [Cloud Apps & Infrastructure](https://neuragul.com/services/cloud-infrastructure/): Hosting, CI/CD and monitoring sized to real load, with a predictable bill.
 
 ## Work
 

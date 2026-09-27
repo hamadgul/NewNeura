@@ -60,7 +60,7 @@ const IMG = "/site/images";
 export const META = {
   /*
     "DevOps" is in the title because it is the word buyers use for this work
-    even when the page never says it. "Cloud & Infrastructure" is the studio's
+    even when the page never says it. "Cloud Apps & Infrastructure" is the studio's
     own name for the line and stays as the `<h1>`.
   */
   title: "Cloud Infrastructure & DevOps in New York",
@@ -83,7 +83,7 @@ export const HEADER: BlockHeaderServicesProps = {
   service: "cloud-infrastructure",
   eyebrow: "What we build",
   subtitle: "Infrastructure sized to real load",
-  title: "Cloud & Infrastructure",
+  title: "Cloud Apps & Infrastructure",
   titleSize: "3XL",
   image: {
     // The restaurant ordering portal — the one project tagged to this line,
@@ -326,7 +326,7 @@ const RESTAURANT_ORDERING_PORTAL: ProjectCard = {
 export const PROJECTS: BlockProjectsHighlightProps = {
   title: "Where this shipped",
   button: {
-    title: "All Cloud & Infrastructure",
+    title: "All Cloud Apps & Infrastructure",
     href: "/work/?service=cloud-infrastructure",
   },
   layouts: [

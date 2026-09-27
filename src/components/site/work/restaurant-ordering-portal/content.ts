@@ -102,7 +102,7 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Restaurant ordering portal",
   lead: "Online orders that land straight in the restaurant's Square POS, with no app in the middle taking a cut.",
   location: "2026 · Product",
-  service: "Cloud & Infrastructure",
+  service: "Cloud Apps & Infrastructure",
   breadcrumbLabel: "Work",
   breadcrumbHref: "/work/",
   backLabel: "All work",

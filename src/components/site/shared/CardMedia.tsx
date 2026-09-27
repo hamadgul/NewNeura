@@ -12,6 +12,7 @@
  * Work tab did not.
  */
 import Image from "next/image";
+import type { CSSProperties } from "react";
 
 /**
  * `sizes` for the project-card surfaces, shared because they share `ImageCard`.
@@ -94,9 +95,11 @@ interface CardMediaProps {
   className?: string;
   sizes?: string;
   priority?: boolean;
+  /** Merged onto whichever element renders — the hero strip's entry `scale()`. */
+  style?: CSSProperties;
 }
 
-export function CardMedia({ media, className, sizes, priority }: CardMediaProps) {
+export function CardMedia({ media, className, sizes, priority, style }: CardMediaProps) {
   if (media.video) {
     return (
       <video
@@ -113,7 +116,7 @@ export function CardMedia({ media, className, sizes, priority }: CardMediaProps)
         // Only binds where the wrapper does not already fix both dimensions —
         // `layoutFive`, whose banner is `h-auto`. Everywhere else `h-full`
         // wins and this is inert.
-        style={{ aspectRatio: `${media.image.width} / ${media.image.height}` }}
+        style={{ aspectRatio: `${media.image.width} / ${media.image.height}`, ...style }}
         className={className}
       />
     );
@@ -128,6 +131,7 @@ export function CardMedia({ media, className, sizes, priority }: CardMediaProps)
       sizes={sizes}
       priority={priority}
       className={className}
+      style={style}
     />
   );
 }

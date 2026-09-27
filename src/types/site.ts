@@ -21,7 +21,7 @@ export type ServiceSlug =
  */
 export interface HeroServiceCard {
   slug: ServiceSlug;
-  /** Card heading, e.g. "Cloud & Infrastructure". */
+  /** Card heading, e.g. "Cloud Apps & Infrastructure". */
   title: string;
   /** Right-aligned descriptor, split across two lines. */
   subtitle: [string, string];
@@ -48,6 +48,11 @@ export interface HeroServiceCard {
     width: number;
     height: number;
   };
+  /**
+   * A muted loop played in the strip in place of `image`, which becomes its
+   * poster (and, via `posterBackdrop`, the frame shown while it rewinds).
+   */
+  video?: { src: string };
   /** Card ground colour. */
   mainColor: string;
   /** Text/icon colour on that ground. */

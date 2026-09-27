@@ -69,7 +69,7 @@ const SCHEMA = [
     deliverables: PROCESS.phases.map((phase) => phase.title),
   }),
   breadcrumbSchema([
-    { name: "Cloud & Infrastructure", href: "/services/cloud-infrastructure/" },
+    { name: "Cloud Apps & Infrastructure", href: "/services/cloud-infrastructure/" },
   ]),
 ];
 

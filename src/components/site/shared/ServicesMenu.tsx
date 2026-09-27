@@ -38,7 +38,7 @@ const SERVICES: Array<{ slug: ServiceSlug; label: string; ground: string }> = [
   { slug: "app-development", label: "App Development", ground: "bg-ng-app-development" },
   {
     slug: "cloud-infrastructure",
-    label: "Cloud & Infrastructure",
+    label: "Cloud Apps & Infrastructure",
     ground: "bg-ng-cloud-infrastructure",
   },
 ];
@@ -47,16 +47,17 @@ const SERVICES: Array<{ slug: ServiceSlug; label: string; ground: string }> = [
  * Width of the open pill.
  *
  * The source's is 130px, sized to hold "Higher  Education" (107.1px at 14px) —
- * 11.5px of air either side. Ours has to hold "Cloud & Infrastructure", which
- * measures 140.8px, so 130 would have clipped it silently, the way every other
- * measured slot on this site has when it met these longer names. 164px is that
- * label plus the source's own 11.5px either side.
+ * 11.5px of air either side. Ours has to hold "Cloud Apps & Infrastructure",
+ * which measures 177.0px, so 130 would have clipped it silently, the way every
+ * other measured slot on this site has when it met these longer names. 200px is
+ * that label plus the source's own 11.5px either side. (It was 164 for
+ * "Cloud & Infrastructure", 140.8px, until the 2026-09-27 rename clipped it.)
  *
  * Fixed rather than `fit-content` on purpose: the strip's total width has to
  * stay constant as the open pill moves between items, or the label beside it
  * would jump on every hover. **Re-measure if a service is ever renamed.**
  */
-const OPEN_WIDTH = 164;
+const OPEN_WIDTH = 200;
 const SWATCH_WIDTH = 20;
 
 /** Fitted to the source: ~470ms, ease-out with an exponent of ~2.05. */

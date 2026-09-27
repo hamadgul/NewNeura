@@ -197,6 +197,8 @@ export const HERO_CARDS: HeroServiceCard[] = [
       width: 1200,
       height: 750,
     },
+    // The same 3-second loop the NYMM work tile plays; nymm.jpg is its poster.
+    video: { src: `${VIDEOS}/nymm-hero-loop.mp4` },
     blurb: "Show up on Google when customers search for what you sell.",
     mainColor: "#4d5e52",
     contentColor: "#ffffff",
@@ -239,7 +241,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
   },
   {
     slug: "cloud-infrastructure",
-    title: "Cloud & Infrastructure",
+    title: "Cloud Apps & Infrastructure",
     subtitle: ["A hosting bill", "that stays flat"],
     blurb: "Hosting that stays up and fast, with a bill that doesn't surprise you.",
     index: 5,
@@ -291,7 +293,7 @@ export const PORTFOLIO_FILTERS: PortfolioFilterItem[] = [
   { label: "Web Development", count: 6, href: "/work/?service=web-development" },
   { label: "SEO", count: 7, href: "/work/?service=seo" },
   { label: "App Development", count: 1, href: "/work/?service=app-development" },
-  { label: "Cloud & Infrastructure", count: 1, href: "/work/?service=cloud-infrastructure" },
+  { label: "Cloud Apps & Infrastructure", count: 2, href: "/work/?service=cloud-infrastructure" },
 ];
 
 /**
@@ -405,7 +407,7 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "Web Development", href: "/services/web-development/" },
   { label: "SEO", href: "/services/seo/" },
   { label: "App Development", href: "/services/app-development/" },
-  { label: "Cloud & Infrastructure", href: "/services/cloud-infrastructure/" },
+  { label: "Cloud Apps & Infrastructure", href: "/services/cloud-infrastructure/" },
 ];
 
 export const EXPLORE_GROUP: NavGroup = {

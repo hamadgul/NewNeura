@@ -75,7 +75,7 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Delivery routing platform",
   lead: "Upload to printed routes in minutes, with every ticket accounted for.",
   location: "2026 · Web app",
-  service: "Applied AI",
+  service: "Applied AI · Cloud Apps & Infrastructure",
   breadcrumbLabel: "Work",
   breadcrumbHref: "/work/",
   backLabel: "All work",

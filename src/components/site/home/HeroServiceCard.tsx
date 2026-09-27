@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
@@ -9,6 +8,7 @@ import { REVEAL_OBSERVER_INIT, REVEAL_TRIGGER_FRACTION } from "../shared/reveal"
 import type { HeroServiceCard as HeroServiceCardData } from "@/types/site";
 import { ButtonCircle } from "../shared/buttons";
 import { ChevronIcon } from "../shared/icons";
+import { CardMedia, posterBackdrop } from "../shared/CardMedia";
 
 /*
   The stacked card's image strip slides in from the right as the card crosses
@@ -242,6 +242,9 @@ export function HeroServiceCard({
 
   /** The pinned strip is wide enough for the full shot; the stacked one is not. */
   const stripImage = (!horizontal && card.imageStacked) || card.image;
+  // A card with a loop plays it at both widths; `imageStacked` is a crop of a
+  // still and has no video counterpart, so a card should not carry both.
+  const stripMedia = { image: stripImage, video: card.video };
 
   // 1 = band at its maximum (half the card), 0 = collapsed to its resting
   // 285px. The content inside it is 285px tall and pinned to the bottom, so
@@ -315,6 +318,7 @@ export function HeroServiceCard({
           horizontal ? "col-span-full" : "col-start-2 row-start-1",
         )}
         aria-label={card.title.replace(/\s+/g, " ")}
+        style={posterBackdrop(stripMedia)}
       >
         {/*
           `imageStacked` when the band is stacked and the card carries one. The
@@ -324,11 +328,8 @@ export function HeroServiceCard({
           Falls back to `image`, which is what every other card uses at both
           widths. See the note in `content.ts`.
         */}
-        <Image
-          src={stripImage.src}
-          alt={stripImage.alt}
-          width={stripImage.width}
-          height={stripImage.height}
+        <CardMedia
+          media={stripMedia}
           sizes={stripSizes(stripImage)}
           priority={card.index === 1}
           className="h-full w-full object-cover"
