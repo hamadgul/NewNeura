@@ -22,7 +22,7 @@
  *
  * Image sizing note: every `width`/`height` below is the asset's true decoded
  * size, because `next/image` reserves the aspect ratio from those two numbers.
- * All eleven covers are 1200x750 (1.6), which is exactly the ratio
+ * All ten covers are 1200x750 (1.6), which is exactly the ratio
  * `CollectionProjects` gives its cards (`aspect-[665/415.625]`), so no card
  * crops.
  *
@@ -63,7 +63,7 @@ export const PORTFOLIO_CANONICAL = "/work/";
  * snippet and leave. Held under 160 characters, so the city went.
  */
 export const PORTFOLIO_DESCRIPTION =
-  "Eleven NeuraGul case studies: SEO for Shopify stores, site rebuilds, dispatch software, an iOS app, data pipelines and client sites for small businesses.";
+  "Ten NeuraGul case studies: SEO for Shopify stores, site rebuilds, dispatch software, an iOS app, an ordering portal and client sites for small businesses.";
 /**
  * `hero-poster.jpg` is the only 1920x1080 asset we have and the only one that
  * is not a specific project's screenshot, so it is the one image that can back
@@ -121,8 +121,9 @@ export const PORTFOLIO_HEADER: BlockHeaderPortfolioProps = {
 export const PORTFOLIO_HIGHLIGHTS: CollectionProjectsHighlight[] = [];
 
 /**
- * All eleven projects: the source's nine in `CASE_STUDIES` order (Vintus
- * deleted and Yankocy in its slot, 2026-09-25), then Halal Bridal and
+ * All ten projects: the source's nine in `CASE_STUDIES` order (Vintus
+ * deleted and Yankocy in its slot, 2026-09-25; the Real-World Data Pipeline
+ * deleted with the Data Intelligence service, 2026-09-26), then Halal Bridal and
  * Hasina Hijama Cupping.
  *
  * `location` carries the project's `meta` string ("2026 · iOS"), because there
@@ -157,8 +158,8 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     title: "Food Truck Rentals",
     href: "/work/foodtruckrentals/",
     location: "2026 · Web",
-    services: ["web-development", "seo", "data-intelligence"],
-    topServices: ["web-development", "seo", "data-intelligence"],
+    services: ["web-development", "seo"],
+    topServices: ["web-development", "seo"],
     image: {
       src: `${IMAGES}/foodtruckrentals.jpg`,
       alt: "The Food Truck Rentals home page",
@@ -216,9 +217,8 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
       "applied-ai",
       "retrieval-agents",
       "evaluation-guardrails",
-      "data-intelligence",
     ],
-    topServices: ["applied-ai", "data-intelligence"],
+    topServices: ["applied-ai"],
     image: {
       src: `${IMAGES}/delivery-routing.jpg`,
       alt: "The delivery routing platform, showing six drivers' solved routes",
@@ -259,28 +259,11 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
     },
   },
   {
-    title: "Real-World Data Pipeline",
-    href: "/work/rwd-pipeline/",
-    location: "Product · 0-to-1",
-    services: ["data-intelligence"],
-    topServices: ["data-intelligence"],
-    image: {
-      src: `${IMAGES}/rwd-pipeline.jpg`,
-      alt: "The real-world clinical data pipeline",
-      width: 1200,
-      height: 750,
-    },
-  },
-  {
     title: "Landscape Drainage Proz",
     href: "/work/landscape-drainage-proz/",
     location: "2026 · Shopify",
-    // `data-intelligence` is the measurement layer, not the storefront: seven
-    // Google Ads conversion labels on the web pixel's eleven checkout events,
-    // GTM and GA4, and the Merchant Center link (kept by user ruling
-    // 2026-09-11; see docs/research/case-studies/landscape-drainage-proz.md).
-    services: ["web-development", "seo", "data-intelligence"],
-    topServices: ["web-development", "seo", "data-intelligence"],
+    services: ["web-development", "seo"],
+    topServices: ["web-development", "seo"],
     image: {
       src: `${IMAGES}/landscapedrainage.jpg`,
       alt: "The Landscape Drainage Proz Shopify storefront",
@@ -313,8 +296,7 @@ export const PORTFOLIO_PROJECTS: CollectionProjectsProject[] = [
 
     `web-development` + `seo`. The build is a Next.js marketing site, and its
     six single-search pages are the SEO work the `seo` filter (added
-    2026-09-25) exists to show. Claiming `data-intelligence` for a keyword
-    spreadsheet would still inflate a filter count with nothing behind it.
+    2026-09-25) exists to show.
 
     Cover is a 1200x750 screenshot of the live home page, captured at 1600x1000
     on a 2x device and downsampled — the same ratio as the other nine, which is

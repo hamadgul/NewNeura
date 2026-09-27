@@ -234,7 +234,6 @@ const FROZEN_COVERS = new Set([
   // the same decorative-backdrop alt="" convention as every cover above.
   "yankocy.jpg",
   "halalbridal.jpg",
-  "rwd-pipeline.jpg",
   "mechanicseo.png",
   "conversion.png",
   "hero-poster.jpg",

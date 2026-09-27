@@ -119,8 +119,8 @@ export const COLLECTION_PROJECTS_PER_PAGE = 14;
  * carry the sub-service slugs, so `?service=ai-strategy` still filters.
  *
  * A project routinely carries more than one service — the routing platform is
- * both Applied AI and Data Intelligence — so these counts deliberately sum to
- * more than the eleven projects in the feed.
+ * Web Development and SEO — so these counts deliberately sum to more than
+ * the ten projects in the feed.
  *
  * These are HAND-MAINTAINED and nothing verifies them: a pill can advertise a
  * count that no longer matches the cards behind it. Adding a project means
@@ -134,7 +134,6 @@ export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
   { label: "SEO", slug: "seo", count: 7 },
   { label: "App Development", slug: "app-development", count: 1 },
   { label: "Cloud & Infrastructure", slug: "cloud-infrastructure", count: 1 },
-  { label: "Data Intelligence", slug: "data-intelligence", count: 4 },
 ];
 
 /* ------------------------------------------------------------------ *

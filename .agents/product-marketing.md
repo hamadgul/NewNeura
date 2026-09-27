@@ -15,10 +15,10 @@ that task's report, the same way this file does.
 
 ## 1. Page purpose
 
-**Page type:** case study (`/work/<slug>/`), one per shipped project. Eleven
+**Page type:** case study (`/work/<slug>/`), one per shipped project. Ten
 exist: `src/components/site/work/{delivery-routing, packship,
 foodtruckrentals, new-york-fine-foods, new-york-mobile-mechanic,
-restaurant-ordering-portal, yankocy, halal-bridal, landscape-drainage-proz, rwd-pipeline,
+restaurant-ordering-portal, yankocy, halal-bridal, landscape-drainage-proz,
 hasina-hijama-cupping}`.
 
 **The one primary action:** get the reader to `/contact/`. Concretely, the
@@ -69,7 +69,7 @@ service pages under `src/components/site/services/`:
    dispatcher planning routes by hand) that is willing to pay for software
    that removes the manual step and can be measured. Represented by the
    delivery routing platform (`src/components/site/work/delivery-routing/
-   content.ts`) and the real-world-data pipeline.
+   content.ts`).
 3. **Consumer-product builders** — someone who wants a polished, App
    Store-shippable product, evidenced by working code rather than a deck.
    Represented by PackShip.
@@ -174,9 +174,9 @@ case study already does this in its header `lead`; match that pattern.
   machine-readable price sheet and the JSON-LD offers on seven pages (with a
   test that fails on any superseded price in page copy), one owner page per
   search query, a Next.js 16 build.
-- The other seven projects (New York Fine Foods, New York Mobile Mechanic,
-  the restaurant ordering portal, Yankocy, Halal Bridal, Landscape Drainage Proz, the
-  real-world-data pipeline, Hasina Hijama Cupping): read that project's own
+- The other six projects (New York Fine Foods, New York Mobile Mechanic,
+  the restaurant ordering portal, Yankocy, Halal Bridal, Landscape Drainage Proz,
+  Hasina Hijama Cupping): read that project's own
   `content.ts` and, once it exists, its dossier under
   `docs/research/case-studies/` for its specific verifiable numbers — do not
   reuse routing's or PackShip's numbers on a different project.

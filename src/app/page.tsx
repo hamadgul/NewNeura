@@ -10,15 +10,15 @@ import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import type { Metadata } from "next";
 
 /*
-  155 characters, which is inside the ~160 Google renders on desktop before it
+  136 characters, which is inside the ~160 Google renders on desktop before it
   truncates. It leads with the entity and the city because a homepage snippet
   is read by people who do not yet know the name, then names the five service
   lines in the words people search for ("web apps", "iOS and Android apps",
-  "AI systems", "data pipelines") rather than in the nav's short labels, and
+  "AI systems", "SEO") rather than in the nav's short labels, and
   closes on an action.
 */
 const DESCRIPTION =
-  "NeuraGul is a New York software development team building custom web apps, iOS and Android apps, AI systems and data pipelines for small companies.";
+  "NeuraGul is a New York software development team building custom web apps, iOS and Android apps, AI systems and SEO for small companies.";
 
 /**
  * The homepage title is not suffixed, so it opts out of the root layout's

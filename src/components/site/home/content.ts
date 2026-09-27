@@ -148,7 +148,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "Applied AI",
     subtitle: ["AI on one job", "you can measure"],
     index: 1,
-    total: 6,
+    total: 5,
     href: "/services/applied-ai/",
     image: {
       src: `${IMG}/delivery-routing.jpg`,
@@ -165,7 +165,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "Web Development",
     subtitle: ["A site that", "brings the calls"],
     index: 2,
-    total: 6,
+    total: 5,
     href: "/services/web-development/",
     image: {
       src: `${IMG}/foodtruckrentals.jpg`,
@@ -189,7 +189,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "SEO",
     subtitle: ["Found by people", "already searching"],
     index: 3,
-    total: 6,
+    total: 5,
     href: "/services/seo/",
     image: {
       src: `${IMG}/nymm.jpg`,
@@ -207,7 +207,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     subtitle: ["Your service,", "in the App Store"],
     blurb: "An app your customers can download, on iPhone and Android.",
     index: 4,
-    total: 6,
+    total: 5,
     href: "/services/app-development/",
     image: {
       src: `${IMG}/packship.jpg`,
@@ -243,7 +243,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     subtitle: ["A hosting bill", "that stays flat"],
     blurb: "Hosting that stays up and fast, with a bill that doesn't surprise you.",
     index: 5,
-    total: 6,
+    total: 5,
     href: "/services/cloud-infrastructure/",
     image: {
       src: `${IMG}/pizzeria.jpg`,
@@ -253,23 +253,6 @@ export const HERO_CARDS: HeroServiceCard[] = [
     },
     mainColor: "#707569",
     contentColor: "#ffffff",
-  },
-  {
-    slug: "data-intelligence",
-    title: "Data Intelligence",
-    subtitle: ["One number", "that always answers"],
-    blurb: "Your numbers in one place, so you can see what's working without chasing anyone.",
-    index: 6,
-    total: 6,
-    href: "/services/data-intelligence/",
-    image: {
-      src: `${IMG}/rwd-pipeline.jpg`,
-      alt: "The real-world data pipeline case study",
-      width: 1200,
-      height: 750,
-    },
-    mainColor: "#e3c1aa",
-    contentColor: "#111111",
   },
 ];
 
@@ -302,14 +285,13 @@ export const INTRO_BLOCK = {
   cta: { label: "About our New York team", href: "/about/" },
 };
 
-/** Service pills with their project counts, sized off the eleven real projects. */
+/** Service pills with their project counts, sized off the ten real projects. */
 export const PORTFOLIO_FILTERS: PortfolioFilterItem[] = [
   { label: "Applied AI", count: 2, href: "/work/?service=applied-ai" },
   { label: "Web Development", count: 6, href: "/work/?service=web-development" },
   { label: "SEO", count: 7, href: "/work/?service=seo" },
   { label: "App Development", count: 1, href: "/work/?service=app-development" },
   { label: "Cloud & Infrastructure", count: 1, href: "/work/?service=cloud-infrastructure" },
-  { label: "Data Intelligence", count: 4, href: "/work/?service=data-intelligence" },
 ];
 
 /**
@@ -424,7 +406,6 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: "SEO", href: "/services/seo/" },
   { label: "App Development", href: "/services/app-development/" },
   { label: "Cloud & Infrastructure", href: "/services/cloud-infrastructure/" },
-  { label: "Data Intelligence", href: "/services/data-intelligence/" },
 ];
 
 export const EXPLORE_GROUP: NavGroup = {

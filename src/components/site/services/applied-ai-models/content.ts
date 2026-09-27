@@ -175,10 +175,10 @@ export const PROCESS: BlockProcessCardSliderProps = {
       caption: "Fixed price, and a date",
       text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
       image: {
-        src: `${IMG}/rwd-pipeline.jpg`,
-        alt: "The real-world clinical data pipeline",
-        width: 1200,
-        height: 750,
+        src: `${IMG}/delivery-routing-cutsheet.jpg`,
+        alt: "A driver cut sheet: one page per driver, with stop order, ETA, items and a DONE checkbox",
+        width: 1600,
+        height: 1000,
       },
     },
     {
@@ -259,7 +259,7 @@ export const WYSIWYG_WHAT_YOU_GET: BlockWysiwygProps = {
 };
 
 /* ------------------------------------------------------------------ *
- * Highlighted projects — three tiles in layout two
+ * Highlighted projects — two large tiles in layout four
  * ------------------------------------------------------------------ *
  *
  * `location` carries each project's year-and-platform meta, which is the slot
@@ -277,20 +277,7 @@ const DELIVERY_ROUTING: ProjectCard = {
     width: 1600,
     height: 1000,
   },
-  size: "small",
-};
-
-const RWD_PIPELINE: ProjectCard = {
-  title: "Real-World Data Pipeline",
-  location: "Product · 0-to-1",
-  href: "/work/rwd-pipeline/",
-  image: {
-    src: `${IMG}/rwd-pipeline.jpg`,
-    alt: "The real-world clinical data pipeline",
-    width: 1200,
-    height: 750,
-  },
-  size: "small",
+  size: "large",
 };
 
 const PACKSHIP: ProjectCard = {
@@ -307,9 +294,8 @@ const PACKSHIP: ProjectCard = {
 };
 
 /**
- * `layoutTwo` is the mirrored variant: the two small tiles come first in the
- * DOM and the hero sits on the right. PackShip takes the hero because it is the
- * project this page is about.
+ * Layout four: two large tiles side by side. PackShip takes the left because
+ * it is the project this page is about.
  *
  * There is no `layoutThree` on this route, so no footer call-to-action either —
  * the header button is the only way out to the filtered work index. The query
@@ -320,11 +306,7 @@ export const PROJECTS: BlockProjectsHighlightProps = {
   title: "Where this shipped",
   button: { title: "All Applied AI", href: "/work/?service=applied-ai" },
   layouts: [
-    {
-      variant: "two",
-      small: [DELIVERY_ROUTING, RWD_PIPELINE],
-      large: PACKSHIP,
-    },
+    { variant: "four", left: PACKSHIP, right: DELIVERY_ROUTING },
   ],
 };
 

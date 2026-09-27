@@ -25,7 +25,7 @@ import { defineShots } from "./_schema.mjs";
  * ── The cover (re-shot 2026-09-25, user-approved) ───────────────────────────
  *
  *   landscapedrainage.jpg   the cover, 1200x750, filename FROZEN: used by `/work/`, the home
- *                           grid, `/services/web-development/`, `/services/data-intelligence/`
+ *                           grid, `/services/web-development/`
  *                           and `/process/` (alt "The Landscape Drainage Proz Shopify
  *                           storefront") and as this page's header and og:image. The 2026-09-02
  *                           capture showed the old home page (blue Custom Liquid strip,

@@ -291,7 +291,7 @@ const PACKSHIP: ProjectCard = {
 };
 
 /**
- * Tagged Web Development and Data Intelligence rather than Applied AI, so it
+ * Tagged Web Development and SEO rather than Applied AI, so it
  * does not appear behind the header's filter. It is here because its 141 tests
  * are half of what this page is arguing, and a guardrail is a guardrail whether
  * or not a model sits behind it.

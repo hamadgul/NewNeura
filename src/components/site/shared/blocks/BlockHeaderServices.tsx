@@ -57,8 +57,8 @@ export interface BlockHeaderServicesProps {
    */
   service: ServiceSlug;
   /**
-   * Foreground treatment. `--ng-app-development` and `--ng-data-intelligence`
-   * are light grounds and take dark type; the other three take white. Defaults
+   * Foreground treatment. `--ng-app-development` is a light ground and takes
+   * dark type; the other four take white. Defaults
    * per service, so callers only pass this to override.
    */
   tone?: ServiceHeaderTone;
@@ -95,11 +95,10 @@ const SERVICE_GROUND: Record<ServiceSlug, string> = {
   seo: "bg-ng-seo",
   "app-development": "bg-ng-app-development",
   "cloud-infrastructure": "bg-ng-cloud-infrastructure",
-  "data-intelligence": "bg-ng-data-intelligence",
 };
 
 /**
- * White type on the four dark grounds, #262626 on the two light ones. The
+ * White type on the four dark grounds, #262626 on the light one. The
  * pairing is a contrast fact about each accent, not a per-page choice, which
  * is why it lives here rather than in each content module.
  *
@@ -113,7 +112,6 @@ export const SERVICE_TONE: Record<ServiceSlug, ServiceHeaderTone> = {
   seo: "light",
   "cloud-infrastructure": "light",
   "app-development": "dark",
-  "data-intelligence": "dark",
 };
 
 /** The source's shared easing for hover transitions. */

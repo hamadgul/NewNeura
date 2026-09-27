@@ -99,7 +99,7 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Landscape Drainage Proz",
   lead: "A Dawn storefront for a drainage dealer, then a search audit and seven guides.",
   location: "2026 · Shopify",
-  service: "Web Development · Data Intelligence · SEO",
+  service: "Web Development · SEO",
   breadcrumbLabel: "Work",
   breadcrumbHref: "/work/",
   backLabel: "All work",

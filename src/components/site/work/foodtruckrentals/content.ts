@@ -101,7 +101,7 @@ export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Food Truck Rentals",
   lead: "Twenty-four pages, one owner for the New York query, prices from one file, and 141 Vitest tests holding both in place.",
   location: "2026 · Web",
-  service: "Web Development · Data Intelligence",
+  service: "Web Development",
   breadcrumbLabel: "Work",
   breadcrumbHref: "/work/",
   backLabel: "All work",

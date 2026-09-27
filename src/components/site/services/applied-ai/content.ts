@@ -119,8 +119,8 @@ export const INTRO: BlockIntroDoubleProps = {
  * Highlighted projects
  * ------------------------------------------------------------------ *
  *
- * The two projects that carry the Applied AI tag, plus the data pipeline that
- * sits underneath that kind of work. `location` carries each project's
+ * The two projects that carry the Applied AI tag, side by side in layout
+ * four. `location` carries each project's
  * year-and-platform meta, which is the slot the layout reserves for a city.
  */
 
@@ -147,20 +147,7 @@ const PACKSHIP: ProjectCard = {
     width: 1200,
     height: 750,
   },
-  size: "small",
-};
-
-const RWD_PIPELINE: ProjectCard = {
-  title: "Real-World Data Pipeline",
-  location: "Product · 0-to-1",
-  href: "/work/rwd-pipeline/",
-  image: {
-    src: `${IMG}/rwd-pipeline.jpg`,
-    alt: "The real-world clinical data pipeline",
-    width: 1200,
-    height: 750,
-  },
-  size: "small",
+  size: "large",
 };
 
 /** Layout five's full-bleed tile — the wide review screen, not a grid tile. */
@@ -190,11 +177,7 @@ export const PROJECTS: BlockProjectsHighlightProps = {
   title: "Where this shipped",
   button: { title: "All Applied AI", href: "/work/?service=applied-ai" },
   layouts: [
-    {
-      variant: "one",
-      large: DELIVERY_ROUTING,
-      small: [PACKSHIP, RWD_PIPELINE],
-    },
+    { variant: "four", left: DELIVERY_ROUTING, right: PACKSHIP },
     { variant: "five", project: DELIVERY_ROUTING_REVIEW },
   ],
 };

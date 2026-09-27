@@ -32,8 +32,9 @@ const TRAVEL_PER_CARD = 5.2;
 /*
   Both laws were measured on the source's FIVE-card strip. The 5.2 is "every
   card, plus a fifth of one" — the last card lands the same distance short of
-  the end whatever the count — so a sixth card (SEO, 2026-09-25) adds one card
-  width of travel. The pin grows by the same factor, so the strip keeps the
+  the end whatever the count — so a sixth card adds one card width of travel
+  (SEO was added 2026-09-25 and Data Intelligence removed 2026-09-26, so the
+  strip is back to five and the scale is 1). The pin grows by the same factor, so the strip keeps the
   measured ratio of travel to scroll instead of running 19% faster.
 */
 const MEASURED_CARD_COUNT = 5;

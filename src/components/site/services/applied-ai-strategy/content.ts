@@ -177,10 +177,10 @@ export const PROCESS: BlockProcessCardSliderProps = {
       caption: "Fixed price, and a date",
       text: "You get a written scope, a fixed price, and a date. If we've misunderstood something, we find out here, while it's still only a document.",
       image: {
-        src: `${IMG}/rwd-pipeline.jpg`,
-        alt: "The real-world clinical data pipeline",
-        width: 1200,
-        height: 750,
+        src: `${IMG}/delivery-routing-cutsheet.jpg`,
+        alt: "A driver cut sheet: one page per driver, with stop order, ETA, items and a DONE checkbox",
+        width: 1600,
+        height: 1000,
       },
     },
     {
@@ -221,7 +221,7 @@ export const PROCESS: BlockProcessCardSliderProps = {
  */
 export const WYSIWYG_WHEN_IT_HELPS: BlockWysiwygProps = {
   tagline: "The judgement",
-  title: "Four calls we have actually made",
+  title: "Three calls we have actually made",
   body: [
     {
       type: "paragraph",
@@ -232,11 +232,6 @@ export const WYSIWYG_WHEN_IT_HELPS: BlockWysiwygProps = {
       type: "paragraph",
       lead: "A chore with a model-shaped hole in it:",
       text: "Shipping a parcel means guessing three things at once: which box, what it will cost, which carrier. PackShip answers all three from a name, a photo or a LiDAR scan, with the packing solver running on the phone and the lookup behind a confidence gate. Also a yes.",
-    },
-    {
-      type: "paragraph",
-      lead: "A pile of data nobody has turned into an answer:",
-      text: "Real-world clinical data arrives messy and inconsistent, in different formats from hospital records, claims and wearables. Before NeuraGul, Hamad Gul led a 0-to-1 ETL pipeline at Freenome that standardised all of it into a single Common Data Model, and the research ran on top of that. The work there was plumbing before it was anything cleverer.",
     },
     {
       type: "paragraph",
@@ -310,23 +305,23 @@ const PACKSHIP: ProjectCard = {
   size: "small",
 };
 
-const RWD_PIPELINE: ProjectCard = {
-  title: "Real-World Data Pipeline",
-  location: "Product · 0-to-1",
-  href: "/work/rwd-pipeline/",
+const DELIVERY_ROUTING: ProjectCard = {
+  title: "Delivery routing platform",
+  location: "2026 · Web app",
+  href: "/work/delivery-routing/",
   image: {
-    src: `${IMG}/rwd-pipeline.jpg`,
-    alt: "The real-world clinical data pipeline",
-    width: 1200,
-    height: 750,
+    src: `${IMG}/delivery-routing-routes.jpg`,
+    alt: "The delivery routing platform, showing six drivers' solved routes",
+    width: 1600,
+    height: 1000,
   },
   size: "small",
 };
 
 /**
  * The counter-example, kept deliberately: the build where the honest answer was
- * that no model belonged in it. Its own tags are Web Development and Data
- * Intelligence, so it does not appear behind the header's Applied AI filter —
+ * that no model belonged in it. Its own tags are Web Development and SEO,
+ * so it does not appear behind the header's Applied AI filter —
  * which is the point of showing it on the page about deciding.
  */
 const FOODTRUCKRENTALS: ProjectCard = {
@@ -355,7 +350,7 @@ export const PROJECTS: BlockProjectsHighlightProps = {
     { variant: "five", project: DELIVERY_ROUTING_REVIEW },
     {
       variant: "three",
-      small: [PACKSHIP, RWD_PIPELINE],
+      small: [PACKSHIP, DELIVERY_ROUTING],
       large: FOODTRUCKRENTALS,
       footer: {
         title: "See the rest of the work",

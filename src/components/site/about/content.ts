@@ -149,14 +149,14 @@ export const ABOUT_INTRO: BlockIntroDoubleProps = {
  * specific projects. It is `yankocy.jpg` instead — the building-materials
  * supplier's rebuilt site, which the `BlockWysiwyg` copy directly below names
  * (it was `vintus.jpg` until Vintus was deleted, 2026-09-25). With the
- * header's routing map and the small slot's pipeline, the page's four images
+ * header's routing map and the small slot's PackShip, the page's four images
  * are now one real place and three different real projects, none repeated.
  *
  * That leaves no `<video>` on this route; `office.mp4` still runs on the
  * homepage, which is where the room is worth showing in motion.
  *
- * The small slot is the real-world data pipeline screenshot, which is the
- * project the paragraph directly above it describes.
+ * The small slot is PackShip (it was the real-world data pipeline screenshot
+ * until that case study was deleted, 2026-09-26).
  *
  * `quote` is a sentence from `about_3`, hoisted into the pull-quote column. It
  * is the site's own copy rather than a testimonial — nobody is being quoted who
@@ -174,7 +174,7 @@ export const ABOUT_MEDIA: BlockMediaDoubleQuoteProps = {
   },
   small: {
     type: "image",
-    src: `${IMG}/rwd-pipeline.jpg`,
+    src: `${IMG}/packship.jpg`,
     alt: "",
     width: 1200,
     height: 750,

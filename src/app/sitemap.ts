@@ -29,7 +29,7 @@ const TIERS: Array<{
 }> = [
   { paths: ["/"], priority: 1, changeFrequency: "monthly" },
   {
-    // The six service lines and the contact page: the routes a commercial
+    // The five service lines and the contact page: the routes a commercial
     // search should land on.
     paths: [
       "/services/applied-ai/",
@@ -37,7 +37,6 @@ const TIERS: Array<{
       "/services/seo/",
       "/services/app-development/",
       "/services/cloud-infrastructure/",
-      "/services/data-intelligence/",
       "/contact/",
     ],
     priority: 0.9,
@@ -55,7 +54,7 @@ const TIERS: Array<{
     changeFrequency: "monthly",
   },
   {
-    // The eleven case studies. These are the pages that carry the evidence, so
+    // The ten case studies. These are the pages that carry the evidence, so
     // they sit above the two studio pages.
     paths: [
       "/work/delivery-routing/",
@@ -67,7 +66,6 @@ const TIERS: Array<{
       "/work/new-york-mobile-mechanic/",
       "/work/new-york-fine-foods/",
       "/work/restaurant-ordering-portal/",
-      "/work/rwd-pipeline/",
       "/work/hasina-hijama-cupping/",
     ],
     priority: 0.7,

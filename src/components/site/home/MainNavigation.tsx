@@ -218,10 +218,10 @@ export interface MainNavigationProps {
    * page wants; `"dark"` is #111111, for the pages whose first viewport is a
    * light ground.
    *
-   * There are four of those: `/about/` and `/process/`, whose `BlockHeaderGeneral`
-   * is a flat `#ececec` at every breakpoint, and the two service lines whose
-   * accent is light (`app-development`, `data-intelligence`). Those two do not
-   * hardcode it — they pass `SERVICE_TONE[slug]` from `BlockHeaderServices`, so
+   * There are three of those: `/about/` and `/process/`, whose `BlockHeaderGeneral`
+   * is a flat `#ececec` at every breakpoint, and the one service line whose
+   * accent is light (`app-development`). It does not hardcode it — it passes
+   * `SERVICE_TONE[slug]` from `BlockHeaderServices`, so
    * a new light accent is handled without touching this file.
    *
    * The Menu button is deliberately not affected: it carries its own

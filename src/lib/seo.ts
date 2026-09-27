@@ -122,9 +122,9 @@ export const AREA_SERVED = [
 ] as const;
 
 /**
- * The service catalogue, as the ten routes under `/services/` describe it.
+ * The service catalogue, as the nine routes under `/services/` describe it.
  * `name` is the search-facing name of the service rather than the nav label —
- * the nav says "Applied AI" because it sits in a column of six short nouns,
+ * the nav says "Applied AI" because it sits in a column of five short nouns,
  * while structured data has no width constraint and should say what the thing
  * is.
  */
@@ -134,7 +134,6 @@ export const SERVICE_CATALOG = [
   { name: "Search Engine Optimization (SEO)", href: "/services/seo/" },
   { name: "Mobile App Development", href: "/services/app-development/" },
   { name: "Cloud Infrastructure & DevOps", href: "/services/cloud-infrastructure/" },
-  { name: "Data Engineering & Analytics", href: "/services/data-intelligence/" },
   { name: "AI Strategy Consulting", href: "/services/applied-ai/strategy/" },
   { name: "Custom AI Model Development", href: "/services/applied-ai/models/" },
   { name: "RAG & AI Agent Development", href: "/services/applied-ai/agents/" },
@@ -191,7 +190,7 @@ export function organizationSchema() {
     alternateName: GBP_NAME,
     url: `${SITE_URL}/`,
     description:
-      "NeuraGul is a New York software development team building custom software, websites, SEO, mobile apps, cloud infrastructure, data pipelines and applied AI systems for small companies. Serving Queens, Brooklyn, Manhattan and Fairfield County, Connecticut.",
+      "NeuraGul is a New York software development team building custom software, websites, SEO, mobile apps, cloud infrastructure and applied AI systems for small companies. Serving Queens, Brooklyn, Manhattan and Fairfield County, Connecticut.",
     telephone: BUSINESS.telephone,
     email: BUSINESS.email,
     /*
@@ -230,8 +229,6 @@ export function organizationSchema() {
       "Retrieval-augmented generation",
       "AI agents",
       "Machine learning evaluation",
-      "Data engineering",
-      "ETL pipelines",
       "Cloud infrastructure",
       "Search engine optimization",
       "Technical SEO",

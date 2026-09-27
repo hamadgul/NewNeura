@@ -41,7 +41,6 @@ const SERVICES: Array<{ slug: ServiceSlug; label: string; ground: string }> = [
     label: "Cloud & Infrastructure",
     ground: "bg-ng-cloud-infrastructure",
   },
-  { slug: "data-intelligence", label: "Data Intelligence", ground: "bg-ng-data-intelligence" },
 ];
 
 /**
