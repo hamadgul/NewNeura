@@ -144,27 +144,10 @@ export const HERO_INTRO = {
  */
 export const HERO_CARDS: HeroServiceCard[] = [
   {
-    slug: "applied-ai",
-    title: "Applied AI",
-    subtitle: ["AI on one job", "you can measure"],
-    index: 1,
-    total: 5,
-    href: "/services/applied-ai/",
-    image: {
-      src: `${IMG}/delivery-routing.jpg`,
-      alt: "Solved delivery routes in the dispatch app",
-      width: 1200,
-      height: 750,
-    },
-    mainColor: "#625653",
-    contentColor: "#ffffff",
-    blurb: "Let AI make the everyday work easier, one job at a time.",
-  },
-  {
     slug: "web-development",
     title: "Web Development",
     subtitle: ["A site that", "brings the calls"],
-    index: 2,
+    index: 1,
     total: 5,
     href: "/services/web-development/",
     image: {
@@ -188,7 +171,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     slug: "seo",
     title: "SEO",
     subtitle: ["Found by people", "already searching"],
-    index: 3,
+    index: 2,
     total: 5,
     href: "/services/seo/",
     image: {
@@ -208,7 +191,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "App Development",
     subtitle: ["Your service,", "in the App Store"],
     blurb: "An app your customers can download, on iPhone and Android.",
-    index: 4,
+    index: 3,
     total: 5,
     href: "/services/app-development/",
     image: {
@@ -244,7 +227,7 @@ export const HERO_CARDS: HeroServiceCard[] = [
     title: "Cloud Apps & Infrastructure",
     subtitle: ["A hosting bill", "that stays flat"],
     blurb: "Hosting that stays up and fast, with a bill that doesn't surprise you.",
-    index: 5,
+    index: 4,
     total: 5,
     href: "/services/cloud-infrastructure/",
     image: {
@@ -255,6 +238,23 @@ export const HERO_CARDS: HeroServiceCard[] = [
     },
     mainColor: "#707569",
     contentColor: "#ffffff",
+  },
+  {
+    slug: "applied-ai",
+    title: "Applied AI",
+    subtitle: ["AI on one job", "you can measure"],
+    index: 5,
+    total: 5,
+    href: "/services/applied-ai/",
+    image: {
+      src: `${IMG}/delivery-routing.jpg`,
+      alt: "Solved delivery routes in the dispatch app",
+      width: 1200,
+      height: 750,
+    },
+    mainColor: "#625653",
+    contentColor: "#ffffff",
+    blurb: "Let AI make the everyday work easier, one job at a time.",
   },
 ];
 

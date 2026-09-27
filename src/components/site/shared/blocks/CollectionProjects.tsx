@@ -129,11 +129,11 @@ export const COLLECTION_PROJECTS_PER_PAGE = 14;
  */
 export const WORK_SERVICE_FILTERS: CollectionProjectsFilter[] = [
   { label: "All", slug: "" },
-  { label: "Applied AI", slug: "applied-ai", count: 2 },
   { label: "Web Development", slug: "web-development", count: 6 },
   { label: "SEO", slug: "seo", count: 7 },
   { label: "App Development", slug: "app-development", count: 1 },
   { label: "Cloud Apps & Infrastructure", slug: "cloud-infrastructure", count: 2 },
+  { label: "Applied AI", slug: "applied-ai", count: 2 },
 ];
 
 /* ------------------------------------------------------------------ *
