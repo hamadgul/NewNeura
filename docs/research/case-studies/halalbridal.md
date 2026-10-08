@@ -240,6 +240,12 @@ For the user; **not written on the page.**
 
 1. **Any SEO outcome** — clicks, impressions, rankings, CTR, traffic, sales — after the work.
    No post-deploy GSC, GA4 or rank data exists in the workspace.
+   **ANSWERED 2026-10-08 (impressions and clicks only):** the user supplied a Search Console
+   chart, 23 Aug → 6 Oct 2026 (`~/Desktop/NeuraGul Results/halalbridal spike when SEO
+   implemented.png`, now `public/site/images/halalbridal-search-console.jpg`). Read off its
+   pixels (no export): impressions ~16/day for 23 Aug–20 Sep, ~134/day for 22 Sep–6 Oct (best
+   ~199); clicks ~19 before, ~46 after. Printed hedged ("about") in `PROJECT_RESULTS`.
+   Rankings, CTR, traffic and sales remain unverified; the 2026-12-15 re-measure stands.
 2. **ChatGPT citation as a result** — it predates the work (09-16).
 3. **Taxonomy metafield coverage** (33/33 colour, gender, age group…) — written by an
    unlogged path; Admin-only.

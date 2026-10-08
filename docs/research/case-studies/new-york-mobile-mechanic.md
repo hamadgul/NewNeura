@@ -394,3 +394,14 @@ Re-run the same check before applying if any of these files has moved on.
 
 Deltas 3, 4 and 7 are the only three occurrences of "Framer Motion" outside this page
 (`grep -rn "Framer Motion" src/ public/llms.txt` → 3 after this task's rewrite).
+
+## Search Console, whole site (added 2026-10-08)
+
+User-supplied screenshot of the Performance report (`~/Desktop/NeuraGul Results/6 months SEO
+work NYMM.png`; Search type Web, range "6 months", last update 32.5 h before capture on
+2026-10-08), resized to `public/site/images/new-york-mobile-mechanic-search-console.jpg`.
+Printed totals: **1.28K clicks, 85K impressions, 1.5% CTR, average position 11.1**. The daily
+line starts 25 Jun 2026 and ends ~6 Oct. Daily values read off the chart: clicks ~0-2/day in
+the first week, ~20-25/day by early October; impressions near 0 → ~2,000/day. Whole-site
+figures; the 1,918 / 10 quoted in `PROJECT_TOPICS` are service pages only, 90 days to 17 Aug.
+Placed as `PROJECT_GROWTH` + `PROJECT_IMAGE_GROWTH`, and restated in `/services/seo/` `RESULTS`.

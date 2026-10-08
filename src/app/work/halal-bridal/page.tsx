@@ -20,11 +20,13 @@ import {
   PROJECT_DETAILS,
   PROJECT_HEADER,
   PROJECT_IMAGE_COLLECTION,
+  PROJECT_IMAGE_RESULTS,
   PROJECT_INTRO,
   PROJECT_MEASURE,
   PROJECT_MEDIA_PAGES,
   PROJECT_OG_IMAGE,
   PROJECT_PAGES,
+  PROJECT_RESULTS,
   PROJECT_SCHEMA,
   PROJECT_TITLE,
   PROJECT_TITLES,
@@ -73,7 +75,7 @@ const SCHEMA = [
 /**
  * `/work/halal-bridal/`.
  *
- * Eleven blocks:
+ * Thirteen blocks:
  *
  *   BlockHeaderProjects (cover: the live home page and the hero H1 we rewrote)
  *   → BlockIntroDouble (the brief / the tech stack)
@@ -81,11 +83,13 @@ const SCHEMA = [
  *   → BlockWysiwyg (Collections)       → BlockImageFull (Muslim collection)
  *   → BlockWysiwyg (New pages)         → BlockMediaDoubleQuote (custom page L, journal S)
  *   → BlockWysiwyg (Structured data)   (no frame: JSON-LD does not render)
- *   → BlockWysiwyg (Measuring)         (one lab run; no outcome claimed)
+ *   → BlockWysiwyg (Speed)             (one lab run)
+ *   → BlockWysiwyg (Results)           → BlockImageFull (Search Console chart)
  *   → BlockProjectDetails → GeneralCta
  *
  * Only what the dossier verified live on 2026-09-25 is claimed (see the
- * ruling in `content.ts`). Two captures were left out on purpose: the Rana
+ * ruling in `content.ts`), plus the user's Search Console chart (2026-10-08),
+ * which sits last so the proof lands just above the details and the CTA. Two captures were left out on purpose: the Rana
  * product page shows the client's review widget reading "No reviews", and
  * the walima post's byline names the founder.
  *
@@ -114,6 +118,9 @@ export default function HalalBridalPage() {
         <BlockWysiwyg {...PROJECT_SCHEMA} />
 
         <BlockWysiwyg {...PROJECT_MEASURE} />
+
+        <BlockWysiwyg {...PROJECT_RESULTS} />
+        <BlockImageFull {...PROJECT_IMAGE_RESULTS} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
         <GeneralCta {...PROJECT_CTA} />

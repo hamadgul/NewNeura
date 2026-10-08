@@ -14,7 +14,9 @@
  * the dossier's two "Unverifiable claims" lists and never printed here: any
  * ranking, traffic, click, Lighthouse, health-score, sales or conversion
  * figure. The source's outcome claim, "tripled the client's online sales,"
- * was cut in Task 5 and stays cut.
+ * was cut in Task 5 and stays cut. The one outside observation printed is
+ * `PROJECT_AI` (2026-10-08): a dated screenshot of Google's AI Overview naming
+ * the store, written like NYMM's ChatGPT block, with no causal claim.
  *
  * Image sizing note: `width`/`height` are each file's true decoded pixels
  * (1200x750 for the frozen cover, 1600x1000 for the four runner captures),
@@ -383,6 +385,43 @@ export const PROJECT_CORRECTIONS: BlockWysiwygProps = {
       text: "Product claims went back to the manufacturer's documents. The French drain's 100-year lifespan and crush-proof lines came off because we could not find either in an NDS document. The grass paver's compressive strength read 57,890 psf and now reads 53,683 psf, the NDS figure, on the product and in the questions page. The dry well now makes NDS's own claim, 250% more detention volume than a gravel dry well. One panel's barcode was eleven digits and is now a valid twelve-digit UPC. And every product carried a compare-at price, which search results were showing in place of the price a buyer pays. We cleared it on every variant.",
     },
   ],
+};
+
+/**
+ * Block 12b — `BlockWysiwyg` + `BlockImageFull`: Google's AI Overview.
+ *
+ * Source: the user's screenshot ("LDP mentioned in Gemini.png", file time
+ * 2026-10-08 15:13) of the AI Overview for "NDS EZ Roll Grass Pavers". It
+ * lists both roll sizes with "available via Landscape Drainage Proz or
+ * Longview Supply", the store linked first each time. The overview's range for
+ * the 4x150 roll is "$2,100 to $2,110"; $2,110 is the store's own price
+ * (`"price":"2110.00"`, see the intro note). Written as a dated observation,
+ * like NYMM's ChatGPT block: we cannot see what the overview read, so the
+ * copy names what the store offers a machine (SEO row 7: one Product, an
+ * Offer per variant) and stops there.
+ */
+export const PROJECT_AI: BlockWysiwygProps = {
+  tagline: "Answer engines",
+  title: "Google's AI answer sends buyers to the store.",
+  body: [
+    {
+      type: "paragraph",
+      text: "Search Google for NDS EZ Roll Grass Pavers, as we did on 8 October 2026, and the AI Overview at the top of the page answers first. It gives the material, the two roll sizes and a price range for each, and names two places to buy them. Landscape Drainage Proz is the first, linked for both sizes.",
+    },
+    {
+      type: "paragraph",
+      text: "We cannot see which pages an AI answer reads, so we do not claim the store's markup put it there. What we can say is what the store now gives a machine to read: one description per product, with an offer for each roll size and its price. The overview's range for the 150-foot roll tops out at $2,110, the store's own price.",
+    },
+  ],
+};
+
+export const PROJECT_IMAGE_AI: BlockImageFullProps = {
+  image: {
+    src: `${IMAGES}/landscape-drainage-proz-ai-overview.jpg`,
+    alt: "Google's AI Overview for NDS EZ Roll Grass Pavers, 8 October 2026: a definition, then Key Features and Specs listing the material, the snap-lock design, and two roll sizes, 4 by 24 feet at about $425 to $544 and 4 by 150 feet at about $2,100 to $2,110, each available via Landscape Drainage Proz or Longview Supply, followed by common uses.",
+    width: 1600,
+    height: 1139,
+  },
 };
 
 /**

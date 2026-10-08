@@ -19,8 +19,10 @@ import {
   PROJECT_CTA,
   PROJECT_DESCRIPTION,
   PROJECT_DETAILS,
+  PROJECT_GROWTH,
   PROJECT_HEADER,
   PROJECT_IMAGE_COMBO,
+  PROJECT_IMAGE_GROWTH,
   PROJECT_IMAGE_LIGHTHOUSE,
   PROJECT_IMAGE_TOPIC,
   PROJECT_INTRO,
@@ -84,12 +86,13 @@ const SCHEMA = [
 /**
  * `/work/new-york-mobile-mechanic/`.
  *
- * Fifteen blocks:
+ * Seventeen blocks:
  *
  *   BlockHeaderProjects (cover: the hero, its four dials, both call buttons)
  *   → BlockIntroDouble (the brief / the tech stack)
  *   → BlockWysiwyg (Forty-five pages)      → BlockImageFull (the Queens brake page, priority)
  *   → BlockWysiwyg (Thirty pages)          → BlockImageFull (the alternator page)
+ *   → BlockWysiwyg (85,000 in Google)      → BlockImageFull (the Search Console report)
  *   → BlockWysiwyg (the copy test)
  *   → BlockWysiwyg (100, four times)       → BlockImageFull (the Lighthouse report)
  *   → BlockWysiwyg (every number is live)  → BlockMediaDoubleQuote (hero loop L, reviews phone S)
@@ -149,6 +152,9 @@ export default function NewYorkMobileMechanicPage() {
 
         <BlockWysiwyg {...PROJECT_TOPICS} />
         <BlockImageFull {...PROJECT_IMAGE_TOPIC} />
+
+        <BlockWysiwyg {...PROJECT_GROWTH} />
+        <BlockImageFull {...PROJECT_IMAGE_GROWTH} />
 
         <BlockWysiwyg {...PROJECT_COPY_TEST} />
 

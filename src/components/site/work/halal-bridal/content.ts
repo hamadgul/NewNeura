@@ -13,9 +13,14 @@
  * five collection SEO titles that fell back to defaults, and it does not
  * describe the store's llms.txt. The business is named "Halal Bridal"; the
  * founder is never named (which is also why the walima-post capture, whose
- * byline names her, is not used). No traffic, ranking or sales outcome is
- * claimed: the work is 5-8 days old and the plan's re-measure date is
- * 2026-12-15. The single lab result is labelled as a lab run.
+ * byline names her, is not used). The single lab result is labelled as a lab
+ * run. No ranking or sales outcome is claimed.
+ *
+ * 2026-10-08: the user supplied a Search Console chart of the store (clicks
+ * and impressions, 23 Aug - 6 Oct 2026), so `PROJECT_RESULTS` now prints the
+ * impressions jump that follows the last change. Its figures are READ OFF THE
+ * CHART'S PIXELS (no export exists), so every one carries "about"; see the
+ * note on that block. The 2026-12-15 re-measure date still stands.
  *
  * Image sizing note: `width`/`height` are each file's true decoded pixels
  * (1200x750 cover, 1600x1000 captures), captured 2026-09-25 ~19:27 UTC.
@@ -231,29 +236,62 @@ export const PROJECT_SCHEMA: BlockWysiwygProps = {
 };
 
 /**
- * Block 9 — `BlockWysiwyg`: speed, and what is not yet known. The only
- * before/after in the dossier: Lighthouse 13.4.1 mobile,
- * `/collections/muslim-wedding-dresses`, 2026-09-18 05:51 → 06:13 UTC, one
- * run each side, around the card-gallery change (eager images 24 → 4, row 23).
- * Labelled a lab run. The re-measure date is ACTION-PLAN.md's 2026-12-15.
+ * Block 9 — `BlockWysiwyg`: speed. The only lab before/after in the dossier:
+ * Lighthouse 13.4.1 mobile, `/collections/muslim-wedding-dresses`,
+ * 2026-09-18 05:51 → 06:13 UTC, one run each side, around the card-gallery
+ * change (eager images 24 → 4, row 23). Labelled a lab run.
  */
 export const PROJECT_MEASURE: BlockWysiwygProps = {
-  tagline: "Measuring",
-  title: "One lab result, and the rest still to come.",
+  tagline: "Speed",
+  title: "Twenty images fewer before the page appears.",
   body: [
     {
       type: "paragraph",
       text: "Collection pages loaded 24 images up front. We cut that to 4, so the rest load as a shopper scrolls. In a lab test on a simulated phone, one run before and one after on 18 September, the Muslim wedding dresses collection went from a performance score of 61 to 81. The main image appeared in 4.4 seconds instead of 12.9, and the page weighed 2.72 MB instead of 4.49.",
     },
-    {
-      type: "paragraph",
-      text: "Rankings and traffic take months to move, and this work shipped in September. So this page makes no claim about either yet. We are measuring, and the next check is set for 15 December.",
-    },
   ],
 };
 
 /**
- * Block 10 — `BlockProjectDetails`. `Stack` feeds the intro's second tab and
+ * Block 10 — `BlockWysiwyg` + `BlockImageFull`: the Search Console result.
+ *
+ * Source: the user's screenshot of the store's Search Console performance
+ * chart, 23 Aug → 6 Oct 2026 (45 daily points, clicks on a 0-9 axis,
+ * impressions on 0-225), supplied 2026-10-08. There is no export, so the
+ * figures were read off the line pixels (scratch `hb.py`): impressions
+ * averaged ~16/day over 23 Aug - 20 Sep and ~134/day over 22 Sep - 6 Oct
+ * (best day ~199), clicks summed ~19 before and ~46 after. Hence "about" on
+ * every number, and "eight times" is 134/16 rounded down. The last logged
+ * Admin API write is 2026-09-20 18:27 EDT; the line turns on 22 Sep. Timing
+ * is stated, cause is not argued beyond it. Two weeks is not a ranking
+ * outcome, so the 2026-12-15 re-measure stays in the copy.
+ */
+export const PROJECT_RESULTS: BlockWysiwygProps = {
+  tagline: "Results",
+  title: "Google showed the store eight times as often, two days after we finished.",
+  body: [
+    {
+      type: "paragraph",
+      text: "Our last change went into the store on 20 September. On the 22nd, its line in Google Search Console turned upward and stayed up. In the four weeks before, Google showed the store in results about 16 times a day. In the two weeks after, about 130 times a day, and close to 200 on its best day.",
+    },
+    {
+      type: "paragraph",
+      text: "Clicks followed: about 20 in those four weeks, about 45 in the two weeks after. That is two weeks of data, so we read it as a start, not a verdict. Rankings take months to settle, and the next full check is on 15 December.",
+    },
+  ],
+};
+
+export const PROJECT_IMAGE_RESULTS: BlockImageFullProps = {
+  image: {
+    src: `${IMAGES}/halalbridal-search-console.jpg`,
+    alt: "The store's Google Search Console chart from 23 August to 6 October 2026: daily clicks and impressions run flat near the bottom until 21 September, then jump, with impressions holding between about 95 and 200 a day and clicks reaching seven.",
+    width: 1600,
+    height: 416,
+  },
+};
+
+/**
+ * Block 11 — `BlockProjectDetails`. `Stack` feeds the intro's second tab and
  * is dropped here by `projectDetailsWithoutStack`. Theme: Horizon 3.5.1
  * (`Shopify.theme`), the client's. The block auto-places pairs: (Scope |
  * Changes), (Theme | Year), (Platform | Live site).
@@ -269,7 +307,7 @@ export const PROJECT_DETAILS: ProjectDetail[] = [
 ];
 
 /**
- * Block 11 — `GeneralCta`. The line names this reader's own problem: a store
+ * Block 12 — `GeneralCta`. The line names this reader's own problem: a store
  * whose search listing is just its name, the before state of the brief. The
  * label is true to `/contact/` (an e-mail address and a phone number).
  */

@@ -253,6 +253,42 @@ export const PROJECT_IMAGE_TOPIC: BlockImageFullProps = {
 };
 
 /**
+ * Block 6b — `BlockWysiwyg` + `BlockImageFull`: the site's whole Search
+ * Console record. Source: the user's screenshot of the Performance report
+ * (Search type: Web, range "6 months", last update 32.5 hours before the
+ * 2026-10-08 capture), supplied 2026-10-08. The four totals are printed on it
+ * (1.28K clicks, 85K impressions, 1.5% CTR, position 11.1); the daily line
+ * starts on 25 June, so the record is 25 Jun → ~6 Oct (103 days, "fifteen
+ * weeks"). The daily figures are read off the chart, hence "a click or two"
+ * and "twenty or more" rather than exact counts. This is the WHOLE site; the
+ * block above quotes service pages only, for an earlier 90-day window, so
+ * the two do not conflict. "One tap from a call" is `PROJECT_LIVE`'s bar.
+ */
+export const PROJECT_GROWTH: BlockWysiwygProps = {
+  tagline: "Growth",
+  title: "Shown 85,000 times in Google in fifteen weeks.",
+  body: [
+    {
+      type: "paragraph",
+      text: "Search Console starts the site's record on 25 June 2026. By 6 October, Google had shown it in search results about 85,000 times and people had clicked through about 1,280 times. Across every search it appeared for, its average position was 11.1, the top of page two.",
+    },
+    {
+      type: "paragraph",
+      text: "The curve says more than the total. In its first week the site earned a click or two a day. By early October it was earning twenty or more, from close to 2,000 appearances a day, and the line had not flattened. Every one of those visitors lands one tap from a call.",
+    },
+  ],
+};
+
+export const PROJECT_IMAGE_GROWTH: BlockImageFullProps = {
+  image: {
+    src: `${IMAGES}/new-york-mobile-mechanic-search-console.jpg`,
+    alt: "Google Search Console's Performance report for the site over six months: 1.28K total clicks, 85K total impressions, 1.5% average CTR and 11.1 average position, over a daily chart from 25 June to early October 2026 in which both lines climb from near zero to about 25 clicks and 2,000 impressions a day.",
+    width: 1600,
+    height: 794,
+  },
+};
+
+/**
  * Block 7 — `BlockWysiwyg`: the copy test. Everything here is
  * `test/copy-tells.test.ts` (eight patterns in `BLACKLIST`, the walk over
  * config, borough copy, topic pages and the raw MDX, and the comment recording

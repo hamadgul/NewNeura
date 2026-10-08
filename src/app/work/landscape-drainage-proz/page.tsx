@@ -13,6 +13,7 @@ import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjec
 import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
 import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import {
+  PROJECT_AI,
   PROJECT_CANONICAL,
   PROJECT_CORRECTIONS,
   PROJECT_CTA,
@@ -20,6 +21,7 @@ import {
   PROJECT_DETAILS,
   PROJECT_GUIDES,
   PROJECT_HEADER,
+  PROJECT_IMAGE_AI,
   PROJECT_IMAGE_DRAINAGE,
   PROJECT_IMAGE_GUIDE,
   PROJECT_INTRO,
@@ -83,7 +85,7 @@ const SCHEMA = [
 /**
  * `/work/landscape-drainage-proz/`.
  *
- * Fourteen blocks:
+ * Sixteen blocks:
  *
  *   BlockHeaderProjects (cover: the live home page, re-shot 2026-09-25 with the new hero)
  *   → BlockIntroDouble (the brief / the tech stack)
@@ -95,6 +97,7 @@ const SCHEMA = [
  *                                                              → BlockImageFull (the French drain guide)
  *   → BlockWysiwyg (What the move from WordPress left behind)  (no image: redirects and colours are not a frame)
  *   → BlockWysiwyg (Taking out what wasn't true)               (no image: the evidence is an absence)
+ *   → BlockWysiwyg (Google's AI answer sends buyers here)      → BlockImageFull (the AI Overview, 2026-10-08)
  *   → BlockProjectDetails → GeneralCta
  *
  * The composition is argued from the evidence outward: each prose block is
@@ -156,6 +159,9 @@ export default function LandscapeDrainageProzPage() {
         <BlockWysiwyg {...PROJECT_REPAIRS} />
 
         <BlockWysiwyg {...PROJECT_CORRECTIONS} />
+
+        <BlockWysiwyg {...PROJECT_AI} />
+        <BlockImageFull {...PROJECT_IMAGE_AI} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
         <GeneralCta {...PROJECT_CTA} />

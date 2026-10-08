@@ -21,10 +21,13 @@
  *   new-york-mobile-mechanic built to rank; Lighthouse 100 on 9 July 2026
  *   hasina-hijama-cupping    six pages, one search each
  *
- * NO ranking, traffic, call or sales outcome is claimed for any of the three
- * September engagements. None has been measured: two have no Search Console
- * access and the third re-measures on 2026-12-15. The numbers printed are
- * counts of work done and lab measurements, each dated where it is lab data.
+ * The numbers printed are counts of work done, lab measurements, and (since
+ * 2026-10-08) three dated outcomes from screenshots the user supplied, each
+ * one printed in full, with its source, on its own case study: NYMM's Search
+ * Console totals, Halal Bridal's impressions jump, and the AI Overview that
+ * names Landscape Drainage Proz. `RESULTS` restates them; change a figure
+ * there and on the case study together. No ranking, call or sales outcome is
+ * claimed.
  *
  * VOICE — "we", never "I"; Hamad is not named on a capability page. The
  * homepage card rule of 2026-09-14 ("found on Google", never "SEO") was about
@@ -169,8 +172,36 @@ export const PROCESS: BlockProcessCardSliderProps = {
 };
 
 /* ------------------------------------------------------------------ *
- * Rich text — two instances
+ * Rich text — three instances
  * ------------------------------------------------------------------ */
+
+/**
+ * Outcomes, placed straight after the process slider so a reader meets proof
+ * before the capability list. Each figure is copied from its case study's
+ * block (NYMM `PROJECT_GROWTH`, Halal Bridal `PROJECT_RESULTS`, LDP
+ * `PROJECT_AI`), where its source and rounding are documented.
+ */
+export const RESULTS: BlockWysiwygProps = {
+  tagline: "Results so far",
+  title: "What happened after the work shipped",
+  body: [
+    {
+      type: "paragraph",
+      lead: "New York Mobile Mechanic:",
+      text: "Shown in Google about 85,000 times and clicked about 1,280 times between 25 June and 6 October 2026, climbing from a click or two a day to twenty or more.",
+    },
+    {
+      type: "paragraph",
+      lead: "Halal Bridal:",
+      text: "Two days after our last change, Google was showing the store about eight times as often, roughly 130 times a day where it had been 16. Clicks came to about 45 in two weeks, against about 20 in the four before.",
+    },
+    {
+      type: "paragraph",
+      lead: "Landscape Drainage Proz:",
+      text: "On 8 October 2026, Google's AI answer for NDS EZ Roll Grass Pavers named the store first of two places to buy them, with a link for each roll size.",
+    },
+  ],
+};
 
 /** What the service covers, each item evidenced by a project on the site. */
 export const WYSIWYG_CAPABILITIES: BlockWysiwygProps = {
@@ -218,7 +249,7 @@ export const WYSIWYG_WHY: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "We say what we measured:",
-      text: "Every number on this page is a count of work done or a dated lab test. Rankings take months to move, so we set a date to re-measure and report back then.",
+      text: "Every number on this page is a count of work done, a dated lab test, or a dated screenshot from Search Console or Google itself. When a result is two weeks old we say so, and set a date to check again.",
     },
     {
       type: "paragraph",

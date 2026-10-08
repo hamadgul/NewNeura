@@ -656,3 +656,12 @@ Shopify store and repaired it over three days: structured data now comes from on
 with the right phone number and shipping details, seventy redirects each land in one hop, every
 page checked has one H1, a hard-coded "4.6 out of 5 from 1,289 reviews" line and unsourced
 product claims are gone, and seven new guides take their specs from NDS documents.
+
+## Google AI Overview (added 2026-10-08)
+
+User-supplied screenshot (`~/Desktop/NeuraGul Results/LDP mentioned in Gemini.png`, file time
+2026-10-08 15:13) of the AI Overview for "NDS EZ Roll Grass Pavers". Both roll sizes read
+"available via Landscape Drainage Proz or Longview Supply", the store first and linked; the
+4x150 range is "$2,100 to $2,110" and the store's price is $2,110. Placed as `PROJECT_AI` +
+`PROJECT_IMAGE_AI` (`landscape-drainage-proz-ai-overview.jpg`, 1600x1139) as a dated
+observation with no causal claim, and restated in `/services/seo/` `RESULTS`.

@@ -5,6 +5,7 @@ import {
   META,
   PROCESS,
   PROJECTS,
+  RESULTS,
   WYSIWYG_CAPABILITIES,
   WYSIWYG_WHY,
 } from "@/components/site/services/seo/content";
@@ -78,7 +79,8 @@ const SCHEMA = [
  *
  * The Web Development shell, block for block: `BlockHeaderServices` →
  * `BlockIntroDouble` → `BlockProcessCardSlider` → `BlockWysiwyg` →
- * `BlockWysiwyg` → `BlockProjectsHighlight` → `GeneralCta`. No client-review
+ * `BlockWysiwyg` → `BlockProjectsHighlight` → `GeneralCta`, plus one extra
+ * `BlockWysiwyg` (`RESULTS`, 2026-10-08) straight after the slider. No client-review
  * block: no review on the profile speaks to the SEO work itself, and the one
  * that mentions calls is already quoted in full on its own case study.
  *
@@ -103,6 +105,7 @@ export default function SeoPage() {
         <BlockHeaderServices {...HEADER} />
         <BlockIntroDouble {...INTRO} />
         <BlockProcessCardSlider {...PROCESS} />
+        <BlockWysiwyg {...RESULTS} />
         <BlockWysiwyg {...WYSIWYG_CAPABILITIES} />
         <BlockWysiwyg {...WYSIWYG_WHY} />
         <BlockProjectsHighlight {...PROJECTS} />
