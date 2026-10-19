@@ -338,3 +338,22 @@ names the founder) were not used. For the owners of the shared files to apply:
 
 Also remember the three hand-maintained project counts (memory "NeuraGul port: scope &
 decisions") and the sitemap entry.
+
+## 2026-10-19: AI answers and an organic result
+
+Phone captures from the user, 2026-10-17 (signed in, located Kew Gardens Hills, Queens), in
+`~/Desktop/NeuraGul Results/GEO :SEO Results/`:
+
+| Capture | Shows | Placed as |
+| --- | --- | --- |
+| `halal bridal first result in google ai overview.PNG` (00:53) | `hijab wedding dress website`: AI Overview lists Halal Bridal FIRST of the online bridal websites | `halalbridal-ai-overview.jpg`, crop 1179x850 from y 880 |
+| `halalbridal first page of google.PNG` (00:51) | `muslim wedding dresses with hijab online`: Camilla's Bridal first, halalbridal.com SECOND | `halalbridal-google-result.jpg`, crop 1179x1680 from y 730 |
+| `halal bridal Google AI.MP4` (00:54, 4.3s) | AI Mode, `nikkah wedding dress online`: store named 4th of 5 retailers, with Etsy | text only ("among five"), not placed |
+
+**Not counted as our result:** the Measured numbers table above records ChatGPT citing the
+store for hijab-wedding-dress prompts on 2026-09-16, before the work, and no pre-work Google
+AI Overview baseline exists. The page prints the AI answers as dated observations, says
+ChatGPT cited the store before we started, and never dates them against our work. The header
+lead is the Search Console jump instead.
+
+The page now opens on results (Search Console → Answer engines → What to expect).

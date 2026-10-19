@@ -36,6 +36,7 @@
  * a five-item header with a quote button, no compare-at prices, the quote
  * page and the municipal page's four steps. `service` gains "SEO".
  */
+import type { BlockEvidenceImagesProps } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -63,8 +64,12 @@ export const PROJECT_CANONICAL = "/work/landscape-drainage-proz/";
  * "eleven products" is the products sitemap; "structured data and redirects"
  * are dossier SEO rows 1 and 7; "seven guides … NDS" is row 9.
  */
+/*
+ * 2026-10-19: rewritten to lead with the outcome (`PROJECT_AI`, dated
+ * 8 October 2026).
+ */
 export const PROJECT_DESCRIPTION =
-  "A Dawn storefront for an NDS drainage dealer, then an SEO audit: structured data and redirects repaired, and seven guides written from NDS spec documents.";
+  "A Shopify store and SEO audit for an NDS drainage dealer, named first by Google's AI Overview for NDS EZ Roll Grass Pavers, at the store's own price.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/landscapedrainage.jpg`;
 
 /**
@@ -82,7 +87,11 @@ export const PROJECT_LIVE = {
 } as const;
 
 /**
- * Header. `lead` is the engagement in one line: the theme (`Shopify.theme`),
+ * Header. 2026-10-19: `lead` is now the outcome (`PROJECT_AI`), 81 characters,
+ * under the 87 ceiling below. "Top-selling" is the store's own Top Sellers
+ * collection, which the EZ Roll leads (`PROJECT_STOREFRONT`).
+ *
+ * Previous note: `lead` was the engagement in one line: the theme (`Shopify.theme`),
  * then the SEO pass (dossier SEO rows 1-16) and its seven guides (row 9).
  * LENGTH IS MEASURED: the 2026-09-11 note put the ceiling at 87 characters
  * (four lines at 320/360/390, lead.bottom - meta.top = -0.9 at 1280). This
@@ -99,7 +108,7 @@ export const PROJECT_LIVE = {
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Landscape Drainage Proz",
-  lead: "A Dawn storefront for a drainage dealer, then a search audit and seven guides.",
+  lead: "First in Google's AI answer for its top-selling paver, after our build and audit.",
   location: "2026 · Shopify",
   service: "Web Development · SEO",
   breadcrumbLabel: "Work",
@@ -415,13 +424,37 @@ export const PROJECT_AI: BlockWysiwygProps = {
   ],
 };
 
-export const PROJECT_IMAGE_AI: BlockImageFullProps = {
-  image: {
-    src: `${IMAGES}/landscape-drainage-proz-ai-overview.jpg`,
-    alt: "Google's AI Overview for NDS EZ Roll Grass Pavers, 8 October 2026: a definition, then Key Features and Specs listing the material, the snap-lock design, and two roll sizes, 4 by 24 feet at about $425 to $544 and 4 by 150 feet at about $2,100 to $2,110, each available via Landscape Drainage Proz or Longview Supply, followed by common uses.",
-    width: 1600,
-    height: 1139,
-  },
+export const PROJECT_IMAGE_AI: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMAGES}/landscape-drainage-proz-ai-overview.jpg`,
+      alt: "Google's AI Overview for NDS EZ Roll Grass Pavers, 8 October 2026: a definition, then Key Features and Specs listing the material, the snap-lock design, and two roll sizes, 4 by 24 feet at about $425 to $544 and 4 by 150 feet at about $2,100 to $2,110, each available via Landscape Drainage Proz or Longview Supply, followed by common uses.",
+      width: 1600,
+      height: 1139,
+    },
+  ],
+};
+
+/**
+ * Block 12c — `BlockWysiwyg`: what a reader hiring us can expect. Dates are
+ * `PROJECT_SEARCH` (audit 21 September, fixes over three days) and
+ * `PROJECT_AI` (8 October). No traffic figure exists for this store, so none
+ * is promised; the page's own ruling is that no ranking or sales figure is
+ * defensible yet.
+ */
+export const PROJECT_EXPECT: BlockWysiwygProps = {
+  tagline: "What to expect",
+  title: "Fix what is broken first, then write for the buyer.",
+  body: [
+    {
+      type: "paragraph",
+      text: "An audit like this one ships in days: we audited the store on 21 September and shipped the fixes over the next three. Two weeks later, Google's AI answer for the store's top paver named it first of two places to buy, at the store's own price.",
+    },
+    {
+      type: "paragraph",
+      text: "Search traffic takes months to show what that work is worth, and we will not print a number before we have one. What we put in writing before any work starts is the scope, a fixed price and a date.",
+    },
+  ],
 };
 
 /**

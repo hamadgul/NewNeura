@@ -21,13 +21,19 @@
  *   new-york-mobile-mechanic built to rank; Lighthouse 100 on 9 July 2026
  *   hasina-hijama-cupping    six pages, one search each
  *
- * The numbers printed are counts of work done, lab measurements, and (since
- * 2026-10-08) three dated outcomes from screenshots the user supplied, each
- * one printed in full, with its source, on its own case study: NYMM's Search
- * Console totals, Halal Bridal's impressions jump, and the AI Overview that
- * names Landscape Drainage Proz. `RESULTS` restates them; change a figure
- * there and on the case study together. No ranking, call or sales outcome is
- * claimed.
+ * The numbers printed are counts of work done, lab measurements, and dated
+ * outcomes from screenshots the user supplied, each one printed in full, with
+ * its source, on its own case study. Since 2026-10-19 the page is RESULTS-LED
+ * (user: "make the initial SEO page results focused as well with a mixture of
+ * the best SEO/GEO results"): `RESULTS_SEARCH` (NYMM Search Console, Halal
+ * Bridal's jump) and `RESULTS_AI` (NYMM AI Overview, Food Truck Rentals on
+ * ChatGPT, LDP AI Overview) open the page, each followed by its captures,
+ * then `EXPECT`. Change a figure there and on the case study together.
+ *
+ * Halal Bridal's AI Overview is deliberately NOT in `RESULTS_AI`: ChatGPT
+ * cited the store before the work (its dossier), so on a page listing our
+ * results it would read as ours. Its case study prints it with that caveat.
+ * No call or sales outcome is claimed.
  *
  * VOICE — "we", never "I"; Hamad is not named on a capability page. The
  * homepage card rule of 2026-09-14 ("found on Google", never "SEO") was about
@@ -39,6 +45,7 @@
  * the pattern this file copies: every export typed with the shared block's
  * own props, no `subPages` key, and a pinned `PROCESS` slider.
  */
+import type { BlockEvidenceImagesProps } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import type { BlockHeaderServicesProps } from "@/components/site/shared/blocks/BlockHeaderServices";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
 import type { BlockProcessCardSliderProps } from "@/components/site/shared/blocks/BlockProcessCardSlider";
@@ -59,7 +66,7 @@ export const META = {
   title: "SEO Services in New York City & Connecticut",
   canonical: "/services/seo/",
   description:
-    "SEO for small businesses in NYC and Fairfield County, CT: audits that end in fixes, site moves that keep your rankings, Shopify SEO, and pages built to be found.",
+    "SEO and AI search for small businesses in NYC and Connecticut: one client shown 85,000 times in Google in 15 weeks, others named first by ChatGPT and Google AI.",
 } as const;
 
 /**
@@ -91,11 +98,11 @@ export const HEADER: BlockHeaderServicesProps = {
 export const INTRO: BlockIntroDoubleProps = {
   labels: ["Get found by people already searching"],
   statement:
-    "Your customers are already searching for what you sell. We make sure they find you.",
+    "Your customers are searching Google and asking AI assistants for what you sell. We make sure the answer is you.",
   body: [
-    "SEO means showing up when someone types what you sell into Google, or asks an AI assistant for it. Most of the work is unglamorous: fixing the links that break, the titles that say nothing, the pages that claim things that are not true, and the missing page for the one product half your buyers are looking for.",
-    "For Yankocy, a wholesale building-materials supplier in Monroe, Connecticut, we rebuilt a nine-page site as twenty-six, with a page for each product line buyers search for by name, and pointed every one of the old site's 37 addresses at a working page so nothing that already ranked is lost in the move. For Landscape Drainage Proz, a Shopify drainage store, we audited the site and then repaired it: broken redirects, 29 links that rendered white on white, pages with two headings where Google expects one.",
-    "For Halal Bridal, a Shopify bridal store, we rewrote the search title and description of all 33 products, grew two collections to ten, and published seventeen articles, in three days of scripted changes to the store. We tell you what we changed, what we measured, and when it is still too early to measure anything.",
+    "SEO means showing up when someone types what you sell into Google. The newer half is showing up when they ask ChatGPT or Google's AI Overview instead, and the answer names a business. We work on both, on the site you have or one we build.",
+    "It is showing up for our clients. New York Mobile Mechanic went from a click or two a day to twenty or more in fifteen weeks, and on 8 October Google's AI Overview for mobile mechanic nyc named it first. ChatGPT calls Food Truck Rentals its best overall fit for branded food trucks in NYC. Halal Bridal was shown in Google about eight times as often two days after our last change.",
+    "Every result on this page is a dated screenshot, laid out in full on its case study. We tell you what we changed, what we measured, and when it is still too early to measure anything.",
   ],
 };
 
@@ -176,29 +183,117 @@ export const PROCESS: BlockProcessCardSliderProps = {
  * ------------------------------------------------------------------ */
 
 /**
- * Outcomes, placed straight after the process slider so a reader meets proof
- * before the capability list. Each figure is copied from its case study's
- * block (NYMM `PROJECT_GROWTH`, Halal Bridal `PROJECT_RESULTS`, LDP
- * `PROJECT_AI`), where its source and rounding are documented.
+ * Results, placed straight after the intro (2026-10-19) so a reader meets
+ * proof before process. Each figure is copied from its case study's block,
+ * where its source and rounding are documented: NYMM `PROJECT_GROWTH` and
+ * `PROJECT_GOOGLE`, Halal Bridal `PROJECT_RESULTS`, Food Truck Rentals and
+ * LDP `PROJECT_AI`. "More than twice the clicks in half the time": ~46 in
+ * two weeks against ~19 in the four before.
  */
-export const RESULTS: BlockWysiwygProps = {
-  tagline: "Results so far",
-  title: "What happened after the work shipped",
+export const RESULTS_SEARCH: BlockWysiwygProps = {
+  tagline: "Results: Google",
+  title: "85,000 appearances in Google in fifteen weeks.",
   body: [
     {
       type: "paragraph",
       lead: "New York Mobile Mechanic:",
-      text: "Shown in Google about 85,000 times and clicked about 1,280 times between 25 June and 6 October 2026, climbing from a click or two a day to twenty or more.",
+      text: "Search Console starts the site's record on 25 June 2026. By 6 October, Google had shown it about 85,000 times and people had clicked through about 1,280 times, climbing from a click or two a day to twenty or more. On 8 October it was the first ordinary result for mobile mechanic nyc.",
     },
     {
       type: "paragraph",
       lead: "Halal Bridal:",
-      text: "Two days after our last change, Google was showing the store about eight times as often, roughly 130 times a day where it had been 16. Clicks came to about 45 in two weeks, against about 20 in the four before.",
+      text: "Two days after our last change, Google was showing the store about eight times as often, roughly 130 times a day where it had been 16, with more than twice the clicks in half the time. On 17 October it was the second result for muslim wedding dresses with hijab online.",
+    },
+  ],
+};
+
+export const IMAGES_SEARCH: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMG}/new-york-mobile-mechanic-search-console.jpg`,
+      alt: "New York Mobile Mechanic's Search Console Performance report over six months: 1.28K total clicks, 85K total impressions, 1.5% average CTR and 11.1 average position, with both daily lines climbing from near zero in late June to about 25 clicks and 2,000 impressions a day in early October 2026.",
+      width: 1600,
+      height: 794,
+    },
+    {
+      src: `${IMG}/halalbridal-search-console.jpg`,
+      alt: "Halal Bridal's Search Console chart from 23 August to 6 October 2026: daily clicks and impressions flat near the bottom until 21 September, then a jump, with impressions holding between about 95 and 200 a day.",
+      width: 1600,
+      height: 416,
+    },
+  ],
+  caption: "Search Console: New York Mobile Mechanic over fifteen weeks, then Halal Bridal either side of our last change.",
+};
+
+export const RESULTS_AI: BlockWysiwygProps = {
+  tagline: "Results: AI answers",
+  title: "Named first when people ask an AI instead.",
+  body: [
+    {
+      type: "paragraph",
+      lead: "New York Mobile Mechanic:",
+      text: "On 8 October 2026, Google's AI Overview for mobile mechanic nyc opened by naming the business and listed it first among the top-rated mobile mechanics in NYC. ChatGPT had listed it first twice already, in July and August.",
+    },
+    {
+      type: "paragraph",
+      lead: "Food Truck Rentals:",
+      text: "On 16 October 2026, asked who rents branded food trucks for brand activations in NYC, ChatGPT put the business first as its best overall fit, quoting the prices the site publishes.",
     },
     {
       type: "paragraph",
       lead: "Landscape Drainage Proz:",
-      text: "On 8 October 2026, Google's AI answer for NDS EZ Roll Grass Pavers named the store first of two places to buy them, with a link for each roll size.",
+      text: "On 8 October 2026, Google's AI Overview for NDS EZ Roll Grass Pavers named the store first of two places to buy them, at the store's own price.",
+    },
+    {
+      type: "paragraph",
+      text: "We cannot see what an AI answer reads, so we report what it said and when. What we can control is what it finds: prices, service areas and facts, written the same way on every page and in the files machines read.",
+    },
+  ],
+};
+
+export const IMAGES_AI: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMG}/new-york-mobile-mechanic-ai-overview.jpg`,
+      alt: "Google for mobile mechanic nyc, 8 October 2026: the AI Overview opens by naming Adam Mobile Mechanic, lists it first under Top-Rated Mobile Mechanics in NYC at 4.9 stars from 164 reviews, and the first result below is newyorkmobilemechanic.com.",
+      width: 1580,
+      height: 1400,
+    },
+    {
+      src: `${IMG}/foodtruckrentals-chatgpt.jpg`,
+      alt: "ChatGPT, asked who rents branded food trucks for brand activations in NYC: under Top NYC providers, 1. Food Truck Rentals, tagged Best overall fit, with a starting price of $1,500 a day unbranded and $10,000 custom-branded, and a link to foodtruckrentals.com.",
+      width: 1600,
+      height: 1143,
+    },
+  ],
+  caption: "Google's AI Overview, 8 October 2026, and ChatGPT, 16 October 2026.",
+};
+
+/**
+ * What a reader hiring us can expect, built only from dates on the case
+ * studies: Halal Bridal's four days of writes and the line turning two days
+ * later, LDP's audit on 21 September and fixes over three days, NYMM's first
+ * week against week fifteen. "A written scope, a fixed price and a date" is
+ * `/process/`. No position is promised.
+ */
+export const EXPECT: BlockWysiwygProps = {
+  tagline: "What to expect",
+  title: "What the first three months look like.",
+  body: [
+    {
+      type: "paragraph",
+      lead: "Fixes to a site you already have ship in days:",
+      text: "four days of changes for Halal Bridal, three for Landscape Drainage Proz. Halal Bridal's line in Search Console turned two days after the last one.",
+    },
+    {
+      type: "paragraph",
+      lead: "A new site starts slower and compounds:",
+      text: "New York Mobile Mechanic earned a click or two a day in its first week and twenty or more by week fifteen, and the line had not flattened.",
+    },
+    {
+      type: "paragraph",
+      lead: "What we will not promise:",
+      text: "a position in Google or in an AI answer. Nobody can. What we put in writing before any work starts is the scope, a fixed price and a date.",
     },
   ],
 };
@@ -249,7 +344,7 @@ export const WYSIWYG_WHY: BlockWysiwygProps = {
     {
       type: "paragraph",
       lead: "We say what we measured:",
-      text: "Every number on this page is a count of work done, a dated lab test, or a dated screenshot from Search Console or Google itself. When a result is two weeks old we say so, and set a date to check again.",
+      text: "Every number on this page is a count of work done, a dated lab test, or a dated screenshot from Search Console, Google or ChatGPT. When a result is two weeks old we say so, and set a date to check again.",
     },
     {
       type: "paragraph",

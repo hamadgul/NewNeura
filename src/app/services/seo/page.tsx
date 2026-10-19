@@ -1,17 +1,22 @@
 import {
   CTA,
+  EXPECT,
   HEADER,
+  IMAGES_AI,
+  IMAGES_SEARCH,
   INTRO,
   META,
   PROCESS,
   PROJECTS,
-  RESULTS,
+  RESULTS_AI,
+  RESULTS_SEARCH,
   WYSIWYG_CAPABILITIES,
   WYSIWYG_WHY,
 } from "@/components/site/services/seo/content";
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { BlockEvidenceImages } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import { BlockHeaderServices, SERVICE_TONE } from "@/components/site/shared/blocks/BlockHeaderServices";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -79,8 +84,9 @@ const SCHEMA = [
  *
  * The Web Development shell, block for block: `BlockHeaderServices` →
  * `BlockIntroDouble` → `BlockProcessCardSlider` → `BlockWysiwyg` →
- * `BlockWysiwyg` → `BlockProjectsHighlight` → `GeneralCta`, plus one extra
- * `BlockWysiwyg` (`RESULTS`, 2026-10-08) straight after the slider. No client-review
+ * `BlockWysiwyg` → `BlockProjectsHighlight` → `GeneralCta`, with the results
+ * (2026-10-19) moved ahead of the slider: `RESULTS_SEARCH` + its Search
+ * Console charts, `RESULTS_AI` + its AI-answer captures, then `EXPECT`. No client-review
  * block: no review on the profile speaks to the SEO work itself, and the one
  * that mentions calls is already quoted in full on its own case study.
  *
@@ -104,8 +110,12 @@ export default function SeoPage() {
       <main className="mainContent relative w-full overflow-x-clip bg-white">
         <BlockHeaderServices {...HEADER} />
         <BlockIntroDouble {...INTRO} />
+        <BlockWysiwyg {...RESULTS_SEARCH} />
+        <BlockEvidenceImages {...IMAGES_SEARCH} />
+        <BlockWysiwyg {...RESULTS_AI} />
+        <BlockEvidenceImages {...IMAGES_AI} />
+        <BlockWysiwyg {...EXPECT} />
         <BlockProcessCardSlider {...PROCESS} />
-        <BlockWysiwyg {...RESULTS} />
         <BlockWysiwyg {...WYSIWYG_CAPABILITIES} />
         <BlockWysiwyg {...WYSIWYG_WHY} />
         <BlockProjectsHighlight {...PROJECTS} />

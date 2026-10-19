@@ -90,6 +90,7 @@
  * stem and the meta description — and are written to compete in a result
  * list rather than to open a page; see the notes on each.
  */
+import type { BlockEvidenceImagesProps } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -118,12 +119,22 @@ export const PROJECT_CANONICAL = "/work/new-york-mobile-mechanic/";
  * is a dated report (9 July 2026) and dating it here pushed the string past
  * 160, so the figure lives only in the body, where it carries its date.
  */
+/*
+ * 2026-10-19: rewritten to lead with the outcome. "85,000" and "15 weeks" are
+ * `PROJECT_GROWTH`; "first in Google's AI Overview for mobile mechanic nyc" is
+ * `PROJECT_GOOGLE` (dated capture, 8 October 2026).
+ */
 export const PROJECT_DESCRIPTION =
-  "A Next.js site for a 24/7 NYC mobile mechanic: 117 pages keyed off one config file, a service-by-borough matrix, JSON-LD on every service page.";
+  "A 117-page Next.js site for a 24/7 NYC mobile mechanic: 85,000 Google impressions in 15 weeks, and first in Google's AI Overview for mobile mechanic nyc.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/nymm.jpg`;
 
 /**
- * Header. `lead` is the project's OUTCOME, not its brief: the brief is the
+ * Header. 2026-10-19: `lead` now prints the SEARCH outcome (`PROJECT_GROWTH`,
+ * `PROJECT_GOOGLE`), 78 characters, inside the measured slot described below.
+ * The build sentence it replaced, and the reasoning that follows, now live in
+ * the body (`PROJECT_MATRIX`, `PROJECT_LIVE`).
+ *
+ * Previous note: `lead` is the project's OUTCOME, not its brief: the brief is the
  * `BlockIntroDouble` statement below. 117 is the sitemap's URL count
  * (10 static + 11 services + 30 topics + 17 areas + 4 posts + 45 combos).
  * "Keyed off one config file": `content/site.config.ts` supplies the services,
@@ -157,7 +168,7 @@ export const PROJECT_OG_IMAGE = `${IMAGES}/nymm.jpg`;
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "New York Mobile Mechanic",
-  lead: "117 pages keyed off one config file, with Call and Text one tap away on every page.",
+  lead: "85,000 Google impressions in fifteen weeks, and first in Google's AI Overview.",
   location: "2026 · Web",
   service: "Web Development",
   breadcrumbLabel: "Work",
@@ -279,13 +290,98 @@ export const PROJECT_GROWTH: BlockWysiwygProps = {
   ],
 };
 
-export const PROJECT_IMAGE_GROWTH: BlockImageFullProps = {
-  image: {
-    src: `${IMAGES}/new-york-mobile-mechanic-search-console.jpg`,
-    alt: "Google Search Console's Performance report for the site over six months: 1.28K total clicks, 85K total impressions, 1.5% average CTR and 11.1 average position, over a daily chart from 25 June to early October 2026 in which both lines climb from near zero to about 25 clicks and 2,000 impressions a day.",
-    width: 1600,
-    height: 794,
-  },
+export const PROJECT_IMAGE_GROWTH: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMAGES}/new-york-mobile-mechanic-search-console.jpg`,
+      alt: "Google Search Console's Performance report for the site over six months: 1.28K total clicks, 85K total impressions, 1.5% average CTR and 11.1 average position, over a daily chart from 25 June to early October 2026 in which both lines climb from near zero to about 25 clicks and 2,000 impressions a day.",
+      width: 1600,
+      height: 794,
+    },
+  ],
+};
+
+/**
+ * Block 6c — `BlockWysiwyg` + `BlockMediaDoubleQuote`: Google's own answer.
+ *
+ * Source: the user's two desktop captures, both file-dated 2026-10-08 22:16.
+ * "Adam first on places, AI overview and search 2.png": `mobile mechanic nyc`,
+ * the AI Overview's first sentence names Adam Mobile Mechanic, its Top-Rated
+ * list opens on it (4.9, 164), and the first organic result is
+ * newyorkmobilemechanic.com titled "Mobile Mechanic NYC · 24/7 Auto Repair |
+ * Adam's", which is `seo.defaultTitle` in the client repo's
+ * `content/site.config.ts:923`. "Adam Mobile Mechanic Reviews.png": `new york
+ * mobile mechanic`, located New York, NY, the Places pack opens on the
+ * business (4.9, 164 reviews), the AI Overview says it "leads local options",
+ * and the first organic result is the site again.
+ *
+ * The map and the AI Overview draw on the Google Business Profile, so no
+ * causal claim for the site there; the organic result is credited to the site
+ * because its title is the site's. NOT QUOTED: the AI Overview prints
+ * 929-300-9674 beside the business, which the Places pack shows is a
+ * competitor's number (the client's is (347) 531-9623). Flagged to the user
+ * 2026-10-19.
+ *
+ * Crops (a full desktop page in a media slot set its text at ~7px): the AI
+ * Overview capture to x360 y40 1580x1400 (query, overview, card, first
+ * result; the right-hand source panel dropped); the Places capture to x650
+ * y228 800x864 (location line and the three listings; the map, its AI
+ * Overview and the organic result are in the original, cited above).
+ */
+export const PROJECT_GOOGLE: BlockWysiwygProps = {
+  tagline: "Google",
+  title: "First in the AI answer, on the map and in the results.",
+  body: [
+    {
+      type: "paragraph",
+      text: "Search Google for mobile mechanic nyc, as we did on 8 October 2026, and the AI Overview at the top opens by naming the business, then lists it first under Top-Rated Mobile Mechanics in NYC. The first ordinary result below the overview is the site we built. Search new york mobile mechanic and the business heads the map listings too, at 4.9 stars from 164 reviews, with the site again the first result underneath.",
+    },
+    {
+      type: "paragraph",
+      text: "The map and the AI Overview also read the Google Business Profile, so we do not credit the site alone for them. The ordinary results are the site's own work: the title Google prints for it, Mobile Mechanic NYC, 24/7 Auto Repair, is the one the site sets.",
+    },
+  ],
+};
+
+export const PROJECT_MEDIA_GOOGLE: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMAGES}/new-york-mobile-mechanic-ai-overview.jpg`,
+      alt: "Google for mobile mechanic nyc, 8 October 2026: the AI Overview opens by naming Adam Mobile Mechanic, lists it first under Top-Rated Mobile Mechanics in NYC at 4.9 stars from 164 reviews, and the first result below is newyorkmobilemechanic.com, titled Mobile Mechanic NYC, 24/7 Auto Repair, Adam's.",
+      width: 1580,
+      height: 1400,
+    },
+    {
+      src: `${IMAGES}/new-york-mobile-mechanic-places.jpg`,
+      alt: "Google's Places list for new york mobile mechanic, New York, NY, 8 October 2026: Adam Mobile Mechanic first at 4.9 stars from 164 reviews, open 24 hours, above two other mobile mechanics.",
+      width: 800,
+      height: 864,
+    },
+  ],
+  caption: "Two searches on 8 October 2026. The business came first in both.",
+};
+
+/**
+ * Block 6d — `BlockWysiwyg`: what a reader hiring us can expect. Each step is
+ * this site's own record: a click or two a day in week one and twenty or more
+ * by week fifteen (`PROJECT_GROWTH`), ChatGPT on 28 July (`PROJECT_AI`), the
+ * AI Overview on 8 October (`PROJECT_GOOGLE`). "A written scope, a fixed price
+ * and a date" is `/process/`; "still reachable six months after launch" is
+ * `home/content.ts`. No position is promised.
+ */
+export const PROJECT_EXPECT: BlockWysiwygProps = {
+  tagline: "What to expect",
+  title: "A quiet first week, then a curve that keeps climbing.",
+  body: [
+    {
+      type: "paragraph",
+      text: "A new site starts with no history in Google. This one earned a click or two a day in its first week. By late July, ChatGPT was naming the business first. By early October it was earning twenty or more clicks a day and leading Google's AI answer for its own city.",
+    },
+    {
+      type: "paragraph",
+      text: "Nobody can promise you a position in Google, and we will not. What we put in writing before any work starts is the scope, a fixed price and a date, and the people who build your site are the ones you can still reach six months after launch.",
+    },
+  ],
 };
 
 /**
@@ -399,7 +495,7 @@ export const PROJECT_AI: BlockWysiwygProps = {
   body: [
     {
       type: "paragraph",
-      text: "On 28 July 2026, asked for the top five mobile mechanics in New York City, ChatGPT listed the business first, with its 4.9 rating and 133 reviews. On 7 August, asked for the best mobile mechanic in Queens, it did the same. Those answers draw on the Google Business Profile and, in the second case, Reddit, so we do not claim the site produced them.",
+      text: "On 28 July 2026, asked for the top five mobile mechanics in New York City, ChatGPT listed the business first, with its 4.9 rating and 133 reviews. On 7 August, asked for the best mobile mechanic in Queens, it did the same. By 8 October the profile showed 164 reviews. Those answers draw on the Google Business Profile and, in the second case, Reddit, so we do not claim the site produced them.",
     },
     {
       type: "paragraph",
@@ -408,22 +504,22 @@ export const PROJECT_AI: BlockWysiwygProps = {
   ],
 };
 
-export const PROJECT_MEDIA_AI: BlockMediaDoubleQuoteProps = {
-  large: {
-    type: "image",
-    src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-nyc.jpg`,
-    alt: "ChatGPT on 28 July 2026, asked for the top 5 mobile mechanics in New York City: a map card for Adam Mobile Mechanic at 4.9, and the business listed first in the numbered answer with 133 reviews.",
-    width: 1600,
-    height: 1000,
-  },
-  small: {
-    type: "image",
-    src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-queens.jpg`,
-    alt: "ChatGPT on 7 August 2026, asked for the best mobile mechanic in Queens: the map card at 4.9 and the business listed first in the answer.",
-    width: 1600,
-    height: 1000,
-  },
-  quote: "Asked twice, ten days apart, the business came first both times.",
+export const PROJECT_MEDIA_AI: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-nyc.jpg`,
+      alt: "ChatGPT on 28 July 2026, asked for the top 5 mobile mechanics in New York City: a map card for Adam Mobile Mechanic at 4.9, and the business listed first in the numbered answer with 133 reviews.",
+      width: 1600,
+      height: 1000,
+    },
+    {
+      src: `${IMAGES}/new-york-mobile-mechanic-chatgpt-queens.jpg`,
+      alt: "ChatGPT on 7 August 2026, asked for the best mobile mechanic in Queens: the map card at 4.9 and the business listed first in the answer.",
+      width: 1600,
+      height: 1000,
+    },
+  ],
+  caption: "Asked twice, ten days apart, the business came first both times.",
 };
 
 /**

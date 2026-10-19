@@ -466,3 +466,15 @@ line:
 | 14 | `services/applied-ai-evaluation/content.ts` | 236 | single-line `grep -cF` | 1 | yes |
 
 All are single-line anchors. Re-run the same check before applying if any file has moved on.
+
+## 2026-10-19: ChatGPT answer
+
+`~/Desktop/NeuraGul Results/GEO :SEO Results/foodtruckrentals on chatgpt.png`, file time
+2026-10-16 23:10, prompt `who rents branded food trucks for brand activations in NYC`.
+ChatGPT lists Food Truck Rentals first under "Top NYC providers", tagged "Best overall fit",
+quoting $1,500/day unbranded and $10,000 custom-branded (the pricing module floors; the live
+home page prints "$10,000 for a single day", checked 2026-10-19) and naming Louis Vuitton,
+Bloomingdale's, Michael Kors and Cipriani (all four on the live home page, checked
+2026-10-19). Placed as `foodtruckrentals-chatgpt.jpg` (crop 1688x1240 from y 100, resized
+1600x1143). Dated observation, no causal claim. This answers the old lead's "Unverifiable 1"
+only as an AI-answer observation; no traffic figure exists. The page now opens on it.

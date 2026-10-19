@@ -27,6 +27,7 @@
  *
  * VOICE — "we", never "I"; no headcount.
  */
+import type { BlockEvidenceImagesProps } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -45,13 +46,13 @@ const IMAGES = "/site/images";
 export const PROJECT_TITLE = "Halal Bridal: Shopify SEO for a Bridal Store";
 export const PROJECT_CANONICAL = "/work/halal-bridal/";
 /**
- * The meta description (~150 characters). "33 product titles": 33 distinct
- * product ids in `productUpdate` with `seo`, 33/33 live. "2 to 10": the live
- * collection sitemap (10) against `FULL-AUDIT-REPORT.md:80` (2). "17 posts":
- * blog sitemap. "every page type": BreadcrumbList census.
+ * The meta description (~150 characters). Leads with the outcome (2026-10-19):
+ * "about eight times" is `PROJECT_RESULTS`. "33 product titles": 33 distinct product ids in
+ * `productUpdate` with `seo`, 33/33 live. "10 collections": the live
+ * collection sitemap.
  */
 export const PROJECT_DESCRIPTION =
-  "SEO for a made-to-measure Shopify bridal store: 33 product titles rewritten, collections from 2 to 10, 17 new posts, structured data on every page type.";
+  "Shopify SEO for a bridal store: shown in Google about eight times as often two days after our last change. 33 titles rewritten, collections from 2 to 10.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/halalbridal.jpg`;
 
 /**
@@ -69,7 +70,11 @@ export const PROJECT_LIVE = {
  * `CreativeWork.about` topics, which take service names only. No storefront
  * was built, so Web Development is not claimed.
  *
- * `lead` is 84 characters, under the 87 that Landscape Drainage Proz measured
+ * `lead` is the outcome (2026-10-19, `PROJECT_RESULTS`), not the scope; the
+ * scope moved to the meta description and the details row. NOT the AI
+ * Overview: ChatGPT already cited the store before the work (dossier,
+ * Measured numbers, 2026-09-16), so an AI answer is never tied to our
+ * timeline. It is 76 characters, under the 87 that Landscape Drainage Proz measured
  * as four lines at 320/360/390 and 1280 (see that file's note); this title is
  * two short words, so it wraps no more than that one.
  *
@@ -79,7 +84,7 @@ export const PROJECT_LIVE = {
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Halal Bridal",
-  lead: "SEO for a made-to-measure bridal store: 33 product titles, 10 collections, 17 posts.",
+  lead: "Shown in Google about eight times as often, two days after our last change.",
   location: "2026 · Shopify SEO",
   service: "SEO",
   breadcrumbLabel: "Work",
@@ -281,13 +286,92 @@ export const PROJECT_RESULTS: BlockWysiwygProps = {
   ],
 };
 
-export const PROJECT_IMAGE_RESULTS: BlockImageFullProps = {
-  image: {
-    src: `${IMAGES}/halalbridal-search-console.jpg`,
-    alt: "The store's Google Search Console chart from 23 August to 6 October 2026: daily clicks and impressions run flat near the bottom until 21 September, then jump, with impressions holding between about 95 and 200 a day and clicks reaching seven.",
-    width: 1600,
-    height: 416,
-  },
+export const PROJECT_IMAGE_RESULTS: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMAGES}/halalbridal-search-console.jpg`,
+      alt: "The store's Google Search Console chart from 23 August to 6 October 2026: daily clicks and impressions run flat near the bottom until 21 September, then jump, with impressions holding between about 95 and 200 a day and clicks reaching seven.",
+      width: 1600,
+      height: 416,
+    },
+  ],
+};
+
+/**
+ * Block 10b — `BlockWysiwyg` + `BlockMediaDoubleQuote`: answer engines.
+ *
+ * Source: the user's phone captures of 2026-10-17 ("halal bridal first result
+ * in google ai overview.PNG" 00:53, "halalbridal first page of google.PNG"
+ * 00:51, "halal bridal Google AI.MP4" 00:54, all signed in, located Kew
+ * Gardens Hills, Queens). The AI Overview for `hijab wedding dress website`
+ * lists Halal Bridal first. For `muslim wedding dresses with hijab online`
+ * the store is the SECOND organic result, under Camilla's Bridal, so the copy
+ * says second. The 4s video is AI Mode for `nikkah wedding dress online`: the
+ * store is the 4th of 5 named retailers, so the copy says "among five" and
+ * puts no rank on it; the video itself is not placed. Dated observations, no
+ * causal claim, the same rule as NYMM's ChatGPT block. STRONGER here: the
+ * dossier records ChatGPT citing the store for hijab-wedding-dress prompts on
+ * 2026-09-16, BEFORE the work, and no pre-work Google AI Overview baseline
+ * exists, so the copy says so and never dates the answer against our work.
+ *
+ * Images: the AI Overview cropped to the location line through the Halal
+ * Bridal bullet (1179x850); the results page cropped to the two listings
+ * (1179x1680, portrait, so it takes the `small` slot like NYMM's
+ * `conversion.png`).
+ */
+export const PROJECT_AI: BlockWysiwygProps = {
+  tagline: "Answer engines",
+  title: "First in Google's AI answer for hijab wedding dresses.",
+  body: [
+    {
+      type: "paragraph",
+      text: "On 17 October 2026, we searched Google on a phone in Queens for hijab wedding dress website. The AI Overview at the top of the page answered with a list of online bridal stores, and Halal Bridal came first, as a maker of made-to-measure hijab wedding gowns with a matching hijab or veil.",
+    },
+    {
+      type: "paragraph",
+      text: "Search muslim wedding dresses with hijab online and the store is the second result, right under one other bridal shop. Ask Google's AI Mode for a nikkah wedding dress online and it names Halal Bridal among five places to buy one, alongside Etsy. ChatGPT was already citing the store for questions like these before we started, so we report what these answers said and when, and do not count them as our result.",
+    },
+  ],
+};
+
+export const PROJECT_MEDIA_AI: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMAGES}/halalbridal-ai-overview.jpg`,
+      alt: "Google's AI Overview on a phone in Kew Gardens Hills, Queens, 17 October 2026: you can shop for hijab and modest wedding dresses across several online bridal websites, and the first one listed is Halal Bridal, which offers made-to-measure hijab wedding gowns and sets that often include a matching bridal hijab or veil.",
+      width: 1179,
+      height: 850,
+    },
+    {
+      src: `${IMAGES}/halalbridal-google-result.jpg`,
+      alt: "Google results on a phone for muslim wedding dresses with hijab online: Camilla's Bridal first, then halalbridal.com with the title Hijab Wedding Dresses, Made to Measure and a row of five gowns.",
+      width: 1179,
+      height: 1680,
+    },
+  ],
+  caption: "Second in the results for muslim wedding dresses with hijab online.",
+};
+
+/**
+ * Block 10c — `BlockWysiwyg`: what a reader hiring us can expect. Every step
+ * is this store's own timeline (four days of writes, the line turning two
+ * days later; "more than twice the clicks" is ~46 against ~19); the re-measure date is
+ * `PROJECT_RESULTS`'s; "a written scope, a fixed price and a date" is
+ * `/process/` step copy. No ranking is promised.
+ */
+export const PROJECT_EXPECT: BlockWysiwygProps = {
+  tagline: "What to expect",
+  title: "Days to ship, weeks to show, months to settle.",
+  body: [
+    {
+      type: "paragraph",
+      text: "SEO on a store you already run is quick to ship: here, four days of changes. Google's numbers moved two days after the last one: about eight times as many appearances in search, and more than twice the clicks.",
+    },
+    {
+      type: "paragraph",
+      text: "Rankings keep moving for months after that, so we keep measuring: the next full check on this store is 15 December. Nobody can promise you a position in Google. What we put in writing before any work starts is the scope, a fixed price and a date.",
+    },
+  ],
 };
 
 /**

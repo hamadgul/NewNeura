@@ -1,6 +1,7 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { BlockEvidenceImages } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockImageFull } from "@/components/site/shared/blocks/BlockImageFull";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -19,6 +20,8 @@ import {
   PROJECT_CTA,
   PROJECT_DESCRIPTION,
   PROJECT_DETAILS,
+  PROJECT_EXPECT,
+  PROJECT_GOOGLE,
   PROJECT_GROWTH,
   PROJECT_HEADER,
   PROJECT_IMAGE_COMBO,
@@ -29,6 +32,7 @@ import {
   PROJECT_LIVE,
   PROJECT_MATRIX,
   PROJECT_MEDIA_AI,
+  PROJECT_MEDIA_GOOGLE,
   PROJECT_MEDIA_LIVE,
   PROJECT_OG_IMAGE,
   PROJECT_PERFORMANCE,
@@ -86,18 +90,23 @@ const SCHEMA = [
 /**
  * `/work/new-york-mobile-mechanic/`.
  *
- * Seventeen blocks:
+ * Twenty blocks, results first (2026-10-19):
  *
  *   BlockHeaderProjects (cover: the hero, its four dials, both call buttons)
  *   → BlockIntroDouble (the brief / the tech stack)
- *   → BlockWysiwyg (Forty-five pages)      → BlockImageFull (the Queens brake page, priority)
+ *   → BlockWysiwyg (85,000 in Google)      → BlockImageFull (the Search Console report, priority)
+ *   → BlockWysiwyg (first on Google)       → BlockMediaDoubleQuote (AI Overview L, Places S)
+ *   → BlockWysiwyg (what ChatGPT said)     → BlockMediaDoubleQuote (ChatGPT NYC L, Queens S)
+ *   → BlockWysiwyg (what to expect)
+ *   → BlockWysiwyg (Forty-five pages)      → BlockImageFull (the Queens brake page)
  *   → BlockWysiwyg (Thirty pages)          → BlockImageFull (the alternator page)
- *   → BlockWysiwyg (85,000 in Google)      → BlockImageFull (the Search Console report)
  *   → BlockWysiwyg (the copy test)
  *   → BlockWysiwyg (100, four times)       → BlockImageFull (the Lighthouse report)
  *   → BlockWysiwyg (every number is live)  → BlockMediaDoubleQuote (hero loop L, reviews phone S)
- *   → BlockWysiwyg (what ChatGPT said)     → BlockMediaDoubleQuote (ChatGPT NYC L, Queens S)
- *   → BlockProjectDetails → GeneralCta
+ *   → BlockProjectDetails → BlockWysiwyg (client review) → GeneralCta
+ *
+ * The outcome blocks open the page so a reader meets what the work did before
+ * how it was built; the build blocks follow in their original order.
  *
  * The composition is argued from the evidence, not from a house rhythm: each
  * prose block is followed by the one image that shows its claim. The matrix
@@ -115,9 +124,8 @@ const SCHEMA = [
  * duplicate-cover trap); the loop in the trust block is the same framing but
  * moving, which is the point of that slot — a still cannot show a count-up.
  *
- * `BlockImageFull` appears three times and `BlockMediaDoubleQuote` twice; the
- * source's own project pages run three `BlockImageFull` instances, so neither
- * repetition is new. The Lighthouse image is 1600x841, not 1600x1000: the
+ * `BlockImageFull` appears three times and `BlockMediaDoubleQuote` three times; the
+ * source's own project pages run three `BlockImageFull` instances. The Lighthouse image is 1600x841, not 1600x1000: the
  * report is that shape and cropping it would cut the score row or the
  * thumbnail. `BlockImageFull` is `h-auto w-full`, so the ratio is honoured.
  *
@@ -125,8 +133,8 @@ const SCHEMA = [
  * a 1600-wide screenshot lands in it as a thumbnail); `BlockMediaDouble` is
  * not used because the page already runs the quote variant twice.
  *
- * `priority` on the combo shot only: it is the first image after the header's
- * own. The rest lazy-load, which the block does by default.
+ * `priority` on the Search Console report only: it is the first image after
+ * the header's own. The rest lazy-load, which the block does by default.
  *
  * `GeneralCta` closes the page and points at `/contact/`.
  *
@@ -147,14 +155,22 @@ export default function NewYorkMobileMechanicPage() {
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
 
+        <BlockWysiwyg {...PROJECT_GROWTH} />
+        <BlockEvidenceImages {...PROJECT_IMAGE_GROWTH} priority />
+
+        <BlockWysiwyg {...PROJECT_GOOGLE} />
+        <BlockEvidenceImages {...PROJECT_MEDIA_GOOGLE} />
+
+        <BlockWysiwyg {...PROJECT_AI} />
+        <BlockEvidenceImages {...PROJECT_MEDIA_AI} />
+
+        <BlockWysiwyg {...PROJECT_EXPECT} />
+
         <BlockWysiwyg {...PROJECT_MATRIX} />
-        <BlockImageFull {...PROJECT_IMAGE_COMBO} priority />
+        <BlockImageFull {...PROJECT_IMAGE_COMBO} />
 
         <BlockWysiwyg {...PROJECT_TOPICS} />
         <BlockImageFull {...PROJECT_IMAGE_TOPIC} />
-
-        <BlockWysiwyg {...PROJECT_GROWTH} />
-        <BlockImageFull {...PROJECT_IMAGE_GROWTH} />
 
         <BlockWysiwyg {...PROJECT_COPY_TEST} />
 
@@ -163,9 +179,6 @@ export default function NewYorkMobileMechanicPage() {
 
         <BlockWysiwyg {...PROJECT_LIVE} />
         <BlockMediaDoubleQuote {...PROJECT_MEDIA_LIVE} />
-
-        <BlockWysiwyg {...PROJECT_AI} />
-        <BlockMediaDoubleQuote {...PROJECT_MEDIA_AI} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
         <BlockWysiwyg {...PROJECT_VOICE} />

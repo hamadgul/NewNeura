@@ -1,6 +1,7 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { BlockEvidenceImages } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockImageFull } from "@/components/site/shared/blocks/BlockImageFull";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -13,16 +14,19 @@ import { BlockProjectDetails } from "@/components/site/shared/blocks/BlockProjec
 import { BlockWysiwyg } from "@/components/site/shared/blocks/BlockWysiwyg";
 import { GeneralCta } from "@/components/site/shared/blocks/GeneralCta";
 import {
+  PROJECT_AI,
   PROJECT_CANONICAL,
   PROJECT_COLLECTIONS,
   PROJECT_CTA,
   PROJECT_DESCRIPTION,
   PROJECT_DETAILS,
+  PROJECT_EXPECT,
   PROJECT_HEADER,
   PROJECT_IMAGE_COLLECTION,
   PROJECT_IMAGE_RESULTS,
   PROJECT_INTRO,
   PROJECT_MEASURE,
+  PROJECT_MEDIA_AI,
   PROJECT_MEDIA_PAGES,
   PROJECT_OG_IMAGE,
   PROJECT_PAGES,
@@ -75,21 +79,24 @@ const SCHEMA = [
 /**
  * `/work/halal-bridal/`.
  *
- * Thirteen blocks:
+ * Sixteen blocks, results first (2026-10-19):
  *
  *   BlockHeaderProjects (cover: the live home page and the hero H1 we rewrote)
  *   → BlockIntroDouble (the brief / the tech stack)
+ *   → BlockWysiwyg (Results)           → BlockImageFull (Search Console chart)
+ *   → BlockWysiwyg (Answer engines)    → BlockMediaDoubleQuote (AI Overview L, results S)
+ *   → BlockWysiwyg (What to expect)
  *   → BlockWysiwyg (Titles)            (no frame: the cover already shows it)
  *   → BlockWysiwyg (Collections)       → BlockImageFull (Muslim collection)
  *   → BlockWysiwyg (New pages)         → BlockMediaDoubleQuote (custom page L, journal S)
  *   → BlockWysiwyg (Structured data)   (no frame: JSON-LD does not render)
  *   → BlockWysiwyg (Speed)             (one lab run)
- *   → BlockWysiwyg (Results)           → BlockImageFull (Search Console chart)
  *   → BlockProjectDetails → GeneralCta
  *
  * Only what the dossier verified live on 2026-09-25 is claimed (see the
- * ruling in `content.ts`), plus the user's Search Console chart (2026-10-08),
- * which sits last so the proof lands just above the details and the CTA. Two captures were left out on purpose: the Rana
+ * ruling in `content.ts`), plus the user's Search Console chart (2026-10-08)
+ * and AI-answer captures (2026-10-17). Those now open the page: a reader
+ * meets the outcome, then what to expect, then how it was done. Two captures were left out on purpose: the Rana
  * product page shows the client's review widget reading "No reviews", and
  * the walima post's byline names the founder.
  *
@@ -107,6 +114,14 @@ export default function HalalBridalPage() {
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
 
+        <BlockWysiwyg {...PROJECT_RESULTS} />
+        <BlockEvidenceImages {...PROJECT_IMAGE_RESULTS} priority />
+
+        <BlockWysiwyg {...PROJECT_AI} />
+        <BlockEvidenceImages {...PROJECT_MEDIA_AI} />
+
+        <BlockWysiwyg {...PROJECT_EXPECT} />
+
         <BlockWysiwyg {...PROJECT_TITLES} />
 
         <BlockWysiwyg {...PROJECT_COLLECTIONS} />
@@ -118,9 +133,6 @@ export default function HalalBridalPage() {
         <BlockWysiwyg {...PROJECT_SCHEMA} />
 
         <BlockWysiwyg {...PROJECT_MEASURE} />
-
-        <BlockWysiwyg {...PROJECT_RESULTS} />
-        <BlockImageFull {...PROJECT_IMAGE_RESULTS} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
         <GeneralCta {...PROJECT_CTA} />

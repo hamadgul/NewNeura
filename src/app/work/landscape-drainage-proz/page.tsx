@@ -1,6 +1,7 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { BlockEvidenceImages } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockImageFull } from "@/components/site/shared/blocks/BlockImageFull";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -19,6 +20,7 @@ import {
   PROJECT_CTA,
   PROJECT_DESCRIPTION,
   PROJECT_DETAILS,
+  PROJECT_EXPECT,
   PROJECT_GUIDES,
   PROJECT_HEADER,
   PROJECT_IMAGE_AI,
@@ -85,10 +87,12 @@ const SCHEMA = [
 /**
  * `/work/landscape-drainage-proz/`.
  *
- * Sixteen blocks:
+ * Seventeen blocks, results first (2026-10-19):
  *
  *   BlockHeaderProjects (cover: the live home page, re-shot 2026-09-25 with the new hero)
  *   → BlockIntroDouble (the brief / the tech stack)
+ *   → BlockWysiwyg (Google's AI answer sends buyers here)      → BlockImageFull (the AI Overview, 2026-10-08, priority)
+ *   → BlockWysiwyg (What to expect)
  *   → BlockWysiwyg (Dawn, with a footer written by hand)       → BlockImageFull (Drainage Solutions)
  *   → BlockWysiwyg (The buyer who will never use the cart)     → BlockMediaDoubleQuote (municipal L, FAQ S)
  *   → BlockWysiwyg (Seven conversion labels on eleven events)  (no image: a JSON config in a <script>)
@@ -97,7 +101,6 @@ const SCHEMA = [
  *                                                              → BlockImageFull (the French drain guide)
  *   → BlockWysiwyg (What the move from WordPress left behind)  (no image: redirects and colours are not a frame)
  *   → BlockWysiwyg (Taking out what wasn't true)               (no image: the evidence is an absence)
- *   → BlockWysiwyg (Google's AI answer sends buyers here)      → BlockImageFull (the AI Overview, 2026-10-08)
  *   → BlockProjectDetails → GeneralCta
  *
  * The composition is argued from the evidence outward: each prose block is
@@ -143,6 +146,11 @@ export default function LandscapeDrainageProzPage() {
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
 
+        <BlockWysiwyg {...PROJECT_AI} />
+        <BlockEvidenceImages {...PROJECT_IMAGE_AI} priority />
+
+        <BlockWysiwyg {...PROJECT_EXPECT} />
+
         <BlockWysiwyg {...PROJECT_STOREFRONT} />
         <BlockImageFull {...PROJECT_IMAGE_DRAINAGE} />
 
@@ -159,9 +167,6 @@ export default function LandscapeDrainageProzPage() {
         <BlockWysiwyg {...PROJECT_REPAIRS} />
 
         <BlockWysiwyg {...PROJECT_CORRECTIONS} />
-
-        <BlockWysiwyg {...PROJECT_AI} />
-        <BlockImageFull {...PROJECT_IMAGE_AI} />
 
         <BlockProjectDetails details={projectDetailsWithoutStack(PROJECT_DETAILS)} />
         <GeneralCta {...PROJECT_CTA} />

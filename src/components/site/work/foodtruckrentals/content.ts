@@ -37,6 +37,7 @@
  * cut in Task 5 stay cut; the page argues from mechanism and from the SERP
  * positions the source records, never from volumes.
  */
+import type { BlockEvidenceImagesProps } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import type { BlockHeaderProjectsProps } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import type { BlockImageFullProps } from "@/components/site/shared/blocks/BlockImageFull";
 import type { BlockIntroDoubleProps } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -67,8 +68,12 @@ export const PROJECT_CANONICAL = "/work/foodtruckrentals/";
  * cluster (nine NYC phrasings) with one owner; no site-wide one-page-per-query
  * rule exists.
  */
+/*
+ * 2026-10-19: rewritten to lead with the outcome (`PROJECT_AI`, a dated
+ * ChatGPT capture). The build facts it carried are in the details row.
+ */
 export const PROJECT_DESCRIPTION =
-  "A 24-page Next.js site for a New York food truck brand-activation company: one owner for the New York query, prices from one module, 141 Vitest tests.";
+  "A 24-page Next.js site for a NYC branded food truck company. On 16 October 2026, ChatGPT named it the best overall fit for brand activations in NYC.";
 export const PROJECT_OG_IMAGE = `${IMAGES}/foodtruckrentals.jpg`;
 
 /**
@@ -82,7 +87,11 @@ export const PROJECT_LIVE = {
 };
 
 /**
- * Header. `lead` is the project's shape as the code shows it, in one line: the
+ * Header. 2026-10-19: `lead` is now the outcome (`PROJECT_AI`), 83 characters,
+ * well inside the 118 measured below. The build line it replaced is the
+ * substance of `PROJECT_OWNER` and `PROJECT_PRICING`.
+ *
+ * Previous note: `lead` was the project's shape as the code shows it, in one line: the
  * two rules the suite enforces (`tests/nyc-cannibalization.test.ts`,
  * `tests/pricing.test.ts`) and the measured count. LENGTH IS MEASURED: the
  * header's lead slot at 390 px holds five lines (156 px) before the `<h1>`
@@ -99,7 +108,7 @@ export const PROJECT_LIVE = {
  */
 export const PROJECT_HEADER: BlockHeaderProjectsProps = {
   title: "Food Truck Rentals",
-  lead: "Twenty-four pages, one owner for the New York query, prices from one file, and 141 Vitest tests holding both in place.",
+  lead: "ChatGPT's first pick for branded food trucks in NYC, quoting the site's own prices.",
   location: "2026 · Web",
   service: "Web Development",
   breadcrumbLabel: "Work",
@@ -296,6 +305,66 @@ export const PROJECT_FRONT_DOOR: BlockWysiwygProps = {
     {
       type: "paragraph",
       text: "Below it, seventeen clients from one data file. The active name widens on the typeface's width axis, from 100 to 112, and the names cannot wrap, because measured widening on wrapping text moved the wrap point and shoved the roster down 24 pixels mid-scroll. The card that shows each client's photographs exists from 1,280 pixels wide; below that, tapping a row opens its strip inline. The client's twenty-two phone photographs were converted by a script that bakes each rotation into the pixels before it strips the metadata, because doing it the other way round shipped three of them sideways.",
+    },
+  ],
+};
+
+/**
+ * Block 2b — `BlockWysiwyg` + `BlockImageFull`: ChatGPT's answer.
+ *
+ * Source: the user's screenshot "foodtruckrentals on chatgpt.png", file time
+ * 2026-10-16 23:10, prompt `who rents branded food trucks for brand
+ * activations in NYC`. ChatGPT lists Food Truck Rentals first under "Top NYC
+ * providers", tagged "Best overall fit", quoting $1,500/day unbranded and
+ * $10,000 custom-branded, and naming Louis Vuitton, Bloomingdale's, Michael
+ * Kors and Cipriani. The two prices are the module floors `PROJECT_PRICING`
+ * describes, and the live home page prints all four client names (checked
+ * 2026-10-19). Dated observation, no causal claim, the NYMM ChatGPT rule.
+ * Cropped to the prompt through the top of the second entry, 1600x1143.
+ */
+export const PROJECT_AI: BlockWysiwygProps = {
+  tagline: "Answer engines",
+  title: "ChatGPT's best overall fit.",
+  body: [
+    {
+      type: "paragraph",
+      text: "On 16 October 2026, we asked ChatGPT who rents branded food trucks for brand activations in NYC. It put Food Truck Rentals first of its top providers and tagged it Best overall fit. It quoted $1,500 a day for an unbranded truck and $10,000 for a custom-branded, staffed activation, and named Louis Vuitton, Bloomingdale's, Michael Kors and Cipriani among its clients.",
+    },
+    {
+      type: "paragraph",
+      text: "Those are the site's own prices: the two floors in the one pricing file that also writes the price sheet machines read. The client names are the site's roster. We cannot see which pages an answer engine reads, so we do not claim the site put the business there. We can say the answer repeats the site's facts, word for word on price.",
+    },
+  ],
+};
+
+export const PROJECT_IMAGE_AI: BlockEvidenceImagesProps = {
+  images: [
+    {
+      src: `${IMAGES}/foodtruckrentals-chatgpt.jpg`,
+      alt: "ChatGPT, asked who rents branded food trucks for brand activations in NYC: under Top NYC providers, 1. Food Truck Rentals, tagged Best overall fit, with a published starting price of $1,500 a day unbranded and $10,000 custom-branded and staffed, a portfolio including Louis Vuitton, Bloomingdale's, Michael Kors and Cipriani, and a link to foodtruckrentals.com.",
+      width: 1600,
+      height: 1143,
+    },
+  ],
+};
+
+/**
+ * Block 2c — `BlockWysiwyg`: what a reader hiring us can expect. No Search
+ * Console figure exists for this site, so the block promises no traffic; it
+ * says what an answer engine quoted and why those facts were findable.
+ * Service area: the rental page's facts ledger (`PROJECT_IMAGE_RENTAL` alt).
+ */
+export const PROJECT_EXPECT: BlockWysiwygProps = {
+  tagline: "What to expect",
+  title: "Give the machines facts they can repeat.",
+  body: [
+    {
+      type: "paragraph",
+      text: "When a buyer asks ChatGPT who to hire, it answers with facts it can find and repeat: a price, a service area, the clients you have worked for. This site publishes all three in plain words, from one source, so every page and every file a machine reads says the same thing.",
+    },
+    {
+      type: "paragraph",
+      text: "Nobody can promise what an AI answer will say, and we will not. What we put in writing before any work starts is the scope, a fixed price and a date, and the people who build your site are the ones you can still reach six months after launch.",
     },
   ],
 };

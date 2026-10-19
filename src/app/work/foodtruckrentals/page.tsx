@@ -1,6 +1,7 @@
 import { MainNavigation } from "@/components/site/home/MainNavigation";
 import { NavigationFooter } from "@/components/site/home/NavigationFooter";
 import { JsonLd } from "@/components/site/shared/JsonLd";
+import { BlockEvidenceImages } from "@/components/site/shared/blocks/BlockEvidenceImages";
 import { BlockHeaderProjects } from "@/components/site/shared/blocks/BlockHeaderProjects";
 import { BlockImageFull } from "@/components/site/shared/blocks/BlockImageFull";
 import { BlockIntroDouble } from "@/components/site/shared/blocks/BlockIntroDouble";
@@ -16,10 +17,13 @@ import {
   PROJECT_CANONICAL,
   PROJECT_CTA,
   PROJECT_DESCRIPTION,
+  PROJECT_AI,
   PROJECT_DETAILS,
+  PROJECT_EXPECT,
   PROJECT_FRONT_DOOR,
   PROJECT_GUARDS,
   PROJECT_HEADER,
+  PROJECT_IMAGE_AI,
   PROJECT_IMAGE_NYC,
   PROJECT_IMAGE_RENTAL,
   PROJECT_INTRO,
@@ -80,17 +84,19 @@ const SCHEMA = [
 /**
  * `/work/foodtruckrentals/`.
  *
- * Eleven blocks:
+ * Fourteen blocks, results first (2026-10-19):
  *
  *   BlockHeaderProjects (cover: the three-photograph hero collage)
  *   → BlockIntroDouble (the brief / the tech stack)
- *   → BlockWysiwyg (One query, one owner)   → BlockImageFull (the NYC owner page, priority)
+ *   → BlockWysiwyg (ChatGPT's best fit)     → BlockImageFull (the ChatGPT answer, priority)
+ *   → BlockWysiwyg (What to expect)
+ *   → BlockWysiwyg (One query, one owner)   → BlockImageFull (the NYC owner page)
  *   → BlockWysiwyg (Every price, one file)  → BlockImageFull (the rental page)
  *   → BlockWysiwyg (Guards)                 → BlockMediaDoubleQuote (contact L, work S)
  *   → BlockWysiwyg (Three trucks at once)   (no image: the cover is the hero)
- *   → BlockProjectDetails → GeneralCta
+ *   → BlockProjectDetails → BlockWysiwyg (client review) → GeneralCta
  *
- * The composition is argued from the evidence outward: each prose block is
+ * The outcome opens the page, then the build. The composition is argued from the evidence outward: each prose block is
  * followed by the one frame that shows its claim. The owner section is
  * answered by the owner page itself (its breadcrumb and H1 are the thing the
  * test protects); the pricing section by the rental page, whose lead and
@@ -102,12 +108,12 @@ const SCHEMA = [
  * capture is the same frame, so repeating it would be Task 8's
  * duplicate-cover trap. The copy says "the frame at the top of this page".
  *
- * `BlockImageFull` appears twice and `BlockMediaDoubleQuote` once.
+ * `BlockImageFull` appears three times and `BlockMediaDoubleQuote` once.
  * `BlockImageSlider` is not used (its geometry is solved for 3:4 portraits and
  * a 1600-wide screenshot lands in it as a thumbnail); `BlockMediaDouble` is
  * not used because the quote variant carries the caption the small frame needs.
  *
- * `priority` on the NYC shot only: it is the first image after the header's
+ * `priority` on the ChatGPT shot only: it is the first image after the header's
  * own. The rest lazy-load, which the blocks do by default.
  *
  * `GeneralCta` closes the page and points at `/contact/`.
@@ -129,8 +135,13 @@ export default function FoodTruckRentalsPage() {
         <BlockHeaderProjects {...PROJECT_HEADER} />
         <BlockIntroDouble {...projectIntroTabs(PROJECT_INTRO, PROJECT_DETAILS)} />
 
+        <BlockWysiwyg {...PROJECT_AI} />
+        <BlockEvidenceImages {...PROJECT_IMAGE_AI} priority />
+
+        <BlockWysiwyg {...PROJECT_EXPECT} />
+
         <BlockWysiwyg {...PROJECT_OWNER} />
-        <BlockImageFull {...PROJECT_IMAGE_NYC} priority />
+        <BlockImageFull {...PROJECT_IMAGE_NYC} />
 
         <BlockWysiwyg {...PROJECT_PRICING} />
         <BlockImageFull {...PROJECT_IMAGE_RENTAL} />

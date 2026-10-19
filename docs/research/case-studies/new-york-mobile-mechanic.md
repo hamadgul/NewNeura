@@ -405,3 +405,24 @@ line starts 25 Jun 2026 and ends ~6 Oct. Daily values read off the chart: clicks
 the first week, ~20-25/day by early October; impressions near 0 → ~2,000/day. Whole-site
 figures; the 1,918 / 10 quoted in `PROJECT_TOPICS` are service pages only, 90 days to 17 Aug.
 Placed as `PROJECT_GROWTH` + `PROJECT_IMAGE_GROWTH`, and restated in `/services/seo/` `RESULTS`.
+
+## 2026-10-19: Google results (AI Overview, Places, organic)
+
+Two desktop captures from the user, both file-dated 2026-10-08 22:16, in
+`~/Desktop/NeuraGul Results/GEO :SEO Results/`:
+
+| Capture | Shows | Placed as |
+| --- | --- | --- |
+| `Adam first on places, AI overview and search 2.png` (2770x1442) | `mobile mechanic nyc`: the AI Overview's first sentence names Adam Mobile Mechanic; its Top-Rated list opens on it (4.9, 164); the first organic result is newyorkmobilemechanic.com titled "Mobile Mechanic NYC · 24/7 Auto Repair \| Adam's" (= `seo.defaultTitle`, client `content/site.config.ts:923`) | `new-york-mobile-mechanic-ai-overview.jpg`, crop 1580x1400 at x360 y40 |
+| `Adam Mobile Mechanic Reviews.png` (2868x1782) | `new york mobile mechanic`, located New York, NY: Places pack first (4.9, 164 reviews); AI Overview "leads local options"; first organic result is the site | `new-york-mobile-mechanic-places.jpg`, crop 800x864 at x650 y228 (Places list only) |
+
+Rules applied: dated observations; the map and AI Overview are not credited to the site alone
+(they read the Business Profile); the organic result is credited because its title is the
+site's. Review count 133 (2026-07-28) → 164 (2026-10-08) is printed as the profile's count.
+
+**Defect for the client, not printed:** the AI Overview prints `929-300-9674` beside Adam
+Mobile Mechanic. The Places pack shows that number is Mobile Mechanic NYC's (a competitor);
+the client's is `(347) 531-9623`. Flagged to the user 2026-10-19.
+
+The page now opens on results (Growth → Google → ChatGPT → What to expect) and the build
+sections follow.
