@@ -223,10 +223,20 @@ export function NavigationFooter({ variant = "full" }: NavigationFooterProps = {
           <div className="__line h-px w-full bg-white/25 xl:w-[1340px]" />
 
           <div className="flex w-full flex-col gap-[40px] md:flex-row md:items-start md:justify-between xl:gap-[60px]">
-            <ul className="navigationFooter__mainMenu mt-[40px] flex flex-col gap-[7px] xl:w-[530px]">
+            {/*
+              Sized to its longest label, never below the measured 530px. The
+              list was a fixed `w-[530px]` and each row a fixed one-line height
+              with `overflow: hidden` (the clip the hover lift rises inside).
+              "Cloud Apps & Infrastructure" (2026-09-27) is ~640px at font-XL, so
+              it wrapped after "&" and the clip cut "Infrastructure" off
+              entirely (user report, 2026-10-19). Rows are now a MINIMUM height:
+              one line keeps the measured 35/55px, and a label that has to wrap
+              on a narrow screen grows its row instead of losing its second line.
+            */}
+            <ul className="navigationFooter__mainMenu mt-[40px] flex flex-col gap-[7px] xl:w-auto xl:min-w-[530px]">
               <li className="font-S mb-[10px] font-semibold text-white/70">Services</li>
               {SERVICE_LINKS.map((link) => (
-                <li key={link.href} className="navigationFooter__menuItemWrapper h-[35px] overflow-hidden xl:h-[55px]">
+                <li key={link.href} className="navigationFooter__menuItemWrapper min-h-[35px] overflow-hidden xl:min-h-[55px]">
                   <Link
                     href={link.href}
                     className="font-XL inline-block transition-transform duration-300 ease-out hover:-translate-y-[6px]"
