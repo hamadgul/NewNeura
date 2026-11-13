@@ -45,6 +45,7 @@
  * once per document load — on first arrival and on reloads.
  */
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 import { releaseIntro } from "../shared/introGate";
@@ -130,7 +131,14 @@ type Phase = "letters" | "expanded" | "wordsOut" | "leaving" | "done";
 
 export function Preloader() {
   const [phase, setPhase] = useState<Phase>("letters");
-  const reduceMotion = usePrefersReducedMotion();
+  /*
+    Not on the client brief forms. A client opening the link Hamad sent them
+    came to fill in a form; a 5s brand intro in front of it is a wait, not a
+    welcome. Treated exactly like reduced motion: no overlay, gate released.
+  */
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const onBrief = (usePathname() ?? "").startsWith("/brief/");
+  const reduceMotion = prefersReducedMotion || onBrief;
 
   useEffect(() => {
     // Under reduced motion the component returns null below without ever

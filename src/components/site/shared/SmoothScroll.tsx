@@ -2,6 +2,7 @@
 
 import Lenis from "lenis";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 declare global {
   interface Window {
@@ -27,7 +28,16 @@ declare global {
  * scroll is exactly the wrong thing to do.
  */
 export function SmoothScroll() {
+  /*
+    Off on the client brief forms: a long form wants native scrolling, so
+    focus-scrolling to an invalid field and the on-screen keyboard behave as
+    the browser intends. Re-evaluated on navigation, so leaving the form for
+    the site starts Lenis.
+  */
+  const native = (usePathname() ?? "").startsWith("/brief/");
+
   useEffect(() => {
+    if (native) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const lenis = new Lenis({
@@ -50,7 +60,7 @@ export function SmoothScroll() {
       lenis.destroy();
       window.__ngLenis = undefined;
     };
-  }, []);
+  }, [native]);
 
   return null;
 }

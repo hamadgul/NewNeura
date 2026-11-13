@@ -508,3 +508,19 @@ html.lenis body {
     scroll-behavior: smooth !important;
   }
 }
+/* -------------------------------------------------------------------------
+   /brief/website/ — the wizard's panels, and text that only makes sense
+   without JavaScript. The page's <noscript> style reverses all three rules,
+   so the brief degrades to one long form.
+
+   Panels hide with `data-hidden`, NOT the `hidden` attribute: Tailwind's
+   preflight hides `[hidden]` with `!important` inside `@layer base`, and an
+   important declaration in a layer beats an important unlayered one — so no
+   <noscript> override could ever show a `hidden` panel again.
+   ------------------------------------------------------------------------- */
+.brief-panel[data-hidden] {
+  display: none;
+}
+.brief-nojs {
+  display: none;
+}
