@@ -143,7 +143,7 @@ Plain-language rules apply to every question:
 
 **Env vars** (Vercel project settings and the Docker runtime env; never committed):
 - `RESEND_API_KEY` (required)
-- `BRIEF_TO_EMAIL`, default `hamad@neuragul.com`
+- `BRIEF_TO_EMAIL`, default `hamadgul1@gmail.com` (Hamad's choice)
 - `BRIEF_FROM_EMAIL`, default `NeuraGul Briefs <briefs@neuragul.com>`
 
 Missing `RESEND_API_KEY` in dev → the action logs the rendered email to the server console and returns ok, so the form can be tested locally without sending mail.

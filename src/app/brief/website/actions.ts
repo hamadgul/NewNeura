@@ -1,7 +1,6 @@
 "use server";
 
 import { HONEYPOT_FIELD, STARTED_AT_FIELD } from "@/components/site/brief/questions";
-import { OFFICES } from "@/components/site/home/content";
 import {
   answersFromFormData,
   asText,
@@ -21,7 +20,8 @@ export type BriefState =
 /** A submit faster than this after the form mounted is a bot. */
 const MIN_FILL_MS = 3000;
 
-const TO = process.env.BRIEF_TO_EMAIL || OFFICES[0].email || "hamad@neuragul.com";
+/** Where briefs land. Hamad's own inbox, by his choice, not the public address. */
+const TO = process.env.BRIEF_TO_EMAIL || "hamadgul1@gmail.com";
 const FROM = process.env.BRIEF_FROM_EMAIL || "NeuraGul Briefs <briefs@neuragul.com>";
 
 /**
